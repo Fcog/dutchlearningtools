@@ -1,0 +1,28 @@
+{
+  "name": "Dutch Learning Tools",
+  "short_name": "Dutch Tools",
+  "description": "Learn Dutch articles, vocabulary, and grammar with interactive tools",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#21468b",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary"
+}
