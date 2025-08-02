@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import dutchVerbsData from '../data/dutch-verbs-present.json'
+import dutchVerbsData from '../data/dutch-verbs-all-tenses.json'
 import PageLayout from '../components/templates/PageLayout'
 import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import TenseSelector from '../components/molecules/TenseSelector'
 import VerbExercise from '../components/organisms/VerbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 
@@ -12,6 +13,8 @@ function VerbConjugationPage() {
   const navigate = useNavigate()
   const [currentVerb, setCurrentVerb] = useState(null)
   const [currentPronoun, setCurrentPronoun] = useState(null)
+  const [currentTense, setCurrentTense] = useState(null)
+  const [selectedTenses, setSelectedTenses] = useState(['present'])
   const [userAnswer, setUserAnswer] = useState('')
   const [showResult, setShowResult] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
@@ -35,14 +38,23 @@ function VerbConjugationPage() {
     generateNewExercise()
   }, [])
 
+  // Regenerate exercise when selected tenses change
+  useEffect(() => {
+    if (currentVerb && currentTense && !selectedTenses.includes(currentTense)) {
+      generateNewExercise()
+    }
+  }, [selectedTenses])
+
   // Generate a new exercise
   const generateNewExercise = () => {
     const verbs = dutchVerbsData.dutch_verbs
     const randomVerb = verbs[Math.floor(Math.random() * verbs.length)]
     const randomPronoun = PRONOUNS[Math.floor(Math.random() * PRONOUNS.length)]
+    const randomTense = selectedTenses[Math.floor(Math.random() * selectedTenses.length)]
     
     setCurrentVerb(randomVerb)
     setCurrentPronoun(randomPronoun)
+    setCurrentTense(randomTense)
     setUserAnswer('')
     setShowResult(false)
     setIsCorrect(false)
@@ -52,7 +64,7 @@ function VerbConjugationPage() {
   const checkAnswer = () => {
     if (!userAnswer.trim()) return
     
-    const correctAnswer = currentVerb.conjugations[currentPronoun]
+    const correctAnswer = currentVerb.tenses[currentTense].conjugations[currentPronoun]
     const isAnswerCorrect = userAnswer.trim().toLowerCase() === correctAnswer.toLowerCase()
     
     setIsCorrect(isAnswerCorrect)
@@ -80,10 +92,15 @@ function VerbConjugationPage() {
     return Math.round((score.correct / score.total) * 100)
   }
 
+  // Handle tense selection change
+  const handleTenseChange = (newSelectedTenses) => {
+    setSelectedTenses(newSelectedTenses)
+  }
+
   // Social sharing functionality
   const shareData = {
-    title: "Dutch Verb Conjugation Exercise - Interactive Present Tense Practice",
-    description: "Master Dutch verb conjugations with our interactive exercise! Practice present tense conjugations with common Dutch verbs and get instant feedback."
+    title: "Dutch Verb Conjugation Exercise - Interactive Multi-Tense Practice",
+    description: "Master Dutch verb conjugations across multiple tenses! Choose from present, past, perfect, and future tenses. Interactive practice with common Dutch verbs and instant feedback."
   }
 
   const handleSocialShare = (platform) => {
@@ -117,7 +134,7 @@ function VerbConjugationPage() {
     window.open(shareUrl, '_blank', 'width=600,height=400,scrollbars=yes,resizable=yes')
   }
 
-  if (!currentVerb || !currentPronoun) {
+  if (!currentVerb || !currentPronoun || !currentTense) {
     return (
       <PageLayout>
         <h1>Loading...</h1>
@@ -139,16 +156,22 @@ function VerbConjugationPage() {
       }
     >
       <header>
-        <h1>Dutch Verb Conjugation: Present Tense Practice</h1>
+        <h1>Dutch Verb Conjugation: Multi-Tense Practice</h1>
         <p className="page-header-description">
           {isMobile 
-            ? "Practice Dutch verb conjugations! Complete each sentence with the correct verb form." 
-            : "Master Dutch verb conjugations in present tense! Type the correct conjugated form for each pronoun and get instant feedback."
+            ? "Practice Dutch verb conjugations across different tenses! Select your preferred tenses and complete sentences with correct verb forms." 
+            : "Master Dutch verb conjugations across multiple tenses! Choose which tenses to practice, then type the correct conjugated form for each pronoun and get instant feedback."
           }
         </p>
       </header>
 
       <ScoreDisplay score={score} />
+      
+      <TenseSelector
+        selectedTenses={selectedTenses}
+        onTenseChange={handleTenseChange}
+        className="tense-selector-section"
+      />
       
       <section aria-labelledby="exercise-heading" className="exercise-container">
         <h2 id="exercise-heading" className="exercise-heading">
@@ -158,6 +181,7 @@ function VerbConjugationPage() {
         <VerbExercise
           currentVerb={currentVerb}
           currentPronoun={currentPronoun}
+          currentTense={currentTense}
           userAnswer={userAnswer}
           showResult={showResult}
           isCorrect={isCorrect}

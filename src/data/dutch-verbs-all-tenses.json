@@ -1,0 +1,412 @@
+{
+  "dutch_verbs": [
+    {
+      "infinitive": "lopen",
+      "english": "to walk",
+      "stem": "loop",
+      "tenses": {
+        "present": {
+          "name": "Tegenwoordige tijd (Present)",
+          "conjugations": {
+            "ik": "loop",
+            "jij": "loopt",
+            "hij/zij": "loopt",
+            "wij": "lopen",
+            "jullie": "lopen",
+            "zij": "lopen"
+          }
+        },
+        "past": {
+          "name": "Verleden tijd (Past)",
+          "conjugations": {
+            "ik": "liep",
+            "jij": "liep",
+            "hij/zij": "liep",
+            "wij": "liepen",
+            "jullie": "liepen",
+            "zij": "liepen"
+          }
+        },
+        "perfect": {
+          "name": "Voltooid tegenwoordige tijd (Perfect)",
+          "conjugations": {
+            "ik": "heb gelopen",
+            "jij": "hebt gelopen",
+            "hij/zij": "heeft gelopen",
+            "wij": "hebben gelopen",
+            "jullie": "hebben gelopen",
+            "zij": "hebben gelopen"
+          }
+        },
+        "future": {
+          "name": "Toekomende tijd (Future)",
+          "conjugations": {
+            "ik": "zal lopen",
+            "jij": "zult lopen",
+            "hij/zij": "zal lopen",
+            "wij": "zullen lopen",
+            "jullie": "zullen lopen",
+            "zij": "zullen lopen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "werken",
+      "english": "to work",
+      "stem": "werk",
+      "tenses": {
+        "present": {
+          "name": "Tegenwoordige tijd (Present)",
+          "conjugations": {
+            "ik": "werk",
+            "jij": "werkt",
+            "hij/zij": "werkt",
+            "wij": "werken",
+            "jullie": "werken",
+            "zij": "werken"
+          }
+        },
+        "past": {
+          "name": "Verleden tijd (Past)",
+          "conjugations": {
+            "ik": "werkte",
+            "jij": "werkte",
+            "hij/zij": "werkte",
+            "wij": "werkten",
+            "jullie": "werkten",
+            "zij": "werkten"
+          }
+        },
+        "perfect": {
+          "name": "Voltooid tegenwoordige tijd (Perfect)",
+          "conjugations": {
+            "ik": "heb gewerkt",
+            "jij": "hebt gewerkt",
+            "hij/zij": "heeft gewerkt",
+            "wij": "hebben gewerkt",
+            "jullie": "hebben gewerkt",
+            "zij": "hebben gewerkt"
+          }
+        },
+        "future": {
+          "name": "Toekomende tijd (Future)",
+          "conjugations": {
+            "ik": "zal werken",
+            "jij": "zult werken",
+            "hij/zij": "zal werken",
+            "wij": "zullen werken",
+            "jullie": "zullen werken",
+            "zij": "zullen werken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "spelen",
+      "english": "to play",
+      "stem": "speel",
+      "tenses": {
+        "present": {
+          "name": "Tegenwoordige tijd (Present)",
+          "conjugations": {
+            "ik": "speel",
+            "jij": "speelt",
+            "hij/zij": "speelt",
+            "wij": "spelen",
+            "jullie": "spelen",
+            "zij": "spelen"
+          }
+        },
+        "past": {
+          "name": "Verleden tijd (Past)",
+          "conjugations": {
+            "ik": "speelde",
+            "jij": "speelde",
+            "hij/zij": "speelde",
+            "wij": "speelden",
+            "jullie": "speelden",
+            "zij": "speelden"
+          }
+        },
+        "perfect": {
+          "name": "Voltooid tegenwoordige tijd (Perfect)",
+          "conjugations": {
+            "ik": "heb gespeeld",
+            "jij": "hebt gespeeld",
+            "hij/zij": "heeft gespeeld",
+            "wij": "hebben gespeeld",
+            "jullie": "hebben gespeeld",
+            "zij": "hebben gespeeld"
+          }
+        },
+        "future": {
+          "name": "Toekomende tijd (Future)",
+          "conjugations": {
+            "ik": "zal spelen",
+            "jij": "zult spelen",
+            "hij/zij": "zal spelen",
+            "wij": "zullen spelen",
+            "jullie": "zullen spelen",
+            "zij": "zullen spelen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "koken",
+      "english": "to cook",
+      "stem": "kook",
+      "tenses": {
+        "present": {
+          "name": "Tegenwoordige tijd (Present)",
+          "conjugations": {
+            "ik": "kook",
+            "jij": "kookt",
+            "hij/zij": "kookt",
+            "wij": "koken",
+            "jullie": "koken",
+            "zij": "koken"
+          }
+        },
+        "past": {
+          "name": "Verleden tijd (Past)",
+          "conjugations": {
+            "ik": "kookte",
+            "jij": "kookte",
+            "hij/zij": "kookte",
+            "wij": "kookten",
+            "jullie": "kookten",
+            "zij": "kookten"
+          }
+        },
+        "perfect": {
+          "name": "Voltooid tegenwoordige tijd (Perfect)",
+          "conjugations": {
+            "ik": "heb gekookt",
+            "jij": "hebt gekookt",
+            "hij/zij": "heeft gekookt",
+            "wij": "hebben gekookt",
+            "jullie": "hebben gekookt",
+            "zij": "hebben gekookt"
+          }
+        },
+        "future": {
+          "name": "Toekomende tijd (Future)",
+          "conjugations": {
+            "ik": "zal koken",
+            "jij": "zult koken",
+            "hij/zij": "zal koken",
+            "wij": "zullen koken",
+            "jullie": "zullen koken",
+            "zij": "zullen koken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "leren",
+      "english": "to learn",
+      "stem": "leer",
+      "tenses": {
+        "present": {
+          "name": "Tegenwoordige tijd (Present)",
+          "conjugations": {
+            "ik": "leer",
+            "jij": "leert",
+            "hij/zij": "leert",
+            "wij": "leren",
+            "jullie": "leren",
+            "zij": "leren"
+          }
+        },
+        "past": {
+          "name": "Verleden tijd (Past)",
+          "conjugations": {
+            "ik": "leerde",
+            "jij": "leerde",
+            "hij/zij": "leerde",
+            "wij": "leerden",
+            "jullie": "leerden",
+            "zij": "leerden"
+          }
+        },
+        "perfect": {
+          "name": "Voltooid tegenwoordige tijd (Perfect)",
+          "conjugations": {
+            "ik": "heb geleerd",
+            "jij": "hebt geleerd",
+            "hij/zij": "heeft geleerd",
+            "wij": "hebben geleerd",
+            "jullie": "hebben geleerd",
+            "zij": "hebben geleerd"
+          }
+        },
+        "future": {
+          "name": "Toekomende tijd (Future)",
+          "conjugations": {
+            "ik": "zal leren",
+            "jij": "zult leren",
+            "hij/zij": "zal leren",
+            "wij": "zullen leren",
+            "jullie": "zullen leren",
+            "zij": "zullen leren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "wonen",
+      "english": "to live",
+      "stem": "woon",
+      "tenses": {
+        "present": {
+          "name": "Tegenwoordige tijd (Present)",
+          "conjugations": {
+            "ik": "woon",
+            "jij": "woont",
+            "hij/zij": "woont",
+            "wij": "wonen",
+            "jullie": "wonen",
+            "zij": "wonen"
+          }
+        },
+        "past": {
+          "name": "Verleden tijd (Past)",
+          "conjugations": {
+            "ik": "woonde",
+            "jij": "woonde",
+            "hij/zij": "woonde",
+            "wij": "woonden",
+            "jullie": "woonden",
+            "zij": "woonden"
+          }
+        },
+        "perfect": {
+          "name": "Voltooid tegenwoordige tijd (Perfect)",
+          "conjugations": {
+            "ik": "heb gewoond",
+            "jij": "hebt gewoond",
+            "hij/zij": "heeft gewoond",
+            "wij": "hebben gewoond",
+            "jullie": "hebben gewoond",
+            "zij": "hebben gewoond"
+          }
+        },
+        "future": {
+          "name": "Toekomende tijd (Future)",
+          "conjugations": {
+            "ik": "zal wonen",
+            "jij": "zult wonen",
+            "hij/zij": "zal wonen",
+            "wij": "zullen wonen",
+            "jullie": "zullen wonen",
+            "zij": "zullen wonen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "hebben",
+      "english": "to have",
+      "stem": "heb",
+      "tenses": {
+        "present": {
+          "name": "Tegenwoordige tijd (Present)",
+          "conjugations": {
+            "ik": "heb",
+            "jij": "hebt",
+            "hij/zij": "heeft",
+            "wij": "hebben",
+            "jullie": "hebben",
+            "zij": "hebben"
+          }
+        },
+        "past": {
+          "name": "Verleden tijd (Past)",
+          "conjugations": {
+            "ik": "had",
+            "jij": "had",
+            "hij/zij": "had",
+            "wij": "hadden",
+            "jullie": "hadden",
+            "zij": "hadden"
+          }
+        },
+        "perfect": {
+          "name": "Voltooid tegenwoordige tijd (Perfect)",
+          "conjugations": {
+            "ik": "heb gehad",
+            "jij": "hebt gehad",
+            "hij/zij": "heeft gehad",
+            "wij": "hebben gehad",
+            "jullie": "hebben gehad",
+            "zij": "hebben gehad"
+          }
+        },
+        "future": {
+          "name": "Toekomende tijd (Future)",
+          "conjugations": {
+            "ik": "zal hebben",
+            "jij": "zult hebben",
+            "hij/zij": "zal hebben",
+            "wij": "zullen hebben",
+            "jullie": "zullen hebben",
+            "zij": "zullen hebben"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "zijn",
+      "english": "to be",
+      "stem": "ben",
+      "tenses": {
+        "present": {
+          "name": "Tegenwoordige tijd (Present)",
+          "conjugations": {
+            "ik": "ben",
+            "jij": "bent",
+            "hij/zij": "is",
+            "wij": "zijn",
+            "jullie": "zijn",
+            "zij": "zijn"
+          }
+        },
+        "past": {
+          "name": "Verleden tijd (Past)",
+          "conjugations": {
+            "ik": "was",
+            "jij": "was",
+            "hij/zij": "was",
+            "wij": "waren",
+            "jullie": "waren",
+            "zij": "waren"
+          }
+        },
+        "perfect": {
+          "name": "Voltooid tegenwoordige tijd (Perfect)",
+          "conjugations": {
+            "ik": "ben geweest",
+            "jij": "bent geweest",
+            "hij/zij": "is geweest",
+            "wij": "zijn geweest",
+            "jullie": "zijn geweest",
+            "zij": "zijn geweest"
+          }
+        },
+        "future": {
+          "name": "Toekomende tijd (Future)",
+          "conjugations": {
+            "ik": "zal zijn",
+            "jij": "zult zijn",
+            "hij/zij": "zal zijn",
+            "wij": "zullen zijn",
+            "jullie": "zullen zijn",
+            "zij": "zullen zijn"
+          }
+        }
+      }
+    }
+  ]
+}

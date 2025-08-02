@@ -8,6 +8,7 @@ const PRONOUNS = ['ik', 'jij', 'hij/zij', 'wij', 'jullie', 'zij']
 function VerbExercise({ 
   currentVerb, 
   currentPronoun,
+  currentTense,
   userAnswer,
   showResult, 
   isCorrect,
@@ -25,6 +26,11 @@ function VerbExercise({
         </div>
         <div className="exercise-translation">
           English: {currentVerb.english}
+        </div>
+        
+        {/* Tense Info */}
+        <div className="exercise-tense">
+          <strong>Tiempo:</strong> {currentVerb.tenses[currentTense].name}
         </div>
 
         {/* Exercise Prompt */}
@@ -64,7 +70,7 @@ function VerbExercise({
           {isCorrect ? '✅ Correct!' : '❌ Incorrect'}
         </div>
         <div className="verb-result-answer">
-          {currentPronoun} {currentVerb.conjugations[currentPronoun]}
+          {currentPronoun} {currentVerb.tenses[currentTense].conjugations[currentPronoun]}
         </div>
         {!isCorrect && (
           <div className="verb-result-user-answer">
@@ -76,13 +82,13 @@ function VerbExercise({
       {/* Complete Conjugation Table */}
       <div className="conjugation-table">
         <div className="conjugation-table-title">
-          Complete conjugation of "{currentVerb.infinitive}":
+          Complete conjugation of "{currentVerb.infinitive}" ({currentVerb.tenses[currentTense].name}):
         </div>
         <div className="conjugation-grid">
           {PRONOUNS.map(pronoun => (
             <div key={pronoun} className="conjugation-item">
               <span className="conjugation-pronoun">{pronoun}:</span>
-              <span>{currentVerb.conjugations[pronoun]}</span>
+              <span>{currentVerb.tenses[currentTense].conjugations[pronoun]}</span>
             </div>
           ))}
         </div>
