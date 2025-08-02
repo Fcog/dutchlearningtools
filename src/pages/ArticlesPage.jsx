@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import dutchNounsData from '../data/dutch-nouns.json'
+import rulesData from '../data/rules-articles.json'
 
 function ArticlesPage() {
   const navigate = useNavigate()
@@ -251,10 +252,36 @@ function ArticlesPage() {
                 color: '#28a745',
                 fontStyle: 'italic',
                 textTransform: 'capitalize',
-                marginBottom: '20px'
+                marginBottom: '15px'
               }}>
                 Category: {currentWord.category.replace('_', ' ')}
               </div>
+
+              {/* Rule Explanation */}
+              {currentWord.rule && rulesData[currentWord.rule] && (
+                <div style={{
+                  fontSize: '1em',
+                  color: '#6c757d',
+                  backgroundColor: '#f8f9fa',
+                  padding: '15px',
+                  borderRadius: '8px',
+                  border: '1px solid #e9ecef',
+                  marginBottom: '20px',
+                  textAlign: 'left'
+                }}>
+                  <div style={{
+                    fontWeight: 'bold',
+                    color: '#495057',
+                    marginBottom: '5px',
+                    textTransform: 'capitalize'
+                  }}>
+                    📖 Rule: {currentWord.rule.replace('-', ' ')}
+                  </div>
+                  <div style={{ lineHeight: '1.4' }}>
+                    {rulesData[currentWord.rule]}
+                  </div>
+                </div>
+              )}
 
               {/* Next Word Button */}
               <button

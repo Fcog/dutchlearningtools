@@ -1,1228 +1,1607 @@
 {
   "dutch_nouns": [
     {
-      "name": "man",
-      "article": "de",
-      "category": "people",
-      "translation": "man"
-    },
-    {
-      "name": "vrouw",
-      "article": "de",
-      "category": "people",
-      "translation": "woman"
-    },
-    {
-      "name": "kind",
-      "article": "het",
-      "category": "family",
-      "translation": "child"
-    },
-    {
-      "name": "dag",
-      "article": "de",
-      "category": "time",
-      "translation": "day"
-    },
-    {
-      "name": "jaar",
-      "article": "het",
-      "category": "time",
-      "translation": "year"
-    },
-    {
-      "name": "tijd",
-      "article": "de",
-      "category": "time",
-      "translation": "time"
-    },
-    {
-      "name": "huis",
-      "article": "het",
-      "category": "places",
-      "translation": "house"
-    },
-    {
-      "name": "stad",
-      "article": "de",
-      "category": "places",
-      "translation": "city"
-    },
-    {
-      "name": "land",
-      "article": "het",
-      "category": "places",
-      "translation": "country"
-    },
-    {
-      "name": "wereld",
-      "article": "de",
-      "category": "abstract",
-      "translation": "world"
-    },
-    {
-      "name": "mensen",
-      "article": "de",
-      "category": "people",
-      "translation": "people"
-    },
-    {
-      "name": "vader",
-      "article": "de",
-      "category": "family",
-      "translation": "father"
-    },
-    {
-      "name": "geld",
-      "article": "het",
-      "category": "abstract",
-      "translation": "money"
-    },
-    {
-      "name": "werk",
-      "article": "het",
-      "category": "work",
-      "translation": "work"
-    },
-    {
-      "name": "moeder",
-      "article": "de",
-      "category": "family",
-      "translation": "mother"
-    },
-    {
-      "name": "uur",
-      "article": "het",
-      "category": "time",
-      "translation": "hour"
-    },
-    {
-      "name": "naam",
-      "article": "de",
-      "category": "abstract",
-      "translation": "name"
-    },
-    {
-      "name": "keer",
-      "article": "de",
-      "category": "abstract",
-      "translation": "time"
-    },
-    {
-      "name": "kinderen",
-      "article": "de",
-      "category": "family",
-      "translation": "children"
-    },
-    {
-      "name": "jongen",
-      "article": "de",
-      "category": "people",
-      "translation": "boy"
-    },
-    {
-      "name": "vraag",
-      "article": "de",
-      "category": "abstract",
-      "translation": "question"
-    },
-    {
-      "name": "paar",
-      "article": "het",
-      "category": "abstract",
-      "translation": "couple"
-    },
-    {
-      "name": "eten",
-      "article": "het",
-      "category": "food_drink",
-      "translation": "food"
-    },
-    {
-      "name": "jongens",
-      "article": "de",
-      "category": "people",
-      "translation": "boys"
-    },
-    {
-      "name": "zoon",
-      "article": "de",
-      "category": "family",
-      "translation": "son"
-    },
-    {
       "name": "meisje",
       "article": "het",
       "category": "people",
-      "translation": "girl"
+      "translation": "girl",
+      "rule": "diminutive"
     },
     {
-      "name": "mannen",
-      "article": "de",
+      "name": "jongetje",
+      "article": "het",
       "category": "people",
-      "translation": "men"
+      "translation": "little boy",
+      "rule": "diminutive"
     },
     {
-      "name": "probleem",
-      "article": "het",
-      "category": "abstract",
-      "translation": "problem"
-    },
-    {
-      "name": "hoofd",
-      "article": "het",
-      "category": "body",
-      "translation": "head"
-    },
-    {
-      "name": "kant",
-      "article": "de",
-      "category": "abstract",
-      "translation": "side"
-    },
-    {
-      "name": "vrienden",
-      "article": "de",
-      "category": "people",
-      "translation": "friends"
-    },
-    {
-      "name": "familie",
-      "article": "de",
-      "category": "family",
-      "translation": "family"
-    },
-    {
-      "name": "politie",
-      "article": "de",
-      "category": "work",
-      "translation": "police"
-    },
-    {
-      "name": "minuten",
-      "article": "de",
-      "category": "time",
-      "translation": "minutes"
-    },
-    {
-      "name": "manier",
-      "article": "de",
-      "category": "abstract",
-      "translation": "way"
-    },
-    {
-      "name": "dagen",
-      "article": "de",
-      "category": "time",
-      "translation": "days"
-    },
-    {
-      "name": "plaats",
-      "article": "de",
-      "category": "places",
-      "translation": "place"
-    },
-    {
-      "name": "kans",
-      "article": "de",
-      "category": "abstract",
-      "translation": "chance"
-    },
-    {
-      "name": "hulp",
-      "article": "de",
-      "category": "abstract",
-      "translation": "help"
-    },
-    {
-      "name": "broer",
-      "article": "de",
-      "category": "family",
-      "translation": "brother"
-    },
-    {
-      "name": "school",
-      "article": "de",
-      "category": "places",
-      "translation": "school"
-    },
-    {
-      "name": "deur",
-      "article": "de",
-      "category": "objects",
-      "translation": "door"
-    },
-    {
-      "name": "plan",
-      "article": "het",
-      "category": "abstract",
-      "translation": "plan"
-    },
-    {
-      "name": "handen",
-      "article": "de",
-      "category": "body",
-      "translation": "hands"
-    },
-    {
-      "name": "dokter",
-      "article": "de",
-      "category": "work",
-      "translation": "doctor"
-    },
-    {
-      "name": "soort",
-      "article": "het",
-      "category": "abstract",
-      "translation": "type"
-    },
-    {
-      "name": "zaak",
-      "article": "de",
-      "category": "abstract",
-      "translation": "matter"
-    },
-    {
-      "name": "water",
+      "name": "bloempje",
       "article": "het",
       "category": "nature",
-      "translation": "water"
+      "translation": "little flower",
+      "rule": "diminutive"
     },
     {
-      "name": "problemen",
-      "article": "de",
-      "category": "abstract",
-      "translation": "problems"
-    },
-    {
-      "name": "week",
-      "article": "de",
-      "category": "time",
-      "translation": "week"
-    },
-    {
-      "name": "dochter",
-      "article": "de",
-      "category": "family",
-      "translation": "daughter"
-    },
-    {
-      "name": "vrouwen",
-      "article": "de",
-      "category": "people",
-      "translation": "women"
-    },
-    {
-      "name": "hart",
+      "name": "bier",
       "article": "het",
-      "category": "body",
-      "translation": "heart"
+      "category": "food_drink",
+      "translation": "beer",
+      "rule": "material"
     },
     {
-      "name": "bed",
-      "article": "het",
-      "category": "objects",
-      "translation": "bed"
-    },
-    {
-      "name": "nacht",
-      "article": "de",
-      "category": "time",
-      "translation": "night"
-    },
-    {
-      "name": "hand",
-      "article": "de",
-      "category": "body",
-      "translation": "hand"
-    },
-    {
-      "name": "idee",
-      "article": "het",
-      "category": "abstract",
-      "translation": "idea"
-    },
-    {
-      "name": "auto",
-      "article": "de",
-      "category": "transportation",
-      "translation": "car"
-    },
-    {
-      "name": "beetje",
-      "article": "het",
-      "category": "abstract",
-      "translation": "bit"
-    },
-    {
-      "name": "kop",
-      "article": "de",
-      "category": "body",
-      "translation": "head"
-    },
-    {
-      "name": "plek",
-      "article": "de",
-      "category": "places",
-      "translation": "spot"
-    },
-    {
-      "name": "nummer",
-      "article": "het",
-      "category": "abstract",
-      "translation": "number"
-    },
-    {
-      "name": "waarheid",
-      "article": "de",
-      "category": "abstract",
-      "translation": "truth"
-    },
-    {
-      "name": "baby",
-      "article": "de",
-      "category": "family",
-      "translation": "baby"
-    },
-    {
-      "name": "baas",
-      "article": "de",
-      "category": "work",
-      "translation": "boss"
-    },
-    {
-      "name": "gezicht",
-      "article": "het",
-      "category": "body",
-      "translation": "face"
-    },
-    {
-      "name": "begin",
-      "article": "het",
-      "category": "abstract",
-      "translation": "beginning"
-    },
-    {
-      "name": "mama",
-      "article": "de",
-      "category": "family",
-      "translation": "mom"
-    },
-    {
-      "name": "zaken",
-      "article": "de",
-      "category": "work",
-      "translation": "business"
-    },
-    {
-      "name": "nieuws",
-      "article": "het",
-      "category": "media",
-      "translation": "news"
-    },
-    {
-      "name": "liefde",
-      "article": "de",
-      "category": "emotions",
-      "translation": "love"
-    },
-    {
-      "name": "reden",
-      "article": "de",
-      "category": "abstract",
-      "translation": "reason"
-    },
-    {
-      "name": "fout",
-      "article": "de",
-      "category": "abstract",
-      "translation": "mistake"
-    },
-    {
-      "name": "maanden",
-      "article": "de",
-      "category": "time",
-      "translation": "months"
-    },
-    {
-      "name": "vent",
-      "article": "de",
-      "category": "people",
-      "translation": "guy"
-    },
-    {
-      "name": "vriendin",
-      "article": "de",
-      "category": "people",
-      "translation": "girlfriend"
-    },
-    {
-      "name": "team",
-      "article": "het",
-      "category": "work",
-      "translation": "team"
-    },
-    {
-      "name": "president",
-      "article": "de",
-      "category": "work",
-      "translation": "president"
-    },
-    {
-      "name": "oorlog",
-      "article": "de",
-      "category": "abstract",
-      "translation": "war"
-    },
-    {
-      "name": "jaren",
-      "article": "de",
-      "category": "time",
-      "translation": "years"
-    },
-    {
-      "name": "rest",
-      "article": "de",
-      "category": "abstract",
-      "translation": "rest"
-    },
-    {
-      "name": "schuld",
-      "article": "de",
-      "category": "abstract",
-      "translation": "fault"
-    },
-    {
-      "name": "avond",
-      "article": "de",
-      "category": "time",
-      "translation": "evening"
-    },
-    {
-      "name": "mond",
-      "article": "de",
-      "category": "body",
-      "translation": "mouth"
-    },
-    {
-      "name": "buurt",
-      "article": "de",
-      "category": "places",
-      "translation": "neighborhood"
-    },
-    {
-      "name": "telefoon",
-      "article": "de",
-      "category": "technology",
-      "translation": "phone"
-    },
-    {
-      "name": "wapen",
-      "article": "het",
-      "category": "objects",
-      "translation": "weapon"
-    },
-    {
-      "name": "ouders",
-      "article": "de",
-      "category": "family",
-      "translation": "parents"
-    },
-    {
-      "name": "stuk",
-      "article": "het",
-      "category": "abstract",
-      "translation": "piece"
-    },
-    {
-      "name": "rust",
-      "article": "de",
-      "category": "abstract",
-      "translation": "rest"
-    },
-    {
-      "name": "deel",
-      "article": "het",
-      "category": "abstract",
-      "translation": "part"
-    },
-    {
-      "name": "baan",
-      "article": "de",
-      "category": "work",
-      "translation": "job"
-    },
-    {
-      "name": "kapitein",
-      "article": "de",
-      "category": "work",
-      "translation": "captain"
-    },
-    {
-      "name": "geluk",
-      "article": "het",
-      "category": "emotions",
-      "translation": "luck"
-    },
-    {
-      "name": "schip",
-      "article": "het",
-      "category": "transportation",
-      "translation": "ship"
-    },
-    {
-      "name": "heren",
-      "article": "de",
-      "category": "people",
-      "translation": "gentlemen"
-    },
-    {
-      "name": "anderen",
-      "article": "de",
-      "category": "people",
-      "translation": "others"
-    },
-    {
-      "name": "lichaam",
-      "article": "het",
-      "category": "body",
-      "translation": "body"
-    },
-    {
-      "name": "vertrouwen",
-      "article": "het",
-      "category": "emotions",
-      "translation": "trust"
-    },
-    {
-      "name": "boek",
-      "article": "het",
-      "category": "objects",
-      "translation": "book"
-    },
-    {
-      "name": "kerel",
-      "article": "de",
-      "category": "people",
-      "translation": "guy"
-    },
-    {
-      "name": "geval",
-      "article": "het",
-      "category": "abstract",
-      "translation": "case"
-    },
-    {
-      "name": "miljoen",
-      "article": "het",
-      "category": "numbers",
-      "translation": "million"
-    },
-    {
-      "name": "haat",
-      "article": "de",
-      "category": "emotions",
-      "translation": "hate"
-    },
-    {
-      "name": "woord",
-      "article": "het",
-      "category": "language",
-      "translation": "word"
-    },
-    {
-      "name": "hond",
-      "article": "de",
-      "category": "animals",
-      "translation": "dog"
-    },
-    {
-      "name": "weken",
-      "article": "de",
-      "category": "time",
-      "translation": "weeks"
-    },
-    {
-      "name": "film",
-      "article": "de",
-      "category": "media",
-      "translation": "movie"
-    },
-    {
-      "name": "antwoord",
-      "article": "het",
-      "category": "abstract",
-      "translation": "answer"
-    },
-    {
-      "name": "licht",
+      "name": "goud",
       "article": "het",
       "category": "nature",
-      "translation": "light"
+      "translation": "gold",
+      "rule": "material"
     },
     {
-      "name": "pa",
-      "article": "de",
-      "category": "family",
-      "translation": "dad"
-    },
-    {
-      "name": "lieverd",
-      "article": "de",
-      "category": "people",
-      "translation": "darling"
-    },
-    {
-      "name": "mens",
-      "article": "de",
-      "category": "people",
-      "translation": "person"
-    },
-    {
-      "name": "stap",
-      "article": "de",
-      "category": "abstract",
-      "translation": "step"
-    },
-    {
-      "name": "kantoor",
+      "name": "hout",
       "article": "het",
-      "category": "places",
-      "translation": "office"
+      "category": "nature",
+      "translation": "wood",
+      "rule": "material"
     },
     {
-      "name": "wapens",
-      "article": "de",
-      "category": "objects",
-      "translation": "weapons"
-    },
-    {
-      "name": "moord",
-      "article": "de",
-      "category": "crime",
-      "translation": "murder"
-    },
-    {
-      "name": "heer",
-      "article": "de",
-      "category": "people",
-      "translation": "gentleman"
-    },
-    {
-      "name": "einde",
-      "article": "het",
-      "category": "abstract",
-      "translation": "end"
-    },
-    {
-      "name": "gang",
-      "article": "de",
-      "category": "places",
-      "translation": "hallway"
-    },
-    {
-      "name": "spel",
+      "name": "voetbal",
       "article": "het",
       "category": "entertainment",
-      "translation": "game"
+      "translation": "football",
+      "rule": "sport-game"
     },
     {
-      "name": "informatie",
-      "article": "de",
-      "category": "abstract",
-      "translation": "information"
-    },
-    {
-      "name": "dames",
-      "article": "de",
-      "category": "people",
-      "translation": "ladies"
-    },
-    {
-      "name": "pap",
-      "article": "de",
-      "category": "family",
-      "translation": "dad"
-    },
-    {
-      "name": "seks",
-      "article": "de",
-      "category": "abstract",
-      "translation": "sex"
-    },
-    {
-      "name": "gevoel",
+      "name": "tennis",
       "article": "het",
-      "category": "emotions",
-      "translation": "feeling"
+      "category": "entertainment",
+      "translation": "tennis",
+      "rule": "sport-game"
     },
     {
-      "name": "plezier",
+      "name": "schaken",
       "article": "het",
-      "category": "emotions",
-      "translation": "fun"
+      "category": "entertainment",
+      "translation": "chess",
+      "rule": "sport-game"
     },
     {
-      "name": "meisjes",
-      "article": "de",
-      "category": "people",
-      "translation": "girls"
-    },
-    {
-      "name": "foto",
-      "article": "de",
-      "category": "objects",
-      "translation": "photo"
-    },
-    {
-      "name": "lucht",
-      "article": "de",
-      "category": "nature",
-      "translation": "air"
-    },
-    {
-      "name": "grond",
-      "article": "de",
-      "category": "nature",
-      "translation": "ground"
-    },
-    {
-      "name": "koffie",
-      "article": "de",
-      "category": "food_drink",
-      "translation": "coffee"
-    },
-    {
-      "name": "onderzoek",
+      "name": "Nederlands",
       "article": "het",
-      "category": "work",
-      "translation": "research"
-    },
-    {
-      "name": "idioot",
-      "article": "de",
-      "category": "people",
-      "translation": "idiot"
-    },
-    {
-      "name": "ziekenhuis",
-      "article": "het",
-      "category": "places",
-      "translation": "hospital"
-    },
-    {
-      "name": "persoon",
-      "article": "de",
-      "category": "people",
-      "translation": "person"
-    },
-    {
-      "name": "kracht",
-      "article": "de",
-      "category": "abstract",
-      "translation": "strength"
-    },
-    {
-      "name": "gebruik",
-      "article": "het",
-      "category": "abstract",
-      "translation": "use"
-    },
-    {
-      "name": "punt",
-      "article": "het",
-      "category": "abstract",
-      "translation": "point"
-    },
-    {
-      "name": "toekomst",
-      "article": "de",
-      "category": "time",
-      "translation": "future"
-    },
-    {
-      "name": "leger",
-      "article": "het",
-      "category": "military",
-      "translation": "army"
-    },
-    {
-      "name": "vuur",
-      "article": "het",
-      "category": "nature",
-      "translation": "fire"
-    },
-    {
-      "name": "bewijs",
-      "article": "het",
-      "category": "abstract",
-      "translation": "proof"
-    },
-    {
-      "name": "controle",
-      "article": "de",
-      "category": "abstract",
-      "translation": "control"
-    },
-    {
-      "name": "tv",
-      "article": "de",
-      "category": "technology",
-      "translation": "TV"
-    },
-    {
-      "name": "woorden",
-      "article": "de",
       "category": "language",
-      "translation": "words"
+      "translation": "Dutch",
+      "rule": "language"
     },
     {
-      "name": "droom",
-      "article": "de",
-      "category": "abstract",
-      "translation": "dream"
-    },
-    {
-      "name": "pistool",
+      "name": "Arabisch",
       "article": "het",
-      "category": "objects",
-      "translation": "gun"
+      "category": "language",
+      "translation": "Arabic",
+      "rule": "language"
     },
     {
-      "name": "ongeluk",
+      "name": "Engels",
       "article": "het",
-      "category": "abstract",
-      "translation": "accident"
+      "category": "language",
+      "translation": "English",
+      "rule": "language"
     },
     {
-      "name": "geheim",
-      "article": "het",
-      "category": "abstract",
-      "translation": "secret"
-    },
-    {
-      "name": "vliegtuig",
-      "article": "het",
-      "category": "transportation",
-      "translation": "airplane"
-    },
-    {
-      "name": "bank",
-      "article": "de",
-      "category": "places",
-      "translation": "bank"
-    },
-    {
-      "name": "generaal",
-      "article": "de",
-      "category": "military",
-      "translation": "general"
-    },
-    {
-      "name": "dienst",
-      "article": "de",
-      "category": "work",
-      "translation": "service"
-    },
-    {
-      "name": "park",
-      "article": "het",
-      "category": "places",
-      "translation": "park"
-    },
-    {
-      "name": "regering",
-      "article": "de",
-      "category": "politics",
-      "translation": "government"
-    },
-    {
-      "name": "sheriff",
-      "article": "de",
-      "category": "work",
-      "translation": "sheriff"
-    },
-    {
-      "name": "dak",
-      "article": "het",
-      "category": "objects",
-      "translation": "roof"
-    },
-    {
-      "name": "zelfmoord",
-      "article": "de",
-      "category": "abstract",
-      "translation": "suicide"
-    },
-    {
-      "name": "adem",
-      "article": "de",
-      "category": "body",
-      "translation": "breath"
-    },
-    {
-      "name": "nek",
-      "article": "de",
-      "category": "body",
-      "translation": "neck"
-    },
-    {
-      "name": "brug",
-      "article": "de",
-      "category": "places",
-      "translation": "bridge"
-    },
-    {
-      "name": "bezoek",
-      "article": "het",
-      "category": "abstract",
-      "translation": "visit"
-    },
-    {
-      "name": "bar",
-      "article": "de",
-      "category": "places",
-      "translation": "bar"
-    },
-    {
-      "name": "ijs",
+      "name": "noorden",
       "article": "het",
       "category": "nature",
-      "translation": "ice"
+      "translation": "north",
+      "rule": "direction"
     },
     {
-      "name": "aantal",
+      "name": "zuiden",
       "article": "het",
-      "category": "numbers",
-      "translation": "number"
+      "category": "nature",
+      "translation": "south",
+      "rule": "direction"
+    },
+    {
+      "name": "westen",
+      "article": "het",
+      "category": "nature",
+      "translation": "west",
+      "rule": "direction"
     },
     {
       "name": "geweer",
       "article": "het",
       "category": "objects",
-      "translation": "rifle"
+      "translation": "rifle",
+      "rule": "prefix-ge"
     },
     {
-      "name": "beurt",
-      "article": "de",
-      "category": "abstract",
-      "translation": "turn"
-    },
-    {
-      "name": "voeten",
-      "article": "de",
-      "category": "body",
-      "translation": "feet"
-    },
-    {
-      "name": "zingen",
+      "name": "verstand",
       "article": "het",
-      "category": "entertainment",
-      "translation": "singing"
-    },
-    {
-      "name": "toestemming",
-      "article": "de",
       "category": "abstract",
-      "translation": "permission"
+      "translation": "understanding",
+      "rule": "prefix-ver"
     },
     {
-      "name": "vlees",
+      "name": "ontbijt",
       "article": "het",
       "category": "food_drink",
-      "translation": "meat"
+      "translation": "breakfast",
+      "rule": "prefix-ont"
     },
     {
-      "name": "richting",
-      "article": "de",
-      "category": "abstract",
-      "translation": "direction"
-    },
-    {
-      "name": "ruzie",
-      "article": "de",
-      "category": "emotions",
-      "translation": "fight"
-    },
-    {
-      "name": "rekening",
-      "article": "de",
-      "category": "abstract",
-      "translation": "bill"
-    },
-    {
-      "name": "monster",
+      "name": "communisme",
       "article": "het",
-      "category": "fantasy",
-      "translation": "monster"
+      "category": "abstract",
+      "translation": "communism",
+      "rule": "suffix-isme"
     },
     {
-      "name": "verrassing",
-      "article": "de",
-      "category": "emotions",
-      "translation": "surprise"
+      "name": "instrument",
+      "article": "het",
+      "category": "objects",
+      "translation": "instrument",
+      "rule": "suffix-ment"
     },
     {
-      "name": "rechter",
-      "article": "de",
-      "category": "work",
-      "translation": "judge"
+      "name": "museum",
+      "article": "het",
+      "category": "places",
+      "translation": "museum",
+      "rule": "suffix-um"
     },
     {
-      "name": "gasten",
-      "article": "de",
-      "category": "people",
-      "translation": "guests"
-    },
-    {
-      "name": "radio",
-      "article": "de",
-      "category": "technology",
-      "translation": "radio"
-    },
-    {
-      "name": "energie",
+      "name": "waarheid",
       "article": "de",
       "category": "abstract",
-      "translation": "energy"
+      "translation": "truth",
+      "rule": "suffix-heid"
     },
     {
       "name": "kennis",
       "article": "de",
       "category": "abstract",
-      "translation": "knowledge"
+      "translation": "knowledge",
+      "rule": "suffix-nis"
+    },
+    {
+      "name": "liefde",
+      "article": "de",
+      "category": "emotions",
+      "translation": "love",
+      "rule": "suffix-de"
+    },
+    {
+      "name": "familie",
+      "article": "de",
+      "category": "people",
+      "translation": "family",
+      "rule": "suffix-ie"
+    },
+    {
+      "name": "biologie",
+      "article": "de",
+      "category": "science",
+      "translation": "biology",
+      "rule": "suffix-logie"
+    },
+    {
+      "name": "bibliotheek",
+      "article": "de",
+      "category": "places",
+      "translation": "library",
+      "rule": "suffix-theek"
+    },
+    {
+      "name": "stabiliteit",
+      "article": "de",
+      "category": "abstract",
+      "translation": "stability",
+      "rule": "suffix-teit"
+    },
+    {
+      "name": "natuur",
+      "article": "de",
+      "category": "nature",
+      "translation": "nature",
+      "rule": "suffix-tuur"
+    },
+    {
+      "name": "appel",
+      "article": "de",
+      "category": "nature",
+      "translation": "apple",
+      "rule": "fruit"
+    },
+    {
+      "name": "peer",
+      "article": "de",
+      "category": "nature",
+      "translation": "pear",
+      "rule": "fruit"
+    },
+    {
+      "name": "eik",
+      "article": "de",
+      "category": "nature",
+      "translation": "oak",
+      "rule": "tree-plant"
+    },
+    {
+      "name": "Schelde",
+      "article": "de",
+      "category": "geography",
+      "translation": "Scheldt (river)",
+      "rule": "river-mountain"
+    },
+    {
+      "name": "Rijn",
+      "article": "de",
+      "category": "geography",
+      "translation": "Rhine (river)",
+      "rule": "river-mountain"
+    },
+    {
+      "name": "Alpen",
+      "article": "de",
+      "category": "geography",
+      "translation": "Alps (mountains)",
+      "rule": "river-mountain"
+    },
+    {
+      "name": "man",
+      "article": "de",
+      "category": "people",
+      "translation": "man",
+      "rule": "common-de"
+    },
+    {
+      "name": "vrouw",
+      "article": "de",
+      "category": "people",
+      "translation": "woman",
+      "rule": "common-de"
+    },
+    {
+      "name": "kind",
+      "article": "het",
+      "category": "family",
+      "translation": "child",
+      "rule": "common-het"
+    },
+    {
+      "name": "dag",
+      "article": "de",
+      "category": "time",
+      "translation": "day",
+      "rule": "common-de"
+    },
+    {
+      "name": "jaar",
+      "article": "het",
+      "category": "time",
+      "translation": "year",
+      "rule": "common-het"
+    },
+    {
+      "name": "tijd",
+      "article": "de",
+      "category": "time",
+      "translation": "time",
+      "rule": "common-de"
+    },
+    {
+      "name": "huis",
+      "article": "het",
+      "category": "places",
+      "translation": "house",
+      "rule": "common-het"
+    },
+    {
+      "name": "stad",
+      "article": "de",
+      "category": "places",
+      "translation": "city",
+      "rule": "common-de"
+    },
+    {
+      "name": "land",
+      "article": "het",
+      "category": "places",
+      "translation": "country",
+      "rule": "common-het"
+    },
+    {
+      "name": "wereld",
+      "article": "de",
+      "category": "abstract",
+      "translation": "world",
+      "rule": "common-de"
+    },
+    {
+      "name": "mensen",
+      "article": "de",
+      "category": "people",
+      "translation": "people",
+      "rule": "common-de"
+    },
+    {
+      "name": "vader",
+      "article": "de",
+      "category": "family",
+      "translation": "father",
+      "rule": "common-de"
+    },
+    {
+      "name": "geld",
+      "article": "het",
+      "category": "abstract",
+      "translation": "money",
+      "rule": "common-het"
+    },
+    {
+      "name": "werk",
+      "article": "het",
+      "category": "work",
+      "translation": "work",
+      "rule": "common-het"
+    },
+    {
+      "name": "moeder",
+      "article": "de",
+      "category": "family",
+      "translation": "mother",
+      "rule": "common-de"
+    },
+    {
+      "name": "uur",
+      "article": "het",
+      "category": "time",
+      "translation": "hour",
+      "rule": "common-het"
+    },
+    {
+      "name": "naam",
+      "article": "de",
+      "category": "abstract",
+      "translation": "name",
+      "rule": "common-de"
+    },
+    {
+      "name": "keer",
+      "article": "de",
+      "category": "abstract",
+      "translation": "time",
+      "rule": "common-de"
+    },
+    {
+      "name": "kinderen",
+      "article": "de",
+      "category": "family",
+      "translation": "children",
+      "rule": "common-de"
+    },
+    {
+      "name": "jongen",
+      "article": "de",
+      "category": "people",
+      "translation": "boy",
+      "rule": "common-de"
+    },
+    {
+      "name": "vraag",
+      "article": "de",
+      "category": "abstract",
+      "translation": "question",
+      "rule": "common-de"
+    },
+    {
+      "name": "paar",
+      "article": "het",
+      "category": "abstract",
+      "translation": "couple",
+      "rule": "common-het"
+    },
+    {
+      "name": "eten",
+      "article": "het",
+      "category": "food_drink",
+      "translation": "food",
+      "rule": "common-het"
+    },
+    {
+      "name": "zoon",
+      "article": "de",
+      "category": "family",
+      "translation": "son",
+      "rule": "common-de"
+    },
+    {
+      "name": "mannen",
+      "article": "de",
+      "category": "people",
+      "translation": "men",
+      "rule": "common-de"
+    },
+    {
+      "name": "probleem",
+      "article": "het",
+      "category": "abstract",
+      "translation": "problem",
+      "rule": "common-het"
+    },
+    {
+      "name": "problemen",
+      "article": "de",
+      "category": "abstract",
+      "translation": "problems",
+      "rule": "common-de"
+    },
+    {
+      "name": "hoofd",
+      "article": "het",
+      "category": "body",
+      "translation": "head",
+      "rule": "common-het"
+    },
+    {
+      "name": "kant",
+      "article": "de",
+      "category": "abstract",
+      "translation": "side",
+      "rule": "common-de"
+    },
+    {
+      "name": "vriend",
+      "article": "de",
+      "category": "people",
+      "translation": "friend",
+      "rule": "common-de"
+    },
+    {
+      "name": "politie",
+      "article": "de",
+      "category": "work",
+      "translation": "police",
+      "rule": "suffix-ie"
+    },
+    {
+      "name": "minuut",
+      "article": "de",
+      "category": "time",
+      "translation": "minute",
+      "rule": "common-de"
+    },
+    {
+      "name": "manier",
+      "article": "de",
+      "category": "abstract",
+      "translation": "way",
+      "rule": "common-de"
+    },
+    {
+      "name": "plaats",
+      "article": "de",
+      "category": "places",
+      "translation": "place",
+      "rule": "common-de"
+    },
+    {
+      "name": "kans",
+      "article": "de",
+      "category": "abstract",
+      "translation": "chance",
+      "rule": "common-de"
+    },
+    {
+      "name": "hulp",
+      "article": "de",
+      "category": "abstract",
+      "translation": "help",
+      "rule": "common-de"
+    },
+    {
+      "name": "broer",
+      "article": "de",
+      "category": "family",
+      "translation": "brother",
+      "rule": "common-de"
+    },
+    {
+      "name": "school",
+      "article": "de",
+      "category": "places",
+      "translation": "school",
+      "rule": "common-de"
+    },
+    {
+      "name": "deur",
+      "article": "de",
+      "category": "objects",
+      "translation": "door",
+      "rule": "common-de"
+    },
+    {
+      "name": "plan",
+      "article": "het",
+      "category": "abstract",
+      "translation": "plan",
+      "rule": "common-het"
+    },
+    {
+      "name": "hand",
+      "article": "de",
+      "category": "body",
+      "translation": "hands",
+      "rule": "common-de"
+    },
+    {
+      "name": "dokter",
+      "article": "de",
+      "category": "work",
+      "translation": "doctor",
+      "rule": "common-de"
+    },
+    {
+      "name": "soort",
+      "article": "het",
+      "category": "abstract",
+      "translation": "type",
+      "rule": "common-het"
+    },
+    {
+      "name": "zaak",
+      "article": "de",
+      "category": "abstract",
+      "translation": "matter",
+      "rule": "common-de"
+    },
+    {
+      "name": "water",
+      "article": "het",
+      "category": "nature",
+      "translation": "water",
+      "rule": "material"
+    },
+    {
+      "name": "week",
+      "article": "de",
+      "category": "time",
+      "translation": "week",
+      "rule": "common-de"
+    },
+    {
+      "name": "dochter",
+      "article": "de",
+      "category": "family",
+      "translation": "daughter",
+      "rule": "common-de"
+    },
+    {
+      "name": "vrouwen",
+      "article": "de",
+      "category": "people",
+      "translation": "women",
+      "rule": "common-de"
+    },
+    {
+      "name": "hart",
+      "article": "het",
+      "category": "body",
+      "translation": "heart",
+      "rule": "common-het"
+    },
+    {
+      "name": "bed",
+      "article": "het",
+      "category": "objects",
+      "translation": "bed",
+      "rule": "common-het"
+    },
+    {
+      "name": "nacht",
+      "article": "de",
+      "category": "time",
+      "translation": "night",
+      "rule": "common-de"
+    },
+    {
+      "name": "idee",
+      "article": "het",
+      "category": "abstract",
+      "translation": "idea",
+      "rule": "common-het"
+    },
+    {
+      "name": "auto",
+      "article": "de",
+      "category": "transportation",
+      "translation": "car",
+      "rule": "common-de"
+    },
+    {
+      "name": "beetje",
+      "article": "het",
+      "category": "abstract",
+      "translation": "bit",
+      "rule": "diminutive"
+    },
+    {
+      "name": "kop",
+      "article": "de",
+      "category": "body",
+      "translation": "head",
+      "rule": "common-de"
+    },
+    {
+      "name": "plek",
+      "article": "de",
+      "category": "places",
+      "translation": "spot",
+      "rule": "common-de"
+    },
+    {
+      "name": "nummer",
+      "article": "het",
+      "category": "abstract",
+      "translation": "number",
+      "rule": "common-het"
+    },
+    {
+      "name": "baby",
+      "article": "de",
+      "category": "family",
+      "translation": "baby",
+      "rule": "common-de"
+    },
+    {
+      "name": "baas",
+      "article": "de",
+      "category": "work",
+      "translation": "boss",
+      "rule": "common-de"
+    },
+    {
+      "name": "gezicht",
+      "article": "het",
+      "category": "body",
+      "translation": "face",
+      "rule": "prefix-ge"
+    },
+    {
+      "name": "begin",
+      "article": "het",
+      "category": "abstract",
+      "translation": "beginning",
+      "rule": "common-het"
+    },
+    {
+      "name": "mama",
+      "article": "de",
+      "category": "family",
+      "translation": "mom",
+      "rule": "common-de"
+    },
+    {
+      "name": "nieuws",
+      "article": "het",
+      "category": "media",
+      "translation": "news",
+      "rule": "common-het"
+    },
+    {
+      "name": "reden",
+      "article": "de",
+      "category": "abstract",
+      "translation": "reason",
+      "rule": "common-de"
+    },
+    {
+      "name": "fout",
+      "article": "de",
+      "category": "abstract",
+      "translation": "mistake",
+      "rule": "common-de"
+    },
+    {
+      "name": "maanden",
+      "article": "de",
+      "category": "time",
+      "translation": "months",
+      "rule": "common-de"
+    },
+    {
+      "name": "vent",
+      "article": "de",
+      "category": "people",
+      "translation": "guy",
+      "rule": "common-de"
+    },
+    {
+      "name": "vriendin",
+      "article": "de",
+      "category": "people",
+      "translation": "girlfriend",
+      "rule": "common-de"
+    },
+    {
+      "name": "team",
+      "article": "het",
+      "category": "work",
+      "translation": "team",
+      "rule": "common-het"
+    },
+    {
+      "name": "president",
+      "article": "de",
+      "category": "work",
+      "translation": "president",
+      "rule": "common-de"
+    },
+    {
+      "name": "oorlog",
+      "article": "de",
+      "category": "abstract",
+      "translation": "war",
+      "rule": "common-de"
+    },
+    {
+      "name": "jaren",
+      "article": "de",
+      "category": "time",
+      "translation": "years",
+      "rule": "common-de"
+    },
+    {
+      "name": "rest",
+      "article": "de",
+      "category": "abstract",
+      "translation": "rest",
+      "rule": "common-de"
+    },
+    {
+      "name": "schuld",
+      "article": "de",
+      "category": "abstract",
+      "translation": "fault",
+      "rule": "common-de"
+    },
+    {
+      "name": "avond",
+      "article": "de",
+      "category": "time",
+      "translation": "evening",
+      "rule": "common-de"
+    },
+    {
+      "name": "mond",
+      "article": "de",
+      "category": "body",
+      "translation": "mouth",
+      "rule": "common-de"
+    },
+    {
+      "name": "buurt",
+      "article": "de",
+      "category": "places",
+      "translation": "neighborhood",
+      "rule": "common-de"
+    },
+    {
+      "name": "telefoon",
+      "article": "de",
+      "category": "technology",
+      "translation": "phone",
+      "rule": "common-de"
+    },
+    {
+      "name": "wapen",
+      "article": "het",
+      "category": "objects",
+      "translation": "weapon",
+      "rule": "common-het"
+    },
+    {
+      "name": "ouders",
+      "article": "de",
+      "category": "family",
+      "translation": "parents",
+      "rule": "common-de"
+    },
+    {
+      "name": "stuk",
+      "article": "het",
+      "category": "abstract",
+      "translation": "piece",
+      "rule": "common-het"
+    },
+    {
+      "name": "rust",
+      "article": "de",
+      "category": "abstract",
+      "translation": "rest",
+      "rule": "common-de"
+    },
+    {
+      "name": "deel",
+      "article": "het",
+      "category": "abstract",
+      "translation": "part",
+      "rule": "common-het"
+    },
+    {
+      "name": "baan",
+      "article": "de",
+      "category": "work",
+      "translation": "job",
+      "rule": "common-de"
+    },
+    {
+      "name": "kapitein",
+      "article": "de",
+      "category": "work",
+      "translation": "captain",
+      "rule": "common-de"
+    },
+    {
+      "name": "geluk",
+      "article": "het",
+      "category": "emotions",
+      "translation": "luck",
+      "rule": "prefix-ge"
+    },
+    {
+      "name": "schip",
+      "article": "het",
+      "category": "transportation",
+      "translation": "ship",
+      "rule": "common-het"
+    },
+    {
+      "name": "heren",
+      "article": "de",
+      "category": "people",
+      "translation": "gentlemen",
+      "rule": "common-de"
+    },
+    {
+      "name": "anderen",
+      "article": "de",
+      "category": "people",
+      "translation": "others",
+      "rule": "common-de"
+    },
+    {
+      "name": "lichaam",
+      "article": "het",
+      "category": "body",
+      "translation": "body",
+      "rule": "common-het"
+    },
+    {
+      "name": "vertrouwen",
+      "article": "het",
+      "category": "emotions",
+      "translation": "trust",
+      "rule": "prefix-ver"
+    },
+    {
+      "name": "boek",
+      "article": "het",
+      "category": "objects",
+      "translation": "book",
+      "rule": "common-het"
+    },
+    {
+      "name": "kerel",
+      "article": "de",
+      "category": "people",
+      "translation": "guy",
+      "rule": "common-de"
+    },
+    {
+      "name": "geval",
+      "article": "het",
+      "category": "abstract",
+      "translation": "case",
+      "rule": "prefix-ge"
+    },
+    {
+      "name": "miljoen",
+      "article": "het",
+      "category": "numbers",
+      "translation": "million",
+      "rule": "common-het"
+    },
+    {
+      "name": "haat",
+      "article": "de",
+      "category": "emotions",
+      "translation": "hate",
+      "rule": "common-de"
+    },
+    {
+      "name": "woord",
+      "article": "het",
+      "category": "language",
+      "translation": "word",
+      "rule": "language"
+    },
+    {
+      "name": "hond",
+      "article": "de",
+      "category": "animals",
+      "translation": "dog",
+      "rule": "common-de"
+    },
+    {
+      "name": "weken",
+      "article": "de",
+      "category": "time",
+      "translation": "weeks",
+      "rule": "common-de"
+    },
+    {
+      "name": "film",
+      "article": "de",
+      "category": "media",
+      "translation": "movie",
+      "rule": "common-de"
+    },
+    {
+      "name": "antwoord",
+      "article": "het",
+      "category": "abstract",
+      "translation": "answer",
+      "rule": "common-het"
+    },
+    {
+      "name": "licht",
+      "article": "het",
+      "category": "nature",
+      "translation": "light",
+      "rule": "common-het"
+    },
+    {
+      "name": "pa",
+      "article": "de",
+      "category": "family",
+      "translation": "dad",
+      "rule": "common-de"
+    },
+    {
+      "name": "lieverd",
+      "article": "de",
+      "category": "people",
+      "translation": "darling",
+      "rule": "common-de"
+    },
+    {
+      "name": "mens",
+      "article": "de",
+      "category": "people",
+      "translation": "person",
+      "rule": "common-de"
+    },
+    {
+      "name": "stap",
+      "article": "de",
+      "category": "abstract",
+      "translation": "step",
+      "rule": "common-de"
+    },
+    {
+      "name": "kantoor",
+      "article": "het",
+      "category": "places",
+      "translation": "office",
+      "rule": "common-het"
+    },
+    {
+      "name": "wapens",
+      "article": "de",
+      "category": "objects",
+      "translation": "weapons",
+      "rule": "common-de"
+    },
+    {
+      "name": "moord",
+      "article": "de",
+      "category": "crime",
+      "translation": "murder",
+      "rule": "common-de"
+    },
+    {
+      "name": "heer",
+      "article": "de",
+      "category": "people",
+      "translation": "gentleman",
+      "rule": "common-de"
+    },
+    {
+      "name": "einde",
+      "article": "het",
+      "category": "abstract",
+      "translation": "end",
+      "rule": "common-het"
+    },
+    {
+      "name": "gang",
+      "article": "de",
+      "category": "places",
+      "translation": "hallway",
+      "rule": "common-de"
+    },
+    {
+      "name": "spel",
+      "article": "het",
+      "category": "entertainment",
+      "translation": "game",
+      "rule": "sport-game"
+    },
+    {
+      "name": "informatie",
+      "article": "de",
+      "category": "abstract",
+      "translation": "information",
+      "rule": "suffix-ie"
+    },
+    {
+      "name": "dame",
+      "article": "de",
+      "category": "people",
+      "translation": "lady",
+      "rule": "common-de"
+    },
+    {
+      "name": "pap",
+      "article": "de",
+      "category": "family",
+      "translation": "dad",
+      "rule": "common-de"
+    },
+    {
+      "name": "seks",
+      "article": "de",
+      "category": "abstract",
+      "translation": "sex",
+      "rule": "common-de"
+    },
+    {
+      "name": "gevoel",
+      "article": "het",
+      "category": "emotions",
+      "translation": "feeling",
+      "rule": "prefix-ge"
+    },
+    {
+      "name": "plezier",
+      "article": "het",
+      "category": "emotions",
+      "translation": "fun",
+      "rule": "common-het"
+    },
+    {
+      "name": "meisjes",
+      "article": "de",
+      "category": "people",
+      "translation": "girls",
+      "rule": "common-de"
+    },
+    {
+      "name": "foto",
+      "article": "de",
+      "category": "objects",
+      "translation": "photo",
+      "rule": "common-de"
+    },
+    {
+      "name": "lucht",
+      "article": "de",
+      "category": "nature",
+      "translation": "air",
+      "rule": "common-de"
+    },
+    {
+      "name": "grond",
+      "article": "de",
+      "category": "nature",
+      "translation": "ground",
+      "rule": "common-de"
+    },
+    {
+      "name": "koffie",
+      "article": "de",
+      "category": "food_drink",
+      "translation": "coffee",
+      "rule": "suffix-ie"
+    },
+    {
+      "name": "onderzoek",
+      "article": "het",
+      "category": "work",
+      "translation": "research",
+      "rule": "common-het"
+    },
+    {
+      "name": "idioot",
+      "article": "de",
+      "category": "people",
+      "translation": "idiot",
+      "rule": "common-de"
+    },
+    {
+      "name": "ziekenhuis",
+      "article": "het",
+      "category": "places",
+      "translation": "hospital",
+      "rule": "common-het"
+    },
+    {
+      "name": "persoon",
+      "article": "de",
+      "category": "people",
+      "translation": "person",
+      "rule": "common-de"
+    },
+    {
+      "name": "kracht",
+      "article": "de",
+      "category": "abstract",
+      "translation": "strength",
+      "rule": "common-de"
+    },
+    {
+      "name": "gebruik",
+      "article": "het",
+      "category": "abstract",
+      "translation": "use",
+      "rule": "prefix-ge"
+    },
+    {
+      "name": "punt",
+      "article": "het",
+      "category": "abstract",
+      "translation": "point",
+      "rule": "common-het"
+    },
+    {
+      "name": "toekomst",
+      "article": "de",
+      "category": "time",
+      "translation": "future",
+      "rule": "common-de"
+    },
+    {
+      "name": "leger",
+      "article": "het",
+      "category": "military",
+      "translation": "army",
+      "rule": "common-het"
+    },
+    {
+      "name": "vuur",
+      "article": "het",
+      "category": "nature",
+      "translation": "fire",
+      "rule": "common-het"
+    },
+    {
+      "name": "bewijs",
+      "article": "het",
+      "category": "abstract",
+      "translation": "proof",
+      "rule": "common-het"
+    },
+    {
+      "name": "controle",
+      "article": "de",
+      "category": "abstract",
+      "translation": "control",
+      "rule": "common-de"
+    },
+    {
+      "name": "tv",
+      "article": "de",
+      "category": "technology",
+      "translation": "TV",
+      "rule": "common-de"
+    },
+    {
+      "name": "woorden",
+      "article": "de",
+      "category": "language",
+      "translation": "words",
+      "rule": "common-de"
+    },
+    {
+      "name": "droom",
+      "article": "de",
+      "category": "abstract",
+      "translation": "dream",
+      "rule": "common-de"
+    },
+    {
+      "name": "pistool",
+      "article": "het",
+      "category": "objects",
+      "translation": "gun",
+      "rule": "common-het"
+    },
+    {
+      "name": "ongeluk",
+      "article": "het",
+      "category": "abstract",
+      "translation": "accident",
+      "rule": "common-het"
+    },
+    {
+      "name": "geheim",
+      "article": "het",
+      "category": "abstract",
+      "translation": "secret",
+      "rule": "prefix-ge"
+    },
+    {
+      "name": "vliegtuig",
+      "article": "het",
+      "category": "transportation",
+      "translation": "airplane",
+      "rule": "common-het"
+    },
+    {
+      "name": "bank",
+      "article": "de",
+      "category": "places",
+      "translation": "bank",
+      "rule": "common-de"
+    },
+    {
+      "name": "generaal",
+      "article": "de",
+      "category": "military",
+      "translation": "general",
+      "rule": "common-de"
+    },
+    {
+      "name": "dienst",
+      "article": "de",
+      "category": "work",
+      "translation": "service",
+      "rule": "common-de"
+    },
+    {
+      "name": "park",
+      "article": "het",
+      "category": "places",
+      "translation": "park",
+      "rule": "common-het"
+    },
+    {
+      "name": "regering",
+      "article": "de",
+      "category": "politics",
+      "translation": "government",
+      "rule": "common-de"
+    },
+    {
+      "name": "sheriff",
+      "article": "de",
+      "category": "work",
+      "translation": "sheriff",
+      "rule": "common-de"
+    },
+    {
+      "name": "dak",
+      "article": "het",
+      "category": "objects",
+      "translation": "roof",
+      "rule": "common-het"
+    },
+    {
+      "name": "zelfmoord",
+      "article": "de",
+      "category": "abstract",
+      "translation": "suicide",
+      "rule": "common-de"
+    },
+    {
+      "name": "adem",
+      "article": "de",
+      "category": "body",
+      "translation": "breath",
+      "rule": "common-de"
+    },
+    {
+      "name": "nek",
+      "article": "de",
+      "category": "body",
+      "translation": "neck",
+      "rule": "common-de"
+    },
+    {
+      "name": "brug",
+      "article": "de",
+      "category": "places",
+      "translation": "bridge",
+      "rule": "common-de"
+    },
+    {
+      "name": "bezoek",
+      "article": "het",
+      "category": "abstract",
+      "translation": "visit",
+      "rule": "common-het"
+    },
+    {
+      "name": "bar",
+      "article": "de",
+      "category": "places",
+      "translation": "bar",
+      "rule": "common-de"
+    },
+    {
+      "name": "ijs",
+      "article": "het",
+      "category": "nature",
+      "translation": "ice",
+      "rule": "material"
+    },
+    {
+      "name": "aantal",
+      "article": "het",
+      "category": "numbers",
+      "translation": "number",
+      "rule": "common-het"
+    },
+    {
+      "name": "beurt",
+      "article": "de",
+      "category": "abstract",
+      "translation": "turn",
+      "rule": "common-de"
+    },
+    {
+      "name": "voeten",
+      "article": "de",
+      "category": "body",
+      "translation": "feet",
+      "rule": "common-de"
+    },
+    {
+      "name": "zingen",
+      "article": "het",
+      "category": "entertainment",
+      "translation": "singing",
+      "rule": "common-het"
+    },
+    {
+      "name": "toestemming",
+      "article": "de",
+      "category": "abstract",
+      "translation": "permission",
+      "rule": "common-de"
+    },
+    {
+      "name": "vlees",
+      "article": "het",
+      "category": "food_drink",
+      "translation": "meat",
+      "rule": "material"
+    },
+    {
+      "name": "richting",
+      "article": "de",
+      "category": "abstract",
+      "translation": "direction",
+      "rule": "common-de"
+    },
+    {
+      "name": "ruzie",
+      "article": "de",
+      "category": "emotions",
+      "translation": "fight",
+      "rule": "suffix-ie"
+    },
+    {
+      "name": "rekening",
+      "article": "de",
+      "category": "abstract",
+      "translation": "bill",
+      "rule": "common-de"
+    },
+    {
+      "name": "monster",
+      "article": "het",
+      "category": "fantasy",
+      "translation": "monster",
+      "rule": "common-het"
+    },
+    {
+      "name": "verrassing",
+      "article": "de",
+      "category": "emotions",
+      "translation": "surprise",
+      "rule": "common-de"
+    },
+    {
+      "name": "rechter",
+      "article": "de",
+      "category": "work",
+      "translation": "judge",
+      "rule": "common-de"
+    },
+    {
+      "name": "gasten",
+      "article": "de",
+      "category": "people",
+      "translation": "guests",
+      "rule": "common-de"
+    },
+    {
+      "name": "radio",
+      "article": "de",
+      "category": "technology",
+      "translation": "radio",
+      "rule": "common-de"
+    },
+    {
+      "name": "energie",
+      "article": "de",
+      "category": "abstract",
+      "translation": "energy",
+      "rule": "suffix-ie"
     },
     {
       "name": "verlies",
       "article": "het",
       "category": "abstract",
-      "translation": "loss"
+      "translation": "loss",
+      "rule": "prefix-ver"
     },
     {
       "name": "tas",
       "article": "de",
       "category": "objects",
-      "translation": "bag"
+      "translation": "bag",
+      "rule": "common-de"
     },
     {
       "name": "veiligheid",
       "article": "de",
       "category": "abstract",
-      "translation": "safety"
+      "translation": "safety",
+      "rule": "suffix-heid"
     },
     {
       "name": "voet",
       "article": "de",
       "category": "body",
-      "translation": "foot"
+      "translation": "foot",
+      "rule": "common-de"
     },
     {
       "name": "weekend",
       "article": "het",
       "category": "time",
-      "translation": "weekend"
+      "translation": "weekend",
+      "rule": "common-het"
     },
     {
       "name": "wijn",
       "article": "de",
       "category": "food_drink",
-      "translation": "wine"
+      "translation": "wine",
+      "rule": "common-de"
     },
     {
       "name": "verschil",
       "article": "het",
       "category": "abstract",
-      "translation": "difference"
+      "translation": "difference",
+      "rule": "prefix-ver"
     },
     {
       "name": "stoel",
       "article": "de",
       "category": "objects",
-      "translation": "chair"
+      "translation": "chair",
+      "rule": "common-de"
     },
     {
       "name": "commandant",
       "article": "de",
       "category": "military",
-      "translation": "commander"
+      "translation": "commander",
+      "rule": "common-de"
     },
     {
       "name": "gat",
       "article": "het",
       "category": "objects",
-      "translation": "hole"
+      "translation": "hole",
+      "rule": "common-het"
     },
     {
       "name": "mes",
       "article": "het",
       "category": "objects",
-      "translation": "knife"
+      "translation": "knife",
+      "rule": "common-het"
     },
     {
       "name": "beslissing",
       "article": "de",
       "category": "abstract",
-      "translation": "decision"
+      "translation": "decision",
+      "rule": "common-de"
     },
     {
       "name": "boom",
       "article": "de",
       "category": "nature",
-      "translation": "tree"
+      "translation": "tree",
+      "rule": "tree-plant"
     },
     {
       "name": "glas",
       "article": "het",
       "category": "objects",
-      "translation": "glass"
+      "translation": "glass",
+      "rule": "material"
     },
     {
       "name": "basis",
       "article": "de",
       "category": "abstract",
-      "translation": "basis"
+      "translation": "basis",
+      "rule": "common-de"
     },
     {
       "name": "knul",
       "article": "de",
       "category": "people",
-      "translation": "guy"
+      "translation": "guy",
+      "rule": "common-de"
     },
     {
       "name": "verjaardag",
       "article": "de",
       "category": "time",
-      "translation": "birthday"
+      "translation": "birthday",
+      "rule": "common-de"
     },
     {
       "name": "spoor",
       "article": "het",
       "category": "transportation",
-      "translation": "track"
+      "translation": "track",
+      "rule": "common-het"
     },
     {
       "name": "kilometer",
       "article": "de",
       "category": "measurement",
-      "translation": "kilometer"
+      "translation": "kilometer",
+      "rule": "common-de"
     },
     {
       "name": "opdracht",
       "article": "de",
       "category": "work",
-      "translation": "assignment"
+      "translation": "assignment",
+      "rule": "common-de"
     },
     {
       "name": "hoek",
       "article": "de",
       "category": "places",
-      "translation": "corner"
+      "translation": "corner",
+      "rule": "common-de"
     },
     {
       "name": "vis",
       "article": "de",
       "category": "animals",
-      "translation": "fish"
+      "translation": "fish",
+      "rule": "common-de"
     }
   ]
 }
