@@ -730,6 +730,26 @@ body {
   border-radius: 8px;
   text-align: center;
   margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* Mobile responsive adjustments for input */
+@media (max-width: 768px) {
+  .custom-input {
+    max-width: calc(100vw - 40px);
+    padding: 12px;
+    font-size: 1.1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-input {
+    max-width: calc(100vw - 30px);
+    padding: 10px;
+    font-size: 1em;
+  }
 }
 
 .custom-badge {
