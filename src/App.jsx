@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import ArticlesPage from './pages/ArticlesPage'
+import NotFoundPage from './pages/NotFoundPage'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/phrases" element={<div>Phrases tool coming soon!</div>} />
         <Route path="/grammar" element={<div>Grammar tool coming soon!</div>} />
         <Route path="/vocabulary" element={<div>Vocabulary tool coming soon!</div>} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   )
