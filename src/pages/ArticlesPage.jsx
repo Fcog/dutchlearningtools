@@ -5,8 +5,11 @@ import dutchNounsData from '../data/dutch-nouns.json'
 function ArticlesPage() {
   const navigate = useNavigate()
   const [currentWord, setCurrentWord] = useState(null)
-  const [randomWord, setRandomWord] = useState(null)
   const [isMobile, setIsMobile] = useState(false)
+  const [selectedArticle, setSelectedArticle] = useState(null)
+  const [showResult, setShowResult] = useState(false)
+  const [isCorrect, setIsCorrect] = useState(false)
+  const [score, setScore] = useState({ correct: 0, total: 0 })
 
   // Check if user is on mobile device
   useEffect(() => {
@@ -20,32 +23,43 @@ function ArticlesPage() {
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
-  // Function to get word of the day based on current date
-  const getWordOfTheDay = (words) => {
-    const today = new Date()
-    const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24)
-    const wordIndex = dayOfYear % words.length
-    return words[wordIndex]
-  }
-
-  // Function to get a random word
+  // Function to get a random word for exercise
   const getRandomWord = () => {
     const words = dutchNounsData.dutch_nouns
     const randomIndex = Math.floor(Math.random() * words.length)
     return words[randomIndex]
   }
 
-  // Function to handle getting a new random word
-  const handleGetRandomWord = () => {
-    const newRandomWord = getRandomWord()
-    setRandomWord(newRandomWord)
+
+
+  // Handle article selection
+  const handleArticleChoice = (chosenArticle) => {
+    setSelectedArticle(chosenArticle)
+    const correct = chosenArticle === currentWord.article
+    setIsCorrect(correct)
+    setShowResult(true)
+    
+    // Update score
+    setScore(prevScore => ({
+      correct: correct ? prevScore.correct + 1 : prevScore.correct,
+      total: prevScore.total + 1
+    }))
+  }
+
+  // Get next word
+  const handleNextWord = () => {
+    const newWord = getRandomWord()
+    setCurrentWord(newWord)
+    setSelectedArticle(null)
+    setShowResult(false)
+    setIsCorrect(false)
   }
 
   // Social sharing functionality
   const shareData = {
     url: window.location.href,
-    title: "Learn Dutch Articles - Daily Dutch Nouns with De & Het",
-    description: "Learn Dutch articles (de & het) with 200 most common Dutch nouns. Free daily Dutch word tool with English translations and categories."
+    title: "Dutch Article Exercise - Interactive De & Het Quiz",
+    description: "Practice Dutch articles with our interactive exercise! Choose between 'de' and 'het' for 200 common Dutch nouns and get instant feedback."
   }
 
   const getSocialShareUrl = (platform) => {
@@ -79,15 +93,15 @@ function ArticlesPage() {
   }
 
   useEffect(() => {
-    const wordOfTheDay = getWordOfTheDay(dutchNounsData.dutch_nouns)
-    setCurrentWord(wordOfTheDay)
+    const firstWord = getRandomWord()
+    setCurrentWord(firstWord)
   }, [])
 
   if (!currentWord) {
     return (
       <div className="articles-container">
         <h1>Loading...</h1>
-        <p>Loading your daily Dutch word</p>
+        <p>Loading your Dutch article exercise</p>
       </div>
     )
   }
@@ -97,118 +111,192 @@ function ArticlesPage() {
       <nav className="breadcrumb">
         <button onClick={() => navigate('/')}>🏠 Dutch Learning Tools</button>
         <span> {'>'} </span>
-        <span>Articles & Nouns</span>
+        <span>Article Exercise</span>
       </nav>
       
       <header>
-        <h1>Learn Dutch Articles: Daily Dutch Nouns with De & Het</h1>
+        <h1>Dutch Article Exercise: Choose De or Het</h1>
         <p style={{ fontSize: '1.2em', color: '#666', marginBottom: '20px' }}>
           {isMobile 
-            ? "Learn Dutch articles (de & het) with 200 common nouns. New word daily!" 
-            : "Master Dutch grammar by learning the correct articles (de & het) for 200 common Dutch nouns. Each day features a new word with pronunciation guide, English translation, and category."
+            ? "Practice Dutch articles! Choose the correct article for each noun." 
+            : "Test your knowledge of Dutch articles! Choose whether each noun uses 'de' or 'het' and get instant feedback."
           }
         </p>
       </header>
+
+      {/* Score Display */}
+      {score.total > 0 && (
+        <div style={{
+          textAlign: 'center',
+          marginBottom: '20px',
+          padding: '15px',
+          backgroundColor: '#f8f9fa',
+          borderRadius: '8px',
+          border: '1px solid #e9ecef'
+        }}>
+          <div style={{ fontSize: '1.1em', color: '#333' }}>
+            Score: <strong>{score.correct}/{score.total}</strong> 
+            {score.total > 0 && (
+              <span style={{ color: '#666', marginLeft: '10px' }}>
+                ({Math.round((score.correct / score.total) * 100)}%)
+              </span>
+            )}
+          </div>
+        </div>
+      )}
       
-      <section aria-labelledby="daily-word-heading" className="daily-word-container">
-        <h2 id="daily-word-heading" style={{ fontSize: '1.5em', color: '#333', marginBottom: '20px' }}>
-          Today's Dutch Word
+      <section aria-labelledby="exercise-heading" className="exercise-container">
+        <h2 id="exercise-heading" style={{ fontSize: '1.5em', color: '#333', marginBottom: '20px', textAlign: 'center' }}>
+          Choose the correct article:
         </h2>
+        
         <article className="word-card" style={{
           marginTop: '20px',
           padding: '30px',
           backgroundColor: '#f8f9fa',
           borderRadius: '10px',
-          border: '2px solid #e9ecef'
+          border: '2px solid #e9ecef',
+          textAlign: 'center'
         }}>
-          <div style={{
-            fontSize: '3em',
-            color: '#007bff',
-            marginBottom: '10px',
-            fontWeight: 'bold'
-          }} itemProp="name" itemScope itemType="https://schema.org/DefinedTerm">
-            <span lang="nl">{currentWord.article} {currentWord.name}</span>
-          </div>
-          <div style={{
-            fontSize: '1.5em',
-            color: '#6c757d',
-            marginBottom: '15px'
-          }} itemProp="description">
-            English: the {currentWord.translation}
-          </div>
-          <div style={{
-            fontSize: '1.1em',
-            color: '#28a745',
-            fontStyle: 'italic',
-            textTransform: 'capitalize'
-          }}>
-            Category: {currentWord.category.replace('_', ' ')}
-          </div>
+          {!showResult ? (
+            <>
+              <div style={{
+                fontSize: '3em',
+                color: '#333',
+                marginBottom: '10px',
+                fontWeight: 'bold'
+              }}>
+                <span lang="nl">___ {currentWord.name}</span>
+              </div>
+              <div style={{
+                fontSize: '1.5em',
+                color: '#6c757d',
+                marginBottom: '30px'
+              }}>
+                English: the {currentWord.translation}
+              </div>
+              
+              {/* Article Choice Buttons */}
+              <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <button
+                  onClick={() => handleArticleChoice('de')}
+                  style={{
+                    fontSize: '2em',
+                    padding: '15px 30px',
+                    backgroundColor: '#007bff',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '10px',
+                    cursor: 'pointer',
+                    minWidth: '120px',
+                    transition: 'background-color 0.3s'
+                  }}
+                  onMouseOver={(e) => e.target.style.backgroundColor = '#0056b3'}
+                  onMouseOut={(e) => e.target.style.backgroundColor = '#007bff'}
+                >
+                  de
+                </button>
+                
+                <button
+                  onClick={() => handleArticleChoice('het')}
+                  style={{
+                    fontSize: '2em',
+                    padding: '15px 30px',
+                    backgroundColor: '#28a745',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '10px',
+                    cursor: 'pointer',
+                    minWidth: '120px',
+                    transition: 'background-color 0.3s'
+                  }}
+                  onMouseOver={(e) => e.target.style.backgroundColor = '#1e7e34'}
+                  onMouseOut={(e) => e.target.style.backgroundColor = '#28a745'}
+                >
+                  het
+                </button>
+              </div>
+            </>
+          ) : (
+            <>
+              {/* Result Display */}
+              <div style={{
+                fontSize: '2em',
+                color: isCorrect ? '#28a745' : '#dc3545',
+                marginBottom: '20px',
+                fontWeight: 'bold'
+              }}>
+                {isCorrect ? '✓ Correct!' : '✗ Incorrect'}
+              </div>
+              
+              <div style={{
+                fontSize: '3em',
+                color: '#333',
+                marginBottom: '10px',
+                fontWeight: 'bold'
+              }}>
+                <span lang="nl">{currentWord.article} {currentWord.name}</span>
+              </div>
+              
+              <div style={{
+                fontSize: '1.5em',
+                color: '#6c757d',
+                marginBottom: '20px'
+              }}>
+                English: the {currentWord.translation}
+              </div>
+
+              <div style={{
+                fontSize: '1em',
+                color: '#28a745',
+                fontStyle: 'italic',
+                textTransform: 'capitalize',
+                marginBottom: '20px'
+              }}>
+                Category: {currentWord.category.replace('_', ' ')}
+              </div>
+
+              {/* Next Word Button */}
+              <button
+                onClick={handleNextWord}
+                style={{
+                  fontSize: '1.2em',
+                  padding: '12px 24px',
+                  backgroundColor: '#007bff',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '8px',
+                  cursor: 'pointer',
+                  transition: 'background-color 0.3s'
+                }}
+                onMouseOver={(e) => e.target.style.backgroundColor = '#0056b3'}
+                onMouseOut={(e) => e.target.style.backgroundColor = '#007bff'}
+              >
+                Next Word
+              </button>
+            </>
+          )}
         </article>
-      </section>
-      
-      <section aria-labelledby="random-word-heading" style={{ marginTop: '40px' }}>
-        <h2 id="random-word-heading" style={{ fontSize: '1.5em', color: '#333', marginBottom: '20px' }}>
-          Practice More Words
-        </h2>
-        <p style={{ color: '#666', marginBottom: '20px', textAlign: 'center' }}>
-          Want to practice more? Click the button below to get a random Dutch word with its article!
-        </p>
-        
-        <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-          <button 
-            onClick={handleGetRandomWord}
-            className="random-word-button"
-            aria-label="Get a random Dutch word to practice"
-          >
-            {randomWord ? 'Get Another Random Word' : 'Get Random Word'}
-          </button>
-        </div>
-        
-        {randomWord && (
-          <article className="word-card random-word-card" style={{
-            padding: '25px',
-            borderRadius: '10px',
-            marginTop: '20px'
-          }}>
-            <div style={{
-              fontSize: '2.5em',
-              color: '#28a745',
-              marginBottom: '10px',
-              fontWeight: 'bold'
-            }} itemProp="name" itemScope itemType="https://schema.org/DefinedTerm">
-              <span lang="nl">{randomWord.article} {randomWord.name}</span>
-            </div>
-            <div style={{
-              fontSize: '1.3em',
-              color: '#155724',
-              marginBottom: '10px'
-            }} itemProp="description">
-              English: the {randomWord.translation}
-            </div>
-            <div style={{
-              fontSize: '1em',
-              color: '#155724',
-              fontStyle: 'italic',
-              textTransform: 'capitalize'
-            }}>
-              Category: {randomWord.category.replace('_', ' ')}
-            </div>
-          </article>
-        )}
       </section>
       
       <section style={{ marginTop: '40px' }}>
         <h2 style={{ fontSize: '1.4em', color: '#333', marginBottom: '15px' }}>
-          Why Learn Dutch Articles?
+          How This Exercise Helps You Learn
         </h2>
         <div style={{ textAlign: 'left', color: '#666', lineHeight: '1.6' }}>
           <p>Dutch articles (lidwoorden) are essential for proper Dutch grammar. Unlike English, Dutch has two definite articles:</p>
           <ul style={{ marginLeft: '20px' }}>
-            <li><strong>"de"</strong> - used with common gender nouns (most nouns)</li>
+            <li><strong>"de"</strong> - used with common gender nouns (about 75% of nouns)</li>
             <li><strong>"het"</strong> - used with neuter gender nouns (about 25% of nouns)</li>
           </ul>
-          <p>Our tool helps you memorize the correct article for each noun through daily practice with the 200 most frequently used Dutch words.</p>
+          <p>This interactive exercise helps you learn through:</p>
+          <ul style={{ marginLeft: '20px' }}>
+            <li><strong>Active practice</strong> - Choose the article yourself instead of just reading</li>
+            <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
+            <li><strong>Score tracking</strong> - Monitor your progress over time</li>
+            <li><strong>Repetition</strong> - Practice with random words to reinforce learning</li>
+          </ul>
+          <p>Practice with 200 of the most frequently used Dutch words to build your confidence!</p>
         </div>
       </section>
       
@@ -217,7 +305,7 @@ function ArticlesPage() {
           📢 Share This Tool
         </h2>
         <p style={{ color: '#666', textAlign: 'center', margin: '0 0 15px 0' }}>
-          Help others learn Dutch! Share this free learning tool with your friends.
+          Help others learn Dutch! Share this free interactive exercise with your friends.
         </p>
         
         <div className="social-buttons">
@@ -314,8 +402,8 @@ function ArticlesPage() {
       </section>
       
       <footer style={{ marginTop: '30px', textAlign: 'center', color: '#6c757d', fontSize: '0.9em' }}>
-        <p>🇳🇱 Learn a new Dutch word every day! Perfect for beginners learning Nederlandse lidwoorden.</p>
-        <p>Free Dutch language learning tool with 200+ common nouns, articles, and English translations.</p>
+        <p>🇳🇱 Master Dutch articles through interactive practice! Perfect for beginners learning Nederlandse lidwoorden.</p>
+        <p>Free Dutch language exercise with 200+ common nouns and instant feedback.</p>
       </footer>
     </main>
   )
