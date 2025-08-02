@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom'
+import Hero from '../components/organisms/Hero'
+import ToolsGrid from '../components/organisms/ToolsGrid'
 
 function LandingPage() {
   const navigate = useNavigate()
@@ -110,62 +112,8 @@ function LandingPage() {
 
   return (
     <div className="container">
-      <section className="hero">
-        <span className="flag">🇳🇱</span>
-        <h1>Dutch Learning Tools</h1>
-        <p>
-          Comprehensive collection of free, interactive Dutch language learning tools. 
-          Master Dutch grammar, vocabulary, pronunciation, and conversation skills with our engaging daily practice tools.
-        </p>
-      </section>
-
-      <section className="tools-section">
-        <div className="section-header">
-          <h2>Learning Tools</h2>
-          <p>
-            Choose from our collection of interactive Dutch learning tools. 
-            Each tool is designed to help you master specific aspects of the Dutch language.
-          </p>
-        </div>
-
-        <div className="tools-grid">
-          {tools.map(tool => (
-            <div 
-              key={tool.id} 
-              className={`tool-card ${!tool.available ? 'coming-soon' : ''}`}
-            >
-              <span className="tool-icon">{tool.icon}</span>
-              <h3>{tool.title}</h3>
-              <p>{tool.description}</p>
-              
-              <ul className="tool-features">
-                {tool.features.map((feature, index) => (
-                  <li key={index}>{feature}</li>
-                ))}
-              </ul>
-              
-              {tool.available ? (
-                <button 
-                  className="router-link"
-                  onClick={() => handleToolClick(tool)}
-                  aria-label={`Go to ${tool.title}`}
-                >
-                  Launch Tool
-                </button>
-              ) : (
-                <button 
-                  className="tool-link"
-                  disabled
-                  aria-label={`${tool.title} - Coming Soon`}
-                >
-                  Coming Soon
-                </button>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
-
+      <Hero />
+      <ToolsGrid tools={tools} onToolClick={handleToolClick} />
       <footer className="footer">
         <p>
           🇳🇱 Free Dutch learning tools for everyone. Start your Dutch language journey today!

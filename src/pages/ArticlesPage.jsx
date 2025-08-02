@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import dutchNounsData from '../data/dutch-nouns.json'
-import rulesData from '../data/rules-articles.json'
+import PageLayout from '../components/templates/PageLayout'
+import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import ArticleExercise from '../components/organisms/ArticleExercise'
+import SocialSharing from '../components/organisms/SocialSharing'
 
 function ArticlesPage() {
   const navigate = useNavigate()
@@ -58,38 +61,38 @@ function ArticlesPage() {
 
   // Social sharing functionality
   const shareData = {
-    url: window.location.href,
     title: "Dutch Article Exercise - Interactive De & Het Quiz",
     description: "Practice Dutch articles with our interactive exercise! Choose between 'de' and 'het' for 200 common Dutch nouns and get instant feedback."
   }
 
-  const getSocialShareUrl = (platform) => {
-    const { url, title, description } = shareData
+  const handleSocialShare = (platform) => {
+    const url = window.location.href
     const encodedUrl = encodeURIComponent(url)
-    const encodedTitle = encodeURIComponent(title)
-    const encodedDescription = encodeURIComponent(description)
-    const encodedText = encodeURIComponent(`${title} - ${description}`)
+    const encodedTitle = encodeURIComponent(shareData.title)
+    const encodedDescription = encodeURIComponent(shareData.description)
+    const encodedText = encodeURIComponent(`${shareData.title} - ${shareData.description}`)
 
+    let shareUrl = '#'
     switch (platform) {
       case 'facebook':
-        return `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
+        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
+        break
       case 'tiktok':
-        return `https://www.tiktok.com/share?url=${encodedUrl}&text=${encodedText}`
+        shareUrl = `https://www.tiktok.com/share?url=${encodedUrl}&text=${encodedText}`
+        break
       case 'linkedin':
-        return `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
+        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
+        break
       case 'whatsapp':
-        return `https://wa.me/?text=${encodedText}%20${encodedUrl}`
+        shareUrl = `https://wa.me/?text=${encodedText}%20${encodedUrl}`
+        break
       case 'reddit':
-        return `https://reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`
+        shareUrl = `https://reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`
+        break
       case 'threads':
-        return `https://threads.net/intent/post?text=${encodedText}%20${encodedUrl}`
-      default:
-        return '#'
+        shareUrl = `https://threads.net/intent/post?text=${encodedText}%20${encodedUrl}`
+        break
     }
-  }
-
-  const handleSocialShare = (platform) => {
-    const shareUrl = getSocialShareUrl(platform)
     window.open(shareUrl, '_blank', 'width=600,height=400,scrollbars=yes,resizable=yes')
   }
 
@@ -100,21 +103,25 @@ function ArticlesPage() {
 
   if (!currentWord) {
     return (
-      <div className="articles-container">
+      <PageLayout>
         <h1>Loading...</h1>
         <p>Loading your Dutch article exercise</p>
-      </div>
+      </PageLayout>
     )
   }
 
   return (
-    <main className="articles-container" role="main">
-      <nav className="breadcrumb">
-        <button onClick={() => navigate('/')}>🏠 Dutch Learning Tools</button>
-        <span> {'>'} </span>
-        <span>Article Exercise</span>
-      </nav>
-      
+    <PageLayout 
+      showBreadcrumb 
+      breadcrumbPage="Article Exercise"
+      onHomeClick={() => navigate('/')}
+      footer={
+        <>
+          <p>🇳🇱 Master Dutch articles through interactive practice! Perfect for beginners learning Nederlandse lidwoorden.</p>
+          <p>Free Dutch language exercise with 200+ common nouns and instant feedback.</p>
+        </>
+      }
+    >
       <header>
         <h1>Dutch Article Exercise: Choose De or Het</h1>
         <p style={{ fontSize: '1.2em', color: '#666', marginBottom: '20px' }}>
@@ -125,185 +132,21 @@ function ArticlesPage() {
         </p>
       </header>
 
-      {/* Score Display */}
-      {score.total > 0 && (
-        <div style={{
-          textAlign: 'center',
-          marginBottom: '20px',
-          padding: '15px',
-          backgroundColor: '#f8f9fa',
-          borderRadius: '8px',
-          border: '1px solid #e9ecef'
-        }}>
-          <div style={{ fontSize: '1.1em', color: '#333' }}>
-            Score: <strong>{score.correct}/{score.total}</strong> 
-            {score.total > 0 && (
-              <span style={{ color: '#666', marginLeft: '10px' }}>
-                ({Math.round((score.correct / score.total) * 100)}%)
-              </span>
-            )}
-          </div>
-        </div>
-      )}
+      <ScoreDisplay score={score} />
       
       <section aria-labelledby="exercise-heading" className="exercise-container">
         <h2 id="exercise-heading" style={{ fontSize: '1.5em', color: '#333', marginBottom: '20px', textAlign: 'center' }}>
           Choose the correct article:
         </h2>
         
-        <article className="word-card" style={{
-          marginTop: '20px',
-          padding: '30px',
-          backgroundColor: '#f8f9fa',
-          borderRadius: '10px',
-          border: '2px solid #e9ecef',
-          textAlign: 'center'
-        }}>
-          {!showResult ? (
-            <>
-              <div style={{
-                fontSize: '3em',
-                color: '#333',
-                marginBottom: '10px',
-                fontWeight: 'bold'
-              }}>
-                <span lang="nl">___ {currentWord.name}</span>
-              </div>
-              <div style={{
-                fontSize: '1.5em',
-                color: '#6c757d',
-                marginBottom: '30px'
-              }}>
-                English: the {currentWord.translation}
-              </div>
-              
-              {/* Article Choice Buttons */}
-              <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <button
-                  onClick={() => handleArticleChoice('de')}
-                  style={{
-                    fontSize: '2em',
-                    padding: '15px 30px',
-                    backgroundColor: '#007bff',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '10px',
-                    cursor: 'pointer',
-                    minWidth: '120px',
-                    transition: 'background-color 0.3s'
-                  }}
-                  onMouseOver={(e) => e.target.style.backgroundColor = '#0056b3'}
-                  onMouseOut={(e) => e.target.style.backgroundColor = '#007bff'}
-                >
-                  de
-                </button>
-                
-                <button
-                  onClick={() => handleArticleChoice('het')}
-                  style={{
-                    fontSize: '2em',
-                    padding: '15px 30px',
-                    backgroundColor: '#28a745',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '10px',
-                    cursor: 'pointer',
-                    minWidth: '120px',
-                    transition: 'background-color 0.3s'
-                  }}
-                  onMouseOver={(e) => e.target.style.backgroundColor = '#1e7e34'}
-                  onMouseOut={(e) => e.target.style.backgroundColor = '#28a745'}
-                >
-                  het
-                </button>
-              </div>
-            </>
-          ) : (
-            <>
-              {/* Result Display */}
-              <div style={{
-                fontSize: '2em',
-                color: isCorrect ? '#28a745' : '#dc3545',
-                marginBottom: '20px',
-                fontWeight: 'bold'
-              }}>
-                {isCorrect ? '✓ Correct!' : '✗ Incorrect'}
-              </div>
-              
-              <div style={{
-                fontSize: '3em',
-                color: '#333',
-                marginBottom: '10px',
-                fontWeight: 'bold'
-              }}>
-                <span lang="nl">{currentWord.article} {currentWord.name}</span>
-              </div>
-              
-              <div style={{
-                fontSize: '1.5em',
-                color: '#6c757d',
-                marginBottom: '20px'
-              }}>
-                English: the {currentWord.translation}
-              </div>
-
-              <div style={{
-                fontSize: '1em',
-                color: '#28a745',
-                fontStyle: 'italic',
-                textTransform: 'capitalize',
-                marginBottom: '15px'
-              }}>
-                Category: {currentWord.category.replace('_', ' ')}
-              </div>
-
-              {/* Rule Explanation */}
-              {currentWord.rule && rulesData[currentWord.rule] && (
-                <div style={{
-                  fontSize: '1em',
-                  color: '#6c757d',
-                  backgroundColor: '#f8f9fa',
-                  padding: '15px',
-                  borderRadius: '8px',
-                  border: '1px solid #e9ecef',
-                  marginBottom: '20px',
-                  textAlign: 'left'
-                }}>
-                  <div style={{
-                    fontWeight: 'bold',
-                    color: '#495057',
-                    marginBottom: '5px',
-                    textTransform: 'capitalize'
-                  }}>
-                    📖 Rule: {currentWord.rule.replace('-', ' ')}
-                  </div>
-                  <div style={{ lineHeight: '1.4' }}>
-                    {rulesData[currentWord.rule]}
-                  </div>
-                </div>
-              )}
-
-              {/* Next Word Button */}
-              <button
-                onClick={handleNextWord}
-                style={{
-                  fontSize: '1.2em',
-                  padding: '12px 24px',
-                  backgroundColor: '#007bff',
-                  color: 'white',
-                  border: 'none',
-                  borderRadius: '8px',
-                  cursor: 'pointer',
-                  transition: 'background-color 0.3s'
-                }}
-                onMouseOver={(e) => e.target.style.backgroundColor = '#0056b3'}
-                onMouseOut={(e) => e.target.style.backgroundColor = '#007bff'}
-              >
-                Next Word
-              </button>
-            </>
-          )}
-        </article>
+        <ArticleExercise
+          currentWord={currentWord}
+          showResult={showResult}
+          isCorrect={isCorrect}
+          selectedArticle={selectedArticle}
+          onArticleChoice={handleArticleChoice}
+          onNextWord={handleNextWord}
+        />
       </section>
       
       <section style={{ marginTop: '40px' }}>
@@ -327,112 +170,13 @@ function ArticlesPage() {
         </div>
       </section>
       
-      <section className="social-sharing">
-        <h2 style={{ fontSize: '1.3em', color: '#333', marginBottom: '10px', textAlign: 'center' }}>
-          📢 Share This Tool
-        </h2>
-        <p style={{ color: '#666', textAlign: 'center', margin: '0 0 15px 0' }}>
-          Help others learn Dutch! Share this free interactive exercise with your friends.
-        </p>
-        
-        <div className="social-buttons">
-          <a 
-            href={getSocialShareUrl('facebook')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button facebook"
-            aria-label="Share on Facebook"
-            onClick={(e) => {
-              e.preventDefault()
-              handleSocialShare('facebook')
-            }}
-          >
-            <span className="social-icon">📘</span>
-            Facebook
-          </a>
-          
-          <a 
-            href={getSocialShareUrl('tiktok')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button tiktok"
-            aria-label="Share on TikTok"
-            onClick={(e) => {
-              e.preventDefault()
-              handleSocialShare('tiktok')
-            }}
-          >
-            <span className="social-icon">🎵</span>
-            TikTok
-          </a>
-          
-          <a 
-            href={getSocialShareUrl('linkedin')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button linkedin"
-            aria-label="Share on LinkedIn"
-            onClick={(e) => {
-              e.preventDefault()
-              handleSocialShare('linkedin')
-            }}
-          >
-            <span className="social-icon">💼</span>
-            LinkedIn
-          </a>
-          
-          <a 
-            href={getSocialShareUrl('whatsapp')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button whatsapp"
-            aria-label="Share on WhatsApp"
-            onClick={(e) => {
-              e.preventDefault()
-              handleSocialShare('whatsapp')
-            }}
-          >
-            <span className="social-icon">💬</span>
-            WhatsApp
-          </a>
-          
-          <a 
-            href={getSocialShareUrl('reddit')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button reddit"
-            aria-label="Share on Reddit"
-            onClick={(e) => {
-              e.preventDefault()
-              handleSocialShare('reddit')
-            }}
-          >
-            <span className="social-icon">🔶</span>
-            Reddit
-          </a>
-          
-          <a 
-            href={getSocialShareUrl('threads')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button threads"
-            aria-label="Share on Threads"
-            onClick={(e) => {
-              e.preventDefault()
-              handleSocialShare('threads')
-            }}
-          >
-            <span className="social-icon">🧵</span>
-            Threads
-          </a>
-        </div>
-      </section>
       
-      <footer style={{ marginTop: '30px', textAlign: 'center', color: '#6c757d', fontSize: '0.9em' }}>
-        <p>🇳🇱 Master Dutch articles through interactive practice! Perfect for beginners learning Nederlandse lidwoorden.</p>
-        <p>Free Dutch language exercise with 200+ common nouns and instant feedback.</p>
-      </footer>
-    </main>
+      <SocialSharing
+        title={shareData.title}
+        description={shareData.description}
+        onShare={handleSocialShare}
+      />
+    </PageLayout>
   )
 }
 

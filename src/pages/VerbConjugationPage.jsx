@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import dutchVerbsData from '../data/dutch-verbs-present.json'
+import PageLayout from '../components/templates/PageLayout'
+import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import VerbExercise from '../components/organisms/VerbExercise'
+import SocialSharing from '../components/organisms/SocialSharing'
 
 const PRONOUNS = ['ik', 'jij', 'hij/zij', 'wij', 'jullie', 'zij']
 
@@ -78,58 +82,62 @@ function VerbConjugationPage() {
 
   // Social sharing functionality
   const shareData = {
-    url: window.location.href,
     title: "Dutch Verb Conjugation Exercise - Interactive Present Tense Practice",
     description: "Master Dutch verb conjugations with our interactive exercise! Practice present tense conjugations with common Dutch verbs and get instant feedback."
   }
 
-  const getSocialShareUrl = (platform) => {
-    const { url, title, description } = shareData
+  const handleSocialShare = (platform) => {
+    const url = window.location.href
     const encodedUrl = encodeURIComponent(url)
-    const encodedTitle = encodeURIComponent(title)
-    const encodedDescription = encodeURIComponent(description)
-    const encodedText = encodeURIComponent(`${title} - ${description}`)
+    const encodedTitle = encodeURIComponent(shareData.title)
+    const encodedDescription = encodeURIComponent(shareData.description)
+    const encodedText = encodeURIComponent(`${shareData.title} - ${shareData.description}`)
 
+    let shareUrl = '#'
     switch (platform) {
       case 'facebook':
-        return `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
+        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
+        break
       case 'tiktok':
-        return `https://www.tiktok.com/share?url=${encodedUrl}&text=${encodedText}`
+        shareUrl = `https://www.tiktok.com/share?url=${encodedUrl}&text=${encodedText}`
+        break
       case 'linkedin':
-        return `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
+        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
+        break
       case 'whatsapp':
-        return `https://wa.me/?text=${encodedText}%20${encodedUrl}`
+        shareUrl = `https://wa.me/?text=${encodedText}%20${encodedUrl}`
+        break
       case 'reddit':
-        return `https://reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`
+        shareUrl = `https://reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`
+        break
       case 'threads':
-        return `https://threads.net/intent/post?text=${encodedText}%20${encodedUrl}`
-      default:
-        return '#'
+        shareUrl = `https://threads.net/intent/post?text=${encodedText}%20${encodedUrl}`
+        break
     }
-  }
-
-  const handleSocialShare = (platform) => {
-    const shareUrl = getSocialShareUrl(platform)
     window.open(shareUrl, '_blank', 'width=600,height=400,scrollbars=yes,resizable=yes')
   }
 
   if (!currentVerb || !currentPronoun) {
     return (
-      <div className="articles-container">
+      <PageLayout>
         <h1>Loading...</h1>
         <p>Loading your Dutch verb conjugation exercise</p>
-      </div>
+      </PageLayout>
     )
   }
 
   return (
-    <main className="articles-container" role="main">
-      <nav className="breadcrumb">
-        <button onClick={() => navigate('/')}>🏠 Dutch Learning Tools</button>
-        <span> {'>'} </span>
-        <span>Verb Conjugation Exercise</span>
-      </nav>
-      
+    <PageLayout 
+      showBreadcrumb 
+      breadcrumbPage="Verb Conjugation Exercise"
+      onHomeClick={() => navigate('/')}
+      footer={
+        <>
+          <p>🇳🇱 Master Dutch verb conjugations through interactive practice! Perfect for beginners learning Nederlandse werkwoorden.</p>
+          <p>Free Dutch language exercise with common verbs and instant feedback.</p>
+        </>
+      }
+    >
       <header>
         <h1>Dutch Verb Conjugation: Present Tense Practice</h1>
         <p style={{ fontSize: '1.2em', color: '#666', marginBottom: '20px' }}>
@@ -140,192 +148,24 @@ function VerbConjugationPage() {
         </p>
       </header>
 
-      {/* Score Display */}
-      {score.total > 0 && (
-        <div style={{
-          textAlign: 'center',
-          marginBottom: '20px',
-          padding: '15px',
-          backgroundColor: '#f8f9fa',
-          borderRadius: '8px',
-          border: '1px solid #e9ecef'
-        }}>
-          <div style={{ fontSize: '1.1em', color: '#333' }}>
-            Score: <strong>{score.correct}/{score.total}</strong> 
-            {score.total > 0 && (
-              <span style={{ color: '#666', marginLeft: '10px' }}>
-                ({Math.round((score.correct / score.total) * 100)}%)
-              </span>
-            )}
-          </div>
-        </div>
-      )}
+      <ScoreDisplay score={score} />
       
       <section aria-labelledby="exercise-heading" className="exercise-container">
         <h2 id="exercise-heading" style={{ fontSize: '1.5em', color: '#333', marginBottom: '20px', textAlign: 'center' }}>
           Conjugate the verb:
         </h2>
         
-        <article className="word-card" style={{
-          marginTop: '20px',
-          padding: '30px',
-          backgroundColor: '#f8f9fa',
-          borderRadius: '10px',
-          border: '2px solid #e9ecef',
-          textAlign: 'center'
-        }}>
-          {/* Verb Info */}
-          <div style={{
-            fontSize: '3em',
-            color: '#333',
-            marginBottom: '10px',
-            fontWeight: 'bold'
-          }}>
-            <span lang="nl">{currentVerb.infinitive}</span>
-          </div>
-          <div style={{
-            fontSize: '1.5em',
-            color: '#6c757d',
-            marginBottom: '30px'
-          }}>
-            English: {currentVerb.english}
-          </div>
-
-          {/* Exercise Prompt */}
-          <div style={{
-            fontSize: '1.3em',
-            color: '#333',
-            marginBottom: '20px'
-          }}>
-            Complete: <strong style={{ color: '#007bff' }}>{currentPronoun}</strong> _________
-          </div>
-
-          {!showResult ? (
-            <div style={{ marginBottom: '20px' }}>
-              <input
-                type="text"
-                value={userAnswer}
-                onChange={(e) => setUserAnswer(e.target.value)}
-                onKeyPress={handleKeyPress}
-                placeholder="Type the conjugated verb..."
-                style={{
-                  width: '100%',
-                  maxWidth: '300px',
-                  padding: '15px',
-                  fontSize: '1.3em',
-                  border: '2px solid #ddd',
-                  borderRadius: '8px',
-                  textAlign: 'center',
-                  marginBottom: '20px'
-                }}
-                autoFocus
-              />
-              <div>
-                <button
-                  onClick={checkAnswer}
-                  disabled={!userAnswer.trim()}
-                  style={{
-                    fontSize: '1.5em',
-                    padding: '15px 30px',
-                    backgroundColor: userAnswer.trim() ? '#007bff' : '#6c757d',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '10px',
-                    cursor: userAnswer.trim() ? 'pointer' : 'not-allowed',
-                    minWidth: '200px',
-                    transition: 'background-color 0.3s'
-                  }}
-                  onMouseOver={(e) => {
-                    if (userAnswer.trim()) {
-                      e.target.style.backgroundColor = '#0056b3'
-                    }
-                  }}
-                  onMouseOut={(e) => {
-                    if (userAnswer.trim()) {
-                      e.target.style.backgroundColor = '#007bff'
-                    }
-                  }}
-                >
-                  Check Answer
-                </button>
-              </div>
-            </div>
-          ) : (
-            <div>
-              {/* Result Display */}
-              <div style={{
-                padding: '20px',
-                borderRadius: '10px',
-                marginBottom: '25px',
-                backgroundColor: isCorrect ? '#d4edda' : '#f8d7da',
-                border: `2px solid ${isCorrect ? '#c3e6cb' : '#f5c6cb'}`,
-                color: isCorrect ? '#155724' : '#721c24'
-              }}>
-                <div style={{ fontSize: '2em', marginBottom: '10px' }}>
-                  {isCorrect ? '✅ Correct!' : '❌ Incorrect'}
-                </div>
-                <div style={{ fontSize: '1.5em', fontWeight: 'bold' }}>
-                  {currentPronoun} {currentVerb.conjugations[currentPronoun]}
-                </div>
-                {!isCorrect && (
-                  <div style={{ fontSize: '1em', marginTop: '10px', color: '#666' }}>
-                    You answered: {userAnswer}
-                  </div>
-                )}
-              </div>
-
-              {/* Complete Conjugation Table */}
-              <div style={{
-                backgroundColor: 'white',
-                border: '2px solid #e9ecef',
-                borderRadius: '10px',
-                padding: '20px',
-                marginBottom: '25px'
-              }}>
-                <div style={{ fontSize: '1em', fontWeight: 'bold', marginBottom: '15px', color: '#333' }}>
-                  Complete conjugation of "{currentVerb.infinitive}":
-                </div>
-                <div style={{ 
-                  display: 'grid', 
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', 
-                  gap: '10px',
-                  fontSize: '0.95em'
-                }}>
-                  {PRONOUNS.map(pronoun => (
-                    <div key={pronoun} style={{ 
-                      display: 'flex',
-                      padding: '5px 0'
-                    }}>
-                      <span style={{ fontWeight: '600', paddingRight: '10px' }}>{pronoun}:</span>
-                      <span>{currentVerb.conjugations[pronoun]}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <button
-                onClick={generateNewExercise}
-                style={{
-                  fontSize: '1.3em',
-                  padding: '15px 30px',
-                  backgroundColor: '#28a745',
-                  color: 'white',
-                  border: 'none',
-                  borderRadius: '10px',
-                  cursor: 'pointer',
-                  minWidth: '200px',
-                  transition: 'background-color 0.3s',
-                  width: '100%',
-                  maxWidth: '300px'
-                }}
-                onMouseOver={(e) => e.target.style.backgroundColor = '#218838'}
-                onMouseOut={(e) => e.target.style.backgroundColor = '#28a745'}
-              >
-                Next Exercise
-              </button>
-            </div>
-          )}
-        </article>
+        <VerbExercise
+          currentVerb={currentVerb}
+          currentPronoun={currentPronoun}
+          userAnswer={userAnswer}
+          showResult={showResult}
+          isCorrect={isCorrect}
+          onAnswerChange={(e) => setUserAnswer(e.target.value)}
+          onKeyPress={handleKeyPress}
+          onCheckAnswer={checkAnswer}
+          onNextExercise={generateNewExercise}
+        />
       </section>
 
       <section style={{ marginTop: '40px' }}>
@@ -350,112 +190,13 @@ function VerbConjugationPage() {
         </div>
       </section>
       
-      <section className="social-sharing">
-        <h2 style={{ fontSize: '1.3em', color: '#333', marginBottom: '10px', textAlign: 'center' }}>
-          📢 Share This Tool
-        </h2>
-        <p style={{ color: '#666', textAlign: 'center', margin: '0 0 15px 0' }}>
-          Help others learn Dutch! Share this free interactive verb conjugation exercise with your friends.
-        </p>
-        
-        <div className="social-buttons">
-          <a 
-            href={getSocialShareUrl('facebook')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button facebook"
-            aria-label="Share on Facebook"
-            onClick={(e) => {
-              e.preventDefault()
-              handleSocialShare('facebook')
-            }}
-          >
-            <span className="social-icon">📘</span>
-            Facebook
-          </a>
-          
-          <a 
-            href={getSocialShareUrl('tiktok')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button tiktok"
-            aria-label="Share on TikTok"
-            onClick={(e) => {
-              e.preventDefault()
-              handleSocialShare('tiktok')
-            }}
-          >
-            <span className="social-icon">🎵</span>
-            TikTok
-          </a>
-          
-          <a 
-            href={getSocialShareUrl('linkedin')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button linkedin"
-            aria-label="Share on LinkedIn"
-            onClick={(e) => {
-              e.preventDefault()
-              handleSocialShare('linkedin')
-            }}
-          >
-            <span className="social-icon">💼</span>
-            LinkedIn
-          </a>
-          
-          <a 
-            href={getSocialShareUrl('whatsapp')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button whatsapp"
-            aria-label="Share on WhatsApp"
-            onClick={(e) => {
-              e.preventDefault()
-              handleSocialShare('whatsapp')
-            }}
-          >
-            <span className="social-icon">💬</span>
-            WhatsApp
-          </a>
-          
-          <a 
-            href={getSocialShareUrl('reddit')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button reddit"
-            aria-label="Share on Reddit"
-            onClick={(e) => {
-              e.preventDefault()
-              handleSocialShare('reddit')
-            }}
-          >
-            <span className="social-icon">🔶</span>
-            Reddit
-          </a>
-          
-          <a 
-            href={getSocialShareUrl('threads')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button threads"
-            aria-label="Share on Threads"
-            onClick={(e) => {
-              e.preventDefault()
-              handleSocialShare('threads')
-            }}
-          >
-            <span className="social-icon">🧵</span>
-            Threads
-          </a>
-        </div>
-      </section>
       
-      <footer style={{ marginTop: '30px', textAlign: 'center', color: '#6c757d', fontSize: '0.9em' }}>
-        <p>🇳🇱 Master Dutch verb conjugations through interactive practice! Perfect for beginners learning Nederlandse werkwoorden.</p>
-        <p>Free Dutch language exercise with common verbs and instant feedback.</p>
-      </footer>
-    </main>
+      <SocialSharing
+        title={shareData.title}
+        description={shareData.description}
+        onShare={handleSocialShare}
+      />
+    </PageLayout>
   )
 }
 
