@@ -20,32 +20,19 @@ function VerbExercise({
     return (
       <WordCard>
         {/* Verb Info */}
-        <div style={{
-          fontSize: '3em',
-          color: '#333',
-          marginBottom: '10px',
-          fontWeight: 'bold'
-        }}>
+        <div className="exercise-word-display">
           <span lang="nl">{currentVerb.infinitive}</span>
         </div>
-        <div style={{
-          fontSize: '1.5em',
-          color: '#6c757d',
-          marginBottom: '30px'
-        }}>
+        <div className="exercise-translation">
           English: {currentVerb.english}
         </div>
 
         {/* Exercise Prompt */}
-        <div style={{
-          fontSize: '1.3em',
-          color: '#333',
-          marginBottom: '20px'
-        }}>
-          Complete: <strong style={{ color: '#007bff' }}>{currentPronoun}</strong> _________
+        <div className="exercise-prompt">
+          Complete: <strong className="exercise-prompt-highlight">{currentPronoun}</strong> _________
         </div>
 
-        <div style={{ marginBottom: '20px' }}>
+        <div className="exercise-input-container">
           <Input
             value={userAnswer}
             onChange={onAnswerChange}
@@ -59,7 +46,7 @@ function VerbExercise({
               disabled={!userAnswer.trim()}
               variant="primary"
               size="large"
-              style={{ minWidth: '200px' }}
+              className="min-width-button"
             >
               Check Answer
             </Button>
@@ -72,50 +59,29 @@ function VerbExercise({
   return (
     <WordCard>
       {/* Result Display */}
-      <div style={{
-        padding: '20px',
-        borderRadius: '10px',
-        marginBottom: '25px',
-        backgroundColor: isCorrect ? '#d4edda' : '#f8d7da',
-        border: `2px solid ${isCorrect ? '#c3e6cb' : '#f5c6cb'}`,
-        color: isCorrect ? '#155724' : '#721c24'
-      }}>
-        <div style={{ fontSize: '2em', marginBottom: '10px' }}>
+      <div className={`verb-result-container ${isCorrect ? 'verb-result-correct' : 'verb-result-incorrect'}`}>
+        <div className="verb-result-icon">
           {isCorrect ? '✅ Correct!' : '❌ Incorrect'}
         </div>
-        <div style={{ fontSize: '1.5em', fontWeight: 'bold' }}>
+        <div className="verb-result-answer">
           {currentPronoun} {currentVerb.conjugations[currentPronoun]}
         </div>
         {!isCorrect && (
-          <div style={{ fontSize: '1em', marginTop: '10px', color: '#666' }}>
+          <div className="verb-result-user-answer">
             You answered: {userAnswer}
           </div>
         )}
       </div>
 
       {/* Complete Conjugation Table */}
-      <div style={{
-        backgroundColor: 'white',
-        border: '2px solid #e9ecef',
-        borderRadius: '10px',
-        padding: '20px',
-        marginBottom: '25px'
-      }}>
-        <div style={{ fontSize: '1em', fontWeight: 'bold', marginBottom: '15px', color: '#333' }}>
+      <div className="conjugation-table">
+        <div className="conjugation-table-title">
           Complete conjugation of "{currentVerb.infinitive}":
         </div>
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', 
-          gap: '10px',
-          fontSize: '0.95em'
-        }}>
+        <div className="conjugation-grid">
           {PRONOUNS.map(pronoun => (
-            <div key={pronoun} style={{ 
-              display: 'flex',
-              padding: '5px 0'
-            }}>
-              <span style={{ fontWeight: '600', paddingRight: '10px' }}>{pronoun}:</span>
+            <div key={pronoun} className="conjugation-item">
+              <span className="conjugation-pronoun">{pronoun}:</span>
               <span>{currentVerb.conjugations[pronoun]}</span>
             </div>
           ))}
@@ -126,10 +92,7 @@ function VerbExercise({
         onClick={onNextExercise}
         variant="secondary"
         size="large"
-        style={{
-          width: '100%',
-          maxWidth: '300px'
-        }}
+        className="full-width-button"
       >
         Next Exercise
       </Button>

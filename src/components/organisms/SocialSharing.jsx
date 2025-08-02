@@ -6,10 +6,10 @@ function SocialSharing({ title, description, onShare }) {
 
   return (
     <section className="social-sharing">
-      <h2 style={{ fontSize: '1.3em', color: '#333', marginBottom: '10px', textAlign: 'center' }}>
+      <h2 className="social-sharing-title">
         📢 Share This Tool
       </h2>
-      <p style={{ color: '#666', textAlign: 'center', margin: '0 0 15px 0' }}>
+      <p className="social-sharing-description">
         Help others learn Dutch! Share this free interactive exercise with your friends.
       </p>
       

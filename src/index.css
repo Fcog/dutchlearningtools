@@ -475,6 +475,402 @@ body {
   }
 }
 
+/* Exercise Components */
+.exercise-word-display {
+  font-size: 3em;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.exercise-translation {
+  font-size: 1.5em;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.exercise-prompt {
+  font-size: 1.3em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.exercise-prompt-highlight {
+  color: #007bff;
+}
+
+.exercise-buttons-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.exercise-input-container {
+  margin-bottom: 20px;
+}
+
+.exercise-result-display {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.exercise-result-correct {
+  color: #28a745;
+}
+
+.exercise-result-incorrect {
+  color: #dc3545;
+}
+
+.exercise-category {
+  font-size: 1em;
+  color: #28a745;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.exercise-rule-explanation {
+  font-size: 1em;
+  color: #6c757d;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.exercise-rule-title {
+  font-weight: bold;
+  color: #495057;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.exercise-rule-content {
+  line-height: 1.4;
+}
+
+.verb-result-container {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.verb-result-correct {
+  background-color: #d4edda;
+  border: 2px solid #c3e6cb;
+  color: #155724;
+}
+
+.verb-result-incorrect {
+  background-color: #f8d7da;
+  border: 2px solid #f5c6cb;
+  color: #721c24;
+}
+
+.verb-result-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.verb-result-answer {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.verb-result-user-answer {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #666;
+}
+
+.conjugation-table {
+  background-color: white;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.conjugation-table-title {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.conjugation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  font-size: 0.95em;
+}
+
+.conjugation-item {
+  display: flex;
+  padding: 5px 0;
+}
+
+.conjugation-pronoun {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+/* Page Headers */
+.page-header-description {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.exercise-heading {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Information Sections */
+.info-section {
+  margin-top: 40px;
+}
+
+.info-section-title {
+  font-size: 1.4em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.info-section-content {
+  text-align: left;
+  color: #666;
+  line-height: 1.6;
+}
+
+.info-list {
+  margin-left: 20px;
+}
+
+/* NotFound Page */
+.notfound-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+}
+
+.notfound-icon {
+  font-size: 6em;
+  margin-bottom: 20px;
+}
+
+.notfound-title {
+  font-size: 3em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.notfound-description {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.notfound-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.notfound-button {
+  min-width: 200px;
+}
+
+.notfound-tools-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.notfound-tools-title {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.notfound-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.notfound-tool-card {
+  cursor: pointer;
+}
+
+.coming-soon-text {
+  color: #999;
+  font-size: 0.9em;
+}
+
+/* Component Atoms */
+.custom-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  font-size: 1.3em;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-badge {
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+
+.badge-default {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #e9ecef;
+}
+
+.badge-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+}
+
+.badge-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 2px solid #f5c6cb;
+}
+
+.custom-wordcard {
+  margin-top: 20px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+  text-align: center;
+}
+
+.breadcrumb-button {
+  background-color: transparent !important;
+  color: #007bff !important;
+  padding: 5px 10px !important;
+  font-size: 1em !important;
+}
+
+.page-footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+.social-sharing-title {
+  font-size: 1.3em;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.social-sharing-description {
+  color: #666;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.full-width-button {
+  width: 100%;
+  max-width: 300px;
+}
+
+.min-width-button {
+  min-width: 200px;
+}
+
+/* Button Variants and Sizes */
+.btn-base {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: normal;
+}
+
+.btn-disabled {
+  cursor: not-allowed !important;
+}
+
+.btn-size-small {
+  font-size: 1em;
+  padding: 8px 16px;
+}
+
+.btn-size-medium {
+  font-size: 1.2em;
+  padding: 12px 24px;
+}
+
+.btn-size-large {
+  font-size: 1.5em;
+  padding: 15px 30px;
+}
+
+.btn-size-xlarge {
+  font-size: 2em;
+  padding: 15px 30px;
+  min-width: 120px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.btn-primary:disabled {
+  background-color: #6c757d;
+}
+
+.btn-secondary {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.btn-secondary:disabled {
+  background-color: #6c757d;
+}
+
+.btn-router {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-router:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
 /* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
   .word-card, .tool-card, .random-word-button, .social-button {

@@ -8,12 +8,7 @@ function Breadcrumb({ onHomeClick, currentPage }) {
         onClick={onHomeClick}
         variant="router"
         size="small"
-        style={{
-          backgroundColor: 'transparent',
-          color: '#007bff',
-          padding: '5px 10px',
-          fontSize: '1em'
-        }}
+        className="breadcrumb-button"
       >
         🏠 Dutch Learning Tools
       </Button>

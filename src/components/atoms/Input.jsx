@@ -11,18 +11,6 @@ function Input({
   className = '',
   ...props 
 }) {
-  const defaultStyles = {
-    width: '100%',
-    maxWidth: '300px',
-    padding: '15px',
-    fontSize: '1.3em',
-    border: '2px solid #ddd',
-    borderRadius: '8px',
-    textAlign: 'center',
-    marginBottom: '20px',
-    ...style
-  }
-
   return (
     <input
       type={type}
@@ -30,8 +18,8 @@ function Input({
       onChange={onChange}
       onKeyPress={onKeyPress}
       placeholder={placeholder}
-      style={defaultStyles}
-      className={className}
+      style={style}
+      className={`custom-input ${className}`}
       autoFocus={autoFocus}
       {...props}
     />

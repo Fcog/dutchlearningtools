@@ -140,7 +140,7 @@ function VerbConjugationPage() {
     >
       <header>
         <h1>Dutch Verb Conjugation: Present Tense Practice</h1>
-        <p style={{ fontSize: '1.2em', color: '#666', marginBottom: '20px' }}>
+        <p className="page-header-description">
           {isMobile 
             ? "Practice Dutch verb conjugations! Complete each sentence with the correct verb form." 
             : "Master Dutch verb conjugations in present tense! Type the correct conjugated form for each pronoun and get instant feedback."
@@ -151,7 +151,7 @@ function VerbConjugationPage() {
       <ScoreDisplay score={score} />
       
       <section aria-labelledby="exercise-heading" className="exercise-container">
-        <h2 id="exercise-heading" style={{ fontSize: '1.5em', color: '#333', marginBottom: '20px', textAlign: 'center' }}>
+        <h2 id="exercise-heading" className="exercise-heading">
           Conjugate the verb:
         </h2>
         
@@ -168,19 +168,19 @@ function VerbConjugationPage() {
         />
       </section>
 
-      <section style={{ marginTop: '40px' }}>
-        <h2 style={{ fontSize: '1.4em', color: '#333', marginBottom: '15px' }}>
+      <section className="info-section">
+        <h2 className="info-section-title">
           How This Exercise Helps You Learn
         </h2>
-        <div style={{ textAlign: 'left', color: '#666', lineHeight: '1.6' }}>
+        <div className="info-section-content">
           <p>Dutch verb conjugation is fundamental for expressing actions and communicating effectively. Present tense conjugations follow predictable patterns:</p>
-          <ul style={{ marginLeft: '20px' }}>
+          <ul className="info-list">
             <li><strong>"ik"</strong> - uses the verb stem (infinitive without -en)</li>
             <li><strong>"jij/hij/zij"</strong> - adds -t to the stem</li>
             <li><strong>"wij/jullie/zij"</strong> - uses the full infinitive form</li>
           </ul>
           <p>This interactive exercise helps you learn through:</p>
-          <ul style={{ marginLeft: '20px' }}>
+          <ul className="info-list">
             <li><strong>Active practice</strong> - Type conjugations yourself instead of just reading</li>
             <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
             <li><strong>Score tracking</strong> - Monitor your progress over time</li>

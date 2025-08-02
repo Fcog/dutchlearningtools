@@ -14,24 +14,15 @@ function ArticleExercise({
   if (!showResult) {
     return (
       <WordCard>
-        <div style={{
-          fontSize: '3em',
-          color: '#333',
-          marginBottom: '10px',
-          fontWeight: 'bold'
-        }}>
+        <div className="exercise-word-display">
           <span lang="nl">___ {currentWord.name}</span>
         </div>
-        <div style={{
-          fontSize: '1.5em',
-          color: '#6c757d',
-          marginBottom: '30px'
-        }}>
+        <div className="exercise-translation">
           English: the {currentWord.translation}
         </div>
         
         {/* Article Choice Buttons */}
-        <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
+        <div className="exercise-buttons-container">
           <Button
             onClick={() => onArticleChoice('de')}
             variant="primary"
@@ -55,63 +46,29 @@ function ArticleExercise({
   return (
     <WordCard>
       {/* Result Display */}
-      <div style={{
-        fontSize: '2em',
-        color: isCorrect ? '#28a745' : '#dc3545',
-        marginBottom: '20px',
-        fontWeight: 'bold'
-      }}>
+      <div className={`exercise-result-display ${isCorrect ? 'exercise-result-correct' : 'exercise-result-incorrect'}`}>
         {isCorrect ? '✓ Correct!' : '✗ Incorrect'}
       </div>
       
-      <div style={{
-        fontSize: '3em',
-        color: '#333',
-        marginBottom: '10px',
-        fontWeight: 'bold'
-      }}>
+      <div className="exercise-word-display">
         <span lang="nl">{currentWord.article} {currentWord.name}</span>
       </div>
       
-      <div style={{
-        fontSize: '1.5em',
-        color: '#6c757d',
-        marginBottom: '20px'
-      }}>
+      <div className="exercise-translation">
         English: the {currentWord.translation}
       </div>
 
-      <div style={{
-        fontSize: '1em',
-        color: '#28a745',
-        fontStyle: 'italic',
-        textTransform: 'capitalize',
-        marginBottom: '15px'
-      }}>
+      <div className="exercise-category">
         Category: {currentWord.category.replace('_', ' ')}
       </div>
 
       {/* Rule Explanation */}
       {currentWord.rule && rulesData[currentWord.rule] && (
-        <div style={{
-          fontSize: '1em',
-          color: '#6c757d',
-          backgroundColor: '#f8f9fa',
-          padding: '15px',
-          borderRadius: '8px',
-          border: '1px solid #e9ecef',
-          marginBottom: '20px',
-          textAlign: 'left'
-        }}>
-          <div style={{
-            fontWeight: 'bold',
-            color: '#495057',
-            marginBottom: '5px',
-            textTransform: 'capitalize'
-          }}>
+        <div className="exercise-rule-explanation">
+          <div className="exercise-rule-title">
             📖 Rule: {currentWord.rule.replace('-', ' ')}
           </div>
-          <div style={{ lineHeight: '1.4' }}>
+          <div className="exercise-rule-content">
             {rulesData[currentWord.rule]}
           </div>
         </div>

@@ -18,21 +18,21 @@ function NotFoundPage() {
       }
     >
       <div className="container">
-        <section className="hero" style={{ textAlign: 'center', padding: '60px 20px', background: 'white' }}>
-          <Icon icon="🤔" size="xlarge" style={{ fontSize: '6em', marginBottom: '20px' }} />
-          <h1 style={{ fontSize: '3em', color: '#333', marginBottom: '20px' }}>
+        <section className="hero notfound-hero">
+          <Icon icon="🤔" size="xlarge" className="notfound-icon" />
+          <h1 className="notfound-title">
             404 - Page Not Found
           </h1>
-          <p style={{ fontSize: '1.2em', color: '#666', marginBottom: '40px', maxWidth: '600px', margin: '0 auto 40px' }}>
+          <p className="notfound-description">
             Oops! This page doesn't exist. The URL you're looking for might have been moved, deleted, or you may have typed it incorrectly.
           </p>
           
-          <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div className="notfound-buttons">
             <Button
               onClick={() => navigate('/')}
               variant="router"
               size="medium"
-              style={{ minWidth: '200px' }}
+              className="notfound-button"
             >
               🏠 Go Home
             </Button>
@@ -41,27 +41,20 @@ function NotFoundPage() {
               onClick={() => navigate('/articles')}
               variant="router"
               size="medium"
-              style={{ minWidth: '200px' }}
+              className="notfound-button"
             >
               📚 Try Articles Tool
             </Button>
           </div>
         </section>
 
-        <section style={{ marginTop: '40px', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '1.5em', color: '#333', marginBottom: '20px' }}>
+        <section className="notfound-tools-section">
+          <h2 className="notfound-tools-title">
             Popular Dutch Learning Tools
           </h2>
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
-            gap: '20px',
-            maxWidth: '800px',
-            margin: '0 auto'
-          }}>
+          <div className="notfound-tools-grid">
             <div 
-              className="tool-card"
-              style={{ cursor: 'pointer' }}
+              className="tool-card notfound-tool-card"
               onClick={() => navigate('/articles')}
             >
               <Icon icon="📚" size="large" className="tool-icon" />
@@ -70,8 +63,7 @@ function NotFoundPage() {
             </div>
             
             <div 
-              className="tool-card"
-              style={{ cursor: 'pointer' }}
+              className="tool-card notfound-tool-card"
               onClick={() => navigate('/verbs')}
             >
               <Icon icon="🎯" size="large" className="tool-icon" />
@@ -83,7 +75,7 @@ function NotFoundPage() {
               <Icon icon="🗣️" size="large" className="tool-icon" />
               <h3>Pronunciation Guide</h3>
               <p>Learn proper Dutch pronunciation with audio guides.</p>
-              <span style={{ color: '#999', fontSize: '0.9em' }}>Coming Soon</span>
+              <span className="coming-soon-text">Coming Soon</span>
             </div>
           </div>
         </section>

@@ -20,7 +20,7 @@ function PageLayout({
       {children}
       
       {footer && (
-        <footer style={{ marginTop: '30px', textAlign: 'center', color: '#6c757d', fontSize: '0.9em' }}>
+        <footer className="page-footer">
           {footer}
         </footer>
       )}
