@@ -1,0 +1,82 @@
+{
+  "dutch_verbs": [
+    {
+      "infinitive": "lopen",
+      "english": "to walk",
+      "stem": "loop",
+      "conjugations": {
+        "ik": "loop",
+        "jij": "loopt",
+        "hij/zij": "loopt",
+        "wij": "lopen",
+        "jullie": "lopen",
+        "zij": "lopen"
+      }
+    },
+    {
+      "infinitive": "werken",
+      "english": "to work",
+      "stem": "werk",
+      "conjugations": {
+        "ik": "werk",
+        "jij": "werkt",
+        "hij/zij": "werkt",
+        "wij": "werken",
+        "jullie": "werken",
+        "zij": "werken"
+      }
+    },
+    {
+      "infinitive": "spelen",
+      "english": "to play",
+      "stem": "speel",
+      "conjugations": {
+        "ik": "speel",
+        "jij": "speelt",
+        "hij/zij": "speelt",
+        "wij": "spelen",
+        "jullie": "spelen",
+        "zij": "spelen"
+      }
+    },
+    {
+      "infinitive": "koken",
+      "english": "to cook",
+      "stem": "kook",
+      "conjugations": {
+        "ik": "kook",
+        "jij": "kookt",
+        "hij/zij": "kookt",
+        "wij": "koken",
+        "jullie": "koken",
+        "zij": "koken"
+      }
+    },
+    {
+      "infinitive": "leren",
+      "english": "to learn",
+      "stem": "leer",
+      "conjugations": {
+        "ik": "leer",
+        "jij": "leert",
+        "hij/zij": "leert",
+        "wij": "leren",
+        "jullie": "leren",
+        "zij": "leren"
+      }
+    },
+    {
+      "infinitive": "wonen",
+      "english": "to live",
+      "stem": "woon",
+      "conjugations": {
+        "ik": "woon",
+        "jij": "woont",
+        "hij/zij": "woont",
+        "wij": "wonen",
+        "jullie": "wonen",
+        "zij": "wonen"
+      }
+    }
+  ]
+}

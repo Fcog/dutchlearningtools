@@ -24,17 +24,17 @@ function LandingPage() {
       id: 'verbs',
       icon: '🎯',
       title: 'Dutch Verb Conjugation',
-      description: 'Master Dutch verb conjugations with interactive exercises. Practice present, past, and perfect tenses with common Dutch verbs.',
+      description: 'Master Dutch verb conjugations with interactive exercises. Practice present tense with common Dutch verbs.',
       features: [
         'Verb conjugation practice',
-        'Multiple tenses',
+        'Present tense focus',
         'Interactive exercises',
         'Progress tracking',
         'Common verbs focus',
-        'Pronunciation guide'
+        'Conjugation patterns'
       ],
       route: '/verbs',
-      available: false
+      available: true
     },
     {
       id: 'pronunciation',
