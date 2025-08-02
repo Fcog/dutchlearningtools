@@ -73,16 +73,16 @@ function ArticlesPage() {
     switch (platform) {
       case 'facebook':
         return `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
-      case 'twitter':
-        return `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedText}`
+      case 'tiktok':
+        return `https://www.tiktok.com/share?url=${encodedUrl}&text=${encodedText}`
       case 'linkedin':
         return `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
       case 'whatsapp':
         return `https://wa.me/?text=${encodedText}%20${encodedUrl}`
       case 'reddit':
         return `https://reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`
-      case 'pinterest':
-        return `https://pinterest.com/pin/create/button/?url=${encodedUrl}&description=${encodedDescription}`
+      case 'threads':
+        return `https://threads.net/intent/post?text=${encodedText}%20${encodedUrl}`
       default:
         return '#'
     }
@@ -352,18 +352,18 @@ function ArticlesPage() {
           </a>
           
           <a 
-            href={getSocialShareUrl('twitter')}
+            href={getSocialShareUrl('tiktok')}
             target="_blank"
             rel="noopener noreferrer"
-            className="social-button twitter"
-            aria-label="Share on Twitter"
+            className="social-button tiktok"
+            aria-label="Share on TikTok"
             onClick={(e) => {
               e.preventDefault()
-              handleSocialShare('twitter')
+              handleSocialShare('tiktok')
             }}
           >
-            <span className="social-icon">🐦</span>
-            Twitter
+            <span className="social-icon">🎵</span>
+            TikTok
           </a>
           
           <a 
@@ -412,18 +412,18 @@ function ArticlesPage() {
           </a>
           
           <a 
-            href={getSocialShareUrl('pinterest')}
+            href={getSocialShareUrl('threads')}
             target="_blank"
             rel="noopener noreferrer"
-            className="social-button pinterest"
-            aria-label="Share on Pinterest"
+            className="social-button threads"
+            aria-label="Share on Threads"
             onClick={(e) => {
               e.preventDefault()
-              handleSocialShare('pinterest')
+              handleSocialShare('threads')
             }}
           >
-            <span className="social-icon">📌</span>
-            Pinterest
+            <span className="social-icon">🧵</span>
+            Threads
           </a>
         </div>
       </section>
