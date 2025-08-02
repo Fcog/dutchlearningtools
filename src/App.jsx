@@ -2,10 +2,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import ArticlesPage from './pages/ArticlesPage'
 import NotFoundPage from './pages/NotFoundPage'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/articles" element={<ArticlesPage />} />
