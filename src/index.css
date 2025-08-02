@@ -328,153 +328,6 @@ body {
   font-size: 1.1em;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-  
-  .hero {
-    padding: 40px 20px;
-  }
-  
-  .hero h1 {
-    font-size: 2.5em;
-  }
-  
-  .hero p {
-    font-size: 1.1em;
-  }
-  
-  .tools-section {
-    padding: 40px 20px;
-  }
-  
-  .tools-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .tool-card {
-    padding: 25px;
-  }
-  
-  .section-header h2 {
-    font-size: 2em;
-  }
-  
-  .articles-container {
-    padding: 20px;
-    margin: 0 auto;
-  }
-  
-  h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    line-height: 1.2;
-  }
-  
-  header p {
-    font-size: 0.95em;
-    line-height: 1.4;
-    margin-bottom: 15px !important;
-  }
-  
-  #daily-word-heading {
-    font-size: 1.3em !important;
-    margin-bottom: 15px !important;
-  }
-  
-  .word-card {
-    padding: 20px !important;
-    margin-top: 10px !important;
-  }
-  
-  .word-card div:first-child {
-    font-size: 2.2em !important;
-  }
-  
-  .word-card div:nth-child(2) {
-    font-size: 1.2em !important;
-  }
-  
-  .word-card div:last-child {
-    font-size: 1em !important;
-  }
-  
-  section {
-    margin-top: 25px !important;
-  }
-  
-  #random-word-heading {
-    font-size: 1.3em !important;
-    margin-bottom: 15px !important;
-  }
-  
-  .social-buttons {
-    gap: 10px;
-  }
-  .social-button {
-    padding: 8px 12px;
-    font-size: 0.8em;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 2em;
-  }
-  
-  .hero p {
-    font-size: 1em;
-  }
-  
-  .tool-card {
-    padding: 20px;
-  }
-  
-  .section-header h2 {
-    font-size: 1.8em;
-  }
-  
-  .articles-container {
-    padding: 15px;
-    border-radius: 4px;
-  }
-  
-  h1 {
-    font-size: 1.7em;
-    margin-bottom: 8px;
-  }
-  
-  header p {
-    font-size: 0.9em;
-    margin-bottom: 12px !important;
-  }
-  
-  .word-card {
-    padding: 15px !important;
-  }
-  
-  .word-card div:first-child {
-    font-size: 1.8em !important;
-    margin-bottom: 8px !important;
-  }
-  
-  .word-card div:nth-child(2) {
-    font-size: 1.1em !important;
-    margin-bottom: 12px !important;
-  }
-  
-  .word-card div:last-child {
-    font-size: 0.9em !important;
-  }
-  
-  .social-sharing {
-    margin-top: 30px !important;
-  }
-}
-
 /* Exercise Components */
 .exercise-word-display {
   font-size: 3em;
@@ -606,7 +459,7 @@ body {
 .conjugation-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 10px;
+  gap: 6px;
   font-size: 0.95em;
 }
 
@@ -889,6 +742,157 @@ body {
 
 .btn-router:hover:not(:disabled) {
   background-color: #0056b3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .hero {
+    padding: 40px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  
+  .hero p {
+    font-size: 1.1em;
+  }
+  
+  .tools-section {
+    padding: 40px 20px;
+  }
+  
+  .tools-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .tool-card {
+    padding: 25px;
+  }
+  
+  .section-header h2 {
+    font-size: 2em;
+  }
+  
+  .articles-container {
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  
+  header p {
+    font-size: 0.95em;
+    line-height: 1.4;
+    margin-bottom: 15px !important;
+  }
+  
+  #daily-word-heading {
+    font-size: 1.3em !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .word-card {
+    padding: 20px !important;
+    margin-top: 10px !important;
+  }
+  
+  .verb-result-container {
+    font-size: 2.2em !important;
+  }
+
+  .verb-result-icon {
+    font-size: 1.5em;
+  }
+  
+  .conjugation-table {
+    font-size: 1.2em !important;
+  }
+  
+  .word-card div:last-child {
+    font-size: 1em !important;
+  }
+  
+  section {
+    margin-top: 25px !important;
+  }
+  
+  #random-word-heading {
+    font-size: 1.3em !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .social-buttons {
+    gap: 10px;
+  }
+  .social-button {
+    padding: 8px 12px;
+    font-size: 0.8em;
+  }
+
+  .exercise-word-display {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+  
+  .hero p {
+    font-size: 1em;
+  }
+  
+  .tool-card {
+    padding: 20px;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8em;
+  }
+  
+  .articles-container {
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  h1 {
+    font-size: 1.7em;
+    margin-bottom: 8px;
+  }
+  
+  header p {
+    font-size: 0.9em;
+    margin-bottom: 12px !important;
+  }
+  
+  .word-card {
+    padding: 15px !important;
+  }
+  
+  .verb-result-container {
+    font-size: 1.2em !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .conjugation-table {
+    font-size: 1em !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .social-sharing {
+    margin-top: 30px !important;
+  }
 }
 
 /* Accessibility improvements */
