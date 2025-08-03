@@ -26,7 +26,7 @@ function VerbConjugationPage() {
   const loadVerbData = async () => {
     try {
       setIsDataLoading(true)
-      const data = await import('../data/dutch-verbs-all-tenses.json')
+      const data = await import('../data/dutch-verbs.json')
       setDutchVerbsData(data.default)
     } catch (error) {
       console.error('Error loading verb data:', error)
