@@ -3,25 +3,25 @@ import React, { useState, useRef, useEffect } from 'react'
 const AVAILABLE_TENSES = [
   {
     key: 'present',
-    name: 'Presente',
+    name: 'Present',
     description: 'Tegenwoordige tijd',
     example: 'ik loop'
   },
   {
     key: 'past',
-    name: 'Pasado',
+    name: 'Past',
     description: 'Verleden tijd',
     example: 'ik liep'
   },
   {
     key: 'perfect',
-    name: 'Perfecto',
+    name: 'Perfect',
     description: 'Voltooid tegenwoordige tijd',
     example: 'ik heb gelopen'
   },
   {
     key: 'future',
-    name: 'Futuro',
+    name: 'Future',
     description: 'Toekomende tijd',
     example: 'ik zal lopen'
   }
@@ -60,7 +60,7 @@ function TenseSelector({ selectedTenses, onTenseChange, className = '' }) {
   // Get selected tenses names for display
   const getSelectedTensesText = () => {
     if (selectedTenses.length === AVAILABLE_TENSES.length) {
-      return 'Todos los tiempos'
+      return 'All tenses'
     }
     return AVAILABLE_TENSES
       .filter(tense => selectedTenses.includes(tense.key))
@@ -71,7 +71,7 @@ function TenseSelector({ selectedTenses, onTenseChange, className = '' }) {
   return (
     <div className={`tense-selector-dropdown ${className}`} ref={dropdownRef}>
       <div className="tense-selector-header">
-        <h3>Tiempos a practicar:</h3>
+        <h3>Tenses to practice:</h3>
       </div>
       
       <div className="tense-dropdown-container">
@@ -106,7 +106,7 @@ function TenseSelector({ selectedTenses, onTenseChange, className = '' }) {
                     <span className="tense-dropdown-description">{tense.description}</span>
                   </div>
                   <div className="tense-dropdown-example">
-                    Ej: <code>{tense.example}</code>
+                    Example: <code>{tense.example}</code>
                   </div>
                 </div>
               </label>
@@ -114,7 +114,7 @@ function TenseSelector({ selectedTenses, onTenseChange, className = '' }) {
             
             {selectedTenses.length === 1 && (
               <div className="tense-dropdown-warning">
-                💡 Debe seleccionar al menos un tiempo verbal
+                💡 Select at least one tense
               </div>
             )}
           </div>
