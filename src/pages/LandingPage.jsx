@@ -40,20 +40,20 @@ function LandingPage() {
       available: true
     },
     {
-      id: 'pronunciation',
-      icon: '🗣️',
-      title: 'Dutch Pronunciation',
-      description: 'Learn proper Dutch pronunciation with audio guides and phonetic exercises. Master difficult Dutch sounds and letter combinations.',
+      id: 'prepositions',
+      icon: '📍',
+      title: 'Dutch Prepositions',
+      description: 'Master Dutch prepositions with interactive exercises. Learn the correct usage of prepositions in different contexts and situations.',
       features: [
-        'Audio pronunciation',
-        'Phonetic guides',
-        'Sound comparisons',
-        'Practice exercises',
-        'Native speaker audio',
-        'Progress tracking'
+        'Common prepositions practice',
+        'Contextual usage examples',
+        'Interactive exercises',
+        'Real-world scenarios',
+        'Progress tracking',
+        'Dutch-English comparisons'
       ],
-      route: '/pronunciation',
-      available: false
+      route: '/prepositions',
+      available: true
     },
     {
       id: 'phrases',

@@ -89,9 +89,9 @@ function NotFoundPage() {
             </div>
             
             <div className="tool-card coming-soon">
-              <Icon icon="🗣️" size="large" className="tool-icon" />
-              <h3>Pronunciation Guide</h3>
-              <p>Learn proper Dutch pronunciation with audio guides.</p>
+              <Icon icon="📍" size="large" className="tool-icon" />
+              <h3>Dutch Prepositions</h3>
+              <p>Master Dutch prepositions with interactive exercises.</p>
               <span className="coming-soon-text">Coming Soon</span>
             </div>
           </div>
