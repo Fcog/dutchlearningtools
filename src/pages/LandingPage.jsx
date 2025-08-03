@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import Hero from '../components/organisms/Hero'
 import ToolsGrid from '../components/organisms/ToolsGrid'
+import { trackLearningEvent } from '../utils/analytics'
 
 function LandingPage() {
   const navigate = useNavigate()
@@ -106,7 +107,23 @@ function LandingPage() {
 
   const handleToolClick = (tool) => {
     if (tool.available) {
+      // Track tool selection
+      trackLearningEvent('tool_selected', 'navigation', {
+        tool_id: tool.id,
+        tool_name: tool.title,
+        route: tool.route,
+        from_page: 'landing'
+      })
+      
       navigate(tool.route)
+    } else {
+      // Track interest in unavailable tools
+      trackLearningEvent('tool_clicked', 'navigation', {
+        tool_id: tool.id,
+        tool_name: tool.title,
+        available: false,
+        from_page: 'landing'
+      })
     }
   }
 
