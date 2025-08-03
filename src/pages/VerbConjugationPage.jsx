@@ -255,6 +255,7 @@ function VerbConjugationPage() {
           userAnswer={userAnswer}
           showResult={showResult}
           isCorrect={isCorrect}
+          isMobile={isMobile}
           onAnswerChange={(e) => setUserAnswer(e.target.value)}
           onKeyPress={handleKeyPress}
           onCheckAnswer={checkAnswer}

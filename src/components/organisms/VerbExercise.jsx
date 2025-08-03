@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import WordCard from '../molecules/WordCard'
 import Button from '../atoms/Button'
 import Input from '../atoms/Input'
@@ -24,16 +24,29 @@ function VerbExercise({
   userAnswer,
   showResult, 
   isCorrect,
+  isMobile,
   onAnswerChange,
   onKeyPress,
   onCheckAnswer,
   onNextExercise 
 }) {
+  const exerciseWordDisplayRef = useRef(null)
+
+  const handleInputFocus = () => {
+    if (isMobile && exerciseWordDisplayRef.current) {
+      setTimeout(() => {
+        exerciseWordDisplayRef.current.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        })
+      }, 300) // Small delay to account for mobile keyboard animation
+    }
+  }
   if (!showResult) {
     return (
       <WordCard>
         {/* Verb Info */}
-        <div className="exercise-word-display">
+        <div className="exercise-word-display" ref={exerciseWordDisplayRef}>
           <span lang="nl">{currentVerb.infinitive}</span>
         </div>
         <div className="exercise-translation">
@@ -77,6 +90,7 @@ function VerbExercise({
             value={userAnswer}
             onChange={onAnswerChange}
             onKeyPress={onKeyPress}
+            onFocus={handleInputFocus}
             placeholder="Type the conjugated verb..."
             autoFocus
           />
