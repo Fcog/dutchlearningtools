@@ -16,7 +16,7 @@ function VerbConjugationPage() {
   const [currentPronoun, setCurrentPronoun] = useState(null)
   const [currentTense, setCurrentTense] = useState(null)
   const [selectedTenses, setSelectedTenses] = useState(['present'])
-  const [selectedLevels, setSelectedLevels] = useState(['A1', 'A2', 'B1', 'B2', 'C1', 'C2'])
+  const [selectedLevels, setSelectedLevels] = useState(['A1', 'A2'])
   const [selectedVerbTypes, setSelectedVerbTypes] = useState(['regular', 'irregular'])
   const [selectedSeparable, setSelectedSeparable] = useState(['separable', 'non-separable'])
   const [userAnswer, setUserAnswer] = useState('')
