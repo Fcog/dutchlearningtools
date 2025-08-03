@@ -456,21 +456,72 @@ body {
   color: #333;
 }
 
-.conjugation-grid {
+.conjugation-columns {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 6px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   font-size: 0.95em;
+}
+
+.conjugation-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.conjugation-column-header {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #2c5282;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e2e8f0;
+  text-align: center;
 }
 
 .conjugation-item {
   display: flex;
-  padding: 5px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  background-color: #f8fafc;
+  border-radius: 6px;
+  border-left: 3px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.conjugation-item:hover {
+  background-color: #edf2f7;
+  border-left-color: #4299e1;
 }
 
 .conjugation-pronoun {
   font-weight: 600;
-  padding-right: 10px;
+  color: #2d3748;
+  min-width: 60px;
+}
+
+.conjugation-verb {
+  font-weight: 500;
+  color: #1a202c;
+  font-style: italic;
+}
+
+/* Responsive design for conjugation table */
+@media (max-width: 768px) {
+  .conjugation-columns {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .conjugation-column-header {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .conjugation-item {
+    padding: 6px 10px;
+  }
 }
 
 /* Page Headers */

@@ -3,7 +3,8 @@ import WordCard from '../molecules/WordCard'
 import Button from '../atoms/Button'
 import Input from '../atoms/Input'
 
-const PRONOUNS = ['ik', 'jij', 'hij/zij', 'wij', 'jullie', 'zij']
+const SINGULAR_PRONOUNS = ['ik', 'jij', 'hij/zij']
+const PLURAL_PRONOUNS = ['wij', 'jullie', 'zij']
 
 // Mapping of tense keys to their display names
 const getTenseName = (tenseKey) => {
@@ -117,13 +118,25 @@ function VerbExercise({
         <div className="conjugation-table-title">
           Complete conjugation of "{currentVerb.infinitive}" ({getTenseName(currentTense)}):
         </div>
-        <div className="conjugation-grid">
-          {PRONOUNS.map(pronoun => (
-            <div key={pronoun} className="conjugation-item">
-              <span className="conjugation-pronoun">{pronoun}:</span>
-              <span>{currentVerb.tenses[currentTense].conjugations[pronoun]}</span>
-            </div>
-          ))}
+        <div className="conjugation-columns">
+          <div className="conjugation-column">
+            <div className="conjugation-column-header">Singular</div>
+            {SINGULAR_PRONOUNS.map(pronoun => (
+              <div key={pronoun} className="conjugation-item">
+                <span className="conjugation-pronoun">{pronoun}:</span>
+                <span className="conjugation-verb">{currentVerb.tenses[currentTense].conjugations[pronoun]}</span>
+              </div>
+            ))}
+          </div>
+          <div className="conjugation-column">
+            <div className="conjugation-column-header">Plural</div>
+            {PLURAL_PRONOUNS.map(pronoun => (
+              <div key={pronoun} className="conjugation-item">
+                <span className="conjugation-pronoun">{pronoun}:</span>
+                <span className="conjugation-verb">{currentVerb.tenses[currentTense].conjugations[pronoun]}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
