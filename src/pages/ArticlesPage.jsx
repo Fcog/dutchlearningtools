@@ -4,6 +4,7 @@ import PageLayout from '../components/templates/PageLayout'
 import ScoreDisplay from '../components/molecules/ScoreDisplay'
 import ArticleExercise from '../components/organisms/ArticleExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
+import { trackLearningEvent } from '../utils/analytics'
 
 function ArticlesPage() {
   const navigate = useNavigate()
@@ -15,6 +16,7 @@ function ArticlesPage() {
   const [showResult, setShowResult] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
   const [score, setScore] = useState({ correct: 0, total: 0 })
+  const [nextWordClickCount, setNextWordClickCount] = useState(0)
 
   // Load noun data asynchronously
   const loadNounData = async () => {
@@ -85,6 +87,19 @@ function ArticlesPage() {
     setSelectedArticle(null)
     setShowResult(false)
     setIsCorrect(false)
+    
+    // Track "Next Word" clicks (but skip the initial load)
+    if (currentWord) {
+      const newClickCount = nextWordClickCount + 1
+      setNextWordClickCount(newClickCount)
+      
+      trackLearningEvent('next_word_clicked', 'article_practice', {
+        total_next_clicks: newClickCount,
+        current_session_score: score.correct,
+        current_session_total: score.total,
+        accuracy: score.total > 0 ? Math.round((score.correct / score.total) * 100) : 0
+      })
+    }
   }
 
   // Social sharing data
