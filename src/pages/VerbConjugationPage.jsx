@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
 import ScoreDisplay from '../components/molecules/ScoreDisplay'
@@ -28,6 +28,35 @@ function VerbConjugationPage() {
   const [filteredVerbs, setFilteredVerbs] = useState([])
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const [nextExerciseClickCount, setNextExerciseClickCount] = useState(0)
+  const scoreRef = useRef({ correct: 0, total: 0 })
+
+  // Update ref when score changes
+  useEffect(() => {
+    scoreRef.current = score
+  }, [score])
+
+  // Track page visit
+  useEffect(() => {
+    trackLearningEvent('page_visited', 'navigation', {
+      page_name: 'verb_conjugation',
+      tool_type: 'language_learning'
+    })
+  }, [])
+
+  // Track session end when component unmounts
+  useEffect(() => {
+    return () => {
+      const finalScore = scoreRef.current
+      if (finalScore.total > 0) {
+        trackLearningEvent('session_ended', 'verb_conjugation', {
+          session_duration_exercises: finalScore.total,
+          final_score: finalScore.correct,
+          final_accuracy: Math.round((finalScore.correct / finalScore.total) * 100),
+          completion_reason: 'page_navigation'
+        })
+      }
+    }
+  }, [])
 
   // Load verb data asynchronously
   const loadVerbData = async () => {
@@ -143,19 +172,91 @@ function VerbConjugationPage() {
     setShowResult(true)
     
     // Update score
-    setScore(prevScore => ({
-      correct: isAnswerCorrect ? prevScore.correct + 1 : prevScore.correct,
-      total: prevScore.total + 1
-    }))
+    const newScore = {
+      correct: isAnswerCorrect ? score.correct + 1 : score.correct,
+      total: score.total + 1
+    }
+    setScore(newScore)
+    
+    // Track answer checking event
+    trackLearningEvent('answer_checked', 'verb_conjugation', {
+      is_correct: isAnswerCorrect,
+      user_answer: userAnswer.trim().toLowerCase(),
+      correct_answer: correctAnswer.toLowerCase(),
+      verb_infinitive: currentVerb.infinitive,
+      pronoun: currentPronoun,
+      tense: currentTense,
+      verb_level: currentVerb.level,
+      is_irregular: currentVerb.is_irregular === 'irregular',
+      is_separable: currentVerb.is_separable,
+      current_session_score: newScore.correct,
+      current_session_total: newScore.total,
+      accuracy: newScore.total > 0 ? Math.round((newScore.correct / newScore.total) * 100) : 0
+    })
+    
+    // Track milestone achievements
+    if (newScore.total === 5 || newScore.total === 10 || newScore.total === 25 || newScore.total === 50) {
+      trackLearningEvent('milestone_reached', 'verb_conjugation', {
+        milestone_type: 'exercises_completed',
+        milestone_value: newScore.total,
+        accuracy_at_milestone: Math.round((newScore.correct / newScore.total) * 100),
+        session_score: newScore.correct
+      })
+    }
+    
+    // Track high accuracy achievements
+    const accuracy = Math.round((newScore.correct / newScore.total) * 100)
+    if (newScore.total >= 10 && (accuracy === 90 || accuracy === 95 || accuracy === 100)) {
+      trackLearningEvent('achievement_unlocked', 'verb_conjugation', {
+        achievement_type: 'high_accuracy',
+        accuracy_percentage: accuracy,
+        exercises_completed: newScore.total,
+        score: newScore.correct
+      })
+    }
   }
 
   // Handle Enter key press
   const handleKeyPress = (e) => {
     if (e.key === 'Enter' && !showResult) {
+      // Track keyboard shortcut usage
+      trackLearningEvent('keyboard_shortcut_used', 'verb_conjugation', {
+        shortcut_type: 'enter_to_check',
+        user_answer_length: userAnswer.trim().length,
+        has_answer: !!userAnswer.trim(),
+        verb_infinitive: currentVerb?.infinitive,
+        pronoun: currentPronoun,
+        tense: currentTense
+      })
       checkAnswer()
     } else if (e.key === 'Enter' && showResult) {
+      // Track keyboard shortcut usage
+      trackLearningEvent('keyboard_shortcut_used', 'verb_conjugation', {
+        shortcut_type: 'enter_to_continue',
+        was_correct: isCorrect,
+        current_session_score: score.correct,
+        current_session_total: score.total
+      })
       generateNewExercise()
     }
+  }
+
+  // Handle typing engagement tracking
+  const handleAnswerChange = (e) => {
+    const newValue = e.target.value
+    
+    // Track first keystroke for engagement
+    if (userAnswer === '' && newValue.length === 1) {
+      trackLearningEvent('typing_started', 'verb_conjugation', {
+        verb_infinitive: currentVerb?.infinitive,
+        pronoun: currentPronoun,
+        tense: currentTense,
+        verb_level: currentVerb?.level,
+        exercise_number: score.total + 1
+      })
+    }
+    
+    setUserAnswer(newValue)
   }
 
   // Get accuracy percentage
@@ -311,7 +412,7 @@ function VerbConjugationPage() {
           showResult={showResult}
           isCorrect={isCorrect}
           isMobile={isMobile}
-          onAnswerChange={(e) => setUserAnswer(e.target.value)}
+          onAnswerChange={handleAnswerChange}
           onKeyPress={handleKeyPress}
           onCheckAnswer={checkAnswer}
           onNextExercise={generateNewExercise}

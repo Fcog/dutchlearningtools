@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
 import ScoreDisplay from '../components/molecules/ScoreDisplay'
@@ -17,6 +17,12 @@ function PrepositionsPage() {
   const [isCorrect, setIsCorrect] = useState(false)
   const [score, setScore] = useState({ correct: 0, total: 0 })
   const [nextExerciseClickCount, setNextExerciseClickCount] = useState(0)
+  const scoreRef = useRef({ correct: 0, total: 0 })
+
+  // Update ref when score changes
+  useEffect(() => {
+    scoreRef.current = score
+  }, [score])
 
   // Track page visit
   useEffect(() => {
@@ -24,6 +30,21 @@ function PrepositionsPage() {
       page_name: 'prepositions',
       tool_type: 'language_learning'
     })
+  }, [])
+
+  // Track session end when component unmounts
+  useEffect(() => {
+    return () => {
+      const finalScore = scoreRef.current
+      if (finalScore.total > 0) {
+        trackLearningEvent('session_ended', 'preposition_practice', {
+          session_duration_exercises: finalScore.total,
+          final_score: finalScore.correct,
+          final_accuracy: Math.round((finalScore.correct / finalScore.total) * 100),
+          completion_reason: 'page_navigation'
+        })
+      }
+    }
   }, [])
 
   // Load preposition data asynchronously
@@ -60,6 +81,12 @@ function PrepositionsPage() {
   useEffect(() => {
     if (prepositionsData && !isDataLoading && !currentExercise) {
       handleNextExercise()
+      
+      // Track exercise initialization
+      trackLearningEvent('exercise_started', 'preposition_practice', {
+        total_exercises_available: prepositionsData.dutch_prepositions.length,
+        exercise_type: 'sentence_completion'
+      })
     }
   }, [prepositionsData, isDataLoading])
 
@@ -81,10 +108,44 @@ function PrepositionsPage() {
     setShowResult(true)
     
     // Update score
-    setScore(prevScore => ({
-      correct: correct ? prevScore.correct + 1 : prevScore.correct,
-      total: prevScore.total + 1
-    }))
+    const newScore = {
+      correct: correct ? score.correct + 1 : score.correct,
+      total: score.total + 1
+    }
+    setScore(newScore)
+    
+    // Track answer checking event
+    trackLearningEvent('answer_checked', 'preposition_practice', {
+      is_correct: correct,
+      user_answer: userAnswer.trim().toLowerCase(),
+      correct_answer: currentExercise.preposition.toLowerCase(),
+      preposition_category: currentExercise.category,
+      sentence_length: currentExercise.sentence.length,
+      current_session_score: newScore.correct,
+      current_session_total: newScore.total,
+      accuracy: newScore.total > 0 ? Math.round((newScore.correct / newScore.total) * 100) : 0
+    })
+    
+    // Track milestone achievements
+    if (newScore.total === 5 || newScore.total === 10 || newScore.total === 25 || newScore.total === 50) {
+      trackLearningEvent('milestone_reached', 'preposition_practice', {
+        milestone_type: 'exercises_completed',
+        milestone_value: newScore.total,
+        accuracy_at_milestone: Math.round((newScore.correct / newScore.total) * 100),
+        session_score: newScore.correct
+      })
+    }
+    
+    // Track high accuracy achievements
+    const accuracy = Math.round((newScore.correct / newScore.total) * 100)
+    if (newScore.total >= 10 && (accuracy === 90 || accuracy === 95 || accuracy === 100)) {
+      trackLearningEvent('achievement_unlocked', 'preposition_practice', {
+        achievement_type: 'high_accuracy',
+        accuracy_percentage: accuracy,
+        exercises_completed: newScore.total,
+        score: newScore.correct
+      })
+    }
   }
 
   // Get next exercise
@@ -112,10 +173,39 @@ function PrepositionsPage() {
   // Handle Enter key press
   const handleKeyPress = (e) => {
     if (e.key === 'Enter' && !showResult) {
+      // Track keyboard shortcut usage
+      trackLearningEvent('keyboard_shortcut_used', 'preposition_practice', {
+        shortcut_type: 'enter_to_check',
+        user_answer_length: userAnswer.trim().length,
+        has_answer: !!userAnswer.trim()
+      })
       handleCheckAnswer()
     } else if (e.key === 'Enter' && showResult) {
+      // Track keyboard shortcut usage
+      trackLearningEvent('keyboard_shortcut_used', 'preposition_practice', {
+        shortcut_type: 'enter_to_continue',
+        was_correct: isCorrect,
+        current_session_score: score.correct,
+        current_session_total: score.total
+      })
       handleNextExercise()
     }
+  }
+
+  // Handle first keystroke to track engagement
+  const handleAnswerChange = (e) => {
+    const newValue = e.target.value
+    
+    // Track first keystroke for engagement
+    if (userAnswer === '' && newValue.length === 1) {
+      trackLearningEvent('typing_started', 'preposition_practice', {
+        preposition_category: currentExercise?.category,
+        sentence_length: currentExercise?.sentence?.length,
+        exercise_number: score.total + 1
+      })
+    }
+    
+    setUserAnswer(newValue)
   }
 
   // Social sharing data
@@ -167,7 +257,7 @@ function PrepositionsPage() {
           showResult={showResult}
           isCorrect={isCorrect}
           userAnswer={userAnswer}
-          onAnswerChange={(e) => setUserAnswer(e.target.value)}
+          onAnswerChange={handleAnswerChange}
           onKeyPress={handleKeyPress}
           onCheckAnswer={handleCheckAnswer}
           onNextExercise={handleNextExercise}

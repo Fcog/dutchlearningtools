@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
 import ScoreDisplay from '../components/molecules/ScoreDisplay'
@@ -17,6 +17,35 @@ function ArticlesPage() {
   const [isCorrect, setIsCorrect] = useState(false)
   const [score, setScore] = useState({ correct: 0, total: 0 })
   const [nextWordClickCount, setNextWordClickCount] = useState(0)
+  const scoreRef = useRef({ correct: 0, total: 0 })
+
+  // Update ref when score changes
+  useEffect(() => {
+    scoreRef.current = score
+  }, [score])
+
+  // Track page visit
+  useEffect(() => {
+    trackLearningEvent('page_visited', 'navigation', {
+      page_name: 'articles',
+      tool_type: 'language_learning'
+    })
+  }, [])
+
+  // Track session end when component unmounts
+  useEffect(() => {
+    return () => {
+      const finalScore = scoreRef.current
+      if (finalScore.total > 0) {
+        trackLearningEvent('session_ended', 'article_practice', {
+          session_duration_exercises: finalScore.total,
+          final_score: finalScore.correct,
+          final_accuracy: Math.round((finalScore.correct / finalScore.total) * 100),
+          completion_reason: 'page_navigation'
+        })
+      }
+    }
+  }, [])
 
   // Load noun data asynchronously
   const loadNounData = async () => {
@@ -74,10 +103,44 @@ function ArticlesPage() {
     setShowResult(true)
     
     // Update score
-    setScore(prevScore => ({
-      correct: correct ? prevScore.correct + 1 : prevScore.correct,
-      total: prevScore.total + 1
-    }))
+    const newScore = {
+      correct: correct ? score.correct + 1 : score.correct,
+      total: score.total + 1
+    }
+    setScore(newScore)
+    
+    // Track article selection event
+    trackLearningEvent('article_selected', 'article_practice', {
+      is_correct: correct,
+      selected_article: chosenArticle,
+      correct_article: currentWord.article,
+      word_category: currentWord.category,
+      word_translation: currentWord.translation,
+      current_session_score: newScore.correct,
+      current_session_total: newScore.total,
+      accuracy: newScore.total > 0 ? Math.round((newScore.correct / newScore.total) * 100) : 0
+    })
+    
+    // Track milestone achievements
+    if (newScore.total === 5 || newScore.total === 10 || newScore.total === 25 || newScore.total === 50) {
+      trackLearningEvent('milestone_reached', 'article_practice', {
+        milestone_type: 'exercises_completed',
+        milestone_value: newScore.total,
+        accuracy_at_milestone: Math.round((newScore.correct / newScore.total) * 100),
+        session_score: newScore.correct
+      })
+    }
+    
+    // Track high accuracy achievements
+    const accuracy = Math.round((newScore.correct / newScore.total) * 100)
+    if (newScore.total >= 10 && (accuracy === 90 || accuracy === 95 || accuracy === 100)) {
+      trackLearningEvent('achievement_unlocked', 'article_practice', {
+        achievement_type: 'high_accuracy',
+        accuracy_percentage: accuracy,
+        exercises_completed: newScore.total,
+        score: newScore.correct
+      })
+    }
   }
 
   // Get next word
