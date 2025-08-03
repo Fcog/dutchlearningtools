@@ -5,6 +5,17 @@ import Input from '../atoms/Input'
 
 const PRONOUNS = ['ik', 'jij', 'hij/zij', 'wij', 'jullie', 'zij']
 
+// Mapping of tense keys to their display names
+const getTenseName = (tenseKey) => {
+  const tenseNames = {
+    present: 'Tegenwoordige tijd (Present)',
+    past: 'Verleden tijd (Past)',
+    perfect: 'Voltooid tegenwoordige tijd (Perfect)',
+    future: 'Toekomende tijd (Future)'
+  }
+  return tenseNames[tenseKey] || tenseKey
+}
+
 function VerbExercise({ 
   currentVerb, 
   currentPronoun,
@@ -30,7 +41,7 @@ function VerbExercise({
         
         {/* Tense Info */}
         <div className="exercise-tense">
-          <strong>Tiempo:</strong> {currentVerb.tenses[currentTense].name}
+          <strong>Tense:</strong> {getTenseName(currentTense)}
         </div>
 
         {/* Exercise Prompt */}
@@ -82,7 +93,7 @@ function VerbExercise({
       {/* Complete Conjugation Table */}
       <div className="conjugation-table">
         <div className="conjugation-table-title">
-          Complete conjugation of "{currentVerb.infinitive}" ({currentVerb.tenses[currentTense].name}):
+          Complete conjugation of "{currentVerb.infinitive}" ({getTenseName(currentTense)}):
         </div>
         <div className="conjugation-grid">
           {PRONOUNS.map(pronoun => (

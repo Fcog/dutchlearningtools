@@ -6,7 +6,6 @@
       "stem": "loop",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "loop",
             "jij": "loopt",
@@ -17,7 +16,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "liep",
             "jij": "liep",
@@ -28,7 +26,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gelopen",
             "jij": "hebt gelopen",
@@ -39,7 +36,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal lopen",
             "jij": "zult lopen",
@@ -57,7 +53,6 @@
       "stem": "werk",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "werk",
             "jij": "werkt",
@@ -68,7 +63,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "werkte",
             "jij": "werkte",
@@ -79,7 +73,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gewerkt",
             "jij": "hebt gewerkt",
@@ -90,7 +83,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal werken",
             "jij": "zult werken",
@@ -108,7 +100,6 @@
       "stem": "speel",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "speel",
             "jij": "speelt",
@@ -119,7 +110,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "speelde",
             "jij": "speelde",
@@ -130,7 +120,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gespeeld",
             "jij": "hebt gespeeld",
@@ -141,7 +130,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal spelen",
             "jij": "zult spelen",
@@ -159,7 +147,6 @@
       "stem": "kook",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "kook",
             "jij": "kookt",
@@ -170,7 +157,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "kookte",
             "jij": "kookte",
@@ -181,7 +167,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gekookt",
             "jij": "hebt gekookt",
@@ -192,7 +177,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal koken",
             "jij": "zult koken",
@@ -210,7 +194,6 @@
       "stem": "leer",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "leer",
             "jij": "leert",
@@ -221,7 +204,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "leerde",
             "jij": "leerde",
@@ -232,7 +214,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb geleerd",
             "jij": "hebt geleerd",
@@ -243,7 +224,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal leren",
             "jij": "zult leren",
@@ -261,7 +241,6 @@
       "stem": "woon",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "woon",
             "jij": "woont",
@@ -272,7 +251,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "woonde",
             "jij": "woonde",
@@ -283,7 +261,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gewoond",
             "jij": "hebt gewoond",
@@ -294,7 +271,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal wonen",
             "jij": "zult wonen",
@@ -312,7 +288,6 @@
       "stem": "heb",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "heb",
             "jij": "hebt",
@@ -323,7 +298,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "had",
             "jij": "had",
@@ -334,7 +308,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gehad",
             "jij": "hebt gehad",
@@ -345,7 +318,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal hebben",
             "jij": "zult hebben",
@@ -363,7 +335,6 @@
       "stem": "ben",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "ben",
             "jij": "bent",
@@ -374,7 +345,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "was",
             "jij": "was",
@@ -385,7 +355,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "ben geweest",
             "jij": "bent geweest",
@@ -396,7 +365,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal zijn",
             "jij": "zult zijn",
@@ -414,7 +382,6 @@
       "stem": "eet",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "eet",
             "jij": "eet",
@@ -425,7 +392,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "at",
             "jij": "at",
@@ -436,7 +402,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gegeten",
             "jij": "hebt gegeten",
@@ -447,7 +412,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal eten",
             "jij": "zult eten",
@@ -465,7 +429,6 @@
       "stem": "drink",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "drink",
             "jij": "drinkt",
@@ -476,7 +439,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "dronk",
             "jij": "dronk",
@@ -487,7 +449,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gedronken",
             "jij": "hebt gedronken",
@@ -498,7 +459,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal drinken",
             "jij": "zult drinken",
@@ -516,7 +476,6 @@
       "stem": "slaap",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "slaap",
             "jij": "slaapt",
@@ -527,7 +486,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "sliep",
             "jij": "sliep",
@@ -538,7 +496,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb geslapen",
             "jij": "hebt geslapen",
@@ -549,7 +506,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal slapen",
             "jij": "zult slapen",
@@ -567,7 +523,6 @@
       "stem": "zie",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "zie",
             "jij": "ziet",
@@ -578,7 +533,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "zag",
             "jij": "zag",
@@ -589,7 +543,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gezien",
             "jij": "hebt gezien",
@@ -600,7 +553,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal zien",
             "jij": "zult zien",
@@ -618,7 +570,6 @@
       "stem": "kom",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "kom",
             "jij": "komt",
@@ -629,7 +580,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "kwam",
             "jij": "kwam",
@@ -640,7 +590,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "ben gekomen",
             "jij": "bent gekomen",
@@ -651,7 +600,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal komen",
             "jij": "zult komen",
@@ -669,7 +617,6 @@
       "stem": "ga",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "ga",
             "jij": "gaat",
@@ -680,7 +627,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "ging",
             "jij": "ging",
@@ -691,7 +637,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "ben gegaan",
             "jij": "bent gegaan",
@@ -702,7 +647,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal gaan",
             "jij": "zult gaan",
@@ -720,7 +664,6 @@
       "stem": "doe",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "doe",
             "jij": "doet",
@@ -731,7 +674,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "deed",
             "jij": "deed",
@@ -742,7 +684,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gedaan",
             "jij": "hebt gedaan",
@@ -753,7 +694,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal doen",
             "jij": "zult doen",
@@ -771,7 +711,6 @@
       "stem": "zeg",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "zeg",
             "jij": "zegt",
@@ -782,7 +721,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "zei",
             "jij": "zei",
@@ -793,7 +731,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gezegd",
             "jij": "hebt gezegd",
@@ -804,7 +741,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal zeggen",
             "jij": "zult zeggen",
@@ -822,7 +758,6 @@
       "stem": "maak",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "maak",
             "jij": "maakt",
@@ -833,7 +768,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "maakte",
             "jij": "maakte",
@@ -844,7 +778,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gemaakt",
             "jij": "hebt gemaakt",
@@ -855,7 +788,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal maken",
             "jij": "zult maken",
@@ -873,7 +805,6 @@
       "stem": "neem",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "neem",
             "jij": "neemt",
@@ -884,7 +815,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "nam",
             "jij": "nam",
@@ -895,7 +825,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb genomen",
             "jij": "hebt genomen",
@@ -906,7 +835,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal nemen",
             "jij": "zult nemen",
@@ -924,7 +852,6 @@
       "stem": "geef",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "geef",
             "jij": "geeft",
@@ -935,7 +862,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "gaf",
             "jij": "gaf",
@@ -946,7 +872,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gegeven",
             "jij": "hebt gegeven",
@@ -957,7 +882,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal geven",
             "jij": "zult geven",
@@ -975,7 +899,6 @@
       "stem": "krijg",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "krijg",
             "jij": "krijgt",
@@ -986,7 +909,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "kreeg",
             "jij": "kreeg",
@@ -997,7 +919,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gekregen",
             "jij": "hebt gekregen",
@@ -1008,7 +929,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal krijgen",
             "jij": "zult krijgen",
@@ -1026,7 +946,6 @@
       "stem": "weet",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "weet",
             "jij": "weet",
@@ -1037,7 +956,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "wist",
             "jij": "wist",
@@ -1048,7 +966,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb geweten",
             "jij": "hebt geweten",
@@ -1059,7 +976,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal weten",
             "jij": "zult weten",
@@ -1077,7 +993,6 @@
       "stem": "vind",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "vind",
             "jij": "vindt",
@@ -1088,7 +1003,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "vond",
             "jij": "vond",
@@ -1099,7 +1013,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gevonden",
             "jij": "hebt gevonden",
@@ -1110,7 +1023,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal vinden",
             "jij": "zult vinden",
@@ -1128,7 +1040,6 @@
       "stem": "kan",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "kan",
             "jij": "kunt",
@@ -1139,7 +1050,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "kon",
             "jij": "kon",
@@ -1150,7 +1060,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gekund",
             "jij": "hebt gekund",
@@ -1161,7 +1070,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal kunnen",
             "jij": "zult kunnen",
@@ -1179,7 +1087,6 @@
       "stem": "wil",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "wil",
             "jij": "wilt",
@@ -1190,7 +1097,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "wilde",
             "jij": "wilde",
@@ -1201,7 +1107,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gewild",
             "jij": "hebt gewild",
@@ -1212,7 +1117,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal willen",
             "jij": "zult willen",
@@ -1230,7 +1134,6 @@
       "stem": "moet",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "moet",
             "jij": "moet",
@@ -1241,7 +1144,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "moest",
             "jij": "moest",
@@ -1252,7 +1154,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gemoeten",
             "jij": "hebt gemoeten",
@@ -1263,7 +1164,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal moeten",
             "jij": "zult moeten",
@@ -1281,7 +1181,6 @@
       "stem": "kijk",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "kijk",
             "jij": "kijkt",
@@ -1292,7 +1191,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "keek",
             "jij": "keek",
@@ -1303,7 +1201,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gekeken",
             "jij": "hebt gekeken",
@@ -1314,7 +1211,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal kijken",
             "jij": "zult kijken",
@@ -1332,7 +1228,6 @@
       "stem": "praat",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "praat",
             "jij": "praat",
@@ -1343,7 +1238,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "praatte",
             "jij": "praatte",
@@ -1354,7 +1248,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gepraat",
             "jij": "hebt gepraat",
@@ -1365,7 +1258,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal praten",
             "jij": "zult praten",
@@ -1383,7 +1275,6 @@
       "stem": "hoor",
       "tenses": {
         "present": {
-          "name": "Tegenwoordige tijd (Present)",
           "conjugations": {
             "ik": "hoor",
             "jij": "hoort",
@@ -1394,7 +1285,6 @@
           }
         },
         "past": {
-          "name": "Verleden tijd (Past)",
           "conjugations": {
             "ik": "hoorde",
             "jij": "hoorde",
@@ -1405,7 +1295,6 @@
           }
         },
         "perfect": {
-          "name": "Voltooid tegenwoordige tijd (Perfect)",
           "conjugations": {
             "ik": "heb gehoord",
             "jij": "hebt gehoord",
@@ -1416,7 +1305,6 @@
           }
         },
         "future": {
-          "name": "Toekomende tijd (Future)",
           "conjugations": {
             "ik": "zal horen",
             "jij": "zult horen",
