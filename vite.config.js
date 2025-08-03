@@ -12,7 +12,9 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
-          router: ['react-router-dom']
+          router: ['react-router-dom'],
+          'verb-data': ['./src/data/dutch-verbs-all-tenses.json'],
+          'noun-data': ['./src/data/dutch-nouns.json']
         }
       }
     }

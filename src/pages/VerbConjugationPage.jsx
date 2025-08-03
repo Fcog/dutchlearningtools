@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import dutchVerbsData from '../data/dutch-verbs-all-tenses.json'
 import PageLayout from '../components/templates/PageLayout'
 import ScoreDisplay from '../components/molecules/ScoreDisplay'
 import TenseSelector from '../components/molecules/TenseSelector'
@@ -11,6 +10,8 @@ const PRONOUNS = ['ik', 'jij', 'hij/zij', 'wij', 'jullie', 'zij']
 
 function VerbConjugationPage() {
   const navigate = useNavigate()
+  const [dutchVerbsData, setDutchVerbsData] = useState(null)
+  const [isDataLoading, setIsDataLoading] = useState(true)
   const [currentVerb, setCurrentVerb] = useState(null)
   const [currentPronoun, setCurrentPronoun] = useState(null)
   const [currentTense, setCurrentTense] = useState(null)
@@ -20,6 +21,24 @@ function VerbConjugationPage() {
   const [isCorrect, setIsCorrect] = useState(false)
   const [score, setScore] = useState({ correct: 0, total: 0 })
   const [isMobile, setIsMobile] = useState(false)
+
+  // Load verb data asynchronously
+  const loadVerbData = async () => {
+    try {
+      setIsDataLoading(true)
+      const data = await import('../data/dutch-verbs-all-tenses.json')
+      setDutchVerbsData(data.default)
+    } catch (error) {
+      console.error('Error loading verb data:', error)
+    } finally {
+      setIsDataLoading(false)
+    }
+  }
+
+  // Load data on component mount
+  useEffect(() => {
+    loadVerbData()
+  }, [])
 
   // Check if user is on mobile device
   useEffect(() => {
@@ -33,10 +52,12 @@ function VerbConjugationPage() {
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
-  // Initialize with first exercise
+  // Initialize with first exercise after data is loaded
   useEffect(() => {
-    generateNewExercise()
-  }, [])
+    if (dutchVerbsData && !isDataLoading) {
+      generateNewExercise()
+    }
+  }, [dutchVerbsData, isDataLoading])
 
   // Regenerate exercise when selected tenses change
   useEffect(() => {
@@ -47,6 +68,8 @@ function VerbConjugationPage() {
 
   // Generate a new exercise
   const generateNewExercise = () => {
+    if (!dutchVerbsData?.dutch_verbs) return
+    
     const verbs = dutchVerbsData.dutch_verbs
     const randomVerb = verbs[Math.floor(Math.random() * verbs.length)]
     const randomPronoun = PRONOUNS[Math.floor(Math.random() * PRONOUNS.length)]
@@ -134,7 +157,7 @@ function VerbConjugationPage() {
     window.open(shareUrl, '_blank', 'width=600,height=400,scrollbars=yes,resizable=yes')
   }
 
-  if (!currentVerb || !currentPronoun || !currentTense) {
+  if (isDataLoading || !currentVerb || !currentPronoun || !currentTense) {
     return (
       <PageLayout>
         <h1>Loading...</h1>

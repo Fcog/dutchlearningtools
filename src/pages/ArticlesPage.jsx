@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import dutchNounsData from '../data/dutch-nouns.json'
 import PageLayout from '../components/templates/PageLayout'
 import ScoreDisplay from '../components/molecules/ScoreDisplay'
 import ArticleExercise from '../components/organisms/ArticleExercise'
@@ -8,12 +7,32 @@ import SocialSharing from '../components/organisms/SocialSharing'
 
 function ArticlesPage() {
   const navigate = useNavigate()
+  const [dutchNounsData, setDutchNounsData] = useState(null)
+  const [isDataLoading, setIsDataLoading] = useState(true)
   const [currentWord, setCurrentWord] = useState(null)
   const [isMobile, setIsMobile] = useState(false)
   const [selectedArticle, setSelectedArticle] = useState(null)
   const [showResult, setShowResult] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
   const [score, setScore] = useState({ correct: 0, total: 0 })
+
+  // Load noun data asynchronously
+  const loadNounData = async () => {
+    try {
+      setIsDataLoading(true)
+      const data = await import('../data/dutch-nouns.json')
+      setDutchNounsData(data.default)
+    } catch (error) {
+      console.error('Error loading noun data:', error)
+    } finally {
+      setIsDataLoading(false)
+    }
+  }
+
+  // Load data on component mount
+  useEffect(() => {
+    loadNounData()
+  }, [])
 
   // Check if user is on mobile device
   useEffect(() => {
@@ -27,8 +46,17 @@ function ArticlesPage() {
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
+  // Initialize with first word after data is loaded
+  useEffect(() => {
+    if (dutchNounsData && !isDataLoading && !currentWord) {
+      handleNextWord()
+    }
+  }, [dutchNounsData, isDataLoading])
+
   // Function to get a random word for exercise
   const getRandomWord = () => {
+    if (!dutchNounsData?.dutch_nouns) return null
+    
     const words = dutchNounsData.dutch_nouns
     const randomIndex = Math.floor(Math.random() * words.length)
     return words[randomIndex]
@@ -96,12 +124,7 @@ function ArticlesPage() {
     window.open(shareUrl, '_blank', 'width=600,height=400,scrollbars=yes,resizable=yes')
   }
 
-  useEffect(() => {
-    const firstWord = getRandomWord()
-    setCurrentWord(firstWord)
-  }, [])
-
-  if (!currentWord) {
+  if (isDataLoading || !currentWord) {
     return (
       <PageLayout>
         <h1>Loading...</h1>
