@@ -5,6 +5,7 @@ import ScoreDisplay from '../components/molecules/ScoreDisplay'
 import FilterSidebar from '../components/organisms/FilterSidebar'
 import VerbExercise from '../components/organisms/VerbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
+import { trackLearningEvent } from '../utils/analytics'
 
 const PRONOUNS = ['ik', 'jij', 'hij/zij', 'wij', 'jullie', 'zij']
 
@@ -26,6 +27,7 @@ function VerbConjugationPage() {
   const [isMobile, setIsMobile] = useState(false)
   const [filteredVerbs, setFilteredVerbs] = useState([])
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [nextExerciseClickCount, setNextExerciseClickCount] = useState(0)
 
   // Load verb data asynchronously
   const loadVerbData = async () => {
@@ -115,6 +117,19 @@ function VerbConjugationPage() {
     setUserAnswer('')
     setShowResult(false)
     setIsCorrect(false)
+    
+    // Track "Next Exercise" clicks (but skip the initial load)
+    if (currentVerb) {
+      const newClickCount = nextExerciseClickCount + 1
+      setNextExerciseClickCount(newClickCount)
+      
+      trackLearningEvent('next_exercise_clicked', 'verb_conjugation', {
+        total_next_clicks: newClickCount,
+        current_session_score: score.correct,
+        current_session_total: score.total,
+        accuracy: score.total > 0 ? Math.round((score.correct / score.total) * 100) : 0
+      })
+    }
   }
 
   // Check user's answer
@@ -152,18 +167,58 @@ function VerbConjugationPage() {
   // Handle filter changes
   const handleTenseChange = (newSelectedTenses) => {
     setSelectedTenses(newSelectedTenses)
+    
+    // Track tense filter changes
+    trackLearningEvent('filter_changed', 'verb_conjugation', {
+      filter_type: 'tense',
+      selected_values: newSelectedTenses,
+      total_selected: newSelectedTenses.length,
+      previous_values: selectedTenses,
+      changed_from: selectedTenses.length,
+      changed_to: newSelectedTenses.length
+    })
   }
 
   const handleLevelChange = (newSelectedLevels) => {
     setSelectedLevels(newSelectedLevels)
+    
+    // Track level filter changes
+    trackLearningEvent('filter_changed', 'verb_conjugation', {
+      filter_type: 'level',
+      selected_values: newSelectedLevels,
+      total_selected: newSelectedLevels.length,
+      previous_values: selectedLevels,
+      changed_from: selectedLevels.length,
+      changed_to: newSelectedLevels.length
+    })
   }
 
   const handleVerbTypeChange = (newSelectedVerbTypes) => {
     setSelectedVerbTypes(newSelectedVerbTypes)
+    
+    // Track verb type filter changes
+    trackLearningEvent('filter_changed', 'verb_conjugation', {
+      filter_type: 'verb_type',
+      selected_values: newSelectedVerbTypes,
+      total_selected: newSelectedVerbTypes.length,
+      previous_values: selectedVerbTypes,
+      changed_from: selectedVerbTypes.length,
+      changed_to: newSelectedVerbTypes.length
+    })
   }
 
   const handleSeparableChange = (newSelectedSeparable) => {
     setSelectedSeparable(newSelectedSeparable)
+    
+    // Track separable filter changes
+    trackLearningEvent('filter_changed', 'verb_conjugation', {
+      filter_type: 'separable',
+      selected_values: newSelectedSeparable,
+      total_selected: newSelectedSeparable.length,
+      previous_values: selectedSeparable,
+      changed_from: selectedSeparable.length,
+      changed_to: newSelectedSeparable.length
+    })
   }
 
   // Handle sidebar toggle
