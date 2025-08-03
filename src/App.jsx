@@ -4,12 +4,14 @@ import ArticlesPage from './pages/ArticlesPage'
 import VerbConjugationPage from './pages/VerbConjugationPage'
 import NotFoundPage from './pages/NotFoundPage'
 import ScrollToTop from './components/ScrollToTop'
+import usePageTracking from './hooks/usePageTracking'
 
-function App() {
+// Component to handle page tracking inside the Router context
+function AppRoutes() {
+  usePageTracking(); // Track page views on route changes
+  
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
+    <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/articles" element={<ArticlesPage />} />
         <Route path="/verbs" element={<VerbConjugationPage />} />
@@ -18,7 +20,15 @@ function App() {
         <Route path="/grammar" element={<div>Grammar tool coming soon!</div>} />
         <Route path="/vocabulary" element={<div>Vocabulary tool coming soon!</div>} />
         <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+    </Routes>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <AppRoutes />
     </BrowserRouter>
   )
 }
