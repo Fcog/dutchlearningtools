@@ -1,10 +1,15 @@
 import React from 'react'
+import Card from '../atoms/Card'
 
 function WordCard({ children, style = {} }) {
   return (
-    <article className="word-card custom-wordcard" style={style}>
+    <Card 
+      as="article" 
+      className="word-card custom-wordcard" 
+      style={style}
+    >
       {children}
-    </article>
+    </Card>
   )
 }
 

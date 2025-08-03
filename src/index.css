@@ -1311,6 +1311,18 @@ body {
   font-family: 'Courier New', monospace;
 }
 
+.filter-option-header-compact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-option-header-compact p {
+  margin: 0;
+  padding: 0;
+}
+
 .filter-warning {
   padding: 0.75rem;
   background: #fff3cd;

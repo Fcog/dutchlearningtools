@@ -1,5 +1,5 @@
 import React from 'react'
-import FilterSelector from '../molecules/FilterSelector'
+import FilterSelector from './FilterSelector'
 import Button from '../atoms/Button'
 import Icon from '../atoms/Icon'
 
