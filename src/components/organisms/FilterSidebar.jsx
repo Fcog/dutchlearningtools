@@ -101,6 +101,7 @@ function FilterSidebar({
               variant="secondary"
               size="small"
               onClick={() => {
+                onTenseChange(['past', 'perfect'])
                 onVerbTypeChange(['irregular'])
                 onSeparableChange(['separable'])
               }}
