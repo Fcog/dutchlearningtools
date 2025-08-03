@@ -1,0 +1,580 @@
+{
+  "dutch_prepositions": [
+    {
+      "preposition": "aan",
+      "sentence": "De foto hangt ___ de muur.",
+      "translation": "The photo hangs on the wall.",
+      "category": "place"
+    },
+    {
+      "preposition": "aan",
+      "sentence": "Ik werk ___ mijn huiswerk.",
+      "translation": "I am working on my homework.",
+      "category": "relation"
+    },
+    {
+      "preposition": "aan",
+      "sentence": "Het kind denkt ___ zijn moeder.",
+      "translation": "The child thinks about his mother.",
+      "category": "relation"
+    },
+    {
+      "preposition": "achter",
+      "sentence": "De kat zit ___ de bank.",
+      "translation": "The cat sits behind the couch.",
+      "category": "place"
+    },
+    {
+      "preposition": "achter",
+      "sentence": "De bal rolt ___ de boom.",
+      "translation": "The ball rolls behind the tree.",
+      "category": "direction"
+    },
+    {
+      "preposition": "achter",
+      "sentence": "Hij loopt ___ mij aan.",
+      "translation": "He walks behind me.",
+      "category": "place"
+    },
+    {
+      "preposition": "bij",
+      "sentence": "Ik woon ___ mijn ouders.",
+      "translation": "I live with my parents.",
+      "category": "place"
+    },
+    {
+      "preposition": "bij",
+      "sentence": "We ontmoeten elkaar ___ het station.",
+      "translation": "We meet each other at the station.",
+      "category": "place"
+    },
+    {
+      "preposition": "bij",
+      "sentence": "Het boek ligt ___ de deur.",
+      "translation": "The book is near the door.",
+      "category": "place"
+    },
+    {
+      "preposition": "binnen",
+      "sentence": "De kinderen spelen ___ het huis.",
+      "translation": "The children play inside the house.",
+      "category": "place"
+    },
+    {
+      "preposition": "binnen",
+      "sentence": "Kom ___ voor het regent.",
+      "translation": "Come inside before it rains.",
+      "category": "direction"
+    },
+    {
+      "preposition": "binnen",
+      "sentence": "Het is warm ___ de kamer.",
+      "translation": "It is warm inside the room.",
+      "category": "place"
+    },
+    {
+      "preposition": "boven",
+      "sentence": "De lamp hangt ___ de tafel.",
+      "translation": "The lamp hangs above the table.",
+      "category": "place"
+    },
+    {
+      "preposition": "boven",
+      "sentence": "Het vliegtuig vliegt ___ de wolken.",
+      "translation": "The plane flies above the clouds.",
+      "category": "place"
+    },
+    {
+      "preposition": "boven",
+      "sentence": "Mijn slaapkamer is ___ de keuken.",
+      "translation": "My bedroom is above the kitchen.",
+      "category": "place"
+    },
+    {
+      "preposition": "buiten",
+      "sentence": "De hond speelt ___ in de tuin.",
+      "translation": "The dog plays outside in the garden.",
+      "category": "place"
+    },
+    {
+      "preposition": "buiten",
+      "sentence": "Het regent ___.",
+      "translation": "It's raining outside.",
+      "category": "place"
+    },
+    {
+      "preposition": "buiten",
+      "sentence": "We eten ___ op het terras.",
+      "translation": "We eat outside on the terrace.",
+      "category": "place"
+    },
+    {
+      "preposition": "door",
+      "sentence": "We lopen ___ het park.",
+      "translation": "We walk through the park.",
+      "category": "direction"
+    },
+    {
+      "preposition": "door",
+      "sentence": "Het boek is geschreven ___ een beroemde auteur.",
+      "translation": "The book is written by a famous author.",
+      "category": "relation"
+    },
+    {
+      "preposition": "door",
+      "sentence": "Ik ga ___ de deur.",
+      "translation": "I go through the door.",
+      "category": "direction"
+    },
+    {
+      "preposition": "in",
+      "sentence": "Het boek ligt ___ de tas.",
+      "translation": "The book is in the bag.",
+      "category": "place"
+    },
+    {
+      "preposition": "in",
+      "sentence": "We wonen ___ Amsterdam.",
+      "translation": "We live in Amsterdam.",
+      "category": "place"
+    },
+    {
+      "preposition": "in",
+      "sentence": "Ik ga ___ de winkel.",
+      "translation": "I go into the store.",
+      "category": "direction"
+    },
+    {
+      "preposition": "langs",
+      "sentence": "We wandelen ___ het kanaal.",
+      "translation": "We walk along the canal.",
+      "category": "direction"
+    },
+    {
+      "preposition": "langs",
+      "sentence": "Het pad loopt ___ de rivier.",
+      "translation": "The path runs along the river.",
+      "category": "place"
+    },
+    {
+      "preposition": "langs",
+      "sentence": "Hij rijdt ___ mijn huis.",
+      "translation": "He drives past my house.",
+      "category": "direction"
+    },
+    {
+      "preposition": "met",
+      "sentence": "Ik ga ___ de bus naar school.",
+      "translation": "I go to school by bus.",
+      "category": "relation"
+    },
+    {
+      "preposition": "met",
+      "sentence": "Ze speelt ___ haar vrienden.",
+      "translation": "She plays with her friends.",
+      "category": "relation"
+    },
+    {
+      "preposition": "met",
+      "sentence": "Ik eet ___ een vork.",
+      "translation": "I eat with a fork.",
+      "category": "relation"
+    },
+    {
+      "preposition": "naar",
+      "sentence": "We gaan ___ de bioscoop.",
+      "translation": "We go to the cinema.",
+      "category": "direction"
+    },
+    {
+      "preposition": "naar",
+      "sentence": "Ik luister ___ muziek.",
+      "translation": "I listen to music.",
+      "category": "relation"
+    },
+    {
+      "preposition": "naar",
+      "sentence": "Kijk ___ het bord.",
+      "translation": "Look at the board.",
+      "category": "direction"
+    },
+    {
+      "preposition": "naast",
+      "sentence": "De stoel staat ___ de tafel.",
+      "translation": "The chair stands next to the table.",
+      "category": "place"
+    },
+    {
+      "preposition": "naast",
+      "sentence": "Ik zit ___ mijn vriend.",
+      "translation": "I sit next to my friend.",
+      "category": "place"
+    },
+    {
+      "preposition": "naast",
+      "sentence": "Het restaurant is ___ de bank.",
+      "translation": "The restaurant is next to the bank.",
+      "category": "place"
+    },
+    {
+      "preposition": "om",
+      "sentence": "De hond rent ___ de boom.",
+      "translation": "The dog runs around the tree.",
+      "category": "direction"
+    },
+    {
+      "preposition": "om",
+      "sentence": "Ik vraag ___ hulp.",
+      "translation": "I ask for help.",
+      "category": "relation"
+    },
+    {
+      "preposition": "om",
+      "sentence": "We komen ___ acht uur.",
+      "translation": "We come at eight o'clock.",
+      "category": "time"
+    },
+    {
+      "preposition": "onder",
+      "sentence": "De kat slaapt ___ de tafel.",
+      "translation": "The cat sleeps under the table.",
+      "category": "place"
+    },
+    {
+      "preposition": "onder",
+      "sentence": "Het boek ligt ___ de krant.",
+      "translation": "The book lies under the newspaper.",
+      "category": "place"
+    },
+    {
+      "preposition": "onder",
+      "sentence": "We zitten ___ de boom.",
+      "translation": "We sit under the tree.",
+      "category": "place"
+    },
+    {
+      "preposition": "op",
+      "sentence": "Het boek ligt ___ de tafel.",
+      "translation": "The book lies on the table.",
+      "category": "place"
+    },
+    {
+      "preposition": "op",
+      "sentence": "Ik ga ___ vakantie.",
+      "translation": "I go on vacation.",
+      "category": "relation"
+    },
+    {
+      "preposition": "op",
+      "sentence": "We wonen ___ de tweede verdieping.",
+      "translation": "We live on the second floor.",
+      "category": "place"
+    },
+    {
+      "preposition": "over",
+      "sentence": "De brug gaat ___ de rivier.",
+      "translation": "The bridge goes over the river.",
+      "category": "place"
+    },
+    {
+      "preposition": "over",
+      "sentence": "We praten ___ het weer.",
+      "translation": "We talk about the weather.",
+      "category": "relation"
+    },
+    {
+      "preposition": "over",
+      "sentence": "Het vliegtuig vliegt ___ de stad.",
+      "translation": "The plane flies over the city.",
+      "category": "direction"
+    },
+    {
+      "preposition": "rond",
+      "sentence": "We lopen ___ het meer.",
+      "translation": "We walk around the lake.",
+      "category": "direction"
+    },
+    {
+      "preposition": "rond",
+      "sentence": "De kinderen staan ___ de leraar.",
+      "translation": "The children stand around the teacher.",
+      "category": "place"
+    },
+    {
+      "preposition": "rond",
+      "sentence": "Het feest begint ___ acht uur.",
+      "translation": "The party starts around eight o'clock.",
+      "category": "time"
+    },
+    {
+      "preposition": "rondom",
+      "sentence": "Er staat een hek ___ de tuin.",
+      "translation": "There is a fence around the garden.",
+      "category": "place"
+    },
+    {
+      "preposition": "rondom",
+      "sentence": "De mensen staan ___ het podium.",
+      "translation": "The people stand around the stage.",
+      "category": "place"
+    },
+    {
+      "preposition": "rondom",
+      "sentence": "We rijden ___ de stad.",
+      "translation": "We drive around the city.",
+      "category": "direction"
+    },
+    {
+      "preposition": "tegen",
+      "sentence": "De ladder staat ___ de muur.",
+      "translation": "The ladder stands against the wall.",
+      "category": "place"
+    },
+    {
+      "preposition": "tegen",
+      "sentence": "Ik ben ___ het plan.",
+      "translation": "I am against the plan.",
+      "category": "relation"
+    },
+    {
+      "preposition": "tegen",
+      "sentence": "De bal rolt ___ de deur.",
+      "translation": "The ball rolls against the door.",
+      "category": "direction"
+    },
+    {
+      "preposition": "tussen",
+      "sentence": "De lamp staat ___ de bank en de kast.",
+      "translation": "The lamp stands between the couch and the closet.",
+      "category": "place"
+    },
+    {
+      "preposition": "tussen",
+      "sentence": "Ik zit ___ twee vrienden.",
+      "translation": "I sit between two friends.",
+      "category": "place"
+    },
+    {
+      "preposition": "tussen",
+      "sentence": "Het verschil ___ dag en nacht is groot.",
+      "translation": "The difference between day and night is big.",
+      "category": "relation"
+    },
+    {
+      "preposition": "uit",
+      "sentence": "Hij komt ___ Nederland.",
+      "translation": "He comes from the Netherlands.",
+      "category": "direction"
+    },
+    {
+      "preposition": "uit",
+      "sentence": "Ze haalt het boek ___ de tas.",
+      "translation": "She takes the book out of the bag.",
+      "category": "direction"
+    },
+    {
+      "preposition": "uit",
+      "sentence": "We gaan ___ eten.",
+      "translation": "We go out to eat.",
+      "category": "direction"
+    },
+    {
+      "preposition": "van",
+      "sentence": "Het boek is ___ mijn vader.",
+      "translation": "The book is from my father.",
+      "category": "relation"
+    },
+    {
+      "preposition": "van",
+      "sentence": "Ik kom ___ Amsterdam.",
+      "translation": "I come from Amsterdam.",
+      "category": "direction"
+    },
+    {
+      "preposition": "van",
+      "sentence": "De deur ___ het huis is rood.",
+      "translation": "The door of the house is red.",
+      "category": "relation"
+    },
+    {
+      "preposition": "voor",
+      "sentence": "De auto staat ___ het huis.",
+      "translation": "The car stands in front of the house.",
+      "category": "place"
+    },
+    {
+      "preposition": "voor",
+      "sentence": "Dit cadeau is ___ jou.",
+      "translation": "This gift is for you.",
+      "category": "relation"
+    },
+    {
+      "preposition": "voor",
+      "sentence": "We eten ___ zeven uur.",
+      "translation": "We eat before seven o'clock.",
+      "category": "time"
+    },
+    {
+      "preposition": "sinds",
+      "sentence": "Ik woon hier ___ vorig jaar.",
+      "translation": "I have been living here since last year.",
+      "category": "time"
+    },
+    {
+      "preposition": "sinds",
+      "sentence": "Ze werkt ___ maandag bij ons.",
+      "translation": "She has been working with us since Monday.",
+      "category": "time"
+    },
+    {
+      "preposition": "sinds",
+      "sentence": "Het regent ___ gisteren.",
+      "translation": "It has been raining since yesterday.",
+      "category": "time"
+    },
+    {
+      "preposition": "tot",
+      "sentence": "De winkel is open ___ zes uur.",
+      "translation": "The store is open until six o'clock.",
+      "category": "time"
+    },
+    {
+      "preposition": "tot",
+      "sentence": "We wachten ___ morgen.",
+      "translation": "We wait until tomorrow.",
+      "category": "time"
+    },
+    {
+      "preposition": "tot",
+      "sentence": "Ik tel ___ tien.",
+      "translation": "I count to ten.",
+      "category": "relation"
+    },
+    {
+      "preposition": "tijdens",
+      "sentence": "Ik slaap ___ de les.",
+      "translation": "I sleep during the lesson.",
+      "category": "time"
+    },
+    {
+      "preposition": "tijdens",
+      "sentence": "Het begon te regenen ___ de wedstrijd.",
+      "translation": "It started to rain during the match.",
+      "category": "time"
+    },
+    {
+      "preposition": "tijdens",
+      "sentence": "We praten niet ___ het eten.",
+      "translation": "We don't talk during dinner.",
+      "category": "time"
+    },
+    {
+      "preposition": "vanaf",
+      "sentence": "De bus vertrekt ___ het station.",
+      "translation": "The bus departs from the station.",
+      "category": "direction"
+    },
+    {
+      "preposition": "vanaf",
+      "sentence": "We zijn open ___ maandag.",
+      "translation": "We are open from Monday.",
+      "category": "time"
+    },
+    {
+      "preposition": "vanaf",
+      "sentence": "Je kunt het kasteel zien ___ hier.",
+      "translation": "You can see the castle from here.",
+      "category": "direction"
+    },
+    {
+      "preposition": "gedurende",
+      "sentence": "Het regende ___ de hele dag.",
+      "translation": "It rained throughout the whole day.",
+      "category": "time"
+    },
+    {
+      "preposition": "gedurende",
+      "sentence": "We bleven stil ___ de film.",
+      "translation": "We stayed quiet throughout the movie.",
+      "category": "time"
+    },
+    {
+      "preposition": "gedurende",
+      "sentence": "Hij werkte hard ___ het project.",
+      "translation": "He worked hard throughout the project.",
+      "category": "time"
+    },
+    {
+      "preposition": "dankzij",
+      "sentence": "We slaagden ___ jullie hulp.",
+      "translation": "We succeeded thanks to your help.",
+      "category": "relation"
+    },
+    {
+      "preposition": "dankzij",
+      "sentence": "Het feest was geslaagd ___ de goede organisatie.",
+      "translation": "The party was successful thanks to the good organization.",
+      "category": "relation"
+    },
+    {
+      "preposition": "dankzij",
+      "sentence": "Hij kwam op tijd ___ de snelle trein.",
+      "translation": "He arrived on time thanks to the fast train.",
+      "category": "relation"
+    },
+    {
+      "preposition": "volgens",
+      "sentence": "Het weer wordt mooi ___ de voorspelling.",
+      "translation": "The weather will be nice according to the forecast.",
+      "category": "relation"
+    },
+    {
+      "preposition": "volgens",
+      "sentence": "___ mij is dat niet waar.",
+      "translation": "According to me, that is not true.",
+      "category": "relation"
+    },
+    {
+      "preposition": "volgens",
+      "sentence": "Hij handelt ___ de regels.",
+      "translation": "He acts according to the rules.",
+      "category": "relation"
+    },
+    {
+      "preposition": "wegens",
+      "sentence": "De wedstrijd is afgelast ___ slecht weer.",
+      "translation": "The match is canceled due to bad weather.",
+      "category": "relation"
+    },
+    {
+      "preposition": "wegens",
+      "sentence": "Hij kreeg een boete ___ te hard rijden.",
+      "translation": "He got a fine due to driving too fast.",
+      "category": "relation"
+    },
+    {
+      "preposition": "wegens",
+      "sentence": "De vlucht is vertraagd ___ technische problemen.",
+      "translation": "The flight is delayed due to technical problems.",
+      "category": "relation"
+    },
+    {
+      "preposition": "zonder",
+      "sentence": "Ik ga ___ jas naar buiten.",
+      "translation": "I go outside without a jacket.",
+      "category": "relation"
+    },
+    {
+      "preposition": "zonder",
+      "sentence": "Ze kwam ___ uitnodiging.",
+      "translation": "She came without an invitation.",
+      "category": "relation"
+    },
+    {
+      "preposition": "zonder",
+      "sentence": "Hij werkt ___ pauze.",
+      "translation": "He works without a break.",
+      "category": "relation"
+    }
+  ]
+}
