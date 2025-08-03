@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
 import ScoreDisplay from '../components/molecules/ScoreDisplay'
-import TenseSelector from '../components/molecules/TenseSelector'
+import FilterSidebar from '../components/organisms/FilterSidebar'
 import VerbExercise from '../components/organisms/VerbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 
@@ -16,11 +16,16 @@ function VerbConjugationPage() {
   const [currentPronoun, setCurrentPronoun] = useState(null)
   const [currentTense, setCurrentTense] = useState(null)
   const [selectedTenses, setSelectedTenses] = useState(['present'])
+  const [selectedLevels, setSelectedLevels] = useState(['A1', 'A2', 'B1', 'B2', 'C1', 'C2'])
+  const [selectedVerbTypes, setSelectedVerbTypes] = useState(['regular', 'irregular'])
+  const [selectedSeparable, setSelectedSeparable] = useState(['separable', 'non-separable'])
   const [userAnswer, setUserAnswer] = useState('')
   const [showResult, setShowResult] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
   const [score, setScore] = useState({ correct: 0, total: 0 })
   const [isMobile, setIsMobile] = useState(false)
+  const [filteredVerbs, setFilteredVerbs] = useState([])
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   // Load verb data asynchronously
   const loadVerbData = async () => {
@@ -52,12 +57,42 @@ function VerbConjugationPage() {
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
-  // Initialize with first exercise after data is loaded
+  // Filter verbs based on selected criteria
+  const filterVerbs = () => {
+    if (!dutchVerbsData?.dutch_verbs) return []
+    
+    return dutchVerbsData.dutch_verbs.filter(verb => {
+      // Check level filter
+      const levelMatch = selectedLevels.includes(verb.level)
+      
+      // Check verb type filter (regular vs irregular)
+      const verbTypeMatch = selectedVerbTypes.includes(
+        verb.is_irregular === 'irregular' ? 'irregular' : 'regular'
+      )
+      
+      // Check separable filter
+      const separableMatch = selectedSeparable.includes(
+        verb.is_separable ? 'separable' : 'non-separable'
+      )
+      
+      return levelMatch && verbTypeMatch && separableMatch
+    })
+  }
+
+  // Update filtered verbs when filters change
   useEffect(() => {
-    if (dutchVerbsData && !isDataLoading) {
+    if (dutchVerbsData) {
+      const filtered = filterVerbs()
+      setFilteredVerbs(filtered)
+    }
+  }, [dutchVerbsData, selectedLevels, selectedVerbTypes, selectedSeparable])
+
+  // Initialize with first exercise after data is loaded and filtered
+  useEffect(() => {
+    if (filteredVerbs.length > 0 && !isDataLoading) {
       generateNewExercise()
     }
-  }, [dutchVerbsData, isDataLoading])
+  }, [filteredVerbs, isDataLoading])
 
   // Regenerate exercise when selected tenses change
   useEffect(() => {
@@ -68,10 +103,9 @@ function VerbConjugationPage() {
 
   // Generate a new exercise
   const generateNewExercise = () => {
-    if (!dutchVerbsData?.dutch_verbs) return
+    if (filteredVerbs.length === 0) return
     
-    const verbs = dutchVerbsData.dutch_verbs
-    const randomVerb = verbs[Math.floor(Math.random() * verbs.length)]
+    const randomVerb = filteredVerbs[Math.floor(Math.random() * filteredVerbs.length)]
     const randomPronoun = PRONOUNS[Math.floor(Math.random() * PRONOUNS.length)]
     const randomTense = selectedTenses[Math.floor(Math.random() * selectedTenses.length)]
     
@@ -115,10 +149,39 @@ function VerbConjugationPage() {
     return Math.round((score.correct / score.total) * 100)
   }
 
-  // Handle tense selection change
+  // Handle filter changes
   const handleTenseChange = (newSelectedTenses) => {
     setSelectedTenses(newSelectedTenses)
   }
+
+  const handleLevelChange = (newSelectedLevels) => {
+    setSelectedLevels(newSelectedLevels)
+  }
+
+  const handleVerbTypeChange = (newSelectedVerbTypes) => {
+    setSelectedVerbTypes(newSelectedVerbTypes)
+  }
+
+  const handleSeparableChange = (newSelectedSeparable) => {
+    setSelectedSeparable(newSelectedSeparable)
+  }
+
+  // Handle sidebar toggle
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen)
+  }
+
+  // Close sidebar on mobile when window resizes to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768 && isSidebarOpen) {
+        setIsSidebarOpen(false)
+      }
+    }
+    
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [isSidebarOpen])
 
   // Social sharing functionality
   const shareData = {
@@ -162,39 +225,54 @@ function VerbConjugationPage() {
       <PageLayout>
         <h1>Loading...</h1>
         <p>Loading your Dutch verb conjugation exercise</p>
+        {dutchVerbsData && filteredVerbs.length === 0 && (
+          <div className="no-verbs-message">
+            <p>⚠️ No verbs match your current filters. Please adjust your selection.</p>
+          </div>
+        )}
       </PageLayout>
     )
   }
 
   return (
-    <PageLayout 
-      showBreadcrumb 
-      breadcrumbPage="Verb Conjugation Exercise"
-      onHomeClick={() => navigate('/')}
-      footer={
-        <>
-          <p>🇳🇱 Master Dutch verb conjugations through interactive practice! Perfect for beginners learning Nederlandse werkwoorden.</p>
-          <p>Free Dutch language exercise with common verbs and instant feedback.</p>
-        </>
-      }
-    >
-      <header>
-        <h1>Dutch Verb Conjugation: Multi-Tense Practice</h1>
-        <p className="page-header-description">
-          {isMobile 
-            ? "Practice Dutch verb conjugations across different tenses! Select your preferred tenses and complete sentences with correct verb forms." 
-            : "Master Dutch verb conjugations across multiple tenses! Choose which tenses to practice, then type the correct conjugated form for each pronoun and get instant feedback."
-          }
-        </p>
-      </header>
-
-      <ScoreDisplay score={score} />
-      
-      <TenseSelector
+    <div className={`page-with-sidebar ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+      <FilterSidebar
+        isOpen={isSidebarOpen}
+        onToggle={toggleSidebar}
         selectedTenses={selectedTenses}
+        selectedLevels={selectedLevels}
+        selectedVerbTypes={selectedVerbTypes}
+        selectedSeparable={selectedSeparable}
         onTenseChange={handleTenseChange}
-        className="tense-selector-section"
+        onLevelChange={handleLevelChange}
+        onVerbTypeChange={handleVerbTypeChange}
+        onSeparableChange={handleSeparableChange}
+        filteredVerbsCount={filteredVerbs.length}
       />
+
+      <PageLayout 
+        showBreadcrumb 
+        breadcrumbPage="Verb Conjugation Exercise"
+        onHomeClick={() => navigate('/')}
+        className={`main-content ${isSidebarOpen ? 'content-shifted' : ''}`}
+        footer={
+          <>
+            <p>🇳🇱 Master Dutch verb conjugations through interactive practice! Perfect for beginners learning Nederlandse werkwoorden.</p>
+            <p>Free Dutch language exercise with common verbs and instant feedback.</p>
+          </>
+        }
+      >
+        <header>
+          <h1>Dutch Verb Conjugation: Multi-Tense Practice</h1>
+          <p className="page-header-description">
+            {isMobile 
+              ? "Practice Dutch verb conjugations across different tenses! Use the filter menu to customize your practice." 
+              : "Master Dutch verb conjugations across multiple tenses! Use the filters on the left to customize your practice, then type the correct conjugated form for each pronoun and get instant feedback."
+            }
+          </p>
+        </header>
+
+        <ScoreDisplay score={score} />
       
       <section aria-labelledby="exercise-heading" className="exercise-container">
         <h2 id="exercise-heading" className="exercise-heading">
@@ -238,12 +316,13 @@ function VerbConjugationPage() {
       </section>
       
       
-      <SocialSharing
-        title={shareData.title}
-        description={shareData.description}
-        onShare={handleSocialShare}
-      />
-    </PageLayout>
+        <SocialSharing
+          title={shareData.title}
+          description={shareData.description}
+          onShare={handleSocialShare}
+        />
+      </PageLayout>
+    </div>
   )
 }
 

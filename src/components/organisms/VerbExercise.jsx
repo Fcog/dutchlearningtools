@@ -39,6 +39,28 @@ function VerbExercise({
           English: {currentVerb.english}
         </div>
         
+        {/* Verb Metadata */}
+        <div className="exercise-metadata">
+          <div className="exercise-metadata-item">
+            <span className="exercise-metadata-label">Level:</span>
+            <span className={`exercise-metadata-badge level-${currentVerb.level.toLowerCase()}`}>
+              {currentVerb.level}
+            </span>
+          </div>
+          <div className="exercise-metadata-item">
+            <span className="exercise-metadata-label">Type:</span>
+            <span className={`exercise-metadata-badge ${currentVerb.is_irregular === 'irregular' ? 'irregular' : 'regular'}`}>
+              {currentVerb.is_irregular === 'irregular' ? 'Irregular' : 'Regular'}
+            </span>
+          </div>
+          <div className="exercise-metadata-item">
+            <span className="exercise-metadata-label">Separable:</span>
+            <span className={`exercise-metadata-badge ${currentVerb.is_separable ? 'separable' : 'non-separable'}`}>
+              {currentVerb.is_separable ? 'Yes' : 'No'}
+            </span>
+          </div>
+        </div>
+        
         {/* Tense Info */}
         <div className="exercise-tense">
           <strong>Tense:</strong> {getTenseName(currentTense)}
