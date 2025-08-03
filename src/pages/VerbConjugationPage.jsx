@@ -183,41 +183,10 @@ function VerbConjugationPage() {
     return () => window.removeEventListener('resize', handleResize)
   }, [isSidebarOpen])
 
-  // Social sharing functionality
+  // Social sharing data
   const shareData = {
     title: "Dutch Verb Conjugation Exercise - Interactive Multi-Tense Practice",
     description: "Master Dutch verb conjugations across multiple tenses! Choose from present, past, perfect, and future tenses. Interactive practice with common Dutch verbs and instant feedback."
-  }
-
-  const handleSocialShare = (platform) => {
-    const url = window.location.href
-    const encodedUrl = encodeURIComponent(url)
-    const encodedTitle = encodeURIComponent(shareData.title)
-    const encodedDescription = encodeURIComponent(shareData.description)
-    const encodedText = encodeURIComponent(`${shareData.title} - ${shareData.description}`)
-
-    let shareUrl = '#'
-    switch (platform) {
-      case 'facebook':
-        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
-        break
-      case 'tiktok':
-        shareUrl = `https://www.tiktok.com/share?url=${encodedUrl}&text=${encodedText}`
-        break
-      case 'linkedin':
-        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
-        break
-      case 'whatsapp':
-        shareUrl = `https://wa.me/?text=${encodedText}%20${encodedUrl}`
-        break
-      case 'reddit':
-        shareUrl = `https://reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`
-        break
-      case 'threads':
-        shareUrl = `https://threads.net/intent/post?text=${encodedText}%20${encodedUrl}`
-        break
-    }
-    window.open(shareUrl, '_blank', 'width=600,height=400,scrollbars=yes,resizable=yes')
   }
 
   if (isDataLoading || !currentVerb || !currentPronoun || !currentTense) {
@@ -319,7 +288,6 @@ function VerbConjugationPage() {
         <SocialSharing
           title={shareData.title}
           description={shareData.description}
-          onShare={handleSocialShare}
         />
       </PageLayout>
     </div>

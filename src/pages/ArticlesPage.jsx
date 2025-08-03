@@ -87,41 +87,10 @@ function ArticlesPage() {
     setIsCorrect(false)
   }
 
-  // Social sharing functionality
+  // Social sharing data
   const shareData = {
     title: "Dutch Article Exercise - Interactive De & Het Quiz",
     description: "Practice Dutch articles with our interactive exercise! Choose between 'de' and 'het' for 200 common Dutch nouns and get instant feedback."
-  }
-
-  const handleSocialShare = (platform) => {
-    const url = window.location.href
-    const encodedUrl = encodeURIComponent(url)
-    const encodedTitle = encodeURIComponent(shareData.title)
-    const encodedDescription = encodeURIComponent(shareData.description)
-    const encodedText = encodeURIComponent(`${shareData.title} - ${shareData.description}`)
-
-    let shareUrl = '#'
-    switch (platform) {
-      case 'facebook':
-        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
-        break
-      case 'tiktok':
-        shareUrl = `https://www.tiktok.com/share?url=${encodedUrl}&text=${encodedText}`
-        break
-      case 'linkedin':
-        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
-        break
-      case 'whatsapp':
-        shareUrl = `https://wa.me/?text=${encodedText}%20${encodedUrl}`
-        break
-      case 'reddit':
-        shareUrl = `https://reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`
-        break
-      case 'threads':
-        shareUrl = `https://threads.net/intent/post?text=${encodedText}%20${encodedUrl}`
-        break
-    }
-    window.open(shareUrl, '_blank', 'width=600,height=400,scrollbars=yes,resizable=yes')
   }
 
   if (isDataLoading || !currentWord) {
@@ -197,7 +166,6 @@ function ArticlesPage() {
       <SocialSharing
         title={shareData.title}
         description={shareData.description}
-        onShare={handleSocialShare}
       />
     </PageLayout>
   )
