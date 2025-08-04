@@ -611,8 +611,8 @@
         "present": {
           "conjugations": {
             "ik": "praat",
-            "jij": "praatt",
-            "hij/zij": "praatt",
+            "jij": "praat",
+            "hij/zij": "praat",
             "wij": "praten",
             "jullie": "praten",
             "zij": "praten"
@@ -630,12 +630,12 @@
         },
         "perfect": {
           "conjugations": {
-            "ik": "heb gepraatt",
-            "jij": "hebt gepraatt",
-            "hij/zij": "heeft gepraatt",
-            "wij": "hebben gepraatt",
-            "jullie": "hebben gepraatt",
-            "zij": "hebben gepraatt"
+            "ik": "heb gepraat",
+            "jij": "hebt gepraat",
+            "hij/zij": "heeft gepraat",
+            "wij": "hebben gepraat",
+            "jullie": "hebben gepraat",
+            "zij": "hebben gepraat"
           }
         },
         "future": {
@@ -1111,8 +1111,8 @@
         "present": {
           "conjugations": {
             "ik": "sluit",
-            "jij": "sluitt",
-            "hij/zij": "sluitt",
+            "jij": "sluit",
+            "hij/zij": "sluit",
             "wij": "sluiten",
             "jullie": "sluiten",
             "zij": "sluiten"
@@ -1120,22 +1120,22 @@
         },
         "past": {
           "conjugations": {
-            "ik": "sluitte",
-            "jij": "sluitte",
-            "hij/zij": "sluitte",
-            "wij": "sluitten",
-            "jullie": "sluitten",
-            "zij": "sluitten"
+            "ik": "sloot",
+            "jij": "sloot",
+            "hij/zij": "sloot",
+            "wij": "sloten",
+            "jullie": "sloten",
+            "zij": "sloten"
           }
         },
         "perfect": {
           "conjugations": {
-            "ik": "heb gesluitt",
-            "jij": "hebt gesluitt",
-            "hij/zij": "heeft gesluitt",
-            "wij": "hebben gesluitt",
-            "jullie": "hebben gesluitt",
-            "zij": "hebben gesluitt"
+            "ik": "heb gesloten",
+            "jij": "hebt gesloten",
+            "hij/zij": "heeft gesloten",
+            "wij": "hebben gesloten",
+            "jullie": "hebben gesloten",
+            "zij": "hebben gesloten"
           }
         },
         "future": {
@@ -1370,22 +1370,22 @@
         },
         "past": {
           "conjugations": {
-            "ik": "kijkte",
-            "jij": "kijkte",
-            "hij/zij": "kijkte",
-            "wij": "kijkten",
-            "jullie": "kijkten",
-            "zij": "kijkten"
+            "ik": "keek",
+            "jij": "keek",
+            "hij/zij": "keek",
+            "wij": "keken",
+            "jullie": "keken",
+            "zij": "keken"
           }
         },
         "perfect": {
           "conjugations": {
-            "ik": "heb gekijkt",
-            "jij": "hebt gekijkt",
-            "hij/zij": "heeft gekijkt",
-            "wij": "hebben gekijkt",
-            "jullie": "hebben gekijkt",
-            "zij": "hebben gekijkt"
+            "ik": "heb gekeken",
+            "jij": "hebt gekeken",
+            "hij/zij": "heeft gekeken",
+            "wij": "hebben gekeken",
+            "jullie": "hebben gekeken",
+            "zij": "hebben gekeken"
           }
         },
         "future": {
@@ -1420,22 +1420,22 @@
         },
         "past": {
           "conjugations": {
-            "ik": "beloofte",
-            "jij": "beloofte",
-            "hij/zij": "beloofte",
-            "wij": "belooften",
-            "jullie": "belooften",
-            "zij": "belooften"
+            "ik": "beloofde",
+            "jij": "beloofde",
+            "hij/zij": "beloofde",
+            "wij": "beloofden",
+            "jullie": "beloofden",
+            "zij": "beloofden"
           }
         },
         "perfect": {
           "conjugations": {
-            "ik": "heb gebelooft",
-            "jij": "hebt gebelooft",
-            "hij/zij": "heeft gebelooft",
-            "wij": "hebben gebelooft",
-            "jullie": "hebben gebelooft",
-            "zij": "hebben gebelooft"
+            "ik": "heb beloofd",
+            "jij": "hebt beloofd",
+            "hij/zij": "heeft beloofd",
+            "wij": "hebben beloofd",
+            "jullie": "hebben beloofd",
+            "zij": "hebben beloofd"
           }
         },
         "future": {
@@ -1530,12 +1530,12 @@
         },
         "perfect": {
           "conjugations": {
-            "ik": "heb geantwoordd",
-            "jij": "hebt geantwoordd",
-            "hij/zij": "heeft geantwoordd",
-            "wij": "hebben geantwoordd",
-            "jullie": "hebben geantwoordd",
-            "zij": "hebben geantwoordd"
+            "ik": "heb geantwoord",
+            "jij": "hebt geantwoord",
+            "hij/zij": "heeft geantwoord",
+            "wij": "hebben geantwoord",
+            "jullie": "hebben geantwoord",
+            "zij": "hebben geantwoord"
           }
         },
         "future": {
@@ -1570,22 +1570,22 @@
         },
         "past": {
           "conjugations": {
-            "ik": "schrijfte",
-            "jij": "schrijfte",
-            "hij/zij": "schrijfte",
-            "wij": "schrijften",
-            "jullie": "schrijften",
-            "zij": "schrijften"
+            "ik": "schreef",
+            "jij": "schreef",
+            "hij/zij": "schreef",
+            "wij": "schreven",
+            "jullie": "schreven",
+            "zij": "schreven"
           }
         },
         "perfect": {
           "conjugations": {
-            "ik": "heb geschrijft",
-            "jij": "hebt geschrijft",
-            "hij/zij": "heeft geschrijft",
-            "wij": "hebben geschrijft",
-            "jullie": "hebben geschrijft",
-            "zij": "hebben geschrijft"
+            "ik": "heb geschreven",
+            "jij": "hebt geschreven",
+            "hij/zij": "heeft geschreven",
+            "wij": "hebben geschreven",
+            "jullie": "hebben geschreven",
+            "zij": "hebben geschreven"
           }
         },
         "future": {
@@ -1620,22 +1620,22 @@
         },
         "past": {
           "conjugations": {
-            "ik": "leeste",
-            "jij": "leeste",
-            "hij/zij": "leeste",
-            "wij": "leesten",
-            "jullie": "leesten",
-            "zij": "leesten"
+            "ik": "las",
+            "jij": "las",
+            "hij/zij": "las",
+            "wij": "lazen",
+            "jullie": "lazen",
+            "zij": "lazen"
           }
         },
         "perfect": {
           "conjugations": {
-            "ik": "heb geleest",
-            "jij": "hebt geleest",
-            "hij/zij": "heeft geleest",
-            "wij": "hebben geleest",
-            "jullie": "hebben geleest",
-            "zij": "hebben geleest"
+            "ik": "heb gelezen",
+            "jij": "hebt gelezen",
+            "hij/zij": "heeft gelezen",
+            "wij": "hebben gelezen",
+            "jullie": "hebben gelezen",
+            "zij": "hebben gelezen"
           }
         },
         "future": {
@@ -1720,22 +1720,22 @@
         },
         "past": {
           "conjugations": {
-            "ik": "reiste",
-            "jij": "reiste",
-            "hij/zij": "reiste",
-            "wij": "reisten",
-            "jullie": "reisten",
-            "zij": "reisten"
+            "ik": "reisde",
+            "jij": "reisde",
+            "hij/zij": "reisde",
+            "wij": "reisden",
+            "jullie": "reisden",
+            "zij": "reisden"
           }
         },
         "perfect": {
           "conjugations": {
-            "ik": "heb gereist",
-            "jij": "hebt gereist",
-            "hij/zij": "heeft gereist",
-            "wij": "hebben gereist",
-            "jullie": "hebben gereist",
-            "zij": "hebben gereist"
+            "ik": "heb gereisd",
+            "jij": "hebt gereisd",
+            "hij/zij": "heeft gereisd",
+            "wij": "hebben gereisd",
+            "jullie": "hebben gereisd",
+            "zij": "hebben gereisd"
           }
         },
         "future": {
@@ -1780,12 +1780,12 @@
         },
         "perfect": {
           "conjugations": {
-            "ik": "heb gekoopt",
-            "jij": "hebt gekoopt",
-            "hij/zij": "heeft gekoopt",
-            "wij": "hebben gekoopt",
-            "jullie": "hebben gekoopt",
-            "zij": "hebben gekoopt"
+            "ik": "heb gekocht",
+            "jij": "hebt gekocht",
+            "hij/zij": "heeft gekocht",
+            "wij": "hebben gekocht",
+            "jullie": "hebben gekocht",
+            "zij": "hebben gekocht"
           }
         },
         "future": {
@@ -1830,12 +1830,12 @@
         },
         "perfect": {
           "conjugations": {
-            "ik": "heb geverkoopt",
-            "jij": "hebt geverkoopt",
-            "hij/zij": "heeft geverkoopt",
-            "wij": "hebben geverkoopt",
-            "jullie": "hebben geverkoopt",
-            "zij": "hebben geverkoopt"
+            "ik": "heb verkocht",
+            "jij": "hebt verkocht",
+            "hij/zij": "heeft verkocht",
+            "wij": "hebben verkocht",
+            "jullie": "hebben verkocht",
+            "zij": "hebben verkocht"
           }
         },
         "future": {
