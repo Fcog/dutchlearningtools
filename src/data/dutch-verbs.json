@@ -6,7 +6,7 @@
       "stem": "ben",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -56,7 +56,7 @@
       "stem": "heb",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -106,7 +106,7 @@
       "stem": "ga",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -156,7 +156,7 @@
       "stem": "kom",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -306,7 +306,7 @@
       "stem": "eet",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -356,7 +356,7 @@
       "stem": "drink",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -406,7 +406,7 @@
       "stem": "slaap",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -456,7 +456,7 @@
       "stem": "loop",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -556,7 +556,7 @@
       "stem": "kijk",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -706,7 +706,7 @@
       "stem": "zie",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -756,7 +756,7 @@
       "stem": "doe",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -856,7 +856,7 @@
       "stem": "zeg",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -1106,7 +1106,7 @@
       "stem": "sluit",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": false,
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -1256,7 +1256,7 @@
       "stem": "zwem",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": false,
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -1270,22 +1270,22 @@
         },
         "past": {
           "conjugations": {
-            "ik": "zwemde",
-            "jij": "zwemde",
-            "hij/zij": "zwemde",
-            "wij": "zwemden",
-            "jullie": "zwemden",
-            "zij": "zwemden"
+            "ik": "zwom",
+            "jij": "zwom",
+            "hij/zij": "zwom",
+            "wij": "zwommen",
+            "jullie": "zwommen",
+            "zij": "zwommen"
           }
         },
         "perfect": {
           "conjugations": {
-            "ik": "heb gezwemd",
-            "jij": "hebt gezwemd",
-            "hij/zij": "heeft gezwemd",
-            "wij": "hebben gezwemd",
-            "jullie": "hebben gezwemd",
-            "zij": "hebben gezwemd"
+            "ik": "heb gezwommen",
+            "jij": "hebt gezwommen",
+            "hij/zij": "heeft gezwommen",
+            "wij": "hebben gezwommen",
+            "jullie": "hebben gezwommen",
+            "zij": "hebben gezwommen"
           }
         },
         "future": {
@@ -1356,7 +1356,7 @@
       "stem": "kijk",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": false,
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -1456,7 +1456,7 @@
       "stem": "vraag",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": false,
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -1470,12 +1470,12 @@
         },
         "past": {
           "conjugations": {
-            "ik": "vraagde",
-            "jij": "vraagde",
-            "hij/zij": "vraagde",
-            "wij": "vraagden",
-            "jullie": "vraagden",
-            "zij": "vraagden"
+            "ik": "vroeg",
+            "jij": "vroeg",
+            "hij/zij": "vroeg",
+            "wij": "vroegen",
+            "jullie": "vroegen",
+            "zij": "vroegen"
           }
         },
         "perfect": {
@@ -1556,7 +1556,7 @@
       "stem": "schrijf",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": false,
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -1606,7 +1606,7 @@
       "stem": "lees",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": false,
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -1756,7 +1756,7 @@
       "stem": "koop",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": false,
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -1770,12 +1770,12 @@
         },
         "past": {
           "conjugations": {
-            "ik": "koopte",
-            "jij": "koopte",
-            "hij/zij": "koopte",
-            "wij": "koopten",
-            "jullie": "koopten",
-            "zij": "koopten"
+            "ik": "kocht",
+            "jij": "kocht",
+            "hij/zij": "kocht",
+            "wij": "kochten",
+            "jullie": "kochten",
+            "zij": "kochten"
           }
         },
         "perfect": {
@@ -1806,7 +1806,7 @@
       "stem": "verkoop",
       "level": "A1",
       "is_separable": false,
-      "is_irregular": false,
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -1820,12 +1820,12 @@
         },
         "past": {
           "conjugations": {
-            "ik": "verkoopte",
-            "jij": "verkoopte",
-            "hij/zij": "verkoopte",
-            "wij": "verkoopten",
-            "jullie": "verkoopten",
-            "zij": "verkoopten"
+            "ik": "verkocht",
+            "jij": "verkocht",
+            "hij/zij": "verkocht",
+            "wij": "verkochten",
+            "jullie": "verkochten",
+            "zij": "verkochten"
           }
         },
         "perfect": {
@@ -2006,7 +2006,7 @@
       "stem": "begin",
       "level": "A2",
       "is_separable": false,
-      "is_irregular": false,
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -2056,7 +2056,7 @@
       "stem": "vergeet",
       "level": "A2",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -2156,7 +2156,7 @@
       "stem": "verkoop",
       "level": "A2",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -2206,7 +2206,7 @@
       "stem": "koop",
       "level": "A2",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -2306,7 +2306,7 @@
       "stem": "begrijp",
       "level": "A2",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -2356,7 +2356,7 @@
       "stem": "geloof",
       "level": "A2",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -2406,7 +2406,7 @@
       "stem": "verlies",
       "level": "A2",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -2456,7 +2456,7 @@
       "stem": "win",
       "level": "A2",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -2506,7 +2506,7 @@
       "stem": "kies",
       "level": "A2",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -2956,7 +2956,7 @@
       "stem": "ruik",
       "level": "A2",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -3006,7 +3006,7 @@
       "stem": "proef",
       "level": "A2",
       "is_separable": false,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -3155,7 +3155,8 @@
       "english": "to visit",
       "stem": "bezoek",
       "level": "B1",
-      "is_irregular": "irregular",
+      "is_separable": false,
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -3405,7 +3406,7 @@
       "stem": "beveel aan",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -3554,7 +3555,8 @@
       "english": "to investigate",
       "stem": "onderzoek",
       "level": "B1",
-      "is_irregular": "irregular",
+      "is_separable": false,
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -3603,7 +3605,8 @@
       "english": "to prove",
       "stem": "bewijs",
       "level": "B1",
-      "is_irregular": "irregular",
+      "is_separable": false,
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -3753,7 +3756,7 @@
       "stem": "sta toe",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -3902,7 +3905,8 @@
       "english": "to increase",
       "stem": "verhoog",
       "level": "B1",
-      "is_irregular": "irregular",
+      "is_separable": false,
+      "is_irregular": false,
       "tenses": {
         "present": {
           "conjugations": {
@@ -3952,7 +3956,7 @@
       "stem": "val aan",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -4147,56 +4151,6 @@
       }
     },
     {
-      "infinitive": "interpreteren",
-      "english": "to interpret",
-      "stem": "interpreteer",
-      "level": "B2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "interpreteer",
-            "jij": "interpreteert",
-            "hij/zij": "interpreteert",
-            "wij": "interpreteren",
-            "jullie": "interpreteren",
-            "zij": "interpreteren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "interpreteerde",
-            "jij": "interpreteerde",
-            "hij/zij": "interpreteerde",
-            "wij": "interpreteerden",
-            "jullie": "interpreteerden",
-            "zij": "interpreteerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geïnterpreteerd",
-            "jij": "hebt geïnterpreteerd",
-            "hij/zij": "heeft geïnterpreteerd",
-            "wij": "hebben geïnterpreteerd",
-            "jullie": "hebben geïnterpreteerd",
-            "zij": "hebben geïnterpreteerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal interpreteren",
-            "jij": "zult interpreteren",
-            "hij/zij": "zal interpreteren",
-            "wij": "zullen interpreteren",
-            "jullie": "zullen interpreteren",
-            "zij": "zullen interpreteren"
-          }
-        }
-      }
-    },
-    {
       "infinitive": "ontwikkelen",
       "english": "to develop",
       "stem": "ontwikkel",
@@ -4247,256 +4201,6 @@
       }
     },
     {
-      "infinitive": "functioneren",
-      "english": "to function",
-      "stem": "functioneer",
-      "level": "B2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "functioneer",
-            "jij": "functioneert",
-            "hij/zij": "functioneert",
-            "wij": "functioneren",
-            "jullie": "functioneren",
-            "zij": "functioneren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "functioneerde",
-            "jij": "functioneerde",
-            "hij/zij": "functioneerde",
-            "wij": "functioneerden",
-            "jullie": "functioneerden",
-            "zij": "functioneerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gefunctioneerd",
-            "jij": "hebt gefunctioneerd",
-            "hij/zij": "heeft gefunctioneerd",
-            "wij": "hebben gefunctioneerd",
-            "jullie": "hebben gefunctioneerd",
-            "zij": "hebben gefunctioneerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal functioneren",
-            "jij": "zult functioneren",
-            "hij/zij": "zal functioneren",
-            "wij": "zullen functioneren",
-            "jullie": "zullen functioneren",
-            "zij": "zullen functioneren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "participeren",
-      "english": "to participate",
-      "stem": "participeer",
-      "level": "B2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "participeer",
-            "jij": "participeert",
-            "hij/zij": "participeert",
-            "wij": "participeren",
-            "jullie": "participeren",
-            "zij": "participeren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "participeerde",
-            "jij": "participeerde",
-            "hij/zij": "participeerde",
-            "wij": "participeerden",
-            "jullie": "participeerden",
-            "zij": "participeerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geparticipeerd",
-            "jij": "hebt geparticipeerd",
-            "hij/zij": "heeft geparticipeerd",
-            "wij": "hebben geparticipeerd",
-            "jullie": "hebben geparticipeerd",
-            "zij": "hebben geparticipeerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal participeren",
-            "jij": "zult participeren",
-            "hij/zij": "zal participeren",
-            "wij": "zullen participeren",
-            "jullie": "zullen participeren",
-            "zij": "zullen participeren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "communiceren",
-      "english": "to communicate",
-      "stem": "communiceer",
-      "level": "B2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "communiceer",
-            "jij": "communiceert",
-            "hij/zij": "communiceert",
-            "wij": "communiceren",
-            "jullie": "communiceren",
-            "zij": "communiceren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "communiceerde",
-            "jij": "communiceerde",
-            "hij/zij": "communiceerde",
-            "wij": "communiceerden",
-            "jullie": "communiceerden",
-            "zij": "communiceerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gecommuniceerd",
-            "jij": "hebt gecommuniceerd",
-            "hij/zij": "heeft gecommuniceerd",
-            "wij": "hebben gecommuniceerd",
-            "jullie": "hebben gecommuniceerd",
-            "zij": "hebben gecommuniceerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal communiceren",
-            "jij": "zult communiceren",
-            "hij/zij": "zal communiceren",
-            "wij": "zullen communiceren",
-            "jullie": "zullen communiceren",
-            "zij": "zullen communiceren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "demonstreren",
-      "english": "to demonstrate",
-      "stem": "demonstreer",
-      "level": "B2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "demonstreer",
-            "jij": "demonstreert",
-            "hij/zij": "demonstreert",
-            "wij": "demonstreren",
-            "jullie": "demonstreren",
-            "zij": "demonstreren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "demonstreerde",
-            "jij": "demonstreerde",
-            "hij/zij": "demonstreerde",
-            "wij": "demonstreerden",
-            "jullie": "demonstreerden",
-            "zij": "demonstreerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gedemonstreerd",
-            "jij": "hebt gedemonstreerd",
-            "hij/zij": "heeft gedemonstreerd",
-            "wij": "hebben gedemonstreerd",
-            "jullie": "hebben gedemonstreerd",
-            "zij": "hebben gedemonstreerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal demonstreren",
-            "jij": "zult demonstreren",
-            "hij/zij": "zal demonstreren",
-            "wij": "zullen demonstreren",
-            "jullie": "zullen demonstreren",
-            "zij": "zullen demonstreren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "motiveren",
-      "english": "to motivate",
-      "stem": "motiveer",
-      "level": "B2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "motiveer",
-            "jij": "motiveert",
-            "hij/zij": "motiveert",
-            "wij": "motiveren",
-            "jullie": "motiveren",
-            "zij": "motiveren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "motiveerde",
-            "jij": "motiveerde",
-            "hij/zij": "motiveerde",
-            "wij": "motiveerden",
-            "jullie": "motiveerden",
-            "zij": "motiveerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gemotiveerd",
-            "jij": "hebt gemotiveerd",
-            "hij/zij": "heeft gemotiveerd",
-            "wij": "hebben gemotiveerd",
-            "jullie": "hebben gemotiveerd",
-            "zij": "hebben gemotiveerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal motiveren",
-            "jij": "zult motiveren",
-            "hij/zij": "zal motiveren",
-            "wij": "zullen motiveren",
-            "jullie": "zullen motiveren",
-            "zij": "zullen motiveren"
-          }
-        }
-      }
-    },
-    {
       "infinitive": "fascineren",
       "english": "to fascinate",
       "stem": "fascineer",
@@ -4542,56 +4246,6 @@
             "wij": "zullen fascineren",
             "jullie": "zullen fascineren",
             "zij": "zullen fascineren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "implementeren",
-      "english": "to implement",
-      "stem": "implementeer",
-      "level": "B2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "implementeer",
-            "jij": "implementeert",
-            "hij/zij": "implementeert",
-            "wij": "implementeren",
-            "jullie": "implementeren",
-            "zij": "implementeren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "implementeerde",
-            "jij": "implementeerde",
-            "hij/zij": "implementeerde",
-            "wij": "implementeerden",
-            "jullie": "implementeerden",
-            "zij": "implementeerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geïmplementeerd",
-            "jij": "hebt geïmplementeerd",
-            "hij/zij": "heeft geïmplementeerd",
-            "wij": "hebben geïmplementeerd",
-            "jullie": "hebben geïmplementeerd",
-            "zij": "hebben geïmplementeerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal implementeren",
-            "jij": "zult implementeren",
-            "hij/zij": "zal implementeren",
-            "wij": "zullen implementeren",
-            "jullie": "zullen implementeren",
-            "zij": "zullen implementeren"
           }
         }
       }
@@ -4697,56 +4351,6 @@
       }
     },
     {
-      "infinitive": "domineren",
-      "english": "to dominate",
-      "stem": "domineer",
-      "level": "B2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "domineer",
-            "jij": "domineert",
-            "hij/zij": "domineert",
-            "wij": "domineren",
-            "jullie": "domineren",
-            "zij": "domineren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "domineerde",
-            "jij": "domineerde",
-            "hij/zij": "domineerde",
-            "wij": "domineerden",
-            "jullie": "domineerden",
-            "zij": "domineerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gedomineerd",
-            "jij": "hebt gedomineerd",
-            "hij/zij": "heeft gedomineerd",
-            "wij": "hebben gedomineerd",
-            "jullie": "hebben gedomineerd",
-            "zij": "hebben gedomineerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal domineren",
-            "jij": "zult domineren",
-            "hij/zij": "zal domineren",
-            "wij": "zullen domineren",
-            "jullie": "zullen domineren",
-            "zij": "zullen domineren"
-          }
-        }
-      }
-    },
-    {
       "infinitive": "inspireren",
       "english": "to inspire",
       "stem": "inspireer",
@@ -4847,2212 +4451,12 @@
       }
     },
     {
-      "infinitive": "illustreren",
-      "english": "to illustrate",
-      "stem": "illustreer",
-      "level": "B2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "illustreer",
-            "jij": "illustreert",
-            "hij/zij": "illustreert",
-            "wij": "illustreren",
-            "jullie": "illustreren",
-            "zij": "illustreren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "illustreerde",
-            "jij": "illustreerde",
-            "hij/zij": "illustreerde",
-            "wij": "illustreerden",
-            "jullie": "illustreerden",
-            "zij": "illustreerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geïllustreerd",
-            "jij": "hebt geïllustreerd",
-            "hij/zij": "heeft geïllustreerd",
-            "wij": "hebben geïllustreerd",
-            "jullie": "hebben geïllustreerd",
-            "zij": "hebben geïllustreerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal illustreren",
-            "jij": "zult illustreren",
-            "hij/zij": "zal illustreren",
-            "wij": "zullen illustreren",
-            "jullie": "zullen illustreren",
-            "zij": "zullen illustreren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "manipuleren",
-      "english": "to manipulate",
-      "stem": "manipuleer",
-      "level": "B2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "manipuleer",
-            "jij": "manipuleert",
-            "hij/zij": "manipuleert",
-            "wij": "manipuleren",
-            "jullie": "manipuleren",
-            "zij": "manipuleren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "manipuleerde",
-            "jij": "manipuleerde",
-            "hij/zij": "manipuleerde",
-            "wij": "manipuleerden",
-            "jullie": "manipuleerden",
-            "zij": "manipuleerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gemanipuleerd",
-            "jij": "hebt gemanipuleerd",
-            "hij/zij": "heeft gemanipuleerd",
-            "wij": "hebben gemanipuleerd",
-            "jullie": "hebben gemanipuleerd",
-            "zij": "hebben gemanipuleerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal manipuleren",
-            "jij": "zult manipuleren",
-            "hij/zij": "zal manipuleren",
-            "wij": "zullen manipuleren",
-            "jullie": "zullen manipuleren",
-            "zij": "zullen manipuleren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "specificeren",
-      "english": "to specify",
-      "stem": "specificeer",
-      "level": "B2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "specificeer",
-            "jij": "specificeert",
-            "hij/zij": "specificeert",
-            "wij": "specificeren",
-            "jullie": "specificeren",
-            "zij": "specificeren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "specificeerde",
-            "jij": "specificeerde",
-            "hij/zij": "specificeerde",
-            "wij": "specificeerden",
-            "jullie": "specificeerden",
-            "zij": "specificeerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gespecificeerd",
-            "jij": "hebt gespecificeerd",
-            "hij/zij": "heeft gespecificeerd",
-            "wij": "hebben gespecificeerd",
-            "jullie": "hebben gespecificeerd",
-            "zij": "hebben gespecificeerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal specificeren",
-            "jij": "zult specificeren",
-            "hij/zij": "zal specificeren",
-            "wij": "zullen specificeren",
-            "jullie": "zullen specificeren",
-            "zij": "zullen specificeren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "negotieren",
-      "english": "to negotiate",
-      "stem": "negotieer",
-      "level": "B2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "negotieer",
-            "jij": "negotieert",
-            "hij/zij": "negotieert",
-            "wij": "negotieren",
-            "jullie": "negotieren",
-            "zij": "negotieren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "negotieerde",
-            "jij": "negotieerde",
-            "hij/zij": "negotieerde",
-            "wij": "negotieerden",
-            "jullie": "negotieerden",
-            "zij": "negotieerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb genegotieerd",
-            "jij": "hebt genegotieerd",
-            "hij/zij": "heeft genegotieerd",
-            "wij": "hebben genegotieerd",
-            "jullie": "hebben genegotieerd",
-            "zij": "hebben genegotieerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal negotieren",
-            "jij": "zult negotieren",
-            "hij/zij": "zal negotieren",
-            "wij": "zullen negotieren",
-            "jullie": "zullen negotieren",
-            "zij": "zullen negotieren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "contempleren",
-      "english": "to contemplate",
-      "stem": "contempleer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "contempleer",
-            "jij": "contempleert",
-            "hij/zij": "contempleert",
-            "wij": "contempleren",
-            "jullie": "contempleren",
-            "zij": "contempleren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "contempleerde",
-            "jij": "contempleerde",
-            "hij/zij": "contempleerde",
-            "wij": "contempleerden",
-            "jullie": "contempleerden",
-            "zij": "contempleerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gecontempleerd",
-            "jij": "hebt gecontempleerd",
-            "hij/zij": "heeft gecontempleerd",
-            "wij": "hebben gecontempleerd",
-            "jullie": "hebben gecontempleerd",
-            "zij": "hebben gecontempleerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal contempleren",
-            "jij": "zult contempleren",
-            "hij/zij": "zal contempleren",
-            "wij": "zullen contempleren",
-            "jullie": "zullen contempleren",
-            "zij": "zullen contempleren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "filosoferen",
-      "english": "to philosophize",
-      "stem": "filosofeer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "filosofeer",
-            "jij": "filosofeert",
-            "hij/zij": "filosofeert",
-            "wij": "filosoferen",
-            "jullie": "filosoferen",
-            "zij": "filosoferen"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "filosofeerde",
-            "jij": "filosofeerde",
-            "hij/zij": "filosofeerde",
-            "wij": "filosofeerden",
-            "jullie": "filosofeerden",
-            "zij": "filosofeerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gefilosofeerd",
-            "jij": "hebt gefilosofeerd",
-            "hij/zij": "heeft gefilosofeerd",
-            "wij": "hebben gefilosofeerd",
-            "jullie": "hebben gefilosofeerd",
-            "zij": "hebben gefilosofeerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal filosoferen",
-            "jij": "zult filosoferen",
-            "hij/zij": "zal filosoferen",
-            "wij": "zullen filosoferen",
-            "jullie": "zullen filosoferen",
-            "zij": "zullen filosoferen"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "theoretiseren",
-      "english": "to theorize",
-      "stem": "theoretiseer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "theoretiseer",
-            "jij": "theoretiseert",
-            "hij/zij": "theoretiseert",
-            "wij": "theoretiseren",
-            "jullie": "theoretiseren",
-            "zij": "theoretiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "theoretiseerde",
-            "jij": "theoretiseerde",
-            "hij/zij": "theoretiseerde",
-            "wij": "theoretiseerden",
-            "jullie": "theoretiseerden",
-            "zij": "theoretiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb getheoretiseerd",
-            "jij": "hebt getheoretiseerd",
-            "hij/zij": "heeft getheoretiseerd",
-            "wij": "hebben getheoretiseerd",
-            "jullie": "hebben getheoretiseerd",
-            "zij": "hebben getheoretiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal theoretiseren",
-            "jij": "zult theoretiseren",
-            "hij/zij": "zal theoretiseren",
-            "wij": "zullen theoretiseren",
-            "jullie": "zullen theoretiseren",
-            "zij": "zullen theoretiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "speculeren",
-      "english": "to speculate",
-      "stem": "speculeer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "speculeer",
-            "jij": "speculeert",
-            "hij/zij": "speculeert",
-            "wij": "speculeren",
-            "jullie": "speculeren",
-            "zij": "speculeren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "speculeerde",
-            "jij": "speculeerde",
-            "hij/zij": "speculeerde",
-            "wij": "speculeerden",
-            "jullie": "speculeerden",
-            "zij": "speculeerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gespeculeerd",
-            "jij": "hebt gespeculeerd",
-            "hij/zij": "heeft gespeculeerd",
-            "wij": "hebben gespeculeerd",
-            "jullie": "hebben gespeculeerd",
-            "zij": "hebben gespeculeerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal speculeren",
-            "jij": "zult speculeren",
-            "hij/zij": "zal speculeren",
-            "wij": "zullen speculeren",
-            "jullie": "zullen speculeren",
-            "zij": "zullen speculeren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "articuleren",
-      "english": "to articulate",
-      "stem": "articuleer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "articuleer",
-            "jij": "articuleert",
-            "hij/zij": "articuleert",
-            "wij": "articuleren",
-            "jullie": "articuleren",
-            "zij": "articuleren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "articuleerde",
-            "jij": "articuleerde",
-            "hij/zij": "articuleerde",
-            "wij": "articuleerden",
-            "jullie": "articuleerden",
-            "zij": "articuleerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gearticuleerd",
-            "jij": "hebt gearticuleerd",
-            "hij/zij": "heeft gearticuleerd",
-            "wij": "hebben gearticuleerd",
-            "jullie": "hebben gearticuleerd",
-            "zij": "hebben gearticuleerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal articuleren",
-            "jij": "zult articuleren",
-            "hij/zij": "zal articuleren",
-            "wij": "zullen articuleren",
-            "jullie": "zullen articuleren",
-            "zij": "zullen articuleren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "differentiëren",
-      "english": "to differentiate",
-      "stem": "differentieer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "differentieer",
-            "jij": "differentieert",
-            "hij/zij": "differentieert",
-            "wij": "differentiëren",
-            "jullie": "differentiëren",
-            "zij": "differentiëren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "differentieerde",
-            "jij": "differentieerde",
-            "hij/zij": "differentieerde",
-            "wij": "differentieerden",
-            "jullie": "differentieerden",
-            "zij": "differentieerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gedifferentieerd",
-            "jij": "hebt gedifferentieerd",
-            "hij/zij": "heeft gedifferentieerd",
-            "wij": "hebben gedifferentieerd",
-            "jullie": "hebben gedifferentieerd",
-            "zij": "hebben gedifferentieerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal differentiëren",
-            "jij": "zult differentiëren",
-            "hij/zij": "zal differentiëren",
-            "wij": "zullen differentiëren",
-            "jullie": "zullen differentiëren",
-            "zij": "zullen differentiëren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "systematiseren",
-      "english": "to systematize",
-      "stem": "systematiseer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "systematiseer",
-            "jij": "systematiseert",
-            "hij/zij": "systematiseert",
-            "wij": "systematiseren",
-            "jullie": "systematiseren",
-            "zij": "systematiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "systematiseerde",
-            "jij": "systematiseerde",
-            "hij/zij": "systematiseerde",
-            "wij": "systematiseerden",
-            "jullie": "systematiseerden",
-            "zij": "systematiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gesystematiseerd",
-            "jij": "hebt gesystematiseerd",
-            "hij/zij": "heeft gesystematiseerd",
-            "wij": "hebben gesystematiseerd",
-            "jullie": "hebben gesystematiseerd",
-            "zij": "hebben gesystematiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal systematiseren",
-            "jij": "zult systematiseren",
-            "hij/zij": "zal systematiseren",
-            "wij": "zullen systematiseren",
-            "jullie": "zullen systematiseren",
-            "zij": "zullen systematiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "optimaliseren",
-      "english": "to optimize",
-      "stem": "optimaliseer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "optimaliseer",
-            "jij": "optimaliseert",
-            "hij/zij": "optimaliseert",
-            "wij": "optimaliseren",
-            "jullie": "optimaliseren",
-            "zij": "optimaliseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "optimaliseerde",
-            "jij": "optimaliseerde",
-            "hij/zij": "optimaliseerde",
-            "wij": "optimaliseerden",
-            "jullie": "optimaliseerden",
-            "zij": "optimaliseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geoptimaliseerd",
-            "jij": "hebt geoptimaliseerd",
-            "hij/zij": "heeft geoptimaliseerd",
-            "wij": "hebben geoptimaliseerd",
-            "jullie": "hebben geoptimaliseerd",
-            "zij": "hebben geoptimaliseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal optimaliseren",
-            "jij": "zult optimaliseren",
-            "hij/zij": "zal optimaliseren",
-            "wij": "zullen optimaliseren",
-            "jullie": "zullen optimaliseren",
-            "zij": "zullen optimaliseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "revolutioneren",
-      "english": "to revolutionize",
-      "stem": "revolutioneer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "revolutioneer",
-            "jij": "revolutioneert",
-            "hij/zij": "revolutioneert",
-            "wij": "revolutioneren",
-            "jullie": "revolutioneren",
-            "zij": "revolutioneren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "revolutioneerde",
-            "jij": "revolutioneerde",
-            "hij/zij": "revolutioneerde",
-            "wij": "revolutioneerden",
-            "jullie": "revolutioneerden",
-            "zij": "revolutioneerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gerevolutioneerd",
-            "jij": "hebt gerevolutioneerd",
-            "hij/zij": "heeft gerevolutioneerd",
-            "wij": "hebben gerevolutioneerd",
-            "jullie": "hebben gerevolutioneerd",
-            "zij": "hebben gerevolutioneerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal revolutioneren",
-            "jij": "zult revolutioneren",
-            "hij/zij": "zal revolutioneren",
-            "wij": "zullen revolutioneren",
-            "jullie": "zullen revolutioneren",
-            "zij": "zullen revolutioneren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "moderniseren",
-      "english": "to modernize",
-      "stem": "moderniseer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "moderniseer",
-            "jij": "moderniseert",
-            "hij/zij": "moderniseert",
-            "wij": "moderniseren",
-            "jullie": "moderniseren",
-            "zij": "moderniseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "moderniseerde",
-            "jij": "moderniseerde",
-            "hij/zij": "moderniseerde",
-            "wij": "moderniseerden",
-            "jullie": "moderniseerden",
-            "zij": "moderniseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gemoderniseerd",
-            "jij": "hebt gemoderniseerd",
-            "hij/zij": "heeft gemoderniseerd",
-            "wij": "hebben gemoderniseerd",
-            "jullie": "hebben gemoderniseerd",
-            "zij": "hebben gemoderniseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal moderniseren",
-            "jij": "zult moderniseren",
-            "hij/zij": "zal moderniseren",
-            "wij": "zullen moderniseren",
-            "jullie": "zullen moderniseren",
-            "zij": "zullen moderniseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "industrialiseren",
-      "english": "to industrialize",
-      "stem": "industrialiseer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "industrialiseer",
-            "jij": "industrialiseert",
-            "hij/zij": "industrialiseert",
-            "wij": "industrialiseren",
-            "jullie": "industrialiseren",
-            "zij": "industrialiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "industrialiseerde",
-            "jij": "industrialiseerde",
-            "hij/zij": "industrialiseerde",
-            "wij": "industrialiseerden",
-            "jullie": "industrialiseerden",
-            "zij": "industrialiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geïndustrialiseerd",
-            "jij": "hebt geïndustrialiseerd",
-            "hij/zij": "heeft geïndustrialiseerd",
-            "wij": "hebben geïndustrialiseerd",
-            "jullie": "hebben geïndustrialiseerd",
-            "zij": "hebben geïndustrialiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal industrialiseren",
-            "jij": "zult industrialiseren",
-            "hij/zij": "zal industrialiseren",
-            "wij": "zullen industrialiseren",
-            "jullie": "zullen industrialiseren",
-            "zij": "zullen industrialiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "categoriseren",
-      "english": "to categorize",
-      "stem": "categoriseer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "categoriseer",
-            "jij": "categoriseert",
-            "hij/zij": "categoriseert",
-            "wij": "categoriseren",
-            "jullie": "categoriseren",
-            "zij": "categoriseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "categoriseerde",
-            "jij": "categoriseerde",
-            "hij/zij": "categoriseerde",
-            "wij": "categoriseerden",
-            "jullie": "categoriseerden",
-            "zij": "categoriseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gecategoriseerd",
-            "jij": "hebt gecategoriseerd",
-            "hij/zij": "heeft gecategoriseerd",
-            "wij": "hebben gecategoriseerd",
-            "jullie": "hebben gecategoriseerd",
-            "zij": "hebben gecategoriseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal categoriseren",
-            "jij": "zult categoriseren",
-            "hij/zij": "zal categoriseren",
-            "wij": "zullen categoriseren",
-            "jullie": "zullen categoriseren",
-            "zij": "zullen categoriseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "prioriteren",
-      "english": "to prioritize",
-      "stem": "prioriteer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "prioriteer",
-            "jij": "prioriteert",
-            "hij/zij": "prioriteert",
-            "wij": "prioriteren",
-            "jullie": "prioriteren",
-            "zij": "prioriteren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "prioriteerde",
-            "jij": "prioriteerde",
-            "hij/zij": "prioriteerde",
-            "wij": "prioriteerden",
-            "jullie": "prioriteerden",
-            "zij": "prioriteerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geprioriteerd",
-            "jij": "hebt geprioriteerd",
-            "hij/zij": "heeft geprioriteerd",
-            "wij": "hebben geprioriteerd",
-            "jullie": "hebben geprioriteerd",
-            "zij": "hebben geprioriteerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal prioriteren",
-            "jij": "zult prioriteren",
-            "hij/zij": "zal prioriteren",
-            "wij": "zullen prioriteren",
-            "jullie": "zullen prioriteren",
-            "zij": "zullen prioriteren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "diversifiëren",
-      "english": "to diversify",
-      "stem": "diversifieer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "diversifieer",
-            "jij": "diversifieert",
-            "hij/zij": "diversifieert",
-            "wij": "diversifiëren",
-            "jullie": "diversifiëren",
-            "zij": "diversifiëren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "diversifieerde",
-            "jij": "diversifieerde",
-            "hij/zij": "diversifieerde",
-            "wij": "diversifieerden",
-            "jullie": "diversifieerden",
-            "zij": "diversifieerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gediversifieerd",
-            "jij": "hebt gediversifieerd",
-            "hij/zij": "heeft gediversifieerd",
-            "wij": "hebben gediversifieerd",
-            "jullie": "hebben gediversifieerd",
-            "zij": "hebben gediversifieerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal diversifiëren",
-            "jij": "zult diversifiëren",
-            "hij/zij": "zal diversifiëren",
-            "wij": "zullen diversifiëren",
-            "jullie": "zullen diversifiëren",
-            "zij": "zullen diversifiëren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "intensifiëren",
-      "english": "to intensify",
-      "stem": "intensifieer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "intensifieer",
-            "jij": "intensifieert",
-            "hij/zij": "intensifieert",
-            "wij": "intensifiëren",
-            "jullie": "intensifiëren",
-            "zij": "intensifiëren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "intensifieerde",
-            "jij": "intensifieerde",
-            "hij/zij": "intensifieerde",
-            "wij": "intensifieerden",
-            "jullie": "intensifieerden",
-            "zij": "intensifieerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geïntensifieerd",
-            "jij": "hebt geïntensifieerd",
-            "hij/zij": "heeft geïntensifieerd",
-            "wij": "hebben geïntensifieerd",
-            "jullie": "hebben geïntensifieerd",
-            "zij": "hebben geïntensifieerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal intensifiëren",
-            "jij": "zult intensifiëren",
-            "hij/zij": "zal intensifiëren",
-            "wij": "zullen intensifiëren",
-            "jullie": "zullen intensifiëren",
-            "zij": "zullen intensifiëren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "maximaliseren",
-      "english": "to maximize",
-      "stem": "maximaliseer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "maximaliseer",
-            "jij": "maximaliseert",
-            "hij/zij": "maximaliseert",
-            "wij": "maximaliseren",
-            "jullie": "maximaliseren",
-            "zij": "maximaliseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "maximaliseerde",
-            "jij": "maximaliseerde",
-            "hij/zij": "maximaliseerde",
-            "wij": "maximaliseerden",
-            "jullie": "maximaliseerden",
-            "zij": "maximaliseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gemaximaliseerd",
-            "jij": "hebt gemaximaliseerd",
-            "hij/zij": "heeft gemaximaliseerd",
-            "wij": "hebben gemaximaliseerd",
-            "jullie": "hebben gemaximaliseerd",
-            "zij": "hebben gemaximaliseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal maximaliseren",
-            "jij": "zult maximaliseren",
-            "hij/zij": "zal maximaliseren",
-            "wij": "zullen maximaliseren",
-            "jullie": "zullen maximaliseren",
-            "zij": "zullen maximaliseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "minimaliseren",
-      "english": "to minimize",
-      "stem": "minimaliseer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "minimaliseer",
-            "jij": "minimaliseert",
-            "hij/zij": "minimaliseert",
-            "wij": "minimaliseren",
-            "jullie": "minimaliseren",
-            "zij": "minimaliseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "minimaliseerde",
-            "jij": "minimaliseerde",
-            "hij/zij": "minimaliseerde",
-            "wij": "minimaliseerden",
-            "jullie": "minimaliseerden",
-            "zij": "minimaliseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geminimaliseerd",
-            "jij": "hebt geminimaliseerd",
-            "hij/zij": "heeft geminimaliseerd",
-            "wij": "hebben geminimaliseerd",
-            "jullie": "hebben geminimaliseerd",
-            "zij": "hebben geminimaliseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal minimaliseren",
-            "jij": "zult minimaliseren",
-            "hij/zij": "zal minimaliseren",
-            "wij": "zullen minimaliseren",
-            "jullie": "zullen minimaliseren",
-            "zij": "zullen minimaliseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "commercialiseren",
-      "english": "to commercialize",
-      "stem": "commercialiseer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "commercialiseer",
-            "jij": "commercialiseert",
-            "hij/zij": "commercialiseert",
-            "wij": "commercialiseren",
-            "jullie": "commercialiseren",
-            "zij": "commercialiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "commercialiseerde",
-            "jij": "commercialiseerde",
-            "hij/zij": "commercialiseerde",
-            "wij": "commercialiseerden",
-            "jullie": "commercialiseerden",
-            "zij": "commercialiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gecommercialiseerd",
-            "jij": "hebt gecommercialiseerd",
-            "hij/zij": "heeft gecommercialiseerd",
-            "wij": "hebben gecommercialiseerd",
-            "jullie": "hebben gecommercialiseerd",
-            "zij": "hebben gecommercialiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal commercialiseren",
-            "jij": "zult commercialiseren",
-            "hij/zij": "zal commercialiseren",
-            "wij": "zullen commercialiseren",
-            "jullie": "zullen commercialiseren",
-            "zij": "zullen commercialiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "elaboreren",
-      "english": "to elaborate",
-      "stem": "elaboreer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "elaboreer",
-            "jij": "elaboreert",
-            "hij/zij": "elaboreert",
-            "wij": "elaboreren",
-            "jullie": "elaboreren",
-            "zij": "elaboreren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "elaboreerde",
-            "jij": "elaboreerde",
-            "hij/zij": "elaboreerde",
-            "wij": "elaboreerden",
-            "jullie": "elaboreerden",
-            "zij": "elaboreerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geëlaboreerd",
-            "jij": "hebt geëlaboreerd",
-            "hij/zij": "heeft geëlaboreerd",
-            "wij": "hebben geëlaboreerd",
-            "jullie": "hebben geëlaboreerd",
-            "zij": "hebben geëlaboreerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal elaboreren",
-            "jij": "zult elaboreren",
-            "hij/zij": "zal elaboreren",
-            "wij": "zullen elaboreren",
-            "jullie": "zullen elaboreren",
-            "zij": "zullen elaboreren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "hypothetiseren",
-      "english": "to hypothesize",
-      "stem": "hypothetiseer",
-      "level": "C1",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "hypothetiseer",
-            "jij": "hypothetiseert",
-            "hij/zij": "hypothetiseert",
-            "wij": "hypothetiseren",
-            "jullie": "hypothetiseren",
-            "zij": "hypothetiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "hypothetiseerde",
-            "jij": "hypothetiseerde",
-            "hij/zij": "hypothetiseerde",
-            "wij": "hypothetiseerden",
-            "jullie": "hypothetiseerden",
-            "zij": "hypothetiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gehypothetiseerd",
-            "jij": "hebt gehypothetiseerd",
-            "hij/zij": "heeft gehypothetiseerd",
-            "wij": "hebben gehypothetiseerd",
-            "jullie": "hebben gehypothetiseerd",
-            "zij": "hebben gehypothetiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal hypothetiseren",
-            "jij": "zult hypothetiseren",
-            "hij/zij": "zal hypothetiseren",
-            "wij": "zullen hypothetiseren",
-            "jullie": "zullen hypothetiseren",
-            "zij": "zullen hypothetiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "concretiseren",
-      "english": "to concretize",
-      "stem": "concretiseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "concretiseer",
-            "jij": "concretiseert",
-            "hij/zij": "concretiseert",
-            "wij": "concretiseren",
-            "jullie": "concretiseren",
-            "zij": "concretiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "concretiseerde",
-            "jij": "concretiseerde",
-            "hij/zij": "concretiseerde",
-            "wij": "concretiseerden",
-            "jullie": "concretiseerden",
-            "zij": "concretiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geconcretiseerd",
-            "jij": "hebt geconcretiseerd",
-            "hij/zij": "heeft geconcretiseerd",
-            "wij": "hebben geconcretiseerd",
-            "jullie": "hebben geconcretiseerd",
-            "zij": "hebben geconcretiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal concretiseren",
-            "jij": "zult concretiseren",
-            "hij/zij": "zal concretiseren",
-            "wij": "zullen concretiseren",
-            "jullie": "zullen concretiseren",
-            "zij": "zullen concretiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "conceptualiseren",
-      "english": "to conceptualize",
-      "stem": "conceptualiseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "conceptualiseer",
-            "jij": "conceptualiseert",
-            "hij/zij": "conceptualiseert",
-            "wij": "conceptualiseren",
-            "jullie": "conceptualiseren",
-            "zij": "conceptualiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "conceptualiseerde",
-            "jij": "conceptualiseerde",
-            "hij/zij": "conceptualiseerde",
-            "wij": "conceptualiseerden",
-            "jullie": "conceptualiseerden",
-            "zij": "conceptualiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geconceptualiseerd",
-            "jij": "hebt geconceptualiseerd",
-            "hij/zij": "heeft geconceptualiseerd",
-            "wij": "hebben geconceptualiseerd",
-            "jullie": "hebben geconceptualiseerd",
-            "zij": "hebben geconceptualiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal conceptualiseren",
-            "jij": "zult conceptualiseren",
-            "hij/zij": "zal conceptualiseren",
-            "wij": "zullen conceptualiseren",
-            "jullie": "zullen conceptualiseren",
-            "zij": "zullen conceptualiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "rationaliseren",
-      "english": "to rationalize",
-      "stem": "rationaliseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "rationaliseer",
-            "jij": "rationaliseert",
-            "hij/zij": "rationaliseert",
-            "wij": "rationaliseren",
-            "jullie": "rationaliseren",
-            "zij": "rationaliseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "rationaliseerde",
-            "jij": "rationaliseerde",
-            "hij/zij": "rationaliseerde",
-            "wij": "rationaliseerden",
-            "jullie": "rationaliseerden",
-            "zij": "rationaliseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gerationaliseerd",
-            "jij": "hebt gerationaliseerd",
-            "hij/zij": "heeft gerationaliseerd",
-            "wij": "hebben gerationaliseerd",
-            "jullie": "hebben gerationaliseerd",
-            "zij": "hebben gerationaliseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal rationaliseren",
-            "jij": "zult rationaliseren",
-            "hij/zij": "zal rationaliseren",
-            "wij": "zullen rationaliseren",
-            "jullie": "zullen rationaliseren",
-            "zij": "zullen rationaliseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "intellectualiseren",
-      "english": "to intellectualize",
-      "stem": "intellectualiseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "intellectualiseer",
-            "jij": "intellectualiseert",
-            "hij/zij": "intellectualiseert",
-            "wij": "intellectualiseren",
-            "jullie": "intellectualiseren",
-            "zij": "intellectualiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "intellectualiseerde",
-            "jij": "intellectualiseerde",
-            "hij/zij": "intellectualiseerde",
-            "wij": "intellectualiseerden",
-            "jullie": "intellectualiseerden",
-            "zij": "intellectualiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geïntellectualiseerd",
-            "jij": "hebt geïntellectualiseerd",
-            "hij/zij": "heeft geïntellectualiseerd",
-            "wij": "hebben geïntellectualiseerd",
-            "jullie": "hebben geïntellectualiseerd",
-            "zij": "hebben geïntellectualiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal intellectualiseren",
-            "jij": "zult intellectualiseren",
-            "hij/zij": "zal intellectualiseren",
-            "wij": "zullen intellectualiseren",
-            "jullie": "zullen intellectualiseren",
-            "zij": "zullen intellectualiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "institutionaliseren",
-      "english": "to institutionalize",
-      "stem": "institutionaliseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "institutionaliseer",
-            "jij": "institutionaliseert",
-            "hij/zij": "institutionaliseert",
-            "wij": "institutionaliseren",
-            "jullie": "institutionaliseren",
-            "zij": "institutionaliseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "institutionaliseerde",
-            "jij": "institutionaliseerde",
-            "hij/zij": "institutionaliseerde",
-            "wij": "institutionaliseerden",
-            "jullie": "institutionaliseerden",
-            "zij": "institutionaliseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geïnstitutionaliseerd",
-            "jij": "hebt geïnstitutionaliseerd",
-            "hij/zij": "heeft geïnstitutionaliseerd",
-            "wij": "hebben geïnstitutionaliseerd",
-            "jullie": "hebben geïnstitutionaliseerd",
-            "zij": "hebben geïnstitutionaliseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal institutionaliseren",
-            "jij": "zult institutionaliseren",
-            "hij/zij": "zal institutionaliseren",
-            "wij": "zullen institutionaliseren",
-            "jullie": "zullen institutionaliseren",
-            "zij": "zullen institutionaliseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "professionaliseren",
-      "english": "to professionalize",
-      "stem": "professionaliseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "professionaliseer",
-            "jij": "professionaliseert",
-            "hij/zij": "professionaliseert",
-            "wij": "professionaliseren",
-            "jullie": "professionaliseren",
-            "zij": "professionaliseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "professionaliseerde",
-            "jij": "professionaliseerde",
-            "hij/zij": "professionaliseerde",
-            "wij": "professionaliseerden",
-            "jullie": "professionaliseerden",
-            "zij": "professionaliseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geprofessionaliseerd",
-            "jij": "hebt geprofessionaliseerd",
-            "hij/zij": "heeft geprofessionaliseerd",
-            "wij": "hebben geprofessionaliseerd",
-            "jullie": "hebben geprofessionaliseerd",
-            "zij": "hebben geprofessionaliseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal professionaliseren",
-            "jij": "zult professionaliseren",
-            "hij/zij": "zal professionaliseren",
-            "wij": "zullen professionaliseren",
-            "jullie": "zullen professionaliseren",
-            "zij": "zullen professionaliseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "internationaliseren",
-      "english": "to internationalize",
-      "stem": "internationaliseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "internationaliseer",
-            "jij": "internationaliseert",
-            "hij/zij": "internationaliseert",
-            "wij": "internationaliseren",
-            "jullie": "internationaliseren",
-            "zij": "internationaliseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "internationaliseerde",
-            "jij": "internationaliseerde",
-            "hij/zij": "internationaliseerde",
-            "wij": "internationaliseerden",
-            "jullie": "internationaliseerden",
-            "zij": "internationaliseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geïnternationaliseerd",
-            "jij": "hebt geïnternationaliseerd",
-            "hij/zij": "heeft geïnternationaliseerd",
-            "wij": "hebben geïnternationaliseerd",
-            "jullie": "hebben geïnternationaliseerd",
-            "zij": "hebben geïnternationaliseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal internationaliseren",
-            "jij": "zult internationaliseren",
-            "hij/zij": "zal internationaliseren",
-            "wij": "zullen internationaliseren",
-            "jullie": "zullen internationaliseren",
-            "zij": "zullen internationaliseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "individualiseren",
-      "english": "to individualize",
-      "stem": "individualiseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "individualiseer",
-            "jij": "individualiseert",
-            "hij/zij": "individualiseert",
-            "wij": "individualiseren",
-            "jullie": "individualiseren",
-            "zij": "individualiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "individualiseerde",
-            "jij": "individualiseerde",
-            "hij/zij": "individualiseerde",
-            "wij": "individualiseerden",
-            "jullie": "individualiseerden",
-            "zij": "individualiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geïndividualiseerd",
-            "jij": "hebt geïndividualiseerd",
-            "hij/zij": "heeft geïndividualiseerd",
-            "wij": "hebben geïndividualiseerd",
-            "jullie": "hebben geïndividualiseerd",
-            "zij": "hebben geïndividualiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal individualiseren",
-            "jij": "zult individualiseren",
-            "hij/zij": "zal individualiseren",
-            "wij": "zullen individualiseren",
-            "jullie": "zullen individualiseren",
-            "zij": "zullen individualiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "materialiseren",
-      "english": "to materialize",
-      "stem": "materialiseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "materialiseer",
-            "jij": "materialiseert",
-            "hij/zij": "materialiseert",
-            "wij": "materialiseren",
-            "jullie": "materialiseren",
-            "zij": "materialiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "materialiseerde",
-            "jij": "materialiseerde",
-            "hij/zij": "materialiseerde",
-            "wij": "materialiseerden",
-            "jullie": "materialiseerden",
-            "zij": "materialiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gematerialiseerd",
-            "jij": "hebt gematerialiseerd",
-            "hij/zij": "heeft gematerialiseerd",
-            "wij": "hebben gematerialiseerd",
-            "jullie": "hebben gematerialiseerd",
-            "zij": "hebben gematerialiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal materialiseren",
-            "jij": "zult materialiseren",
-            "hij/zij": "zal materialiseren",
-            "wij": "zullen materialiseren",
-            "jullie": "zullen materialiseren",
-            "zij": "zullen materialiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "spiritualiseren",
-      "english": "to spiritualize",
-      "stem": "spiritualiseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "spiritualiseer",
-            "jij": "spiritualiseert",
-            "hij/zij": "spiritualiseert",
-            "wij": "spiritualiseren",
-            "jullie": "spiritualiseren",
-            "zij": "spiritualiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "spiritualiseerde",
-            "jij": "spiritualiseerde",
-            "hij/zij": "spiritualiseerde",
-            "wij": "spiritualiseerden",
-            "jullie": "spiritualiseerden",
-            "zij": "spiritualiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gevergeestelijkt",
-            "jij": "hebt gevergeestelijkt",
-            "hij/zij": "heeft gevergeestelijkt",
-            "wij": "hebben gevergeestelijkt",
-            "jullie": "hebben gevergeestelijkt",
-            "zij": "hebben gevergeestelijkt"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal spiritualiseren",
-            "jij": "zult spiritualiseren",
-            "hij/zij": "zal spiritualiseren",
-            "wij": "zullen spiritualiseren",
-            "jullie": "zullen spiritualiseren",
-            "zij": "zullen spiritualiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "sensibiliseren",
-      "english": "to sensitize",
-      "stem": "sensibiliseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "sensibiliseer",
-            "jij": "sensibiliseert",
-            "hij/zij": "sensibiliseert",
-            "wij": "sensibiliseren",
-            "jullie": "sensibiliseren",
-            "zij": "sensibiliseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "sensibiliseerde",
-            "jij": "sensibiliseerde",
-            "hij/zij": "sensibiliseerde",
-            "wij": "sensibiliseerden",
-            "jullie": "sensibiliseerden",
-            "zij": "sensibiliseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gesensibiliseerd",
-            "jij": "hebt gesensibiliseerd",
-            "hij/zij": "heeft gesensibiliseerd",
-            "wij": "hebben gesensibiliseerd",
-            "jullie": "hebben gesensibiliseerd",
-            "zij": "hebben gesensibiliseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal sensibiliseren",
-            "jij": "zult sensibiliseren",
-            "hij/zij": "zal sensibiliseren",
-            "wij": "zullen sensibiliseren",
-            "jullie": "zullen sensibiliseren",
-            "zij": "zullen sensibiliseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "problematiseren",
-      "english": "to problematize",
-      "stem": "problematiseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "problematiseer",
-            "jij": "problematiseert",
-            "hij/zij": "problematiseert",
-            "wij": "problematiseren",
-            "jullie": "problematiseren",
-            "zij": "problematiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "problematiseerde",
-            "jij": "problematiseerde",
-            "hij/zij": "problematiseerde",
-            "wij": "problematiseerden",
-            "jullie": "problematiseerden",
-            "zij": "problematiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geproblematiseerd",
-            "jij": "hebt geproblematiseerd",
-            "hij/zij": "heeft geproblematiseerd",
-            "wij": "hebben geproblematiseerd",
-            "jullie": "hebben geproblematiseerd",
-            "zij": "hebben geproblematiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal problematiseren",
-            "jij": "zult problematiseren",
-            "hij/zij": "zal problematiseren",
-            "wij": "zullen problematiseren",
-            "jullie": "zullen problematiseren",
-            "zij": "zullen problematiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "dramatiseren",
-      "english": "to dramatize",
-      "stem": "dramatiseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "dramatiseer",
-            "jij": "dramatiseert",
-            "hij/zij": "dramatiseert",
-            "wij": "dramatiseren",
-            "jullie": "dramatiseren",
-            "zij": "dramatiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "dramatiseerde",
-            "jij": "dramatiseerde",
-            "hij/zij": "dramatiseerde",
-            "wij": "dramatiseerden",
-            "jullie": "dramatiseerden",
-            "zij": "dramatiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gedramatiseerd",
-            "jij": "hebt gedramatiseerd",
-            "hij/zij": "heeft gedramatiseerd",
-            "wij": "hebben gedramatiseerd",
-            "jullie": "hebben gedramatiseerd",
-            "zij": "hebben gedramatiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal dramatiseren",
-            "jij": "zult dramatiseren",
-            "hij/zij": "zal dramatiseren",
-            "wij": "zullen dramatiseren",
-            "jullie": "zullen dramatiseren",
-            "zij": "zullen dramatiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "romantiseren",
-      "english": "to romanticize",
-      "stem": "romantiseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "romantiseer",
-            "jij": "romantiseert",
-            "hij/zij": "romantiseert",
-            "wij": "romantiseren",
-            "jullie": "romantiseren",
-            "zij": "romantiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "romantiseerde",
-            "jij": "romantiseerde",
-            "hij/zij": "romantiseerde",
-            "wij": "romantiseerden",
-            "jullie": "romantiseerden",
-            "zij": "romantiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geromantiseerd",
-            "jij": "hebt geromantiseerd",
-            "hij/zij": "heeft geromantiseerd",
-            "wij": "hebben geromantiseerd",
-            "jullie": "hebben geromantiseerd",
-            "zij": "hebben geromantiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal romantiseren",
-            "jij": "zult romantiseren",
-            "hij/zij": "zal romantiseren",
-            "wij": "zullen romantiseren",
-            "jullie": "zullen romantiseren",
-            "zij": "zullen romantiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "idealiseren",
-      "english": "to idealize",
-      "stem": "idealiseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "idealiseer",
-            "jij": "idealiseert",
-            "hij/zij": "idealiseert",
-            "wij": "idealiseren",
-            "jullie": "idealiseren",
-            "zij": "idealiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "idealiseerde",
-            "jij": "idealiseerde",
-            "hij/zij": "idealiseerde",
-            "wij": "idealiseerden",
-            "jullie": "idealiseerden",
-            "zij": "idealiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb geïdealiseerd",
-            "jij": "hebt geïdealiseerd",
-            "hij/zij": "heeft geïdealiseerd",
-            "wij": "hebben geïdealiseerd",
-            "jullie": "hebben geïdealiseerd",
-            "zij": "hebben geïdealiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal idealiseren",
-            "jij": "zult idealiseren",
-            "hij/zij": "zal idealiseren",
-            "wij": "zullen idealiseren",
-            "jullie": "zullen idealiseren",
-            "zij": "zullen idealiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "relativeren",
-      "english": "to relativize",
-      "stem": "relativeer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "relativeer",
-            "jij": "relativeert",
-            "hij/zij": "relativeert",
-            "wij": "relativeren",
-            "jullie": "relativeren",
-            "zij": "relativeren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "relativeerde",
-            "jij": "relativeerde",
-            "hij/zij": "relativeerde",
-            "wij": "relativeerden",
-            "jullie": "relativeerden",
-            "zij": "relativeerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gerelativeerd",
-            "jij": "hebt gerelativeerd",
-            "hij/zij": "heeft gerelativeerd",
-            "wij": "hebben gerelativeerd",
-            "jullie": "hebben gerelativeerd",
-            "zij": "hebben gerelativeerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal relativeren",
-            "jij": "zult relativeren",
-            "hij/zij": "zal relativeren",
-            "wij": "zullen relativeren",
-            "jullie": "zullen relativeren",
-            "zij": "zullen relativeren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "sublimeren",
-      "english": "to sublimate",
-      "stem": "sublimeer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "sublimeer",
-            "jij": "sublimeert",
-            "hij/zij": "sublimeert",
-            "wij": "sublimeren",
-            "jullie": "sublimeren",
-            "zij": "sublimeren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "sublimeerde",
-            "jij": "sublimeerde",
-            "hij/zij": "sublimeerde",
-            "wij": "sublimeerden",
-            "jullie": "sublimeerden",
-            "zij": "sublimeerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gesublimeerd",
-            "jij": "hebt gesublimeerd",
-            "hij/zij": "heeft gesublimeerd",
-            "wij": "hebben gesublimeerd",
-            "jullie": "hebben gesublimeerd",
-            "zij": "hebben gesublimeerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal sublimeren",
-            "jij": "zult sublimeren",
-            "hij/zij": "zal sublimeren",
-            "wij": "zullen sublimeren",
-            "jullie": "zullen sublimeren",
-            "zij": "zullen sublimeren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "legitimeren",
-      "english": "to legitimize",
-      "stem": "legitimeer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "legitimeer",
-            "jij": "legitimeert",
-            "hij/zij": "legitimeert",
-            "wij": "legitimeren",
-            "jullie": "legitimeren",
-            "zij": "legitimeren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "legitimeerde",
-            "jij": "legitimeerde",
-            "hij/zij": "legitimeerde",
-            "wij": "legitimeerden",
-            "jullie": "legitimeerden",
-            "zij": "legitimeerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gelegitimeerd",
-            "jij": "hebt gelegitimeerd",
-            "hij/zij": "heeft gelegitimeerd",
-            "wij": "hebben gelegitimeerd",
-            "jullie": "hebben gelegitimeerd",
-            "zij": "hebben gelegitimeerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal legitimeren",
-            "jij": "zult legitimeren",
-            "hij/zij": "zal legitimeren",
-            "wij": "zullen legitimeren",
-            "jullie": "zullen legitimeren",
-            "zij": "zullen legitimeren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "stigmatiseren",
-      "english": "to stigmatize",
-      "stem": "stigmatiseer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "stigmatiseer",
-            "jij": "stigmatiseert",
-            "hij/zij": "stigmatiseert",
-            "wij": "stigmatiseren",
-            "jullie": "stigmatiseren",
-            "zij": "stigmatiseren"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "stigmatiseerde",
-            "jij": "stigmatiseerde",
-            "hij/zij": "stigmatiseerde",
-            "wij": "stigmatiseerden",
-            "jullie": "stigmatiseerden",
-            "zij": "stigmatiseerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gestigmatiseerd",
-            "jij": "hebt gestigmatiseerd",
-            "hij/zij": "heeft gestigmatiseerd",
-            "wij": "hebben gestigmatiseerd",
-            "jullie": "hebben gestigmatiseerd",
-            "zij": "hebben gestigmatiseerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal stigmatiseren",
-            "jij": "zult stigmatiseren",
-            "hij/zij": "zal stigmatiseren",
-            "wij": "zullen stigmatiseren",
-            "jullie": "zullen stigmatiseren",
-            "zij": "zullen stigmatiseren"
-          }
-        }
-      }
-    },
-    {
-      "infinitive": "stereotyperen",
-      "english": "to stereotype",
-      "stem": "stereotypeer",
-      "level": "C2",
-      "is_separable": false,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "stereotypeer",
-            "jij": "stereotypeert",
-            "hij/zij": "stereotypeert",
-            "wij": "stereotyperen",
-            "jullie": "stereotyperen",
-            "zij": "stereotyperen"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "stereotypeerde",
-            "jij": "stereotypeerde",
-            "hij/zij": "stereotypeerde",
-            "wij": "stereotypeerden",
-            "jullie": "stereotypeerden",
-            "zij": "stereotypeerden"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb gestereotypeerd",
-            "jij": "hebt gestereotypeerd",
-            "hij/zij": "heeft gestereotypeerd",
-            "wij": "hebben gestereotypeerd",
-            "jullie": "hebben gestereotypeerd",
-            "zij": "hebben gestereotypeerd"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal stereotyperen",
-            "jij": "zult stereotyperen",
-            "hij/zij": "zal stereotyperen",
-            "wij": "zullen stereotyperen",
-            "jullie": "zullen stereotyperen",
-            "zij": "zullen stereotyperen"
-          }
-        }
-      }
-    },
-    {
       "infinitive": "afgaan",
       "english": "to go off",
       "stem": "ga af",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -7102,7 +4506,7 @@
       "stem": "kom aan",
       "level": "A2",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -7152,7 +4556,7 @@
       "stem": "draag bij",
       "level": "B2",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -7252,7 +4656,7 @@
       "stem": "neem mee",
       "level": "A2",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -7302,7 +4706,7 @@
       "stem": "ga na",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -7352,7 +4756,7 @@
       "stem": "ga om",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -7402,7 +4806,7 @@
       "stem": "kom op",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -7452,7 +4856,7 @@
       "stem": "sta op",
       "level": "A2",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -7502,7 +4906,7 @@
       "stem": "kom uit",
       "level": "A2",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -7552,7 +4956,7 @@
       "stem": "ga uit",
       "level": "A2",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -7602,7 +5006,7 @@
       "stem": "ga weg",
       "level": "A2",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -7702,7 +5106,7 @@
       "stem": "bied aan",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -7797,56 +5201,6 @@
       }
     },
     {
-      "infinitive": "inkopen",
-      "english": "to shop/buy",
-      "stem": "koop in",
-      "level": "B1",
-      "is_separable": true,
-      "is_irregular": false,
-      "tenses": {
-        "present": {
-          "conjugations": {
-            "ik": "koop in",
-            "jij": "koopt in",
-            "hij/zij": "koopt in",
-            "wij": "kopen in",
-            "jullie": "kopen in",
-            "zij": "kopen in"
-          }
-        },
-        "past": {
-          "conjugations": {
-            "ik": "kocht in",
-            "jij": "kocht in",
-            "hij/zij": "kocht in",
-            "wij": "kochten in",
-            "jullie": "kochten in",
-            "zij": "kochten in"
-          }
-        },
-        "perfect": {
-          "conjugations": {
-            "ik": "heb ingekocht",
-            "jij": "hebt ingekocht",
-            "hij/zij": "heeft ingekocht",
-            "wij": "hebben ingekocht",
-            "jullie": "hebben ingekocht",
-            "zij": "hebben ingekocht"
-          }
-        },
-        "future": {
-          "conjugations": {
-            "ik": "zal inkopen",
-            "jij": "zult inkopen",
-            "hij/zij": "zal inkopen",
-            "wij": "zullen inkopen",
-            "jullie": "zullen inkopen",
-            "zij": "zullen inkopen"
-          }
-        }
-      }
-    },
-    {
       "infinitive": "meemaken",
       "english": "to experience",
       "stem": "maak mee",
@@ -7902,7 +5256,7 @@
       "stem": "kijk na",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -8052,7 +5406,7 @@
       "stem": "steek over",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -8102,7 +5456,7 @@
       "stem": "kom terug",
       "level": "A2",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -8202,7 +5556,7 @@
       "stem": "leg uit",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": false,
       "tenses": {
         "present": {
           "conjugations": {
@@ -8252,7 +5606,7 @@
       "stem": "doe voor",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -8352,7 +5706,7 @@
       "stem": "sluit af",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -8402,7 +5756,7 @@
       "stem": "ga door",
       "level": "B1",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
@@ -8502,7 +5856,7 @@
       "stem": "val uit",
       "level": "B2",
       "is_separable": true,
-      "is_irregular": "irregular",
+      "is_irregular": true,
       "tenses": {
         "present": {
           "conjugations": {
