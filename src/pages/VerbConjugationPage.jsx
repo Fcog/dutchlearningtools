@@ -98,7 +98,7 @@ function VerbConjugationPage() {
       
       // Check verb type filter (regular vs irregular)
       const verbTypeMatch = selectedVerbTypes.includes(
-        verb.is_irregular === 'irregular' ? 'irregular' : 'regular'
+        verb.is_irregular ? 'irregular' : 'regular'
       )
       
       // Check separable filter
@@ -187,7 +187,7 @@ function VerbConjugationPage() {
       pronoun: currentPronoun,
       tense: currentTense,
       verb_level: currentVerb.level,
-      is_irregular: currentVerb.is_irregular === 'irregular',
+      is_irregular: currentVerb.is_irregular,
       is_separable: currentVerb.is_separable,
       current_session_score: newScore.correct,
       current_session_total: newScore.total,

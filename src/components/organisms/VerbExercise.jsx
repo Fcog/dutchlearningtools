@@ -63,8 +63,8 @@ function VerbExercise({
           </div>
           <div className="exercise-metadata-item">
             <span className="exercise-metadata-label">Type:</span>
-            <span className={`exercise-metadata-badge ${currentVerb.is_irregular === 'irregular' ? 'irregular' : 'regular'}`}>
-              {currentVerb.is_irregular === 'irregular' ? 'Irregular' : 'Regular'}
+            <span className={`exercise-metadata-badge ${currentVerb.is_irregular ? 'irregular' : 'regular'}`}>
+              {currentVerb.is_irregular ? 'Irregular' : 'Regular'}
             </span>
           </div>
           <div className="exercise-metadata-item">
