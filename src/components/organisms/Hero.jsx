@@ -1,10 +1,20 @@
 import React from 'react'
-import Icon from '../atoms/Icon'
 
 function Hero() {
   return (
     <section className="hero">
-      <Icon icon="🇳🇱" size="large" className="flag" />
+      <img 
+        src="/logo.png" 
+        alt="Dutch Learning Tools Logo" 
+        className="flag"
+        style={{ 
+          width: '64px', 
+          height: '64px', 
+          objectFit: 'contain',
+          display: 'block',
+          margin: '0 auto'
+        }}
+      />
       <h1>Dutch Learning Tools</h1>
       <p>
         Comprehensive collection of free, interactive Dutch language learning tools. 
