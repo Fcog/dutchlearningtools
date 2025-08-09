@@ -1,0 +1,333 @@
+[
+    {
+      "conjunction": "en",
+      "translation": "and",
+      "category": "Coordinating",
+      "examples": [
+        "Ik koop brood __ melk.",
+        "Hij leest een boek __ zij luistert naar muziek.",
+        "De zon schijnt __ de vogels zingen."
+      ],
+      "examples_translation": [
+        "I'm buying bread and milk.",
+        "He reads a book and she listens to music.",
+        "The sun is shining and the birds are singing."
+      ]
+    },
+    {
+      "conjunction": "maar",
+      "translation": "but",
+      "category": "Coordinating",
+      "examples": [
+        "Het is koud, __ de zon schijnt.",
+        "Ik wil graag mee, __ ik moet werken.",
+        "Ze is moe, __ ze gaat toch door."
+      ],
+      "examples_translation": [
+        "It's cold, but the sun is shining.",
+        "I would like to come along, but I have to work.",
+        "She's tired, but she's going on anyway."
+      ]
+    },
+    {
+      "conjunction": "of",
+      "translation": "or",
+      "category": "Coordinating",
+      "examples": [
+        "Wil je koffie __ thee?",
+        "We kunnen naar de film gaan __ thuisblijven.",
+        "Je moet kiezen: nu __ nooit."
+      ],
+      "examples_translation": [
+        "Do you want coffee or tea?",
+        "We can go to the cinema or stay at home.",
+        "You have to choose: now or never."
+      ]
+    },
+    {
+      "conjunction": "want",
+      "translation": "because, for",
+      "category": "Coordinating",
+      "examples": [
+        "Ik ga naar bed, __ ik ben moe.",
+        "Ze lacht, __ ze is blij.",
+        "Hij eet een appel, __ die is gezond."
+      ],
+      "examples_translation": [
+        "I'm going to bed, because I'm tired.",
+        "She's laughing, because she's happy.",
+        "He's eating an apple, because it's healthy."
+      ]
+    },
+    {
+      "conjunction": "dus",
+      "translation": "so, therefore",
+      "category": "Coordinating",
+      "examples": [
+        "Het regent, __ we blijven binnen.",
+        "Hij heeft hard geleerd, __ hij haalt een goed cijfer.",
+        "De trein heeft vertraging, __ ik kom te laat."
+      ],
+      "examples_translation": [
+        "It's raining, so we're staying inside.",
+        "He studied hard, so he's getting a good grade.",
+        "The train is delayed, so I'll be late."
+      ]
+    },
+    {
+      "conjunction": "omdat",
+      "translation": "because",
+      "category": "Subordinating",
+      "examples": [
+        "Ik ben blij __ jij er bent.",
+        "We gaan niet zwemmen __ het water te koud is.",
+        "Zij leest de krant __ ze op de bus wacht."
+      ],
+      "examples_translation": [
+        "I'm happy because you're here.",
+        "We're not going swimming because the water is too cold.",
+        "She's reading the newspaper because she's waiting for the bus."
+      ]
+    },
+    {
+      "conjunction": "aangezien",
+      "translation": "since, seeing that",
+      "category": "Subordinating",
+      "examples": [
+        "__ je al weet wat er gebeurt, is het geen verrassing.",
+        "Hij mag niet spelen __ hij zijn huiswerk niet heeft gemaakt.",
+        "__ er veel mensen zijn, is het lawaaierig."
+      ],
+      "examples_translation": [
+        "Since you already know what's happening, it's no surprise.",
+        "He can't play because he hasn't done his homework.",
+        "Since there are a lot of people, it's noisy."
+      ]
+    },
+    {
+      "conjunction": "als",
+      "translation": "if, when",
+      "category": "Subordinating",
+      "examples": [
+        "Ik bel je __ ik thuis ben.",
+        "__ het regent, draag ik een paraplu.",
+        "__ je de knop indrukt, gaat het licht aan."
+      ],
+      "examples_translation": [
+        "I'll call you when I'm home.",
+        "If it rains, I'll carry an umbrella.",
+        "When you press the button, the light turns on."
+      ]
+    },
+    {
+      "conjunction": "hoewel",
+      "translation": "although",
+      "category": "Subordinating",
+      "examples": [
+        "Hij werkt hard, __ hij vaak moe is.",
+        "Ze gaat naar buiten, __ het koud is.",
+        "De auto is oud, __ hij rijdt nog goed."
+      ],
+      "examples_translation": [
+        "He works hard, although he is often tired.",
+        "She's going outside, although it's cold.",
+        "The car is old, although it still drives well."
+      ]
+    },
+    {
+      "conjunction": "terwijl",
+      "translation": "while, whereas",
+      "category": "Subordinating",
+      "examples": [
+        "Zij kookt, __ hij de tafel dekt.",
+        "Hij is lang, __ zijn broer kort is.",
+        "Ik lees een boek __ ik in de trein zit."
+      ],
+      "examples_translation": [
+        "She cooks, while he sets the table.",
+        "He is tall, whereas his brother is short.",
+        "I'm reading a book while I'm on the train."
+      ]
+    },
+    {
+      "conjunction": "voordat",
+      "translation": "before",
+      "category": "Subordinating",
+      "examples": [
+        "Was je handen __ je gaat eten.",
+        "Ik bel je __ ik vertrek.",
+        "Hij doet zijn jas aan __ hij naar buiten gaat."
+      ],
+      "examples_translation": [
+        "Wash your hands before you eat.",
+        "I'll call you before I leave.",
+        "He puts on his coat before he goes outside."
+      ]
+    },
+    {
+      "conjunction": "nadat",
+      "translation": "after",
+      "category": "Subordinating",
+      "examples": [
+        "Ik ga slapen __ ik de film heb gekeken.",
+        "__ ze gegeten had, ging ze de afwas doen.",
+        "De zon kwam op __ het had geregend."
+      ],
+      "examples_translation": [
+        "I'm going to sleep after I've watched the movie.",
+        "After she had eaten, she went to do the dishes.",
+        "The sun came up after it had rained."
+      ]
+    },
+    {
+      "conjunction": "dat",
+      "translation": "that",
+      "category": "Subordinating",
+      "examples": [
+        "Ik weet __ hij morgen komt.",
+        "Ze zegt __ ze het niet heeft gedaan.",
+        "Hij denkt __ hij gelijk heeft."
+      ],
+      "examples_translation": [
+        "I know that he's coming tomorrow.",
+        "She says that she didn't do it.",
+        "He thinks that he is right."
+      ]
+    },
+    {
+      "conjunction": "dan",
+      "translation": "than",
+      "category": "Subordinating",
+      "examples": [
+        "Zij is ouder __ ik.",
+        "Dit boek is beter __ dat boek.",
+        "Het is warmer __ gisteren."
+      ],
+      "examples_translation": [
+        "She is older than me.",
+        "This book is better than that book.",
+        "It is warmer than yesterday."
+      ]
+    },
+    {
+      "conjunction": "totdat",
+      "translation": "until",
+      "category": "Subordinating",
+      "examples": [
+        "We wachten hier __ de bus komt.",
+        "Ik blijf wakker __ de film afgelopen is.",
+        "Ze bleef rennen __ ze bij de finish was."
+      ],
+      "examples_translation": [
+        "We'll wait here until the bus comes.",
+        "I'll stay awake until the movie is over.",
+        "She kept running until she was at the finish line."
+      ]
+    },
+    {
+      "conjunction": "zodat",
+      "translation": "so that",
+      "category": "Subordinating",
+      "examples": [
+        "Ik schuif het bureau naar voren __ er meer ruimte is.",
+        "Hij deed de deur open __ de hond naar buiten kon.",
+        "Zij spreekt langzaam __ ik het kan begrijpen."
+      ],
+      "examples_translation": [
+        "I'm moving the desk forward so that there is more space.",
+        "He opened the door so that the dog could go outside.",
+        "She speaks slowly so that I can understand it."
+      ]
+    },
+    {
+      "conjunction": "zodra",
+      "translation": "as soon as",
+      "category": "Subordinating",
+      "examples": [
+        "__ het stopt met regenen, gaan we wandelen.",
+        "Bel me __ je aankomt.",
+        "__ de wekker gaat, sta ik op."
+      ],
+      "examples_translation": [
+        "As soon as it stops raining, we'll go for a walk.",
+        "Call me as soon as you arrive.",
+        "As soon as the alarm goes off, I get up."
+      ]
+    },
+    {
+      "conjunction": "alsof",
+      "translation": "as if",
+      "category": "Subordinating",
+      "examples": [
+        "Hij keek me aan __ hij een geest had gezien.",
+        "Ze deed __ ze het niet wist.",
+        "Hij loopt __ zijn been gebroken is."
+      ],
+      "examples_translation": [
+        "He looked at me as if he had seen a ghost.",
+        "She acted as if she didn't know it.",
+        "He walks as if his leg is broken."
+      ]
+    },
+    {
+      "conjunction": "indien",
+      "translation": "if, in case that",
+      "category": "Subordinating",
+      "examples": [
+        "Wij zullen het herstellen, __ er een defect is.",
+        "Neem contact met ons op __ u vragen heeft.",
+        "__ u akkoord gaat, kunt u hier tekenen."
+      ],
+      "examples_translation": [
+        "We will repair it, in case there is a defect.",
+        "Contact us if you have questions.",
+        "If you agree, you can sign here."
+      ]
+    },
+    {
+      "conjunction": "mits",
+      "translation": "provided that",
+      "category": "Subordinating",
+      "examples": [
+        "Je mag de auto lenen, __ je voorzichtig rijdt.",
+        "Ik kom, __ ik de tijd heb.",
+        "Het project is af, __ er geen problemen meer zijn."
+      ],
+      "examples_translation": [
+        "You can borrow the car, provided that you drive carefully.",
+        "I will come, provided that I have the time.",
+        "The project is finished, provided that there are no more problems."
+      ]
+    },
+    {
+      "conjunction": "noch ... noch ...",
+      "translation": "neither ... nor ...",
+      "category": "Correlative",
+      "examples": [
+        "__ hij __ zij heeft iets gezegd.",
+        "We hebben __ tijd __ geld.",
+        "Ik wil __ koffie __ thee."
+      ],
+      "examples_translation": [
+        "Neither he nor she has said anything.",
+        "We have neither time nor money.",
+        "I want neither coffee nor tea."
+      ]
+    },
+    {
+      "conjunction": "of ... of ...",
+      "translation": "either ... or ...",
+      "category": "Correlative",
+      "examples": [
+        "Je kunt __ nu betalen __ later.",
+        "__ ik word timmerman __ ik word bakker.",
+        "__ je gaat nu, __ je blijft thuis."
+      ],
+      "examples_translation": [
+        "You can pay either now or later.",
+        "Either I become a carpenter or I become a baker.",
+        "Either you go now, or you stay at home."
+      ]
+    }
+]
+  

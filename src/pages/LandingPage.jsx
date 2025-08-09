@@ -56,6 +56,22 @@ function LandingPage() {
       available: true
     },
     {
+      id: 'conjunctions',
+      icon: '🔗',
+      title: 'Dutch Conjunctions',
+      description: 'Master Dutch conjunctions with interactive exercises. Learn to connect clauses and express relationships between ideas.',
+      features: [
+        'Coordinating conjunctions',
+        'Subordinating conjunctions',
+        'Sentence completion practice',
+        'Contextual learning',
+        'Progress tracking',
+        'Category-based learning'
+      ],
+      route: '/conjunctions',
+      available: true
+    },
+    {
       id: 'phrases',
       icon: '💬',
       title: 'Common Dutch Phrases',
