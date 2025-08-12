@@ -17,8 +17,8 @@ function Hero() {
       />
       <h1>Dutch Learning Tools</h1>
       <p>
-        Comprehensive collection of free, interactive Dutch language learning tools. 
-        Master Dutch grammar, vocabulary, pronunciation, and conversation skills with our engaging daily practice tools.
+        Master Dutch with interactive exercises for articles & nouns, verb conjugations, prepositions, and conjunctions. 
+        Practice with 200+ common Dutch words and improve your grammar skills with our free, engaging learning tools.
       </p>
     </section>
   )
