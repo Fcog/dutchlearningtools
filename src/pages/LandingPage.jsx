@@ -20,7 +20,7 @@ function LandingPage() {
         'Mobile-optimized',
         'Social sharing'
       ],
-      route: '/articles',
+      route: '/de-het-articles',
       available: true
     },
     {
@@ -36,7 +36,7 @@ function LandingPage() {
         'Common verbs focus',
         'Conjugation patterns'
       ],
-      route: '/verbs',
+      route: '/verbs-conjugations',
       available: true
     },
     {

@@ -16,8 +16,8 @@ function AppRoutes() {
   return (
     <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/articles" element={<ArticlesPage />} />
-        <Route path="/verbs" element={<VerbConjugationPage />} />
+        <Route path="/de-het-articles" element={<ArticlesPage />} />
+        <Route path="/verbs-conjugations" element={<VerbConjugationPage />} />
         <Route path="/prepositions" element={<PrepositionsPage />} />
         <Route path="/verbs-fixed-preposition" element={<VerbPrepositionsPage />} />
         <Route path="/conjunctions" element={<ConjunctionsPage />} />
