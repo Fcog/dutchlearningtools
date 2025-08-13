@@ -3,6 +3,7 @@ import LandingPage from './pages/LandingPage'
 import ArticlesPage from './pages/ArticlesPage'
 import VerbConjugationPage from './pages/VerbConjugationPage'
 import PrepositionsPage from './pages/PrepositionsPage'
+import VerbPrepositionsPage from './pages/VerbPrepositionsPage'
 import ConjunctionsPage from './pages/ConjunctionsPage'
 import NotFoundPage from './pages/NotFoundPage'
 import ScrollToTop from './components/ScrollToTop'
@@ -18,6 +19,7 @@ function AppRoutes() {
         <Route path="/articles" element={<ArticlesPage />} />
         <Route path="/verbs" element={<VerbConjugationPage />} />
         <Route path="/prepositions" element={<PrepositionsPage />} />
+        <Route path="/verbs-fixed-preposition" element={<VerbPrepositionsPage />} />
         <Route path="/conjunctions" element={<ConjunctionsPage />} />
         <Route path="/phrases" element={<div>Phrases tool coming soon!</div>} />
         <Route path="/grammar" element={<div>Grammar tool coming soon!</div>} />

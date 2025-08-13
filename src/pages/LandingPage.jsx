@@ -72,6 +72,22 @@ function LandingPage() {
       available: true
     },
     {
+      id: 'verb-prepositions',
+      icon: '🎲',
+      title: 'Dutch Verbs with Fixed Prepositions',
+      description: 'Master Dutch verbs with their fixed prepositions. Learn essential verb-preposition combinations with interactive exercises.',
+      features: [
+        'Fixed verb-preposition pairs',
+        'Level-based progression (A2-B2)',
+        'Real example sentences',
+        'Contextual learning',
+        'Progress tracking',
+        'Instant feedback'
+      ],
+      route: '/verbs-fixed-preposition',
+      available: true
+    },
+    {
       id: 'phrases',
       icon: '💬',
       title: 'Common Dutch Phrases',

@@ -1,0 +1,1333 @@
+[
+    {
+      "verb": "wachten",
+      "preposition": "op",
+      "translation": {
+        "dutch": "wachten op",
+        "english": "to wait for"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik wacht op de bus.",
+          "english": "I am waiting for the bus."
+        },
+        {
+          "dutch": "Zij wacht op haar broer.",
+          "english": "She is waiting for her brother."
+        }
+      ]
+    },
+    {
+      "verb": "denken",
+      "preposition": "aan",
+      "translation": {
+        "dutch": "denken aan",
+        "english": "to think about"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik denk aan mijn vakantie.",
+          "english": "I am thinking about my vacation."
+        },
+        {
+          "dutch": "Wij denken aan de toekomst.",
+          "english": "We are thinking about the future."
+        }
+      ]
+    },
+    {
+      "verb": "zoeken",
+      "preposition": "naar",
+      "translation": {
+        "dutch": "zoeken naar",
+        "english": "to look for (abstract)"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ze zoeken naar een oplossing.",
+          "english": "They are looking for a solution."
+        },
+        {
+          "dutch": "De politie zoekt naar de dader.",
+          "english": "The police are looking for the culprit."
+        }
+      ]
+    },
+    {
+      "verb": "houden",
+      "preposition": "van",
+      "translation": {
+        "dutch": "houden van",
+        "english": "to love, to be fond of"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik houd van jou.",
+          "english": "I love you."
+        },
+        {
+          "dutch": "Hij houdt van chocola.",
+          "english": "He loves chocolate."
+        }
+      ]
+    },
+    {
+      "verb": "kijken",
+      "preposition": "naar",
+      "translation": {
+        "dutch": "kijken naar",
+        "english": "to look at"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Wij kijken naar de film.",
+          "english": "We are watching the movie."
+        },
+        {
+          "dutch": "Kijk naar de sterren!",
+          "english": "Look at the stars!"
+        }
+      ]
+    },
+    {
+      "verb": "luisteren",
+      "preposition": "naar",
+      "translation": {
+        "dutch": "luisteren naar",
+        "english": "to listen to"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Hij luistert naar de radio.",
+          "english": "He is listening to the radio."
+        },
+        {
+          "dutch": "Luister je naar muziek?",
+          "english": "Are you listening to music?"
+        }
+      ]
+    },
+    {
+      "verb": "praten",
+      "preposition": "over",
+      "translation": {
+        "dutch": "praten over",
+        "english": "to talk about"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ze praten over het weer.",
+          "english": "They are talking about the weather."
+        },
+        {
+          "dutch": "Waar praten jullie over?",
+          "english": "What are you talking about?"
+        }
+      ]
+    },
+    {
+      "verb": "rekenen",
+      "preposition": "op",
+      "translation": {
+        "dutch": "rekenen op",
+        "english": "to count on"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Je kunt op mij rekenen.",
+          "english": "You can count on me."
+        },
+        {
+          "dutch": "Ik reken op je hulp.",
+          "english": "I am counting on your help."
+        }
+      ]
+    },
+    {
+      "verb": "reageren",
+      "preposition": "op",
+      "translation": {
+        "dutch": "reageren op",
+        "english": "to react to, to respond to"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik reageer op jouw e-mail.",
+          "english": "I am responding to your email."
+        },
+        {
+          "dutch": "Hij reageert goed op kritiek.",
+          "english": "He reacts well to criticism."
+        }
+      ]
+    },
+    {
+      "verb": "zorgen",
+      "preposition": "voor",
+      "translation": {
+        "dutch": "zorgen voor",
+        "english": "to take care of"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Zij zorgt voor haar zieke moeder.",
+          "english": "She is taking care of her sick mother."
+        },
+        {
+          "dutch": "Zorgen jullie voor de honden?",
+          "english": "Are you taking care of the dogs?"
+        }
+      ]
+    },
+    {
+      "verb": "nadenken",
+      "preposition": "over",
+      "translation": {
+        "dutch": "nadenken over",
+        "english": "to think about, to reflect on"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik moet nadenken over het aanbod.",
+          "english": "I have to think about the offer."
+        },
+        {
+          "dutch": "Denk goed na over je toekomst.",
+          "english": "Think carefully about your future."
+        }
+      ]
+    },
+    {
+      "verb": "beginnen",
+      "preposition": "met",
+      "translation": {
+        "dutch": "beginnen met",
+        "english": "to start with"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "We beginnen met de les.",
+          "english": "We are starting with the lesson."
+        },
+        {
+          "dutch": "Hij begint met een nieuwe baan.",
+          "english": "He is starting a new job."
+        }
+      ]
+    },
+    {
+      "verb": "geïnteresseerd zijn",
+      "preposition": "in",
+      "translation": {
+        "dutch": "geïnteresseerd zijn in",
+        "english": "to be interested in"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik ben geïnteresseerd in kunst.",
+          "english": "I am interested in art."
+        },
+        {
+          "dutch": "Zijn ze geïnteresseerd in die auto?",
+          "english": "Are they interested in that car?"
+        }
+      ]
+    },
+    {
+      "verb": "lijken",
+      "preposition": "op",
+      "translation": {
+        "dutch": "lijken op",
+        "english": "to look like, to resemble"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Hij lijkt op zijn vader.",
+          "english": "He looks like his father."
+        },
+        {
+          "dutch": "Deze bloem lijkt op een roos.",
+          "english": "This flower looks like a rose."
+        }
+      ]
+    },
+    {
+      "verb": "trots zijn",
+      "preposition": "op",
+      "translation": {
+        "dutch": "trots zijn op",
+        "english": "to be proud of"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik ben trots op mijn zoon.",
+          "english": "I am proud of my son."
+        },
+        {
+          "dutch": "Ze is trots op haar werk.",
+          "english": "She is proud of her work."
+        }
+      ]
+    },
+    {
+      "verb": "vragen",
+      "preposition": "naar",
+      "translation": {
+        "dutch": "vragen naar",
+        "english": "to ask for"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "De man vroeg naar de weg.",
+          "english": "The man asked for the way."
+        },
+        {
+          "dutch": "Ik vroeg naar jou.",
+          "english": "I asked about you."
+        }
+      ]
+    },
+    {
+      "verb": "bang zijn",
+      "preposition": "voor",
+      "translation": {
+        "dutch": "bang zijn voor",
+        "english": "to be afraid of"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik ben bang voor spinnen.",
+          "english": "I am afraid of spiders."
+        },
+        {
+          "dutch": "Zij is niet bang voor de donker.",
+          "english": "She is not afraid of the dark."
+        }
+      ]
+    },
+    {
+      "verb": "meedoen",
+      "preposition": "met",
+      "translation": {
+        "dutch": "meedoen met",
+        "english": "to participate in"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Doe je mee met het spel?",
+          "english": "Are you joining in the game?"
+        },
+        {
+          "dutch": "Hij wil niet meedoen met de discussie.",
+          "english": "He doesn't want to participate in the discussion."
+        }
+      ]
+    },
+    {
+      "verb": "rekening houden",
+      "preposition": "met",
+      "translation": {
+        "dutch": "rekening houden met",
+        "english": "to take into account"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Je moet rekening houden met de buren.",
+          "english": "You have to take the neighbors into account."
+        },
+        {
+          "dutch": "We moeten rekening houden met de kosten.",
+          "english": "We must take the costs into account."
+        }
+      ]
+    },
+    {
+      "verb": "dromen",
+      "preposition": "van",
+      "translation": {
+        "dutch": "dromen van",
+        "english": "to dream of"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik droom van een reis naar Japan.",
+          "english": "I dream of a trip to Japan."
+        },
+        {
+          "dutch": "Hij droomt van een beter leven.",
+          "english": "He dreams of a better life."
+        }
+      ]
+    },
+    {
+      "verb": "stoppen",
+      "preposition": "met",
+      "translation": {
+        "dutch": "stoppen met",
+        "english": "to stop with"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik stop met roken.",
+          "english": "I am quitting smoking."
+        },
+        {
+          "dutch": "Wanneer stoppen we met werken?",
+          "english": "When are we stopping work?"
+        }
+      ]
+    },
+    {
+      "verb": "geloven",
+      "preposition": "in",
+      "translation": {
+        "dutch": "geloven in",
+        "english": "to believe in"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik geloof in God.",
+          "english": "I believe in God."
+        },
+        {
+          "dutch": "Geloof jij in de liefde?",
+          "english": "Do you believe in love?"
+        }
+      ]
+    },
+    {
+      "verb": "klagen",
+      "preposition": "over",
+      "translation": {
+        "dutch": "klagen over",
+        "english": "to complain about"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Hij klaagt altijd over het weer.",
+          "english": "He always complains about the weather."
+        },
+        {
+          "dutch": "Waarom klaag je over je werk?",
+          "english": "Why are you complaining about your work?"
+        }
+      ]
+    },
+    {
+      "verb": "praten",
+      "preposition": "met",
+      "translation": {
+        "dutch": "praten met",
+        "english": "to talk with"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik wil met je praten.",
+          "english": "I want to talk with you."
+        },
+        {
+          "dutch": "Ze praten met hun ouders.",
+          "english": "They are talking with their parents."
+        }
+      ]
+    },
+    {
+      "verb": "blij zijn",
+      "preposition": "met",
+      "translation": {
+        "dutch": "blij zijn met",
+        "english": "to be happy with"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik ben blij met mijn nieuwe huis.",
+          "english": "I am happy with my new house."
+        },
+        {
+          "dutch": "Is hij blij met het resultaat?",
+          "english": "Is he happy with the result?"
+        }
+      ]
+    },
+    {
+      "verb": "betalen",
+      "preposition": "voor",
+      "translation": {
+        "dutch": "betalen voor",
+        "english": "to pay for"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik moet betalen voor de koffie.",
+          "english": "I have to pay for the coffee."
+        },
+        {
+          "dutch": "Hoeveel heb je betaald voor die tas?",
+          "english": "How much did you pay for that bag?"
+        }
+      ]
+    },
+    {
+      "verb": "zich ergeren",
+      "preposition": "aan",
+      "translation": {
+        "dutch": "zich ergeren aan",
+        "english": "to be annoyed by"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik erger me aan het lawaai.",
+          "english": "I am annoyed by the noise."
+        },
+        {
+          "dutch": "Hij ergert zich aan de lange rij.",
+          "english": "He is annoyed by the long queue."
+        }
+      ]
+    },
+    {
+      "verb": "vertrouwen",
+      "preposition": "op",
+      "translation": {
+        "dutch": "vertrouwen op",
+        "english": "to trust in"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik vertrouw op je oordeel.",
+          "english": "I trust your judgment."
+        },
+        {
+          "dutch": "Je kunt op ons vertrouwen.",
+          "english": "You can trust us."
+        }
+      ]
+    },
+    {
+      "verb": "profiteren",
+      "preposition": "van",
+      "translation": {
+        "dutch": "profiteren van",
+        "english": "to benefit from"
+      },
+      "level": "B2",
+      "examples": [
+        {
+          "dutch": "Wij profiteren van de lage prijzen.",
+          "english": "We benefit from the low prices."
+        },
+        {
+          "dutch": "Hij profiteert van de situatie.",
+          "english": "He is benefiting from the situation."
+        }
+      ]
+    },
+    {
+      "verb": "meedoen",
+      "preposition": "aan",
+      "translation": {
+        "dutch": "meedoen aan",
+        "english": "to participate in"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ze doet mee aan de marathon.",
+          "english": "She is participating in the marathon."
+        },
+        {
+          "dutch": "Wie doet er mee aan de wedstrijd?",
+          "english": "Who is participating in the contest?"
+        }
+      ]
+    },
+    {
+      "verb": "werken",
+      "preposition": "aan",
+      "translation": {
+        "dutch": "werken aan",
+        "english": "to work on"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik werk aan een nieuw project.",
+          "english": "I am working on a new project."
+        },
+        {
+          "dutch": "Zij werkt aan haar presentatie.",
+          "english": "She is working on her presentation."
+        }
+      ]
+    },
+    {
+      "verb": "ruziën",
+      "preposition": "over",
+      "translation": {
+        "dutch": "ruziën over",
+        "english": "to argue about"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "De kinderen ruziën over het speelgoed.",
+          "english": "The children are arguing about the toy."
+        },
+        {
+          "dutch": "Ze ruziën over kleine dingen.",
+          "english": "They argue about small things."
+        }
+      ]
+    },
+    {
+      "verb": "verliefd zijn",
+      "preposition": "op",
+      "translation": {
+        "dutch": "verliefd zijn op",
+        "english": "to be in love with"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Hij is verliefd op haar.",
+          "english": "He is in love with her."
+        },
+        {
+          "dutch": "Ik ben verliefd op de lente.",
+          "english": "I am in love with spring."
+        }
+      ]
+    },
+    {
+      "verb": "twijfelen",
+      "preposition": "aan",
+      "translation": {
+        "dutch": "twijfelen aan",
+        "english": "to doubt"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik twijfel aan zijn eerlijkheid.",
+          "english": "I doubt his honesty."
+        },
+        {
+          "dutch": "Ze twijfelt aan de beslissing.",
+          "english": "She doubts the decision."
+        }
+      ]
+    },
+    {
+      "verb": "kiezen",
+      "preposition": "voor",
+      "translation": {
+        "dutch": "kiezen voor",
+        "english": "to choose for"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik kies voor de blauwe auto.",
+          "english": "I choose the blue car."
+        },
+        {
+          "dutch": "Heb je al gekozen voor een studie?",
+          "english": "Have you already chosen a major?"
+        }
+      ]
+    },
+    {
+      "verb": "zich richten",
+      "preposition": "op",
+      "translation": {
+        "dutch": "zich richten op",
+        "english": "to focus on"
+      },
+      "level": "B2",
+      "examples": [
+        {
+          "dutch": "Wij richten ons op de toekomst.",
+          "english": "We are focusing on the future."
+        },
+        {
+          "dutch": "Hij richt zich op zijn studie.",
+          "english": "He is focusing on his studies."
+        }
+      ]
+    },
+    {
+      "verb": "een hekel hebben",
+      "preposition": "aan",
+      "translation": {
+        "dutch": "een hekel hebben aan",
+        "english": "to dislike"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik heb een hekel aan onbeleefde mensen.",
+          "english": "I dislike rude people."
+        },
+        {
+          "dutch": "Zij heeft een hekel aan vroeg opstaan.",
+          "english": "She dislikes waking up early."
+        }
+      ]
+    },
+    {
+      "verb": "zich bemoeien",
+      "preposition": "met",
+      "translation": {
+        "dutch": "zich bemoeien met",
+        "english": "to interfere with"
+      },
+      "level": "B2",
+      "examples": [
+        {
+          "dutch": "Bemoei je niet met mijn zaken.",
+          "english": "Don't interfere with my business."
+        },
+        {
+          "dutch": "Waarom bemoeien jullie je met elkaar?",
+          "english": "Why are you interfering with each other?"
+        }
+      ]
+    },
+    {
+      "verb": "vergelijken",
+      "preposition": "met",
+      "translation": {
+        "dutch": "vergelijken met",
+        "english": "to compare with"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Vergelijk deze appel met die appel.",
+          "english": "Compare this apple with that apple."
+        },
+        {
+          "dutch": "Hij vergelijkt zijn leven met dat van zijn broer.",
+          "english": "He compares his life with his brother's."
+        }
+      ]
+    },
+    {
+      "verb": "zich schamen",
+      "preposition": "voor",
+      "translation": {
+        "dutch": "zich schamen voor",
+        "english": "to be ashamed of"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Zij schaamt zich voor haar fouten.",
+          "english": "She is ashamed of her mistakes."
+        },
+        {
+          "dutch": "Ik schaam me niet voor wie ik ben.",
+          "english": "I am not ashamed of who I am."
+        }
+      ]
+    },
+    {
+      "verb": "boos zijn",
+      "preposition": "op",
+      "translation": {
+        "dutch": "boos zijn op",
+        "english": "to be angry with"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik ben boos op hem.",
+          "english": "I am angry with him."
+        },
+        {
+          "dutch": "De leraar is boos op de klas.",
+          "english": "The teacher is angry with the class."
+        }
+      ]
+    },
+    {
+      "verb": "zich voorbereiden",
+      "preposition": "op",
+      "translation": {
+        "dutch": "zich voorbereiden op",
+        "english": "to prepare for"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik bereid me voor op het examen.",
+          "english": "I am preparing for the exam."
+        },
+        {
+          "dutch": "Zij bereidt zich voor op de reis.",
+          "english": "She is preparing for the trip."
+        }
+      ]
+    },
+    {
+      "verb": "slagen",
+      "preposition": "voor",
+      "translation": {
+        "dutch": "slagen voor",
+        "english": "to pass (an exam)"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Hij is geslaagd voor zijn rijexamen.",
+          "english": "He passed his driving exam."
+        },
+        {
+          "dutch": "Ik hoop te slagen voor de test.",
+          "english": "I hope to pass the test."
+        }
+      ]
+    },
+    {
+      "verb": "sparen",
+      "preposition": "voor",
+      "translation": {
+        "dutch": "sparen voor",
+        "english": "to save for"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik spaar voor een nieuwe fiets.",
+          "english": "I am saving for a new bicycle."
+        },
+        {
+          "dutch": "Zij sparen voor hun droomhuis.",
+          "english": "They are saving for their dream house."
+        }
+      ]
+    },
+    {
+      "verb": "zich concentreren",
+      "preposition": "op",
+      "translation": {
+        "dutch": "zich concentreren op",
+        "english": "to concentrate on"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Concentreren jullie je op de les?",
+          "english": "Are you concentrating on the lesson?"
+        },
+        {
+          "dutch": "Ik kan me niet concentreren op mijn werk.",
+          "english": "I can't concentrate on my work."
+        }
+      ]
+    },
+    {
+      "verb": "protesteren",
+      "preposition": "tegen",
+      "translation": {
+        "dutch": "protesteren tegen",
+        "english": "to protest against"
+      },
+      "level": "B2",
+      "examples": [
+        {
+          "dutch": "De mensen protesteren tegen de nieuwe wet.",
+          "english": "The people are protesting against the new law."
+        },
+        {
+          "dutch": "Zij protesteren tegen de oorlog.",
+          "english": "They are protesting against the war."
+        }
+      ]
+    },
+    {
+      "verb": "zich aansluiten",
+      "preposition": "bij",
+      "translation": {
+        "dutch": "zich aansluiten bij",
+        "english": "to join"
+      },
+      "level": "B2",
+      "examples": [
+        {
+          "dutch": "Hij sluit zich aan bij de groep.",
+          "english": "He is joining the group."
+        },
+        {
+          "dutch": "Zij sluit zich aan bij de discussie.",
+          "english": "She is joining the discussion."
+        }
+      ]
+    },
+    {
+      "verb": "verlaten",
+      "preposition": "door",
+      "translation": {
+        "dutch": "verlaten door",
+        "english": "to be left by"
+      },
+      "level": "B2",
+      "examples": [
+        {
+          "dutch": "Hij is verlaten door zijn vrouw.",
+          "english": "He has been left by his wife."
+        },
+        {
+          "dutch": "De stad werd verlaten door haar inwoners.",
+          "english": "The city was left by its inhabitants."
+        }
+      ]
+    },
+    {
+      "verb": "opletten",
+      "preposition": "op",
+      "translation": {
+        "dutch": "opletten op",
+        "english": "to pay attention to"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Let op wat ik zeg.",
+          "english": "Pay attention to what I am saying."
+        },
+        {
+          "dutch": "Ze let goed op de details.",
+          "english": "She pays close attention to the details."
+        }
+      ]
+    },
+    {
+      "verb": "hopen",
+      "preposition": "op",
+      "translation": {
+        "dutch": "hopen op",
+        "english": "to hope for"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik hoop op mooi weer.",
+          "english": "I am hoping for nice weather."
+        },
+        {
+          "dutch": "Ze hopen op een goede afloop.",
+          "english": "They are hoping for a good outcome."
+        }
+      ]
+    },
+    {
+      "verb": "deelnemen",
+      "preposition": "aan",
+      "translation": {
+        "dutch": "deelnemen aan",
+        "english": "to take part in"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Wij nemen deel aan de vergadering.",
+          "english": "We are taking part in the meeting."
+        },
+        {
+          "dutch": "Ik neem deel aan de cursus.",
+          "english": "I am taking part in the course."
+        }
+      ]
+    },
+    {
+      "verb": "sturen",
+      "preposition": "naar",
+      "translation": {
+        "dutch": "sturen naar",
+        "english": "to send to"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik stuur een brief naar mijn oma.",
+          "english": "I am sending a letter to my grandma."
+        },
+        {
+          "dutch": "Zij sturen een pakketje naar Nederland.",
+          "english": "They are sending a package to the Netherlands."
+        }
+      ]
+    },
+    {
+      "verb": "genieten",
+      "preposition": "van",
+      "translation": {
+        "dutch": "genieten van",
+        "english": "to enjoy"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik geniet van de vakantie.",
+          "english": "I am enjoying the vacation."
+        },
+        {
+          "dutch": "Wij genieten van het uitzicht.",
+          "english": "We are enjoying the view."
+        }
+      ]
+    },
+    {
+      "verb": "zich vergissen",
+      "preposition": "in",
+      "translation": {
+        "dutch": "zich vergissen in",
+        "english": "to be mistaken about"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik heb me in de datum vergist.",
+          "english": "I was mistaken about the date."
+        },
+        {
+          "dutch": "Hij heeft zich in haar vergist.",
+          "english": "He was mistaken about her."
+        }
+      ]
+    },
+    {
+      "verb": "opgroeien",
+      "preposition": "in",
+      "translation": {
+        "dutch": "opgroeien in",
+        "english": "to grow up in"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Ik ben opgegroeid in Amsterdam.",
+          "english": "I grew up in Amsterdam."
+        },
+        {
+          "dutch": "Hij is opgegroeid in een klein dorp.",
+          "english": "He grew up in a small village."
+        }
+      ]
+    },
+    {
+      "verb": "uitkijken",
+      "preposition": "naar",
+      "translation": {
+        "dutch": "uitkijken naar",
+        "english": "to look forward to"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik kijk uit naar het weekend.",
+          "english": "I am looking forward to the weekend."
+        },
+        {
+          "dutch": "Zij kijkt uit naar de vakantie.",
+          "english": "She is looking forward to the vacation."
+        }
+      ]
+    },
+    {
+      "verb": "zich herinneren",
+      "preposition": "aan",
+      "translation": {
+        "dutch": "zich herinneren aan",
+        "english": "to remember"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik herinner me dat moment.",
+          "english": "I remember that moment."
+        },
+        {
+          "dutch": "Hij herinnert zich niets van de avond.",
+          "english": "He doesn't remember anything from the evening."
+        }
+      ]
+    },
+    {
+      "verb": "zich voorstellen",
+      "preposition": "aan",
+      "translation": {
+        "dutch": "zich voorstellen aan",
+        "english": "to introduce oneself to"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik stel me aan je voor.",
+          "english": "I introduce myself to you."
+        },
+        {
+          "dutch": "Stel je voor aan mijn vrienden.",
+          "english": "Introduce yourself to my friends."
+        }
+      ]
+    },
+    {
+      "verb": "zich voorbereiden",
+      "preposition": "voor",
+      "translation": {
+        "dutch": "zich voorbereiden voor",
+        "english": "to prepare for"
+      },
+      "level": "A2",
+      "examples": [
+        {
+          "dutch": "Wij bereiden ons voor voor de test.",
+          "english": "We are preparing for the test."
+        },
+        {
+          "dutch": "Bereid je goed voor voor het examen.",
+          "english": "Prepare well for the exam."
+        }
+      ]
+    },
+    {
+      "verb": "zich aanpassen",
+      "preposition": "aan",
+      "translation": {
+        "dutch": "zich aanpassen aan",
+        "english": "to adapt to"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik kan me moeilijk aanpassen aan de kou.",
+          "english": "I have difficulty adapting to the cold."
+        },
+        {
+          "dutch": "De studenten passen zich snel aan aan de nieuwe omgeving.",
+          "english": "The students quickly adapt to the new environment."
+        }
+      ]
+    },
+    {
+      "verb": "zich bevinden",
+      "preposition": "in",
+      "translation": {
+        "dutch": "zich bevinden in",
+        "english": "to be located in"
+      },
+      "level": "B2",
+      "examples": [
+        {
+          "dutch": "Het gebouw bevindt zich in het centrum.",
+          "english": "The building is located in the center."
+        },
+        {
+          "dutch": "Waar bevindt de wc zich?",
+          "english": "Where is the toilet located?"
+        }
+      ]
+    },
+    {
+      "verb": "beschermen",
+      "preposition": "tegen",
+      "translation": {
+        "dutch": "beschermen tegen",
+        "english": "to protect against"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Deze jas beschermt je tegen de regen.",
+          "english": "This jacket protects you against the rain."
+        },
+        {
+          "dutch": "Wij moeten ons beschermen tegen het virus.",
+          "english": "We must protect ourselves against the virus."
+        }
+      ]
+    },
+    {
+      "verb": "zich afvragen",
+      "preposition": "of",
+      "translation": {
+        "dutch": "zich afvragen of",
+        "english": "to wonder if"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik vraag me af of hij komt.",
+          "english": "I wonder if he is coming."
+        },
+        {
+          "dutch": "Ze vroeg zich af of de winkel open was.",
+          "english": "She wondered if the shop was open."
+        }
+      ]
+    },
+    {
+      "verb": "zich beklagen",
+      "preposition": "over",
+      "translation": {
+        "dutch": "zich beklagen over",
+        "english": "to complain about"
+      },
+      "level": "B2",
+      "examples": [
+        {
+          "dutch": "Hij beklaagt zich over het slechte weer.",
+          "english": "He is complaining about the bad weather."
+        },
+        {
+          "dutch": "Ze beklaagde zich over de service.",
+          "english": "She complained about the service."
+        }
+      ]
+    },
+    {
+      "verb": "zich concentreren",
+      "preposition": "op",
+      "translation": {
+        "dutch": "zich concentreren op",
+        "english": "to concentrate on"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "De studenten concentreren zich op hun huiswerk.",
+          "english": "The students are concentrating on their homework."
+        },
+        {
+          "dutch": "Ik kan me niet concentreren op het geluid.",
+          "english": "I can't concentrate on the noise."
+        }
+      ]
+    },
+    {
+      "verb": "zich verheugen",
+      "preposition": "op",
+      "translation": {
+        "dutch": "zich verheugen op",
+        "english": "to look forward to"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik verheug me op de vakantie.",
+          "english": "I am looking forward to the vacation."
+        },
+        {
+          "dutch": "Zij verheugt zich op haar verjaardag.",
+          "english": "She is looking forward to her birthday."
+        }
+      ]
+    },
+    {
+      "verb": "zich afvragen",
+      "preposition": "waarom",
+      "translation": {
+        "dutch": "zich afvragen waarom",
+        "english": "to wonder why"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik vraag me af waarom hij wegging.",
+          "english": "I wonder why he left."
+        },
+        {
+          "dutch": "Ze vraagt zich af waarom hij niet belde.",
+          "english": "She wonders why he didn't call."
+        }
+      ]
+    },
+    {
+      "verb": "zich storen",
+      "preposition": "aan",
+      "translation": {
+        "dutch": "zich storen aan",
+        "english": "to be bothered by"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik stoor me aan het lawaai van de buren.",
+          "english": "I am bothered by the neighbors' noise."
+        },
+        {
+          "dutch": "Ze stoort zich aan zijn houding.",
+          "english": "She is bothered by his attitude."
+        }
+      ]
+    },
+    {
+      "verb": "zich afmelden",
+      "preposition": "voor",
+      "translation": {
+        "dutch": "zich afmelden voor",
+        "english": "to unsubscribe from"
+      },
+      "level": "B1",
+      "examples": [
+        {
+          "dutch": "Ik heb me afgemeld voor de nieuwsbrief.",
+          "english": "I have unsubscribed from the newsletter."
+        },
+        {
+          "dutch": "Zij meldt zich af voor de cursus.",
+          "english": "She is unsubscribing from the course."
+        }
+      ]
+    },
+    {
+      "verb": "zich verzetten",
+      "preposition": "tegen",
+      "translation": {
+        "dutch": "zich verzetten tegen",
+        "english": "to resist"
+      },
+      "level": "B2",
+      "examples": [
+        {
+          "dutch": "Hij verzet zich tegen de nieuwe regels.",
+          "english": "He is resisting the new rules."
+        },
+        {
+          "dutch": "Zij verzetten zich tegen de veranderingen.",
+          "english": "They are resisting the changes."
+        }
+      ]
+    }
+  ]
+  
