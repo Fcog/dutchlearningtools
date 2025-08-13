@@ -4,7 +4,7 @@ import PageLayout from '../components/templates/PageLayout'
 import ScoreDisplay from '../components/molecules/ScoreDisplay'
 import ConjunctionExercise from '../components/organisms/ConjunctionExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
-import { trackLearningEvent } from '../utils/analytics'
+
 
 function ConjunctionsPage() {
   const navigate = useNavigate()
@@ -24,25 +24,14 @@ function ConjunctionsPage() {
     scoreRef.current = score
   }, [score])
 
-  // Track page visit
-  useEffect(() => {
-    trackLearningEvent('page_visited', 'navigation', {
-      page_name: 'conjunctions',
-      tool_type: 'language_learning'
-    })
-  }, [])
+
 
   // Track session end when component unmounts
   useEffect(() => {
     return () => {
       const finalScore = scoreRef.current
       if (finalScore.total > 0) {
-        trackLearningEvent('session_ended', 'conjunction_practice', {
-          session_duration_exercises: finalScore.total,
-          final_score: finalScore.correct,
-          final_accuracy: Math.round((finalScore.correct / finalScore.total) * 100),
-          completion_reason: 'page_navigation'
-        })
+
       }
     }
   }, [])
@@ -82,11 +71,7 @@ function ConjunctionsPage() {
     if (conjunctionsData && !isDataLoading && !currentExercise) {
       handleNextExercise()
       
-      // Track exercise initialization
-      trackLearningEvent('exercise_started', 'conjunction_practice', {
-        total_exercises_available: getTotalExercises(),
-        exercise_type: 'sentence_completion'
-      })
+
     }
   }, [conjunctionsData, isDataLoading])
 
@@ -147,38 +132,7 @@ function ConjunctionsPage() {
     }
     setScore(newScore)
     
-    // Track answer checking event
-    trackLearningEvent('answer_checked', 'conjunction_practice', {
-      is_correct: correct,
-      user_answer: userAnswer.trim().toLowerCase(),
-      correct_answer: currentExercise.conjunction.toLowerCase(),
-      conjunction_category: currentExercise.category,
-      sentence_length: currentExercise.sentence.length,
-      current_session_score: newScore.correct,
-      current_session_total: newScore.total,
-      accuracy: newScore.total > 0 ? Math.round((newScore.correct / newScore.total) * 100) : 0
-    })
-    
-    // Track milestone achievements
-    if (newScore.total === 5 || newScore.total === 10 || newScore.total === 25 || newScore.total === 50) {
-      trackLearningEvent('milestone_reached', 'conjunction_practice', {
-        milestone_type: 'exercises_completed',
-        milestone_value: newScore.total,
-        accuracy_at_milestone: Math.round((newScore.correct / newScore.total) * 100),
-        session_score: newScore.correct
-      })
-    }
-    
-    // Track high accuracy achievements
-    const accuracy = Math.round((newScore.correct / newScore.total) * 100)
-    if (newScore.total >= 10 && (accuracy === 90 || accuracy === 95 || accuracy === 100)) {
-      trackLearningEvent('achievement_unlocked', 'conjunction_practice', {
-        achievement_type: 'high_accuracy',
-        accuracy_percentage: accuracy,
-        exercises_completed: newScore.total,
-        score: newScore.correct
-      })
-    }
+
   }
 
   // Get next exercise
@@ -194,33 +148,17 @@ function ConjunctionsPage() {
       const newClickCount = nextExerciseClickCount + 1
       setNextExerciseClickCount(newClickCount)
       
-      trackLearningEvent('next_exercise_clicked', 'conjunction_practice', {
-        total_next_clicks: newClickCount,
-        current_session_score: score.correct,
-        current_session_total: score.total,
-        accuracy: score.total > 0 ? Math.round((score.correct / score.total) * 100) : 0
-      })
+
     }
   }
 
   // Handle Enter key press
   const handleKeyPress = (e) => {
     if (e.key === 'Enter' && !showResult) {
-      // Track keyboard shortcut usage
-      trackLearningEvent('keyboard_shortcut_used', 'conjunction_practice', {
-        shortcut_type: 'enter_to_check',
-        user_answer_length: userAnswer.trim().length,
-        has_answer: !!userAnswer.trim()
-      })
+
       handleCheckAnswer()
     } else if (e.key === 'Enter' && showResult) {
-      // Track keyboard shortcut usage
-      trackLearningEvent('keyboard_shortcut_used', 'conjunction_practice', {
-        shortcut_type: 'enter_to_continue',
-        was_correct: isCorrect,
-        current_session_score: score.correct,
-        current_session_total: score.total
-      })
+
       handleNextExercise()
     }
   }
@@ -229,14 +167,7 @@ function ConjunctionsPage() {
   const handleAnswerChange = (e) => {
     const newValue = e.target.value
     
-    // Track first keystroke for engagement
-    if (userAnswer === '' && newValue.length === 1) {
-      trackLearningEvent('typing_started', 'conjunction_practice', {
-        conjunction_category: currentExercise?.category,
-        sentence_length: currentExercise?.sentence?.length,
-        exercise_number: score.total + 1
-      })
-    }
+
     
     setUserAnswer(newValue)
   }

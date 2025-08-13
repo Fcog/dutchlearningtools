@@ -7,7 +7,7 @@ import VerbPrepositionFilterSelector from '../components/organisms/VerbPrepositi
 import VerbPrepositionFilterSidebar from '../components/organisms/VerbPrepositionFilterSidebar'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Button, Icon } from '../components/atoms'
-import { trackLearningEvent } from '../utils/analytics'
+
 
 function VerbPrepositionsPage() {
   const navigate = useNavigate()
@@ -31,28 +31,9 @@ function VerbPrepositionsPage() {
     scoreRef.current = score
   }, [score])
 
-  // Track page visit
-  useEffect(() => {
-    trackLearningEvent('page_visited', 'navigation', {
-      page_name: 'verb_prepositions',
-      tool_type: 'language_learning'
-    })
-  }, [])
 
-  // Track session end when component unmounts
-  useEffect(() => {
-    return () => {
-      const finalScore = scoreRef.current
-      if (finalScore.total > 0) {
-        trackLearningEvent('session_ended', 'verb_preposition_practice', {
-          session_duration_exercises: finalScore.total,
-          final_score: finalScore.correct,
-          final_accuracy: Math.round((finalScore.correct / finalScore.total) * 100),
-          completion_reason: 'page_navigation'
-        })
-      }
-    }
-  }, [])
+
+
 
   // Load verb preposition data asynchronously
   const loadVerbPrepositionData = async () => {
@@ -107,12 +88,7 @@ function VerbPrepositionsPage() {
     if (filteredVerbs.length > 0 && !isDataLoading && !currentExercise) {
       handleNextExercise()
       
-      // Track exercise initialization
-      trackLearningEvent('exercise_started', 'verb_preposition_practice', {
-        total_exercises_available: filteredVerbs.length,
-        exercise_type: 'verb_preposition_completion',
-        selected_levels: selectedLevels
-      })
+
     }
   }, [filteredVerbs, isDataLoading])
 
@@ -139,38 +115,7 @@ function VerbPrepositionsPage() {
     }
     setScore(newScore)
     
-    // Track answer checking event
-    trackLearningEvent('answer_checked', 'verb_preposition_practice', {
-      is_correct: correct,
-      user_answer: userAnswer.trim().toLowerCase(),
-      correct_answer: currentExercise.preposition.toLowerCase(),
-      verb: currentExercise.verb,
-      level: currentExercise.level,
-      current_session_score: newScore.correct,
-      current_session_total: newScore.total,
-      accuracy: newScore.total > 0 ? Math.round((newScore.correct / newScore.total) * 100) : 0
-    })
-    
-    // Track milestone achievements
-    if (newScore.total === 5 || newScore.total === 10 || newScore.total === 25 || newScore.total === 50) {
-      trackLearningEvent('milestone_reached', 'verb_preposition_practice', {
-        milestone_type: 'exercises_completed',
-        milestone_value: newScore.total,
-        accuracy_at_milestone: Math.round((newScore.correct / newScore.total) * 100),
-        session_score: newScore.correct
-      })
-    }
-    
-    // Track high accuracy achievements
-    const accuracy = Math.round((newScore.correct / newScore.total) * 100)
-    if (newScore.total >= 10 && (accuracy === 90 || accuracy === 95 || accuracy === 100)) {
-      trackLearningEvent('achievement_unlocked', 'verb_preposition_practice', {
-        achievement_type: 'high_accuracy',
-        accuracy_percentage: accuracy,
-        exercises_completed: newScore.total,
-        score: newScore.correct
-      })
-    }
+
   }
 
   // Get next exercise
@@ -186,33 +131,17 @@ function VerbPrepositionsPage() {
       const newClickCount = nextExerciseClickCount + 1
       setNextExerciseClickCount(newClickCount)
       
-      trackLearningEvent('next_exercise_clicked', 'verb_preposition_practice', {
-        total_next_clicks: newClickCount,
-        current_session_score: score.correct,
-        current_session_total: score.total,
-        accuracy: score.total > 0 ? Math.round((score.correct / score.total) * 100) : 0
-      })
+
     }
   }
 
   // Handle Enter key press
   const handleKeyPress = (e) => {
     if (e.key === 'Enter' && !showResult) {
-      // Track keyboard shortcut usage
-      trackLearningEvent('keyboard_shortcut_used', 'verb_preposition_practice', {
-        shortcut_type: 'enter_to_check',
-        user_answer_length: userAnswer.trim().length,
-        has_answer: !!userAnswer.trim()
-      })
+
       handleCheckAnswer()
     } else if (e.key === 'Enter' && showResult) {
-      // Track keyboard shortcut usage
-      trackLearningEvent('keyboard_shortcut_used', 'verb_preposition_practice', {
-        shortcut_type: 'enter_to_continue',
-        was_correct: isCorrect,
-        current_session_score: score.correct,
-        current_session_total: score.total
-      })
+
       handleNextExercise()
     }
   }
@@ -221,14 +150,7 @@ function VerbPrepositionsPage() {
   const handleAnswerChange = (e) => {
     const newValue = e.target.value
     
-    // Track first keystroke for engagement
-    if (userAnswer === '' && newValue.length === 1) {
-      trackLearningEvent('typing_started', 'verb_preposition_practice', {
-        verb: currentExercise?.verb,
-        level: currentExercise?.level,
-        exercise_number: score.total + 1
-      })
-    }
+
     
     setUserAnswer(newValue)
   }

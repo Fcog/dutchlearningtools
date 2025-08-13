@@ -23,25 +23,7 @@ export const trackPageView = (path) => {
   }
 };
 
-// Track custom events
-export const trackEvent = (eventName, parameters = {}) => {
-  if (typeof window !== 'undefined') {
-    ReactGA.event(eventName, parameters);
-  }
-};
-
-// Track specific events for the Dutch learning app
-export const trackLearningEvent = (action, tool, details = {}) => {
-  trackEvent('learning_interaction', {
-    action,
-    tool,
-    ...details
-  });
-};
-
 export default {
   initGA,
-  trackPageView,
-  trackEvent,
-  trackLearningEvent
+  trackPageView
 };

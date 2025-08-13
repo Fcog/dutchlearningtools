@@ -5,7 +5,7 @@ import ScoreDisplay from '../components/molecules/ScoreDisplay'
 import FilterSidebar from '../components/organisms/FilterSidebar'
 import VerbExercise from '../components/organisms/VerbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
-import { trackLearningEvent } from '../utils/analytics'
+
 
 const PRONOUNS = ['ik', 'jij', 'hij/zij', 'wij', 'jullie', 'zij']
 
@@ -35,25 +35,14 @@ function VerbConjugationPage() {
     scoreRef.current = score
   }, [score])
 
-  // Track page visit
-  useEffect(() => {
-    trackLearningEvent('page_visited', 'navigation', {
-      page_name: 'verb_conjugation',
-      tool_type: 'language_learning'
-    })
-  }, [])
+
 
   // Track session end when component unmounts
   useEffect(() => {
     return () => {
       const finalScore = scoreRef.current
       if (finalScore.total > 0) {
-        trackLearningEvent('session_ended', 'verb_conjugation', {
-          session_duration_exercises: finalScore.total,
-          final_score: finalScore.correct,
-          final_accuracy: Math.round((finalScore.correct / finalScore.total) * 100),
-          completion_reason: 'page_navigation'
-        })
+
       }
     }
   }, [])
@@ -152,12 +141,7 @@ function VerbConjugationPage() {
       const newClickCount = nextExerciseClickCount + 1
       setNextExerciseClickCount(newClickCount)
       
-      trackLearningEvent('next_exercise_clicked', 'verb_conjugation', {
-        total_next_clicks: newClickCount,
-        current_session_score: score.correct,
-        current_session_total: score.total,
-        accuracy: score.total > 0 ? Math.round((score.correct / score.total) * 100) : 0
-      })
+
     }
   }
 
@@ -178,65 +162,16 @@ function VerbConjugationPage() {
     }
     setScore(newScore)
     
-    // Track answer checking event
-    trackLearningEvent('answer_checked', 'verb_conjugation', {
-      is_correct: isAnswerCorrect,
-      user_answer: userAnswer.trim().toLowerCase(),
-      correct_answer: correctAnswer.toLowerCase(),
-      verb_infinitive: currentVerb.infinitive,
-      pronoun: currentPronoun,
-      tense: currentTense,
-      verb_level: currentVerb.level,
-      is_irregular: currentVerb.is_irregular,
-      is_separable: currentVerb.is_separable,
-      current_session_score: newScore.correct,
-      current_session_total: newScore.total,
-      accuracy: newScore.total > 0 ? Math.round((newScore.correct / newScore.total) * 100) : 0
-    })
-    
-    // Track milestone achievements
-    if (newScore.total === 5 || newScore.total === 10 || newScore.total === 25 || newScore.total === 50) {
-      trackLearningEvent('milestone_reached', 'verb_conjugation', {
-        milestone_type: 'exercises_completed',
-        milestone_value: newScore.total,
-        accuracy_at_milestone: Math.round((newScore.correct / newScore.total) * 100),
-        session_score: newScore.correct
-      })
-    }
-    
-    // Track high accuracy achievements
-    const accuracy = Math.round((newScore.correct / newScore.total) * 100)
-    if (newScore.total >= 10 && (accuracy === 90 || accuracy === 95 || accuracy === 100)) {
-      trackLearningEvent('achievement_unlocked', 'verb_conjugation', {
-        achievement_type: 'high_accuracy',
-        accuracy_percentage: accuracy,
-        exercises_completed: newScore.total,
-        score: newScore.correct
-      })
-    }
+
   }
 
   // Handle Enter key press
   const handleKeyPress = (e) => {
     if (e.key === 'Enter' && !showResult) {
-      // Track keyboard shortcut usage
-      trackLearningEvent('keyboard_shortcut_used', 'verb_conjugation', {
-        shortcut_type: 'enter_to_check',
-        user_answer_length: userAnswer.trim().length,
-        has_answer: !!userAnswer.trim(),
-        verb_infinitive: currentVerb?.infinitive,
-        pronoun: currentPronoun,
-        tense: currentTense
-      })
+
       checkAnswer()
     } else if (e.key === 'Enter' && showResult) {
-      // Track keyboard shortcut usage
-      trackLearningEvent('keyboard_shortcut_used', 'verb_conjugation', {
-        shortcut_type: 'enter_to_continue',
-        was_correct: isCorrect,
-        current_session_score: score.correct,
-        current_session_total: score.total
-      })
+
       generateNewExercise()
     }
   }
@@ -245,16 +180,7 @@ function VerbConjugationPage() {
   const handleAnswerChange = (e) => {
     const newValue = e.target.value
     
-    // Track first keystroke for engagement
-    if (userAnswer === '' && newValue.length === 1) {
-      trackLearningEvent('typing_started', 'verb_conjugation', {
-        verb_infinitive: currentVerb?.infinitive,
-        pronoun: currentPronoun,
-        tense: currentTense,
-        verb_level: currentVerb?.level,
-        exercise_number: score.total + 1
-      })
-    }
+
     
     setUserAnswer(newValue)
   }
@@ -269,57 +195,25 @@ function VerbConjugationPage() {
   const handleTenseChange = (newSelectedTenses) => {
     setSelectedTenses(newSelectedTenses)
     
-    // Track tense filter changes
-    trackLearningEvent('filter_changed', 'verb_conjugation', {
-      filter_type: 'tense',
-      selected_values: newSelectedTenses,
-      total_selected: newSelectedTenses.length,
-      previous_values: selectedTenses,
-      changed_from: selectedTenses.length,
-      changed_to: newSelectedTenses.length
-    })
+
   }
 
   const handleLevelChange = (newSelectedLevels) => {
     setSelectedLevels(newSelectedLevels)
     
-    // Track level filter changes
-    trackLearningEvent('filter_changed', 'verb_conjugation', {
-      filter_type: 'level',
-      selected_values: newSelectedLevels,
-      total_selected: newSelectedLevels.length,
-      previous_values: selectedLevels,
-      changed_from: selectedLevels.length,
-      changed_to: newSelectedLevels.length
-    })
+
   }
 
   const handleVerbTypeChange = (newSelectedVerbTypes) => {
     setSelectedVerbTypes(newSelectedVerbTypes)
     
-    // Track verb type filter changes
-    trackLearningEvent('filter_changed', 'verb_conjugation', {
-      filter_type: 'verb_type',
-      selected_values: newSelectedVerbTypes,
-      total_selected: newSelectedVerbTypes.length,
-      previous_values: selectedVerbTypes,
-      changed_from: selectedVerbTypes.length,
-      changed_to: newSelectedVerbTypes.length
-    })
+
   }
 
   const handleSeparableChange = (newSelectedSeparable) => {
     setSelectedSeparable(newSelectedSeparable)
     
-    // Track separable filter changes
-    trackLearningEvent('filter_changed', 'verb_conjugation', {
-      filter_type: 'separable',
-      selected_values: newSelectedSeparable,
-      total_selected: newSelectedSeparable.length,
-      previous_values: selectedSeparable,
-      changed_from: selectedSeparable.length,
-      changed_to: newSelectedSeparable.length
-    })
+
   }
 
   // Handle sidebar toggle

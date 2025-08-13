@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
 import Button from '../components/atoms/Button'
 import Icon from '../components/atoms/Icon'
-import { trackLearningEvent } from '../utils/analytics'
+
 
 function NotFoundPage() {
   const navigate = useNavigate()
@@ -56,15 +56,7 @@ function NotFoundPage() {
           <div className="notfound-tools-grid">
             <div 
               className="tool-card notfound-tool-card"
-              onClick={() => {
-                trackLearningEvent('tool_selected', 'navigation', {
-                  tool_id: 'articles',
-                  tool_name: 'Dutch Articles & Nouns',
-                  route: '/articles',
-                  from_page: '404'
-                })
-                navigate('/articles')
-              }}
+              onClick={() => navigate('/articles')}
             >
               <Icon icon="📚" size="large" className="tool-icon" />
               <h3>Dutch Articles & Nouns</h3>
@@ -73,15 +65,7 @@ function NotFoundPage() {
             
             <div 
               className="tool-card notfound-tool-card"
-              onClick={() => {
-                trackLearningEvent('tool_selected', 'navigation', {
-                  tool_id: 'verbs',
-                  tool_name: 'Verb Conjugation',
-                  route: '/verbs',
-                  from_page: '404'
-                })
-                navigate('/verbs')
-              }}
+              onClick={() => navigate('/verbs')}
             >
               <Icon icon="🎯" size="large" className="tool-icon" />
               <h3>Verb Conjugation</h3>
