@@ -9,7 +9,7 @@ import SocialSharing from '../components/organisms/SocialSharing'
 import { Button, Icon } from '../components/atoms'
 
 
-function VerbPrepositionsPage() {
+function PhrasalVerbsPage() {
   const navigate = useNavigate()
   const [verbsData, setVerbsData] = useState(null)
   const [isDataLoading, setIsDataLoading] = useState(true)
@@ -36,13 +36,13 @@ function VerbPrepositionsPage() {
 
 
   // Load verb preposition data asynchronously
-  const loadVerbPrepositionData = async () => {
+  const loadPhrasalVerbData = async () => {
     try {
       setIsDataLoading(true)
       const data = await import('../data/phrasal-verbs.json')
       setVerbsData(data.default)
     } catch (error) {
-      console.error('Error loading verb preposition data:', error)
+      console.error('Error loading phrasal verb data:', error)
     } finally {
       setIsDataLoading(false)
     }
@@ -50,7 +50,7 @@ function VerbPrepositionsPage() {
 
   // Load data on component mount
   useEffect(() => {
-    loadVerbPrepositionData()
+    loadPhrasalVerbData()
   }, [])
 
   // Check if user is on mobile device
@@ -183,7 +183,7 @@ function VerbPrepositionsPage() {
     return (
       <PageLayout>
         <h1>Loading...</h1>
-        <p>Loading your Dutch verb preposition exercise</p>
+        <p>Loading your Dutch phrasal verb exercise</p>
       </PageLayout>
     )
   }
@@ -333,4 +333,4 @@ function VerbPrepositionsPage() {
   )
 }
 
-export default VerbPrepositionsPage
+export default PhrasalVerbsPage

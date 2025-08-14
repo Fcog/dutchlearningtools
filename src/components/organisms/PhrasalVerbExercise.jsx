@@ -3,7 +3,7 @@ import WordCard from '../molecules/WordCard'
 import Button from '../atoms/Button'
 import Input from '../atoms/Input'
 
-function VerbWithPrepositionExercise({ 
+function PhrasalVerbExercise({ 
   currentExercise, 
   showResult, 
   isCorrect, 
@@ -27,11 +27,11 @@ function VerbWithPrepositionExercise({
         
         {/* Input for preposition */}
         <div className="exercise-input-container">
-          <label htmlFor="verb-preposition-input" className="exercise-input-label">
+          <label htmlFor="phrasal-verb-input" className="exercise-input-label">
             Fill in the preposition:
           </label>
           <Input
-            id="verb-preposition-input"
+            id="phrasal-verb-input"
             type="text"
             value={userAnswer}
             onChange={onAnswerChange}
@@ -109,4 +109,4 @@ function VerbWithPrepositionExercise({
   )
 }
 
-export default VerbWithPrepositionExercise
+export default PhrasalVerbExercise

@@ -71,19 +71,19 @@ function LandingPage() {
       available: true
     },
     {
-      id: 'verb-prepositions',
+      id: 'phrasal-verbs',
       icon: '🎲',
-      title: 'Dutch Verbs with Fixed Prepositions',
-      description: 'Master Dutch verbs with their fixed prepositions. Learn essential verb-preposition combinations with interactive exercises.',
+      title: 'Dutch Phrasal Verbs',
+      description: 'Master Dutch phrasal verbs. Learn essential phrasal verb combinations with interactive exercises.',
       features: [
-        'Fixed verb-preposition pairs',
+        'Fixed phrasal verb pairs',
         'Level-based progression (A2-B2)',
         'Real example sentences',
         'Contextual learning',
         'Progress tracking',
         'Instant feedback'
       ],
-      route: '/verbs-fixed-preposition',
+      route: '/phrasal-verbs',
       available: true
     },
     {
