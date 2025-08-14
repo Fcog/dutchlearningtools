@@ -25,9 +25,6 @@ function ConjunctionExercise({
         
         {/* Input for conjunction */}
         <div className="exercise-input-container">
-          <label htmlFor="conjunction-input" className="exercise-input-label">
-            Fill in the conjunction:
-          </label>
           {/* Show hint for correlative conjunctions */}
           {currentExercise.category === 'Correlative' && (
             <div className="exercise-hint">
@@ -102,9 +99,7 @@ function ConjunctionExercise({
         English: {currentExercise.translation}
       </div>
 
-      <div className="exercise-category">
-        Category: {currentExercise.category}
-      </div>
+
 
       {!isCorrect && (
         <div className="exercise-correct-answer">

@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import WordCard from '../molecules/WordCard'
+import ExerciseMetadata from '../molecules/ExerciseMetadata'
 import Button from '../atoms/Button'
 import Input from '../atoms/Input'
 
@@ -54,26 +55,25 @@ function VerbExercise({
         </div>
         
         {/* Verb Metadata */}
-        <div className="exercise-metadata">
-          <div className="exercise-metadata-item">
-            <span className="exercise-metadata-label">Level:</span>
-            <span className={`exercise-metadata-badge level-${currentVerb.level.toLowerCase()}`}>
-              {currentVerb.level}
-            </span>
-          </div>
-          <div className="exercise-metadata-item">
-            <span className="exercise-metadata-label">Type:</span>
-            <span className={`exercise-metadata-badge ${currentVerb.is_irregular ? 'irregular' : 'regular'}`}>
-              {currentVerb.is_irregular ? 'Irregular' : 'Regular'}
-            </span>
-          </div>
-          <div className="exercise-metadata-item">
-            <span className="exercise-metadata-label">Separable:</span>
-            <span className={`exercise-metadata-badge ${currentVerb.is_separable ? 'separable' : 'non-separable'}`}>
-              {currentVerb.is_separable ? 'Yes' : 'No'}
-            </span>
-          </div>
-        </div>
+        <ExerciseMetadata 
+          items={[
+            {
+              label: "Level",
+              value: currentVerb.level,
+              badgeClass: `level-${currentVerb.level.toLowerCase()}`
+            },
+            {
+              label: "Type",
+              value: currentVerb.is_irregular ? 'Irregular' : 'Regular',
+              badgeClass: currentVerb.is_irregular ? 'irregular' : 'regular'
+            },
+            {
+              label: "Separable",
+              value: currentVerb.is_separable ? 'Yes' : 'No',
+              badgeClass: currentVerb.is_separable ? 'separable' : 'non-separable'
+            }
+          ]}
+        />
         
         {/* Tense Info */}
         <div className="exercise-tense">

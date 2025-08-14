@@ -58,9 +58,7 @@ function ArticleExercise({
         English: the {currentWord.translation}
       </div>
 
-      <div className="exercise-category">
-        Category: {currentWord.category.replace('_', ' ')}
-      </div>
+
 
       {/* Rule Explanation */}
       {currentWord.rule && rulesData[currentWord.rule] && (

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import WordCard from '../molecules/WordCard'
+import ExerciseMetadata from '../molecules/ExerciseMetadata'
 import Button from '../atoms/Button'
 import Input from '../atoms/Input'
 
@@ -24,12 +25,19 @@ function PhrasalVerbExercise({
         <div className="exercise-translation">
           English: {currentExercise.translation.english}
         </div>
+
+        <ExerciseMetadata 
+          items={[
+            {
+              label: "Level",
+              value: currentExercise.level,
+              badgeClass: `level-${currentExercise.level.toLowerCase()}`
+            }
+          ]}
+        />
         
         {/* Input for preposition */}
         <div className="exercise-input-container">
-          <label htmlFor="phrasal-verb-input" className="exercise-input-label">
-            Fill in the preposition:
-          </label>
           <Input
             id="phrasal-verb-input"
             type="text"
@@ -74,16 +82,16 @@ function PhrasalVerbExercise({
         English: {currentExercise.translation.english}
       </div>
 
-      <div className="exercise-context">
-        Example: <span lang="nl">{completeExample}</span>
-      </div>
-      
-      <div className="exercise-context-translation">
-        {currentExercise.examples[0].english}
+      <div className="exercise-example-header">
+        Example:
       </div>
 
-      <div className="exercise-level">
-        Level: {currentExercise.level}
+      <div className="exercise-example-sentence" lang="nl">
+        {completeExample}
+      </div>
+      
+      <div className="exercise-example-sentence">
+        {currentExercise.examples[0].english}
       </div>
 
       {!isCorrect && (

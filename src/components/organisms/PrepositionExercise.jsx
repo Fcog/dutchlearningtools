@@ -25,9 +25,6 @@ function PrepositionExercise({
         
         {/* Input for preposition */}
         <div className="exercise-input-container">
-          <label htmlFor="preposition-input" className="exercise-input-label">
-            Fill in the preposition:
-          </label>
           <Input
             id="preposition-input"
             type="text"
@@ -72,9 +69,7 @@ function PrepositionExercise({
         English: {currentExercise.translation}
       </div>
 
-      <div className="exercise-category">
-        Category: {currentExercise.category}
-      </div>
+
 
       {!isCorrect && (
         <div className="exercise-correct-answer">
