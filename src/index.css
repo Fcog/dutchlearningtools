@@ -531,6 +531,13 @@ body {
   margin-bottom: 20px;
 }
 
+/* Hide page header description on mobile */
+@media (max-width: 768px) {
+  .page-header-description {
+    display: none;
+  }
+}
+
 .exercise-heading {
   font-size: 1.5em;
   color: #333;
