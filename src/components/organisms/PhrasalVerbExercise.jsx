@@ -104,16 +104,17 @@ function PhrasalVerbExercise({
         Examples:
       </div>
 
+      <div className="exercise-example-list">
       {currentExercise.examples.map((example, index) => (
-        <div key={index}>
-          <div className="exercise-example-sentence" lang="nl">
-            {example.dutch}
-          </div>
-          <div className="exercise-example-sentence">
-            ({example.english})
-          </div>
-        </div>
+        <ul key={index}>
+          <li>
+            <div className="exercise-example-sentence" lang="nl">
+              {example.dutch} <span className="exercise-example-translation">({example.english})</span>
+            </div>
+          </li>
+        </ul>
       ))}
+      </div>
     </WordCard>
   )
 }

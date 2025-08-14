@@ -1708,14 +1708,28 @@ body {
   padding-bottom: 0.8rem;
 }
 
+.exercise-example-list {
+  padding-bottom: 0.8rem;
+  text-align: left;
+}
+
+.exercise-example-list ul {
+  padding: 0;
+  margin: 0;
+}
+
 .exercise-example-header {
   font-weight: bold;
   padding-top: 1rem;
 }
 
 .exercise-example-sentence {
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 0.4rem;
+}
+
+.exercise-example-translation {
+  font-size: 0.8em;
 }
 
 /* Desktop sidebar behavior */
