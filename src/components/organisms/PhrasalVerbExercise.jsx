@@ -65,8 +65,6 @@ function PhrasalVerbExercise({
     )
   }
 
-  const completeExample = currentExercise.examples[0].dutch
-
   return (
     <WordCard>
       {/* Result Display */}
@@ -80,18 +78,6 @@ function PhrasalVerbExercise({
       
       <div className="exercise-translation">
         English: {currentExercise.translation.english}
-      </div>
-
-      <div className="exercise-example-header">
-        Example:
-      </div>
-
-      <div className="exercise-example-sentence" lang="nl">
-        {completeExample}
-      </div>
-      
-      <div className="exercise-example-sentence">
-        {currentExercise.examples[0].english}
       </div>
 
       {!isCorrect && (
@@ -113,6 +99,21 @@ function PhrasalVerbExercise({
       >
         Next Exercise
       </Button>
+
+      <div className="exercise-example-header">
+        Examples:
+      </div>
+
+      {currentExercise.examples.map((example, index) => (
+        <div key={index}>
+          <div className="exercise-example-sentence" lang="nl">
+            {example.dutch}
+          </div>
+          <div className="exercise-example-sentence">
+            ({example.english})
+          </div>
+        </div>
+      ))}
     </WordCard>
   )
 }
