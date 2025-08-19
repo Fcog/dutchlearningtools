@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
 import LandingPage from './pages/LandingPage'
 import ArticlesPage from './pages/ArticlesPage'
 import VerbConjugationPage from './pages/VerbConjugationPage'
@@ -7,7 +8,9 @@ import PhrasalVerbsPage from './pages/PhrasalVerbsPage'
 import ConjunctionsPage from './pages/ConjunctionsPage'
 import NotFoundPage from './pages/NotFoundPage'
 import ScrollToTop from './components/ScrollToTop'
+import CookieConsent from './components/organisms/CookieConsent'
 import usePageTracking from './hooks/usePageTracking'
+import { initGAWithConsent } from './utils/analytics'
 
 // Component to handle page tracking inside the Router context
 function AppRoutes() {
@@ -30,10 +33,24 @@ function AppRoutes() {
 }
 
 function App() {
+  useEffect(() => {
+    // Listen for consent granted event to initialize GA
+    const handleConsentGranted = () => {
+      initGAWithConsent()
+    }
+
+    window.addEventListener('cookieConsentGranted', handleConsentGranted)
+
+    return () => {
+      window.removeEventListener('cookieConsentGranted', handleConsentGranted)
+    }
+  }, [])
+
   return (
     <BrowserRouter>
       <ScrollToTop />
       <AppRoutes />
+      <CookieConsent />
     </BrowserRouter>
   )
 }

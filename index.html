@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) - with consent mode -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8R9QCZQ29"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
+      // Set default consent mode
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'wait_for_update': 500
+      });
 
       gtag('config', 'G-R8R9QCZQ29');
     </script>
