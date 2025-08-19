@@ -123,7 +123,7 @@ function FilterSelector({
           Customize your practice by selecting tenses, levels, and verb types
         </Text>
       </div>
-      
+
       <div className="filter-sections">
         <FilterSection
           title="Tenses"

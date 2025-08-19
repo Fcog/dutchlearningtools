@@ -5,6 +5,7 @@ import ScoreDisplay from '../components/molecules/ScoreDisplay'
 import FilterSidebar from '../components/organisms/FilterSidebar'
 import VerbExercise from '../components/organisms/VerbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
+import { saveFilterPreferences, loadFilterPreferences } from '../utils/filterStorage'
 
 
 const PRONOUNS = ['ik', 'jij', 'hij/zij', 'wij', 'jullie', 'zij']
@@ -16,10 +17,13 @@ function VerbConjugationPage() {
   const [currentVerb, setCurrentVerb] = useState(null)
   const [currentPronoun, setCurrentPronoun] = useState(null)
   const [currentTense, setCurrentTense] = useState(null)
-  const [selectedTenses, setSelectedTenses] = useState(['present'])
-  const [selectedLevels, setSelectedLevels] = useState(['A1', 'A2'])
-  const [selectedVerbTypes, setSelectedVerbTypes] = useState(['regular', 'irregular'])
-  const [selectedSeparable, setSelectedSeparable] = useState(['separable', 'non-separable'])
+  
+  // Load filter preferences from localStorage on component mount
+  const savedFilters = loadFilterPreferences('VERB_CONJUGATION')
+  const [selectedTenses, setSelectedTenses] = useState(savedFilters.selectedTenses)
+  const [selectedLevels, setSelectedLevels] = useState(savedFilters.selectedLevels)
+  const [selectedVerbTypes, setSelectedVerbTypes] = useState(savedFilters.selectedVerbTypes)
+  const [selectedSeparable, setSelectedSeparable] = useState(savedFilters.selectedSeparable)
   const [userAnswer, setUserAnswer] = useState('')
   const [showResult, setShowResult] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
@@ -98,6 +102,17 @@ function VerbConjugationPage() {
       return levelMatch && verbTypeMatch && separableMatch
     })
   }
+
+  // Save filter preferences to localStorage whenever they change
+  useEffect(() => {
+    const filterPreferences = {
+      selectedTenses,
+      selectedLevels,
+      selectedVerbTypes,
+      selectedSeparable
+    }
+    saveFilterPreferences('VERB_CONJUGATION', filterPreferences)
+  }, [selectedTenses, selectedLevels, selectedVerbTypes, selectedSeparable])
 
   // Update filtered verbs when filters change
   useEffect(() => {

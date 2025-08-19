@@ -7,6 +7,7 @@ import PhrasalVerbFilterSelector from '../components/organisms/PhrasalVerbFilter
 import PhrasalVerbFilterSidebar from '../components/organisms/PhrasalVerbFilterSidebar'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Button, Icon } from '../components/atoms'
+import { saveFilterPreferences, loadFilterPreferences } from '../utils/filterStorage'
 
 
 function VerbPrepositionsPage() {
@@ -16,7 +17,10 @@ function VerbPrepositionsPage() {
   const [currentExercise, setCurrentExercise] = useState(null)
   const [isMobile, setIsMobile] = useState(false)
   const [filteredVerbs, setFilteredVerbs] = useState([])
-  const [selectedLevels, setSelectedLevels] = useState(['A2', 'B1', 'B2']) // Default to all available levels
+  
+  // Load filter preferences from localStorage on component mount
+  const savedFilters = loadFilterPreferences('VERB_PREPOSITIONS')
+  const [selectedLevels, setSelectedLevels] = useState(savedFilters.selectedLevels)
   const [showFilters, setShowFilters] = useState(false)
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const [userAnswer, setUserAnswer] = useState('')
@@ -74,6 +78,14 @@ function VerbPrepositionsPage() {
       return selectedLevels.includes(verb.level)
     })
   }
+
+  // Save filter preferences to localStorage whenever they change
+  useEffect(() => {
+    const filterPreferences = {
+      selectedLevels
+    }
+    saveFilterPreferences('VERB_PREPOSITIONS', filterPreferences)
+  }, [selectedLevels])
 
   // Update filtered verbs when filters change
   useEffect(() => {
