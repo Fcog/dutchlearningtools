@@ -4,6 +4,7 @@ import PageLayout from '../components/templates/PageLayout'
 import ScoreDisplay from '../components/molecules/ScoreDisplay'
 import ConjunctionExercise from '../components/organisms/ConjunctionExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
+import { Footer } from '../components/atoms'
 
 
 function ConjunctionsPage() {
@@ -192,12 +193,7 @@ function ConjunctionsPage() {
       showBreadcrumb 
       breadcrumbPage="Conjunction Exercise"
       onHomeClick={() => navigate('/')}
-      footer={
-        <>
-          <p>🇳🇱 Master Dutch conjunctions through interactive practice! Perfect for learning Nederlandse voegwoorden.</p>
-          <p>Free Dutch language exercise with real-world sentences and instant feedback.</p>
-        </>
-      }
+      footer={<Footer />}
     >
       <header>
         <h1>Dutch Conjunction Exercise: Complete the Sentence</h1>

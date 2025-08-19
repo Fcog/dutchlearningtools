@@ -6,7 +6,7 @@ import PhrasalVerbExercise from '../components/organisms/PhrasalVerbExercise'
 import PhrasalVerbFilterSelector from '../components/organisms/PhrasalVerbFilterSelector'
 import PhrasalVerbFilterSidebar from '../components/organisms/PhrasalVerbFilterSidebar'
 import SocialSharing from '../components/organisms/SocialSharing'
-import { Button, Icon } from '../components/atoms'
+import { Button, Icon, Footer } from '../components/atoms'
 import { saveFilterPreferences, loadFilterPreferences } from '../utils/filterStorage'
 
 
@@ -266,12 +266,7 @@ function VerbPrepositionsPage() {
       showBreadcrumb 
               breadcrumbPage="Phrasal Verbs Exercise"
       onHomeClick={() => navigate('/')}
-      footer={
-        <>
-          <p>🇳🇱 Master Dutch phrasal verbs through interactive practice! Perfect for learning Nederlandse werkwoorden met vaste voorzetsels.</p>
-          <p>Free Dutch language exercise with real-world examples and instant feedback.</p>
-        </>
-      }
+      footer={<Footer />}
     >
       <header>
         <h1>Dutch Phrasal Verbs: Complete the Combination</h1>

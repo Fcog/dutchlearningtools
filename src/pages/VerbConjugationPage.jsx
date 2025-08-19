@@ -5,6 +5,7 @@ import ScoreDisplay from '../components/molecules/ScoreDisplay'
 import FilterSidebar from '../components/organisms/FilterSidebar'
 import VerbExercise from '../components/organisms/VerbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
+import { Footer } from '../components/atoms'
 import { saveFilterPreferences, loadFilterPreferences } from '../utils/filterStorage'
 
 
@@ -289,12 +290,7 @@ function VerbConjugationPage() {
         breadcrumbPage="Verb Conjugation Exercise"
         onHomeClick={() => navigate('/')}
         className={`main-content ${isSidebarOpen ? 'content-shifted' : ''}`}
-        footer={
-          <>
-            <p>🇳🇱 Master Dutch verb conjugations through interactive practice! Perfect for beginners learning Nederlandse werkwoorden.</p>
-            <p>Free Dutch language exercise with common verbs and instant feedback.</p>
-          </>
-        }
+        footer={<Footer />}
       >
         <header>
           <h1>Dutch Verb Conjugation: Multi-Tense Practice</h1>

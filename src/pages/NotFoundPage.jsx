@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
 import Button from '../components/atoms/Button'
 import Icon from '../components/atoms/Icon'
+import { Footer } from '../components/atoms'
 
 
 function NotFoundPage() {
@@ -12,11 +13,7 @@ function NotFoundPage() {
       showBreadcrumb
       breadcrumbPage="Page Not Found"
       onHomeClick={() => navigate('/')}
-      footer={
-        <p>
-          🇳🇱 Free Dutch learning tools for everyone. Continue your learning journey!
-        </p>
-      }
+      footer={<Footer />}
     >
       <div className="container">
         <section className="hero notfound-hero">

@@ -4,6 +4,7 @@ import PageLayout from '../components/templates/PageLayout'
 import ScoreDisplay from '../components/molecules/ScoreDisplay'
 import ArticleExercise from '../components/organisms/ArticleExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
+import { Footer } from '../components/atoms'
 
 
 function ArticlesPage() {
@@ -138,12 +139,7 @@ function ArticlesPage() {
       showBreadcrumb 
       breadcrumbPage="Article Exercise"
       onHomeClick={() => navigate('/')}
-      footer={
-        <>
-          <p>🇳🇱 Master Dutch articles through interactive practice! Perfect for beginners learning Nederlandse lidwoorden.</p>
-          <p>Free Dutch language exercise with 200+ common nouns and instant feedback.</p>
-        </>
-      }
+      footer={<Footer />}
     >
       <header>
         <h1>Dutch Article Exercise: Choose De or Het</h1>

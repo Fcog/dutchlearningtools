@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import Hero from '../components/organisms/Hero'
 import ToolsGrid from '../components/organisms/ToolsGrid'
+import { Footer } from '../components/atoms'
 
 function LandingPage() {
   const navigate = useNavigate()
@@ -147,9 +148,7 @@ function LandingPage() {
       <Hero />
       <ToolsGrid tools={tools} onToolClick={handleToolClick} />
       <footer className="footer">
-        <p>
-          🇳🇱 Free Dutch learning tools for everyone. Start your Dutch language journey today!
-        </p>
+        <Footer />
       </footer>
     </div>
   )

@@ -4,6 +4,7 @@ import PageLayout from '../components/templates/PageLayout'
 import ScoreDisplay from '../components/molecules/ScoreDisplay'
 import PrepositionExercise from '../components/organisms/PrepositionExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
+import { Footer } from '../components/atoms'
 
 
 function PrepositionsPage() {
@@ -159,12 +160,7 @@ function PrepositionsPage() {
       showBreadcrumb 
       breadcrumbPage="Preposition Exercise"
       onHomeClick={() => navigate('/')}
-      footer={
-        <>
-          <p>🇳🇱 Master Dutch prepositions through interactive practice! Perfect for learning Nederlandse voorzetsels.</p>
-          <p>Free Dutch language exercise with real-world sentences and instant feedback.</p>
-        </>
-      }
+      footer={<Footer />}
     >
       <header>
         <h1>Dutch Preposition Exercise: Complete the Sentence</h1>
