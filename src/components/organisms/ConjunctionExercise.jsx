@@ -112,6 +112,20 @@ function ConjunctionExercise({
         <strong>Your answer:</strong> {userAnswer}
       </div>
 
+      {/* Hidden input to capture keyboard events when result is shown */}
+      <input
+        type="text"
+        style={{ 
+          position: 'absolute', 
+          left: '-9999px', 
+          opacity: 0, 
+          pointerEvents: 'none' 
+        }}
+        onKeyDown={onKeyPress}
+        autoFocus
+        aria-hidden="true"
+      />
+
       {/* Next Exercise Button */}
       <Button
         onClick={onNextExercise}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import WordCard from '../molecules/WordCard'
 import Button from '../atoms/Button'
 import rulesData from '../../data/rules-articles.json'
@@ -9,8 +9,24 @@ function ArticleExercise({
   isCorrect, 
   selectedArticle,
   onArticleChoice, 
-  onNextWord 
+  onNextWord,
+  onKeyPress 
 }) {
+  // Add keyboard event listener when component mounts
+  useEffect(() => {
+    if (onKeyPress) {
+      const handleKeyDown = (e) => {
+        // Only handle Enter key
+        if (e.key === 'Enter') {
+          onKeyPress(e)
+        }
+      }
+      
+      document.addEventListener('keydown', handleKeyDown)
+      return () => document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [onKeyPress, showResult])
+
   if (!showResult) {
     return (
       <WordCard>

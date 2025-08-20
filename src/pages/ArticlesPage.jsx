@@ -119,6 +119,13 @@ function ArticlesPage() {
     }
   }
 
+  // Handle Enter key press
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter' && showResult) {
+      handleNextWord()
+    }
+  }
+
   // Social sharing data
   const shareData = {
     title: "Dutch Article Exercise - Interactive De & Het Quiz",
@@ -165,6 +172,7 @@ function ArticlesPage() {
           selectedArticle={selectedArticle}
           onArticleChoice={handleArticleChoice}
           onNextWord={handleNextWord}
+          onKeyPress={handleKeyPress}
         />
       </section>
       

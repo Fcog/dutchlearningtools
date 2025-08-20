@@ -155,6 +155,20 @@ function VerbExercise({
         </div>
       </div>
 
+      {/* Hidden input to capture keyboard events when result is shown */}
+      <input
+        type="text"
+        style={{ 
+          position: 'absolute', 
+          left: '-9999px', 
+          opacity: 0, 
+          pointerEvents: 'none' 
+        }}
+        onKeyDown={onKeyPress}
+        autoFocus
+        aria-hidden="true"
+      />
+
       <Button
         onClick={onNextExercise}
         variant="secondary"

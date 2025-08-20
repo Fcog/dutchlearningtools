@@ -16,7 +16,7 @@ function Input({
       type={type}
       value={value}
       onChange={onChange}
-      onKeyPress={onKeyPress}
+      onKeyDown={onKeyPress}
       placeholder={placeholder}
       style={style}
       className={`custom-input ${className}`}

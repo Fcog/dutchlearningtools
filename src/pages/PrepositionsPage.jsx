@@ -123,11 +123,12 @@ function PrepositionsPage() {
   // Handle Enter key press
   const handleKeyPress = (e) => {
     if (e.key === 'Enter' && !showResult) {
-
       handleCheckAnswer()
     } else if (e.key === 'Enter' && showResult) {
-
+      console.log('Enter pressed with showResult=true, calling handleNextExercise')
       handleNextExercise()
+    } else if (e.key === 'Enter') {
+      console.log('Enter pressed but no condition met. showResult:', showResult)
     }
   }
 
