@@ -36,7 +36,7 @@ function NotFoundPage() {
             </Button>
             
             <Button
-              onClick={() => navigate('/articles')}
+              onClick={() => navigate('/de-het-articles')}
               variant="router"
               size="medium"
               className="notfound-button"

@@ -504,9 +504,8 @@ body {
 .notfound-exercises-list {
   list-style: none;
   padding: 0;
-  margin: 0;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -861,6 +860,10 @@ body {
   /* NotFound page small mobile styles */
   .notfound-exercise-link {
     padding: 12px 15px;
+  }
+
+  .notfound-exercises-list {
+    margin: 0 auto;
   }
 }
 
