@@ -1,0 +1,5954 @@
+{
+  "dutch_verbs": [
+    {
+      "infinitive": "zijn",
+      "english": "to be",
+      "stem": "ben",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ben",
+            "jij": "bent",
+            "hij/zij": "is",
+            "wij": "zijn",
+            "jullie": "zijn",
+            "zij": "zijn"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "was",
+            "jij": "was",
+            "hij/zij": "was",
+            "wij": "waren",
+            "jullie": "waren",
+            "zij": "waren"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben geweest",
+            "jij": "bent geweest",
+            "hij/zij": "is geweest",
+            "wij": "zijn geweest",
+            "jullie": "zijn geweest",
+            "zij": "zijn geweest"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal zijn",
+            "jij": "zult zijn",
+            "hij/zij": "zal zijn",
+            "wij": "zullen zijn",
+            "jullie": "zullen zijn",
+            "zij": "zullen zijn"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "hebben",
+      "english": "to have",
+      "stem": "heb",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "heb",
+            "jij": "hebt",
+            "hij/zij": "heeft",
+            "wij": "hebben",
+            "jullie": "hebben",
+            "zij": "hebben"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "had",
+            "jij": "had",
+            "hij/zij": "had",
+            "wij": "hadden",
+            "jullie": "hadden",
+            "zij": "hadden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gehad",
+            "jij": "hebt gehad",
+            "hij/zij": "heeft gehad",
+            "wij": "hebben gehad",
+            "jullie": "hebben gehad",
+            "zij": "hebben gehad"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal hebben",
+            "jij": "zult hebben",
+            "hij/zij": "zal hebben",
+            "wij": "zullen hebben",
+            "jullie": "zullen hebben",
+            "zij": "zullen hebben"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "gaan",
+      "english": "to go",
+      "stem": "ga",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ga",
+            "jij": "gaat",
+            "hij/zij": "gaat",
+            "wij": "gaan",
+            "jullie": "gaan",
+            "zij": "gaan"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "ging",
+            "jij": "ging",
+            "hij/zij": "ging",
+            "wij": "gingen",
+            "jullie": "gingen",
+            "zij": "gingen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben gegaan",
+            "jij": "bent gegaan",
+            "hij/zij": "is gegaan",
+            "wij": "zijn gegaan",
+            "jullie": "zijn gegaan",
+            "zij": "zijn gegaan"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal gaan",
+            "jij": "zult gaan",
+            "hij/zij": "zal gaan",
+            "wij": "zullen gaan",
+            "jullie": "zullen gaan",
+            "zij": "zullen gaan"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "komen",
+      "english": "to come",
+      "stem": "kom",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "kom",
+            "jij": "komt",
+            "hij/zij": "komt",
+            "wij": "komen",
+            "jullie": "komen",
+            "zij": "komen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "kwam",
+            "jij": "kwam",
+            "hij/zij": "kwam",
+            "wij": "kwamen",
+            "jullie": "kwamen",
+            "zij": "kwamen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben gekomen",
+            "jij": "bent gekomen",
+            "hij/zij": "is gekomen",
+            "wij": "zijn gekomen",
+            "jullie": "zijn gekomen",
+            "zij": "zijn gekomen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal komen",
+            "jij": "zult komen",
+            "hij/zij": "zal komen",
+            "wij": "zullen komen",
+            "jullie": "zullen komen",
+            "zij": "zullen komen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "werken",
+      "english": "to work",
+      "stem": "werk",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "werk",
+            "jij": "werkt",
+            "hij/zij": "werkt",
+            "wij": "werken",
+            "jullie": "werken",
+            "zij": "werken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "werkte",
+            "jij": "werkte",
+            "hij/zij": "werkte",
+            "wij": "werkten",
+            "jullie": "werkten",
+            "zij": "werkten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gewerkt",
+            "jij": "hebt gewerkt",
+            "hij/zij": "heeft gewerkt",
+            "wij": "hebben gewerkt",
+            "jullie": "hebben gewerkt",
+            "zij": "hebben gewerkt"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal werken",
+            "jij": "zult werken",
+            "hij/zij": "zal werken",
+            "wij": "zullen werken",
+            "jullie": "zullen werken",
+            "zij": "zullen werken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "wonen",
+      "english": "to live",
+      "stem": "woon",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "woon",
+            "jij": "woont",
+            "hij/zij": "woont",
+            "wij": "wonen",
+            "jullie": "wonen",
+            "zij": "wonen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "woonde",
+            "jij": "woonde",
+            "hij/zij": "woonde",
+            "wij": "woonden",
+            "jullie": "woonden",
+            "zij": "woonden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gewoond",
+            "jij": "hebt gewoond",
+            "hij/zij": "heeft gewoond",
+            "wij": "hebben gewoond",
+            "jullie": "hebben gewoond",
+            "zij": "hebben gewoond"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal wonen",
+            "jij": "zult wonen",
+            "hij/zij": "zal wonen",
+            "wij": "zullen wonen",
+            "jullie": "zullen wonen",
+            "zij": "zullen wonen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "eten",
+      "english": "to eat",
+      "stem": "eet",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "eet",
+            "jij": "eet",
+            "hij/zij": "eet",
+            "wij": "eten",
+            "jullie": "eten",
+            "zij": "eten"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "at",
+            "jij": "at",
+            "hij/zij": "at",
+            "wij": "aten",
+            "jullie": "aten",
+            "zij": "aten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gegeten",
+            "jij": "hebt gegeten",
+            "hij/zij": "heeft gegeten",
+            "wij": "hebben gegeten",
+            "jullie": "hebben gegeten",
+            "zij": "hebben gegeten"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal eten",
+            "jij": "zult eten",
+            "hij/zij": "zal eten",
+            "wij": "zullen eten",
+            "jullie": "zullen eten",
+            "zij": "zullen eten"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "drinken",
+      "english": "to drink",
+      "stem": "drink",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "drink",
+            "jij": "drinkt",
+            "hij/zij": "drinkt",
+            "wij": "drinken",
+            "jullie": "drinken",
+            "zij": "drinken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "dronk",
+            "jij": "dronk",
+            "hij/zij": "dronk",
+            "wij": "dronken",
+            "jullie": "dronken",
+            "zij": "dronken"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gedronken",
+            "jij": "hebt gedronken",
+            "hij/zij": "heeft gedronken",
+            "wij": "hebben gedronken",
+            "jullie": "hebben gedronken",
+            "zij": "hebben gedronken"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal drinken",
+            "jij": "zult drinken",
+            "hij/zij": "zal drinken",
+            "wij": "zullen drinken",
+            "jullie": "zullen drinken",
+            "zij": "zullen drinken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "slapen",
+      "english": "to sleep",
+      "stem": "slaap",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "slaap",
+            "jij": "slaapt",
+            "hij/zij": "slaapt",
+            "wij": "slapen",
+            "jullie": "slapen",
+            "zij": "slapen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "sliep",
+            "jij": "sliep",
+            "hij/zij": "sliep",
+            "wij": "sliepen",
+            "jullie": "sliepen",
+            "zij": "sliepen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geslapen",
+            "jij": "hebt geslapen",
+            "hij/zij": "heeft geslapen",
+            "wij": "hebben geslapen",
+            "jullie": "hebben geslapen",
+            "zij": "hebben geslapen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal slapen",
+            "jij": "zult slapen",
+            "hij/zij": "zal slapen",
+            "wij": "zullen slapen",
+            "jullie": "zullen slapen",
+            "zij": "zullen slapen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "lopen",
+      "english": "to walk",
+      "stem": "loop",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "loop",
+            "jij": "loopt",
+            "hij/zij": "loopt",
+            "wij": "lopen",
+            "jullie": "lopen",
+            "zij": "lopen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "liep",
+            "jij": "liep",
+            "hij/zij": "liep",
+            "wij": "liepen",
+            "jullie": "liepen",
+            "zij": "liepen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gelopen",
+            "jij": "hebt gelopen",
+            "hij/zij": "heeft gelopen",
+            "wij": "hebben gelopen",
+            "jullie": "hebben gelopen",
+            "zij": "hebben gelopen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal lopen",
+            "jij": "zult lopen",
+            "hij/zij": "zal lopen",
+            "wij": "zullen lopen",
+            "jullie": "zullen lopen",
+            "zij": "zullen lopen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "spelen",
+      "english": "to play",
+      "stem": "speel",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "speel",
+            "jij": "speelt",
+            "hij/zij": "speelt",
+            "wij": "spelen",
+            "jullie": "spelen",
+            "zij": "spelen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "speelde",
+            "jij": "speelde",
+            "hij/zij": "speelde",
+            "wij": "speelden",
+            "jullie": "speelden",
+            "zij": "speelden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gespeeld",
+            "jij": "hebt gespeeld",
+            "hij/zij": "heeft gespeeld",
+            "wij": "hebben gespeeld",
+            "jullie": "hebben gespeeld",
+            "zij": "hebben gespeeld"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal spelen",
+            "jij": "zult spelen",
+            "hij/zij": "zal spelen",
+            "wij": "zullen spelen",
+            "jullie": "zullen spelen",
+            "zij": "zullen spelen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "kijken",
+      "english": "to look",
+      "stem": "kijk",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "kijk",
+            "jij": "kijkt",
+            "hij/zij": "kijkt",
+            "wij": "kijken",
+            "jullie": "kijken",
+            "zij": "kijken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "keek",
+            "jij": "keek",
+            "hij/zij": "keek",
+            "wij": "keken",
+            "jullie": "keken",
+            "zij": "keken"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gekeken",
+            "jij": "hebt gekeken",
+            "hij/zij": "heeft gekeken",
+            "wij": "hebben gekeken",
+            "jullie": "hebben gekeken",
+            "zij": "hebben gekeken"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal kijken",
+            "jij": "zult kijken",
+            "hij/zij": "zal kijken",
+            "wij": "zullen kijken",
+            "jullie": "zullen kijken",
+            "zij": "zullen kijken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "praten",
+      "english": "to talk",
+      "stem": "praat",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "praat",
+            "jij": "praat",
+            "hij/zij": "praat",
+            "wij": "praten",
+            "jullie": "praten",
+            "zij": "praten"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "praatte",
+            "jij": "praatte",
+            "hij/zij": "praatte",
+            "wij": "praatten",
+            "jullie": "praatten",
+            "zij": "praatten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gepraat",
+            "jij": "hebt gepraat",
+            "hij/zij": "heeft gepraat",
+            "wij": "hebben gepraat",
+            "jullie": "hebben gepraat",
+            "zij": "hebben gepraat"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal praten",
+            "jij": "zult praten",
+            "hij/zij": "zal praten",
+            "wij": "zullen praten",
+            "jullie": "zullen praten",
+            "zij": "zullen praten"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "horen",
+      "english": "to hear",
+      "stem": "hoor",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "hoor",
+            "jij": "hoort",
+            "hij/zij": "hoort",
+            "wij": "horen",
+            "jullie": "horen",
+            "zij": "horen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "hoorde",
+            "jij": "hoorde",
+            "hij/zij": "hoorde",
+            "wij": "hoorden",
+            "jullie": "hoorden",
+            "zij": "hoorden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gehoord",
+            "jij": "hebt gehoord",
+            "hij/zij": "heeft gehoord",
+            "wij": "hebben gehoord",
+            "jullie": "hebben gehoord",
+            "zij": "hebben gehoord"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal horen",
+            "jij": "zult horen",
+            "hij/zij": "zal horen",
+            "wij": "zullen horen",
+            "jullie": "zullen horen",
+            "zij": "zullen horen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "zien",
+      "english": "to see",
+      "stem": "zie",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "zie",
+            "jij": "ziet",
+            "hij/zij": "ziet",
+            "wij": "zien",
+            "jullie": "zien",
+            "zij": "zien"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "zag",
+            "jij": "zag",
+            "hij/zij": "zag",
+            "wij": "zagen",
+            "jullie": "zagen",
+            "zij": "zagen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gezien",
+            "jij": "hebt gezien",
+            "hij/zij": "heeft gezien",
+            "wij": "hebben gezien",
+            "jullie": "hebben gezien",
+            "zij": "hebben gezien"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal zien",
+            "jij": "zult zien",
+            "hij/zij": "zal zien",
+            "wij": "zullen zien",
+            "jullie": "zullen zien",
+            "zij": "zullen zien"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "doen",
+      "english": "to do",
+      "stem": "doe",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "doe",
+            "jij": "doet",
+            "hij/zij": "doet",
+            "wij": "doen",
+            "jullie": "doen",
+            "zij": "doen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "deed",
+            "jij": "deed",
+            "hij/zij": "deed",
+            "wij": "deden",
+            "jullie": "deden",
+            "zij": "deden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gedaan",
+            "jij": "hebt gedaan",
+            "hij/zij": "heeft gedaan",
+            "wij": "hebben gedaan",
+            "jullie": "hebben gedaan",
+            "zij": "hebben gedaan"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal doen",
+            "jij": "zult doen",
+            "hij/zij": "zal doen",
+            "wij": "zullen doen",
+            "jullie": "zullen doen",
+            "zij": "zullen doen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "maken",
+      "english": "to make",
+      "stem": "maak",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "maak",
+            "jij": "maakt",
+            "hij/zij": "maakt",
+            "wij": "maken",
+            "jullie": "maken",
+            "zij": "maken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "maakte",
+            "jij": "maakte",
+            "hij/zij": "maakte",
+            "wij": "maakten",
+            "jullie": "maakten",
+            "zij": "maakten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gemaakt",
+            "jij": "hebt gemaakt",
+            "hij/zij": "heeft gemaakt",
+            "wij": "hebben gemaakt",
+            "jullie": "hebben gemaakt",
+            "zij": "hebben gemaakt"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal maken",
+            "jij": "zult maken",
+            "hij/zij": "zal maken",
+            "wij": "zullen maken",
+            "jullie": "zullen maken",
+            "zij": "zullen maken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "zeggen",
+      "english": "to say",
+      "stem": "zeg",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "zeg",
+            "jij": "zegt",
+            "hij/zij": "zegt",
+            "wij": "zeggen",
+            "jullie": "zeggen",
+            "zij": "zeggen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "zei",
+            "jij": "zei",
+            "hij/zij": "zei",
+            "wij": "zeiden",
+            "jullie": "zeiden",
+            "zij": "zeiden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gezegd",
+            "jij": "hebt gezegd",
+            "hij/zij": "heeft gezegd",
+            "wij": "hebben gezegd",
+            "jullie": "hebben gezegd",
+            "zij": "hebben gezegd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal zeggen",
+            "jij": "zult zeggen",
+            "hij/zij": "zal zeggen",
+            "wij": "zullen zeggen",
+            "jullie": "zullen zeggen",
+            "zij": "zullen zeggen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "leren",
+      "english": "to learn",
+      "stem": "leer",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "leer",
+            "jij": "leert",
+            "hij/zij": "leert",
+            "wij": "leren",
+            "jullie": "leren",
+            "zij": "leren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "leerde",
+            "jij": "leerde",
+            "hij/zij": "leerde",
+            "wij": "leerden",
+            "jullie": "leerden",
+            "zij": "leerden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geleerd",
+            "jij": "hebt geleerd",
+            "hij/zij": "heeft geleerd",
+            "wij": "hebben geleerd",
+            "jullie": "hebben geleerd",
+            "zij": "hebben geleerd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal leren",
+            "jij": "zult leren",
+            "hij/zij": "zal leren",
+            "wij": "zullen leren",
+            "jullie": "zullen leren",
+            "zij": "zullen leren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "koken",
+      "english": "to cook",
+      "stem": "kook",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "kook",
+            "jij": "kookt",
+            "hij/zij": "kookt",
+            "wij": "koken",
+            "jullie": "koken",
+            "zij": "koken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "kookte",
+            "jij": "kookte",
+            "hij/zij": "kookte",
+            "wij": "kookten",
+            "jullie": "kookten",
+            "zij": "kookten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gekookt",
+            "jij": "hebt gekookt",
+            "hij/zij": "heeft gekookt",
+            "wij": "hebben gekookt",
+            "jullie": "hebben gekookt",
+            "zij": "hebben gekookt"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal koken",
+            "jij": "zult koken",
+            "hij/zij": "zal koken",
+            "wij": "zullen koken",
+            "jullie": "zullen koken",
+            "zij": "zullen koken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "werken",
+      "english": "to work",
+      "stem": "werk",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "werk",
+            "jij": "werkt",
+            "hij/zij": "werkt",
+            "wij": "werken",
+            "jullie": "werken",
+            "zij": "werken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "werkte",
+            "jij": "werkte",
+            "hij/zij": "werkte",
+            "wij": "werkten",
+            "jullie": "werkten",
+            "zij": "werkten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gewerkt",
+            "jij": "hebt gewerkt",
+            "hij/zij": "heeft gewerkt",
+            "wij": "hebben gewerkt",
+            "jullie": "hebben gewerkt",
+            "zij": "hebben gewerkt"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal werken",
+            "jij": "zult werken",
+            "hij/zij": "zal werken",
+            "wij": "zullen werken",
+            "jullie": "zullen werken",
+            "zij": "zullen werken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "openen",
+      "english": "to open",
+      "stem": "open",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "open",
+            "jij": "opent",
+            "hij/zij": "opent",
+            "wij": "openen",
+            "jullie": "openen",
+            "zij": "openen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "opende",
+            "jij": "opende",
+            "hij/zij": "opende",
+            "wij": "openden",
+            "jullie": "openden",
+            "zij": "openden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geopend",
+            "jij": "hebt geopend",
+            "hij/zij": "heeft geopend",
+            "wij": "hebben geopend",
+            "jullie": "hebben geopend",
+            "zij": "hebben geopend"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal openen",
+            "jij": "zult openen",
+            "hij/zij": "zal openen",
+            "wij": "zullen openen",
+            "jullie": "zullen openen",
+            "zij": "zullen openen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "sluiten",
+      "english": "to close",
+      "stem": "sluit",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "sluit",
+            "jij": "sluit",
+            "hij/zij": "sluit",
+            "wij": "sluiten",
+            "jullie": "sluiten",
+            "zij": "sluiten"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "sloot",
+            "jij": "sloot",
+            "hij/zij": "sloot",
+            "wij": "sloten",
+            "jullie": "sloten",
+            "zij": "sloten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gesloten",
+            "jij": "hebt gesloten",
+            "hij/zij": "heeft gesloten",
+            "wij": "hebben gesloten",
+            "jullie": "hebben gesloten",
+            "zij": "hebben gesloten"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal sluiten",
+            "jij": "zult sluiten",
+            "hij/zij": "zal sluiten",
+            "wij": "zullen sluiten",
+            "jullie": "zullen sluiten",
+            "zij": "zullen sluiten"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "wandelen",
+      "english": "to stroll",
+      "stem": "wandel",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "wandel",
+            "jij": "wandelt",
+            "hij/zij": "wandelt",
+            "wij": "wandelen",
+            "jullie": "wandelen",
+            "zij": "wandelen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "wandelde",
+            "jij": "wandelde",
+            "hij/zij": "wandelde",
+            "wij": "wandelden",
+            "jullie": "wandelden",
+            "zij": "wandelden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gewandeld",
+            "jij": "hebt gewandeld",
+            "hij/zij": "heeft gewandeld",
+            "wij": "hebben gewandeld",
+            "jullie": "hebben gewandeld",
+            "zij": "hebben gewandeld"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal wandelen",
+            "jij": "zult wandelen",
+            "hij/zij": "zal wandelen",
+            "wij": "zullen wandelen",
+            "jullie": "zullen wandelen",
+            "zij": "zullen wandelen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "fietsen",
+      "english": "to cycle",
+      "stem": "fiets",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "fiets",
+            "jij": "fietst",
+            "hij/zij": "fietst",
+            "wij": "fietsen",
+            "jullie": "fietsen",
+            "zij": "fietsen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "fietste",
+            "jij": "fietste",
+            "hij/zij": "fietste",
+            "wij": "fietsten",
+            "jullie": "fietsten",
+            "zij": "fietsten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gefietst",
+            "jij": "hebt gefietst",
+            "hij/zij": "heeft gefietst",
+            "wij": "hebben gefietst",
+            "jullie": "hebben gefietst",
+            "zij": "hebben gefietst"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal fietsen",
+            "jij": "zult fietsen",
+            "hij/zij": "zal fietsen",
+            "wij": "zullen fietsen",
+            "jullie": "zullen fietsen",
+            "zij": "zullen fietsen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "zwemmen",
+      "english": "to swim",
+      "stem": "zwem",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "zwem",
+            "jij": "zwemt",
+            "hij/zij": "zwemt",
+            "wij": "zwemmen",
+            "jullie": "zwemmen",
+            "zij": "zwemmen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "zwom",
+            "jij": "zwom",
+            "hij/zij": "zwom",
+            "wij": "zwommen",
+            "jullie": "zwommen",
+            "zij": "zwommen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gezwommen",
+            "jij": "hebt gezwommen",
+            "hij/zij": "heeft gezwommen",
+            "wij": "hebben gezwommen",
+            "jullie": "hebben gezwommen",
+            "zij": "hebben gezwommen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal zwemmen",
+            "jij": "zult zwemmen",
+            "hij/zij": "zal zwemmen",
+            "wij": "zullen zwemmen",
+            "jullie": "zullen zwemmen",
+            "zij": "zullen zwemmen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "luisteren",
+      "english": "to listen",
+      "stem": "luister",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "luister",
+            "jij": "luistert",
+            "hij/zij": "luistert",
+            "wij": "luisteren",
+            "jullie": "luisteren",
+            "zij": "luisteren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "luisterde",
+            "jij": "luisterde",
+            "hij/zij": "luisterde",
+            "wij": "luisterden",
+            "jullie": "luisterden",
+            "zij": "luisterden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geluisterd",
+            "jij": "hebt geluisterd",
+            "hij/zij": "heeft geluisterd",
+            "wij": "hebben geluisterd",
+            "jullie": "hebben geluisterd",
+            "zij": "hebben geluisterd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal luisteren",
+            "jij": "zult luisteren",
+            "hij/zij": "zal luisteren",
+            "wij": "zullen luisteren",
+            "jullie": "zullen luisteren",
+            "zij": "zullen luisteren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "kijken",
+      "english": "to watch",
+      "stem": "kijk",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "kijk",
+            "jij": "kijkt",
+            "hij/zij": "kijkt",
+            "wij": "kijken",
+            "jullie": "kijken",
+            "zij": "kijken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "keek",
+            "jij": "keek",
+            "hij/zij": "keek",
+            "wij": "keken",
+            "jullie": "keken",
+            "zij": "keken"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gekeken",
+            "jij": "hebt gekeken",
+            "hij/zij": "heeft gekeken",
+            "wij": "hebben gekeken",
+            "jullie": "hebben gekeken",
+            "zij": "hebben gekeken"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal kijken",
+            "jij": "zult kijken",
+            "hij/zij": "zal kijken",
+            "wij": "zullen kijken",
+            "jullie": "zullen kijken",
+            "zij": "zullen kijken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "beloven",
+      "english": "to promise",
+      "stem": "beloof",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "beloof",
+            "jij": "belooft",
+            "hij/zij": "belooft",
+            "wij": "beloven",
+            "jullie": "beloven",
+            "zij": "beloven"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "beloofde",
+            "jij": "beloofde",
+            "hij/zij": "beloofde",
+            "wij": "beloofden",
+            "jullie": "beloofden",
+            "zij": "beloofden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb beloofd",
+            "jij": "hebt beloofd",
+            "hij/zij": "heeft beloofd",
+            "wij": "hebben beloofd",
+            "jullie": "hebben beloofd",
+            "zij": "hebben beloofd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal beloven",
+            "jij": "zult beloven",
+            "hij/zij": "zal beloven",
+            "wij": "zullen beloven",
+            "jullie": "zullen beloven",
+            "zij": "zullen beloven"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "vragen",
+      "english": "to ask",
+      "stem": "vraag",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "vraag",
+            "jij": "vraagt",
+            "hij/zij": "vraagt",
+            "wij": "vragen",
+            "jullie": "vragen",
+            "zij": "vragen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "vroeg",
+            "jij": "vroeg",
+            "hij/zij": "vroeg",
+            "wij": "vroegen",
+            "jullie": "vroegen",
+            "zij": "vroegen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gevraagd",
+            "jij": "hebt gevraagd",
+            "hij/zij": "heeft gevraagd",
+            "wij": "hebben gevraagd",
+            "jullie": "hebben gevraagd",
+            "zij": "hebben gevraagd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal vragen",
+            "jij": "zult vragen",
+            "hij/zij": "zal vragen",
+            "wij": "zullen vragen",
+            "jullie": "zullen vragen",
+            "zij": "zullen vragen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "antwoorden",
+      "english": "to answer",
+      "stem": "antwoord",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "antwoord",
+            "jij": "antwoordt",
+            "hij/zij": "antwoordt",
+            "wij": "antwoorden",
+            "jullie": "antwoorden",
+            "zij": "antwoorden"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "antwoordde",
+            "jij": "antwoordde",
+            "hij/zij": "antwoordde",
+            "wij": "antwoordden",
+            "jullie": "antwoordden",
+            "zij": "antwoordden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geantwoord",
+            "jij": "hebt geantwoord",
+            "hij/zij": "heeft geantwoord",
+            "wij": "hebben geantwoord",
+            "jullie": "hebben geantwoord",
+            "zij": "hebben geantwoord"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal antwoorden",
+            "jij": "zult antwoorden",
+            "hij/zij": "zal antwoorden",
+            "wij": "zullen antwoorden",
+            "jullie": "zullen antwoorden",
+            "zij": "zullen antwoorden"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "schrijven",
+      "english": "to write",
+      "stem": "schrijf",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "schrijf",
+            "jij": "schrijft",
+            "hij/zij": "schrijft",
+            "wij": "schrijven",
+            "jullie": "schrijven",
+            "zij": "schrijven"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "schreef",
+            "jij": "schreef",
+            "hij/zij": "schreef",
+            "wij": "schreven",
+            "jullie": "schreven",
+            "zij": "schreven"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geschreven",
+            "jij": "hebt geschreven",
+            "hij/zij": "heeft geschreven",
+            "wij": "hebben geschreven",
+            "jullie": "hebben geschreven",
+            "zij": "hebben geschreven"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal schrijven",
+            "jij": "zult schrijven",
+            "hij/zij": "zal schrijven",
+            "wij": "zullen schrijven",
+            "jullie": "zullen schrijven",
+            "zij": "zullen schrijven"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "lezen",
+      "english": "to read",
+      "stem": "lees",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "lees",
+            "jij": "leest",
+            "hij/zij": "leest",
+            "wij": "lezen",
+            "jullie": "lezen",
+            "zij": "lezen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "las",
+            "jij": "las",
+            "hij/zij": "las",
+            "wij": "lazen",
+            "jullie": "lazen",
+            "zij": "lazen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gelezen",
+            "jij": "hebt gelezen",
+            "hij/zij": "heeft gelezen",
+            "wij": "hebben gelezen",
+            "jullie": "hebben gelezen",
+            "zij": "hebben gelezen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal lezen",
+            "jij": "zult lezen",
+            "hij/zij": "zal lezen",
+            "wij": "zullen lezen",
+            "jullie": "zullen lezen",
+            "zij": "zullen lezen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "studeren",
+      "english": "to study",
+      "stem": "studeer",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "studeer",
+            "jij": "studeert",
+            "hij/zij": "studeert",
+            "wij": "studeren",
+            "jullie": "studeren",
+            "zij": "studeren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "studeerde",
+            "jij": "studeerde",
+            "hij/zij": "studeerde",
+            "wij": "studeerden",
+            "jullie": "studeerden",
+            "zij": "studeerden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gestudeerd",
+            "jij": "hebt gestudeerd",
+            "hij/zij": "heeft gestudeerd",
+            "wij": "hebben gestudeerd",
+            "jullie": "hebben gestudeerd",
+            "zij": "hebben gestudeerd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal studeren",
+            "jij": "zult studeren",
+            "hij/zij": "zal studeren",
+            "wij": "zullen studeren",
+            "jullie": "zullen studeren",
+            "zij": "zullen studeren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "reizen",
+      "english": "to travel",
+      "stem": "reis",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "reis",
+            "jij": "reist",
+            "hij/zij": "reist",
+            "wij": "reizen",
+            "jullie": "reizen",
+            "zij": "reizen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "reisde",
+            "jij": "reisde",
+            "hij/zij": "reisde",
+            "wij": "reisden",
+            "jullie": "reisden",
+            "zij": "reisden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gereisd",
+            "jij": "hebt gereisd",
+            "hij/zij": "heeft gereisd",
+            "wij": "hebben gereisd",
+            "jullie": "hebben gereisd",
+            "zij": "hebben gereisd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal reizen",
+            "jij": "zult reizen",
+            "hij/zij": "zal reizen",
+            "wij": "zullen reizen",
+            "jullie": "zullen reizen",
+            "zij": "zullen reizen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "kopen",
+      "english": "to buy",
+      "stem": "koop",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "koop",
+            "jij": "koopt",
+            "hij/zij": "koopt",
+            "wij": "kopen",
+            "jullie": "kopen",
+            "zij": "kopen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "kocht",
+            "jij": "kocht",
+            "hij/zij": "kocht",
+            "wij": "kochten",
+            "jullie": "kochten",
+            "zij": "kochten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gekocht",
+            "jij": "hebt gekocht",
+            "hij/zij": "heeft gekocht",
+            "wij": "hebben gekocht",
+            "jullie": "hebben gekocht",
+            "zij": "hebben gekocht"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal kopen",
+            "jij": "zult kopen",
+            "hij/zij": "zal kopen",
+            "wij": "zullen kopen",
+            "jullie": "zullen kopen",
+            "zij": "zullen kopen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "verkopen",
+      "english": "to sell",
+      "stem": "verkoop",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "verkoop",
+            "jij": "verkoopt",
+            "hij/zij": "verkoopt",
+            "wij": "verkopen",
+            "jullie": "verkopen",
+            "zij": "verkopen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "verkocht",
+            "jij": "verkocht",
+            "hij/zij": "verkocht",
+            "wij": "verkochten",
+            "jullie": "verkochten",
+            "zij": "verkochten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb verkocht",
+            "jij": "hebt verkocht",
+            "hij/zij": "heeft verkocht",
+            "wij": "hebben verkocht",
+            "jullie": "hebben verkocht",
+            "zij": "hebben verkocht"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal verkopen",
+            "jij": "zult verkopen",
+            "hij/zij": "zal verkopen",
+            "wij": "zullen verkopen",
+            "jullie": "zullen verkopen",
+            "zij": "zullen verkopen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "werken",
+      "english": "to work",
+      "stem": "werk",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "werk",
+            "jij": "werkt",
+            "hij/zij": "werkt",
+            "wij": "werken",
+            "jullie": "werken",
+            "zij": "werken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "werkte",
+            "jij": "werkte",
+            "hij/zij": "werkte",
+            "wij": "werkten",
+            "jullie": "werkten",
+            "zij": "werkten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gewerkt",
+            "jij": "hebt gewerkt",
+            "hij/zij": "heeft gewerkt",
+            "wij": "hebben gewerkt",
+            "jullie": "hebben gewerkt",
+            "zij": "hebben gewerkt"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal werken",
+            "jij": "zult werken",
+            "hij/zij": "zal werken",
+            "wij": "zullen werken",
+            "jullie": "zullen werken",
+            "zij": "zullen werken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "spelen",
+      "english": "to play",
+      "stem": "speel",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "speel",
+            "jij": "speelt",
+            "hij/zij": "speelt",
+            "wij": "spelen",
+            "jullie": "spelen",
+            "zij": "spelen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "speelde",
+            "jij": "speelde",
+            "hij/zij": "speelde",
+            "wij": "speelden",
+            "jullie": "speelden",
+            "zij": "speelden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gespeeld",
+            "jij": "hebt gespeeld",
+            "hij/zij": "heeft gespeeld",
+            "wij": "hebben gespeeld",
+            "jullie": "hebben gespeeld",
+            "zij": "hebben gespeeld"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal spelen",
+            "jij": "zult spelen",
+            "hij/zij": "zal spelen",
+            "wij": "zullen spelen",
+            "jullie": "zullen spelen",
+            "zij": "zullen spelen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "leren",
+      "english": "to learn",
+      "stem": "leer",
+      "level": "A1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "leer",
+            "jij": "leert",
+            "hij/zij": "leert",
+            "wij": "leren",
+            "jullie": "leren",
+            "zij": "leren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "leerde",
+            "jij": "leerde",
+            "hij/zij": "leerde",
+            "wij": "leerden",
+            "jullie": "leerden",
+            "zij": "leerden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geleerd",
+            "jij": "hebt geleerd",
+            "hij/zij": "heeft geleerd",
+            "wij": "hebben geleerd",
+            "jullie": "hebben geleerd",
+            "zij": "hebben geleerd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal leren",
+            "jij": "zult leren",
+            "hij/zij": "zal leren",
+            "wij": "zullen leren",
+            "jullie": "zullen leren",
+            "zij": "zullen leren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "beginnen",
+      "english": "to begin",
+      "stem": "begin",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "begin",
+            "jij": "begint",
+            "hij/zij": "begint",
+            "wij": "beginnen",
+            "jullie": "beginnen",
+            "zij": "beginnen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "begon",
+            "jij": "begon",
+            "hij/zij": "begon",
+            "wij": "begonnen",
+            "jullie": "begonnen",
+            "zij": "begonnen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben begonnen",
+            "jij": "bent begonnen",
+            "hij/zij": "is begonnen",
+            "wij": "zijn begonnen",
+            "jullie": "zijn begonnen",
+            "zij": "zijn begonnen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal beginnen",
+            "jij": "zult beginnen",
+            "hij/zij": "zal beginnen",
+            "wij": "zullen beginnen",
+            "jullie": "zullen beginnen",
+            "zij": "zullen beginnen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "vergeten",
+      "english": "to forget",
+      "stem": "vergeet",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "vergeet",
+            "jij": "vergeet",
+            "hij/zij": "vergeet",
+            "wij": "vergeten",
+            "jullie": "vergeten",
+            "zij": "vergeten"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "vergat",
+            "jij": "vergat",
+            "hij/zij": "vergat",
+            "wij": "vergaten",
+            "jullie": "vergaten",
+            "zij": "vergaten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben vergeten",
+            "jij": "bent vergeten",
+            "hij/zij": "is vergeten",
+            "wij": "zijn vergeten",
+            "jullie": "zijn vergeten",
+            "zij": "zijn vergeten"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal vergeten",
+            "jij": "zult vergeten",
+            "hij/zij": "zal vergeten",
+            "wij": "zullen vergeten",
+            "jullie": "zullen vergeten",
+            "zij": "zullen vergeten"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "ontmoeten",
+      "english": "to meet",
+      "stem": "ontmoet",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ontmoet",
+            "jij": "ontmoet",
+            "hij/zij": "ontmoet",
+            "wij": "ontmoeten",
+            "jullie": "ontmoeten",
+            "zij": "ontmoeten"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "ontmoette",
+            "jij": "ontmoette",
+            "hij/zij": "ontmoette",
+            "wij": "ontmoetten",
+            "jullie": "ontmoetten",
+            "zij": "ontmoetten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb ontmoet",
+            "jij": "hebt ontmoet",
+            "hij/zij": "heeft ontmoet",
+            "wij": "hebben ontmoet",
+            "jullie": "hebben ontmoet",
+            "zij": "hebben ontmoet"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal ontmoeten",
+            "jij": "zult ontmoeten",
+            "hij/zij": "zal ontmoeten",
+            "wij": "zullen ontmoeten",
+            "jullie": "zullen ontmoeten",
+            "zij": "zullen ontmoeten"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "verkopen",
+      "english": "to sell",
+      "stem": "verkoop",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "verkoop",
+            "jij": "verkoopt",
+            "hij/zij": "verkoopt",
+            "wij": "verkopen",
+            "jullie": "verkopen",
+            "zij": "verkopen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "verkocht",
+            "jij": "verkocht",
+            "hij/zij": "verkocht",
+            "wij": "verkochten",
+            "jullie": "verkochten",
+            "zij": "verkochten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb verkocht",
+            "jij": "hebt verkocht",
+            "hij/zij": "heeft verkocht",
+            "wij": "hebben verkocht",
+            "jullie": "hebben verkocht",
+            "zij": "hebben verkocht"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal verkopen",
+            "jij": "zult verkopen",
+            "hij/zij": "zal verkopen",
+            "wij": "zullen verkopen",
+            "jullie": "zullen verkopen",
+            "zij": "zullen verkopen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "kopen",
+      "english": "to buy",
+      "stem": "koop",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "koop",
+            "jij": "koopt",
+            "hij/zij": "koopt",
+            "wij": "kopen",
+            "jullie": "kopen",
+            "zij": "kopen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "kocht",
+            "jij": "kocht",
+            "hij/zij": "kocht",
+            "wij": "kochten",
+            "jullie": "kochten",
+            "zij": "kochten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gekocht",
+            "jij": "hebt gekocht",
+            "hij/zij": "heeft gekocht",
+            "wij": "hebben gekocht",
+            "jullie": "hebben gekocht",
+            "zij": "hebben gekocht"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal kopen",
+            "jij": "zult kopen",
+            "hij/zij": "zal kopen",
+            "wij": "zullen kopen",
+            "jullie": "zullen kopen",
+            "zij": "zullen kopen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "vertellen",
+      "english": "to tell",
+      "stem": "vertel",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "vertel",
+            "jij": "vertelt",
+            "hij/zij": "vertelt",
+            "wij": "vertellen",
+            "jullie": "vertellen",
+            "zij": "vertellen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "vertelde",
+            "jij": "vertelde",
+            "hij/zij": "vertelde",
+            "wij": "vertelden",
+            "jullie": "vertelden",
+            "zij": "vertelden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb verteld",
+            "jij": "hebt verteld",
+            "hij/zij": "heeft verteld",
+            "wij": "hebben verteld",
+            "jullie": "hebben verteld",
+            "zij": "hebben verteld"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal vertellen",
+            "jij": "zult vertellen",
+            "hij/zij": "zal vertellen",
+            "wij": "zullen vertellen",
+            "jullie": "zullen vertellen",
+            "zij": "zullen vertellen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "begrijpen",
+      "english": "to understand",
+      "stem": "begrijp",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "begrijp",
+            "jij": "begrijpt",
+            "hij/zij": "begrijpt",
+            "wij": "begrijpen",
+            "jullie": "begrijpen",
+            "zij": "begrijpen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "begreep",
+            "jij": "begreep",
+            "hij/zij": "begreep",
+            "wij": "begrepen",
+            "jullie": "begrepen",
+            "zij": "begrepen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb begrepen",
+            "jij": "hebt begrepen",
+            "hij/zij": "heeft begrepen",
+            "wij": "hebben begrepen",
+            "jullie": "hebben begrepen",
+            "zij": "hebben begrepen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal begrijpen",
+            "jij": "zult begrijpen",
+            "hij/zij": "zal begrijpen",
+            "wij": "zullen begrijpen",
+            "jullie": "zullen begrijpen",
+            "zij": "zullen begrijpen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "geloven",
+      "english": "to believe",
+      "stem": "geloof",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "geloof",
+            "jij": "gelooft",
+            "hij/zij": "gelooft",
+            "wij": "geloven",
+            "jullie": "geloven",
+            "zij": "geloven"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "geloofde",
+            "jij": "geloofde",
+            "hij/zij": "geloofde",
+            "wij": "geloofden",
+            "jullie": "geloofden",
+            "zij": "geloofden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geloofd",
+            "jij": "hebt geloofd",
+            "hij/zij": "heeft geloofd",
+            "wij": "hebben geloofd",
+            "jullie": "hebben geloofd",
+            "zij": "hebben geloofd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal geloven",
+            "jij": "zult geloven",
+            "hij/zij": "zal geloven",
+            "wij": "zullen geloven",
+            "jullie": "zullen geloven",
+            "zij": "zullen geloven"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "verliezen",
+      "english": "to lose",
+      "stem": "verlies",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "verlies",
+            "jij": "verliest",
+            "hij/zij": "verliest",
+            "wij": "verliezen",
+            "jullie": "verliezen",
+            "zij": "verliezen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "verloor",
+            "jij": "verloor",
+            "hij/zij": "verloor",
+            "wij": "verloren",
+            "jullie": "verloren",
+            "zij": "verloren"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb verloren",
+            "jij": "hebt verloren",
+            "hij/zij": "heeft verloren",
+            "wij": "hebben verloren",
+            "jullie": "hebben verloren",
+            "zij": "hebben verloren"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal verliezen",
+            "jij": "zult verliezen",
+            "hij/zij": "zal verliezen",
+            "wij": "zullen verliezen",
+            "jullie": "zullen verliezen",
+            "zij": "zullen verliezen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "winnen",
+      "english": "to win",
+      "stem": "win",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "win",
+            "jij": "wint",
+            "hij/zij": "wint",
+            "wij": "winnen",
+            "jullie": "winnen",
+            "zij": "winnen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "won",
+            "jij": "won",
+            "hij/zij": "won",
+            "wij": "wonnen",
+            "jullie": "wonnen",
+            "zij": "wonnen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gewonnen",
+            "jij": "hebt gewonnen",
+            "hij/zij": "heeft gewonnen",
+            "wij": "hebben gewonnen",
+            "jullie": "hebben gewonnen",
+            "zij": "hebben gewonnen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal winnen",
+            "jij": "zult winnen",
+            "hij/zij": "zal winnen",
+            "wij": "zullen winnen",
+            "jullie": "zullen winnen",
+            "zij": "zullen winnen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "kiezen",
+      "english": "to choose",
+      "stem": "kies",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "kies",
+            "jij": "kiest",
+            "hij/zij": "kiest",
+            "wij": "kiezen",
+            "jullie": "kiezen",
+            "zij": "kiezen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "koos",
+            "jij": "koos",
+            "hij/zij": "koos",
+            "wij": "kozen",
+            "jullie": "kozen",
+            "zij": "kozen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gekozen",
+            "jij": "hebt gekozen",
+            "hij/zij": "heeft gekozen",
+            "wij": "hebben gekozen",
+            "jullie": "hebben gekozen",
+            "zij": "hebben gekozen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal kiezen",
+            "jij": "zult kiezen",
+            "hij/zij": "zal kiezen",
+            "wij": "zullen kiezen",
+            "jullie": "zullen kiezen",
+            "zij": "zullen kiezen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "beslissen",
+      "english": "to decide",
+      "stem": "beslis",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "beslis",
+            "jij": "beslist",
+            "hij/zij": "beslist",
+            "wij": "beslissen",
+            "jullie": "beslissen",
+            "zij": "beslissen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "besliste",
+            "jij": "besliste",
+            "hij/zij": "besliste",
+            "wij": "beslisten",
+            "jullie": "beslisten",
+            "zij": "beslisten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb beslist",
+            "jij": "hebt beslist",
+            "hij/zij": "heeft beslist",
+            "wij": "hebben beslist",
+            "jullie": "hebben beslist",
+            "zij": "hebben beslist"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal beslissen",
+            "jij": "zult beslissen",
+            "hij/zij": "zal beslissen",
+            "wij": "zullen beslissen",
+            "jullie": "zullen beslissen",
+            "zij": "zullen beslissen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "proberen",
+      "english": "to try",
+      "stem": "probeer",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "probeer",
+            "jij": "probeert",
+            "hij/zij": "probeert",
+            "wij": "proberen",
+            "jullie": "proberen",
+            "zij": "proberen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "probeerde",
+            "jij": "probeerde",
+            "hij/zij": "probeerde",
+            "wij": "probeerden",
+            "jullie": "probeerden",
+            "zij": "probeerden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geprobeerd",
+            "jij": "hebt geprobeerd",
+            "hij/zij": "heeft geprobeerd",
+            "wij": "hebben geprobeerd",
+            "jullie": "hebben geprobeerd",
+            "zij": "hebben geprobeerd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal proberen",
+            "jij": "zult proberen",
+            "hij/zij": "zal proberen",
+            "wij": "zullen proberen",
+            "jullie": "zullen proberen",
+            "zij": "zullen proberen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "stoppen",
+      "english": "to stop",
+      "stem": "stop",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "stop",
+            "jij": "stopt",
+            "hij/zij": "stopt",
+            "wij": "stoppen",
+            "jullie": "stoppen",
+            "zij": "stoppen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "stopte",
+            "jij": "stopte",
+            "hij/zij": "stopte",
+            "wij": "stopten",
+            "jullie": "stopten",
+            "zij": "stopten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben gestopt",
+            "jij": "bent gestopt",
+            "hij/zij": "is gestopt",
+            "wij": "zijn gestopt",
+            "jullie": "zijn gestopt",
+            "zij": "zijn gestopt"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal stoppen",
+            "jij": "zult stoppen",
+            "hij/zij": "zal stoppen",
+            "wij": "zullen stoppen",
+            "jullie": "zullen stoppen",
+            "zij": "zullen stoppen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "veranderen",
+      "english": "to change",
+      "stem": "verander",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "verander",
+            "jij": "verandert",
+            "hij/zij": "verandert",
+            "wij": "veranderen",
+            "jullie": "veranderen",
+            "zij": "veranderen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "veranderde",
+            "jij": "veranderde",
+            "hij/zij": "veranderde",
+            "wij": "veranderden",
+            "jullie": "veranderden",
+            "zij": "veranderden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben veranderd",
+            "jij": "bent veranderd",
+            "hij/zij": "is veranderd",
+            "wij": "zijn veranderd",
+            "jullie": "zijn veranderd",
+            "zij": "zijn veranderd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal veranderen",
+            "jij": "zult veranderen",
+            "hij/zij": "zal veranderen",
+            "wij": "zullen veranderen",
+            "jullie": "zullen veranderen",
+            "zij": "zullen veranderen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "gebeuren",
+      "english": "to happen",
+      "stem": "gebeur",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "gebeur",
+            "jij": "gebeurt",
+            "hij/zij": "gebeurt",
+            "wij": "gebeuren",
+            "jullie": "gebeuren",
+            "zij": "gebeuren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "gebeurde",
+            "jij": "gebeurde",
+            "hij/zij": "gebeurde",
+            "wij": "gebeurden",
+            "jullie": "gebeurden",
+            "zij": "gebeurden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben gebeurd",
+            "jij": "bent gebeurd",
+            "hij/zij": "is gebeurd",
+            "wij": "zijn gebeurd",
+            "jullie": "zijn gebeurd",
+            "zij": "zijn gebeurd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal gebeuren",
+            "jij": "zult gebeuren",
+            "hij/zij": "zal gebeuren",
+            "wij": "zullen gebeuren",
+            "jullie": "zullen gebeuren",
+            "zij": "zullen gebeuren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "betekenen",
+      "english": "to mean",
+      "stem": "beteken",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "beteken",
+            "jij": "betekent",
+            "hij/zij": "betekent",
+            "wij": "betekenen",
+            "jullie": "betekenen",
+            "zij": "betekenen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "betekende",
+            "jij": "betekende",
+            "hij/zij": "betekende",
+            "wij": "betekenden",
+            "jullie": "betekenden",
+            "zij": "betekenden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb betekend",
+            "jij": "hebt betekend",
+            "hij/zij": "heeft betekend",
+            "wij": "hebben betekend",
+            "jullie": "hebben betekend",
+            "zij": "hebben betekend"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal betekenen",
+            "jij": "zult betekenen",
+            "hij/zij": "zal betekenen",
+            "wij": "zullen betekenen",
+            "jullie": "zullen betekenen",
+            "zij": "zullen betekenen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "voelen",
+      "english": "to feel",
+      "stem": "voel",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "voel",
+            "jij": "voelt",
+            "hij/zij": "voelt",
+            "wij": "voelen",
+            "jullie": "voelen",
+            "zij": "voelen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "voelde",
+            "jij": "voelde",
+            "hij/zij": "voelde",
+            "wij": "voelden",
+            "jullie": "voelden",
+            "zij": "voelden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gevoeld",
+            "jij": "hebt gevoeld",
+            "hij/zij": "heeft gevoeld",
+            "wij": "hebben gevoeld",
+            "jullie": "hebben gevoeld",
+            "zij": "hebben gevoeld"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal voelen",
+            "jij": "zult voelen",
+            "hij/zij": "zal voelen",
+            "wij": "zullen voelen",
+            "jullie": "zullen voelen",
+            "zij": "zullen voelen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "horen",
+      "english": "to hear",
+      "stem": "hoor",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "hoor",
+            "jij": "hoort",
+            "hij/zij": "hoort",
+            "wij": "horen",
+            "jullie": "horen",
+            "zij": "horen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "hoorde",
+            "jij": "hoorde",
+            "hij/zij": "hoorde",
+            "wij": "hoorden",
+            "jullie": "hoorden",
+            "zij": "hoorden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gehoord",
+            "jij": "hebt gehoord",
+            "hij/zij": "heeft gehoord",
+            "wij": "hebben gehoord",
+            "jullie": "hebben gehoord",
+            "zij": "hebben gehoord"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal horen",
+            "jij": "zult horen",
+            "hij/zij": "zal horen",
+            "wij": "zullen horen",
+            "jullie": "zullen horen",
+            "zij": "zullen horen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "ruiken",
+      "english": "to smell",
+      "stem": "ruik",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ruik",
+            "jij": "ruikt",
+            "hij/zij": "ruikt",
+            "wij": "ruiken",
+            "jullie": "ruiken",
+            "zij": "ruiken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "rook",
+            "jij": "rook",
+            "hij/zij": "rook",
+            "wij": "roken",
+            "jullie": "roken",
+            "zij": "roken"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geroken",
+            "jij": "hebt geroken",
+            "hij/zij": "heeft geroken",
+            "wij": "hebben geroken",
+            "jullie": "hebben geroken",
+            "zij": "hebben geroken"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal ruiken",
+            "jij": "zult ruiken",
+            "hij/zij": "zal ruiken",
+            "wij": "zullen ruiken",
+            "jullie": "zullen ruiken",
+            "zij": "zullen ruiken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "proeven",
+      "english": "to taste",
+      "stem": "proef",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "proef",
+            "jij": "proeft",
+            "hij/zij": "proeft",
+            "wij": "proeven",
+            "jullie": "proeven",
+            "zij": "proeven"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "proefde",
+            "jij": "proefde",
+            "hij/zij": "proefde",
+            "wij": "proefden",
+            "jullie": "proefden",
+            "zij": "proefden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geproefd",
+            "jij": "hebt geproefd",
+            "hij/zij": "heeft geproefd",
+            "wij": "hebben geproefd",
+            "jullie": "hebben geproefd",
+            "zij": "hebben geproefd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal proeven",
+            "jij": "zult proeven",
+            "hij/zij": "zal proeven",
+            "wij": "zullen proeven",
+            "jullie": "zullen proeven",
+            "zij": "zullen proeven"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "ontdekken",
+      "english": "to discover",
+      "stem": "ontdek",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ontdek",
+            "jij": "ontdekt",
+            "hij/zij": "ontdekt",
+            "wij": "ontdekken",
+            "jullie": "ontdekken",
+            "zij": "ontdekken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "ontdekte",
+            "jij": "ontdekte",
+            "hij/zij": "ontdekte",
+            "wij": "ontdekten",
+            "jullie": "ontdekten",
+            "zij": "ontdekten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb ontdekt",
+            "jij": "hebt ontdekt",
+            "hij/zij": "heeft ontdekt",
+            "wij": "hebben ontdekt",
+            "jullie": "hebben ontdekt",
+            "zij": "hebben ontdekt"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal ontdekken",
+            "jij": "zult ontdekken",
+            "hij/zij": "zal ontdekken",
+            "wij": "zullen ontdekken",
+            "jullie": "zullen ontdekken",
+            "zij": "zullen ontdekken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "bereiken",
+      "english": "to reach",
+      "stem": "bereik",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "bereik",
+            "jij": "bereikt",
+            "hij/zij": "bereikt",
+            "wij": "bereiken",
+            "jullie": "bereiken",
+            "zij": "bereiken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "bereikte",
+            "jij": "bereikte",
+            "hij/zij": "bereikte",
+            "wij": "bereikten",
+            "jullie": "bereikten",
+            "zij": "bereikten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb bereikt",
+            "jij": "hebt bereikt",
+            "hij/zij": "heeft bereikt",
+            "wij": "hebben bereikt",
+            "jullie": "hebben bereikt",
+            "zij": "hebben bereikt"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal bereiken",
+            "jij": "zult bereiken",
+            "hij/zij": "zal bereiken",
+            "wij": "zullen bereiken",
+            "jullie": "zullen bereiken",
+            "zij": "zullen bereiken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "bezoeken",
+      "english": "to visit",
+      "stem": "bezoek",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "bezoek",
+            "jij": "bezoekt",
+            "hij/zij": "bezoekt",
+            "wij": "bezoeken",
+            "jullie": "bezoeken",
+            "zij": "bezoeken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "bezocht",
+            "jij": "bezocht",
+            "hij/zij": "bezocht",
+            "wij": "bezochten",
+            "jullie": "bezochten",
+            "zij": "bezochten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb bezocht",
+            "jij": "hebt bezocht",
+            "hij/zij": "heeft bezocht",
+            "wij": "hebben bezocht",
+            "jullie": "hebben bezocht",
+            "zij": "hebben bezocht"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal bezoeken",
+            "jij": "zult bezoeken",
+            "hij/zij": "zal bezoeken",
+            "wij": "zullen bezoeken",
+            "jullie": "zullen bezoeken",
+            "zij": "zullen bezoeken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "verbeteren",
+      "english": "to improve",
+      "stem": "verbeter",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "verbeter",
+            "jij": "verbetert",
+            "hij/zij": "verbetert",
+            "wij": "verbeteren",
+            "jullie": "verbeteren",
+            "zij": "verbeteren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "verbeterde",
+            "jij": "verbeterde",
+            "hij/zij": "verbeterde",
+            "wij": "verbeterden",
+            "jullie": "verbeterden",
+            "zij": "verbeterden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb verbeterd",
+            "jij": "hebt verbeterd",
+            "hij/zij": "heeft verbeterd",
+            "wij": "hebben verbeterd",
+            "jullie": "hebben verbeterd",
+            "zij": "hebben verbeterd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal verbeteren",
+            "jij": "zult verbeteren",
+            "hij/zij": "zal verbeteren",
+            "wij": "zullen verbeteren",
+            "jullie": "zullen verbeteren",
+            "zij": "zullen verbeteren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "organiseren",
+      "english": "to organize",
+      "stem": "organiseer",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "organiseer",
+            "jij": "organiseert",
+            "hij/zij": "organiseert",
+            "wij": "organiseren",
+            "jullie": "organiseren",
+            "zij": "organiseren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "organiseerde",
+            "jij": "organiseerde",
+            "hij/zij": "organiseerde",
+            "wij": "organiseerden",
+            "jullie": "organiseerden",
+            "zij": "organiseerden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb georganiseerd",
+            "jij": "hebt georganiseerd",
+            "hij/zij": "heeft georganiseerd",
+            "wij": "hebben georganiseerd",
+            "jullie": "hebben georganiseerd",
+            "zij": "hebben georganiseerd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal organiseren",
+            "jij": "zult organiseren",
+            "hij/zij": "zal organiseren",
+            "wij": "zullen organiseren",
+            "jullie": "zullen organiseren",
+            "zij": "zullen organiseren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "plannen",
+      "english": "to plan",
+      "stem": "plan",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "plan",
+            "jij": "plant",
+            "hij/zij": "plant",
+            "wij": "plannen",
+            "jullie": "plannen",
+            "zij": "plannen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "plande",
+            "jij": "plande",
+            "hij/zij": "plande",
+            "wij": "planden",
+            "jullie": "planden",
+            "zij": "planden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gepland",
+            "jij": "hebt gepland",
+            "hij/zij": "heeft gepland",
+            "wij": "hebben gepland",
+            "jullie": "hebben gepland",
+            "zij": "hebben gepland"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal plannen",
+            "jij": "zult plannen",
+            "hij/zij": "zal plannen",
+            "wij": "zullen plannen",
+            "jullie": "zullen plannen",
+            "zij": "zullen plannen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "voorstellen",
+      "english": "to propose",
+      "stem": "stel voor",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "stel voor",
+            "jij": "stelt voor",
+            "hij/zij": "stelt voor",
+            "wij": "stellen voor",
+            "jullie": "stellen voor",
+            "zij": "stellen voor"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "stelde voor",
+            "jij": "stelde voor",
+            "hij/zij": "stelde voor",
+            "wij": "stelden voor",
+            "jullie": "stelden voor",
+            "zij": "stelden voor"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb voorgesteld",
+            "jij": "hebt voorgesteld",
+            "hij/zij": "heeft voorgesteld",
+            "wij": "hebben voorgesteld",
+            "jullie": "hebben voorgesteld",
+            "zij": "hebben voorgesteld"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal voorstellen",
+            "jij": "zult voorstellen",
+            "hij/zij": "zal voorstellen",
+            "wij": "zullen voorstellen",
+            "jullie": "zullen voorstellen",
+            "zij": "zullen voorstellen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "aanbevelen",
+      "english": "to recommend",
+      "stem": "beveel aan",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "beveel aan",
+            "jij": "beveelt aan",
+            "hij/zij": "beveelt aan",
+            "wij": "bevelen aan",
+            "jullie": "bevelen aan",
+            "zij": "bevelen aan"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "beval aan",
+            "jij": "beval aan",
+            "hij/zij": "beval aan",
+            "wij": "bevalen aan",
+            "jullie": "bevalen aan",
+            "zij": "bevalen aan"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb aanbevolen",
+            "jij": "hebt aanbevolen",
+            "hij/zij": "heeft aanbevolen",
+            "wij": "hebben aanbevolen",
+            "jullie": "hebben aanbevolen",
+            "zij": "hebben aanbevolen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal aanbevelen",
+            "jij": "zult aanbevelen",
+            "hij/zij": "zal aanbevelen",
+            "wij": "zullen aanbevelen",
+            "jullie": "zullen aanbevelen",
+            "zij": "zullen aanbevelen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "waarschuwen",
+      "english": "to warn",
+      "stem": "waarschuw",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "waarschuw",
+            "jij": "waarschuwt",
+            "hij/zij": "waarschuwt",
+            "wij": "waarschuwen",
+            "jullie": "waarschuwen",
+            "zij": "waarschuwen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "waarschuwde",
+            "jij": "waarschuwde",
+            "hij/zij": "waarschuwde",
+            "wij": "waarschuwden",
+            "jullie": "waarschuwden",
+            "zij": "waarschuwden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gewaarschuwd",
+            "jij": "hebt gewaarschuwd",
+            "hij/zij": "heeft gewaarschuwd",
+            "wij": "hebben gewaarschuwd",
+            "jullie": "hebben gewaarschuwd",
+            "zij": "hebben gewaarschuwd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal waarschuwen",
+            "jij": "zult waarschuwen",
+            "hij/zij": "zal waarschuwen",
+            "wij": "zullen waarschuwen",
+            "jullie": "zullen waarschuwen",
+            "zij": "zullen waarschuwen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "beschermen",
+      "english": "to protect",
+      "stem": "bescherm",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "bescherm",
+            "jij": "beschermt",
+            "hij/zij": "beschermt",
+            "wij": "beschermen",
+            "jullie": "beschermen",
+            "zij": "beschermen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "beschermde",
+            "jij": "beschermde",
+            "hij/zij": "beschermde",
+            "wij": "beschermden",
+            "jullie": "beschermden",
+            "zij": "beschermden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb beschermd",
+            "jij": "hebt beschermd",
+            "hij/zij": "heeft beschermd",
+            "wij": "hebben beschermd",
+            "jullie": "hebben beschermd",
+            "zij": "hebben beschermd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal beschermen",
+            "jij": "zult beschermen",
+            "hij/zij": "zal beschermen",
+            "wij": "zullen beschermen",
+            "jullie": "zullen beschermen",
+            "zij": "zullen beschermen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "onderzoeken",
+      "english": "to investigate",
+      "stem": "onderzoek",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "onderzoek",
+            "jij": "onderzoekt",
+            "hij/zij": "onderzoekt",
+            "wij": "onderzoeken",
+            "jullie": "onderzoeken",
+            "zij": "onderzoeken"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "onderzocht",
+            "jij": "onderzocht",
+            "hij/zij": "onderzocht",
+            "wij": "onderzochten",
+            "jullie": "onderzochten",
+            "zij": "onderzochten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb onderzocht",
+            "jij": "hebt onderzocht",
+            "hij/zij": "heeft onderzocht",
+            "wij": "hebben onderzocht",
+            "jullie": "hebben onderzocht",
+            "zij": "hebben onderzocht"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal onderzoeken",
+            "jij": "zult onderzoeken",
+            "hij/zij": "zal onderzoeken",
+            "wij": "zullen onderzoeken",
+            "jullie": "zullen onderzoeken",
+            "zij": "zullen onderzoeken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "bewijzen",
+      "english": "to prove",
+      "stem": "bewijs",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "bewijs",
+            "jij": "bewijst",
+            "hij/zij": "bewijst",
+            "wij": "bewijzen",
+            "jullie": "bewijzen",
+            "zij": "bewijzen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "bewees",
+            "jij": "bewees",
+            "hij/zij": "bewees",
+            "wij": "bewezen",
+            "jullie": "bewezen",
+            "zij": "bewezen"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb bewezen",
+            "jij": "hebt bewezen",
+            "hij/zij": "heeft bewezen",
+            "wij": "hebben bewezen",
+            "jullie": "hebben bewezen",
+            "zij": "hebben bewezen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal bewijzen",
+            "jij": "zult bewijzen",
+            "hij/zij": "zal bewijzen",
+            "wij": "zullen bewijzen",
+            "jullie": "zullen bewijzen",
+            "zij": "zullen bewijzen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "bevestigen",
+      "english": "to confirm",
+      "stem": "bevestig",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "bevestig",
+            "jij": "bevestigt",
+            "hij/zij": "bevestigt",
+            "wij": "bevestigen",
+            "jullie": "bevestigen",
+            "zij": "bevestigen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "bevestigde",
+            "jij": "bevestigde",
+            "hij/zij": "bevestigde",
+            "wij": "bevestigden",
+            "jullie": "bevestigden",
+            "zij": "bevestigden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb bevestigd",
+            "jij": "hebt bevestigd",
+            "hij/zij": "heeft bevestigd",
+            "wij": "hebben bevestigd",
+            "jullie": "hebben bevestigd",
+            "zij": "hebben bevestigd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal bevestigen",
+            "jij": "zult bevestigen",
+            "hij/zij": "zal bevestigen",
+            "wij": "zullen bevestigen",
+            "jullie": "zullen bevestigen",
+            "zij": "zullen bevestigen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "weigeren",
+      "english": "to refuse",
+      "stem": "weiger",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "weiger",
+            "jij": "weigert",
+            "hij/zij": "weigert",
+            "wij": "weigeren",
+            "jullie": "weigeren",
+            "zij": "weigeren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "weigerde",
+            "jij": "weigerde",
+            "hij/zij": "weigerde",
+            "wij": "weigerden",
+            "jullie": "weigerden",
+            "zij": "weigerden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geweigerd",
+            "jij": "hebt geweigerd",
+            "hij/zij": "heeft geweigerd",
+            "wij": "hebben geweigerd",
+            "jullie": "hebben geweigerd",
+            "zij": "hebben geweigerd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal weigeren",
+            "jij": "zult weigeren",
+            "hij/zij": "zal weigeren",
+            "wij": "zullen weigeren",
+            "jullie": "zullen weigeren",
+            "zij": "zullen weigeren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "toestaan",
+      "english": "to allow",
+      "stem": "sta toe",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "sta toe",
+            "jij": "staat toe",
+            "hij/zij": "staat toe",
+            "wij": "staan toe",
+            "jullie": "staan toe",
+            "zij": "staan toe"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "stond toe",
+            "jij": "stond toe",
+            "hij/zij": "stond toe",
+            "wij": "stonden toe",
+            "jullie": "stonden toe",
+            "zij": "stonden toe"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb toegestaan",
+            "jij": "hebt toegestaan",
+            "hij/zij": "heeft toegestaan",
+            "wij": "hebben toegestaan",
+            "jullie": "hebben toegestaan",
+            "zij": "hebben toegestaan"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal toestaan",
+            "jij": "zult toestaan",
+            "hij/zij": "zal toestaan",
+            "wij": "zullen toestaan",
+            "jullie": "zullen toestaan",
+            "zij": "zullen toestaan"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "verdedigen",
+      "english": "to defend",
+      "stem": "verdedig",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "verdedig",
+            "jij": "verdedigt",
+            "hij/zij": "verdedigt",
+            "wij": "verdedigen",
+            "jullie": "verdedigen",
+            "zij": "verdedigen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "verdedigde",
+            "jij": "verdedigde",
+            "hij/zij": "verdedigde",
+            "wij": "verdedigden",
+            "jullie": "verdedigden",
+            "zij": "verdedigden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb verdedigd",
+            "jij": "hebt verdedigd",
+            "hij/zij": "heeft verdedigd",
+            "wij": "hebben verdedigd",
+            "jullie": "hebben verdedigd",
+            "zij": "hebben verdedigd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal verdedigen",
+            "jij": "zult verdedigen",
+            "hij/zij": "zal verdedigen",
+            "wij": "zullen verdedigen",
+            "jullie": "zullen verdedigen",
+            "zij": "zullen verdedigen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "verminderen",
+      "english": "to reduce",
+      "stem": "verminder",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "verminder",
+            "jij": "vermindert",
+            "hij/zij": "vermindert",
+            "wij": "verminderen",
+            "jullie": "verminderen",
+            "zij": "verminderen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "verminderde",
+            "jij": "verminderde",
+            "hij/zij": "verminderde",
+            "wij": "verminderden",
+            "jullie": "verminderden",
+            "zij": "verminderden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb verminderd",
+            "jij": "hebt verminderd",
+            "hij/zij": "heeft verminderd",
+            "wij": "hebben verminderd",
+            "jullie": "hebben verminderd",
+            "zij": "hebben verminderd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal verminderen",
+            "jij": "zult verminderen",
+            "hij/zij": "zal verminderen",
+            "wij": "zullen verminderen",
+            "jullie": "zullen verminderen",
+            "zij": "zullen verminderen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "verhogen",
+      "english": "to increase",
+      "stem": "verhoog",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "verhoog",
+            "jij": "verhoogt",
+            "hij/zij": "verhoogt",
+            "wij": "verhogen",
+            "jullie": "verhogen",
+            "zij": "verhogen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "verhoogde",
+            "jij": "verhoogde",
+            "hij/zij": "verhoogde",
+            "wij": "verhoogden",
+            "jullie": "verhoogden",
+            "zij": "verhoogden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb verhoogd",
+            "jij": "hebt verhoogd",
+            "hij/zij": "heeft verhoogd",
+            "wij": "hebben verhoogd",
+            "jullie": "hebben verhoogd",
+            "zij": "hebben verhoogd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal verhogen",
+            "jij": "zult verhogen",
+            "hij/zij": "zal verhogen",
+            "wij": "zullen verhogen",
+            "jullie": "zullen verhogen",
+            "zij": "zullen verhogen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "aanvallen",
+      "english": "to attack",
+      "stem": "val aan",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "val aan",
+            "jij": "valt aan",
+            "hij/zij": "valt aan",
+            "wij": "vallen aan",
+            "jullie": "vallen aan",
+            "zij": "vallen aan"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "viel aan",
+            "jij": "viel aan",
+            "hij/zij": "viel aan",
+            "wij": "vielen aan",
+            "jullie": "vielen aan",
+            "zij": "vielen aan"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb aangevallen",
+            "jij": "hebt aangevallen",
+            "hij/zij": "heeft aangevallen",
+            "wij": "hebben aangevallen",
+            "jullie": "hebben aangevallen",
+            "zij": "hebben aangevallen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal aanvallen",
+            "jij": "zult aanvallen",
+            "hij/zij": "zal aanvallen",
+            "wij": "zullen aanvallen",
+            "jullie": "zullen aanvallen",
+            "zij": "zullen aanvallen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "ontkennen",
+      "english": "to deny",
+      "stem": "ontken",
+      "level": "B1",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ontken",
+            "jij": "ontkent",
+            "hij/zij": "ontkent",
+            "wij": "ontkennen",
+            "jullie": "ontkennen",
+            "zij": "ontkennen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "ontkende",
+            "jij": "ontkende",
+            "hij/zij": "ontkende",
+            "wij": "ontkenden",
+            "jullie": "ontkenden",
+            "zij": "ontkenden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb ontkend",
+            "jij": "hebt ontkend",
+            "hij/zij": "heeft ontkend",
+            "wij": "hebben ontkend",
+            "jullie": "hebben ontkend",
+            "zij": "hebben ontkend"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal ontkennen",
+            "jij": "zult ontkennen",
+            "hij/zij": "zal ontkennen",
+            "wij": "zullen ontkennen",
+            "jullie": "zullen ontkennen",
+            "zij": "zullen ontkennen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "analyseren",
+      "english": "to analyze",
+      "stem": "analyseer",
+      "level": "B2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "analyseer",
+            "jij": "analyseert",
+            "hij/zij": "analyseert",
+            "wij": "analyseren",
+            "jullie": "analyseren",
+            "zij": "analyseren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "analyseerde",
+            "jij": "analyseerde",
+            "hij/zij": "analyseerde",
+            "wij": "analyseerden",
+            "jullie": "analyseerden",
+            "zij": "analyseerden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geanalyseerd",
+            "jij": "hebt geanalyseerd",
+            "hij/zij": "heeft geanalyseerd",
+            "wij": "hebben geanalyseerd",
+            "jullie": "hebben geanalyseerd",
+            "zij": "hebben geanalyseerd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal analyseren",
+            "jij": "zult analyseren",
+            "hij/zij": "zal analyseren",
+            "wij": "zullen analyseren",
+            "jullie": "zullen analyseren",
+            "zij": "zullen analyseren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "beoordelen",
+      "english": "to evaluate",
+      "stem": "beoordeel",
+      "level": "B2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "beoordeel",
+            "jij": "beoordeelt",
+            "hij/zij": "beoordeelt",
+            "wij": "beoordelen",
+            "jullie": "beoordelen",
+            "zij": "beoordelen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "beoordeelde",
+            "jij": "beoordeelde",
+            "hij/zij": "beoordeelde",
+            "wij": "beoordeelden",
+            "jullie": "beoordeelden",
+            "zij": "beoordeelden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb beoordeeld",
+            "jij": "hebt beoordeeld",
+            "hij/zij": "heeft beoordeeld",
+            "wij": "hebben beoordeeld",
+            "jullie": "hebben beoordeeld",
+            "zij": "hebben beoordeeld"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal beoordelen",
+            "jij": "zult beoordelen",
+            "hij/zij": "zal beoordelen",
+            "wij": "zullen beoordelen",
+            "jullie": "zullen beoordelen",
+            "zij": "zullen beoordelen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "ontwikkelen",
+      "english": "to develop",
+      "stem": "ontwikkel",
+      "level": "B2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ontwikkel",
+            "jij": "ontwikkelt",
+            "hij/zij": "ontwikkelt",
+            "wij": "ontwikkelen",
+            "jullie": "ontwikkelen",
+            "zij": "ontwikkelen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "ontwikkelde",
+            "jij": "ontwikkelde",
+            "hij/zij": "ontwikkelde",
+            "wij": "ontwikkelden",
+            "jullie": "ontwikkelden",
+            "zij": "ontwikkelden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb ontwikkeld",
+            "jij": "hebt ontwikkeld",
+            "hij/zij": "heeft ontwikkeld",
+            "wij": "hebben ontwikkeld",
+            "jullie": "hebben ontwikkeld",
+            "zij": "hebben ontwikkeld"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal ontwikkelen",
+            "jij": "zult ontwikkelen",
+            "hij/zij": "zal ontwikkelen",
+            "wij": "zullen ontwikkelen",
+            "jullie": "zullen ontwikkelen",
+            "zij": "zullen ontwikkelen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "fascineren",
+      "english": "to fascinate",
+      "stem": "fascineer",
+      "level": "B2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "fascineer",
+            "jij": "fascineert",
+            "hij/zij": "fascineert",
+            "wij": "fascineren",
+            "jullie": "fascineren",
+            "zij": "fascineren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "fascineerde",
+            "jij": "fascineerde",
+            "hij/zij": "fascineerde",
+            "wij": "fascineerden",
+            "jullie": "fascineerden",
+            "zij": "fascineerden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gefascineerd",
+            "jij": "hebt gefascineerd",
+            "hij/zij": "heeft gefascineerd",
+            "wij": "hebben gefascineerd",
+            "jullie": "hebben gefascineerd",
+            "zij": "hebben gefascineerd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal fascineren",
+            "jij": "zult fascineren",
+            "hij/zij": "zal fascineren",
+            "wij": "zullen fascineren",
+            "jullie": "zullen fascineren",
+            "zij": "zullen fascineren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "realiseren",
+      "english": "to realize",
+      "stem": "realiseer",
+      "level": "B2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "realiseer",
+            "jij": "realiseert",
+            "hij/zij": "realiseert",
+            "wij": "realiseren",
+            "jullie": "realiseren",
+            "zij": "realiseren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "realiseerde",
+            "jij": "realiseerde",
+            "hij/zij": "realiseerde",
+            "wij": "realiseerden",
+            "jullie": "realiseerden",
+            "zij": "realiseerden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gerealiseerd",
+            "jij": "hebt gerealiseerd",
+            "hij/zij": "heeft gerealiseerd",
+            "wij": "hebben gerealiseerd",
+            "jullie": "hebben gerealiseerd",
+            "zij": "hebben gerealiseerd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal realiseren",
+            "jij": "zult realiseren",
+            "hij/zij": "zal realiseren",
+            "wij": "zullen realiseren",
+            "jullie": "zullen realiseren",
+            "zij": "zullen realiseren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "beheersen",
+      "english": "to master",
+      "stem": "beheers",
+      "level": "B2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "beheers",
+            "jij": "beheerst",
+            "hij/zij": "beheerst",
+            "wij": "beheersen",
+            "jullie": "beheersen",
+            "zij": "beheersen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "beheerste",
+            "jij": "beheerste",
+            "hij/zij": "beheerste",
+            "wij": "beheersten",
+            "jullie": "beheersten",
+            "zij": "beheersten"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb beheerst",
+            "jij": "hebt beheerst",
+            "hij/zij": "heeft beheerst",
+            "wij": "hebben beheerst",
+            "jullie": "hebben beheerst",
+            "zij": "hebben beheerst"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal beheersen",
+            "jij": "zult beheersen",
+            "hij/zij": "zal beheersen",
+            "wij": "zullen beheersen",
+            "jullie": "zullen beheersen",
+            "zij": "zullen beheersen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "inspireren",
+      "english": "to inspire",
+      "stem": "inspireer",
+      "level": "B2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "inspireer",
+            "jij": "inspireert",
+            "hij/zij": "inspireert",
+            "wij": "inspireren",
+            "jullie": "inspireren",
+            "zij": "inspireren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "inspireerde",
+            "jij": "inspireerde",
+            "hij/zij": "inspireerde",
+            "wij": "inspireerden",
+            "jullie": "inspireerden",
+            "zij": "inspireerden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geïnspireerd",
+            "jij": "hebt geïnspireerd",
+            "hij/zij": "heeft geïnspireerd",
+            "wij": "hebben geïnspireerd",
+            "jullie": "hebben geïnspireerd",
+            "zij": "hebben geïnspireerd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal inspireren",
+            "jij": "zult inspireren",
+            "hij/zij": "zal inspireren",
+            "wij": "zullen inspireren",
+            "jullie": "zullen inspireren",
+            "zij": "zullen inspireren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "frustreren",
+      "english": "to frustrate",
+      "stem": "frustreer",
+      "level": "B2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "frustreer",
+            "jij": "frustreert",
+            "hij/zij": "frustreert",
+            "wij": "frustreren",
+            "jullie": "frustreren",
+            "zij": "frustreren"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "frustreerde",
+            "jij": "frustreerde",
+            "hij/zij": "frustreerde",
+            "wij": "frustreerden",
+            "jullie": "frustreerden",
+            "zij": "frustreerden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb gefrustreerd",
+            "jij": "hebt gefrustreerd",
+            "hij/zij": "heeft gefrustreerd",
+            "wij": "hebben gefrustreerd",
+            "jullie": "hebben gefrustreerd",
+            "zij": "hebben gefrustreerd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal frustreren",
+            "jij": "zult frustreren",
+            "hij/zij": "zal frustreren",
+            "wij": "zullen frustreren",
+            "jullie": "zullen frustreren",
+            "zij": "zullen frustreren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "afgaan",
+      "english": "to go off",
+      "stem": "ga af",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ga af",
+            "jij": "gaat af",
+            "hij/zij": "gaat af",
+            "wij": "gaan af",
+            "jullie": "gaan af",
+            "zij": "gaan af"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "ging af",
+            "jij": "ging af",
+            "hij/zij": "ging af",
+            "wij": "gingen af",
+            "jullie": "gingen af",
+            "zij": "gingen af"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben afgegaan",
+            "jij": "bent afgegaan",
+            "hij/zij": "is afgegaan",
+            "wij": "zijn afgegaan",
+            "jullie": "zijn afgegaan",
+            "zij": "zijn afgegaan"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal afgaan",
+            "jij": "zult afgaan",
+            "hij/zij": "zal afgaan",
+            "wij": "zullen afgaan",
+            "jullie": "zullen afgaan",
+            "zij": "zullen afgaan"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "aankomen",
+      "english": "to arrive",
+      "stem": "kom aan",
+      "level": "A2",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "kom aan",
+            "jij": "komt aan",
+            "hij/zij": "komt aan",
+            "wij": "komen aan",
+            "jullie": "komen aan",
+            "zij": "komen aan"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "kwam aan",
+            "jij": "kwam aan",
+            "hij/zij": "kwam aan",
+            "wij": "kwamen aan",
+            "jullie": "kwamen aan",
+            "zij": "kwamen aan"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben aangekomen",
+            "jij": "bent aangekomen",
+            "hij/zij": "is aangekomen",
+            "wij": "zijn aangekomen",
+            "jullie": "zijn aangekomen",
+            "zij": "zijn aangekomen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal aankomen",
+            "jij": "zult aankomen",
+            "hij/zij": "zal aankomen",
+            "wij": "zullen aankomen",
+            "jullie": "zullen aankomen",
+            "zij": "zullen aankomen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "bijdragen",
+      "english": "to contribute",
+      "stem": "draag bij",
+      "level": "B2",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "draag bij",
+            "jij": "draagt bij",
+            "hij/zij": "draagt bij",
+            "wij": "dragen bij",
+            "jullie": "dragen bij",
+            "zij": "dragen bij"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "droeg bij",
+            "jij": "droeg bij",
+            "hij/zij": "droeg bij",
+            "wij": "droegen bij",
+            "jullie": "droegen bij",
+            "zij": "droegen bij"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb bijgedragen",
+            "jij": "hebt bijgedragen",
+            "hij/zij": "heeft bijgedragen",
+            "wij": "hebben bijgedragen",
+            "jullie": "hebben bijgedragen",
+            "zij": "hebben bijgedragen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal bijdragen",
+            "jij": "zult bijdragen",
+            "hij/zij": "zal bijdragen",
+            "wij": "zullen bijdragen",
+            "jullie": "zullen bijdragen",
+            "zij": "zullen bijdragen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "instappen",
+      "english": "to get in/board",
+      "stem": "stap in",
+      "level": "A2",
+      "is_separable": true,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "stap in",
+            "jij": "stapt in",
+            "hij/zij": "stapt in",
+            "wij": "stappen in",
+            "jullie": "stappen in",
+            "zij": "stappen in"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "stapte in",
+            "jij": "stapte in",
+            "hij/zij": "stapte in",
+            "wij": "stapten in",
+            "jullie": "stapten in",
+            "zij": "stapten in"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben ingestapt",
+            "jij": "bent ingestapt",
+            "hij/zij": "is ingestapt",
+            "wij": "zijn ingestapt",
+            "jullie": "zijn ingestapt",
+            "zij": "zijn ingestapt"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal instappen",
+            "jij": "zult instappen",
+            "hij/zij": "zal instappen",
+            "wij": "zullen instappen",
+            "jullie": "zullen instappen",
+            "zij": "zullen instappen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "meenemen",
+      "english": "to take along",
+      "stem": "neem mee",
+      "level": "A2",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "neem mee",
+            "jij": "neemt mee",
+            "hij/zij": "neemt mee",
+            "wij": "nemen mee",
+            "jullie": "nemen mee",
+            "zij": "nemen mee"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "nam mee",
+            "jij": "nam mee",
+            "hij/zij": "nam mee",
+            "wij": "namen mee",
+            "jullie": "namen mee",
+            "zij": "namen mee"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb meegenomen",
+            "jij": "hebt meegenomen",
+            "hij/zij": "heeft meegenomen",
+            "wij": "hebben meegenomen",
+            "jullie": "hebben meegenomen",
+            "zij": "hebben meegenomen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal meenemen",
+            "jij": "zult meenemen",
+            "hij/zij": "zal meenemen",
+            "wij": "zullen meenemen",
+            "jullie": "zullen meenemen",
+            "zij": "zullen meenemen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "nagaan",
+      "english": "to check/verify",
+      "stem": "ga na",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ga na",
+            "jij": "gaat na",
+            "hij/zij": "gaat na",
+            "wij": "gaan na",
+            "jullie": "gaan na",
+            "zij": "gaan na"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "ging na",
+            "jij": "ging na",
+            "hij/zij": "ging na",
+            "wij": "gingen na",
+            "jullie": "gingen na",
+            "zij": "gingen na"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben nagegaan",
+            "jij": "bent nagegaan",
+            "hij/zij": "is nagegaan",
+            "wij": "zijn nagegaan",
+            "jullie": "zijn nagegaan",
+            "zij": "zijn nagegaan"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal nagaan",
+            "jij": "zult nagaan",
+            "hij/zij": "zal nagaan",
+            "wij": "zullen nagaan",
+            "jullie": "zullen nagaan",
+            "zij": "zullen nagaan"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "omgaan",
+      "english": "to deal with",
+      "stem": "ga om",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ga om",
+            "jij": "gaat om",
+            "hij/zij": "gaat om",
+            "wij": "gaan om",
+            "jullie": "gaan om",
+            "zij": "gaan om"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "ging om",
+            "jij": "ging om",
+            "hij/zij": "ging om",
+            "wij": "gingen om",
+            "jullie": "gingen om",
+            "zij": "gingen om"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben omgegaan",
+            "jij": "bent omgegaan",
+            "hij/zij": "is omgegaan",
+            "wij": "zijn omgegaan",
+            "jullie": "zijn omgegaan",
+            "zij": "zijn omgegaan"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal omgaan",
+            "jij": "zult omgaan",
+            "hij/zij": "zal omgaan",
+            "wij": "zullen omgaan",
+            "jullie": "zullen omgaan",
+            "zij": "zullen omgaan"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "opkomen",
+      "english": "to come up",
+      "stem": "kom op",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "kom op",
+            "jij": "komt op",
+            "hij/zij": "komt op",
+            "wij": "komen op",
+            "jullie": "komen op",
+            "zij": "komen op"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "kwam op",
+            "jij": "kwam op",
+            "hij/zij": "kwam op",
+            "wij": "kwamen op",
+            "jullie": "kwamen op",
+            "zij": "kwamen op"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben opgekomen",
+            "jij": "bent opgekomen",
+            "hij/zij": "is opgekomen",
+            "wij": "zijn opgekomen",
+            "jullie": "zijn opgekomen",
+            "zij": "zijn opgekomen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal opkomen",
+            "jij": "zult opkomen",
+            "hij/zij": "zal opkomen",
+            "wij": "zullen opkomen",
+            "jullie": "zullen opkomen",
+            "zij": "zullen opkomen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "opstaan",
+      "english": "to get up",
+      "stem": "sta op",
+      "level": "A2",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "sta op",
+            "jij": "staat op",
+            "hij/zij": "staat op",
+            "wij": "staan op",
+            "jullie": "staan op",
+            "zij": "staan op"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "stond op",
+            "jij": "stond op",
+            "hij/zij": "stond op",
+            "wij": "stonden op",
+            "jullie": "stonden op",
+            "zij": "stonden op"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben opgestaan",
+            "jij": "bent opgestaan",
+            "hij/zij": "is opgestaan",
+            "wij": "zijn opgestaan",
+            "jullie": "zijn opgestaan",
+            "zij": "zijn opgestaan"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal opstaan",
+            "jij": "zult opstaan",
+            "hij/zij": "zal opstaan",
+            "wij": "zullen opstaan",
+            "jullie": "zullen opstaan",
+            "zij": "zullen opstaan"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "uitkomen",
+      "english": "to come out",
+      "stem": "kom uit",
+      "level": "A2",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "kom uit",
+            "jij": "komt uit",
+            "hij/zij": "komt uit",
+            "wij": "komen uit",
+            "jullie": "komen uit",
+            "zij": "komen uit"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "kwam uit",
+            "jij": "kwam uit",
+            "hij/zij": "kwam uit",
+            "wij": "kwamen uit",
+            "jullie": "kwamen uit",
+            "zij": "kwamen uit"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben uitgekomen",
+            "jij": "bent uitgekomen",
+            "hij/zij": "is uitgekomen",
+            "wij": "zijn uitgekomen",
+            "jullie": "zijn uitgekomen",
+            "zij": "zijn uitgekomen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal uitkomen",
+            "jij": "zult uitkomen",
+            "hij/zij": "zal uitkomen",
+            "wij": "zullen uitkomen",
+            "jullie": "zullen uitkomen",
+            "zij": "zullen uitkomen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "uitgaan",
+      "english": "to go out",
+      "stem": "ga uit",
+      "level": "A2",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ga uit",
+            "jij": "gaat uit",
+            "hij/zij": "gaat uit",
+            "wij": "gaan uit",
+            "jullie": "gaan uit",
+            "zij": "gaan uit"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "ging uit",
+            "jij": "ging uit",
+            "hij/zij": "ging uit",
+            "wij": "gingen uit",
+            "jullie": "gingen uit",
+            "zij": "gingen uit"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben uitgegaan",
+            "jij": "bent uitgegaan",
+            "hij/zij": "is uitgegaan",
+            "wij": "zijn uitgegaan",
+            "jullie": "zijn uitgegaan",
+            "zij": "zijn uitgegaan"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal uitgaan",
+            "jij": "zult uitgaan",
+            "hij/zij": "zal uitgaan",
+            "wij": "zullen uitgaan",
+            "jullie": "zullen uitgaan",
+            "zij": "zullen uitgaan"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "weggaan",
+      "english": "to go away",
+      "stem": "ga weg",
+      "level": "A2",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ga weg",
+            "jij": "gaat weg",
+            "hij/zij": "gaat weg",
+            "wij": "gaan weg",
+            "jullie": "gaan weg",
+            "zij": "gaan weg"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "ging weg",
+            "jij": "ging weg",
+            "hij/zij": "ging weg",
+            "wij": "gingen weg",
+            "jullie": "gingen weg",
+            "zij": "gingen weg"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben weggegaan",
+            "jij": "bent weggegaan",
+            "hij/zij": "is weggegaan",
+            "wij": "zijn weggegaan",
+            "jullie": "zijn weggegaan",
+            "zij": "zijn weggegaan"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal weggaan",
+            "jij": "zult weggaan",
+            "hij/zij": "zal weggaan",
+            "wij": "zullen weggaan",
+            "jullie": "zullen weggaan",
+            "zij": "zullen weggaan"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "afmaken",
+      "english": "to finish",
+      "stem": "maak af",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "maak af",
+            "jij": "maakt af",
+            "hij/zij": "maakt af",
+            "wij": "maken af",
+            "jullie": "maken af",
+            "zij": "maken af"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "maakte af",
+            "jij": "maakte af",
+            "hij/zij": "maakte af",
+            "wij": "maakten af",
+            "jullie": "maakten af",
+            "zij": "maakten af"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb afgemaakt",
+            "jij": "hebt afgemaakt",
+            "hij/zij": "heeft afgemaakt",
+            "wij": "hebben afgemaakt",
+            "jullie": "hebben afgemaakt",
+            "zij": "hebben afgemaakt"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal afmaken",
+            "jij": "zult afmaken",
+            "hij/zij": "zal afmaken",
+            "wij": "zullen afmaken",
+            "jullie": "zullen afmaken",
+            "zij": "zullen afmaken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "aanbieden",
+      "english": "to offer",
+      "stem": "bied aan",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "bied aan",
+            "jij": "biedt aan",
+            "hij/zij": "biedt aan",
+            "wij": "bieden aan",
+            "jullie": "bieden aan",
+            "zij": "bieden aan"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "bood aan",
+            "jij": "bood aan",
+            "hij/zij": "bood aan",
+            "wij": "boden aan",
+            "jullie": "boden aan",
+            "zij": "boden aan"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb aangeboden",
+            "jij": "hebt aangeboden",
+            "hij/zij": "heeft aangeboden",
+            "wij": "hebben aangeboden",
+            "jullie": "hebben aangeboden",
+            "zij": "hebben aangeboden"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal aanbieden",
+            "jij": "zult aanbieden",
+            "hij/zij": "zal aanbieden",
+            "wij": "zullen aanbieden",
+            "jullie": "zullen aanbieden",
+            "zij": "zullen aanbieden"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "bijwonen",
+      "english": "to attend",
+      "stem": "woon bij",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "woon bij",
+            "jij": "woont bij",
+            "hij/zij": "woont bij",
+            "wij": "wonen bij",
+            "jullie": "wonen bij",
+            "zij": "wonen bij"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "woonde bij",
+            "jij": "woonde bij",
+            "hij/zij": "woonde bij",
+            "wij": "woonden bij",
+            "jullie": "woonden bij",
+            "zij": "woonden bij"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb bijgewoond",
+            "jij": "hebt bijgewoond",
+            "hij/zij": "heeft bijgewoond",
+            "wij": "hebben bijgewoond",
+            "jullie": "hebben bijgewoond",
+            "zij": "hebben bijgewoond"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal bijwonen",
+            "jij": "zult bijwonen",
+            "hij/zij": "zal bijwonen",
+            "wij": "zullen bijwonen",
+            "jullie": "zullen bijwonen",
+            "zij": "zullen bijwonen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "meemaken",
+      "english": "to experience",
+      "stem": "maak mee",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "maak mee",
+            "jij": "maakt mee",
+            "hij/zij": "maakt mee",
+            "wij": "maken mee",
+            "jullie": "maken mee",
+            "zij": "maken mee"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "maakte mee",
+            "jij": "maakte mee",
+            "hij/zij": "maakte mee",
+            "wij": "maakten mee",
+            "jullie": "maakten mee",
+            "zij": "maakten mee"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb meegemaakt",
+            "jij": "hebt meegemaakt",
+            "hij/zij": "heeft meegemaakt",
+            "wij": "hebben meegemaakt",
+            "jullie": "hebben meegemaakt",
+            "zij": "hebben meegemaakt"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal meemaken",
+            "jij": "zult meemaken",
+            "hij/zij": "zal meemaken",
+            "wij": "zullen meemaken",
+            "jullie": "zullen meemaken",
+            "zij": "zullen meemaken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "nakijken",
+      "english": "to check/correct",
+      "stem": "kijk na",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "kijk na",
+            "jij": "kijkt na",
+            "hij/zij": "kijkt na",
+            "wij": "kijken na",
+            "jullie": "kijken na",
+            "zij": "kijken na"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "keek na",
+            "jij": "keek na",
+            "hij/zij": "keek na",
+            "wij": "keken na",
+            "jullie": "keken na",
+            "zij": "keken na"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb nagekeken",
+            "jij": "hebt nagekeken",
+            "hij/zij": "heeft nagekeken",
+            "wij": "hebben nagekeken",
+            "jullie": "hebben nagekeken",
+            "zij": "hebben nagekeken"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal nakijken",
+            "jij": "zult nakijken",
+            "hij/zij": "zal nakijken",
+            "wij": "zullen nakijken",
+            "jullie": "zullen nakijken",
+            "zij": "zullen nakijken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "omkeren",
+      "english": "to turn around",
+      "stem": "keer om",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "keer om",
+            "jij": "keert om",
+            "hij/zij": "keert om",
+            "wij": "keren om",
+            "jullie": "keren om",
+            "zij": "keren om"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "keerde om",
+            "jij": "keerde om",
+            "hij/zij": "keerde om",
+            "wij": "keerden om",
+            "jullie": "keerden om",
+            "zij": "keerden om"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben omgekeerd",
+            "jij": "bent omgekeerd",
+            "hij/zij": "is omgekeerd",
+            "wij": "zijn omgekeerd",
+            "jullie": "zijn omgekeerd",
+            "zij": "zijn omgekeerd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal omkeren",
+            "jij": "zult omkeren",
+            "hij/zij": "zal omkeren",
+            "wij": "zullen omkeren",
+            "jullie": "zullen omkeren",
+            "zij": "zullen omkeren"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "openen",
+      "english": "to open",
+      "stem": "open",
+      "level": "A2",
+      "is_separable": false,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "open",
+            "jij": "opent",
+            "hij/zij": "opent",
+            "wij": "openen",
+            "jullie": "openen",
+            "zij": "openen"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "opende",
+            "jij": "opende",
+            "hij/zij": "opende",
+            "wij": "openden",
+            "jullie": "openden",
+            "zij": "openden"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb geopend",
+            "jij": "hebt geopend",
+            "hij/zij": "heeft geopend",
+            "wij": "hebben geopend",
+            "jullie": "hebben geopend",
+            "zij": "hebben geopend"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal openen",
+            "jij": "zult openen",
+            "hij/zij": "zal openen",
+            "wij": "zullen openen",
+            "jullie": "zullen openen",
+            "zij": "zullen openen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "oversteken",
+      "english": "to cross",
+      "stem": "steek over",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "steek over",
+            "jij": "steekt over",
+            "hij/zij": "steekt over",
+            "wij": "steken over",
+            "jullie": "steken over",
+            "zij": "steken over"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "stak over",
+            "jij": "stak over",
+            "hij/zij": "stak over",
+            "wij": "staken over",
+            "jullie": "staken over",
+            "zij": "staken over"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben overgestoken",
+            "jij": "bent overgestoken",
+            "hij/zij": "is overgestoken",
+            "wij": "zijn overgestoken",
+            "jullie": "zijn overgestoken",
+            "zij": "zijn overgestoken"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal oversteken",
+            "jij": "zult oversteken",
+            "hij/zij": "zal oversteken",
+            "wij": "zullen oversteken",
+            "jullie": "zullen oversteken",
+            "zij": "zullen oversteken"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "terugkomen",
+      "english": "to come back",
+      "stem": "kom terug",
+      "level": "A2",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "kom terug",
+            "jij": "komt terug",
+            "hij/zij": "komt terug",
+            "wij": "komen terug",
+            "jullie": "komen terug",
+            "zij": "komen terug"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "kwam terug",
+            "jij": "kwam terug",
+            "hij/zij": "kwam terug",
+            "wij": "kwamen terug",
+            "jullie": "kwamen terug",
+            "zij": "kwamen terug"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben teruggekomen",
+            "jij": "bent teruggekomen",
+            "hij/zij": "is teruggekomen",
+            "wij": "zijn teruggekomen",
+            "jullie": "zijn teruggekomen",
+            "zij": "zijn teruggekomen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal terugkomen",
+            "jij": "zult terugkomen",
+            "hij/zij": "zal terugkomen",
+            "wij": "zullen terugkomen",
+            "jullie": "zullen terugkomen",
+            "zij": "zullen terugkomen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "toevoegen",
+      "english": "to add",
+      "stem": "voeg toe",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "voeg toe",
+            "jij": "voegt toe",
+            "hij/zij": "voegt toe",
+            "wij": "voegen toe",
+            "jullie": "voegen toe",
+            "zij": "voegen toe"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "voegde toe",
+            "jij": "voegde toe",
+            "hij/zij": "voegde toe",
+            "wij": "voegden toe",
+            "jullie": "voegden toe",
+            "zij": "voegden toe"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb toegevoegd",
+            "jij": "hebt toegevoegd",
+            "hij/zij": "heeft toegevoegd",
+            "wij": "hebben toegevoegd",
+            "jullie": "hebben toegevoegd",
+            "zij": "hebben toegevoegd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal toevoegen",
+            "jij": "zult toevoegen",
+            "hij/zij": "zal toevoegen",
+            "wij": "zullen toevoegen",
+            "jullie": "zullen toevoegen",
+            "zij": "zullen toevoegen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "uitleggen",
+      "english": "to explain",
+      "stem": "leg uit",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "leg uit",
+            "jij": "legt uit",
+            "hij/zij": "legt uit",
+            "wij": "leggen uit",
+            "jullie": "leggen uit",
+            "zij": "leggen uit"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "legde uit",
+            "jij": "legde uit",
+            "hij/zij": "legde uit",
+            "wij": "legden uit",
+            "jullie": "legden uit",
+            "zij": "legden uit"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb uitgelegd",
+            "jij": "hebt uitgelegd",
+            "hij/zij": "heeft uitgelegd",
+            "wij": "hebben uitgelegd",
+            "jullie": "hebben uitgelegd",
+            "zij": "hebben uitgelegd"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal uitleggen",
+            "jij": "zult uitleggen",
+            "hij/zij": "zal uitleggen",
+            "wij": "zullen uitleggen",
+            "jullie": "zullen uitleggen",
+            "zij": "zullen uitleggen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "voordoen",
+      "english": "to occur/happen",
+      "stem": "doe voor",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "doe voor",
+            "jij": "doet voor",
+            "hij/zij": "doet voor",
+            "wij": "doen voor",
+            "jullie": "doen voor",
+            "zij": "doen voor"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "deed voor",
+            "jij": "deed voor",
+            "hij/zij": "deed voor",
+            "wij": "deden voor",
+            "jullie": "deden voor",
+            "zij": "deden voor"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb voorgedaan",
+            "jij": "hebt voorgedaan",
+            "hij/zij": "heeft voorgedaan",
+            "wij": "hebben voorgedaan",
+            "jullie": "hebben voorgedaan",
+            "zij": "hebben voorgedaan"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal voordoen",
+            "jij": "zult voordoen",
+            "hij/zij": "zal voordoen",
+            "wij": "zullen voordoen",
+            "jullie": "zullen voordoen",
+            "zij": "zullen voordoen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "wegzetten",
+      "english": "to put away",
+      "stem": "zet weg",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "zet weg",
+            "jij": "zet weg",
+            "hij/zij": "zet weg",
+            "wij": "zetten weg",
+            "jullie": "zetten weg",
+            "zij": "zetten weg"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "zette weg",
+            "jij": "zette weg",
+            "hij/zij": "zette weg",
+            "wij": "zetten weg",
+            "jullie": "zetten weg",
+            "zij": "zetten weg"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb weggezet",
+            "jij": "hebt weggezet",
+            "hij/zij": "heeft weggezet",
+            "wij": "hebben weggezet",
+            "jullie": "hebben weggezet",
+            "zij": "hebben weggezet"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal wegzetten",
+            "jij": "zult wegzetten",
+            "hij/zij": "zal wegzetten",
+            "wij": "zullen wegzetten",
+            "jullie": "zullen wegzetten",
+            "zij": "zullen wegzetten"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "afsluiten",
+      "english": "to close/finish",
+      "stem": "sluit af",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "sluit af",
+            "jij": "sluit af",
+            "hij/zij": "sluit af",
+            "wij": "sluiten af",
+            "jullie": "sluiten af",
+            "zij": "sluiten af"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "sloot af",
+            "jij": "sloot af",
+            "hij/zij": "sloot af",
+            "wij": "sloten af",
+            "jullie": "sloten af",
+            "zij": "sloten af"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb afgesloten",
+            "jij": "hebt afgesloten",
+            "hij/zij": "heeft afgesloten",
+            "wij": "hebben afgesloten",
+            "jullie": "hebben afgesloten",
+            "zij": "hebben afgesloten"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal afsluiten",
+            "jij": "zult afsluiten",
+            "hij/zij": "zal afsluiten",
+            "wij": "zullen afsluiten",
+            "jullie": "zullen afsluiten",
+            "zij": "zullen afsluiten"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "doorgaan",
+      "english": "to continue",
+      "stem": "ga door",
+      "level": "B1",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "ga door",
+            "jij": "gaat door",
+            "hij/zij": "gaat door",
+            "wij": "gaan door",
+            "jullie": "gaan door",
+            "zij": "gaan door"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "ging door",
+            "jij": "ging door",
+            "hij/zij": "ging door",
+            "wij": "gingen door",
+            "jullie": "gingen door",
+            "zij": "gingen door"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben doorgegaan",
+            "jij": "bent doorgegaan",
+            "hij/zij": "is doorgegaan",
+            "wij": "zijn doorgegaan",
+            "jullie": "zijn doorgegaan",
+            "zij": "zijn doorgegaan"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal doorgaan",
+            "jij": "zult doorgaan",
+            "hij/zij": "zal doorgaan",
+            "wij": "zullen doorgaan",
+            "jullie": "zullen doorgaan",
+            "zij": "zullen doorgaan"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "opzetten",
+      "english": "to set up",
+      "stem": "zet op",
+      "level": "B2",
+      "is_separable": true,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "zet op",
+            "jij": "zet op",
+            "hij/zij": "zet op",
+            "wij": "zetten op",
+            "jullie": "zetten op",
+            "zij": "zetten op"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "zette op",
+            "jij": "zette op",
+            "hij/zij": "zette op",
+            "wij": "zetten op",
+            "jullie": "zetten op",
+            "zij": "zetten op"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb opgezet",
+            "jij": "hebt opgezet",
+            "hij/zij": "heeft opgezet",
+            "wij": "hebben opgezet",
+            "jullie": "hebben opgezet",
+            "zij": "hebben opgezet"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal opzetten",
+            "jij": "zult opzetten",
+            "hij/zij": "zal opzetten",
+            "wij": "zullen opzetten",
+            "jullie": "zullen opzetten",
+            "zij": "zullen opzetten"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "uitvallen",
+      "english": "to fall out/fail",
+      "stem": "val uit",
+      "level": "B2",
+      "is_separable": true,
+      "is_irregular": true,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "val uit",
+            "jij": "valt uit",
+            "hij/zij": "valt uit",
+            "wij": "vallen uit",
+            "jullie": "vallen uit",
+            "zij": "vallen uit"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "viel uit",
+            "jij": "viel uit",
+            "hij/zij": "viel uit",
+            "wij": "vielen uit",
+            "jullie": "vielen uit",
+            "zij": "vielen uit"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "ben uitgevallen",
+            "jij": "bent uitgevallen",
+            "hij/zij": "is uitgevallen",
+            "wij": "zijn uitgevallen",
+            "jullie": "zijn uitgevallen",
+            "zij": "zijn uitgevallen"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal uitvallen",
+            "jij": "zult uitvallen",
+            "hij/zij": "zal uitvallen",
+            "wij": "zullen uitvallen",
+            "jullie": "zullen uitvallen",
+            "zij": "zullen uitvallen"
+          }
+        }
+      }
+    },
+    {
+      "infinitive": "aanpassen",
+      "english": "to adapt/adjust",
+      "stem": "pas aan",
+      "level": "B2",
+      "is_separable": true,
+      "is_irregular": false,
+      "tenses": {
+        "present": {
+          "conjugations": {
+            "ik": "pas aan",
+            "jij": "past aan",
+            "hij/zij": "past aan",
+            "wij": "passen aan",
+            "jullie": "passen aan",
+            "zij": "passen aan"
+          }
+        },
+        "past": {
+          "conjugations": {
+            "ik": "paste aan",
+            "jij": "paste aan",
+            "hij/zij": "paste aan",
+            "wij": "pasten aan",
+            "jullie": "pasten aan",
+            "zij": "pasten aan"
+          }
+        },
+        "perfect": {
+          "conjugations": {
+            "ik": "heb aangepast",
+            "jij": "hebt aangepast",
+            "hij/zij": "heeft aangepast",
+            "wij": "hebben aangepast",
+            "jullie": "hebben aangepast",
+            "zij": "hebben aangepast"
+          }
+        },
+        "future": {
+          "conjugations": {
+            "ik": "zal aanpassen",
+            "jij": "zult aanpassen",
+            "hij/zij": "zal aanpassen",
+            "wij": "zullen aanpassen",
+            "jullie": "zullen aanpassen",
+            "zij": "zullen aanpassen"
+          }
+        }
+      }
+    }
+  ]
+}

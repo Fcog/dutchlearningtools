@@ -7,6 +7,7 @@ import VerbExercise from '../components/organisms/VerbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
 import { saveFilterPreferences, loadFilterPreferences } from '../utils/filterStorage'
+import { VERB_FIELDS, getVerbField, getVerbConjugation } from '../utils/verbFields'
 
 
 const PRONOUNS = ['ik', 'jij', 'hij/zij', 'wij', 'jullie', 'zij']
@@ -84,20 +85,20 @@ function VerbConjugationPage() {
 
   // Filter verbs based on selected criteria
   const filterVerbs = () => {
-    if (!dutchVerbsData?.dutch_verbs) return []
+    if (!dutchVerbsData?.[VERB_FIELDS.dutch_verbs]) return []
     
-    return dutchVerbsData.dutch_verbs.filter(verb => {
+    return dutchVerbsData[VERB_FIELDS.dutch_verbs].filter(verb => {
       // Check level filter
-      const levelMatch = selectedLevels.includes(verb.level)
+      const levelMatch = selectedLevels.includes(getVerbField(verb, 'level'))
       
       // Check verb type filter (regular vs irregular)
       const verbTypeMatch = selectedVerbTypes.includes(
-        verb.is_irregular ? 'irregular' : 'regular'
+        getVerbField(verb, 'is_irregular') ? 'irregular' : 'regular'
       )
       
       // Check separable filter
       const separableMatch = selectedSeparable.includes(
-        verb.is_separable ? 'separable' : 'non-separable'
+        getVerbField(verb, 'is_separable') ? 'separable' : 'non-separable'
       )
       
       return levelMatch && verbTypeMatch && separableMatch
@@ -165,7 +166,7 @@ function VerbConjugationPage() {
   const checkAnswer = () => {
     if (!userAnswer.trim()) return
     
-    const correctAnswer = currentVerb.tenses[currentTense].conjugations[currentPronoun]
+    const correctAnswer = getVerbConjugation(currentVerb, currentTense, currentPronoun)
     const isAnswerCorrect = userAnswer.trim().toLowerCase() === correctAnswer.toLowerCase()
     
     setIsCorrect(isAnswerCorrect)

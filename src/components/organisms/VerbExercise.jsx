@@ -3,6 +3,7 @@ import WordCard from '../molecules/WordCard'
 import ExerciseMetadata from '../molecules/ExerciseMetadata'
 import Button from '../atoms/Button'
 import Input from '../atoms/Input'
+import { getVerbField, getVerbConjugation } from '../../utils/verbFields'
 
 const SINGULAR_PRONOUNS = ['ik', 'jij', 'hij/zij']
 const PLURAL_PRONOUNS = ['wij', 'jullie', 'zij']
@@ -48,10 +49,10 @@ function VerbExercise({
       <WordCard>
         {/* Verb Info */}
         <div className="exercise-word-display" ref={exerciseWordDisplayRef}>
-          <span lang="nl">{currentVerb.infinitive}</span>
+          <span lang="nl">{getVerbField(currentVerb, 'infinitive')}</span>
         </div>
         <div className="exercise-translation">
-          English: {currentVerb.english}
+          English: {getVerbField(currentVerb, 'english')}
         </div>
         
         {/* Verb Metadata */}
@@ -59,18 +60,18 @@ function VerbExercise({
           items={[
             {
               label: "Level",
-              value: currentVerb.level,
-              badgeClass: `level-${currentVerb.level.toLowerCase()}`
+              value: getVerbField(currentVerb, 'level'),
+              badgeClass: `level-${getVerbField(currentVerb, 'level').toLowerCase()}`
             },
             {
               label: "Type",
-              value: currentVerb.is_irregular ? 'Irregular' : 'Regular',
-              badgeClass: currentVerb.is_irregular ? 'irregular' : 'regular'
+              value: getVerbField(currentVerb, 'is_irregular') ? 'Irregular' : 'Regular',
+              badgeClass: getVerbField(currentVerb, 'is_irregular') ? 'irregular' : 'regular'
             },
             {
               label: "Separable",
-              value: currentVerb.is_separable ? 'Yes' : 'No',
-              badgeClass: currentVerb.is_separable ? 'separable' : 'non-separable'
+              value: getVerbField(currentVerb, 'is_separable') ? 'Yes' : 'No',
+              badgeClass: getVerbField(currentVerb, 'is_separable') ? 'separable' : 'non-separable'
             }
           ]}
         />
@@ -118,7 +119,7 @@ function VerbExercise({
           {isCorrect ? '✅ Correct!' : '❌ Incorrect'}
         </div>
         <div className="verb-result-answer">
-          {currentPronoun} {currentVerb.tenses[currentTense].conjugations[currentPronoun]}
+          {currentPronoun} {getVerbConjugation(currentVerb, currentTense, currentPronoun)}
         </div>
         {!isCorrect && (
           <div className="verb-result-user-answer">
@@ -130,7 +131,7 @@ function VerbExercise({
       {/* Complete Conjugation Table */}
       <div className="conjugation-table">
         <div className="conjugation-table-title">
-          Complete conjugation of "{currentVerb.infinitive}" ({getTenseName(currentTense)}):
+          Complete conjugation of "{getVerbField(currentVerb, 'infinitive')}" ({getTenseName(currentTense)}):
         </div>
         <div className="conjugation-columns">
           <div className="conjugation-column">
@@ -138,7 +139,7 @@ function VerbExercise({
             {SINGULAR_PRONOUNS.map(pronoun => (
               <div key={pronoun} className="conjugation-item">
                 <span className="conjugation-pronoun">{pronoun}:</span>
-                <span className="conjugation-verb">{currentVerb.tenses[currentTense].conjugations[pronoun]}</span>
+                <span className="conjugation-verb">{getVerbConjugation(currentVerb, currentTense, pronoun)}</span>
               </div>
             ))}
           </div>
@@ -147,7 +148,7 @@ function VerbExercise({
             {PLURAL_PRONOUNS.map(pronoun => (
               <div key={pronoun} className="conjugation-item">
                 <span className="conjugation-pronoun">{pronoun}:</span>
-                <span className="conjugation-verb">{currentVerb.tenses[currentTense].conjugations[pronoun]}</span>
+                <span className="conjugation-verb">{getVerbConjugation(currentVerb, currentTense, pronoun)}</span>
               </div>
             ))}
           </div>
