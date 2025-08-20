@@ -45,99 +45,9 @@ body {
   display: block;
 }
 
-.tools-section {
-  padding: 60px 40px;
-}
 
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
 
-.tool-card {
-  background: white;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  border: 2px solid #f0f0f0;
-  transition: all 0.3s ease;
-  text-align: left;
-}
 
-.tool-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-  border-color: #007bff;
-}
-
-.tool-icon {
-  font-size: 3em;
-  margin-bottom: 20px;
-  display: block;
-}
-
-.tool-card h3 {
-  color: #333;
-  font-size: 1.5em;
-  margin: 0 0 15px 0;
-  font-weight: 600;
-}
-
-.tool-card p {
-  color: #666;
-  line-height: 1.6;
-  margin: 0 0 25px 0;
-  font-size: 1em;
-}
-
-.tool-features {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 25px 0;
-}
-
-.tool-features li {
-  color: #555;
-  margin: 8px 0;
-  padding-left: 20px;
-  position: relative;
-  font-size: 0.95em;
-}
-
-.tool-features li:before {
-  content: "✓";
-  color: #28a745;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-}
-
-.tool-link, .router-link {
-  background: linear-gradient(135deg, #007bff, #0056b3);
-  color: white;
-  text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 600;
-  display: inline-block;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
-  border: none;
-  cursor: pointer;
-}
-
-.tool-link:hover, .router-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
-  text-decoration: none;
-  color: white;
-}
-
-.tool-link:active, .router-link:active {
-  transform: translateY(0);
-}
 
 .section-header {
   text-align: center;
@@ -159,34 +69,7 @@ body {
   line-height: 1.6;
 }
 
-.coming-soon {
-  opacity: 0.6;
-  position: relative;
-}
 
-.coming-soon::after {
-  content: "Coming Soon";
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: #ffc107;
-  color: #333;
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-size: 0.8em;
-  font-weight: bold;
-}
-
-.coming-soon .tool-link {
-  background: #6c757d;
-  cursor: not-allowed;
-  box-shadow: none;
-}
-
-.coming-soon .tool-link:hover {
-  transform: none;
-  box-shadow: none;
-}
 
 .footer {
   background: #f8f9fa;
@@ -618,21 +501,48 @@ body {
   margin-bottom: 20px;
 }
 
-.notfound-tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 800px;
+.notfound-exercises-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 600px;
   margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
 
-.notfound-tool-card {
+.notfound-exercise-item {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.notfound-exercise-item:last-child {
+  border-bottom: none;
+}
+
+.notfound-exercise-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 25px;
+  background: none;
+  border: none;
   cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
-.coming-soon-text {
-  color: #999;
-  font-size: 0.9em;
+.notfound-exercise-link:hover {
+  background: #f8f9fa;
+  transform: translateX(5px);
+}
+
+.notfound-exercise-link:focus {
+  outline: 2px solid #007bff;
+  outline-offset: -2px;
 }
 
 /* Component Atoms */
@@ -824,18 +734,8 @@ body {
     font-size: 1.1em;
   }
   
-  .tools-section {
-    padding: 40px 20px;
-  }
-  
-  .tools-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .tool-card {
-    padding: 25px;
-  }
+
+
   
   .section-header h2 {
     font-size: 2em;
@@ -919,9 +819,7 @@ body {
     font-size: 1em;
   }
   
-  .tool-card {
-    padding: 20px;
-  }
+
   
   .section-header h2 {
     font-size: 1.8em;
@@ -958,6 +856,11 @@ body {
   
   .social-sharing {
     margin-top: 30px !important;
+  }
+
+  /* NotFound page small mobile styles */
+  .notfound-exercise-link {
+    padding: 12px 15px;
   }
 }
 
@@ -1835,13 +1738,223 @@ body {
   display: none;
 }
 
+/* Exercise List Styles */
+.exercises-section {
+  padding: 60px 40px;
+}
+
+.exercises-list {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.exercise-item {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.exercise-item:last-child {
+  border-bottom: none;
+}
+
+.exercise-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.exercise-link:hover {
+  background: #f8f9fa;
+  transform: translateX(5px);
+}
+
+.exercise-link:focus {
+  outline: 2px solid #007bff;
+  outline-offset: -2px;
+}
+
+.exercise-icon {
+  font-size: 2.5em;
+  margin-right: 20px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.exercise-content {
+  flex: 1;
+}
+
+.exercise-title {
+  margin: 0 0 8px 0;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #333;
+}
+
+.exercise-description {
+  margin: 0;
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.exercise-arrow {
+  font-size: 1.5em;
+  color: #007bff;
+  margin-left: 20px;
+  transition: transform 0.2s ease;
+}
+
+.exercise-link:hover .exercise-arrow {
+  transform: translateX(5px);
+}
+
+.coming-soon-section {
+  margin-top: 50px;
+}
+
+.coming-soon-section h3 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.coming-soon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.coming-soon-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid #e9ecef;
+  opacity: 0.7;
+}
+
+.coming-soon-item:last-child {
+  border-bottom: none;
+}
+
+.coming-soon-badge {
+  background: #ffc107;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+/* Mobile responsive adjustments for exercise list */
+@media (max-width: 768px) {
+  .exercises-section {
+    padding: 40px 20px;
+  }
+
+  .exercise-link {
+    padding: 15px 20px;
+  }
+
+  .exercise-icon {
+    font-size: 2em;
+    margin-right: 15px;
+    min-width: 50px;
+  }
+
+  .exercise-title {
+    font-size: 1.2em;
+  }
+
+  .exercise-description {
+    font-size: 0.9em;
+  }
+
+  .exercise-arrow {
+    font-size: 1.2em;
+    margin-left: 15px;
+  }
+
+  .coming-soon-item {
+    padding: 15px 20px;
+  }
+
+  .coming-soon-badge {
+    margin-left: 15px;
+    font-size: 0.8em;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .exercises-section {
+    padding: 30px 15px;
+  }
+
+  .exercise-link {
+    padding: 12px 15px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .exercise-link:hover {
+    transform: none;
+  }
+
+  .exercise-icon {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .exercise-arrow {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .coming-soon-item {
+    padding: 12px 15px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .coming-soon-badge {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  /* NotFound page mobile styles */
+  .notfound-exercise-link {
+    padding: 15px 20px;
+  }
+}
+
 /* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
-  .word-card, .tool-card, .random-word-button, .social-button, .tense-dropdown-trigger, .tense-dropdown-option, .filter-option, .filter-section-arrow, .filter-quick-action, .sidebar-toggle, .filter-sidebar, .main-content, .sidebar-overlay {
+  .word-card, .random-word-button, .social-button, .tense-dropdown-trigger, .tense-dropdown-option, .filter-option, .filter-section-arrow, .filter-quick-action, .sidebar-toggle, .filter-sidebar, .main-content, .sidebar-overlay, .exercise-link, .exercise-arrow, .notfound-exercise-link {
     transition: none;
     animation: none;
   }
-  .word-card:hover, .tool-card:hover, .random-word-button:hover, .social-button:hover {
+  .word-card:hover, .random-word-button:hover, .social-button:hover, .exercise-link:hover, .exercise-link:hover .exercise-arrow, .notfound-exercise-link:hover {
     transform: none;
   }
 }

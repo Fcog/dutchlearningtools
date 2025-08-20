@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import Hero from '../components/organisms/Hero'
-import ToolsGrid from '../components/organisms/ToolsGrid'
+import ExerciseList from '../components/organisms/ExerciseList'
 import { Footer } from '../components/atoms'
 
 function LandingPage() {
@@ -146,7 +146,7 @@ function LandingPage() {
   return (
     <div className="container">
       <Hero />
-      <ToolsGrid tools={tools} onToolClick={handleToolClick} />
+      <ExerciseList tools={tools} onToolClick={handleToolClick} />
       <footer className="footer">
         <Footer />
       </footer>

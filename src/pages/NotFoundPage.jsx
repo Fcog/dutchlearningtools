@@ -50,32 +50,52 @@ function NotFoundPage() {
           <h2 className="notfound-tools-title">
             Popular Dutch Learning Tools
           </h2>
-          <div className="notfound-tools-grid">
-            <div 
-              className="tool-card notfound-tool-card"
-              onClick={() => navigate('/articles')}
-            >
-              <Icon icon="📚" size="large" className="tool-icon" />
-              <h3>Dutch Articles & Nouns</h3>
-              <p>Learn Dutch articles (de & het) with daily word practice.</p>
-            </div>
+          <ul className="notfound-exercises-list">
+            <li className="notfound-exercise-item">
+              <button 
+                className="notfound-exercise-link"
+                onClick={() => navigate('/de-het-articles')}
+                aria-label="Go to Dutch Articles & Nouns"
+              >
+                <span className="exercise-icon">📚</span>
+                <div className="exercise-content">
+                  <h3 className="exercise-title">Dutch Articles & Nouns</h3>
+                  <p className="exercise-description">Learn Dutch articles (de & het) with daily word practice.</p>
+                </div>
+                <span className="exercise-arrow">→</span>
+              </button>
+            </li>
             
-            <div 
-              className="tool-card notfound-tool-card"
-              onClick={() => navigate('/verbs')}
-            >
-              <Icon icon="🎯" size="large" className="tool-icon" />
-              <h3>Verb Conjugation</h3>
-              <p>Master Dutch verb conjugations with interactive exercises.</p>
-            </div>
+            <li className="notfound-exercise-item">
+              <button 
+                className="notfound-exercise-link"
+                onClick={() => navigate('/verbs-conjugations')}
+                aria-label="Go to Verb Conjugation"
+              >
+                <span className="exercise-icon">🎯</span>
+                <div className="exercise-content">
+                  <h3 className="exercise-title">Verb Conjugation</h3>
+                  <p className="exercise-description">Master Dutch verb conjugations with interactive exercises.</p>
+                </div>
+                <span className="exercise-arrow">→</span>
+              </button>
+            </li>
             
-            <div className="tool-card coming-soon">
-              <Icon icon="📍" size="large" className="tool-icon" />
-              <h3>Dutch Prepositions</h3>
-              <p>Master Dutch prepositions with interactive exercises.</p>
-              <span className="coming-soon-text">Coming Soon</span>
-            </div>
-          </div>
+            <li className="notfound-exercise-item">
+              <button 
+                className="notfound-exercise-link"
+                onClick={() => navigate('/prepositions')}
+                aria-label="Go to Dutch Prepositions"
+              >
+                <span className="exercise-icon">📍</span>
+                <div className="exercise-content">
+                  <h3 className="exercise-title">Dutch Prepositions</h3>
+                  <p className="exercise-description">Master Dutch prepositions with interactive exercises.</p>
+                </div>
+                <span className="exercise-arrow">→</span>
+              </button>
+            </li>
+          </ul>
         </section>
       </div>
     </PageLayout>
