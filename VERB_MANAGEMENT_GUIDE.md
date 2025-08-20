@@ -10,8 +10,9 @@
 
 ### ✅ CSV Export Created
 - **119 verbs exported** to `dutch-verbs-export.csv` (38.6KB)
-- **30 columns** covering all verb data (basic info + 4 tenses × 6 pronouns)
+- **24 columns** covering essential verb data (basic info + 3 tenses × 6 pronouns)
 - **Spreadsheet-ready** format for easy editing
+- **Future tense** is dynamically generated (not stored in CSV)
 
 ## 📋 File Structure
 
@@ -39,7 +40,7 @@ your-project/
 2. **Add your new verbs** starting from row 121 (after the existing 119 verbs)
    - Follow the same column structure
    - Required columns: `infinitive`, `english`, `stem`, `level`, `is_separable`, `is_irregular`
-   - All conjugation columns for 4 tenses × 6 pronouns
+   - All conjugation columns for 3 tenses × 6 pronouns (future tense is auto-generated)
 
 3. **Save the file** as CSV (keep the same name)
 
@@ -53,8 +54,8 @@ your-project/
 
 1. **Create a new CSV** with just your 200 new verbs:
    ```
-   infinitive,english,stem,level,is_separable,is_irregular,[...all 24 conjugation columns]
-   wandelen,to hike,wandel,A2,false,false,wandel,wandelt,wandelt,[...continue with all conjugations]
+   infinitive,english,stem,level,is_separable,is_irregular,[...18 conjugation columns]
+   wandelen,to hike,wandel,A2,false,false,wandel,wandelt,wandelt,[...continue with present/past/perfect only]
    ```
 
 2. **Import the new file**:
@@ -64,7 +65,7 @@ your-project/
 
 ## 📊 CSV Column Structure
 
-The CSV has 30 columns in this exact order:
+The CSV has 24 columns in this exact order:
 
 ### Basic Information (6 columns)
 | Column | Description | Example | Notes |
@@ -76,13 +77,14 @@ The CSV has 30 columns in this exact order:
 | `is_separable` | Separable verb? | `false` | true/false |
 | `is_irregular` | Irregular verb? | `false` | true/false |
 
-### Conjugations (24 columns - 4 tenses × 6 pronouns)
+### Conjugations (18 columns - 3 tenses × 6 pronouns)
 | Tense Group | Columns |
 |-------------|---------|
 | **Present** | `present_ik`, `present_jij`, `present_hij_zij`, `present_wij`, `present_jullie`, `present_zij` |
 | **Past** | `past_ik`, `past_jij`, `past_hij_zij`, `past_wij`, `past_jullie`, `past_zij` |
 | **Perfect** | `perfect_ik`, `perfect_jij`, `perfect_hij_zij`, `perfect_wij`, `perfect_jullie`, `perfect_zij` |
-| **Future** | `future_ik`, `future_jij`, `future_hij_zij`, `future_wij`, `future_jullie`, `future_zij` |
+
+**Note:** Future tense is automatically generated using "zullen + infinitive" pattern and doesn't need to be provided in the CSV.
 
 ## 🔧 Helper Scripts
 

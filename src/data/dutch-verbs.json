@@ -1,1 +1,4884 @@
-{"v":[{"i":"zijn","e":"to be","s":"ben","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"ben","jij":"bent","hij/zij":"is","wij":"zijn","jullie":"zijn","zij":"zijn"}},"pa":{"c":{"ik":"was","jij":"was","hij/zij":"was","wij":"waren","jullie":"waren","zij":"waren"}},"pe":{"c":{"ik":"ben geweest","jij":"bent geweest","hij/zij":"is geweest","wij":"zijn geweest","jullie":"zijn geweest","zij":"zijn geweest"}},"fu":{"c":{"ik":"zal zijn","jij":"zult zijn","hij/zij":"zal zijn","wij":"zullen zijn","jullie":"zullen zijn","zij":"zullen zijn"}}}},{"i":"hebben","e":"to have","s":"heb","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"heb","jij":"hebt","hij/zij":"heeft","wij":"hebben","jullie":"hebben","zij":"hebben"}},"pa":{"c":{"ik":"had","jij":"had","hij/zij":"had","wij":"hadden","jullie":"hadden","zij":"hadden"}},"pe":{"c":{"ik":"heb gehad","jij":"hebt gehad","hij/zij":"heeft gehad","wij":"hebben gehad","jullie":"hebben gehad","zij":"hebben gehad"}},"fu":{"c":{"ik":"zal hebben","jij":"zult hebben","hij/zij":"zal hebben","wij":"zullen hebben","jullie":"zullen hebben","zij":"zullen hebben"}}}},{"i":"gaan","e":"to go","s":"ga","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"ga","jij":"gaat","hij/zij":"gaat","wij":"gaan","jullie":"gaan","zij":"gaan"}},"pa":{"c":{"ik":"ging","jij":"ging","hij/zij":"ging","wij":"gingen","jullie":"gingen","zij":"gingen"}},"pe":{"c":{"ik":"ben gegaan","jij":"bent gegaan","hij/zij":"is gegaan","wij":"zijn gegaan","jullie":"zijn gegaan","zij":"zijn gegaan"}},"fu":{"c":{"ik":"zal gaan","jij":"zult gaan","hij/zij":"zal gaan","wij":"zullen gaan","jullie":"zullen gaan","zij":"zullen gaan"}}}},{"i":"komen","e":"to come","s":"kom","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"kom","jij":"komt","hij/zij":"komt","wij":"komen","jullie":"komen","zij":"komen"}},"pa":{"c":{"ik":"kwam","jij":"kwam","hij/zij":"kwam","wij":"kwamen","jullie":"kwamen","zij":"kwamen"}},"pe":{"c":{"ik":"ben gekomen","jij":"bent gekomen","hij/zij":"is gekomen","wij":"zijn gekomen","jullie":"zijn gekomen","zij":"zijn gekomen"}},"fu":{"c":{"ik":"zal komen","jij":"zult komen","hij/zij":"zal komen","wij":"zullen komen","jullie":"zullen komen","zij":"zullen komen"}}}},{"i":"werken","e":"to work","s":"werk","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"werk","jij":"werkt","hij/zij":"werkt","wij":"werken","jullie":"werken","zij":"werken"}},"pa":{"c":{"ik":"werkte","jij":"werkte","hij/zij":"werkte","wij":"werkten","jullie":"werkten","zij":"werkten"}},"pe":{"c":{"ik":"heb gewerkt","jij":"hebt gewerkt","hij/zij":"heeft gewerkt","wij":"hebben gewerkt","jullie":"hebben gewerkt","zij":"hebben gewerkt"}},"fu":{"c":{"ik":"zal werken","jij":"zult werken","hij/zij":"zal werken","wij":"zullen werken","jullie":"zullen werken","zij":"zullen werken"}}}},{"i":"wonen","e":"to live","s":"woon","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"woon","jij":"woont","hij/zij":"woont","wij":"wonen","jullie":"wonen","zij":"wonen"}},"pa":{"c":{"ik":"woonde","jij":"woonde","hij/zij":"woonde","wij":"woonden","jullie":"woonden","zij":"woonden"}},"pe":{"c":{"ik":"heb gewoond","jij":"hebt gewoond","hij/zij":"heeft gewoond","wij":"hebben gewoond","jullie":"hebben gewoond","zij":"hebben gewoond"}},"fu":{"c":{"ik":"zal wonen","jij":"zult wonen","hij/zij":"zal wonen","wij":"zullen wonen","jullie":"zullen wonen","zij":"zullen wonen"}}}},{"i":"eten","e":"to eat","s":"eet","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"eet","jij":"eet","hij/zij":"eet","wij":"eten","jullie":"eten","zij":"eten"}},"pa":{"c":{"ik":"at","jij":"at","hij/zij":"at","wij":"aten","jullie":"aten","zij":"aten"}},"pe":{"c":{"ik":"heb gegeten","jij":"hebt gegeten","hij/zij":"heeft gegeten","wij":"hebben gegeten","jullie":"hebben gegeten","zij":"hebben gegeten"}},"fu":{"c":{"ik":"zal eten","jij":"zult eten","hij/zij":"zal eten","wij":"zullen eten","jullie":"zullen eten","zij":"zullen eten"}}}},{"i":"drinken","e":"to drink","s":"drink","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"drink","jij":"drinkt","hij/zij":"drinkt","wij":"drinken","jullie":"drinken","zij":"drinken"}},"pa":{"c":{"ik":"dronk","jij":"dronk","hij/zij":"dronk","wij":"dronken","jullie":"dronken","zij":"dronken"}},"pe":{"c":{"ik":"heb gedronken","jij":"hebt gedronken","hij/zij":"heeft gedronken","wij":"hebben gedronken","jullie":"hebben gedronken","zij":"hebben gedronken"}},"fu":{"c":{"ik":"zal drinken","jij":"zult drinken","hij/zij":"zal drinken","wij":"zullen drinken","jullie":"zullen drinken","zij":"zullen drinken"}}}},{"i":"slapen","e":"to sleep","s":"slaap","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"slaap","jij":"slaapt","hij/zij":"slaapt","wij":"slapen","jullie":"slapen","zij":"slapen"}},"pa":{"c":{"ik":"sliep","jij":"sliep","hij/zij":"sliep","wij":"sliepen","jullie":"sliepen","zij":"sliepen"}},"pe":{"c":{"ik":"heb geslapen","jij":"hebt geslapen","hij/zij":"heeft geslapen","wij":"hebben geslapen","jullie":"hebben geslapen","zij":"hebben geslapen"}},"fu":{"c":{"ik":"zal slapen","jij":"zult slapen","hij/zij":"zal slapen","wij":"zullen slapen","jullie":"zullen slapen","zij":"zullen slapen"}}}},{"i":"lopen","e":"to walk","s":"loop","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"loop","jij":"loopt","hij/zij":"loopt","wij":"lopen","jullie":"lopen","zij":"lopen"}},"pa":{"c":{"ik":"liep","jij":"liep","hij/zij":"liep","wij":"liepen","jullie":"liepen","zij":"liepen"}},"pe":{"c":{"ik":"heb gelopen","jij":"hebt gelopen","hij/zij":"heeft gelopen","wij":"hebben gelopen","jullie":"hebben gelopen","zij":"hebben gelopen"}},"fu":{"c":{"ik":"zal lopen","jij":"zult lopen","hij/zij":"zal lopen","wij":"zullen lopen","jullie":"zullen lopen","zij":"zullen lopen"}}}},{"i":"spelen","e":"to play","s":"speel","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"speel","jij":"speelt","hij/zij":"speelt","wij":"spelen","jullie":"spelen","zij":"spelen"}},"pa":{"c":{"ik":"speelde","jij":"speelde","hij/zij":"speelde","wij":"speelden","jullie":"speelden","zij":"speelden"}},"pe":{"c":{"ik":"heb gespeeld","jij":"hebt gespeeld","hij/zij":"heeft gespeeld","wij":"hebben gespeeld","jullie":"hebben gespeeld","zij":"hebben gespeeld"}},"fu":{"c":{"ik":"zal spelen","jij":"zult spelen","hij/zij":"zal spelen","wij":"zullen spelen","jullie":"zullen spelen","zij":"zullen spelen"}}}},{"i":"kijken","e":"to look","s":"kijk","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"kijk","jij":"kijkt","hij/zij":"kijkt","wij":"kijken","jullie":"kijken","zij":"kijken"}},"pa":{"c":{"ik":"keek","jij":"keek","hij/zij":"keek","wij":"keken","jullie":"keken","zij":"keken"}},"pe":{"c":{"ik":"heb gekeken","jij":"hebt gekeken","hij/zij":"heeft gekeken","wij":"hebben gekeken","jullie":"hebben gekeken","zij":"hebben gekeken"}},"fu":{"c":{"ik":"zal kijken","jij":"zult kijken","hij/zij":"zal kijken","wij":"zullen kijken","jullie":"zullen kijken","zij":"zullen kijken"}}}},{"i":"praten","e":"to talk","s":"praat","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"praat","jij":"praat","hij/zij":"praat","wij":"praten","jullie":"praten","zij":"praten"}},"pa":{"c":{"ik":"praatte","jij":"praatte","hij/zij":"praatte","wij":"praatten","jullie":"praatten","zij":"praatten"}},"pe":{"c":{"ik":"heb gepraat","jij":"hebt gepraat","hij/zij":"heeft gepraat","wij":"hebben gepraat","jullie":"hebben gepraat","zij":"hebben gepraat"}},"fu":{"c":{"ik":"zal praten","jij":"zult praten","hij/zij":"zal praten","wij":"zullen praten","jullie":"zullen praten","zij":"zullen praten"}}}},{"i":"horen","e":"to hear","s":"hoor","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"hoor","jij":"hoort","hij/zij":"hoort","wij":"horen","jullie":"horen","zij":"horen"}},"pa":{"c":{"ik":"hoorde","jij":"hoorde","hij/zij":"hoorde","wij":"hoorden","jullie":"hoorden","zij":"hoorden"}},"pe":{"c":{"ik":"heb gehoord","jij":"hebt gehoord","hij/zij":"heeft gehoord","wij":"hebben gehoord","jullie":"hebben gehoord","zij":"hebben gehoord"}},"fu":{"c":{"ik":"zal horen","jij":"zult horen","hij/zij":"zal horen","wij":"zullen horen","jullie":"zullen horen","zij":"zullen horen"}}}},{"i":"zien","e":"to see","s":"zie","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"zie","jij":"ziet","hij/zij":"ziet","wij":"zien","jullie":"zien","zij":"zien"}},"pa":{"c":{"ik":"zag","jij":"zag","hij/zij":"zag","wij":"zagen","jullie":"zagen","zij":"zagen"}},"pe":{"c":{"ik":"heb gezien","jij":"hebt gezien","hij/zij":"heeft gezien","wij":"hebben gezien","jullie":"hebben gezien","zij":"hebben gezien"}},"fu":{"c":{"ik":"zal zien","jij":"zult zien","hij/zij":"zal zien","wij":"zullen zien","jullie":"zullen zien","zij":"zullen zien"}}}},{"i":"doen","e":"to do","s":"doe","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"doe","jij":"doet","hij/zij":"doet","wij":"doen","jullie":"doen","zij":"doen"}},"pa":{"c":{"ik":"deed","jij":"deed","hij/zij":"deed","wij":"deden","jullie":"deden","zij":"deden"}},"pe":{"c":{"ik":"heb gedaan","jij":"hebt gedaan","hij/zij":"heeft gedaan","wij":"hebben gedaan","jullie":"hebben gedaan","zij":"hebben gedaan"}},"fu":{"c":{"ik":"zal doen","jij":"zult doen","hij/zij":"zal doen","wij":"zullen doen","jullie":"zullen doen","zij":"zullen doen"}}}},{"i":"maken","e":"to make","s":"maak","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"maak","jij":"maakt","hij/zij":"maakt","wij":"maken","jullie":"maken","zij":"maken"}},"pa":{"c":{"ik":"maakte","jij":"maakte","hij/zij":"maakte","wij":"maakten","jullie":"maakten","zij":"maakten"}},"pe":{"c":{"ik":"heb gemaakt","jij":"hebt gemaakt","hij/zij":"heeft gemaakt","wij":"hebben gemaakt","jullie":"hebben gemaakt","zij":"hebben gemaakt"}},"fu":{"c":{"ik":"zal maken","jij":"zult maken","hij/zij":"zal maken","wij":"zullen maken","jullie":"zullen maken","zij":"zullen maken"}}}},{"i":"zeggen","e":"to say","s":"zeg","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"zeg","jij":"zegt","hij/zij":"zegt","wij":"zeggen","jullie":"zeggen","zij":"zeggen"}},"pa":{"c":{"ik":"zei","jij":"zei","hij/zij":"zei","wij":"zeiden","jullie":"zeiden","zij":"zeiden"}},"pe":{"c":{"ik":"heb gezegd","jij":"hebt gezegd","hij/zij":"heeft gezegd","wij":"hebben gezegd","jullie":"hebben gezegd","zij":"hebben gezegd"}},"fu":{"c":{"ik":"zal zeggen","jij":"zult zeggen","hij/zij":"zal zeggen","wij":"zullen zeggen","jullie":"zullen zeggen","zij":"zullen zeggen"}}}},{"i":"leren","e":"to learn","s":"leer","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"leer","jij":"leert","hij/zij":"leert","wij":"leren","jullie":"leren","zij":"leren"}},"pa":{"c":{"ik":"leerde","jij":"leerde","hij/zij":"leerde","wij":"leerden","jullie":"leerden","zij":"leerden"}},"pe":{"c":{"ik":"heb geleerd","jij":"hebt geleerd","hij/zij":"heeft geleerd","wij":"hebben geleerd","jullie":"hebben geleerd","zij":"hebben geleerd"}},"fu":{"c":{"ik":"zal leren","jij":"zult leren","hij/zij":"zal leren","wij":"zullen leren","jullie":"zullen leren","zij":"zullen leren"}}}},{"i":"koken","e":"to cook","s":"kook","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"kook","jij":"kookt","hij/zij":"kookt","wij":"koken","jullie":"koken","zij":"koken"}},"pa":{"c":{"ik":"kookte","jij":"kookte","hij/zij":"kookte","wij":"kookten","jullie":"kookten","zij":"kookten"}},"pe":{"c":{"ik":"heb gekookt","jij":"hebt gekookt","hij/zij":"heeft gekookt","wij":"hebben gekookt","jullie":"hebben gekookt","zij":"hebben gekookt"}},"fu":{"c":{"ik":"zal koken","jij":"zult koken","hij/zij":"zal koken","wij":"zullen koken","jullie":"zullen koken","zij":"zullen koken"}}}},{"i":"werken","e":"to work","s":"werk","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"werk","jij":"werkt","hij/zij":"werkt","wij":"werken","jullie":"werken","zij":"werken"}},"pa":{"c":{"ik":"werkte","jij":"werkte","hij/zij":"werkte","wij":"werkten","jullie":"werkten","zij":"werkten"}},"pe":{"c":{"ik":"heb gewerkt","jij":"hebt gewerkt","hij/zij":"heeft gewerkt","wij":"hebben gewerkt","jullie":"hebben gewerkt","zij":"hebben gewerkt"}},"fu":{"c":{"ik":"zal werken","jij":"zult werken","hij/zij":"zal werken","wij":"zullen werken","jullie":"zullen werken","zij":"zullen werken"}}}},{"i":"openen","e":"to open","s":"open","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"open","jij":"opent","hij/zij":"opent","wij":"openen","jullie":"openen","zij":"openen"}},"pa":{"c":{"ik":"opende","jij":"opende","hij/zij":"opende","wij":"openden","jullie":"openden","zij":"openden"}},"pe":{"c":{"ik":"heb geopend","jij":"hebt geopend","hij/zij":"heeft geopend","wij":"hebben geopend","jullie":"hebben geopend","zij":"hebben geopend"}},"fu":{"c":{"ik":"zal openen","jij":"zult openen","hij/zij":"zal openen","wij":"zullen openen","jullie":"zullen openen","zij":"zullen openen"}}}},{"i":"sluiten","e":"to close","s":"sluit","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"sluit","jij":"sluit","hij/zij":"sluit","wij":"sluiten","jullie":"sluiten","zij":"sluiten"}},"pa":{"c":{"ik":"sloot","jij":"sloot","hij/zij":"sloot","wij":"sloten","jullie":"sloten","zij":"sloten"}},"pe":{"c":{"ik":"heb gesloten","jij":"hebt gesloten","hij/zij":"heeft gesloten","wij":"hebben gesloten","jullie":"hebben gesloten","zij":"hebben gesloten"}},"fu":{"c":{"ik":"zal sluiten","jij":"zult sluiten","hij/zij":"zal sluiten","wij":"zullen sluiten","jullie":"zullen sluiten","zij":"zullen sluiten"}}}},{"i":"wandelen","e":"to stroll","s":"wandel","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"wandel","jij":"wandelt","hij/zij":"wandelt","wij":"wandelen","jullie":"wandelen","zij":"wandelen"}},"pa":{"c":{"ik":"wandelde","jij":"wandelde","hij/zij":"wandelde","wij":"wandelden","jullie":"wandelden","zij":"wandelden"}},"pe":{"c":{"ik":"heb gewandeld","jij":"hebt gewandeld","hij/zij":"heeft gewandeld","wij":"hebben gewandeld","jullie":"hebben gewandeld","zij":"hebben gewandeld"}},"fu":{"c":{"ik":"zal wandelen","jij":"zult wandelen","hij/zij":"zal wandelen","wij":"zullen wandelen","jullie":"zullen wandelen","zij":"zullen wandelen"}}}},{"i":"fietsen","e":"to cycle","s":"fiets","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"fiets","jij":"fietst","hij/zij":"fietst","wij":"fietsen","jullie":"fietsen","zij":"fietsen"}},"pa":{"c":{"ik":"fietste","jij":"fietste","hij/zij":"fietste","wij":"fietsten","jullie":"fietsten","zij":"fietsten"}},"pe":{"c":{"ik":"heb gefietst","jij":"hebt gefietst","hij/zij":"heeft gefietst","wij":"hebben gefietst","jullie":"hebben gefietst","zij":"hebben gefietst"}},"fu":{"c":{"ik":"zal fietsen","jij":"zult fietsen","hij/zij":"zal fietsen","wij":"zullen fietsen","jullie":"zullen fietsen","zij":"zullen fietsen"}}}},{"i":"zwemmen","e":"to swim","s":"zwem","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"zwem","jij":"zwemt","hij/zij":"zwemt","wij":"zwemmen","jullie":"zwemmen","zij":"zwemmen"}},"pa":{"c":{"ik":"zwom","jij":"zwom","hij/zij":"zwom","wij":"zwommen","jullie":"zwommen","zij":"zwommen"}},"pe":{"c":{"ik":"heb gezwommen","jij":"hebt gezwommen","hij/zij":"heeft gezwommen","wij":"hebben gezwommen","jullie":"hebben gezwommen","zij":"hebben gezwommen"}},"fu":{"c":{"ik":"zal zwemmen","jij":"zult zwemmen","hij/zij":"zal zwemmen","wij":"zullen zwemmen","jullie":"zullen zwemmen","zij":"zullen zwemmen"}}}},{"i":"luisteren","e":"to listen","s":"luister","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"luister","jij":"luistert","hij/zij":"luistert","wij":"luisteren","jullie":"luisteren","zij":"luisteren"}},"pa":{"c":{"ik":"luisterde","jij":"luisterde","hij/zij":"luisterde","wij":"luisterden","jullie":"luisterden","zij":"luisterden"}},"pe":{"c":{"ik":"heb geluisterd","jij":"hebt geluisterd","hij/zij":"heeft geluisterd","wij":"hebben geluisterd","jullie":"hebben geluisterd","zij":"hebben geluisterd"}},"fu":{"c":{"ik":"zal luisteren","jij":"zult luisteren","hij/zij":"zal luisteren","wij":"zullen luisteren","jullie":"zullen luisteren","zij":"zullen luisteren"}}}},{"i":"kijken","e":"to watch","s":"kijk","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"kijk","jij":"kijkt","hij/zij":"kijkt","wij":"kijken","jullie":"kijken","zij":"kijken"}},"pa":{"c":{"ik":"keek","jij":"keek","hij/zij":"keek","wij":"keken","jullie":"keken","zij":"keken"}},"pe":{"c":{"ik":"heb gekeken","jij":"hebt gekeken","hij/zij":"heeft gekeken","wij":"hebben gekeken","jullie":"hebben gekeken","zij":"hebben gekeken"}},"fu":{"c":{"ik":"zal kijken","jij":"zult kijken","hij/zij":"zal kijken","wij":"zullen kijken","jullie":"zullen kijken","zij":"zullen kijken"}}}},{"i":"beloven","e":"to promise","s":"beloof","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"beloof","jij":"belooft","hij/zij":"belooft","wij":"beloven","jullie":"beloven","zij":"beloven"}},"pa":{"c":{"ik":"beloofde","jij":"beloofde","hij/zij":"beloofde","wij":"beloofden","jullie":"beloofden","zij":"beloofden"}},"pe":{"c":{"ik":"heb beloofd","jij":"hebt beloofd","hij/zij":"heeft beloofd","wij":"hebben beloofd","jullie":"hebben beloofd","zij":"hebben beloofd"}},"fu":{"c":{"ik":"zal beloven","jij":"zult beloven","hij/zij":"zal beloven","wij":"zullen beloven","jullie":"zullen beloven","zij":"zullen beloven"}}}},{"i":"vragen","e":"to ask","s":"vraag","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"vraag","jij":"vraagt","hij/zij":"vraagt","wij":"vragen","jullie":"vragen","zij":"vragen"}},"pa":{"c":{"ik":"vroeg","jij":"vroeg","hij/zij":"vroeg","wij":"vroegen","jullie":"vroegen","zij":"vroegen"}},"pe":{"c":{"ik":"heb gevraagd","jij":"hebt gevraagd","hij/zij":"heeft gevraagd","wij":"hebben gevraagd","jullie":"hebben gevraagd","zij":"hebben gevraagd"}},"fu":{"c":{"ik":"zal vragen","jij":"zult vragen","hij/zij":"zal vragen","wij":"zullen vragen","jullie":"zullen vragen","zij":"zullen vragen"}}}},{"i":"antwoorden","e":"to answer","s":"antwoord","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"antwoord","jij":"antwoordt","hij/zij":"antwoordt","wij":"antwoorden","jullie":"antwoorden","zij":"antwoorden"}},"pa":{"c":{"ik":"antwoordde","jij":"antwoordde","hij/zij":"antwoordde","wij":"antwoordden","jullie":"antwoordden","zij":"antwoordden"}},"pe":{"c":{"ik":"heb geantwoord","jij":"hebt geantwoord","hij/zij":"heeft geantwoord","wij":"hebben geantwoord","jullie":"hebben geantwoord","zij":"hebben geantwoord"}},"fu":{"c":{"ik":"zal antwoorden","jij":"zult antwoorden","hij/zij":"zal antwoorden","wij":"zullen antwoorden","jullie":"zullen antwoorden","zij":"zullen antwoorden"}}}},{"i":"schrijven","e":"to write","s":"schrijf","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"schrijf","jij":"schrijft","hij/zij":"schrijft","wij":"schrijven","jullie":"schrijven","zij":"schrijven"}},"pa":{"c":{"ik":"schreef","jij":"schreef","hij/zij":"schreef","wij":"schreven","jullie":"schreven","zij":"schreven"}},"pe":{"c":{"ik":"heb geschreven","jij":"hebt geschreven","hij/zij":"heeft geschreven","wij":"hebben geschreven","jullie":"hebben geschreven","zij":"hebben geschreven"}},"fu":{"c":{"ik":"zal schrijven","jij":"zult schrijven","hij/zij":"zal schrijven","wij":"zullen schrijven","jullie":"zullen schrijven","zij":"zullen schrijven"}}}},{"i":"lezen","e":"to read","s":"lees","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"lees","jij":"leest","hij/zij":"leest","wij":"lezen","jullie":"lezen","zij":"lezen"}},"pa":{"c":{"ik":"las","jij":"las","hij/zij":"las","wij":"lazen","jullie":"lazen","zij":"lazen"}},"pe":{"c":{"ik":"heb gelezen","jij":"hebt gelezen","hij/zij":"heeft gelezen","wij":"hebben gelezen","jullie":"hebben gelezen","zij":"hebben gelezen"}},"fu":{"c":{"ik":"zal lezen","jij":"zult lezen","hij/zij":"zal lezen","wij":"zullen lezen","jullie":"zullen lezen","zij":"zullen lezen"}}}},{"i":"studeren","e":"to study","s":"studeer","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"studeer","jij":"studeert","hij/zij":"studeert","wij":"studeren","jullie":"studeren","zij":"studeren"}},"pa":{"c":{"ik":"studeerde","jij":"studeerde","hij/zij":"studeerde","wij":"studeerden","jullie":"studeerden","zij":"studeerden"}},"pe":{"c":{"ik":"heb gestudeerd","jij":"hebt gestudeerd","hij/zij":"heeft gestudeerd","wij":"hebben gestudeerd","jullie":"hebben gestudeerd","zij":"hebben gestudeerd"}},"fu":{"c":{"ik":"zal studeren","jij":"zult studeren","hij/zij":"zal studeren","wij":"zullen studeren","jullie":"zullen studeren","zij":"zullen studeren"}}}},{"i":"reizen","e":"to travel","s":"reis","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"reis","jij":"reist","hij/zij":"reist","wij":"reizen","jullie":"reizen","zij":"reizen"}},"pa":{"c":{"ik":"reisde","jij":"reisde","hij/zij":"reisde","wij":"reisden","jullie":"reisden","zij":"reisden"}},"pe":{"c":{"ik":"heb gereisd","jij":"hebt gereisd","hij/zij":"heeft gereisd","wij":"hebben gereisd","jullie":"hebben gereisd","zij":"hebben gereisd"}},"fu":{"c":{"ik":"zal reizen","jij":"zult reizen","hij/zij":"zal reizen","wij":"zullen reizen","jullie":"zullen reizen","zij":"zullen reizen"}}}},{"i":"kopen","e":"to buy","s":"koop","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"koop","jij":"koopt","hij/zij":"koopt","wij":"kopen","jullie":"kopen","zij":"kopen"}},"pa":{"c":{"ik":"kocht","jij":"kocht","hij/zij":"kocht","wij":"kochten","jullie":"kochten","zij":"kochten"}},"pe":{"c":{"ik":"heb gekocht","jij":"hebt gekocht","hij/zij":"heeft gekocht","wij":"hebben gekocht","jullie":"hebben gekocht","zij":"hebben gekocht"}},"fu":{"c":{"ik":"zal kopen","jij":"zult kopen","hij/zij":"zal kopen","wij":"zullen kopen","jullie":"zullen kopen","zij":"zullen kopen"}}}},{"i":"verkopen","e":"to sell","s":"verkoop","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"verkoop","jij":"verkoopt","hij/zij":"verkoopt","wij":"verkopen","jullie":"verkopen","zij":"verkopen"}},"pa":{"c":{"ik":"verkocht","jij":"verkocht","hij/zij":"verkocht","wij":"verkochten","jullie":"verkochten","zij":"verkochten"}},"pe":{"c":{"ik":"heb verkocht","jij":"hebt verkocht","hij/zij":"heeft verkocht","wij":"hebben verkocht","jullie":"hebben verkocht","zij":"hebben verkocht"}},"fu":{"c":{"ik":"zal verkopen","jij":"zult verkopen","hij/zij":"zal verkopen","wij":"zullen verkopen","jullie":"zullen verkopen","zij":"zullen verkopen"}}}},{"i":"werken","e":"to work","s":"werk","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"werk","jij":"werkt","hij/zij":"werkt","wij":"werken","jullie":"werken","zij":"werken"}},"pa":{"c":{"ik":"werkte","jij":"werkte","hij/zij":"werkte","wij":"werkten","jullie":"werkten","zij":"werkten"}},"pe":{"c":{"ik":"heb gewerkt","jij":"hebt gewerkt","hij/zij":"heeft gewerkt","wij":"hebben gewerkt","jullie":"hebben gewerkt","zij":"hebben gewerkt"}},"fu":{"c":{"ik":"zal werken","jij":"zult werken","hij/zij":"zal werken","wij":"zullen werken","jullie":"zullen werken","zij":"zullen werken"}}}},{"i":"spelen","e":"to play","s":"speel","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"speel","jij":"speelt","hij/zij":"speelt","wij":"spelen","jullie":"spelen","zij":"spelen"}},"pa":{"c":{"ik":"speelde","jij":"speelde","hij/zij":"speelde","wij":"speelden","jullie":"speelden","zij":"speelden"}},"pe":{"c":{"ik":"heb gespeeld","jij":"hebt gespeeld","hij/zij":"heeft gespeeld","wij":"hebben gespeeld","jullie":"hebben gespeeld","zij":"hebben gespeeld"}},"fu":{"c":{"ik":"zal spelen","jij":"zult spelen","hij/zij":"zal spelen","wij":"zullen spelen","jullie":"zullen spelen","zij":"zullen spelen"}}}},{"i":"leren","e":"to learn","s":"leer","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"leer","jij":"leert","hij/zij":"leert","wij":"leren","jullie":"leren","zij":"leren"}},"pa":{"c":{"ik":"leerde","jij":"leerde","hij/zij":"leerde","wij":"leerden","jullie":"leerden","zij":"leerden"}},"pe":{"c":{"ik":"heb geleerd","jij":"hebt geleerd","hij/zij":"heeft geleerd","wij":"hebben geleerd","jullie":"hebben geleerd","zij":"hebben geleerd"}},"fu":{"c":{"ik":"zal leren","jij":"zult leren","hij/zij":"zal leren","wij":"zullen leren","jullie":"zullen leren","zij":"zullen leren"}}}},{"i":"beginnen","e":"to begin","s":"begin","l":"A2","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"begin","jij":"begint","hij/zij":"begint","wij":"beginnen","jullie":"beginnen","zij":"beginnen"}},"pa":{"c":{"ik":"begon","jij":"begon","hij/zij":"begon","wij":"begonnen","jullie":"begonnen","zij":"begonnen"}},"pe":{"c":{"ik":"ben begonnen","jij":"bent begonnen","hij/zij":"is begonnen","wij":"zijn begonnen","jullie":"zijn begonnen","zij":"zijn begonnen"}},"fu":{"c":{"ik":"zal beginnen","jij":"zult beginnen","hij/zij":"zal beginnen","wij":"zullen beginnen","jullie":"zullen beginnen","zij":"zullen beginnen"}}}},{"i":"vergeten","e":"to forget","s":"vergeet","l":"A2","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"vergeet","jij":"vergeet","hij/zij":"vergeet","wij":"vergeten","jullie":"vergeten","zij":"vergeten"}},"pa":{"c":{"ik":"vergat","jij":"vergat","hij/zij":"vergat","wij":"vergaten","jullie":"vergaten","zij":"vergaten"}},"pe":{"c":{"ik":"ben vergeten","jij":"bent vergeten","hij/zij":"is vergeten","wij":"zijn vergeten","jullie":"zijn vergeten","zij":"zijn vergeten"}},"fu":{"c":{"ik":"zal vergeten","jij":"zult vergeten","hij/zij":"zal vergeten","wij":"zullen vergeten","jullie":"zullen vergeten","zij":"zullen vergeten"}}}},{"i":"ontmoeten","e":"to meet","s":"ontmoet","l":"A2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"ontmoet","jij":"ontmoet","hij/zij":"ontmoet","wij":"ontmoeten","jullie":"ontmoeten","zij":"ontmoeten"}},"pa":{"c":{"ik":"ontmoette","jij":"ontmoette","hij/zij":"ontmoette","wij":"ontmoetten","jullie":"ontmoetten","zij":"ontmoetten"}},"pe":{"c":{"ik":"heb ontmoet","jij":"hebt ontmoet","hij/zij":"heeft ontmoet","wij":"hebben ontmoet","jullie":"hebben ontmoet","zij":"hebben ontmoet"}},"fu":{"c":{"ik":"zal ontmoeten","jij":"zult ontmoeten","hij/zij":"zal ontmoeten","wij":"zullen ontmoeten","jullie":"zullen ontmoeten","zij":"zullen ontmoeten"}}}},{"i":"verkopen","e":"to sell","s":"verkoop","l":"A2","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"verkoop","jij":"verkoopt","hij/zij":"verkoopt","wij":"verkopen","jullie":"verkopen","zij":"verkopen"}},"pa":{"c":{"ik":"verkocht","jij":"verkocht","hij/zij":"verkocht","wij":"verkochten","jullie":"verkochten","zij":"verkochten"}},"pe":{"c":{"ik":"heb verkocht","jij":"hebt verkocht","hij/zij":"heeft verkocht","wij":"hebben verkocht","jullie":"hebben verkocht","zij":"hebben verkocht"}},"fu":{"c":{"ik":"zal verkopen","jij":"zult verkopen","hij/zij":"zal verkopen","wij":"zullen verkopen","jullie":"zullen verkopen","zij":"zullen verkopen"}}}},{"i":"kopen","e":"to buy","s":"koop","l":"A2","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"koop","jij":"koopt","hij/zij":"koopt","wij":"kopen","jullie":"kopen","zij":"kopen"}},"pa":{"c":{"ik":"kocht","jij":"kocht","hij/zij":"kocht","wij":"kochten","jullie":"kochten","zij":"kochten"}},"pe":{"c":{"ik":"heb gekocht","jij":"hebt gekocht","hij/zij":"heeft gekocht","wij":"hebben gekocht","jullie":"hebben gekocht","zij":"hebben gekocht"}},"fu":{"c":{"ik":"zal kopen","jij":"zult kopen","hij/zij":"zal kopen","wij":"zullen kopen","jullie":"zullen kopen","zij":"zullen kopen"}}}},{"i":"vertellen","e":"to tell","s":"vertel","l":"A2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"vertel","jij":"vertelt","hij/zij":"vertelt","wij":"vertellen","jullie":"vertellen","zij":"vertellen"}},"pa":{"c":{"ik":"vertelde","jij":"vertelde","hij/zij":"vertelde","wij":"vertelden","jullie":"vertelden","zij":"vertelden"}},"pe":{"c":{"ik":"heb verteld","jij":"hebt verteld","hij/zij":"heeft verteld","wij":"hebben verteld","jullie":"hebben verteld","zij":"hebben verteld"}},"fu":{"c":{"ik":"zal vertellen","jij":"zult vertellen","hij/zij":"zal vertellen","wij":"zullen vertellen","jullie":"zullen vertellen","zij":"zullen vertellen"}}}},{"i":"begrijpen","e":"to understand","s":"begrijp","l":"A2","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"begrijp","jij":"begrijpt","hij/zij":"begrijpt","wij":"begrijpen","jullie":"begrijpen","zij":"begrijpen"}},"pa":{"c":{"ik":"begreep","jij":"begreep","hij/zij":"begreep","wij":"begrepen","jullie":"begrepen","zij":"begrepen"}},"pe":{"c":{"ik":"heb begrepen","jij":"hebt begrepen","hij/zij":"heeft begrepen","wij":"hebben begrepen","jullie":"hebben begrepen","zij":"hebben begrepen"}},"fu":{"c":{"ik":"zal begrijpen","jij":"zult begrijpen","hij/zij":"zal begrijpen","wij":"zullen begrijpen","jullie":"zullen begrijpen","zij":"zullen begrijpen"}}}},{"i":"geloven","e":"to believe","s":"geloof","l":"A2","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"geloof","jij":"gelooft","hij/zij":"gelooft","wij":"geloven","jullie":"geloven","zij":"geloven"}},"pa":{"c":{"ik":"geloofde","jij":"geloofde","hij/zij":"geloofde","wij":"geloofden","jullie":"geloofden","zij":"geloofden"}},"pe":{"c":{"ik":"heb geloofd","jij":"hebt geloofd","hij/zij":"heeft geloofd","wij":"hebben geloofd","jullie":"hebben geloofd","zij":"hebben geloofd"}},"fu":{"c":{"ik":"zal geloven","jij":"zult geloven","hij/zij":"zal geloven","wij":"zullen geloven","jullie":"zullen geloven","zij":"zullen geloven"}}}},{"i":"verliezen","e":"to lose","s":"verlies","l":"A2","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"verlies","jij":"verliest","hij/zij":"verliest","wij":"verliezen","jullie":"verliezen","zij":"verliezen"}},"pa":{"c":{"ik":"verloor","jij":"verloor","hij/zij":"verloor","wij":"verloren","jullie":"verloren","zij":"verloren"}},"pe":{"c":{"ik":"heb verloren","jij":"hebt verloren","hij/zij":"heeft verloren","wij":"hebben verloren","jullie":"hebben verloren","zij":"hebben verloren"}},"fu":{"c":{"ik":"zal verliezen","jij":"zult verliezen","hij/zij":"zal verliezen","wij":"zullen verliezen","jullie":"zullen verliezen","zij":"zullen verliezen"}}}},{"i":"winnen","e":"to win","s":"win","l":"A2","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"win","jij":"wint","hij/zij":"wint","wij":"winnen","jullie":"winnen","zij":"winnen"}},"pa":{"c":{"ik":"won","jij":"won","hij/zij":"won","wij":"wonnen","jullie":"wonnen","zij":"wonnen"}},"pe":{"c":{"ik":"heb gewonnen","jij":"hebt gewonnen","hij/zij":"heeft gewonnen","wij":"hebben gewonnen","jullie":"hebben gewonnen","zij":"hebben gewonnen"}},"fu":{"c":{"ik":"zal winnen","jij":"zult winnen","hij/zij":"zal winnen","wij":"zullen winnen","jullie":"zullen winnen","zij":"zullen winnen"}}}},{"i":"kiezen","e":"to choose","s":"kies","l":"A2","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"kies","jij":"kiest","hij/zij":"kiest","wij":"kiezen","jullie":"kiezen","zij":"kiezen"}},"pa":{"c":{"ik":"koos","jij":"koos","hij/zij":"koos","wij":"kozen","jullie":"kozen","zij":"kozen"}},"pe":{"c":{"ik":"heb gekozen","jij":"hebt gekozen","hij/zij":"heeft gekozen","wij":"hebben gekozen","jullie":"hebben gekozen","zij":"hebben gekozen"}},"fu":{"c":{"ik":"zal kiezen","jij":"zult kiezen","hij/zij":"zal kiezen","wij":"zullen kiezen","jullie":"zullen kiezen","zij":"zullen kiezen"}}}},{"i":"beslissen","e":"to decide","s":"beslis","l":"A2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"beslis","jij":"beslist","hij/zij":"beslist","wij":"beslissen","jullie":"beslissen","zij":"beslissen"}},"pa":{"c":{"ik":"besliste","jij":"besliste","hij/zij":"besliste","wij":"beslisten","jullie":"beslisten","zij":"beslisten"}},"pe":{"c":{"ik":"heb beslist","jij":"hebt beslist","hij/zij":"heeft beslist","wij":"hebben beslist","jullie":"hebben beslist","zij":"hebben beslist"}},"fu":{"c":{"ik":"zal beslissen","jij":"zult beslissen","hij/zij":"zal beslissen","wij":"zullen beslissen","jullie":"zullen beslissen","zij":"zullen beslissen"}}}},{"i":"proberen","e":"to try","s":"probeer","l":"A2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"probeer","jij":"probeert","hij/zij":"probeert","wij":"proberen","jullie":"proberen","zij":"proberen"}},"pa":{"c":{"ik":"probeerde","jij":"probeerde","hij/zij":"probeerde","wij":"probeerden","jullie":"probeerden","zij":"probeerden"}},"pe":{"c":{"ik":"heb geprobeerd","jij":"hebt geprobeerd","hij/zij":"heeft geprobeerd","wij":"hebben geprobeerd","jullie":"hebben geprobeerd","zij":"hebben geprobeerd"}},"fu":{"c":{"ik":"zal proberen","jij":"zult proberen","hij/zij":"zal proberen","wij":"zullen proberen","jullie":"zullen proberen","zij":"zullen proberen"}}}},{"i":"stoppen","e":"to stop","s":"stop","l":"A2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"stop","jij":"stopt","hij/zij":"stopt","wij":"stoppen","jullie":"stoppen","zij":"stoppen"}},"pa":{"c":{"ik":"stopte","jij":"stopte","hij/zij":"stopte","wij":"stopten","jullie":"stopten","zij":"stopten"}},"pe":{"c":{"ik":"ben gestopt","jij":"bent gestopt","hij/zij":"is gestopt","wij":"zijn gestopt","jullie":"zijn gestopt","zij":"zijn gestopt"}},"fu":{"c":{"ik":"zal stoppen","jij":"zult stoppen","hij/zij":"zal stoppen","wij":"zullen stoppen","jullie":"zullen stoppen","zij":"zullen stoppen"}}}},{"i":"veranderen","e":"to change","s":"verander","l":"A2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"verander","jij":"verandert","hij/zij":"verandert","wij":"veranderen","jullie":"veranderen","zij":"veranderen"}},"pa":{"c":{"ik":"veranderde","jij":"veranderde","hij/zij":"veranderde","wij":"veranderden","jullie":"veranderden","zij":"veranderden"}},"pe":{"c":{"ik":"ben veranderd","jij":"bent veranderd","hij/zij":"is veranderd","wij":"zijn veranderd","jullie":"zijn veranderd","zij":"zijn veranderd"}},"fu":{"c":{"ik":"zal veranderen","jij":"zult veranderen","hij/zij":"zal veranderen","wij":"zullen veranderen","jullie":"zullen veranderen","zij":"zullen veranderen"}}}},{"i":"gebeuren","e":"to happen","s":"gebeur","l":"A2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"gebeur","jij":"gebeurt","hij/zij":"gebeurt","wij":"gebeuren","jullie":"gebeuren","zij":"gebeuren"}},"pa":{"c":{"ik":"gebeurde","jij":"gebeurde","hij/zij":"gebeurde","wij":"gebeurden","jullie":"gebeurden","zij":"gebeurden"}},"pe":{"c":{"ik":"ben gebeurd","jij":"bent gebeurd","hij/zij":"is gebeurd","wij":"zijn gebeurd","jullie":"zijn gebeurd","zij":"zijn gebeurd"}},"fu":{"c":{"ik":"zal gebeuren","jij":"zult gebeuren","hij/zij":"zal gebeuren","wij":"zullen gebeuren","jullie":"zullen gebeuren","zij":"zullen gebeuren"}}}},{"i":"betekenen","e":"to mean","s":"beteken","l":"A2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"beteken","jij":"betekent","hij/zij":"betekent","wij":"betekenen","jullie":"betekenen","zij":"betekenen"}},"pa":{"c":{"ik":"betekende","jij":"betekende","hij/zij":"betekende","wij":"betekenden","jullie":"betekenden","zij":"betekenden"}},"pe":{"c":{"ik":"heb betekend","jij":"hebt betekend","hij/zij":"heeft betekend","wij":"hebben betekend","jullie":"hebben betekend","zij":"hebben betekend"}},"fu":{"c":{"ik":"zal betekenen","jij":"zult betekenen","hij/zij":"zal betekenen","wij":"zullen betekenen","jullie":"zullen betekenen","zij":"zullen betekenen"}}}},{"i":"voelen","e":"to feel","s":"voel","l":"A2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"voel","jij":"voelt","hij/zij":"voelt","wij":"voelen","jullie":"voelen","zij":"voelen"}},"pa":{"c":{"ik":"voelde","jij":"voelde","hij/zij":"voelde","wij":"voelden","jullie":"voelden","zij":"voelden"}},"pe":{"c":{"ik":"heb gevoeld","jij":"hebt gevoeld","hij/zij":"heeft gevoeld","wij":"hebben gevoeld","jullie":"hebben gevoeld","zij":"hebben gevoeld"}},"fu":{"c":{"ik":"zal voelen","jij":"zult voelen","hij/zij":"zal voelen","wij":"zullen voelen","jullie":"zullen voelen","zij":"zullen voelen"}}}},{"i":"horen","e":"to hear","s":"hoor","l":"A2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"hoor","jij":"hoort","hij/zij":"hoort","wij":"horen","jullie":"horen","zij":"horen"}},"pa":{"c":{"ik":"hoorde","jij":"hoorde","hij/zij":"hoorde","wij":"hoorden","jullie":"hoorden","zij":"hoorden"}},"pe":{"c":{"ik":"heb gehoord","jij":"hebt gehoord","hij/zij":"heeft gehoord","wij":"hebben gehoord","jullie":"hebben gehoord","zij":"hebben gehoord"}},"fu":{"c":{"ik":"zal horen","jij":"zult horen","hij/zij":"zal horen","wij":"zullen horen","jullie":"zullen horen","zij":"zullen horen"}}}},{"i":"ruiken","e":"to smell","s":"ruik","l":"A2","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"ruik","jij":"ruikt","hij/zij":"ruikt","wij":"ruiken","jullie":"ruiken","zij":"ruiken"}},"pa":{"c":{"ik":"rook","jij":"rook","hij/zij":"rook","wij":"roken","jullie":"roken","zij":"roken"}},"pe":{"c":{"ik":"heb geroken","jij":"hebt geroken","hij/zij":"heeft geroken","wij":"hebben geroken","jullie":"hebben geroken","zij":"hebben geroken"}},"fu":{"c":{"ik":"zal ruiken","jij":"zult ruiken","hij/zij":"zal ruiken","wij":"zullen ruiken","jullie":"zullen ruiken","zij":"zullen ruiken"}}}},{"i":"proeven","e":"to taste","s":"proef","l":"A2","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"proef","jij":"proeft","hij/zij":"proeft","wij":"proeven","jullie":"proeven","zij":"proeven"}},"pa":{"c":{"ik":"proefde","jij":"proefde","hij/zij":"proefde","wij":"proefden","jullie":"proefden","zij":"proefden"}},"pe":{"c":{"ik":"heb geproefd","jij":"hebt geproefd","hij/zij":"heeft geproefd","wij":"hebben geproefd","jullie":"hebben geproefd","zij":"hebben geproefd"}},"fu":{"c":{"ik":"zal proeven","jij":"zult proeven","hij/zij":"zal proeven","wij":"zullen proeven","jullie":"zullen proeven","zij":"zullen proeven"}}}},{"i":"ontdekken","e":"to discover","s":"ontdek","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"ontdek","jij":"ontdekt","hij/zij":"ontdekt","wij":"ontdekken","jullie":"ontdekken","zij":"ontdekken"}},"pa":{"c":{"ik":"ontdekte","jij":"ontdekte","hij/zij":"ontdekte","wij":"ontdekten","jullie":"ontdekten","zij":"ontdekten"}},"pe":{"c":{"ik":"heb ontdekt","jij":"hebt ontdekt","hij/zij":"heeft ontdekt","wij":"hebben ontdekt","jullie":"hebben ontdekt","zij":"hebben ontdekt"}},"fu":{"c":{"ik":"zal ontdekken","jij":"zult ontdekken","hij/zij":"zal ontdekken","wij":"zullen ontdekken","jullie":"zullen ontdekken","zij":"zullen ontdekken"}}}},{"i":"bereiken","e":"to reach","s":"bereik","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"bereik","jij":"bereikt","hij/zij":"bereikt","wij":"bereiken","jullie":"bereiken","zij":"bereiken"}},"pa":{"c":{"ik":"bereikte","jij":"bereikte","hij/zij":"bereikte","wij":"bereikten","jullie":"bereikten","zij":"bereikten"}},"pe":{"c":{"ik":"heb bereikt","jij":"hebt bereikt","hij/zij":"heeft bereikt","wij":"hebben bereikt","jullie":"hebben bereikt","zij":"hebben bereikt"}},"fu":{"c":{"ik":"zal bereiken","jij":"zult bereiken","hij/zij":"zal bereiken","wij":"zullen bereiken","jullie":"zullen bereiken","zij":"zullen bereiken"}}}},{"i":"bezoeken","e":"to visit","s":"bezoek","l":"B1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"bezoek","jij":"bezoekt","hij/zij":"bezoekt","wij":"bezoeken","jullie":"bezoeken","zij":"bezoeken"}},"pa":{"c":{"ik":"bezocht","jij":"bezocht","hij/zij":"bezocht","wij":"bezochten","jullie":"bezochten","zij":"bezochten"}},"pe":{"c":{"ik":"heb bezocht","jij":"hebt bezocht","hij/zij":"heeft bezocht","wij":"hebben bezocht","jullie":"hebben bezocht","zij":"hebben bezocht"}},"fu":{"c":{"ik":"zal bezoeken","jij":"zult bezoeken","hij/zij":"zal bezoeken","wij":"zullen bezoeken","jullie":"zullen bezoeken","zij":"zullen bezoeken"}}}},{"i":"verbeteren","e":"to improve","s":"verbeter","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"verbeter","jij":"verbetert","hij/zij":"verbetert","wij":"verbeteren","jullie":"verbeteren","zij":"verbeteren"}},"pa":{"c":{"ik":"verbeterde","jij":"verbeterde","hij/zij":"verbeterde","wij":"verbeterden","jullie":"verbeterden","zij":"verbeterden"}},"pe":{"c":{"ik":"heb verbeterd","jij":"hebt verbeterd","hij/zij":"heeft verbeterd","wij":"hebben verbeterd","jullie":"hebben verbeterd","zij":"hebben verbeterd"}},"fu":{"c":{"ik":"zal verbeteren","jij":"zult verbeteren","hij/zij":"zal verbeteren","wij":"zullen verbeteren","jullie":"zullen verbeteren","zij":"zullen verbeteren"}}}},{"i":"organiseren","e":"to organize","s":"organiseer","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"organiseer","jij":"organiseert","hij/zij":"organiseert","wij":"organiseren","jullie":"organiseren","zij":"organiseren"}},"pa":{"c":{"ik":"organiseerde","jij":"organiseerde","hij/zij":"organiseerde","wij":"organiseerden","jullie":"organiseerden","zij":"organiseerden"}},"pe":{"c":{"ik":"heb georganiseerd","jij":"hebt georganiseerd","hij/zij":"heeft georganiseerd","wij":"hebben georganiseerd","jullie":"hebben georganiseerd","zij":"hebben georganiseerd"}},"fu":{"c":{"ik":"zal organiseren","jij":"zult organiseren","hij/zij":"zal organiseren","wij":"zullen organiseren","jullie":"zullen organiseren","zij":"zullen organiseren"}}}},{"i":"plannen","e":"to plan","s":"plan","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"plan","jij":"plant","hij/zij":"plant","wij":"plannen","jullie":"plannen","zij":"plannen"}},"pa":{"c":{"ik":"plande","jij":"plande","hij/zij":"plande","wij":"planden","jullie":"planden","zij":"planden"}},"pe":{"c":{"ik":"heb gepland","jij":"hebt gepland","hij/zij":"heeft gepland","wij":"hebben gepland","jullie":"hebben gepland","zij":"hebben gepland"}},"fu":{"c":{"ik":"zal plannen","jij":"zult plannen","hij/zij":"zal plannen","wij":"zullen plannen","jullie":"zullen plannen","zij":"zullen plannen"}}}},{"i":"voorstellen","e":"to propose","s":"stel voor","l":"B1","sp":true,"ir":false,"t":{"pr":{"c":{"ik":"stel voor","jij":"stelt voor","hij/zij":"stelt voor","wij":"stellen voor","jullie":"stellen voor","zij":"stellen voor"}},"pa":{"c":{"ik":"stelde voor","jij":"stelde voor","hij/zij":"stelde voor","wij":"stelden voor","jullie":"stelden voor","zij":"stelden voor"}},"pe":{"c":{"ik":"heb voorgesteld","jij":"hebt voorgesteld","hij/zij":"heeft voorgesteld","wij":"hebben voorgesteld","jullie":"hebben voorgesteld","zij":"hebben voorgesteld"}},"fu":{"c":{"ik":"zal voorstellen","jij":"zult voorstellen","hij/zij":"zal voorstellen","wij":"zullen voorstellen","jullie":"zullen voorstellen","zij":"zullen voorstellen"}}}},{"i":"aanbevelen","e":"to recommend","s":"beveel aan","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"beveel aan","jij":"beveelt aan","hij/zij":"beveelt aan","wij":"bevelen aan","jullie":"bevelen aan","zij":"bevelen aan"}},"pa":{"c":{"ik":"beval aan","jij":"beval aan","hij/zij":"beval aan","wij":"bevalen aan","jullie":"bevalen aan","zij":"bevalen aan"}},"pe":{"c":{"ik":"heb aanbevolen","jij":"hebt aanbevolen","hij/zij":"heeft aanbevolen","wij":"hebben aanbevolen","jullie":"hebben aanbevolen","zij":"hebben aanbevolen"}},"fu":{"c":{"ik":"zal aanbevelen","jij":"zult aanbevelen","hij/zij":"zal aanbevelen","wij":"zullen aanbevelen","jullie":"zullen aanbevelen","zij":"zullen aanbevelen"}}}},{"i":"waarschuwen","e":"to warn","s":"waarschuw","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"waarschuw","jij":"waarschuwt","hij/zij":"waarschuwt","wij":"waarschuwen","jullie":"waarschuwen","zij":"waarschuwen"}},"pa":{"c":{"ik":"waarschuwde","jij":"waarschuwde","hij/zij":"waarschuwde","wij":"waarschuwden","jullie":"waarschuwden","zij":"waarschuwden"}},"pe":{"c":{"ik":"heb gewaarschuwd","jij":"hebt gewaarschuwd","hij/zij":"heeft gewaarschuwd","wij":"hebben gewaarschuwd","jullie":"hebben gewaarschuwd","zij":"hebben gewaarschuwd"}},"fu":{"c":{"ik":"zal waarschuwen","jij":"zult waarschuwen","hij/zij":"zal waarschuwen","wij":"zullen waarschuwen","jullie":"zullen waarschuwen","zij":"zullen waarschuwen"}}}},{"i":"beschermen","e":"to protect","s":"bescherm","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"bescherm","jij":"beschermt","hij/zij":"beschermt","wij":"beschermen","jullie":"beschermen","zij":"beschermen"}},"pa":{"c":{"ik":"beschermde","jij":"beschermde","hij/zij":"beschermde","wij":"beschermden","jullie":"beschermden","zij":"beschermden"}},"pe":{"c":{"ik":"heb beschermd","jij":"hebt beschermd","hij/zij":"heeft beschermd","wij":"hebben beschermd","jullie":"hebben beschermd","zij":"hebben beschermd"}},"fu":{"c":{"ik":"zal beschermen","jij":"zult beschermen","hij/zij":"zal beschermen","wij":"zullen beschermen","jullie":"zullen beschermen","zij":"zullen beschermen"}}}},{"i":"onderzoeken","e":"to investigate","s":"onderzoek","l":"B1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"onderzoek","jij":"onderzoekt","hij/zij":"onderzoekt","wij":"onderzoeken","jullie":"onderzoeken","zij":"onderzoeken"}},"pa":{"c":{"ik":"onderzocht","jij":"onderzocht","hij/zij":"onderzocht","wij":"onderzochten","jullie":"onderzochten","zij":"onderzochten"}},"pe":{"c":{"ik":"heb onderzocht","jij":"hebt onderzocht","hij/zij":"heeft onderzocht","wij":"hebben onderzocht","jullie":"hebben onderzocht","zij":"hebben onderzocht"}},"fu":{"c":{"ik":"zal onderzoeken","jij":"zult onderzoeken","hij/zij":"zal onderzoeken","wij":"zullen onderzoeken","jullie":"zullen onderzoeken","zij":"zullen onderzoeken"}}}},{"i":"bewijzen","e":"to prove","s":"bewijs","l":"B1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"bewijs","jij":"bewijst","hij/zij":"bewijst","wij":"bewijzen","jullie":"bewijzen","zij":"bewijzen"}},"pa":{"c":{"ik":"bewees","jij":"bewees","hij/zij":"bewees","wij":"bewezen","jullie":"bewezen","zij":"bewezen"}},"pe":{"c":{"ik":"heb bewezen","jij":"hebt bewezen","hij/zij":"heeft bewezen","wij":"hebben bewezen","jullie":"hebben bewezen","zij":"hebben bewezen"}},"fu":{"c":{"ik":"zal bewijzen","jij":"zult bewijzen","hij/zij":"zal bewijzen","wij":"zullen bewijzen","jullie":"zullen bewijzen","zij":"zullen bewijzen"}}}},{"i":"bevestigen","e":"to confirm","s":"bevestig","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"bevestig","jij":"bevestigt","hij/zij":"bevestigt","wij":"bevestigen","jullie":"bevestigen","zij":"bevestigen"}},"pa":{"c":{"ik":"bevestigde","jij":"bevestigde","hij/zij":"bevestigde","wij":"bevestigden","jullie":"bevestigden","zij":"bevestigden"}},"pe":{"c":{"ik":"heb bevestigd","jij":"hebt bevestigd","hij/zij":"heeft bevestigd","wij":"hebben bevestigd","jullie":"hebben bevestigd","zij":"hebben bevestigd"}},"fu":{"c":{"ik":"zal bevestigen","jij":"zult bevestigen","hij/zij":"zal bevestigen","wij":"zullen bevestigen","jullie":"zullen bevestigen","zij":"zullen bevestigen"}}}},{"i":"weigeren","e":"to refuse","s":"weiger","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"weiger","jij":"weigert","hij/zij":"weigert","wij":"weigeren","jullie":"weigeren","zij":"weigeren"}},"pa":{"c":{"ik":"weigerde","jij":"weigerde","hij/zij":"weigerde","wij":"weigerden","jullie":"weigerden","zij":"weigerden"}},"pe":{"c":{"ik":"heb geweigerd","jij":"hebt geweigerd","hij/zij":"heeft geweigerd","wij":"hebben geweigerd","jullie":"hebben geweigerd","zij":"hebben geweigerd"}},"fu":{"c":{"ik":"zal weigeren","jij":"zult weigeren","hij/zij":"zal weigeren","wij":"zullen weigeren","jullie":"zullen weigeren","zij":"zullen weigeren"}}}},{"i":"toestaan","e":"to allow","s":"sta toe","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"sta toe","jij":"staat toe","hij/zij":"staat toe","wij":"staan toe","jullie":"staan toe","zij":"staan toe"}},"pa":{"c":{"ik":"stond toe","jij":"stond toe","hij/zij":"stond toe","wij":"stonden toe","jullie":"stonden toe","zij":"stonden toe"}},"pe":{"c":{"ik":"heb toegestaan","jij":"hebt toegestaan","hij/zij":"heeft toegestaan","wij":"hebben toegestaan","jullie":"hebben toegestaan","zij":"hebben toegestaan"}},"fu":{"c":{"ik":"zal toestaan","jij":"zult toestaan","hij/zij":"zal toestaan","wij":"zullen toestaan","jullie":"zullen toestaan","zij":"zullen toestaan"}}}},{"i":"verdedigen","e":"to defend","s":"verdedig","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"verdedig","jij":"verdedigt","hij/zij":"verdedigt","wij":"verdedigen","jullie":"verdedigen","zij":"verdedigen"}},"pa":{"c":{"ik":"verdedigde","jij":"verdedigde","hij/zij":"verdedigde","wij":"verdedigden","jullie":"verdedigden","zij":"verdedigden"}},"pe":{"c":{"ik":"heb verdedigd","jij":"hebt verdedigd","hij/zij":"heeft verdedigd","wij":"hebben verdedigd","jullie":"hebben verdedigd","zij":"hebben verdedigd"}},"fu":{"c":{"ik":"zal verdedigen","jij":"zult verdedigen","hij/zij":"zal verdedigen","wij":"zullen verdedigen","jullie":"zullen verdedigen","zij":"zullen verdedigen"}}}},{"i":"verminderen","e":"to reduce","s":"verminder","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"verminder","jij":"vermindert","hij/zij":"vermindert","wij":"verminderen","jullie":"verminderen","zij":"verminderen"}},"pa":{"c":{"ik":"verminderde","jij":"verminderde","hij/zij":"verminderde","wij":"verminderden","jullie":"verminderden","zij":"verminderden"}},"pe":{"c":{"ik":"heb verminderd","jij":"hebt verminderd","hij/zij":"heeft verminderd","wij":"hebben verminderd","jullie":"hebben verminderd","zij":"hebben verminderd"}},"fu":{"c":{"ik":"zal verminderen","jij":"zult verminderen","hij/zij":"zal verminderen","wij":"zullen verminderen","jullie":"zullen verminderen","zij":"zullen verminderen"}}}},{"i":"verhogen","e":"to increase","s":"verhoog","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"verhoog","jij":"verhoogt","hij/zij":"verhoogt","wij":"verhogen","jullie":"verhogen","zij":"verhogen"}},"pa":{"c":{"ik":"verhoogde","jij":"verhoogde","hij/zij":"verhoogde","wij":"verhoogden","jullie":"verhoogden","zij":"verhoogden"}},"pe":{"c":{"ik":"heb verhoogd","jij":"hebt verhoogd","hij/zij":"heeft verhoogd","wij":"hebben verhoogd","jullie":"hebben verhoogd","zij":"hebben verhoogd"}},"fu":{"c":{"ik":"zal verhogen","jij":"zult verhogen","hij/zij":"zal verhogen","wij":"zullen verhogen","jullie":"zullen verhogen","zij":"zullen verhogen"}}}},{"i":"aanvallen","e":"to attack","s":"val aan","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"val aan","jij":"valt aan","hij/zij":"valt aan","wij":"vallen aan","jullie":"vallen aan","zij":"vallen aan"}},"pa":{"c":{"ik":"viel aan","jij":"viel aan","hij/zij":"viel aan","wij":"vielen aan","jullie":"vielen aan","zij":"vielen aan"}},"pe":{"c":{"ik":"heb aangevallen","jij":"hebt aangevallen","hij/zij":"heeft aangevallen","wij":"hebben aangevallen","jullie":"hebben aangevallen","zij":"hebben aangevallen"}},"fu":{"c":{"ik":"zal aanvallen","jij":"zult aanvallen","hij/zij":"zal aanvallen","wij":"zullen aanvallen","jullie":"zullen aanvallen","zij":"zullen aanvallen"}}}},{"i":"ontkennen","e":"to deny","s":"ontken","l":"B1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"ontken","jij":"ontkent","hij/zij":"ontkent","wij":"ontkennen","jullie":"ontkennen","zij":"ontkennen"}},"pa":{"c":{"ik":"ontkende","jij":"ontkende","hij/zij":"ontkende","wij":"ontkenden","jullie":"ontkenden","zij":"ontkenden"}},"pe":{"c":{"ik":"heb ontkend","jij":"hebt ontkend","hij/zij":"heeft ontkend","wij":"hebben ontkend","jullie":"hebben ontkend","zij":"hebben ontkend"}},"fu":{"c":{"ik":"zal ontkennen","jij":"zult ontkennen","hij/zij":"zal ontkennen","wij":"zullen ontkennen","jullie":"zullen ontkennen","zij":"zullen ontkennen"}}}},{"i":"analyseren","e":"to analyze","s":"analyseer","l":"B2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"analyseer","jij":"analyseert","hij/zij":"analyseert","wij":"analyseren","jullie":"analyseren","zij":"analyseren"}},"pa":{"c":{"ik":"analyseerde","jij":"analyseerde","hij/zij":"analyseerde","wij":"analyseerden","jullie":"analyseerden","zij":"analyseerden"}},"pe":{"c":{"ik":"heb geanalyseerd","jij":"hebt geanalyseerd","hij/zij":"heeft geanalyseerd","wij":"hebben geanalyseerd","jullie":"hebben geanalyseerd","zij":"hebben geanalyseerd"}},"fu":{"c":{"ik":"zal analyseren","jij":"zult analyseren","hij/zij":"zal analyseren","wij":"zullen analyseren","jullie":"zullen analyseren","zij":"zullen analyseren"}}}},{"i":"beoordelen","e":"to evaluate","s":"beoordeel","l":"B2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"beoordeel","jij":"beoordeelt","hij/zij":"beoordeelt","wij":"beoordelen","jullie":"beoordelen","zij":"beoordelen"}},"pa":{"c":{"ik":"beoordeelde","jij":"beoordeelde","hij/zij":"beoordeelde","wij":"beoordeelden","jullie":"beoordeelden","zij":"beoordeelden"}},"pe":{"c":{"ik":"heb beoordeeld","jij":"hebt beoordeeld","hij/zij":"heeft beoordeeld","wij":"hebben beoordeeld","jullie":"hebben beoordeeld","zij":"hebben beoordeeld"}},"fu":{"c":{"ik":"zal beoordelen","jij":"zult beoordelen","hij/zij":"zal beoordelen","wij":"zullen beoordelen","jullie":"zullen beoordelen","zij":"zullen beoordelen"}}}},{"i":"ontwikkelen","e":"to develop","s":"ontwikkel","l":"B2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"ontwikkel","jij":"ontwikkelt","hij/zij":"ontwikkelt","wij":"ontwikkelen","jullie":"ontwikkelen","zij":"ontwikkelen"}},"pa":{"c":{"ik":"ontwikkelde","jij":"ontwikkelde","hij/zij":"ontwikkelde","wij":"ontwikkelden","jullie":"ontwikkelden","zij":"ontwikkelden"}},"pe":{"c":{"ik":"heb ontwikkeld","jij":"hebt ontwikkeld","hij/zij":"heeft ontwikkeld","wij":"hebben ontwikkeld","jullie":"hebben ontwikkeld","zij":"hebben ontwikkeld"}},"fu":{"c":{"ik":"zal ontwikkelen","jij":"zult ontwikkelen","hij/zij":"zal ontwikkelen","wij":"zullen ontwikkelen","jullie":"zullen ontwikkelen","zij":"zullen ontwikkelen"}}}},{"i":"fascineren","e":"to fascinate","s":"fascineer","l":"B2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"fascineer","jij":"fascineert","hij/zij":"fascineert","wij":"fascineren","jullie":"fascineren","zij":"fascineren"}},"pa":{"c":{"ik":"fascineerde","jij":"fascineerde","hij/zij":"fascineerde","wij":"fascineerden","jullie":"fascineerden","zij":"fascineerden"}},"pe":{"c":{"ik":"heb gefascineerd","jij":"hebt gefascineerd","hij/zij":"heeft gefascineerd","wij":"hebben gefascineerd","jullie":"hebben gefascineerd","zij":"hebben gefascineerd"}},"fu":{"c":{"ik":"zal fascineren","jij":"zult fascineren","hij/zij":"zal fascineren","wij":"zullen fascineren","jullie":"zullen fascineren","zij":"zullen fascineren"}}}},{"i":"realiseren","e":"to realize","s":"realiseer","l":"B2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"realiseer","jij":"realiseert","hij/zij":"realiseert","wij":"realiseren","jullie":"realiseren","zij":"realiseren"}},"pa":{"c":{"ik":"realiseerde","jij":"realiseerde","hij/zij":"realiseerde","wij":"realiseerden","jullie":"realiseerden","zij":"realiseerden"}},"pe":{"c":{"ik":"heb gerealiseerd","jij":"hebt gerealiseerd","hij/zij":"heeft gerealiseerd","wij":"hebben gerealiseerd","jullie":"hebben gerealiseerd","zij":"hebben gerealiseerd"}},"fu":{"c":{"ik":"zal realiseren","jij":"zult realiseren","hij/zij":"zal realiseren","wij":"zullen realiseren","jullie":"zullen realiseren","zij":"zullen realiseren"}}}},{"i":"beheersen","e":"to master","s":"beheers","l":"B2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"beheers","jij":"beheerst","hij/zij":"beheerst","wij":"beheersen","jullie":"beheersen","zij":"beheersen"}},"pa":{"c":{"ik":"beheerste","jij":"beheerste","hij/zij":"beheerste","wij":"beheersten","jullie":"beheersten","zij":"beheersten"}},"pe":{"c":{"ik":"heb beheerst","jij":"hebt beheerst","hij/zij":"heeft beheerst","wij":"hebben beheerst","jullie":"hebben beheerst","zij":"hebben beheerst"}},"fu":{"c":{"ik":"zal beheersen","jij":"zult beheersen","hij/zij":"zal beheersen","wij":"zullen beheersen","jullie":"zullen beheersen","zij":"zullen beheersen"}}}},{"i":"inspireren","e":"to inspire","s":"inspireer","l":"B2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"inspireer","jij":"inspireert","hij/zij":"inspireert","wij":"inspireren","jullie":"inspireren","zij":"inspireren"}},"pa":{"c":{"ik":"inspireerde","jij":"inspireerde","hij/zij":"inspireerde","wij":"inspireerden","jullie":"inspireerden","zij":"inspireerden"}},"pe":{"c":{"ik":"heb geïnspireerd","jij":"hebt geïnspireerd","hij/zij":"heeft geïnspireerd","wij":"hebben geïnspireerd","jullie":"hebben geïnspireerd","zij":"hebben geïnspireerd"}},"fu":{"c":{"ik":"zal inspireren","jij":"zult inspireren","hij/zij":"zal inspireren","wij":"zullen inspireren","jullie":"zullen inspireren","zij":"zullen inspireren"}}}},{"i":"frustreren","e":"to frustrate","s":"frustreer","l":"B2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"frustreer","jij":"frustreert","hij/zij":"frustreert","wij":"frustreren","jullie":"frustreren","zij":"frustreren"}},"pa":{"c":{"ik":"frustreerde","jij":"frustreerde","hij/zij":"frustreerde","wij":"frustreerden","jullie":"frustreerden","zij":"frustreerden"}},"pe":{"c":{"ik":"heb gefrustreerd","jij":"hebt gefrustreerd","hij/zij":"heeft gefrustreerd","wij":"hebben gefrustreerd","jullie":"hebben gefrustreerd","zij":"hebben gefrustreerd"}},"fu":{"c":{"ik":"zal frustreren","jij":"zult frustreren","hij/zij":"zal frustreren","wij":"zullen frustreren","jullie":"zullen frustreren","zij":"zullen frustreren"}}}},{"i":"afgaan","e":"to go off","s":"ga af","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"ga af","jij":"gaat af","hij/zij":"gaat af","wij":"gaan af","jullie":"gaan af","zij":"gaan af"}},"pa":{"c":{"ik":"ging af","jij":"ging af","hij/zij":"ging af","wij":"gingen af","jullie":"gingen af","zij":"gingen af"}},"pe":{"c":{"ik":"ben afgegaan","jij":"bent afgegaan","hij/zij":"is afgegaan","wij":"zijn afgegaan","jullie":"zijn afgegaan","zij":"zijn afgegaan"}},"fu":{"c":{"ik":"zal afgaan","jij":"zult afgaan","hij/zij":"zal afgaan","wij":"zullen afgaan","jullie":"zullen afgaan","zij":"zullen afgaan"}}}},{"i":"aankomen","e":"to arrive","s":"kom aan","l":"A2","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"kom aan","jij":"komt aan","hij/zij":"komt aan","wij":"komen aan","jullie":"komen aan","zij":"komen aan"}},"pa":{"c":{"ik":"kwam aan","jij":"kwam aan","hij/zij":"kwam aan","wij":"kwamen aan","jullie":"kwamen aan","zij":"kwamen aan"}},"pe":{"c":{"ik":"ben aangekomen","jij":"bent aangekomen","hij/zij":"is aangekomen","wij":"zijn aangekomen","jullie":"zijn aangekomen","zij":"zijn aangekomen"}},"fu":{"c":{"ik":"zal aankomen","jij":"zult aankomen","hij/zij":"zal aankomen","wij":"zullen aankomen","jullie":"zullen aankomen","zij":"zullen aankomen"}}}},{"i":"bijdragen","e":"to contribute","s":"draag bij","l":"B2","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"draag bij","jij":"draagt bij","hij/zij":"draagt bij","wij":"dragen bij","jullie":"dragen bij","zij":"dragen bij"}},"pa":{"c":{"ik":"droeg bij","jij":"droeg bij","hij/zij":"droeg bij","wij":"droegen bij","jullie":"droegen bij","zij":"droegen bij"}},"pe":{"c":{"ik":"heb bijgedragen","jij":"hebt bijgedragen","hij/zij":"heeft bijgedragen","wij":"hebben bijgedragen","jullie":"hebben bijgedragen","zij":"hebben bijgedragen"}},"fu":{"c":{"ik":"zal bijdragen","jij":"zult bijdragen","hij/zij":"zal bijdragen","wij":"zullen bijdragen","jullie":"zullen bijdragen","zij":"zullen bijdragen"}}}},{"i":"instappen","e":"to get in/board","s":"stap in","l":"A2","sp":true,"ir":false,"t":{"pr":{"c":{"ik":"stap in","jij":"stapt in","hij/zij":"stapt in","wij":"stappen in","jullie":"stappen in","zij":"stappen in"}},"pa":{"c":{"ik":"stapte in","jij":"stapte in","hij/zij":"stapte in","wij":"stapten in","jullie":"stapten in","zij":"stapten in"}},"pe":{"c":{"ik":"ben ingestapt","jij":"bent ingestapt","hij/zij":"is ingestapt","wij":"zijn ingestapt","jullie":"zijn ingestapt","zij":"zijn ingestapt"}},"fu":{"c":{"ik":"zal instappen","jij":"zult instappen","hij/zij":"zal instappen","wij":"zullen instappen","jullie":"zullen instappen","zij":"zullen instappen"}}}},{"i":"meenemen","e":"to take along","s":"neem mee","l":"A2","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"neem mee","jij":"neemt mee","hij/zij":"neemt mee","wij":"nemen mee","jullie":"nemen mee","zij":"nemen mee"}},"pa":{"c":{"ik":"nam mee","jij":"nam mee","hij/zij":"nam mee","wij":"namen mee","jullie":"namen mee","zij":"namen mee"}},"pe":{"c":{"ik":"heb meegenomen","jij":"hebt meegenomen","hij/zij":"heeft meegenomen","wij":"hebben meegenomen","jullie":"hebben meegenomen","zij":"hebben meegenomen"}},"fu":{"c":{"ik":"zal meenemen","jij":"zult meenemen","hij/zij":"zal meenemen","wij":"zullen meenemen","jullie":"zullen meenemen","zij":"zullen meenemen"}}}},{"i":"nagaan","e":"to check/verify","s":"ga na","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"ga na","jij":"gaat na","hij/zij":"gaat na","wij":"gaan na","jullie":"gaan na","zij":"gaan na"}},"pa":{"c":{"ik":"ging na","jij":"ging na","hij/zij":"ging na","wij":"gingen na","jullie":"gingen na","zij":"gingen na"}},"pe":{"c":{"ik":"ben nagegaan","jij":"bent nagegaan","hij/zij":"is nagegaan","wij":"zijn nagegaan","jullie":"zijn nagegaan","zij":"zijn nagegaan"}},"fu":{"c":{"ik":"zal nagaan","jij":"zult nagaan","hij/zij":"zal nagaan","wij":"zullen nagaan","jullie":"zullen nagaan","zij":"zullen nagaan"}}}},{"i":"omgaan","e":"to deal with","s":"ga om","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"ga om","jij":"gaat om","hij/zij":"gaat om","wij":"gaan om","jullie":"gaan om","zij":"gaan om"}},"pa":{"c":{"ik":"ging om","jij":"ging om","hij/zij":"ging om","wij":"gingen om","jullie":"gingen om","zij":"gingen om"}},"pe":{"c":{"ik":"ben omgegaan","jij":"bent omgegaan","hij/zij":"is omgegaan","wij":"zijn omgegaan","jullie":"zijn omgegaan","zij":"zijn omgegaan"}},"fu":{"c":{"ik":"zal omgaan","jij":"zult omgaan","hij/zij":"zal omgaan","wij":"zullen omgaan","jullie":"zullen omgaan","zij":"zullen omgaan"}}}},{"i":"opkomen","e":"to come up","s":"kom op","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"kom op","jij":"komt op","hij/zij":"komt op","wij":"komen op","jullie":"komen op","zij":"komen op"}},"pa":{"c":{"ik":"kwam op","jij":"kwam op","hij/zij":"kwam op","wij":"kwamen op","jullie":"kwamen op","zij":"kwamen op"}},"pe":{"c":{"ik":"ben opgekomen","jij":"bent opgekomen","hij/zij":"is opgekomen","wij":"zijn opgekomen","jullie":"zijn opgekomen","zij":"zijn opgekomen"}},"fu":{"c":{"ik":"zal opkomen","jij":"zult opkomen","hij/zij":"zal opkomen","wij":"zullen opkomen","jullie":"zullen opkomen","zij":"zullen opkomen"}}}},{"i":"opstaan","e":"to get up","s":"sta op","l":"A2","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"sta op","jij":"staat op","hij/zij":"staat op","wij":"staan op","jullie":"staan op","zij":"staan op"}},"pa":{"c":{"ik":"stond op","jij":"stond op","hij/zij":"stond op","wij":"stonden op","jullie":"stonden op","zij":"stonden op"}},"pe":{"c":{"ik":"ben opgestaan","jij":"bent opgestaan","hij/zij":"is opgestaan","wij":"zijn opgestaan","jullie":"zijn opgestaan","zij":"zijn opgestaan"}},"fu":{"c":{"ik":"zal opstaan","jij":"zult opstaan","hij/zij":"zal opstaan","wij":"zullen opstaan","jullie":"zullen opstaan","zij":"zullen opstaan"}}}},{"i":"uitkomen","e":"to come out","s":"kom uit","l":"A2","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"kom uit","jij":"komt uit","hij/zij":"komt uit","wij":"komen uit","jullie":"komen uit","zij":"komen uit"}},"pa":{"c":{"ik":"kwam uit","jij":"kwam uit","hij/zij":"kwam uit","wij":"kwamen uit","jullie":"kwamen uit","zij":"kwamen uit"}},"pe":{"c":{"ik":"ben uitgekomen","jij":"bent uitgekomen","hij/zij":"is uitgekomen","wij":"zijn uitgekomen","jullie":"zijn uitgekomen","zij":"zijn uitgekomen"}},"fu":{"c":{"ik":"zal uitkomen","jij":"zult uitkomen","hij/zij":"zal uitkomen","wij":"zullen uitkomen","jullie":"zullen uitkomen","zij":"zullen uitkomen"}}}},{"i":"uitgaan","e":"to go out","s":"ga uit","l":"A2","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"ga uit","jij":"gaat uit","hij/zij":"gaat uit","wij":"gaan uit","jullie":"gaan uit","zij":"gaan uit"}},"pa":{"c":{"ik":"ging uit","jij":"ging uit","hij/zij":"ging uit","wij":"gingen uit","jullie":"gingen uit","zij":"gingen uit"}},"pe":{"c":{"ik":"ben uitgegaan","jij":"bent uitgegaan","hij/zij":"is uitgegaan","wij":"zijn uitgegaan","jullie":"zijn uitgegaan","zij":"zijn uitgegaan"}},"fu":{"c":{"ik":"zal uitgaan","jij":"zult uitgaan","hij/zij":"zal uitgaan","wij":"zullen uitgaan","jullie":"zullen uitgaan","zij":"zullen uitgaan"}}}},{"i":"weggaan","e":"to go away","s":"ga weg","l":"A2","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"ga weg","jij":"gaat weg","hij/zij":"gaat weg","wij":"gaan weg","jullie":"gaan weg","zij":"gaan weg"}},"pa":{"c":{"ik":"ging weg","jij":"ging weg","hij/zij":"ging weg","wij":"gingen weg","jullie":"gingen weg","zij":"gingen weg"}},"pe":{"c":{"ik":"ben weggegaan","jij":"bent weggegaan","hij/zij":"is weggegaan","wij":"zijn weggegaan","jullie":"zijn weggegaan","zij":"zijn weggegaan"}},"fu":{"c":{"ik":"zal weggaan","jij":"zult weggaan","hij/zij":"zal weggaan","wij":"zullen weggaan","jullie":"zullen weggaan","zij":"zullen weggaan"}}}},{"i":"afmaken","e":"to finish","s":"maak af","l":"B1","sp":true,"ir":false,"t":{"pr":{"c":{"ik":"maak af","jij":"maakt af","hij/zij":"maakt af","wij":"maken af","jullie":"maken af","zij":"maken af"}},"pa":{"c":{"ik":"maakte af","jij":"maakte af","hij/zij":"maakte af","wij":"maakten af","jullie":"maakten af","zij":"maakten af"}},"pe":{"c":{"ik":"heb afgemaakt","jij":"hebt afgemaakt","hij/zij":"heeft afgemaakt","wij":"hebben afgemaakt","jullie":"hebben afgemaakt","zij":"hebben afgemaakt"}},"fu":{"c":{"ik":"zal afmaken","jij":"zult afmaken","hij/zij":"zal afmaken","wij":"zullen afmaken","jullie":"zullen afmaken","zij":"zullen afmaken"}}}},{"i":"aanbieden","e":"to offer","s":"bied aan","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"bied aan","jij":"biedt aan","hij/zij":"biedt aan","wij":"bieden aan","jullie":"bieden aan","zij":"bieden aan"}},"pa":{"c":{"ik":"bood aan","jij":"bood aan","hij/zij":"bood aan","wij":"boden aan","jullie":"boden aan","zij":"boden aan"}},"pe":{"c":{"ik":"heb aangeboden","jij":"hebt aangeboden","hij/zij":"heeft aangeboden","wij":"hebben aangeboden","jullie":"hebben aangeboden","zij":"hebben aangeboden"}},"fu":{"c":{"ik":"zal aanbieden","jij":"zult aanbieden","hij/zij":"zal aanbieden","wij":"zullen aanbieden","jullie":"zullen aanbieden","zij":"zullen aanbieden"}}}},{"i":"bijwonen","e":"to attend","s":"woon bij","l":"B1","sp":true,"ir":false,"t":{"pr":{"c":{"ik":"woon bij","jij":"woont bij","hij/zij":"woont bij","wij":"wonen bij","jullie":"wonen bij","zij":"wonen bij"}},"pa":{"c":{"ik":"woonde bij","jij":"woonde bij","hij/zij":"woonde bij","wij":"woonden bij","jullie":"woonden bij","zij":"woonden bij"}},"pe":{"c":{"ik":"heb bijgewoond","jij":"hebt bijgewoond","hij/zij":"heeft bijgewoond","wij":"hebben bijgewoond","jullie":"hebben bijgewoond","zij":"hebben bijgewoond"}},"fu":{"c":{"ik":"zal bijwonen","jij":"zult bijwonen","hij/zij":"zal bijwonen","wij":"zullen bijwonen","jullie":"zullen bijwonen","zij":"zullen bijwonen"}}}},{"i":"meemaken","e":"to experience","s":"maak mee","l":"B1","sp":true,"ir":false,"t":{"pr":{"c":{"ik":"maak mee","jij":"maakt mee","hij/zij":"maakt mee","wij":"maken mee","jullie":"maken mee","zij":"maken mee"}},"pa":{"c":{"ik":"maakte mee","jij":"maakte mee","hij/zij":"maakte mee","wij":"maakten mee","jullie":"maakten mee","zij":"maakten mee"}},"pe":{"c":{"ik":"heb meegemaakt","jij":"hebt meegemaakt","hij/zij":"heeft meegemaakt","wij":"hebben meegemaakt","jullie":"hebben meegemaakt","zij":"hebben meegemaakt"}},"fu":{"c":{"ik":"zal meemaken","jij":"zult meemaken","hij/zij":"zal meemaken","wij":"zullen meemaken","jullie":"zullen meemaken","zij":"zullen meemaken"}}}},{"i":"nakijken","e":"to check/correct","s":"kijk na","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"kijk na","jij":"kijkt na","hij/zij":"kijkt na","wij":"kijken na","jullie":"kijken na","zij":"kijken na"}},"pa":{"c":{"ik":"keek na","jij":"keek na","hij/zij":"keek na","wij":"keken na","jullie":"keken na","zij":"keken na"}},"pe":{"c":{"ik":"heb nagekeken","jij":"hebt nagekeken","hij/zij":"heeft nagekeken","wij":"hebben nagekeken","jullie":"hebben nagekeken","zij":"hebben nagekeken"}},"fu":{"c":{"ik":"zal nakijken","jij":"zult nakijken","hij/zij":"zal nakijken","wij":"zullen nakijken","jullie":"zullen nakijken","zij":"zullen nakijken"}}}},{"i":"omkeren","e":"to turn around","s":"keer om","l":"B1","sp":true,"ir":false,"t":{"pr":{"c":{"ik":"keer om","jij":"keert om","hij/zij":"keert om","wij":"keren om","jullie":"keren om","zij":"keren om"}},"pa":{"c":{"ik":"keerde om","jij":"keerde om","hij/zij":"keerde om","wij":"keerden om","jullie":"keerden om","zij":"keerden om"}},"pe":{"c":{"ik":"ben omgekeerd","jij":"bent omgekeerd","hij/zij":"is omgekeerd","wij":"zijn omgekeerd","jullie":"zijn omgekeerd","zij":"zijn omgekeerd"}},"fu":{"c":{"ik":"zal omkeren","jij":"zult omkeren","hij/zij":"zal omkeren","wij":"zullen omkeren","jullie":"zullen omkeren","zij":"zullen omkeren"}}}},{"i":"openen","e":"to open","s":"open","l":"A2","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"open","jij":"opent","hij/zij":"opent","wij":"openen","jullie":"openen","zij":"openen"}},"pa":{"c":{"ik":"opende","jij":"opende","hij/zij":"opende","wij":"openden","jullie":"openden","zij":"openden"}},"pe":{"c":{"ik":"heb geopend","jij":"hebt geopend","hij/zij":"heeft geopend","wij":"hebben geopend","jullie":"hebben geopend","zij":"hebben geopend"}},"fu":{"c":{"ik":"zal openen","jij":"zult openen","hij/zij":"zal openen","wij":"zullen openen","jullie":"zullen openen","zij":"zullen openen"}}}},{"i":"oversteken","e":"to cross","s":"steek over","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"steek over","jij":"steekt over","hij/zij":"steekt over","wij":"steken over","jullie":"steken over","zij":"steken over"}},"pa":{"c":{"ik":"stak over","jij":"stak over","hij/zij":"stak over","wij":"staken over","jullie":"staken over","zij":"staken over"}},"pe":{"c":{"ik":"ben overgestoken","jij":"bent overgestoken","hij/zij":"is overgestoken","wij":"zijn overgestoken","jullie":"zijn overgestoken","zij":"zijn overgestoken"}},"fu":{"c":{"ik":"zal oversteken","jij":"zult oversteken","hij/zij":"zal oversteken","wij":"zullen oversteken","jullie":"zullen oversteken","zij":"zullen oversteken"}}}},{"i":"terugkomen","e":"to come back","s":"kom terug","l":"A2","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"kom terug","jij":"komt terug","hij/zij":"komt terug","wij":"komen terug","jullie":"komen terug","zij":"komen terug"}},"pa":{"c":{"ik":"kwam terug","jij":"kwam terug","hij/zij":"kwam terug","wij":"kwamen terug","jullie":"kwamen terug","zij":"kwamen terug"}},"pe":{"c":{"ik":"ben teruggekomen","jij":"bent teruggekomen","hij/zij":"is teruggekomen","wij":"zijn teruggekomen","jullie":"zijn teruggekomen","zij":"zijn teruggekomen"}},"fu":{"c":{"ik":"zal terugkomen","jij":"zult terugkomen","hij/zij":"zal terugkomen","wij":"zullen terugkomen","jullie":"zullen terugkomen","zij":"zullen terugkomen"}}}},{"i":"toevoegen","e":"to add","s":"voeg toe","l":"B1","sp":true,"ir":false,"t":{"pr":{"c":{"ik":"voeg toe","jij":"voegt toe","hij/zij":"voegt toe","wij":"voegen toe","jullie":"voegen toe","zij":"voegen toe"}},"pa":{"c":{"ik":"voegde toe","jij":"voegde toe","hij/zij":"voegde toe","wij":"voegden toe","jullie":"voegden toe","zij":"voegden toe"}},"pe":{"c":{"ik":"heb toegevoegd","jij":"hebt toegevoegd","hij/zij":"heeft toegevoegd","wij":"hebben toegevoegd","jullie":"hebben toegevoegd","zij":"hebben toegevoegd"}},"fu":{"c":{"ik":"zal toevoegen","jij":"zult toevoegen","hij/zij":"zal toevoegen","wij":"zullen toevoegen","jullie":"zullen toevoegen","zij":"zullen toevoegen"}}}},{"i":"uitleggen","e":"to explain","s":"leg uit","l":"B1","sp":true,"ir":false,"t":{"pr":{"c":{"ik":"leg uit","jij":"legt uit","hij/zij":"legt uit","wij":"leggen uit","jullie":"leggen uit","zij":"leggen uit"}},"pa":{"c":{"ik":"legde uit","jij":"legde uit","hij/zij":"legde uit","wij":"legden uit","jullie":"legden uit","zij":"legden uit"}},"pe":{"c":{"ik":"heb uitgelegd","jij":"hebt uitgelegd","hij/zij":"heeft uitgelegd","wij":"hebben uitgelegd","jullie":"hebben uitgelegd","zij":"hebben uitgelegd"}},"fu":{"c":{"ik":"zal uitleggen","jij":"zult uitleggen","hij/zij":"zal uitleggen","wij":"zullen uitleggen","jullie":"zullen uitleggen","zij":"zullen uitleggen"}}}},{"i":"voordoen","e":"to occur/happen","s":"doe voor","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"doe voor","jij":"doet voor","hij/zij":"doet voor","wij":"doen voor","jullie":"doen voor","zij":"doen voor"}},"pa":{"c":{"ik":"deed voor","jij":"deed voor","hij/zij":"deed voor","wij":"deden voor","jullie":"deden voor","zij":"deden voor"}},"pe":{"c":{"ik":"heb voorgedaan","jij":"hebt voorgedaan","hij/zij":"heeft voorgedaan","wij":"hebben voorgedaan","jullie":"hebben voorgedaan","zij":"hebben voorgedaan"}},"fu":{"c":{"ik":"zal voordoen","jij":"zult voordoen","hij/zij":"zal voordoen","wij":"zullen voordoen","jullie":"zullen voordoen","zij":"zullen voordoen"}}}},{"i":"wegzetten","e":"to put away","s":"zet weg","l":"B1","sp":true,"ir":false,"t":{"pr":{"c":{"ik":"zet weg","jij":"zet weg","hij/zij":"zet weg","wij":"zetten weg","jullie":"zetten weg","zij":"zetten weg"}},"pa":{"c":{"ik":"zette weg","jij":"zette weg","hij/zij":"zette weg","wij":"zetten weg","jullie":"zetten weg","zij":"zetten weg"}},"pe":{"c":{"ik":"heb weggezet","jij":"hebt weggezet","hij/zij":"heeft weggezet","wij":"hebben weggezet","jullie":"hebben weggezet","zij":"hebben weggezet"}},"fu":{"c":{"ik":"zal wegzetten","jij":"zult wegzetten","hij/zij":"zal wegzetten","wij":"zullen wegzetten","jullie":"zullen wegzetten","zij":"zullen wegzetten"}}}},{"i":"afsluiten","e":"to close/finish","s":"sluit af","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"sluit af","jij":"sluit af","hij/zij":"sluit af","wij":"sluiten af","jullie":"sluiten af","zij":"sluiten af"}},"pa":{"c":{"ik":"sloot af","jij":"sloot af","hij/zij":"sloot af","wij":"sloten af","jullie":"sloten af","zij":"sloten af"}},"pe":{"c":{"ik":"heb afgesloten","jij":"hebt afgesloten","hij/zij":"heeft afgesloten","wij":"hebben afgesloten","jullie":"hebben afgesloten","zij":"hebben afgesloten"}},"fu":{"c":{"ik":"zal afsluiten","jij":"zult afsluiten","hij/zij":"zal afsluiten","wij":"zullen afsluiten","jullie":"zullen afsluiten","zij":"zullen afsluiten"}}}},{"i":"doorgaan","e":"to continue","s":"ga door","l":"B1","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"ga door","jij":"gaat door","hij/zij":"gaat door","wij":"gaan door","jullie":"gaan door","zij":"gaan door"}},"pa":{"c":{"ik":"ging door","jij":"ging door","hij/zij":"ging door","wij":"gingen door","jullie":"gingen door","zij":"gingen door"}},"pe":{"c":{"ik":"ben doorgegaan","jij":"bent doorgegaan","hij/zij":"is doorgegaan","wij":"zijn doorgegaan","jullie":"zijn doorgegaan","zij":"zijn doorgegaan"}},"fu":{"c":{"ik":"zal doorgaan","jij":"zult doorgaan","hij/zij":"zal doorgaan","wij":"zullen doorgaan","jullie":"zullen doorgaan","zij":"zullen doorgaan"}}}},{"i":"opzetten","e":"to set up","s":"zet op","l":"B2","sp":true,"ir":false,"t":{"pr":{"c":{"ik":"zet op","jij":"zet op","hij/zij":"zet op","wij":"zetten op","jullie":"zetten op","zij":"zetten op"}},"pa":{"c":{"ik":"zette op","jij":"zette op","hij/zij":"zette op","wij":"zetten op","jullie":"zetten op","zij":"zetten op"}},"pe":{"c":{"ik":"heb opgezet","jij":"hebt opgezet","hij/zij":"heeft opgezet","wij":"hebben opgezet","jullie":"hebben opgezet","zij":"hebben opgezet"}},"fu":{"c":{"ik":"zal opzetten","jij":"zult opzetten","hij/zij":"zal opzetten","wij":"zullen opzetten","jullie":"zullen opzetten","zij":"zullen opzetten"}}}},{"i":"uitvallen","e":"to fall out/fail","s":"val uit","l":"B2","sp":true,"ir":true,"t":{"pr":{"c":{"ik":"val uit","jij":"valt uit","hij/zij":"valt uit","wij":"vallen uit","jullie":"vallen uit","zij":"vallen uit"}},"pa":{"c":{"ik":"viel uit","jij":"viel uit","hij/zij":"viel uit","wij":"vielen uit","jullie":"vielen uit","zij":"vielen uit"}},"pe":{"c":{"ik":"ben uitgevallen","jij":"bent uitgevallen","hij/zij":"is uitgevallen","wij":"zijn uitgevallen","jullie":"zijn uitgevallen","zij":"zijn uitgevallen"}},"fu":{"c":{"ik":"zal uitvallen","jij":"zult uitvallen","hij/zij":"zal uitvallen","wij":"zullen uitvallen","jullie":"zullen uitvallen","zij":"zullen uitvallen"}}}},{"i":"aanpassen","e":"to adapt/adjust","s":"pas aan","l":"B2","sp":true,"ir":false,"t":{"pr":{"c":{"ik":"pas aan","jij":"past aan","hij/zij":"past aan","wij":"passen aan","jullie":"passen aan","zij":"passen aan"}},"pa":{"c":{"ik":"paste aan","jij":"paste aan","hij/zij":"paste aan","wij":"pasten aan","jullie":"pasten aan","zij":"pasten aan"}},"pe":{"c":{"ik":"heb aangepast","jij":"hebt aangepast","hij/zij":"heeft aangepast","wij":"hebben aangepast","jullie":"hebben aangepast","zij":"hebben aangepast"}},"fu":{"c":{"ik":"zal aanpassen","jij":"zult aanpassen","hij/zij":"zal aanpassen","wij":"zullen aanpassen","jullie":"zullen aanpassen","zij":"zullen aanpassen"}}}},{"i":"dansen","e":"to dance","s":"dans","l":"A1","sp":false,"ir":false,"t":{"pr":{"c":{"ik":"dans","jij":"danst","hij/zij":"danst","wij":"dansen","jullie":"dansen","zij":"dansen"}},"pa":{"c":{"ik":"danste","jij":"danste","hij/zij":"danste","wij":"dansten","jullie":"dansten","zij":"dansten"}},"pe":{"c":{"ik":"heb gedanst","jij":"hebt gedanst","hij/zij":"heeft gedanst","wij":"hebben gedanst","jullie":"hebben gedanst","zij":"hebben gedanst"}},"fu":{"c":{"ik":"zal dansen","jij":"zult dansen","hij/zij":"zal dansen","wij":"zullen dansen","jullie":"zullen dansen","zij":"zullen dansen"}}}},{"i":"zingen","e":"to sing","s":"zing","l":"A1","sp":false,"ir":true,"t":{"pr":{"c":{"ik":"zing","jij":"zingt","hij/zij":"zingt","wij":"zingen","jullie":"zingen","zij":"zingen"}},"pa":{"c":{"ik":"zong","jij":"zong","hij/zij":"zong","wij":"zongen","jullie":"zongen","zij":"zongen"}},"pe":{"c":{"ik":"heb gezongen","jij":"hebt gezongen","hij/zij":"heeft gezongen","wij":"hebben gezongen","jullie":"hebben gezongen","zij":"hebben gezongen"}},"fu":{"c":{"ik":"zal zingen","jij":"zult zingen","hij/zij":"zal zingen","wij":"zullen zingen","jullie":"zullen zingen","zij":"zullen zingen"}}}},{"i":"uitnodigen","e":"to invite","s":"nodig uit","l":"A2","sp":true,"ir":false,"t":{"pr":{"c":{"ik":"nodig uit","jij":"nodigt uit","hij/zij":"nodigt uit","wij":"nodigen uit","jullie":"nodigen uit","zij":"nodigen uit"}},"pa":{"c":{"ik":"nodigde uit","jij":"nodigde uit","hij/zij":"nodigde uit","wij":"nodigden uit","jullie":"nodigden uit","zij":"nodigden uit"}},"pe":{"c":{"ik":"heb uitgenodigd","jij":"hebt uitgenodigd","hij/zij":"heeft uitgenodigd","wij":"hebben uitgenodigd","jullie":"hebben uitgenodigd","zij":"hebben uitgenodigd"}},"fu":{"c":{"ik":"zal uitnodigen","jij":"zult uitnodigen","hij/zij":"zal uitnodigen","wij":"zullen uitnodigen","jullie":"zullen uitnodigen","zij":"zullen uitnodigen"}}}}]}
+{
+  "v": [
+    {
+      "i": "zijn",
+      "e": "to be",
+      "s": "ben",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ben",
+            "jij": "bent",
+            "hij/zij": "is",
+            "wij": "zijn",
+            "jullie": "zijn",
+            "zij": "zijn"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "was",
+            "jij": "was",
+            "hij/zij": "was",
+            "wij": "waren",
+            "jullie": "waren",
+            "zij": "waren"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben geweest",
+            "jij": "bent geweest",
+            "hij/zij": "is geweest",
+            "wij": "zijn geweest",
+            "jullie": "zijn geweest",
+            "zij": "zijn geweest"
+          }
+        }
+      }
+    },
+    {
+      "i": "hebben",
+      "e": "to have",
+      "s": "heb",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "heb",
+            "jij": "hebt",
+            "hij/zij": "heeft",
+            "wij": "hebben",
+            "jullie": "hebben",
+            "zij": "hebben"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "had",
+            "jij": "had",
+            "hij/zij": "had",
+            "wij": "hadden",
+            "jullie": "hadden",
+            "zij": "hadden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gehad",
+            "jij": "hebt gehad",
+            "hij/zij": "heeft gehad",
+            "wij": "hebben gehad",
+            "jullie": "hebben gehad",
+            "zij": "hebben gehad"
+          }
+        }
+      }
+    },
+    {
+      "i": "gaan",
+      "e": "to go",
+      "s": "ga",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ga",
+            "jij": "gaat",
+            "hij/zij": "gaat",
+            "wij": "gaan",
+            "jullie": "gaan",
+            "zij": "gaan"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "ging",
+            "jij": "ging",
+            "hij/zij": "ging",
+            "wij": "gingen",
+            "jullie": "gingen",
+            "zij": "gingen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben gegaan",
+            "jij": "bent gegaan",
+            "hij/zij": "is gegaan",
+            "wij": "zijn gegaan",
+            "jullie": "zijn gegaan",
+            "zij": "zijn gegaan"
+          }
+        }
+      }
+    },
+    {
+      "i": "komen",
+      "e": "to come",
+      "s": "kom",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "kom",
+            "jij": "komt",
+            "hij/zij": "komt",
+            "wij": "komen",
+            "jullie": "komen",
+            "zij": "komen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "kwam",
+            "jij": "kwam",
+            "hij/zij": "kwam",
+            "wij": "kwamen",
+            "jullie": "kwamen",
+            "zij": "kwamen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben gekomen",
+            "jij": "bent gekomen",
+            "hij/zij": "is gekomen",
+            "wij": "zijn gekomen",
+            "jullie": "zijn gekomen",
+            "zij": "zijn gekomen"
+          }
+        }
+      }
+    },
+    {
+      "i": "werken",
+      "e": "to work",
+      "s": "werk",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "werk",
+            "jij": "werkt",
+            "hij/zij": "werkt",
+            "wij": "werken",
+            "jullie": "werken",
+            "zij": "werken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "werkte",
+            "jij": "werkte",
+            "hij/zij": "werkte",
+            "wij": "werkten",
+            "jullie": "werkten",
+            "zij": "werkten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gewerkt",
+            "jij": "hebt gewerkt",
+            "hij/zij": "heeft gewerkt",
+            "wij": "hebben gewerkt",
+            "jullie": "hebben gewerkt",
+            "zij": "hebben gewerkt"
+          }
+        }
+      }
+    },
+    {
+      "i": "wonen",
+      "e": "to live",
+      "s": "woon",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "woon",
+            "jij": "woont",
+            "hij/zij": "woont",
+            "wij": "wonen",
+            "jullie": "wonen",
+            "zij": "wonen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "woonde",
+            "jij": "woonde",
+            "hij/zij": "woonde",
+            "wij": "woonden",
+            "jullie": "woonden",
+            "zij": "woonden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gewoond",
+            "jij": "hebt gewoond",
+            "hij/zij": "heeft gewoond",
+            "wij": "hebben gewoond",
+            "jullie": "hebben gewoond",
+            "zij": "hebben gewoond"
+          }
+        }
+      }
+    },
+    {
+      "i": "eten",
+      "e": "to eat",
+      "s": "eet",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "eet",
+            "jij": "eet",
+            "hij/zij": "eet",
+            "wij": "eten",
+            "jullie": "eten",
+            "zij": "eten"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "at",
+            "jij": "at",
+            "hij/zij": "at",
+            "wij": "aten",
+            "jullie": "aten",
+            "zij": "aten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gegeten",
+            "jij": "hebt gegeten",
+            "hij/zij": "heeft gegeten",
+            "wij": "hebben gegeten",
+            "jullie": "hebben gegeten",
+            "zij": "hebben gegeten"
+          }
+        }
+      }
+    },
+    {
+      "i": "drinken",
+      "e": "to drink",
+      "s": "drink",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "drink",
+            "jij": "drinkt",
+            "hij/zij": "drinkt",
+            "wij": "drinken",
+            "jullie": "drinken",
+            "zij": "drinken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "dronk",
+            "jij": "dronk",
+            "hij/zij": "dronk",
+            "wij": "dronken",
+            "jullie": "dronken",
+            "zij": "dronken"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gedronken",
+            "jij": "hebt gedronken",
+            "hij/zij": "heeft gedronken",
+            "wij": "hebben gedronken",
+            "jullie": "hebben gedronken",
+            "zij": "hebben gedronken"
+          }
+        }
+      }
+    },
+    {
+      "i": "slapen",
+      "e": "to sleep",
+      "s": "slaap",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "slaap",
+            "jij": "slaapt",
+            "hij/zij": "slaapt",
+            "wij": "slapen",
+            "jullie": "slapen",
+            "zij": "slapen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "sliep",
+            "jij": "sliep",
+            "hij/zij": "sliep",
+            "wij": "sliepen",
+            "jullie": "sliepen",
+            "zij": "sliepen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geslapen",
+            "jij": "hebt geslapen",
+            "hij/zij": "heeft geslapen",
+            "wij": "hebben geslapen",
+            "jullie": "hebben geslapen",
+            "zij": "hebben geslapen"
+          }
+        }
+      }
+    },
+    {
+      "i": "lopen",
+      "e": "to walk",
+      "s": "loop",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "loop",
+            "jij": "loopt",
+            "hij/zij": "loopt",
+            "wij": "lopen",
+            "jullie": "lopen",
+            "zij": "lopen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "liep",
+            "jij": "liep",
+            "hij/zij": "liep",
+            "wij": "liepen",
+            "jullie": "liepen",
+            "zij": "liepen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gelopen",
+            "jij": "hebt gelopen",
+            "hij/zij": "heeft gelopen",
+            "wij": "hebben gelopen",
+            "jullie": "hebben gelopen",
+            "zij": "hebben gelopen"
+          }
+        }
+      }
+    },
+    {
+      "i": "spelen",
+      "e": "to play",
+      "s": "speel",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "speel",
+            "jij": "speelt",
+            "hij/zij": "speelt",
+            "wij": "spelen",
+            "jullie": "spelen",
+            "zij": "spelen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "speelde",
+            "jij": "speelde",
+            "hij/zij": "speelde",
+            "wij": "speelden",
+            "jullie": "speelden",
+            "zij": "speelden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gespeeld",
+            "jij": "hebt gespeeld",
+            "hij/zij": "heeft gespeeld",
+            "wij": "hebben gespeeld",
+            "jullie": "hebben gespeeld",
+            "zij": "hebben gespeeld"
+          }
+        }
+      }
+    },
+    {
+      "i": "kijken",
+      "e": "to look",
+      "s": "kijk",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "kijk",
+            "jij": "kijkt",
+            "hij/zij": "kijkt",
+            "wij": "kijken",
+            "jullie": "kijken",
+            "zij": "kijken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "keek",
+            "jij": "keek",
+            "hij/zij": "keek",
+            "wij": "keken",
+            "jullie": "keken",
+            "zij": "keken"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gekeken",
+            "jij": "hebt gekeken",
+            "hij/zij": "heeft gekeken",
+            "wij": "hebben gekeken",
+            "jullie": "hebben gekeken",
+            "zij": "hebben gekeken"
+          }
+        }
+      }
+    },
+    {
+      "i": "praten",
+      "e": "to talk",
+      "s": "praat",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "praat",
+            "jij": "praat",
+            "hij/zij": "praat",
+            "wij": "praten",
+            "jullie": "praten",
+            "zij": "praten"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "praatte",
+            "jij": "praatte",
+            "hij/zij": "praatte",
+            "wij": "praatten",
+            "jullie": "praatten",
+            "zij": "praatten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gepraat",
+            "jij": "hebt gepraat",
+            "hij/zij": "heeft gepraat",
+            "wij": "hebben gepraat",
+            "jullie": "hebben gepraat",
+            "zij": "hebben gepraat"
+          }
+        }
+      }
+    },
+    {
+      "i": "horen",
+      "e": "to hear",
+      "s": "hoor",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "hoor",
+            "jij": "hoort",
+            "hij/zij": "hoort",
+            "wij": "horen",
+            "jullie": "horen",
+            "zij": "horen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "hoorde",
+            "jij": "hoorde",
+            "hij/zij": "hoorde",
+            "wij": "hoorden",
+            "jullie": "hoorden",
+            "zij": "hoorden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gehoord",
+            "jij": "hebt gehoord",
+            "hij/zij": "heeft gehoord",
+            "wij": "hebben gehoord",
+            "jullie": "hebben gehoord",
+            "zij": "hebben gehoord"
+          }
+        }
+      }
+    },
+    {
+      "i": "zien",
+      "e": "to see",
+      "s": "zie",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "zie",
+            "jij": "ziet",
+            "hij/zij": "ziet",
+            "wij": "zien",
+            "jullie": "zien",
+            "zij": "zien"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "zag",
+            "jij": "zag",
+            "hij/zij": "zag",
+            "wij": "zagen",
+            "jullie": "zagen",
+            "zij": "zagen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gezien",
+            "jij": "hebt gezien",
+            "hij/zij": "heeft gezien",
+            "wij": "hebben gezien",
+            "jullie": "hebben gezien",
+            "zij": "hebben gezien"
+          }
+        }
+      }
+    },
+    {
+      "i": "doen",
+      "e": "to do",
+      "s": "doe",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "doe",
+            "jij": "doet",
+            "hij/zij": "doet",
+            "wij": "doen",
+            "jullie": "doen",
+            "zij": "doen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "deed",
+            "jij": "deed",
+            "hij/zij": "deed",
+            "wij": "deden",
+            "jullie": "deden",
+            "zij": "deden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gedaan",
+            "jij": "hebt gedaan",
+            "hij/zij": "heeft gedaan",
+            "wij": "hebben gedaan",
+            "jullie": "hebben gedaan",
+            "zij": "hebben gedaan"
+          }
+        }
+      }
+    },
+    {
+      "i": "maken",
+      "e": "to make",
+      "s": "maak",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "maak",
+            "jij": "maakt",
+            "hij/zij": "maakt",
+            "wij": "maken",
+            "jullie": "maken",
+            "zij": "maken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "maakte",
+            "jij": "maakte",
+            "hij/zij": "maakte",
+            "wij": "maakten",
+            "jullie": "maakten",
+            "zij": "maakten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gemaakt",
+            "jij": "hebt gemaakt",
+            "hij/zij": "heeft gemaakt",
+            "wij": "hebben gemaakt",
+            "jullie": "hebben gemaakt",
+            "zij": "hebben gemaakt"
+          }
+        }
+      }
+    },
+    {
+      "i": "zeggen",
+      "e": "to say",
+      "s": "zeg",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "zeg",
+            "jij": "zegt",
+            "hij/zij": "zegt",
+            "wij": "zeggen",
+            "jullie": "zeggen",
+            "zij": "zeggen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "zei",
+            "jij": "zei",
+            "hij/zij": "zei",
+            "wij": "zeiden",
+            "jullie": "zeiden",
+            "zij": "zeiden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gezegd",
+            "jij": "hebt gezegd",
+            "hij/zij": "heeft gezegd",
+            "wij": "hebben gezegd",
+            "jullie": "hebben gezegd",
+            "zij": "hebben gezegd"
+          }
+        }
+      }
+    },
+    {
+      "i": "leren",
+      "e": "to learn",
+      "s": "leer",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "leer",
+            "jij": "leert",
+            "hij/zij": "leert",
+            "wij": "leren",
+            "jullie": "leren",
+            "zij": "leren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "leerde",
+            "jij": "leerde",
+            "hij/zij": "leerde",
+            "wij": "leerden",
+            "jullie": "leerden",
+            "zij": "leerden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geleerd",
+            "jij": "hebt geleerd",
+            "hij/zij": "heeft geleerd",
+            "wij": "hebben geleerd",
+            "jullie": "hebben geleerd",
+            "zij": "hebben geleerd"
+          }
+        }
+      }
+    },
+    {
+      "i": "koken",
+      "e": "to cook",
+      "s": "kook",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "kook",
+            "jij": "kookt",
+            "hij/zij": "kookt",
+            "wij": "koken",
+            "jullie": "koken",
+            "zij": "koken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "kookte",
+            "jij": "kookte",
+            "hij/zij": "kookte",
+            "wij": "kookten",
+            "jullie": "kookten",
+            "zij": "kookten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gekookt",
+            "jij": "hebt gekookt",
+            "hij/zij": "heeft gekookt",
+            "wij": "hebben gekookt",
+            "jullie": "hebben gekookt",
+            "zij": "hebben gekookt"
+          }
+        }
+      }
+    },
+    {
+      "i": "werken",
+      "e": "to work",
+      "s": "werk",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "werk",
+            "jij": "werkt",
+            "hij/zij": "werkt",
+            "wij": "werken",
+            "jullie": "werken",
+            "zij": "werken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "werkte",
+            "jij": "werkte",
+            "hij/zij": "werkte",
+            "wij": "werkten",
+            "jullie": "werkten",
+            "zij": "werkten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gewerkt",
+            "jij": "hebt gewerkt",
+            "hij/zij": "heeft gewerkt",
+            "wij": "hebben gewerkt",
+            "jullie": "hebben gewerkt",
+            "zij": "hebben gewerkt"
+          }
+        }
+      }
+    },
+    {
+      "i": "openen",
+      "e": "to open",
+      "s": "open",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "open",
+            "jij": "opent",
+            "hij/zij": "opent",
+            "wij": "openen",
+            "jullie": "openen",
+            "zij": "openen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "opende",
+            "jij": "opende",
+            "hij/zij": "opende",
+            "wij": "openden",
+            "jullie": "openden",
+            "zij": "openden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geopend",
+            "jij": "hebt geopend",
+            "hij/zij": "heeft geopend",
+            "wij": "hebben geopend",
+            "jullie": "hebben geopend",
+            "zij": "hebben geopend"
+          }
+        }
+      }
+    },
+    {
+      "i": "sluiten",
+      "e": "to close",
+      "s": "sluit",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "sluit",
+            "jij": "sluit",
+            "hij/zij": "sluit",
+            "wij": "sluiten",
+            "jullie": "sluiten",
+            "zij": "sluiten"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "sloot",
+            "jij": "sloot",
+            "hij/zij": "sloot",
+            "wij": "sloten",
+            "jullie": "sloten",
+            "zij": "sloten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gesloten",
+            "jij": "hebt gesloten",
+            "hij/zij": "heeft gesloten",
+            "wij": "hebben gesloten",
+            "jullie": "hebben gesloten",
+            "zij": "hebben gesloten"
+          }
+        }
+      }
+    },
+    {
+      "i": "wandelen",
+      "e": "to stroll",
+      "s": "wandel",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "wandel",
+            "jij": "wandelt",
+            "hij/zij": "wandelt",
+            "wij": "wandelen",
+            "jullie": "wandelen",
+            "zij": "wandelen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "wandelde",
+            "jij": "wandelde",
+            "hij/zij": "wandelde",
+            "wij": "wandelden",
+            "jullie": "wandelden",
+            "zij": "wandelden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gewandeld",
+            "jij": "hebt gewandeld",
+            "hij/zij": "heeft gewandeld",
+            "wij": "hebben gewandeld",
+            "jullie": "hebben gewandeld",
+            "zij": "hebben gewandeld"
+          }
+        }
+      }
+    },
+    {
+      "i": "fietsen",
+      "e": "to cycle",
+      "s": "fiets",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "fiets",
+            "jij": "fietst",
+            "hij/zij": "fietst",
+            "wij": "fietsen",
+            "jullie": "fietsen",
+            "zij": "fietsen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "fietste",
+            "jij": "fietste",
+            "hij/zij": "fietste",
+            "wij": "fietsten",
+            "jullie": "fietsten",
+            "zij": "fietsten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gefietst",
+            "jij": "hebt gefietst",
+            "hij/zij": "heeft gefietst",
+            "wij": "hebben gefietst",
+            "jullie": "hebben gefietst",
+            "zij": "hebben gefietst"
+          }
+        }
+      }
+    },
+    {
+      "i": "zwemmen",
+      "e": "to swim",
+      "s": "zwem",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "zwem",
+            "jij": "zwemt",
+            "hij/zij": "zwemt",
+            "wij": "zwemmen",
+            "jullie": "zwemmen",
+            "zij": "zwemmen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "zwom",
+            "jij": "zwom",
+            "hij/zij": "zwom",
+            "wij": "zwommen",
+            "jullie": "zwommen",
+            "zij": "zwommen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gezwommen",
+            "jij": "hebt gezwommen",
+            "hij/zij": "heeft gezwommen",
+            "wij": "hebben gezwommen",
+            "jullie": "hebben gezwommen",
+            "zij": "hebben gezwommen"
+          }
+        }
+      }
+    },
+    {
+      "i": "luisteren",
+      "e": "to listen",
+      "s": "luister",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "luister",
+            "jij": "luistert",
+            "hij/zij": "luistert",
+            "wij": "luisteren",
+            "jullie": "luisteren",
+            "zij": "luisteren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "luisterde",
+            "jij": "luisterde",
+            "hij/zij": "luisterde",
+            "wij": "luisterden",
+            "jullie": "luisterden",
+            "zij": "luisterden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geluisterd",
+            "jij": "hebt geluisterd",
+            "hij/zij": "heeft geluisterd",
+            "wij": "hebben geluisterd",
+            "jullie": "hebben geluisterd",
+            "zij": "hebben geluisterd"
+          }
+        }
+      }
+    },
+    {
+      "i": "kijken",
+      "e": "to watch",
+      "s": "kijk",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "kijk",
+            "jij": "kijkt",
+            "hij/zij": "kijkt",
+            "wij": "kijken",
+            "jullie": "kijken",
+            "zij": "kijken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "keek",
+            "jij": "keek",
+            "hij/zij": "keek",
+            "wij": "keken",
+            "jullie": "keken",
+            "zij": "keken"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gekeken",
+            "jij": "hebt gekeken",
+            "hij/zij": "heeft gekeken",
+            "wij": "hebben gekeken",
+            "jullie": "hebben gekeken",
+            "zij": "hebben gekeken"
+          }
+        }
+      }
+    },
+    {
+      "i": "beloven",
+      "e": "to promise",
+      "s": "beloof",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "beloof",
+            "jij": "belooft",
+            "hij/zij": "belooft",
+            "wij": "beloven",
+            "jullie": "beloven",
+            "zij": "beloven"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "beloofde",
+            "jij": "beloofde",
+            "hij/zij": "beloofde",
+            "wij": "beloofden",
+            "jullie": "beloofden",
+            "zij": "beloofden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb beloofd",
+            "jij": "hebt beloofd",
+            "hij/zij": "heeft beloofd",
+            "wij": "hebben beloofd",
+            "jullie": "hebben beloofd",
+            "zij": "hebben beloofd"
+          }
+        }
+      }
+    },
+    {
+      "i": "vragen",
+      "e": "to ask",
+      "s": "vraag",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "vraag",
+            "jij": "vraagt",
+            "hij/zij": "vraagt",
+            "wij": "vragen",
+            "jullie": "vragen",
+            "zij": "vragen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "vroeg",
+            "jij": "vroeg",
+            "hij/zij": "vroeg",
+            "wij": "vroegen",
+            "jullie": "vroegen",
+            "zij": "vroegen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gevraagd",
+            "jij": "hebt gevraagd",
+            "hij/zij": "heeft gevraagd",
+            "wij": "hebben gevraagd",
+            "jullie": "hebben gevraagd",
+            "zij": "hebben gevraagd"
+          }
+        }
+      }
+    },
+    {
+      "i": "antwoorden",
+      "e": "to answer",
+      "s": "antwoord",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "antwoord",
+            "jij": "antwoordt",
+            "hij/zij": "antwoordt",
+            "wij": "antwoorden",
+            "jullie": "antwoorden",
+            "zij": "antwoorden"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "antwoordde",
+            "jij": "antwoordde",
+            "hij/zij": "antwoordde",
+            "wij": "antwoordden",
+            "jullie": "antwoordden",
+            "zij": "antwoordden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geantwoord",
+            "jij": "hebt geantwoord",
+            "hij/zij": "heeft geantwoord",
+            "wij": "hebben geantwoord",
+            "jullie": "hebben geantwoord",
+            "zij": "hebben geantwoord"
+          }
+        }
+      }
+    },
+    {
+      "i": "schrijven",
+      "e": "to write",
+      "s": "schrijf",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "schrijf",
+            "jij": "schrijft",
+            "hij/zij": "schrijft",
+            "wij": "schrijven",
+            "jullie": "schrijven",
+            "zij": "schrijven"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "schreef",
+            "jij": "schreef",
+            "hij/zij": "schreef",
+            "wij": "schreven",
+            "jullie": "schreven",
+            "zij": "schreven"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geschreven",
+            "jij": "hebt geschreven",
+            "hij/zij": "heeft geschreven",
+            "wij": "hebben geschreven",
+            "jullie": "hebben geschreven",
+            "zij": "hebben geschreven"
+          }
+        }
+      }
+    },
+    {
+      "i": "lezen",
+      "e": "to read",
+      "s": "lees",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "lees",
+            "jij": "leest",
+            "hij/zij": "leest",
+            "wij": "lezen",
+            "jullie": "lezen",
+            "zij": "lezen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "las",
+            "jij": "las",
+            "hij/zij": "las",
+            "wij": "lazen",
+            "jullie": "lazen",
+            "zij": "lazen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gelezen",
+            "jij": "hebt gelezen",
+            "hij/zij": "heeft gelezen",
+            "wij": "hebben gelezen",
+            "jullie": "hebben gelezen",
+            "zij": "hebben gelezen"
+          }
+        }
+      }
+    },
+    {
+      "i": "studeren",
+      "e": "to study",
+      "s": "studeer",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "studeer",
+            "jij": "studeert",
+            "hij/zij": "studeert",
+            "wij": "studeren",
+            "jullie": "studeren",
+            "zij": "studeren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "studeerde",
+            "jij": "studeerde",
+            "hij/zij": "studeerde",
+            "wij": "studeerden",
+            "jullie": "studeerden",
+            "zij": "studeerden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gestudeerd",
+            "jij": "hebt gestudeerd",
+            "hij/zij": "heeft gestudeerd",
+            "wij": "hebben gestudeerd",
+            "jullie": "hebben gestudeerd",
+            "zij": "hebben gestudeerd"
+          }
+        }
+      }
+    },
+    {
+      "i": "reizen",
+      "e": "to travel",
+      "s": "reis",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "reis",
+            "jij": "reist",
+            "hij/zij": "reist",
+            "wij": "reizen",
+            "jullie": "reizen",
+            "zij": "reizen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "reisde",
+            "jij": "reisde",
+            "hij/zij": "reisde",
+            "wij": "reisden",
+            "jullie": "reisden",
+            "zij": "reisden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gereisd",
+            "jij": "hebt gereisd",
+            "hij/zij": "heeft gereisd",
+            "wij": "hebben gereisd",
+            "jullie": "hebben gereisd",
+            "zij": "hebben gereisd"
+          }
+        }
+      }
+    },
+    {
+      "i": "kopen",
+      "e": "to buy",
+      "s": "koop",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "koop",
+            "jij": "koopt",
+            "hij/zij": "koopt",
+            "wij": "kopen",
+            "jullie": "kopen",
+            "zij": "kopen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "kocht",
+            "jij": "kocht",
+            "hij/zij": "kocht",
+            "wij": "kochten",
+            "jullie": "kochten",
+            "zij": "kochten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gekocht",
+            "jij": "hebt gekocht",
+            "hij/zij": "heeft gekocht",
+            "wij": "hebben gekocht",
+            "jullie": "hebben gekocht",
+            "zij": "hebben gekocht"
+          }
+        }
+      }
+    },
+    {
+      "i": "verkopen",
+      "e": "to sell",
+      "s": "verkoop",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "verkoop",
+            "jij": "verkoopt",
+            "hij/zij": "verkoopt",
+            "wij": "verkopen",
+            "jullie": "verkopen",
+            "zij": "verkopen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "verkocht",
+            "jij": "verkocht",
+            "hij/zij": "verkocht",
+            "wij": "verkochten",
+            "jullie": "verkochten",
+            "zij": "verkochten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb verkocht",
+            "jij": "hebt verkocht",
+            "hij/zij": "heeft verkocht",
+            "wij": "hebben verkocht",
+            "jullie": "hebben verkocht",
+            "zij": "hebben verkocht"
+          }
+        }
+      }
+    },
+    {
+      "i": "werken",
+      "e": "to work",
+      "s": "werk",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "werk",
+            "jij": "werkt",
+            "hij/zij": "werkt",
+            "wij": "werken",
+            "jullie": "werken",
+            "zij": "werken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "werkte",
+            "jij": "werkte",
+            "hij/zij": "werkte",
+            "wij": "werkten",
+            "jullie": "werkten",
+            "zij": "werkten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gewerkt",
+            "jij": "hebt gewerkt",
+            "hij/zij": "heeft gewerkt",
+            "wij": "hebben gewerkt",
+            "jullie": "hebben gewerkt",
+            "zij": "hebben gewerkt"
+          }
+        }
+      }
+    },
+    {
+      "i": "spelen",
+      "e": "to play",
+      "s": "speel",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "speel",
+            "jij": "speelt",
+            "hij/zij": "speelt",
+            "wij": "spelen",
+            "jullie": "spelen",
+            "zij": "spelen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "speelde",
+            "jij": "speelde",
+            "hij/zij": "speelde",
+            "wij": "speelden",
+            "jullie": "speelden",
+            "zij": "speelden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gespeeld",
+            "jij": "hebt gespeeld",
+            "hij/zij": "heeft gespeeld",
+            "wij": "hebben gespeeld",
+            "jullie": "hebben gespeeld",
+            "zij": "hebben gespeeld"
+          }
+        }
+      }
+    },
+    {
+      "i": "leren",
+      "e": "to learn",
+      "s": "leer",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "leer",
+            "jij": "leert",
+            "hij/zij": "leert",
+            "wij": "leren",
+            "jullie": "leren",
+            "zij": "leren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "leerde",
+            "jij": "leerde",
+            "hij/zij": "leerde",
+            "wij": "leerden",
+            "jullie": "leerden",
+            "zij": "leerden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geleerd",
+            "jij": "hebt geleerd",
+            "hij/zij": "heeft geleerd",
+            "wij": "hebben geleerd",
+            "jullie": "hebben geleerd",
+            "zij": "hebben geleerd"
+          }
+        }
+      }
+    },
+    {
+      "i": "beginnen",
+      "e": "to begin",
+      "s": "begin",
+      "l": "A2",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "begin",
+            "jij": "begint",
+            "hij/zij": "begint",
+            "wij": "beginnen",
+            "jullie": "beginnen",
+            "zij": "beginnen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "begon",
+            "jij": "begon",
+            "hij/zij": "begon",
+            "wij": "begonnen",
+            "jullie": "begonnen",
+            "zij": "begonnen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben begonnen",
+            "jij": "bent begonnen",
+            "hij/zij": "is begonnen",
+            "wij": "zijn begonnen",
+            "jullie": "zijn begonnen",
+            "zij": "zijn begonnen"
+          }
+        }
+      }
+    },
+    {
+      "i": "vergeten",
+      "e": "to forget",
+      "s": "vergeet",
+      "l": "A2",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "vergeet",
+            "jij": "vergeet",
+            "hij/zij": "vergeet",
+            "wij": "vergeten",
+            "jullie": "vergeten",
+            "zij": "vergeten"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "vergat",
+            "jij": "vergat",
+            "hij/zij": "vergat",
+            "wij": "vergaten",
+            "jullie": "vergaten",
+            "zij": "vergaten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben vergeten",
+            "jij": "bent vergeten",
+            "hij/zij": "is vergeten",
+            "wij": "zijn vergeten",
+            "jullie": "zijn vergeten",
+            "zij": "zijn vergeten"
+          }
+        }
+      }
+    },
+    {
+      "i": "ontmoeten",
+      "e": "to meet",
+      "s": "ontmoet",
+      "l": "A2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ontmoet",
+            "jij": "ontmoet",
+            "hij/zij": "ontmoet",
+            "wij": "ontmoeten",
+            "jullie": "ontmoeten",
+            "zij": "ontmoeten"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "ontmoette",
+            "jij": "ontmoette",
+            "hij/zij": "ontmoette",
+            "wij": "ontmoetten",
+            "jullie": "ontmoetten",
+            "zij": "ontmoetten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb ontmoet",
+            "jij": "hebt ontmoet",
+            "hij/zij": "heeft ontmoet",
+            "wij": "hebben ontmoet",
+            "jullie": "hebben ontmoet",
+            "zij": "hebben ontmoet"
+          }
+        }
+      }
+    },
+    {
+      "i": "verkopen",
+      "e": "to sell",
+      "s": "verkoop",
+      "l": "A2",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "verkoop",
+            "jij": "verkoopt",
+            "hij/zij": "verkoopt",
+            "wij": "verkopen",
+            "jullie": "verkopen",
+            "zij": "verkopen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "verkocht",
+            "jij": "verkocht",
+            "hij/zij": "verkocht",
+            "wij": "verkochten",
+            "jullie": "verkochten",
+            "zij": "verkochten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb verkocht",
+            "jij": "hebt verkocht",
+            "hij/zij": "heeft verkocht",
+            "wij": "hebben verkocht",
+            "jullie": "hebben verkocht",
+            "zij": "hebben verkocht"
+          }
+        }
+      }
+    },
+    {
+      "i": "kopen",
+      "e": "to buy",
+      "s": "koop",
+      "l": "A2",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "koop",
+            "jij": "koopt",
+            "hij/zij": "koopt",
+            "wij": "kopen",
+            "jullie": "kopen",
+            "zij": "kopen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "kocht",
+            "jij": "kocht",
+            "hij/zij": "kocht",
+            "wij": "kochten",
+            "jullie": "kochten",
+            "zij": "kochten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gekocht",
+            "jij": "hebt gekocht",
+            "hij/zij": "heeft gekocht",
+            "wij": "hebben gekocht",
+            "jullie": "hebben gekocht",
+            "zij": "hebben gekocht"
+          }
+        }
+      }
+    },
+    {
+      "i": "vertellen",
+      "e": "to tell",
+      "s": "vertel",
+      "l": "A2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "vertel",
+            "jij": "vertelt",
+            "hij/zij": "vertelt",
+            "wij": "vertellen",
+            "jullie": "vertellen",
+            "zij": "vertellen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "vertelde",
+            "jij": "vertelde",
+            "hij/zij": "vertelde",
+            "wij": "vertelden",
+            "jullie": "vertelden",
+            "zij": "vertelden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb verteld",
+            "jij": "hebt verteld",
+            "hij/zij": "heeft verteld",
+            "wij": "hebben verteld",
+            "jullie": "hebben verteld",
+            "zij": "hebben verteld"
+          }
+        }
+      }
+    },
+    {
+      "i": "begrijpen",
+      "e": "to understand",
+      "s": "begrijp",
+      "l": "A2",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "begrijp",
+            "jij": "begrijpt",
+            "hij/zij": "begrijpt",
+            "wij": "begrijpen",
+            "jullie": "begrijpen",
+            "zij": "begrijpen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "begreep",
+            "jij": "begreep",
+            "hij/zij": "begreep",
+            "wij": "begrepen",
+            "jullie": "begrepen",
+            "zij": "begrepen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb begrepen",
+            "jij": "hebt begrepen",
+            "hij/zij": "heeft begrepen",
+            "wij": "hebben begrepen",
+            "jullie": "hebben begrepen",
+            "zij": "hebben begrepen"
+          }
+        }
+      }
+    },
+    {
+      "i": "geloven",
+      "e": "to believe",
+      "s": "geloof",
+      "l": "A2",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "geloof",
+            "jij": "gelooft",
+            "hij/zij": "gelooft",
+            "wij": "geloven",
+            "jullie": "geloven",
+            "zij": "geloven"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "geloofde",
+            "jij": "geloofde",
+            "hij/zij": "geloofde",
+            "wij": "geloofden",
+            "jullie": "geloofden",
+            "zij": "geloofden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geloofd",
+            "jij": "hebt geloofd",
+            "hij/zij": "heeft geloofd",
+            "wij": "hebben geloofd",
+            "jullie": "hebben geloofd",
+            "zij": "hebben geloofd"
+          }
+        }
+      }
+    },
+    {
+      "i": "verliezen",
+      "e": "to lose",
+      "s": "verlies",
+      "l": "A2",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "verlies",
+            "jij": "verliest",
+            "hij/zij": "verliest",
+            "wij": "verliezen",
+            "jullie": "verliezen",
+            "zij": "verliezen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "verloor",
+            "jij": "verloor",
+            "hij/zij": "verloor",
+            "wij": "verloren",
+            "jullie": "verloren",
+            "zij": "verloren"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb verloren",
+            "jij": "hebt verloren",
+            "hij/zij": "heeft verloren",
+            "wij": "hebben verloren",
+            "jullie": "hebben verloren",
+            "zij": "hebben verloren"
+          }
+        }
+      }
+    },
+    {
+      "i": "winnen",
+      "e": "to win",
+      "s": "win",
+      "l": "A2",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "win",
+            "jij": "wint",
+            "hij/zij": "wint",
+            "wij": "winnen",
+            "jullie": "winnen",
+            "zij": "winnen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "won",
+            "jij": "won",
+            "hij/zij": "won",
+            "wij": "wonnen",
+            "jullie": "wonnen",
+            "zij": "wonnen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gewonnen",
+            "jij": "hebt gewonnen",
+            "hij/zij": "heeft gewonnen",
+            "wij": "hebben gewonnen",
+            "jullie": "hebben gewonnen",
+            "zij": "hebben gewonnen"
+          }
+        }
+      }
+    },
+    {
+      "i": "kiezen",
+      "e": "to choose",
+      "s": "kies",
+      "l": "A2",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "kies",
+            "jij": "kiest",
+            "hij/zij": "kiest",
+            "wij": "kiezen",
+            "jullie": "kiezen",
+            "zij": "kiezen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "koos",
+            "jij": "koos",
+            "hij/zij": "koos",
+            "wij": "kozen",
+            "jullie": "kozen",
+            "zij": "kozen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gekozen",
+            "jij": "hebt gekozen",
+            "hij/zij": "heeft gekozen",
+            "wij": "hebben gekozen",
+            "jullie": "hebben gekozen",
+            "zij": "hebben gekozen"
+          }
+        }
+      }
+    },
+    {
+      "i": "beslissen",
+      "e": "to decide",
+      "s": "beslis",
+      "l": "A2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "beslis",
+            "jij": "beslist",
+            "hij/zij": "beslist",
+            "wij": "beslissen",
+            "jullie": "beslissen",
+            "zij": "beslissen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "besliste",
+            "jij": "besliste",
+            "hij/zij": "besliste",
+            "wij": "beslisten",
+            "jullie": "beslisten",
+            "zij": "beslisten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb beslist",
+            "jij": "hebt beslist",
+            "hij/zij": "heeft beslist",
+            "wij": "hebben beslist",
+            "jullie": "hebben beslist",
+            "zij": "hebben beslist"
+          }
+        }
+      }
+    },
+    {
+      "i": "proberen",
+      "e": "to try",
+      "s": "probeer",
+      "l": "A2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "probeer",
+            "jij": "probeert",
+            "hij/zij": "probeert",
+            "wij": "proberen",
+            "jullie": "proberen",
+            "zij": "proberen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "probeerde",
+            "jij": "probeerde",
+            "hij/zij": "probeerde",
+            "wij": "probeerden",
+            "jullie": "probeerden",
+            "zij": "probeerden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geprobeerd",
+            "jij": "hebt geprobeerd",
+            "hij/zij": "heeft geprobeerd",
+            "wij": "hebben geprobeerd",
+            "jullie": "hebben geprobeerd",
+            "zij": "hebben geprobeerd"
+          }
+        }
+      }
+    },
+    {
+      "i": "stoppen",
+      "e": "to stop",
+      "s": "stop",
+      "l": "A2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "stop",
+            "jij": "stopt",
+            "hij/zij": "stopt",
+            "wij": "stoppen",
+            "jullie": "stoppen",
+            "zij": "stoppen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "stopte",
+            "jij": "stopte",
+            "hij/zij": "stopte",
+            "wij": "stopten",
+            "jullie": "stopten",
+            "zij": "stopten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben gestopt",
+            "jij": "bent gestopt",
+            "hij/zij": "is gestopt",
+            "wij": "zijn gestopt",
+            "jullie": "zijn gestopt",
+            "zij": "zijn gestopt"
+          }
+        }
+      }
+    },
+    {
+      "i": "veranderen",
+      "e": "to change",
+      "s": "verander",
+      "l": "A2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "verander",
+            "jij": "verandert",
+            "hij/zij": "verandert",
+            "wij": "veranderen",
+            "jullie": "veranderen",
+            "zij": "veranderen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "veranderde",
+            "jij": "veranderde",
+            "hij/zij": "veranderde",
+            "wij": "veranderden",
+            "jullie": "veranderden",
+            "zij": "veranderden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben veranderd",
+            "jij": "bent veranderd",
+            "hij/zij": "is veranderd",
+            "wij": "zijn veranderd",
+            "jullie": "zijn veranderd",
+            "zij": "zijn veranderd"
+          }
+        }
+      }
+    },
+    {
+      "i": "gebeuren",
+      "e": "to happen",
+      "s": "gebeur",
+      "l": "A2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "gebeur",
+            "jij": "gebeurt",
+            "hij/zij": "gebeurt",
+            "wij": "gebeuren",
+            "jullie": "gebeuren",
+            "zij": "gebeuren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "gebeurde",
+            "jij": "gebeurde",
+            "hij/zij": "gebeurde",
+            "wij": "gebeurden",
+            "jullie": "gebeurden",
+            "zij": "gebeurden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben gebeurd",
+            "jij": "bent gebeurd",
+            "hij/zij": "is gebeurd",
+            "wij": "zijn gebeurd",
+            "jullie": "zijn gebeurd",
+            "zij": "zijn gebeurd"
+          }
+        }
+      }
+    },
+    {
+      "i": "betekenen",
+      "e": "to mean",
+      "s": "beteken",
+      "l": "A2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "beteken",
+            "jij": "betekent",
+            "hij/zij": "betekent",
+            "wij": "betekenen",
+            "jullie": "betekenen",
+            "zij": "betekenen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "betekende",
+            "jij": "betekende",
+            "hij/zij": "betekende",
+            "wij": "betekenden",
+            "jullie": "betekenden",
+            "zij": "betekenden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb betekend",
+            "jij": "hebt betekend",
+            "hij/zij": "heeft betekend",
+            "wij": "hebben betekend",
+            "jullie": "hebben betekend",
+            "zij": "hebben betekend"
+          }
+        }
+      }
+    },
+    {
+      "i": "voelen",
+      "e": "to feel",
+      "s": "voel",
+      "l": "A2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "voel",
+            "jij": "voelt",
+            "hij/zij": "voelt",
+            "wij": "voelen",
+            "jullie": "voelen",
+            "zij": "voelen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "voelde",
+            "jij": "voelde",
+            "hij/zij": "voelde",
+            "wij": "voelden",
+            "jullie": "voelden",
+            "zij": "voelden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gevoeld",
+            "jij": "hebt gevoeld",
+            "hij/zij": "heeft gevoeld",
+            "wij": "hebben gevoeld",
+            "jullie": "hebben gevoeld",
+            "zij": "hebben gevoeld"
+          }
+        }
+      }
+    },
+    {
+      "i": "horen",
+      "e": "to hear",
+      "s": "hoor",
+      "l": "A2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "hoor",
+            "jij": "hoort",
+            "hij/zij": "hoort",
+            "wij": "horen",
+            "jullie": "horen",
+            "zij": "horen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "hoorde",
+            "jij": "hoorde",
+            "hij/zij": "hoorde",
+            "wij": "hoorden",
+            "jullie": "hoorden",
+            "zij": "hoorden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gehoord",
+            "jij": "hebt gehoord",
+            "hij/zij": "heeft gehoord",
+            "wij": "hebben gehoord",
+            "jullie": "hebben gehoord",
+            "zij": "hebben gehoord"
+          }
+        }
+      }
+    },
+    {
+      "i": "ruiken",
+      "e": "to smell",
+      "s": "ruik",
+      "l": "A2",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ruik",
+            "jij": "ruikt",
+            "hij/zij": "ruikt",
+            "wij": "ruiken",
+            "jullie": "ruiken",
+            "zij": "ruiken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "rook",
+            "jij": "rook",
+            "hij/zij": "rook",
+            "wij": "roken",
+            "jullie": "roken",
+            "zij": "roken"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geroken",
+            "jij": "hebt geroken",
+            "hij/zij": "heeft geroken",
+            "wij": "hebben geroken",
+            "jullie": "hebben geroken",
+            "zij": "hebben geroken"
+          }
+        }
+      }
+    },
+    {
+      "i": "proeven",
+      "e": "to taste",
+      "s": "proef",
+      "l": "A2",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "proef",
+            "jij": "proeft",
+            "hij/zij": "proeft",
+            "wij": "proeven",
+            "jullie": "proeven",
+            "zij": "proeven"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "proefde",
+            "jij": "proefde",
+            "hij/zij": "proefde",
+            "wij": "proefden",
+            "jullie": "proefden",
+            "zij": "proefden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geproefd",
+            "jij": "hebt geproefd",
+            "hij/zij": "heeft geproefd",
+            "wij": "hebben geproefd",
+            "jullie": "hebben geproefd",
+            "zij": "hebben geproefd"
+          }
+        }
+      }
+    },
+    {
+      "i": "ontdekken",
+      "e": "to discover",
+      "s": "ontdek",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ontdek",
+            "jij": "ontdekt",
+            "hij/zij": "ontdekt",
+            "wij": "ontdekken",
+            "jullie": "ontdekken",
+            "zij": "ontdekken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "ontdekte",
+            "jij": "ontdekte",
+            "hij/zij": "ontdekte",
+            "wij": "ontdekten",
+            "jullie": "ontdekten",
+            "zij": "ontdekten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb ontdekt",
+            "jij": "hebt ontdekt",
+            "hij/zij": "heeft ontdekt",
+            "wij": "hebben ontdekt",
+            "jullie": "hebben ontdekt",
+            "zij": "hebben ontdekt"
+          }
+        }
+      }
+    },
+    {
+      "i": "bereiken",
+      "e": "to reach",
+      "s": "bereik",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "bereik",
+            "jij": "bereikt",
+            "hij/zij": "bereikt",
+            "wij": "bereiken",
+            "jullie": "bereiken",
+            "zij": "bereiken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "bereikte",
+            "jij": "bereikte",
+            "hij/zij": "bereikte",
+            "wij": "bereikten",
+            "jullie": "bereikten",
+            "zij": "bereikten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb bereikt",
+            "jij": "hebt bereikt",
+            "hij/zij": "heeft bereikt",
+            "wij": "hebben bereikt",
+            "jullie": "hebben bereikt",
+            "zij": "hebben bereikt"
+          }
+        }
+      }
+    },
+    {
+      "i": "bezoeken",
+      "e": "to visit",
+      "s": "bezoek",
+      "l": "B1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "bezoek",
+            "jij": "bezoekt",
+            "hij/zij": "bezoekt",
+            "wij": "bezoeken",
+            "jullie": "bezoeken",
+            "zij": "bezoeken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "bezocht",
+            "jij": "bezocht",
+            "hij/zij": "bezocht",
+            "wij": "bezochten",
+            "jullie": "bezochten",
+            "zij": "bezochten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb bezocht",
+            "jij": "hebt bezocht",
+            "hij/zij": "heeft bezocht",
+            "wij": "hebben bezocht",
+            "jullie": "hebben bezocht",
+            "zij": "hebben bezocht"
+          }
+        }
+      }
+    },
+    {
+      "i": "verbeteren",
+      "e": "to improve",
+      "s": "verbeter",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "verbeter",
+            "jij": "verbetert",
+            "hij/zij": "verbetert",
+            "wij": "verbeteren",
+            "jullie": "verbeteren",
+            "zij": "verbeteren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "verbeterde",
+            "jij": "verbeterde",
+            "hij/zij": "verbeterde",
+            "wij": "verbeterden",
+            "jullie": "verbeterden",
+            "zij": "verbeterden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb verbeterd",
+            "jij": "hebt verbeterd",
+            "hij/zij": "heeft verbeterd",
+            "wij": "hebben verbeterd",
+            "jullie": "hebben verbeterd",
+            "zij": "hebben verbeterd"
+          }
+        }
+      }
+    },
+    {
+      "i": "organiseren",
+      "e": "to organize",
+      "s": "organiseer",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "organiseer",
+            "jij": "organiseert",
+            "hij/zij": "organiseert",
+            "wij": "organiseren",
+            "jullie": "organiseren",
+            "zij": "organiseren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "organiseerde",
+            "jij": "organiseerde",
+            "hij/zij": "organiseerde",
+            "wij": "organiseerden",
+            "jullie": "organiseerden",
+            "zij": "organiseerden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb georganiseerd",
+            "jij": "hebt georganiseerd",
+            "hij/zij": "heeft georganiseerd",
+            "wij": "hebben georganiseerd",
+            "jullie": "hebben georganiseerd",
+            "zij": "hebben georganiseerd"
+          }
+        }
+      }
+    },
+    {
+      "i": "plannen",
+      "e": "to plan",
+      "s": "plan",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "plan",
+            "jij": "plant",
+            "hij/zij": "plant",
+            "wij": "plannen",
+            "jullie": "plannen",
+            "zij": "plannen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "plande",
+            "jij": "plande",
+            "hij/zij": "plande",
+            "wij": "planden",
+            "jullie": "planden",
+            "zij": "planden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gepland",
+            "jij": "hebt gepland",
+            "hij/zij": "heeft gepland",
+            "wij": "hebben gepland",
+            "jullie": "hebben gepland",
+            "zij": "hebben gepland"
+          }
+        }
+      }
+    },
+    {
+      "i": "voorstellen",
+      "e": "to propose",
+      "s": "stel voor",
+      "l": "B1",
+      "sp": true,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "stel voor",
+            "jij": "stelt voor",
+            "hij/zij": "stelt voor",
+            "wij": "stellen voor",
+            "jullie": "stellen voor",
+            "zij": "stellen voor"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "stelde voor",
+            "jij": "stelde voor",
+            "hij/zij": "stelde voor",
+            "wij": "stelden voor",
+            "jullie": "stelden voor",
+            "zij": "stelden voor"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb voorgesteld",
+            "jij": "hebt voorgesteld",
+            "hij/zij": "heeft voorgesteld",
+            "wij": "hebben voorgesteld",
+            "jullie": "hebben voorgesteld",
+            "zij": "hebben voorgesteld"
+          }
+        }
+      }
+    },
+    {
+      "i": "aanbevelen",
+      "e": "to recommend",
+      "s": "beveel aan",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "beveel aan",
+            "jij": "beveelt aan",
+            "hij/zij": "beveelt aan",
+            "wij": "bevelen aan",
+            "jullie": "bevelen aan",
+            "zij": "bevelen aan"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "beval aan",
+            "jij": "beval aan",
+            "hij/zij": "beval aan",
+            "wij": "bevalen aan",
+            "jullie": "bevalen aan",
+            "zij": "bevalen aan"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb aanbevolen",
+            "jij": "hebt aanbevolen",
+            "hij/zij": "heeft aanbevolen",
+            "wij": "hebben aanbevolen",
+            "jullie": "hebben aanbevolen",
+            "zij": "hebben aanbevolen"
+          }
+        }
+      }
+    },
+    {
+      "i": "waarschuwen",
+      "e": "to warn",
+      "s": "waarschuw",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "waarschuw",
+            "jij": "waarschuwt",
+            "hij/zij": "waarschuwt",
+            "wij": "waarschuwen",
+            "jullie": "waarschuwen",
+            "zij": "waarschuwen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "waarschuwde",
+            "jij": "waarschuwde",
+            "hij/zij": "waarschuwde",
+            "wij": "waarschuwden",
+            "jullie": "waarschuwden",
+            "zij": "waarschuwden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gewaarschuwd",
+            "jij": "hebt gewaarschuwd",
+            "hij/zij": "heeft gewaarschuwd",
+            "wij": "hebben gewaarschuwd",
+            "jullie": "hebben gewaarschuwd",
+            "zij": "hebben gewaarschuwd"
+          }
+        }
+      }
+    },
+    {
+      "i": "beschermen",
+      "e": "to protect",
+      "s": "bescherm",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "bescherm",
+            "jij": "beschermt",
+            "hij/zij": "beschermt",
+            "wij": "beschermen",
+            "jullie": "beschermen",
+            "zij": "beschermen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "beschermde",
+            "jij": "beschermde",
+            "hij/zij": "beschermde",
+            "wij": "beschermden",
+            "jullie": "beschermden",
+            "zij": "beschermden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb beschermd",
+            "jij": "hebt beschermd",
+            "hij/zij": "heeft beschermd",
+            "wij": "hebben beschermd",
+            "jullie": "hebben beschermd",
+            "zij": "hebben beschermd"
+          }
+        }
+      }
+    },
+    {
+      "i": "onderzoeken",
+      "e": "to investigate",
+      "s": "onderzoek",
+      "l": "B1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "onderzoek",
+            "jij": "onderzoekt",
+            "hij/zij": "onderzoekt",
+            "wij": "onderzoeken",
+            "jullie": "onderzoeken",
+            "zij": "onderzoeken"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "onderzocht",
+            "jij": "onderzocht",
+            "hij/zij": "onderzocht",
+            "wij": "onderzochten",
+            "jullie": "onderzochten",
+            "zij": "onderzochten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb onderzocht",
+            "jij": "hebt onderzocht",
+            "hij/zij": "heeft onderzocht",
+            "wij": "hebben onderzocht",
+            "jullie": "hebben onderzocht",
+            "zij": "hebben onderzocht"
+          }
+        }
+      }
+    },
+    {
+      "i": "bewijzen",
+      "e": "to prove",
+      "s": "bewijs",
+      "l": "B1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "bewijs",
+            "jij": "bewijst",
+            "hij/zij": "bewijst",
+            "wij": "bewijzen",
+            "jullie": "bewijzen",
+            "zij": "bewijzen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "bewees",
+            "jij": "bewees",
+            "hij/zij": "bewees",
+            "wij": "bewezen",
+            "jullie": "bewezen",
+            "zij": "bewezen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb bewezen",
+            "jij": "hebt bewezen",
+            "hij/zij": "heeft bewezen",
+            "wij": "hebben bewezen",
+            "jullie": "hebben bewezen",
+            "zij": "hebben bewezen"
+          }
+        }
+      }
+    },
+    {
+      "i": "bevestigen",
+      "e": "to confirm",
+      "s": "bevestig",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "bevestig",
+            "jij": "bevestigt",
+            "hij/zij": "bevestigt",
+            "wij": "bevestigen",
+            "jullie": "bevestigen",
+            "zij": "bevestigen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "bevestigde",
+            "jij": "bevestigde",
+            "hij/zij": "bevestigde",
+            "wij": "bevestigden",
+            "jullie": "bevestigden",
+            "zij": "bevestigden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb bevestigd",
+            "jij": "hebt bevestigd",
+            "hij/zij": "heeft bevestigd",
+            "wij": "hebben bevestigd",
+            "jullie": "hebben bevestigd",
+            "zij": "hebben bevestigd"
+          }
+        }
+      }
+    },
+    {
+      "i": "weigeren",
+      "e": "to refuse",
+      "s": "weiger",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "weiger",
+            "jij": "weigert",
+            "hij/zij": "weigert",
+            "wij": "weigeren",
+            "jullie": "weigeren",
+            "zij": "weigeren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "weigerde",
+            "jij": "weigerde",
+            "hij/zij": "weigerde",
+            "wij": "weigerden",
+            "jullie": "weigerden",
+            "zij": "weigerden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geweigerd",
+            "jij": "hebt geweigerd",
+            "hij/zij": "heeft geweigerd",
+            "wij": "hebben geweigerd",
+            "jullie": "hebben geweigerd",
+            "zij": "hebben geweigerd"
+          }
+        }
+      }
+    },
+    {
+      "i": "toestaan",
+      "e": "to allow",
+      "s": "sta toe",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "sta toe",
+            "jij": "staat toe",
+            "hij/zij": "staat toe",
+            "wij": "staan toe",
+            "jullie": "staan toe",
+            "zij": "staan toe"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "stond toe",
+            "jij": "stond toe",
+            "hij/zij": "stond toe",
+            "wij": "stonden toe",
+            "jullie": "stonden toe",
+            "zij": "stonden toe"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb toegestaan",
+            "jij": "hebt toegestaan",
+            "hij/zij": "heeft toegestaan",
+            "wij": "hebben toegestaan",
+            "jullie": "hebben toegestaan",
+            "zij": "hebben toegestaan"
+          }
+        }
+      }
+    },
+    {
+      "i": "verdedigen",
+      "e": "to defend",
+      "s": "verdedig",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "verdedig",
+            "jij": "verdedigt",
+            "hij/zij": "verdedigt",
+            "wij": "verdedigen",
+            "jullie": "verdedigen",
+            "zij": "verdedigen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "verdedigde",
+            "jij": "verdedigde",
+            "hij/zij": "verdedigde",
+            "wij": "verdedigden",
+            "jullie": "verdedigden",
+            "zij": "verdedigden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb verdedigd",
+            "jij": "hebt verdedigd",
+            "hij/zij": "heeft verdedigd",
+            "wij": "hebben verdedigd",
+            "jullie": "hebben verdedigd",
+            "zij": "hebben verdedigd"
+          }
+        }
+      }
+    },
+    {
+      "i": "verminderen",
+      "e": "to reduce",
+      "s": "verminder",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "verminder",
+            "jij": "vermindert",
+            "hij/zij": "vermindert",
+            "wij": "verminderen",
+            "jullie": "verminderen",
+            "zij": "verminderen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "verminderde",
+            "jij": "verminderde",
+            "hij/zij": "verminderde",
+            "wij": "verminderden",
+            "jullie": "verminderden",
+            "zij": "verminderden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb verminderd",
+            "jij": "hebt verminderd",
+            "hij/zij": "heeft verminderd",
+            "wij": "hebben verminderd",
+            "jullie": "hebben verminderd",
+            "zij": "hebben verminderd"
+          }
+        }
+      }
+    },
+    {
+      "i": "verhogen",
+      "e": "to increase",
+      "s": "verhoog",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "verhoog",
+            "jij": "verhoogt",
+            "hij/zij": "verhoogt",
+            "wij": "verhogen",
+            "jullie": "verhogen",
+            "zij": "verhogen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "verhoogde",
+            "jij": "verhoogde",
+            "hij/zij": "verhoogde",
+            "wij": "verhoogden",
+            "jullie": "verhoogden",
+            "zij": "verhoogden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb verhoogd",
+            "jij": "hebt verhoogd",
+            "hij/zij": "heeft verhoogd",
+            "wij": "hebben verhoogd",
+            "jullie": "hebben verhoogd",
+            "zij": "hebben verhoogd"
+          }
+        }
+      }
+    },
+    {
+      "i": "aanvallen",
+      "e": "to attack",
+      "s": "val aan",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "val aan",
+            "jij": "valt aan",
+            "hij/zij": "valt aan",
+            "wij": "vallen aan",
+            "jullie": "vallen aan",
+            "zij": "vallen aan"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "viel aan",
+            "jij": "viel aan",
+            "hij/zij": "viel aan",
+            "wij": "vielen aan",
+            "jullie": "vielen aan",
+            "zij": "vielen aan"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb aangevallen",
+            "jij": "hebt aangevallen",
+            "hij/zij": "heeft aangevallen",
+            "wij": "hebben aangevallen",
+            "jullie": "hebben aangevallen",
+            "zij": "hebben aangevallen"
+          }
+        }
+      }
+    },
+    {
+      "i": "ontkennen",
+      "e": "to deny",
+      "s": "ontken",
+      "l": "B1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ontken",
+            "jij": "ontkent",
+            "hij/zij": "ontkent",
+            "wij": "ontkennen",
+            "jullie": "ontkennen",
+            "zij": "ontkennen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "ontkende",
+            "jij": "ontkende",
+            "hij/zij": "ontkende",
+            "wij": "ontkenden",
+            "jullie": "ontkenden",
+            "zij": "ontkenden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb ontkend",
+            "jij": "hebt ontkend",
+            "hij/zij": "heeft ontkend",
+            "wij": "hebben ontkend",
+            "jullie": "hebben ontkend",
+            "zij": "hebben ontkend"
+          }
+        }
+      }
+    },
+    {
+      "i": "analyseren",
+      "e": "to analyze",
+      "s": "analyseer",
+      "l": "B2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "analyseer",
+            "jij": "analyseert",
+            "hij/zij": "analyseert",
+            "wij": "analyseren",
+            "jullie": "analyseren",
+            "zij": "analyseren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "analyseerde",
+            "jij": "analyseerde",
+            "hij/zij": "analyseerde",
+            "wij": "analyseerden",
+            "jullie": "analyseerden",
+            "zij": "analyseerden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geanalyseerd",
+            "jij": "hebt geanalyseerd",
+            "hij/zij": "heeft geanalyseerd",
+            "wij": "hebben geanalyseerd",
+            "jullie": "hebben geanalyseerd",
+            "zij": "hebben geanalyseerd"
+          }
+        }
+      }
+    },
+    {
+      "i": "beoordelen",
+      "e": "to evaluate",
+      "s": "beoordeel",
+      "l": "B2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "beoordeel",
+            "jij": "beoordeelt",
+            "hij/zij": "beoordeelt",
+            "wij": "beoordelen",
+            "jullie": "beoordelen",
+            "zij": "beoordelen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "beoordeelde",
+            "jij": "beoordeelde",
+            "hij/zij": "beoordeelde",
+            "wij": "beoordeelden",
+            "jullie": "beoordeelden",
+            "zij": "beoordeelden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb beoordeeld",
+            "jij": "hebt beoordeeld",
+            "hij/zij": "heeft beoordeeld",
+            "wij": "hebben beoordeeld",
+            "jullie": "hebben beoordeeld",
+            "zij": "hebben beoordeeld"
+          }
+        }
+      }
+    },
+    {
+      "i": "ontwikkelen",
+      "e": "to develop",
+      "s": "ontwikkel",
+      "l": "B2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ontwikkel",
+            "jij": "ontwikkelt",
+            "hij/zij": "ontwikkelt",
+            "wij": "ontwikkelen",
+            "jullie": "ontwikkelen",
+            "zij": "ontwikkelen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "ontwikkelde",
+            "jij": "ontwikkelde",
+            "hij/zij": "ontwikkelde",
+            "wij": "ontwikkelden",
+            "jullie": "ontwikkelden",
+            "zij": "ontwikkelden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb ontwikkeld",
+            "jij": "hebt ontwikkeld",
+            "hij/zij": "heeft ontwikkeld",
+            "wij": "hebben ontwikkeld",
+            "jullie": "hebben ontwikkeld",
+            "zij": "hebben ontwikkeld"
+          }
+        }
+      }
+    },
+    {
+      "i": "fascineren",
+      "e": "to fascinate",
+      "s": "fascineer",
+      "l": "B2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "fascineer",
+            "jij": "fascineert",
+            "hij/zij": "fascineert",
+            "wij": "fascineren",
+            "jullie": "fascineren",
+            "zij": "fascineren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "fascineerde",
+            "jij": "fascineerde",
+            "hij/zij": "fascineerde",
+            "wij": "fascineerden",
+            "jullie": "fascineerden",
+            "zij": "fascineerden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gefascineerd",
+            "jij": "hebt gefascineerd",
+            "hij/zij": "heeft gefascineerd",
+            "wij": "hebben gefascineerd",
+            "jullie": "hebben gefascineerd",
+            "zij": "hebben gefascineerd"
+          }
+        }
+      }
+    },
+    {
+      "i": "realiseren",
+      "e": "to realize",
+      "s": "realiseer",
+      "l": "B2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "realiseer",
+            "jij": "realiseert",
+            "hij/zij": "realiseert",
+            "wij": "realiseren",
+            "jullie": "realiseren",
+            "zij": "realiseren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "realiseerde",
+            "jij": "realiseerde",
+            "hij/zij": "realiseerde",
+            "wij": "realiseerden",
+            "jullie": "realiseerden",
+            "zij": "realiseerden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gerealiseerd",
+            "jij": "hebt gerealiseerd",
+            "hij/zij": "heeft gerealiseerd",
+            "wij": "hebben gerealiseerd",
+            "jullie": "hebben gerealiseerd",
+            "zij": "hebben gerealiseerd"
+          }
+        }
+      }
+    },
+    {
+      "i": "beheersen",
+      "e": "to master",
+      "s": "beheers",
+      "l": "B2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "beheers",
+            "jij": "beheerst",
+            "hij/zij": "beheerst",
+            "wij": "beheersen",
+            "jullie": "beheersen",
+            "zij": "beheersen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "beheerste",
+            "jij": "beheerste",
+            "hij/zij": "beheerste",
+            "wij": "beheersten",
+            "jullie": "beheersten",
+            "zij": "beheersten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb beheerst",
+            "jij": "hebt beheerst",
+            "hij/zij": "heeft beheerst",
+            "wij": "hebben beheerst",
+            "jullie": "hebben beheerst",
+            "zij": "hebben beheerst"
+          }
+        }
+      }
+    },
+    {
+      "i": "inspireren",
+      "e": "to inspire",
+      "s": "inspireer",
+      "l": "B2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "inspireer",
+            "jij": "inspireert",
+            "hij/zij": "inspireert",
+            "wij": "inspireren",
+            "jullie": "inspireren",
+            "zij": "inspireren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "inspireerde",
+            "jij": "inspireerde",
+            "hij/zij": "inspireerde",
+            "wij": "inspireerden",
+            "jullie": "inspireerden",
+            "zij": "inspireerden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geïnspireerd",
+            "jij": "hebt geïnspireerd",
+            "hij/zij": "heeft geïnspireerd",
+            "wij": "hebben geïnspireerd",
+            "jullie": "hebben geïnspireerd",
+            "zij": "hebben geïnspireerd"
+          }
+        }
+      }
+    },
+    {
+      "i": "frustreren",
+      "e": "to frustrate",
+      "s": "frustreer",
+      "l": "B2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "frustreer",
+            "jij": "frustreert",
+            "hij/zij": "frustreert",
+            "wij": "frustreren",
+            "jullie": "frustreren",
+            "zij": "frustreren"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "frustreerde",
+            "jij": "frustreerde",
+            "hij/zij": "frustreerde",
+            "wij": "frustreerden",
+            "jullie": "frustreerden",
+            "zij": "frustreerden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gefrustreerd",
+            "jij": "hebt gefrustreerd",
+            "hij/zij": "heeft gefrustreerd",
+            "wij": "hebben gefrustreerd",
+            "jullie": "hebben gefrustreerd",
+            "zij": "hebben gefrustreerd"
+          }
+        }
+      }
+    },
+    {
+      "i": "afgaan",
+      "e": "to go off",
+      "s": "ga af",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ga af",
+            "jij": "gaat af",
+            "hij/zij": "gaat af",
+            "wij": "gaan af",
+            "jullie": "gaan af",
+            "zij": "gaan af"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "ging af",
+            "jij": "ging af",
+            "hij/zij": "ging af",
+            "wij": "gingen af",
+            "jullie": "gingen af",
+            "zij": "gingen af"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben afgegaan",
+            "jij": "bent afgegaan",
+            "hij/zij": "is afgegaan",
+            "wij": "zijn afgegaan",
+            "jullie": "zijn afgegaan",
+            "zij": "zijn afgegaan"
+          }
+        }
+      }
+    },
+    {
+      "i": "aankomen",
+      "e": "to arrive",
+      "s": "kom aan",
+      "l": "A2",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "kom aan",
+            "jij": "komt aan",
+            "hij/zij": "komt aan",
+            "wij": "komen aan",
+            "jullie": "komen aan",
+            "zij": "komen aan"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "kwam aan",
+            "jij": "kwam aan",
+            "hij/zij": "kwam aan",
+            "wij": "kwamen aan",
+            "jullie": "kwamen aan",
+            "zij": "kwamen aan"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben aangekomen",
+            "jij": "bent aangekomen",
+            "hij/zij": "is aangekomen",
+            "wij": "zijn aangekomen",
+            "jullie": "zijn aangekomen",
+            "zij": "zijn aangekomen"
+          }
+        }
+      }
+    },
+    {
+      "i": "bijdragen",
+      "e": "to contribute",
+      "s": "draag bij",
+      "l": "B2",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "draag bij",
+            "jij": "draagt bij",
+            "hij/zij": "draagt bij",
+            "wij": "dragen bij",
+            "jullie": "dragen bij",
+            "zij": "dragen bij"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "droeg bij",
+            "jij": "droeg bij",
+            "hij/zij": "droeg bij",
+            "wij": "droegen bij",
+            "jullie": "droegen bij",
+            "zij": "droegen bij"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb bijgedragen",
+            "jij": "hebt bijgedragen",
+            "hij/zij": "heeft bijgedragen",
+            "wij": "hebben bijgedragen",
+            "jullie": "hebben bijgedragen",
+            "zij": "hebben bijgedragen"
+          }
+        }
+      }
+    },
+    {
+      "i": "instappen",
+      "e": "to get in/board",
+      "s": "stap in",
+      "l": "A2",
+      "sp": true,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "stap in",
+            "jij": "stapt in",
+            "hij/zij": "stapt in",
+            "wij": "stappen in",
+            "jullie": "stappen in",
+            "zij": "stappen in"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "stapte in",
+            "jij": "stapte in",
+            "hij/zij": "stapte in",
+            "wij": "stapten in",
+            "jullie": "stapten in",
+            "zij": "stapten in"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben ingestapt",
+            "jij": "bent ingestapt",
+            "hij/zij": "is ingestapt",
+            "wij": "zijn ingestapt",
+            "jullie": "zijn ingestapt",
+            "zij": "zijn ingestapt"
+          }
+        }
+      }
+    },
+    {
+      "i": "meenemen",
+      "e": "to take along",
+      "s": "neem mee",
+      "l": "A2",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "neem mee",
+            "jij": "neemt mee",
+            "hij/zij": "neemt mee",
+            "wij": "nemen mee",
+            "jullie": "nemen mee",
+            "zij": "nemen mee"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "nam mee",
+            "jij": "nam mee",
+            "hij/zij": "nam mee",
+            "wij": "namen mee",
+            "jullie": "namen mee",
+            "zij": "namen mee"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb meegenomen",
+            "jij": "hebt meegenomen",
+            "hij/zij": "heeft meegenomen",
+            "wij": "hebben meegenomen",
+            "jullie": "hebben meegenomen",
+            "zij": "hebben meegenomen"
+          }
+        }
+      }
+    },
+    {
+      "i": "nagaan",
+      "e": "to check/verify",
+      "s": "ga na",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ga na",
+            "jij": "gaat na",
+            "hij/zij": "gaat na",
+            "wij": "gaan na",
+            "jullie": "gaan na",
+            "zij": "gaan na"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "ging na",
+            "jij": "ging na",
+            "hij/zij": "ging na",
+            "wij": "gingen na",
+            "jullie": "gingen na",
+            "zij": "gingen na"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben nagegaan",
+            "jij": "bent nagegaan",
+            "hij/zij": "is nagegaan",
+            "wij": "zijn nagegaan",
+            "jullie": "zijn nagegaan",
+            "zij": "zijn nagegaan"
+          }
+        }
+      }
+    },
+    {
+      "i": "omgaan",
+      "e": "to deal with",
+      "s": "ga om",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ga om",
+            "jij": "gaat om",
+            "hij/zij": "gaat om",
+            "wij": "gaan om",
+            "jullie": "gaan om",
+            "zij": "gaan om"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "ging om",
+            "jij": "ging om",
+            "hij/zij": "ging om",
+            "wij": "gingen om",
+            "jullie": "gingen om",
+            "zij": "gingen om"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben omgegaan",
+            "jij": "bent omgegaan",
+            "hij/zij": "is omgegaan",
+            "wij": "zijn omgegaan",
+            "jullie": "zijn omgegaan",
+            "zij": "zijn omgegaan"
+          }
+        }
+      }
+    },
+    {
+      "i": "opkomen",
+      "e": "to come up",
+      "s": "kom op",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "kom op",
+            "jij": "komt op",
+            "hij/zij": "komt op",
+            "wij": "komen op",
+            "jullie": "komen op",
+            "zij": "komen op"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "kwam op",
+            "jij": "kwam op",
+            "hij/zij": "kwam op",
+            "wij": "kwamen op",
+            "jullie": "kwamen op",
+            "zij": "kwamen op"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben opgekomen",
+            "jij": "bent opgekomen",
+            "hij/zij": "is opgekomen",
+            "wij": "zijn opgekomen",
+            "jullie": "zijn opgekomen",
+            "zij": "zijn opgekomen"
+          }
+        }
+      }
+    },
+    {
+      "i": "opstaan",
+      "e": "to get up",
+      "s": "sta op",
+      "l": "A2",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "sta op",
+            "jij": "staat op",
+            "hij/zij": "staat op",
+            "wij": "staan op",
+            "jullie": "staan op",
+            "zij": "staan op"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "stond op",
+            "jij": "stond op",
+            "hij/zij": "stond op",
+            "wij": "stonden op",
+            "jullie": "stonden op",
+            "zij": "stonden op"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben opgestaan",
+            "jij": "bent opgestaan",
+            "hij/zij": "is opgestaan",
+            "wij": "zijn opgestaan",
+            "jullie": "zijn opgestaan",
+            "zij": "zijn opgestaan"
+          }
+        }
+      }
+    },
+    {
+      "i": "uitkomen",
+      "e": "to come out",
+      "s": "kom uit",
+      "l": "A2",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "kom uit",
+            "jij": "komt uit",
+            "hij/zij": "komt uit",
+            "wij": "komen uit",
+            "jullie": "komen uit",
+            "zij": "komen uit"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "kwam uit",
+            "jij": "kwam uit",
+            "hij/zij": "kwam uit",
+            "wij": "kwamen uit",
+            "jullie": "kwamen uit",
+            "zij": "kwamen uit"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben uitgekomen",
+            "jij": "bent uitgekomen",
+            "hij/zij": "is uitgekomen",
+            "wij": "zijn uitgekomen",
+            "jullie": "zijn uitgekomen",
+            "zij": "zijn uitgekomen"
+          }
+        }
+      }
+    },
+    {
+      "i": "uitgaan",
+      "e": "to go out",
+      "s": "ga uit",
+      "l": "A2",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ga uit",
+            "jij": "gaat uit",
+            "hij/zij": "gaat uit",
+            "wij": "gaan uit",
+            "jullie": "gaan uit",
+            "zij": "gaan uit"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "ging uit",
+            "jij": "ging uit",
+            "hij/zij": "ging uit",
+            "wij": "gingen uit",
+            "jullie": "gingen uit",
+            "zij": "gingen uit"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben uitgegaan",
+            "jij": "bent uitgegaan",
+            "hij/zij": "is uitgegaan",
+            "wij": "zijn uitgegaan",
+            "jullie": "zijn uitgegaan",
+            "zij": "zijn uitgegaan"
+          }
+        }
+      }
+    },
+    {
+      "i": "weggaan",
+      "e": "to go away",
+      "s": "ga weg",
+      "l": "A2",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ga weg",
+            "jij": "gaat weg",
+            "hij/zij": "gaat weg",
+            "wij": "gaan weg",
+            "jullie": "gaan weg",
+            "zij": "gaan weg"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "ging weg",
+            "jij": "ging weg",
+            "hij/zij": "ging weg",
+            "wij": "gingen weg",
+            "jullie": "gingen weg",
+            "zij": "gingen weg"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben weggegaan",
+            "jij": "bent weggegaan",
+            "hij/zij": "is weggegaan",
+            "wij": "zijn weggegaan",
+            "jullie": "zijn weggegaan",
+            "zij": "zijn weggegaan"
+          }
+        }
+      }
+    },
+    {
+      "i": "afmaken",
+      "e": "to finish",
+      "s": "maak af",
+      "l": "B1",
+      "sp": true,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "maak af",
+            "jij": "maakt af",
+            "hij/zij": "maakt af",
+            "wij": "maken af",
+            "jullie": "maken af",
+            "zij": "maken af"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "maakte af",
+            "jij": "maakte af",
+            "hij/zij": "maakte af",
+            "wij": "maakten af",
+            "jullie": "maakten af",
+            "zij": "maakten af"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb afgemaakt",
+            "jij": "hebt afgemaakt",
+            "hij/zij": "heeft afgemaakt",
+            "wij": "hebben afgemaakt",
+            "jullie": "hebben afgemaakt",
+            "zij": "hebben afgemaakt"
+          }
+        }
+      }
+    },
+    {
+      "i": "aanbieden",
+      "e": "to offer",
+      "s": "bied aan",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "bied aan",
+            "jij": "biedt aan",
+            "hij/zij": "biedt aan",
+            "wij": "bieden aan",
+            "jullie": "bieden aan",
+            "zij": "bieden aan"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "bood aan",
+            "jij": "bood aan",
+            "hij/zij": "bood aan",
+            "wij": "boden aan",
+            "jullie": "boden aan",
+            "zij": "boden aan"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb aangeboden",
+            "jij": "hebt aangeboden",
+            "hij/zij": "heeft aangeboden",
+            "wij": "hebben aangeboden",
+            "jullie": "hebben aangeboden",
+            "zij": "hebben aangeboden"
+          }
+        }
+      }
+    },
+    {
+      "i": "bijwonen",
+      "e": "to attend",
+      "s": "woon bij",
+      "l": "B1",
+      "sp": true,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "woon bij",
+            "jij": "woont bij",
+            "hij/zij": "woont bij",
+            "wij": "wonen bij",
+            "jullie": "wonen bij",
+            "zij": "wonen bij"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "woonde bij",
+            "jij": "woonde bij",
+            "hij/zij": "woonde bij",
+            "wij": "woonden bij",
+            "jullie": "woonden bij",
+            "zij": "woonden bij"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb bijgewoond",
+            "jij": "hebt bijgewoond",
+            "hij/zij": "heeft bijgewoond",
+            "wij": "hebben bijgewoond",
+            "jullie": "hebben bijgewoond",
+            "zij": "hebben bijgewoond"
+          }
+        }
+      }
+    },
+    {
+      "i": "meemaken",
+      "e": "to experience",
+      "s": "maak mee",
+      "l": "B1",
+      "sp": true,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "maak mee",
+            "jij": "maakt mee",
+            "hij/zij": "maakt mee",
+            "wij": "maken mee",
+            "jullie": "maken mee",
+            "zij": "maken mee"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "maakte mee",
+            "jij": "maakte mee",
+            "hij/zij": "maakte mee",
+            "wij": "maakten mee",
+            "jullie": "maakten mee",
+            "zij": "maakten mee"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb meegemaakt",
+            "jij": "hebt meegemaakt",
+            "hij/zij": "heeft meegemaakt",
+            "wij": "hebben meegemaakt",
+            "jullie": "hebben meegemaakt",
+            "zij": "hebben meegemaakt"
+          }
+        }
+      }
+    },
+    {
+      "i": "nakijken",
+      "e": "to check/correct",
+      "s": "kijk na",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "kijk na",
+            "jij": "kijkt na",
+            "hij/zij": "kijkt na",
+            "wij": "kijken na",
+            "jullie": "kijken na",
+            "zij": "kijken na"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "keek na",
+            "jij": "keek na",
+            "hij/zij": "keek na",
+            "wij": "keken na",
+            "jullie": "keken na",
+            "zij": "keken na"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb nagekeken",
+            "jij": "hebt nagekeken",
+            "hij/zij": "heeft nagekeken",
+            "wij": "hebben nagekeken",
+            "jullie": "hebben nagekeken",
+            "zij": "hebben nagekeken"
+          }
+        }
+      }
+    },
+    {
+      "i": "omkeren",
+      "e": "to turn around",
+      "s": "keer om",
+      "l": "B1",
+      "sp": true,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "keer om",
+            "jij": "keert om",
+            "hij/zij": "keert om",
+            "wij": "keren om",
+            "jullie": "keren om",
+            "zij": "keren om"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "keerde om",
+            "jij": "keerde om",
+            "hij/zij": "keerde om",
+            "wij": "keerden om",
+            "jullie": "keerden om",
+            "zij": "keerden om"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben omgekeerd",
+            "jij": "bent omgekeerd",
+            "hij/zij": "is omgekeerd",
+            "wij": "zijn omgekeerd",
+            "jullie": "zijn omgekeerd",
+            "zij": "zijn omgekeerd"
+          }
+        }
+      }
+    },
+    {
+      "i": "openen",
+      "e": "to open",
+      "s": "open",
+      "l": "A2",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "open",
+            "jij": "opent",
+            "hij/zij": "opent",
+            "wij": "openen",
+            "jullie": "openen",
+            "zij": "openen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "opende",
+            "jij": "opende",
+            "hij/zij": "opende",
+            "wij": "openden",
+            "jullie": "openden",
+            "zij": "openden"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb geopend",
+            "jij": "hebt geopend",
+            "hij/zij": "heeft geopend",
+            "wij": "hebben geopend",
+            "jullie": "hebben geopend",
+            "zij": "hebben geopend"
+          }
+        }
+      }
+    },
+    {
+      "i": "oversteken",
+      "e": "to cross",
+      "s": "steek over",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "steek over",
+            "jij": "steekt over",
+            "hij/zij": "steekt over",
+            "wij": "steken over",
+            "jullie": "steken over",
+            "zij": "steken over"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "stak over",
+            "jij": "stak over",
+            "hij/zij": "stak over",
+            "wij": "staken over",
+            "jullie": "staken over",
+            "zij": "staken over"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben overgestoken",
+            "jij": "bent overgestoken",
+            "hij/zij": "is overgestoken",
+            "wij": "zijn overgestoken",
+            "jullie": "zijn overgestoken",
+            "zij": "zijn overgestoken"
+          }
+        }
+      }
+    },
+    {
+      "i": "terugkomen",
+      "e": "to come back",
+      "s": "kom terug",
+      "l": "A2",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "kom terug",
+            "jij": "komt terug",
+            "hij/zij": "komt terug",
+            "wij": "komen terug",
+            "jullie": "komen terug",
+            "zij": "komen terug"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "kwam terug",
+            "jij": "kwam terug",
+            "hij/zij": "kwam terug",
+            "wij": "kwamen terug",
+            "jullie": "kwamen terug",
+            "zij": "kwamen terug"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben teruggekomen",
+            "jij": "bent teruggekomen",
+            "hij/zij": "is teruggekomen",
+            "wij": "zijn teruggekomen",
+            "jullie": "zijn teruggekomen",
+            "zij": "zijn teruggekomen"
+          }
+        }
+      }
+    },
+    {
+      "i": "toevoegen",
+      "e": "to add",
+      "s": "voeg toe",
+      "l": "B1",
+      "sp": true,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "voeg toe",
+            "jij": "voegt toe",
+            "hij/zij": "voegt toe",
+            "wij": "voegen toe",
+            "jullie": "voegen toe",
+            "zij": "voegen toe"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "voegde toe",
+            "jij": "voegde toe",
+            "hij/zij": "voegde toe",
+            "wij": "voegden toe",
+            "jullie": "voegden toe",
+            "zij": "voegden toe"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb toegevoegd",
+            "jij": "hebt toegevoegd",
+            "hij/zij": "heeft toegevoegd",
+            "wij": "hebben toegevoegd",
+            "jullie": "hebben toegevoegd",
+            "zij": "hebben toegevoegd"
+          }
+        }
+      }
+    },
+    {
+      "i": "uitleggen",
+      "e": "to explain",
+      "s": "leg uit",
+      "l": "B1",
+      "sp": true,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "leg uit",
+            "jij": "legt uit",
+            "hij/zij": "legt uit",
+            "wij": "leggen uit",
+            "jullie": "leggen uit",
+            "zij": "leggen uit"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "legde uit",
+            "jij": "legde uit",
+            "hij/zij": "legde uit",
+            "wij": "legden uit",
+            "jullie": "legden uit",
+            "zij": "legden uit"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb uitgelegd",
+            "jij": "hebt uitgelegd",
+            "hij/zij": "heeft uitgelegd",
+            "wij": "hebben uitgelegd",
+            "jullie": "hebben uitgelegd",
+            "zij": "hebben uitgelegd"
+          }
+        }
+      }
+    },
+    {
+      "i": "voordoen",
+      "e": "to occur/happen",
+      "s": "doe voor",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "doe voor",
+            "jij": "doet voor",
+            "hij/zij": "doet voor",
+            "wij": "doen voor",
+            "jullie": "doen voor",
+            "zij": "doen voor"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "deed voor",
+            "jij": "deed voor",
+            "hij/zij": "deed voor",
+            "wij": "deden voor",
+            "jullie": "deden voor",
+            "zij": "deden voor"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb voorgedaan",
+            "jij": "hebt voorgedaan",
+            "hij/zij": "heeft voorgedaan",
+            "wij": "hebben voorgedaan",
+            "jullie": "hebben voorgedaan",
+            "zij": "hebben voorgedaan"
+          }
+        }
+      }
+    },
+    {
+      "i": "wegzetten",
+      "e": "to put away",
+      "s": "zet weg",
+      "l": "B1",
+      "sp": true,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "zet weg",
+            "jij": "zet weg",
+            "hij/zij": "zet weg",
+            "wij": "zetten weg",
+            "jullie": "zetten weg",
+            "zij": "zetten weg"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "zette weg",
+            "jij": "zette weg",
+            "hij/zij": "zette weg",
+            "wij": "zetten weg",
+            "jullie": "zetten weg",
+            "zij": "zetten weg"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb weggezet",
+            "jij": "hebt weggezet",
+            "hij/zij": "heeft weggezet",
+            "wij": "hebben weggezet",
+            "jullie": "hebben weggezet",
+            "zij": "hebben weggezet"
+          }
+        }
+      }
+    },
+    {
+      "i": "afsluiten",
+      "e": "to close/finish",
+      "s": "sluit af",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "sluit af",
+            "jij": "sluit af",
+            "hij/zij": "sluit af",
+            "wij": "sluiten af",
+            "jullie": "sluiten af",
+            "zij": "sluiten af"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "sloot af",
+            "jij": "sloot af",
+            "hij/zij": "sloot af",
+            "wij": "sloten af",
+            "jullie": "sloten af",
+            "zij": "sloten af"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb afgesloten",
+            "jij": "hebt afgesloten",
+            "hij/zij": "heeft afgesloten",
+            "wij": "hebben afgesloten",
+            "jullie": "hebben afgesloten",
+            "zij": "hebben afgesloten"
+          }
+        }
+      }
+    },
+    {
+      "i": "doorgaan",
+      "e": "to continue",
+      "s": "ga door",
+      "l": "B1",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "ga door",
+            "jij": "gaat door",
+            "hij/zij": "gaat door",
+            "wij": "gaan door",
+            "jullie": "gaan door",
+            "zij": "gaan door"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "ging door",
+            "jij": "ging door",
+            "hij/zij": "ging door",
+            "wij": "gingen door",
+            "jullie": "gingen door",
+            "zij": "gingen door"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben doorgegaan",
+            "jij": "bent doorgegaan",
+            "hij/zij": "is doorgegaan",
+            "wij": "zijn doorgegaan",
+            "jullie": "zijn doorgegaan",
+            "zij": "zijn doorgegaan"
+          }
+        }
+      }
+    },
+    {
+      "i": "opzetten",
+      "e": "to set up",
+      "s": "zet op",
+      "l": "B2",
+      "sp": true,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "zet op",
+            "jij": "zet op",
+            "hij/zij": "zet op",
+            "wij": "zetten op",
+            "jullie": "zetten op",
+            "zij": "zetten op"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "zette op",
+            "jij": "zette op",
+            "hij/zij": "zette op",
+            "wij": "zetten op",
+            "jullie": "zetten op",
+            "zij": "zetten op"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb opgezet",
+            "jij": "hebt opgezet",
+            "hij/zij": "heeft opgezet",
+            "wij": "hebben opgezet",
+            "jullie": "hebben opgezet",
+            "zij": "hebben opgezet"
+          }
+        }
+      }
+    },
+    {
+      "i": "uitvallen",
+      "e": "to fall out/fail",
+      "s": "val uit",
+      "l": "B2",
+      "sp": true,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "val uit",
+            "jij": "valt uit",
+            "hij/zij": "valt uit",
+            "wij": "vallen uit",
+            "jullie": "vallen uit",
+            "zij": "vallen uit"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "viel uit",
+            "jij": "viel uit",
+            "hij/zij": "viel uit",
+            "wij": "vielen uit",
+            "jullie": "vielen uit",
+            "zij": "vielen uit"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "ben uitgevallen",
+            "jij": "bent uitgevallen",
+            "hij/zij": "is uitgevallen",
+            "wij": "zijn uitgevallen",
+            "jullie": "zijn uitgevallen",
+            "zij": "zijn uitgevallen"
+          }
+        }
+      }
+    },
+    {
+      "i": "aanpassen",
+      "e": "to adapt/adjust",
+      "s": "pas aan",
+      "l": "B2",
+      "sp": true,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "pas aan",
+            "jij": "past aan",
+            "hij/zij": "past aan",
+            "wij": "passen aan",
+            "jullie": "passen aan",
+            "zij": "passen aan"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "paste aan",
+            "jij": "paste aan",
+            "hij/zij": "paste aan",
+            "wij": "pasten aan",
+            "jullie": "pasten aan",
+            "zij": "pasten aan"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb aangepast",
+            "jij": "hebt aangepast",
+            "hij/zij": "heeft aangepast",
+            "wij": "hebben aangepast",
+            "jullie": "hebben aangepast",
+            "zij": "hebben aangepast"
+          }
+        }
+      }
+    },
+    {
+      "i": "dansen",
+      "e": "to dance",
+      "s": "dans",
+      "l": "A1",
+      "sp": false,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "dans",
+            "jij": "danst",
+            "hij/zij": "danst",
+            "wij": "dansen",
+            "jullie": "dansen",
+            "zij": "dansen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "danste",
+            "jij": "danste",
+            "hij/zij": "danste",
+            "wij": "dansten",
+            "jullie": "dansten",
+            "zij": "dansten"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gedanst",
+            "jij": "hebt gedanst",
+            "hij/zij": "heeft gedanst",
+            "wij": "hebben gedanst",
+            "jullie": "hebben gedanst",
+            "zij": "hebben gedanst"
+          }
+        }
+      }
+    },
+    {
+      "i": "zingen",
+      "e": "to sing",
+      "s": "zing",
+      "l": "A1",
+      "sp": false,
+      "ir": true,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "zing",
+            "jij": "zingt",
+            "hij/zij": "zingt",
+            "wij": "zingen",
+            "jullie": "zingen",
+            "zij": "zingen"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "zong",
+            "jij": "zong",
+            "hij/zij": "zong",
+            "wij": "zongen",
+            "jullie": "zongen",
+            "zij": "zongen"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb gezongen",
+            "jij": "hebt gezongen",
+            "hij/zij": "heeft gezongen",
+            "wij": "hebben gezongen",
+            "jullie": "hebben gezongen",
+            "zij": "hebben gezongen"
+          }
+        }
+      }
+    },
+    {
+      "i": "uitnodigen",
+      "e": "to invite",
+      "s": "nodig uit",
+      "l": "A2",
+      "sp": true,
+      "ir": false,
+      "t": {
+        "pr": {
+          "c": {
+            "ik": "nodig uit",
+            "jij": "nodigt uit",
+            "hij/zij": "nodigt uit",
+            "wij": "nodigen uit",
+            "jullie": "nodigen uit",
+            "zij": "nodigen uit"
+          }
+        },
+        "pa": {
+          "c": {
+            "ik": "nodigde uit",
+            "jij": "nodigde uit",
+            "hij/zij": "nodigde uit",
+            "wij": "nodigden uit",
+            "jullie": "nodigden uit",
+            "zij": "nodigden uit"
+          }
+        },
+        "pe": {
+          "c": {
+            "ik": "heb uitgenodigd",
+            "jij": "hebt uitgenodigd",
+            "hij/zij": "heeft uitgenodigd",
+            "wij": "hebben uitgenodigd",
+            "jullie": "hebben uitgenodigd",
+            "zij": "hebben uitgenodigd"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -54,7 +54,29 @@ export function getVerbTense(verb, tense) {
   return verb[VERB_FIELDS.tenses]?.[compressedTense];
 }
 
+// Function to generate future tense conjugations dynamically
+export function generateFutureTenseConjugation(verb, pronoun) {
+  const infinitive = getVerbField(verb, 'infinitive');
+  
+  const futureConjugations = {
+    'ik': `zal ${infinitive}`,
+    'jij': `zult ${infinitive}`,
+    'hij/zij': `zal ${infinitive}`,
+    'wij': `zullen ${infinitive}`,
+    'jullie': `zullen ${infinitive}`,
+    'zij': `zullen ${infinitive}`
+  };
+  
+  return futureConjugations[pronoun];
+}
+
 export function getVerbConjugation(verb, tense, pronoun) {
+  // For future tense, generate the conjugation dynamically
+  if (tense === 'future') {
+    return generateFutureTenseConjugation(verb, pronoun);
+  }
+  
+  // For other tenses, use stored conjugations
   const tenseData = getVerbTense(verb, tense);
   return tenseData?.[VERB_FIELDS.conjugations]?.[pronoun];
 }

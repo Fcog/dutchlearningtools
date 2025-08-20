@@ -2,6 +2,7 @@
 
 // Script to import verbs from CSV file and add them to the compressed dutch-verbs.json
 // This allows you to easily add 200+ verbs using a spreadsheet
+// Note: Future tense conjugations are dynamically generated and not stored in the JSON
 
 import fs from 'fs';
 import path from 'path';
@@ -43,12 +44,12 @@ function parseCSVLine(line) {
 
 function convertCSVToCompressedVerb(csvRow) {
   // CSV column order based on our export
+  // Note: Future tense is not included as it's dynamically generated using "zullen + infinitive"
   const [
     infinitive, english, stem, level, is_separable, is_irregular,
     present_ik, present_jij, present_hij_zij, present_wij, present_jullie, present_zij,
     past_ik, past_jij, past_hij_zij, past_wij, past_jullie, past_zij,
-    perfect_ik, perfect_jij, perfect_hij_zij, perfect_wij, perfect_jullie, perfect_zij,
-    future_ik, future_jij, future_hij_zij, future_wij, future_jullie, future_zij
+    perfect_ik, perfect_jij, perfect_hij_zij, perfect_wij, perfect_jullie, perfect_zij
   ] = csvRow;
 
   return {
@@ -87,16 +88,6 @@ function convertCSVToCompressedVerb(csvRow) {
           "wij": perfect_wij,
           "jullie": perfect_jullie,
           "zij": perfect_zij
-        }
-      },
-      "fu": {
-        "c": {
-          "ik": future_ik,
-          "jij": future_jij,
-          "hij/zij": future_hij_zij,
-          "wij": future_wij,
-          "jullie": future_jullie,
-          "zij": future_zij
         }
       }
     }
