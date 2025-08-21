@@ -776,7 +776,7 @@ body {
   }
   
   .conjugation-table {
-    font-size: 1.2em !important;
+    display: none;
   }
   
   .word-card div:last-child {
@@ -849,8 +849,7 @@ body {
   }
   
   .conjugation-table {
-    font-size: 1em !important;
-    margin-bottom: 12px !important;
+    display: none;
   }
   
   .social-sharing {
