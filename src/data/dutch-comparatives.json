@@ -1,0 +1,372 @@
+{
+  "comparative_superlative_exercises": [
+    {
+      "base_adjective": "groot",
+      "sentence": "Welk land is ___, Spanje of Duitsland?",
+      "translation": "Which country is bigger, Spain or Germany?",
+      "correct_answer": "groter",
+      "type": "comparative",
+      "explanation": "Use 'groter' (bigger) when comparing two things. Add '-er' to the adjective 'groot'."
+    },
+    {
+      "base_adjective": "lang",
+      "sentence": "Tekst 6 is even ___ als tekst 7 en 8.",
+      "translation": "Text 6 is as long as texts 7 and 8.",
+      "correct_answer": "lang",
+      "type": "positive",
+      "explanation": "Use the base form 'lang' with 'even...als' (as...as) for equal comparison."
+    },
+    {
+      "base_adjective": "duur",
+      "sentence": "Naar Indonesië op vakantie gaan, is dat ___?",
+      "translation": "Going on vacation to Indonesia, is that expensive?",
+      "correct_answer": "duur",
+      "type": "positive",
+      "explanation": "Use the base form 'duur' when asking about a general quality without comparison."
+    },
+    {
+      "base_adjective": "mooi",
+      "sentence": "Deze tuin is de ___ van de hele buurt.",
+      "translation": "This garden is the most beautiful in the whole neighborhood.",
+      "correct_answer": "mooiste",
+      "type": "superlative",
+      "explanation": "Use 'mooiste' (most beautiful) for superlative. Add '-ste' to adjectives ending in vowel + consonant."
+    },
+    {
+      "base_adjective": "snel",
+      "sentence": "Mijn auto is ___ dan jouw fiets.",
+      "translation": "My car is faster than your bike.",
+      "correct_answer": "sneller",
+      "type": "comparative",
+      "explanation": "Use 'sneller' (faster) when comparing two things. Double the final consonant before adding '-er'."
+    },
+    {
+      "base_adjective": "klein",
+      "sentence": "Dit is het ___ huis in de straat.",
+      "translation": "This is the smallest house on the street.",
+      "correct_answer": "kleinste",
+      "type": "superlative",
+      "explanation": "Use 'kleinste' (smallest) for superlative. Add '-ste' to the adjective 'klein'."
+    },
+    {
+      "base_adjective": "warm",
+      "sentence": "Vandaag is het ___ dan gisteren.",
+      "translation": "Today it is warmer than yesterday.",
+      "correct_answer": "warmer",
+      "type": "comparative",
+      "explanation": "Use 'warmer' (warmer) when comparing two days. Add '-er' to the adjective 'warm'."
+    },
+    {
+      "base_adjective": "interessant",
+      "sentence": "Dit boek is ___ dan de film.",
+      "translation": "This book is more interesting than the movie.",
+      "correct_answer": "interessanter",
+      "type": "comparative",
+      "explanation": "Use 'interessanter' (more interesting) for comparison. Add '-er' even to longer adjectives in Dutch."
+    },
+    {
+      "base_adjective": "hoog",
+      "sentence": "De Eiffeltoren is de ___ toren in Parijs.",
+      "translation": "The Eiffel Tower is the highest tower in Paris.",
+      "correct_answer": "hoogste",
+      "type": "superlative",
+      "explanation": "Use 'hoogste' (highest) for superlative. Add '-ste' to the adjective 'hoog'."
+    },
+    {
+      "base_adjective": "goed",
+      "sentence": "Jouw idee is ___ dan het mijne.",
+      "translation": "Your idea is better than mine.",
+      "correct_answer": "beter",
+      "type": "comparative",
+      "explanation": "Use 'beter' (better). This is an irregular comparative form of 'goed'."
+    },
+    {
+      "base_adjective": "goed",
+      "sentence": "Dit is het ___ restaurant van de stad.",
+      "translation": "This is the best restaurant in the city.",
+      "correct_answer": "beste",
+      "type": "superlative",
+      "explanation": "Use 'beste' (best). This is an irregular superlative form of 'goed'."
+    },
+    {
+      "base_adjective": "jong",
+      "sentence": "Mijn zus is ___ dan ik.",
+      "translation": "My sister is younger than me.",
+      "correct_answer": "jonger",
+      "type": "comparative",
+      "explanation": "Use 'jonger' (younger) when comparing ages. Add '-er' to the adjective 'jong'."
+    },
+    {
+      "base_adjective": "dichtbij",
+      "sentence": "De supermarkt is ___ dan de bakker.",
+      "translation": "The supermarket is closer than the bakery.",
+      "correct_answer": "dichterbij",
+      "type": "comparative",
+      "explanation": "Use 'dichterbij' (closer) for comparison. This is the comparative form of 'dichtbij'."
+    },
+    {
+      "base_adjective": "ver",
+      "sentence": "Australië is het ___ land vanaf Nederland.",
+      "translation": "Australia is the farthest country from the Netherlands.",
+      "correct_answer": "verste",
+      "type": "superlative",
+      "explanation": "Use 'verste' (farthest) for superlative distance. Add '-ste' to the adjective 'ver'."
+    },
+    {
+      "base_adjective": "lekker",
+      "sentence": "Deze pizza smaakt ___ dan de vorige.",
+      "translation": "This pizza tastes better than the previous one.",
+      "correct_answer": "lekkerder",
+      "type": "comparative",
+      "explanation": "Use 'lekkerder' (tastier/better) for comparison. Add '-er' to the adjective 'lekker'."
+    },
+    {
+      "base_adjective": "moeilijk",
+      "sentence": "Wiskunde is het ___ vak op school.",
+      "translation": "Math is the most difficult subject at school.",
+      "correct_answer": "moeilijkste",
+      "type": "superlative",
+      "explanation": "Use 'moeilijkste' (most difficult) for superlative. Add '-ste' to the adjective 'moeilijk'."
+    },
+    {
+      "base_adjective": "nieuw",
+      "sentence": "Zijn telefoon is ___ dan de mijne.",
+      "translation": "His phone is newer than mine.",
+      "correct_answer": "nieuwer",
+      "type": "comparative",
+      "explanation": "Use 'nieuwer' (newer) when comparing two phones. Add '-er' to the adjective 'nieuw'."
+    },
+    {
+      "base_adjective": "oud",
+      "sentence": "Dit gebouw is het ___ in de stad.",
+      "translation": "This building is the oldest in the city.",
+      "correct_answer": "oudste",
+      "type": "superlative",
+      "explanation": "Use 'oudste' (oldest) for superlative. Add '-ste' to the adjective 'oud'."
+    },
+    {
+      "base_adjective": "breed",
+      "sentence": "Deze rivier is ___ dan die andere.",
+      "translation": "This river is wider than that other one.",
+      "correct_answer": "breder",
+      "type": "comparative",
+      "explanation": "Use 'breder' (wider) for comparison. Add '-er' to the adjective 'breed'."
+    },
+    {
+      "base_adjective": "zwaar",
+      "sentence": "Mijn koffer is de ___ van allemaal.",
+      "translation": "My suitcase is the heaviest of all.",
+      "correct_answer": "zwaarste",
+      "type": "superlative",
+      "explanation": "Use 'zwaarste' (heaviest) for superlative. Add '-ste' to the adjective 'zwaar'."
+    },
+    {
+      "base_adjective": "goedkoop",
+      "sentence": "Deze winkel is ___ dan die andere.",
+      "translation": "This store is cheaper than that other one.",
+      "correct_answer": "goedkoper",
+      "type": "comparative",
+      "explanation": "Use 'goedkoper' (cheaper) for comparison. Add '-er' to the adjective 'goedkoop'."
+    },
+    {
+      "base_adjective": "rustig",
+      "sentence": "Dit park is het ___ plekje in de stad.",
+      "translation": "This park is the most peaceful spot in the city.",
+      "correct_answer": "rustigste",
+      "type": "superlative",
+      "explanation": "Use 'rustigste' (most peaceful) for superlative. Add '-ste' to the adjective 'rustig'."
+    },
+    {
+      "base_adjective": "druk",
+      "sentence": "De ochtendspits is ___ dan de avondspits.",
+      "translation": "The morning rush hour is busier than the evening rush hour.",
+      "correct_answer": "drukker",
+      "type": "comparative",
+      "explanation": "Use 'drukker' (busier) for comparison. Double the final consonant before adding '-er'."
+    },
+    {
+      "base_adjective": "licht",
+      "sentence": "Helium is het ___ gas.",
+      "translation": "Helium is the lightest gas.",
+      "correct_answer": "lichtste",
+      "type": "superlative",
+      "explanation": "Use 'lichtste' (lightest) for superlative. Add '-ste' to the adjective 'licht'."
+    },
+    {
+      "base_adjective": "sterk",
+      "sentence": "Mijn broer is ___ dan ik.",
+      "translation": "My brother is stronger than me.",
+      "correct_answer": "sterker",
+      "type": "comparative",
+      "explanation": "Use 'sterker' (stronger) for comparison. Add '-er' to the adjective 'sterk'."
+    },
+    {
+      "base_adjective": "slecht",
+      "sentence": "Het weer vandaag is ___ dan gisteren.",
+      "translation": "The weather today is worse than yesterday.",
+      "correct_answer": "slechter",
+      "type": "comparative",
+      "explanation": "Use 'slechter' (worse) for comparison. Add '-er' to the adjective 'slecht'."
+    },
+    {
+      "base_adjective": "vriendelijk",
+      "sentence": "Zij is de ___ persoon die ik ken.",
+      "translation": "She is the friendliest person I know.",
+      "correct_answer": "vriendelijkste",
+      "type": "superlative",
+      "explanation": "Use 'vriendelijkste' (friendliest) for superlative. Add '-ste' to the adjective 'vriendelijk'."
+    },
+    {
+      "base_adjective": "goed",
+      "sentence": "Deze oplossing is ___ dan de vorige.",
+      "translation": "This solution is better than the previous one.",
+      "correct_answer": "beter",
+      "type": "comparative",
+      "explanation": "Use 'beter' (better) for comparison. This is an irregular comparative form of 'goed'."
+    },
+    {
+      "base_adjective": "goed",
+      "sentence": "Dit is ___ ___ voorstel van allemaal.",
+      "translation": "This is the best proposal of all.",
+      "correct_answer": "het beste",
+      "type": "superlative",
+      "explanation": "Use 'het beste' (the best) for superlative. This is an irregular superlative form of 'goed'."
+    },
+    {
+      "base_adjective": "goed",
+      "sentence": "Mijn Nederlands is ___ ___ als het jouwe.",
+      "translation": "My Dutch is as good as yours.",
+      "correct_answer": "even goed",
+      "type": "positive",
+      "explanation": "Use 'even goed als' (as good as) for equal comparison with the base form 'goed'."
+    },
+    {
+      "base_adjective": "veel",
+      "sentence": "Hij heeft ___ geld dan ik.",
+      "translation": "He has more money than me.",
+      "correct_answer": "meer",
+      "type": "comparative",
+      "explanation": "Use 'meer' (more) for comparison. This is an irregular comparative form of 'veel'."
+    },
+    {
+      "base_adjective": "veel",
+      "sentence": "Zij heeft ___ ___ ervaring van het team.",
+      "translation": "She has the most experience on the team.",
+      "correct_answer": "het meest",
+      "type": "superlative",
+      "explanation": "Use 'het meest' (the most) for superlative. This is an irregular superlative form of 'veel'."
+    },
+    {
+      "base_adjective": "veel",
+      "sentence": "Ik heb ___ ___ ___ tijd als jij.",
+      "translation": "I have as much time as you.",
+      "correct_answer": "even veel als",
+      "type": "positive",
+      "explanation": "Use 'even veel als' (as much as) for equal comparison with 'veel'."
+    },
+    {
+      "base_adjective": "weinig",
+      "sentence": "Deze route heeft ___ verkeer dan de andere.",
+      "translation": "This route has less traffic than the other one.",
+      "correct_answer": "minder",
+      "type": "comparative",
+      "explanation": "Use 'minder' (less/fewer) for comparison. This is an irregular comparative form of 'weinig'."
+    },
+    {
+      "base_adjective": "weinig",
+      "sentence": "Hij heeft ___ ___ problemen van allemaal.",
+      "translation": "He has the fewest problems of all.",
+      "correct_answer": "het minst",
+      "type": "superlative",
+      "explanation": "Use 'het minst' (the least/fewest) for superlative. This is an irregular superlative form of 'weinig'."
+    },
+    {
+      "base_adjective": "weinig",
+      "sentence": "Wij hebben ___ ___ zorgen als zij.",
+      "translation": "We have as few worries as they do.",
+      "correct_answer": "even weinig",
+      "type": "positive",
+      "explanation": "Use 'even weinig als' (as little/few as) for equal comparison with 'weinig'."
+    },
+    {
+      "base_adjective": "graag",
+      "sentence": "Ik drink ___ koffie dan thee.",
+      "translation": "I prefer drinking coffee over tea.",
+      "correct_answer": "liever",
+      "type": "comparative",
+      "explanation": "Use 'liever' (rather/prefer) for comparison. This is an irregular comparative form of 'graag'."
+    },
+    {
+      "base_adjective": "graag",
+      "sentence": "Van alle sporten voetbal ik ___ ___.",
+      "translation": "Of all sports, I like playing football the most.",
+      "correct_answer": "het liefst",
+      "type": "superlative",
+      "explanation": "Use 'het liefst' (most of all/most preferably) for superlative. This is an irregular superlative form of 'graag'."
+    },
+    {
+      "base_adjective": "graag",
+      "sentence": "Zij leest ___ ___ als ik.",
+      "translation": "She likes reading as much as I do.",
+      "correct_answer": "even graag",
+      "type": "positive",
+      "explanation": "Use 'even graag als' (as gladly/willingly as) for equal comparison with 'graag'."
+    },
+    {
+      "base_adjective": "veel",
+      "sentence": "Deze winkel heeft ___ keuze dan die andere.",
+      "translation": "This store has more choice than that other one.",
+      "correct_answer": "meer",
+      "type": "comparative",
+      "explanation": "Use 'meer' (more) for comparison with quantities or amounts."
+    },
+    {
+      "base_adjective": "goed",
+      "sentence": "Welke film vond je ___?",
+      "translation": "Which movie did you like better?",
+      "correct_answer": "beter",
+      "type": "comparative",
+      "explanation": "Use 'beter' (better) when comparing two things, even when the second item isn't explicitly mentioned."
+    },
+    {
+      "base_adjective": "weinig",
+      "sentence": "In de winter hebben we ___ daglicht.",
+      "translation": "In winter we have less daylight.",
+      "correct_answer": "minder",
+      "type": "comparative",
+      "explanation": "Use 'minder' (less) when comparing to an implied standard (like other seasons)."
+    },
+    {
+      "base_adjective": "graag",
+      "sentence": "Wat doe je ___, lezen of televisie kijken?",
+      "translation": "What do you prefer, reading or watching television?",
+      "correct_answer": "liever",
+      "type": "comparative",
+      "explanation": "Use 'liever' (rather/prefer) when asking about preferences between two options."
+    },
+    {
+      "base_adjective": "goed",
+      "sentence": "Deze methode werkt ___ ___ van alle mogelijkheden.",
+      "translation": "This method works best of all possibilities.",
+      "correct_answer": "het best",
+      "type": "superlative",
+      "explanation": "Use 'het best' (the best) for superlative when referring to how well something works or performs."
+    },
+    {
+      "base_adjective": "veel",
+      "sentence": "Wie heeft ___ ___ punten gescoord?",
+      "translation": "Who scored the most points?",
+      "correct_answer": "het meest",
+      "type": "superlative",
+      "explanation": "Use 'het meest' (the most) for superlative quantities in questions."
+    },
+    {
+      "base_adjective": "weinig",
+      "sentence": "Deze methode kost ___ ___ tijd.",
+      "translation": "This method takes the least time.",
+      "correct_answer": "het minst",
+      "type": "superlative",
+      "explanation": "Use 'het minst' (the least) for superlative when referring to the smallest amount."
+    }
+  ]
+}

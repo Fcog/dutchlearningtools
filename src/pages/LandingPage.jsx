@@ -104,6 +104,22 @@ function LandingPage() {
       available: true
     },
     {
+      id: 'comparatives',
+      icon: '📊',
+      title: 'Dutch Comparatives & Superlatives',
+      description: 'Master Dutch comparative and superlative forms. Learn to form comparatives (-er) and superlatives (-ste) with interactive exercises.',
+      features: [
+        'Comparative forms practice',
+        'Superlative forms practice',
+        'Irregular comparisons',
+        'Contextual exercises',
+        'Pattern recognition',
+        'Real-world examples'
+      ],
+      route: '/comparatives-superlatives',
+      available: true
+    },
+    {
       id: 'phrases',
       icon: '💬',
       title: 'Common Dutch Phrases',

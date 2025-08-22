@@ -624,6 +624,10 @@ body {
   box-sizing: border-box;
 }
 
+.comparative-input {
+  max-width: 400px !important;
+}
+
 /* Mobile responsive adjustments for input */
 @media (max-width: 768px) {
   .custom-input {
@@ -1443,6 +1447,37 @@ body {
 .exercise-metadata-badge.non-separable {
   background: #f5f5f5;
   color: #616161;
+}
+
+/* Comparative/Superlative exercise type badges */
+.exercise-type-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.exercise-type-badge.type-comparative {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.exercise-type-badge.type-superlative {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.exercise-type-badge.type-positive {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.base-adjective {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
 }
 
 /* Mobile-specific adjustments */
