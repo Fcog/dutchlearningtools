@@ -72,6 +72,22 @@ function LandingPage() {
       available: true
     },
     {
+      id: 'adjectives',
+      icon: '🎨',
+      title: 'Dutch Adjectives',
+      description: 'Master Dutch adjective declension with interactive exercises. Learn when to use the correct form of adjectives in different contexts.',
+      features: [
+        'Adjective declension practice',
+        'Multiple choice exercises',
+        'Instant feedback',
+        'Detailed explanations',
+        'De/het word recognition',
+        'Contextual learning'
+      ],
+      route: '/adjectives',
+      available: true
+    },
+    {
       id: 'phrasal-verbs',
       icon: '🎲',
       title: 'Dutch Phrasal Verbs',

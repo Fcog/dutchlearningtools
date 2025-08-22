@@ -1,0 +1,284 @@
+{
+  "dutch_adjectives": [
+    {
+      "sentence": "We hebben een ___ weekend.",
+      "translation": "We have a long weekend.",
+      "correct_answer": "lang",
+      "options": ["lang", "lange"],
+      "category": "time",
+      "explanation": "Lang is used here because 'weekend' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Zij draagt een ___ jurk.",
+      "translation": "She wears a beautiful dress.",
+      "correct_answer": "mooie",
+      "options": ["mooi", "mooie"],
+      "category": "appearance",
+      "explanation": "Mooie is used because 'jurk' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Hij heeft een ___ auto.",
+      "translation": "He has a new car.",
+      "correct_answer": "nieuwe",
+      "options": ["nieuw", "nieuwe"],
+      "category": "objects",
+      "explanation": "Nieuwe is used because 'auto' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Het is een ___ dag.",
+      "translation": "It is a cold day.",
+      "correct_answer": "koude",
+      "options": ["koud", "koude"],
+      "category": "weather",
+      "explanation": "Koude is used because 'dag' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "We wonen in een ___ huis.",
+      "translation": "We live in a big house.",
+      "correct_answer": "groot",
+      "options": ["groot", "grote"],
+      "category": "size",
+      "explanation": "Groot is used because 'huis' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Zij heeft ___ haar.",
+      "translation": "She has long hair.",
+      "correct_answer": "lang",
+      "options": ["lang", "lange"],
+      "category": "appearance",
+      "explanation": "Lang is used because 'haar' is a het-word (neuter) and there's no article."
+    },
+    {
+      "sentence": "Dit is een ___ boek.",
+      "translation": "This is an interesting book.",
+      "correct_answer": "interessant",
+      "options": ["interessant", "interessante"],
+      "category": "education",
+      "explanation": "Interessant is used because 'boek' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Hij drinkt ___ koffie.",
+      "translation": "He drinks hot coffee.",
+      "correct_answer": "hete",
+      "options": ["heet", "hete"],
+      "category": "food_drink",
+      "explanation": "Hete is used because 'koffie' is a de-word and there's no article (definite context)."
+    },
+    {
+      "sentence": "We hebben een ___ tafel.",
+      "translation": "We have a round table.",
+      "correct_answer": "ronde",
+      "options": ["rond", "ronde"],
+      "category": "objects",
+      "explanation": "Ronde is used because 'tafel' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Het ___ meisje speelt buiten.",
+      "translation": "The small girl plays outside.",
+      "correct_answer": "kleine",
+      "options": ["klein", "kleine"],
+      "category": "size",
+      "explanation": "Kleine is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "Zij eet een ___ appel.",
+      "translation": "She eats a green apple.",
+      "correct_answer": "groene",
+      "options": ["groen", "groene"],
+      "category": "food_drink",
+      "explanation": "Groene is used because 'appel' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Hij heeft een ___ probleem.",
+      "translation": "He has a difficult problem.",
+      "correct_answer": "moeilijk",
+      "options": ["moeilijk", "moeilijke"],
+      "category": "abstract",
+      "explanation": "Moeilijk is used because 'probleem' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "We zien een ___ film.",
+      "translation": "We watch a funny movie.",
+      "correct_answer": "grappige",
+      "options": ["grappig", "grappige"],
+      "category": "entertainment",
+      "explanation": "Grappige is used because 'film' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Het is een ___ verhaal.",
+      "translation": "It is a sad story.",
+      "correct_answer": "verdrietig",
+      "options": ["verdrietig", "verdrietige"],
+      "category": "emotions",
+      "explanation": "Verdrietig is used because 'verhaal' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Zij koopt een ___ jas.",
+      "translation": "She buys a warm coat.",
+      "correct_answer": "warme",
+      "options": ["warm", "warme"],
+      "category": "clothing",
+      "explanation": "Warme is used because 'jas' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "We hebben ___ weer vandaag.",
+      "translation": "We have nice weather today.",
+      "correct_answer": "mooi",
+      "options": ["mooi", "mooie"],
+      "category": "weather",
+      "explanation": "Mooi is used because 'weer' is a het-word (neuter) and there's no article."
+    },
+    {
+      "sentence": "Hij leest een ___ krant.",
+      "translation": "He reads a Dutch newspaper.",
+      "correct_answer": "Nederlandse",
+      "options": ["Nederlands", "Nederlandse"],
+      "category": "nationality",
+      "explanation": "Nederlandse is used because 'krant' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Dit is een ___ gebouw.",
+      "translation": "This is a tall building.",
+      "correct_answer": "hoog",
+      "options": ["hoog", "hoge"],
+      "category": "size",
+      "explanation": "Hoog is used because 'gebouw' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Zij heeft een ___ stem.",
+      "translation": "She has a soft voice.",
+      "correct_answer": "zachte",
+      "options": ["zacht", "zachte"],
+      "category": "sound",
+      "explanation": "Zachte is used because 'stem' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "We eten ___ brood.",
+      "translation": "We eat fresh bread.",
+      "correct_answer": "vers",
+      "options": ["vers", "verse"],
+      "category": "food_drink",
+      "explanation": "Vers is used because 'brood' is a het-word (neuter) and there's no article."
+    },
+    {
+      "sentence": "Ben ik bij het ___ adres?",
+      "translation": "Am I at the right address?",
+      "correct_answer": "juiste",
+      "options": ["juist", "juiste"],
+      "category": "location",
+      "explanation": "Juiste is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "We kijken naar een ___ programma.",
+      "translation": "We watch an interesting program.",
+      "correct_answer": "interessant",
+      "options": ["interessant", "interessante"],
+      "category": "entertainment",
+      "explanation": "Interessant is used because 'programma' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Hij woont in een ___ appartement.",
+      "translation": "He lives in a small apartment.",
+      "correct_answer": "klein",
+      "options": ["klein", "kleine"],
+      "category": "size",
+      "explanation": "Klein is used because 'appartement' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Het ___ kind huilt.",
+      "translation": "The sad child cries.",
+      "correct_answer": "verdrietige",
+      "options": ["verdrietig", "verdrietige"],
+      "category": "emotions",
+      "explanation": "Verdrietige is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "Ze schrijft een ___ bericht.",
+      "translation": "She writes a long message.",
+      "correct_answer": "lang",
+      "options": ["lang", "lange"],
+      "category": "communication",
+      "explanation": "Lang is used because 'bericht' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Dit is het ___ antwoord.",
+      "translation": "This is the correct answer.",
+      "correct_answer": "juiste",
+      "options": ["juist", "juiste"],
+      "category": "education",
+      "explanation": "Juiste is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "We zoeken een ___ hotel.",
+      "translation": "We are looking for a good hotel.",
+      "correct_answer": "goed",
+      "options": ["goed", "goede"],
+      "category": "travel",
+      "explanation": "Goed is used because 'hotel' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Het ___ water is koud.",
+      "translation": "The clean water is cold.",
+      "correct_answer": "schone",
+      "options": ["schoon", "schone"],
+      "category": "cleanliness",
+      "explanation": "Schone is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "Hij heeft een ___ gevoel.",
+      "translation": "He has a strange feeling.",
+      "correct_answer": "vreemd",
+      "options": ["vreemd", "vreemde"],
+      "category": "emotions",
+      "explanation": "Vreemd is used because 'gevoel' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "We bezoeken het ___ museum.",
+      "translation": "We visit the famous museum.",
+      "correct_answer": "beroemde",
+      "options": ["beroemd", "beroemde"],
+      "category": "culture",
+      "explanation": "Beroemde is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "Ze heeft een ___ idee.",
+      "translation": "She has a brilliant idea.",
+      "correct_answer": "briljant",
+      "options": ["briljant", "briljante"],
+      "category": "abstract",
+      "explanation": "Briljant is used because 'idee' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Het ___ meisje zingt mooi.",
+      "translation": "The young girl sings beautifully.",
+      "correct_answer": "jonge",
+      "options": ["jong", "jonge"],
+      "category": "age",
+      "explanation": "Jonge is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "We kopen een ___ cadeau.",
+      "translation": "We buy an expensive gift.",
+      "correct_answer": "duur",
+      "options": ["duur", "dure"],
+      "category": "shopping",
+      "explanation": "Duur is used because 'cadeau' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Hij maakt een ___ geluid.",
+      "translation": "He makes a loud sound.",
+      "correct_answer": "hard",
+      "options": ["hard", "harde"],
+      "category": "sound",
+      "explanation": "Hard is used because 'geluid' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Het ___ verhaal eindigt goed.",
+      "translation": "The beautiful story ends well.",
+      "correct_answer": "mooie",
+      "options": ["mooi", "mooie"],
+      "category": "literature",
+      "explanation": "Mooie is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    }
+  ]
+}

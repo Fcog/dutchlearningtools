@@ -246,6 +246,73 @@ body {
   margin-bottom: 20px;
 }
 
+.exercise-options-container {
+  margin-bottom: 25px;
+}
+
+.exercise-options-title {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #495057;
+  font-weight: 600;
+}
+
+.exercise-options {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.exercise-option {
+  background: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+  text-align: center;
+}
+
+.exercise-option:hover {
+  background: #e9ecef;
+  border-color: #007bff;
+  transform: translateY(-2px);
+}
+
+.exercise-option.selected {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.exercise-option:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.exercise-answer-comparison {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.exercise-explanation {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
 .exercise-result-display {
   font-size: 2em;
   margin-bottom: 20px;

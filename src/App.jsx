@@ -6,6 +6,7 @@ import VerbConjugationPage from './pages/VerbConjugationPage'
 import PrepositionsPage from './pages/PrepositionsPage'
 import PhrasalVerbsPage from './pages/PhrasalVerbsPage'
 import ConjunctionsPage from './pages/ConjunctionsPage'
+import AdjectivesPage from './pages/AdjectivesPage'
 import NotFoundPage from './pages/NotFoundPage'
 import ScrollToTop from './components/ScrollToTop'
 import CookieConsent from './components/organisms/CookieConsent'
@@ -24,6 +25,7 @@ function AppRoutes() {
         <Route path="/prepositions" element={<PrepositionsPage />} />
         <Route path="/phrasal-verbs" element={<PhrasalVerbsPage />} />
         <Route path="/conjunctions" element={<ConjunctionsPage />} />
+        <Route path="/adjectives" element={<AdjectivesPage />} />
         <Route path="/phrases" element={<div>Phrases tool coming soon!</div>} />
         <Route path="/grammar" element={<div>Grammar tool coming soon!</div>} />
         <Route path="/vocabulary" element={<div>Vocabulary tool coming soon!</div>} />
