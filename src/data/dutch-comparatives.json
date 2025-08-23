@@ -226,17 +226,17 @@
     },
     {
       "base_adjective": "goed",
-      "sentence": "Dit is ___ ___ voorstel van allemaal.",
+      "sentence": "Dit is het ___ voorstel van allemaal.",
       "translation": "This is the best proposal of all.",
-      "correct_answer": "het beste",
+      "correct_answer": "beste",
       "type": "superlative",
       "explanation": "Use 'het beste' (the best) for superlative. This is an irregular superlative form of 'goed'."
     },
     {
       "base_adjective": "goed",
-      "sentence": "Mijn Nederlands is ___ ___ als het jouwe.",
+      "sentence": "Mijn Nederlands is even ___ als het jouwe.",
       "translation": "My Dutch is as good as yours.",
-      "correct_answer": "even goed",
+      "correct_answer": "goed",
       "type": "positive",
       "explanation": "Use 'even goed als' (as good as) for equal comparison with the base form 'goed'."
     },
@@ -250,17 +250,17 @@
     },
     {
       "base_adjective": "veel",
-      "sentence": "Zij heeft ___ ___ ervaring van het team.",
+      "sentence": "Zij heeft het ___ ervaring van het team.",
       "translation": "She has the most experience on the team.",
-      "correct_answer": "het meest",
+      "correct_answer": "meest",
       "type": "superlative",
       "explanation": "Use 'het meest' (the most) for superlative. This is an irregular superlative form of 'veel'."
     },
     {
       "base_adjective": "veel",
-      "sentence": "Ik heb ___ ___ ___ tijd als jij.",
+      "sentence": "Ik heb even ___ als tijd als jij.",
       "translation": "I have as much time as you.",
-      "correct_answer": "even veel als",
+      "correct_answer": "veel",
       "type": "positive",
       "explanation": "Use 'even veel als' (as much as) for equal comparison with 'veel'."
     },
@@ -274,17 +274,17 @@
     },
     {
       "base_adjective": "weinig",
-      "sentence": "Hij heeft ___ ___ problemen van allemaal.",
+      "sentence": "Hij heeft het ___ problemen van allemaal.",
       "translation": "He has the fewest problems of all.",
-      "correct_answer": "het minst",
+      "correct_answer": "minst",
       "type": "superlative",
       "explanation": "Use 'het minst' (the least/fewest) for superlative. This is an irregular superlative form of 'weinig'."
     },
     {
       "base_adjective": "weinig",
-      "sentence": "Wij hebben ___ ___ zorgen als zij.",
+      "sentence": "Wij hebben even ___ zorgen als zij.",
       "translation": "We have as few worries as they do.",
-      "correct_answer": "even weinig",
+      "correct_answer": "weinig",
       "type": "positive",
       "explanation": "Use 'even weinig als' (as little/few as) for equal comparison with 'weinig'."
     },
@@ -298,17 +298,17 @@
     },
     {
       "base_adjective": "graag",
-      "sentence": "Van alle sporten voetbal ik ___ ___.",
+      "sentence": "Van alle sporten voetbal ik het ___.",
       "translation": "Of all sports, I like playing football the most.",
-      "correct_answer": "het liefst",
+      "correct_answer": "liefst",
       "type": "superlative",
       "explanation": "Use 'het liefst' (most of all/most preferably) for superlative. This is an irregular superlative form of 'graag'."
     },
     {
       "base_adjective": "graag",
-      "sentence": "Zij leest ___ ___ als ik.",
+      "sentence": "Zij leest even ___ als ik.",
       "translation": "She likes reading as much as I do.",
-      "correct_answer": "even graag",
+      "correct_answer": "graag",
       "type": "positive",
       "explanation": "Use 'even graag als' (as gladly/willingly as) for equal comparison with 'graag'."
     },
@@ -346,25 +346,25 @@
     },
     {
       "base_adjective": "goed",
-      "sentence": "Deze methode werkt ___ ___ van alle mogelijkheden.",
+      "sentence": "Deze methode werkt het ___ van alle mogelijkheden.",
       "translation": "This method works best of all possibilities.",
-      "correct_answer": "het best",
+      "correct_answer": "best",
       "type": "superlative",
       "explanation": "Use 'het best' (the best) for superlative when referring to how well something works or performs."
     },
     {
       "base_adjective": "veel",
-      "sentence": "Wie heeft ___ ___ punten gescoord?",
+      "sentence": "Wie heeft het ___ punten gescoord?",
       "translation": "Who scored the most points?",
-      "correct_answer": "het meest",
+      "correct_answer": "meest",
       "type": "superlative",
       "explanation": "Use 'het meest' (the most) for superlative quantities in questions."
     },
     {
       "base_adjective": "weinig",
-      "sentence": "Deze methode kost ___ ___ tijd.",
+      "sentence": "Deze methode kost het ___ tijd.",
       "translation": "This method takes the least time.",
-      "correct_answer": "het minst",
+      "correct_answer": "minst",
       "type": "superlative",
       "explanation": "Use 'het minst' (the least) for superlative when referring to the smallest amount."
     }

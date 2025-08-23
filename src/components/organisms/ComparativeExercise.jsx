@@ -43,7 +43,7 @@ function ComparativeExercise({
             value={userAnswer}
             onChange={onAnswerChange}
             onKeyPress={onKeyPress}
-            placeholder="Type the correct form (e.g., beter, het beste, even goed)..."
+            placeholder="Type the correct form (e.g., beter, beste, meer)..."
             className="comparative-input"
             autoFocus
           />
