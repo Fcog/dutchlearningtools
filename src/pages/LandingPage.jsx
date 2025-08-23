@@ -136,6 +136,22 @@ function LandingPage() {
       available: true
     },
     {
+      id: 'negation',
+      icon: '🚫',
+      title: 'Dutch Negation',
+      description: 'Master Dutch negation patterns with interactive exercises. Learn when to use "niet", "geen", and modal verbs for correct negative sentences.',
+      features: [
+        'Niet vs Geen practice',
+        'Modal verb negation',
+        'Word order rules',
+        'Comparative learning',
+        'Detailed explanations',
+        'Real conversation examples'
+      ],
+      route: '/negation',
+      available: true
+    },
+    {
       id: 'phrases',
       icon: '💬',
       title: 'Common Dutch Phrases',

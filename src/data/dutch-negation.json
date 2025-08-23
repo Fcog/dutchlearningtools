@@ -1,0 +1,98 @@
+[
+  {
+    "question": "Heb je een balkon?",
+    "question_translation": "Do you have a balcony?",
+    "correct_answer": "Nee, ik heb geen balkon.",
+    "incorrect_answer": "Nee, ik heb niet een balkon.",
+    "correct_translation": "No, I don't have a balcony.",
+    "explanation": "Use 'geen' (no/not any) before nouns to negate them. 'Niet een' is incorrect in Dutch."
+  },
+  {
+    "question": "Hebben jullie Spaanse wijn?",
+    "question_translation": "Do you have Spanish wine?",
+    "correct_answer": "Nee, wij hebben geen Spaanse wijn.",
+    "incorrect_answer": "Nee, wij hebben de Spaanse wijn niet.",
+    "correct_translation": "No, we don't have Spanish wine.",
+    "explanation": "Use 'geen' to negate indefinite nouns. 'De Spaanse wijn niet' would mean 'not the Spanish wine' (specific wine)."
+  },
+  {
+    "question": "Moeten we het nagerecht al bestellen?",
+    "question_translation": "Do we have to order dessert already?",
+    "correct_answer": "Nee, dat hoef je nu niet te bestellen.",
+    "incorrect_answer": "Nee, dat moet je nu niet bestellen.",
+    "correct_translation": "No, you don't have to order that now.",
+    "explanation": "Use 'hoeven niet' for 'don't have to/need to'. 'Moet niet' means 'must not' (prohibition)."
+  },
+  {
+    "question": "Wil je een nieuwe spijkerbroek?",
+    "question_translation": "Do you want new jeans?",
+    "correct_answer": "Nee, ik hoef geen nieuwe broek.",
+    "incorrect_answer": "Nee, ik moet geen nieuwe broek.",
+    "correct_translation": "No, I don't need new pants.",
+    "explanation": "Use 'hoeven geen' for 'don't need'. 'Moet geen' is not correct Dutch."
+  },
+  {
+    "question": "Komen je ouders vanavond ook?",
+    "question_translation": "Are your parents coming tonight too?",
+    "correct_answer": "Nee, zij komen niet.",
+    "incorrect_answer": "Nee, geen komt.",
+    "correct_translation": "No, they're not coming.",
+    "explanation": "Use 'niet' to negate verbs. 'Geen komt' is grammatically incorrect."
+  },
+  {
+    "question": "Ken jij Martina?",
+    "question_translation": "Do you know Martina?",
+    "correct_answer": "Nee, ik ken Martina niet.",
+    "incorrect_answer": "Nee, ik ken niet Martina.",
+    "correct_translation": "No, I don't know Martina.",
+    "explanation": "Place 'niet' after the direct object (Martina). Word order: subject + verb + object + niet."
+  },
+  {
+    "question": "Heb je dit boek nodig?",
+    "question_translation": "Do you need this book?",
+    "correct_answer": "Nee, ik heb het niet nodig.",
+    "incorrect_answer": "Nee, ik heb geen nodig.",
+    "correct_translation": "No, I don't need it.",
+    "explanation": "Use 'niet' with 'nodig hebben' (to need). 'Geen nodig' is incomplete and incorrect."
+  },
+  {
+    "question": "Is deze kamer te huur?",
+    "question_translation": "Is this room for rent?",
+    "correct_answer": "Nee, deze kamer is niet te huur.",
+    "incorrect_answer": "Nee, deze kamer is geen huur.",
+    "correct_translation": "No, this room is not for rent.",
+    "explanation": "Use 'niet' before prepositional phrases like 'te huur'. 'Geen huur' changes the meaning incorrectly."
+  },
+  {
+    "question": "Komt Alex uit Enschede?",
+    "question_translation": "Does Alex come from Enschede?",
+    "correct_answer": "Nee, hij komt niet uit Enschede.",
+    "incorrect_answer": "Nee, hij komt uit geen Enschede.",
+    "correct_translation": "No, he doesn't come from Enschede.",
+    "explanation": "Use 'niet' before prepositional phrases. 'Geen' cannot be used with proper nouns like city names."
+  },
+  {
+    "question": "Betaalt Simon dit rondje?",
+    "question_translation": "Is Simon paying for this round?",
+    "correct_answer": "Nee, hij betaalt dit rondje niet.",
+    "incorrect_answer": "Nee, hij betaalt niet dit rondje.",
+    "correct_translation": "No, he's not paying for this round.",
+    "explanation": "Place 'niet' after the direct object. Word order: subject + verb + object + niet."
+  },
+  {
+    "question": "Houd je van boontjes?",
+    "question_translation": "Do you like green beans?",
+    "correct_answer": "Nee, ik houd niet van boontjes.",
+    "incorrect_answer": "Nee, ik houd van geen boontjes.",
+    "correct_translation": "No, I don't like green beans.",
+    "explanation": "Use 'niet' before prepositional phrases like 'van boontjes'. 'Van geen' is incorrect."
+  },
+  {
+    "question": "Zal ik mijn naam spellen?",
+    "question_translation": "Should I spell my name?",
+    "correct_answer": "Nee, dat hoeft niet.",
+    "incorrect_answer": "Nee, dat moet niet.",
+    "correct_translation": "No, that's not necessary.",
+    "explanation": "Use 'hoeft niet' for 'is not necessary'. 'Moet niet' means 'must not' (prohibition)."
+  }
+]
