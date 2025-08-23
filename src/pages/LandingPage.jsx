@@ -120,6 +120,22 @@ function LandingPage() {
       available: true
     },
     {
+      id: 'object-pronouns',
+      icon: '👤',
+      title: 'Dutch Object Pronouns',
+      description: 'Master Dutch object pronouns with interactive exercises. Learn to use the correct pronouns (mij, je, hem, haar, het, ons, jullie, ze) in context.',
+      features: [
+        'Object pronoun practice',
+        'Personal and formal pronouns',
+        'Gender agreement practice',
+        'Contextual exercises',
+        'Real conversation examples',
+        'Instant feedback'
+      ],
+      route: '/object-pronouns',
+      available: true
+    },
+    {
       id: 'phrases',
       icon: '💬',
       title: 'Common Dutch Phrases',

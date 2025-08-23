@@ -1,0 +1,252 @@
+{
+  "dutch_object_pronouns": [
+    {
+      "sentence": "Ik vind de soep niet zo lekker. Ik vind ___ te vet.",
+      "translation": "I don't find the soup very tasty. I find it too greasy.",
+      "correct_answer": "hem",
+      "pronoun_type": "masculine_singular",
+      "explanation": "Use 'hem' for masculine singular nouns like 'de soep'. Even though 'soep' might seem feminine, it takes the masculine pronoun 'hem'.",
+      "context": "food_opinion"
+    },
+    {
+      "sentence": "Hoe gaat het met je vrouw? Doe ___ de groeten.",
+      "translation": "How is your wife doing? Give her my regards.",
+      "correct_answer": "haar",
+      "pronoun_type": "feminine_singular",
+      "explanation": "Use 'haar' for feminine singular nouns like 'vrouw' (wife).",
+      "context": "greeting_family"
+    },
+    {
+      "sentence": "Goedendag meneer, kan ik ___ helpen?",
+      "translation": "Good day sir, can I help you?",
+      "correct_answer": "u",
+      "pronoun_type": "formal_singular",
+      "explanation": "Use 'u' as the formal object pronoun when addressing someone politely (both subject and object form).",
+      "context": "formal_service"
+    },
+    {
+      "sentence": "Koop jij aardbeien in de winter? Ik vind ___ dan te duur.",
+      "translation": "Do you buy strawberries in winter? I find them too expensive then.",
+      "correct_answer": "ze",
+      "pronoun_type": "plural",
+      "explanation": "Use 'ze' for plural nouns like 'aardbeien' (strawberries).",
+      "context": "shopping_opinion"
+    },
+    {
+      "sentence": "'Hoe ken je Paul?' 'Ik ken ___ van mijn werk.'",
+      "translation": "'How do you know Paul?' 'I know him from my work.'",
+      "correct_answer": "hem",
+      "pronoun_type": "masculine_singular",
+      "explanation": "Use 'hem' for masculine names and people like 'Paul'.",
+      "context": "personal_relationships"
+    },
+    {
+      "sentence": "Hé Jasper, mag ik ___ iets vragen?",
+      "translation": "Hey Jasper, may I ask you something?",
+      "correct_answer": "je",
+      "pronoun_type": "informal_singular",
+      "explanation": "Use 'je' as the informal object pronoun when addressing someone you know well.",
+      "context": "informal_request"
+    },
+    {
+      "sentence": "Kun je ___ helpen met mijn huiswerk?",
+      "translation": "Can you help me with my homework?",
+      "correct_answer": "mij",
+      "pronoun_type": "first_person_singular",
+      "explanation": "Use 'mij' as the object pronoun for 'I' (first person singular).",
+      "context": "asking_help"
+    },
+    {
+      "sentence": "Christine woont nu ook in Leiden. Ik zie ___ vaak.",
+      "translation": "Christine now also lives in Leiden. I see her often.",
+      "correct_answer": "haar",
+      "pronoun_type": "feminine_singular",
+      "explanation": "Use 'haar' for feminine names and people like 'Christine'.",
+      "context": "personal_relationships"
+    },
+    {
+      "sentence": "Dit T-shirt zit niet goed. Ik vind ___ te wijd.",
+      "translation": "This T-shirt doesn't fit well. I find it too loose.",
+      "correct_answer": "het",
+      "pronoun_type": "neuter_singular",
+      "explanation": "Use 'het' for neuter singular nouns like 'T-shirt' (het T-shirt).",
+      "context": "clothing_opinion"
+    },
+    {
+      "sentence": "Gaan jullie ook mee iets drinken? Dan zien we ___ in café De Dromer.",
+      "translation": "Are you also coming along for drinks? Then we'll see you at café De Dromer.",
+      "correct_answer": "jullie",
+      "pronoun_type": "informal_plural",
+      "explanation": "Use 'jullie' as the object pronoun for informal plural 'you' (same form as subject).",
+      "context": "social_invitation"
+    },
+    {
+      "sentence": "Leuk idee, jullie zien ___ om ongeveer 17.00 uur.",
+      "translation": "Nice idea, you'll see us at around 5:00 PM.",
+      "correct_answer": "ons",
+      "pronoun_type": "first_person_plural",
+      "explanation": "Use 'ons' as the object pronoun for 'we' (first person plural).",
+      "context": "social_arrangement"
+    },
+    {
+      "sentence": "'Ken je Samer en Zara?' 'Ja, ik ken ___ van de cursus Nederlands.'",
+      "translation": "'Do you know Samer and Zara?' 'Yes, I know them from the Dutch course.'",
+      "correct_answer": "ze",
+      "pronoun_type": "plural",
+      "explanation": "Use 'ze' for plural people (Samer and Zara together).",
+      "context": "personal_relationships"
+    },
+    {
+      "sentence": "Waar is mijn boek? Ik kan ___ nergens vinden.",
+      "translation": "Where is my book? I can't find it anywhere.",
+      "correct_answer": "het",
+      "pronoun_type": "neuter_singular",
+      "explanation": "Use 'het' for neuter singular nouns like 'boek' (het boek).",
+      "context": "searching_objects"
+    },
+    {
+      "sentence": "De kinderen spelen buiten. Roep ___ maar binnen voor het eten.",
+      "translation": "The children are playing outside. Just call them in for dinner.",
+      "correct_answer": "ze",
+      "pronoun_type": "plural",
+      "explanation": "Use 'ze' for plural nouns like 'kinderen' (children).",
+      "context": "family_routine"
+    },
+    {
+      "sentence": "Heb je de sleutels gezien? Ik heb ___ nodig om de deur te openen.",
+      "translation": "Have you seen the keys? I need them to open the door.",
+      "correct_answer": "ze",
+      "pronoun_type": "plural",
+      "explanation": "Use 'ze' for plural nouns like 'sleutels' (keys).",
+      "context": "daily_objects"
+    },
+    {
+      "sentence": "Mijn zus belt vaak. Ik spreek ___ bijna elke dag.",
+      "translation": "My sister calls often. I speak to her almost every day.",
+      "correct_answer": "haar",
+      "pronoun_type": "feminine_singular",
+      "explanation": "Use 'haar' for feminine family members like 'zus' (sister).",
+      "context": "family_communication"
+    },
+    {
+      "sentence": "Meneer De Vries, ik moet ___ iets belangrijks vertellen.",
+      "translation": "Mr. De Vries, I need to tell you something important.",
+      "correct_answer": "u",
+      "pronoun_type": "formal_singular",
+      "explanation": "Use 'u' as the formal object pronoun when addressing someone with respect.",
+      "context": "formal_communication"
+    },
+    {
+      "sentence": "De hond is weg! Heb je ___ gezien?",
+      "translation": "The dog is gone! Have you seen him?",
+      "correct_answer": "hem",
+      "pronoun_type": "masculine_singular",
+      "explanation": "Use 'hem' for masculine animals like 'hond' (de hond).",
+      "context": "pets_animals"
+    },
+    {
+      "sentence": "Mijn ouders komen morgen. Ik ga ___ van het station ophalen.",
+      "translation": "My parents are coming tomorrow. I'm going to pick them up from the station.",
+      "correct_answer": "ze",
+      "pronoun_type": "plural",
+      "explanation": "Use 'ze' for plural people like 'ouders' (parents).",
+      "context": "family_travel"
+    },
+    {
+      "sentence": "De auto start niet. Kun je ___ even bekijken?",
+      "translation": "The car won't start. Can you take a look at it?",
+      "correct_answer": "hem",
+      "pronoun_type": "masculine_singular",
+      "explanation": "Use 'hem' for masculine singular nouns like 'auto' (de auto).",
+      "context": "vehicle_problems"
+    },
+    {
+      "sentence": "Dit is mijn nieuwe fiets. Ik heb ___ pas drie weken.",
+      "translation": "This is my new bike. I've only had it for three weeks.",
+      "correct_answer": "hem",
+      "pronoun_type": "masculine_singular",
+      "explanation": "Use 'hem' for masculine singular nouns like 'fiets' (de fiets).",
+      "context": "personal_possessions"
+    },
+    {
+      "sentence": "Dit is de nieuwe kerk. Ik wil ___ bezoeken.",
+      "translation": "This is the new church. I want to visit it.",
+      "correct_answer": "haar",
+      "pronoun_type": "feminine_singular",
+      "explanation": "Use 'haar' for feminine singular nouns like 'kerk' (de kerk).",
+      "context": "places_buildings"
+    },
+    {
+      "sentence": "Dit is een goed boek. Ik koop ___ voor mijn vriendin.",
+      "translation": "This is a good book. I'm buying it for my girlfriend.",
+      "correct_answer": "het",
+      "pronoun_type": "neuter_singular",
+      "explanation": "Use 'het' for neuter singular nouns like 'boek' (het boek).",
+      "context": "shopping_gifts"
+    },
+    {
+      "sentence": "Dat zijn leuke schoenen! Mag ik ___ even passen?",
+      "translation": "Those are nice shoes! May I try them on?",
+      "correct_answer": "ze",
+      "pronoun_type": "plural",
+      "explanation": "Use 'ze' for plural nouns like 'schoenen' (shoes).",
+      "context": "shopping_clothing"
+    },
+    {
+      "sentence": "De leraren zijn streng. De studenten respecteren ___ daarom.",
+      "translation": "The teachers are strict. The students therefore respect them.",
+      "correct_answer": "hen",
+      "pronoun_type": "plural_formal",
+      "explanation": "Use 'hen' for people when they are the direct object of the verb. 'Hen' is more formal than 'ze' and often used for people in formal contexts.",
+      "context": "education_formal"
+    },
+    {
+      "sentence": "Ik zie de kinderen vaak spelen. Ik geef ___ altijd snoep.",
+      "translation": "I often see the children playing. I always give them candy.",
+      "correct_answer": "hen",
+      "pronoun_type": "plural_formal",
+      "explanation": "Use 'hen' when referring to people as the indirect object (giving something to them). 'Hen' emphasizes the people aspect.",
+      "context": "children_gifts"
+    },
+    {
+      "sentence": "Waar zijn jullie geweest? Ik heb ___ overal gezocht!",
+      "translation": "Where have you been? I've been looking for you everywhere!",
+      "correct_answer": "jullie",
+      "pronoun_type": "informal_plural",
+      "explanation": "Use 'jullie' as the object pronoun for informal plural 'you' (same form as subject). Used when addressing multiple people you know well.",
+      "context": "searching_friends"
+    },
+    {
+      "sentence": "Komen jullie morgen? Dan zie ik ___ bij het station.",
+      "translation": "Are you coming tomorrow? Then I'll see you at the station.",
+      "correct_answer": "jullie",
+      "pronoun_type": "informal_plural",
+      "explanation": "Use 'jullie' as the object pronoun when addressing multiple people informally.",
+      "context": "meeting_arrangements"
+    },
+    {
+      "sentence": "Ik bel ___ vanavond, oké? Dan kunnen we praten.",
+      "translation": "I'll call you tonight, okay? Then we can talk.",
+      "correct_answer": "jou",
+      "pronoun_type": "informal_singular_stressed",
+      "explanation": "Use 'jou' instead of 'je' when the pronoun is stressed or emphasized, or when it comes after a preposition.",
+      "context": "phone_communication"
+    },
+    {
+      "sentence": "Dit cadeau is voor ___. Ik hoop dat je het mooi vindt.",
+      "translation": "This gift is for you. I hope you like it.",
+      "correct_answer": "jou",
+      "pronoun_type": "informal_singular_stressed",
+      "explanation": "Use 'jou' after prepositions like 'voor' (for). 'Jou' is the stressed form of 'je'.",
+      "context": "gift_giving"
+    },
+    {
+      "sentence": "Tussen ___ en mij gezegd, ik vind hem niet aardig.",
+      "translation": "Between you and me, I don't like him.",
+      "correct_answer": "jou",
+      "pronoun_type": "informal_singular_stressed",
+      "explanation": "Use 'jou' after prepositions like 'tussen' (between). This is a common expression in Dutch.",
+      "context": "confidential_conversation"
+    }
+  ]
+}
