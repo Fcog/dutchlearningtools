@@ -1,0 +1,202 @@
+{
+  "dutch_reflexive_verbs": [
+    {
+      "sentence": "Ik herinner ___ niet waar ik je heb gezien, maar ik ken je wel.",
+      "translation": "I don't remember where I saw you, but I know you.",
+      "correct_answer": "me",
+      "correct_position": "after herinner",
+      "explanation": "Use 'me' (myself) with 'herinneren' (to remember). The reflexive pronoun goes directly after the verb.",
+      "verb": "herinneren",
+      "context": "memory_recall"
+    },
+    {
+      "sentence": "Al snel voelden we ___ thuis in Nederland.",
+      "translation": "Soon we felt at home in the Netherlands.",
+      "correct_answer": "ons",
+      "correct_position": "after voelden",
+      "explanation": "Use 'ons' (ourselves) with 'voelen' (to feel). The reflexive pronoun 'ons' is used for 'we/wij'.",
+      "verb": "voelen",
+      "context": "feeling_comfortable"
+    },
+    {
+      "sentence": "Ze hebben niet zo veel les en ze kennen hier niet veel mensen, dus ze vervelen ___ een beetje.",
+      "translation": "They don't have much class and they don't know many people here, so they're a bit bored.",
+      "correct_answer": "zich",
+      "correct_position": "after vervelen",
+      "explanation": "Use 'zich' (themselves) with 'vervelen' (to be bored). 'Zich' is used for third person singular and plural.",
+      "verb": "vervelen",
+      "context": "boredom"
+    },
+    {
+      "sentence": "Wat is er met jou? Voel je ___ niet goed?",
+      "translation": "What's wrong with you? Don't you feel well?",
+      "correct_answer": "je",
+      "correct_position": "after voel",
+      "explanation": "Use 'je' (yourself) with 'voelen' (to feel). In questions, the reflexive pronoun comes after the verb.",
+      "verb": "voelen",
+      "context": "health_concern"
+    },
+    {
+      "sentence": "Ik kan ___ vergissen, maar ik denk dat deze muziek Cubaans is.",
+      "translation": "I could be wrong, but I think this music is Cuban.",
+      "correct_answer": "me",
+      "correct_position": "after kan",
+      "explanation": "Use 'me' (myself) with 'vergissen' (to be mistaken). With modal verbs like 'kunnen', the reflexive pronoun comes after the modal verb.",
+      "verb": "vergissen",
+      "context": "uncertainty"
+    },
+    {
+      "sentence": "Ronald bereidt ___ voor op zijn nieuwe baan als makelaar.",
+      "translation": "Ronald is preparing for his new job as a real estate agent.",
+      "correct_answer": "zich",
+      "correct_position": "after bereidt",
+      "explanation": "Use 'zich' (himself) with 'voorbereiden' (to prepare). The reflexive pronoun comes directly after the conjugated verb.",
+      "verb": "voorbereiden",
+      "context": "preparation"
+    },
+    {
+      "sentence": "Interesseren jullie ___ voor Nederlandse muziek?",
+      "translation": "Are you interested in Dutch music?",
+      "correct_answer": "je",
+      "correct_position": "after interesseren",
+      "explanation": "Use 'je' (yourselves) with 'interesseren' (to be interested). For 'jullie', the reflexive pronoun is 'je'.",
+      "verb": "interesseren",
+      "context": "interest_hobby"
+    },
+    {
+      "sentence": "Mag ik ___ even voorstellen? Ik ben jullie nieuwe buurman.",
+      "translation": "May I introduce myself? I am your new neighbor.",
+      "correct_answer": "me",
+      "correct_position": "after mag",
+      "explanation": "Use 'me' (myself) with 'voorstellen' (to introduce). With modal verbs, the reflexive pronoun comes after the modal verb.",
+      "verb": "voorstellen",
+      "context": "introduction"
+    },
+    {
+      "sentence": "Heb je de foto's van de vakantie bij ___?",
+      "translation": "Do you have the vacation photos with you?",
+      "correct_answer": "je",
+      "correct_position": "after bij",
+      "explanation": "Use 'je' (yourself) with 'bij je hebben' (to have with you). The reflexive pronoun comes after the preposition 'bij'.",
+      "verb": "hebben",
+      "context": "possession"
+    },
+    {
+      "sentence": "John heeft goed geslapen en hij voelt ___ beter dan gisteren.",
+      "translation": "John slept well and he feels better than yesterday.",
+      "correct_answer": "zich",
+      "correct_position": "after voelt",
+      "explanation": "Use 'zich' (himself) with 'voelen' (to feel). The reflexive pronoun comes directly after the conjugated verb.",
+      "verb": "voelen",
+      "context": "health_improvement"
+    },
+    {
+      "sentence": "Wij moeten ___ haasten als we op tijd willen zijn.",
+      "translation": "We need to hurry if we want to be on time.",
+      "correct_answer": "ons",
+      "correct_position": "after moeten",
+      "explanation": "Use 'ons' (ourselves) with 'haasten' (to hurry). With modal verbs, the reflexive pronoun comes after the modal verb.",
+      "verb": "haasten",
+      "context": "urgency"
+    },
+    {
+      "sentence": "Zij wast ___ elke ochtend met koud water.",
+      "translation": "She washes herself every morning with cold water.",
+      "correct_answer": "zich",
+      "correct_position": "after wast",
+      "explanation": "Use 'zich' (herself) with 'wassen' (to wash). The reflexive pronoun comes directly after the conjugated verb.",
+      "verb": "wassen",
+      "context": "daily_routine"
+    },
+    {
+      "sentence": "Kunnen jullie ___ concentreren op het huiswerk?",
+      "translation": "Can you concentrate on the homework?",
+      "correct_answer": "je",
+      "correct_position": "after kunnen",
+      "explanation": "Use 'je' (yourselves) with 'concentreren' (to concentrate). With modal verbs, the reflexive pronoun comes after the modal verb.",
+      "verb": "concentreren",
+      "context": "focus_study"
+    },
+    {
+      "sentence": "Ik schaam ___ voor mijn slechte Nederlands.",
+      "translation": "I'm ashamed of my poor Dutch.",
+      "correct_answer": "me",
+      "correct_position": "after schaam",
+      "explanation": "Use 'me' (myself) with 'schamen' (to be ashamed). The reflexive pronoun comes directly after the conjugated verb.",
+      "verb": "schamen",
+      "context": "embarrassment"
+    },
+    {
+      "sentence": "Waarom gedraag je ___ zo vreemd vandaag?",
+      "translation": "Why are you behaving so strangely today?",
+      "correct_answer": "je",
+      "correct_position": "after gedraag",
+      "explanation": "Use 'je' (yourself) with 'gedragen' (to behave). In questions, the reflexive pronoun comes after the verb.",
+      "verb": "gedragen",
+      "context": "behavior"
+    },
+    {
+      "sentence": "De kinderen amuseren ___ met de nieuwe speeltjes.",
+      "translation": "The children are entertaining themselves with the new toys.",
+      "correct_answer": "zich",
+      "correct_position": "after amuseren",
+      "explanation": "Use 'zich' (themselves) with 'amuseren' (to entertain/amuse). The reflexive pronoun comes directly after the conjugated verb.",
+      "verb": "amuseren",
+      "context": "entertainment"
+    },
+    {
+      "sentence": "Jullie moeten ___ aanmelden voor de cursus vóór vrijdag.",
+      "translation": "You need to register for the course before Friday.",
+      "correct_answer": "je",
+      "correct_position": "after moeten",
+      "explanation": "Use 'je' (yourselves) with 'aanmelden' (to register). With modal verbs, the reflexive pronoun comes after the modal verb.",
+      "verb": "aanmelden",
+      "context": "registration"
+    },
+    {
+      "sentence": "Ik vraag ___ af of dit wel een goed idee is.",
+      "translation": "I wonder if this is really a good idea.",
+      "correct_answer": "me",
+      "correct_position": "after vraag",
+      "explanation": "Use 'me' (myself) with 'afvragen' (to wonder). The reflexive pronoun comes directly after the conjugated verb.",
+      "verb": "afvragen",
+      "context": "wondering"
+    },
+    {
+      "sentence": "Zij herinnert ___ nog goed haar eerste dag op school.",
+      "translation": "She still remembers her first day at school well.",
+      "correct_answer": "zich",
+      "correct_position": "after herinnert",
+      "explanation": "Use 'zich' (herself) with 'herinneren' (to remember). The reflexive pronoun comes directly after the conjugated verb.",
+      "verb": "herinneren",
+      "context": "memory_recall"
+    },
+    {
+      "sentence": "Wij verheugen ___ op de vakantie naar Spanje.",
+      "translation": "We're looking forward to the vacation to Spain.",
+      "correct_answer": "ons",
+      "correct_position": "after verheugen",
+      "explanation": "Use 'ons' (ourselves) with 'verheugen' (to look forward to). The reflexive pronoun comes directly after the conjugated verb.",
+      "verb": "verheugen",
+      "context": "anticipation"
+    },
+    {
+      "sentence": "Hebt u uw fiets bij ___?",
+      "translation": "Do you have your bike with you?",
+      "correct_answer": "u",
+      "correct_position": "after hebt",
+      "explanation": "'u' is more used than 'zich', mainly after a preposition.",
+      "verb": "hebben",
+      "context": "formal_introduction"
+    },
+    {
+      "sentence": "Vergist u ___ niet?",
+      "translation": "Aren't you mistaken?",
+      "correct_answer": "zich",
+      "correct_position": "after vergist",
+      "explanation": "In inversion (question word order), use 'zich' instead of 'u' for formal reflexive.'",
+      "verb": "vergissen",
+      "context": "formal_inversion"
+    }
+  ]
+}

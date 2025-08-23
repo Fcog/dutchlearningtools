@@ -136,6 +136,22 @@ function LandingPage() {
       available: true
     },
     {
+      id: 'reflexive-verbs',
+      icon: '🪞',
+      title: 'Dutch Reflexive Verbs',
+      description: 'Master Dutch reflexive verbs with interactive exercises. Learn to place reflexive pronouns (me, je, zich, ons) in the correct position within sentences.',
+      features: [
+        'Reflexive pronoun practice',
+        'Position placement rules',
+        'Common reflexive verbs',
+        'Contextual exercises',
+        'Real sentence examples',
+        'Instant feedback'
+      ],
+      route: '/reflexive-verbs',
+      available: true
+    },
+    {
       id: 'negation',
       icon: '🚫',
       title: 'Dutch Negation',

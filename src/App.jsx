@@ -9,6 +9,7 @@ import ConjunctionsPage from './pages/ConjunctionsPage'
 import AdjectivesPage from './pages/AdjectivesPage'
 import ComparativePage from './pages/ComparativePage'
 import ObjectPronounsPage from './pages/ObjectPronounsPage'
+import ReflexiveVerbsPage from './pages/ReflexiveVerbsPage'
 import NegationPage from './pages/NegationPage'
 import NotFoundPage from './pages/NotFoundPage'
 import ScrollToTop from './components/ScrollToTop'
@@ -31,6 +32,7 @@ function AppRoutes() {
         <Route path="/adjectives" element={<AdjectivesPage />} />
         <Route path="/comparatives-superlatives" element={<ComparativePage />} />
         <Route path="/object-pronouns" element={<ObjectPronounsPage />} />
+        <Route path="/reflexive-verbs" element={<ReflexiveVerbsPage />} />
         <Route path="/negation" element={<NegationPage />} />
         <Route path="/phrases" element={<div>Phrases tool coming soon!</div>} />
         <Route path="/grammar" element={<div>Grammar tool coming soon!</div>} />
