@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "incomplete_sentence": "Ik vind het leuk om __.",
+    "words_to_use": ["te", "kennismaken", "met je ouders"],
+    "missing_words": "kennis te maken met je ouders",
+    "complete_answer": "Ik vind het leuk om kennis te maken met je ouders.",
+    "translation": "I like to get to know your parents.",
+    "verb": "kennismaken",
+    "explanation": "With infinitive construction 'om...te', separable verb 'kennismaken' splits: 'kennis' + 'te maken'",
+    "level": "Intermediate"
+  },
+  {
+    "id": 2,
+    "incomplete_sentence": "Sorry, ik heb __.",
+    "words_to_use": ["mijn boek", "niet", "meenemen"],
+    "missing_words": "mijn boek niet meegenomen",
+    "complete_answer": "Sorry, ik heb mijn boek niet meegenomen.",
+    "translation": "Sorry, I didn't bring my book.",
+    "verb": "meenemen",
+    "explanation": "In perfect tense, separable verb 'meenemen' becomes 'meegenomen' (past participle stays together)",
+    "level": "Intermediate"
+  },
+  {
+    "id": 3,
+    "incomplete_sentence": "Ze kwam de kamer in en __.",
+    "words_to_use": ["ze", "zich voorstellen"],
+    "missing_words": "ze stelde zich voor",
+    "complete_answer": "Ze kwam de kamer in en ze stelde zich voor.",
+    "translation": "She came into the room and introduced herself.",
+    "verb": "voorstellen",
+    "explanation": "In simple past, separable verb 'voorstellen' splits: 'stelde' (conjugated verb) + 'voor' (particle at the end)",
+    "level": "Intermediate"
+  },
+  {
+    "id": 4,
+    "incomplete_sentence": "We __ na de pauze.",
+    "words_to_use": ["verdergaan"],
+    "missing_words": "gaan verder",
+    "complete_answer": "We gaan na de pauze verder.",
+    "translation": "We continue after the break.",
+    "verb": "verdergaan",
+    "explanation": "In present tense, separable verb 'verdergaan' splits: 'gaan' (conjugated verb) + 'verder' (particle at the end)",
+    "level": "Beginner"
+  },
+  {
+    "id": 5,
+    "incomplete_sentence": "Je hoeft me __.",
+    "words_to_use": ["niet", "ophalen", "te"],
+    "missing_words": "niet op te halen",
+    "complete_answer": "Je hoeft me niet op te halen.",
+    "translation": "You don't need to pick me up.",
+    "verb": "ophalen",
+    "explanation": "With modal verb + infinitive, separable verb 'ophalen' splits: 'op' + 'te' + 'halen'",
+    "level": "Intermediate"
+  },
+  {
+    "id": 6,
+    "incomplete_sentence": "Je moet dit nummer __.",
+    "words_to_use": ["duidelijk", "opschrijven"],
+    "missing_words": "duidelijk opschrijven",
+    "complete_answer": "Je moet dit nummer duidelijk opschrijven.",
+    "translation": "You must write down this number clearly.",
+    "verb": "opschrijven",
+    "explanation": "With modal verb, separable verb 'opschrijven' stays together at the end",
+    "level": "Beginner"
+  },
+  {
+    "id": 7,
+    "incomplete_sentence": "Op welke datum ben __?",
+    "words_to_use": ["je", "in Nederland", "aankomen"],
+    "missing_words": "je in Nederland aangekomen",
+    "complete_answer": "Op welke datum ben je in Nederland aangekomen?",
+    "translation": "On which date did you arrive in the Netherlands?",
+    "verb": "aankomen",
+    "explanation": "In perfect tense, separable verb 'aankomen' becomes 'aangekomen' (past participle stays together)",
+    "level": "Intermediate"
+  },
+  {
+    "id": 8,
+    "incomplete_sentence": "Emma woont hier ook. Ik __.",
+    "words_to_use": ["vaak", "tegenkomen", "haar"],
+    "missing_words": "kom haar vaak tegen",
+    "complete_answer": "Emma woont hier ook. Ik kom haar vaak tegen.",
+    "translation": "Emma also lives here. I often run into her.",
+    "verb": "tegenkomen",
+    "explanation": "In present tense, separable verb 'tegenkomen' splits: 'kom' (conjugated verb) + 'tegen' (particle at the end)",
+    "level": "Intermediate"
+  },
+  {
+    "id": 9,
+    "incomplete_sentence": "In de zomer van 2008 __.",
+    "words_to_use": ["zich voorbereiden op", "zijn studie", "hij"],
+    "missing_words": "bereidde hij zich voor op zijn studie",
+    "complete_answer": "In de zomer van 2008 bereidde hij zich voor op zijn studie.",
+    "translation": "In the summer of 2008 he prepared for his studies.",
+    "verb": "voorbereiden",
+    "explanation": "In simple past, separable verb 'voorbereiden' splits: 'bereidde' (conjugated verb) + 'voor' (particle after object)",
+    "level": "Advanced"
+  },
+  {
+    "id": 10,
+    "incomplete_sentence": "Het is tijd om __.",
+    "words_to_use": ["afrekenen", "te"],
+    "missing_words": "af te rekenen",
+    "complete_answer": "Het is tijd om af te rekenen.",
+    "translation": "It's time to pay the bill.",
+    "verb": "afrekenen",
+    "explanation": "With infinitive construction, separable verb 'afrekenen' splits: 'af' + 'te' + 'rekenen'",
+    "level": "Intermediate"
+  },
+  {
+    "id": 11,
+    "incomplete_sentence": "Hij keek goed en hij __.",
+    "words_to_use": ["oversteken", "de straat"],
+    "missing_words": "stak de straat over",
+    "complete_answer": "Hij keek goed en hij stak de straat over.",
+    "translation": "He looked carefully and he crossed the street.",
+    "verb": "oversteken",
+    "explanation": "In simple past, separable verb 'oversteken' (irregular) becomes 'stak' (conjugated verb) + 'over' (particle at the end)",
+    "level": "Advanced"
+  },
+  {
+    "id": 12,
+    "incomplete_sentence": "Zal ik __?",
+    "words_to_use": ["het raam", "opendoen"],
+    "missing_words": "het raam opendoen",
+    "complete_answer": "Zal ik het raam opendoen?",
+    "translation": "Should I open the window?",
+    "verb": "opendoen",
+    "explanation": "With modal verb 'zullen', separable verb 'opendoen' stays together at the end",
+    "level": "Beginner"
+  },
+  {
+    "id": 13,
+    "incomplete_sentence": "Britta heeft __.",
+    "words_to_use": ["twee jaar", "met Frans", "samenwonen"],
+    "missing_words": "twee jaar met Frans samengewoond",
+    "complete_answer": "Britta heeft twee jaar met Frans samengewoond.",
+    "translation": "Britta has lived together with Frans for two years.",
+    "verb": "samenwonen",
+    "explanation": "In perfect tense, separable verb 'samenwonen' becomes 'samengewoond' (past participle stays together)",
+    "level": "Intermediate"
+  },
+  {
+    "id": 14,
+    "incomplete_sentence": "De meeste studenten __.",
+    "words_to_use": ["instappen", "bij de markt"],
+    "missing_words": "stappen in bij de markt",
+    "complete_answer": "De meeste studenten stappen in bij de markt.",
+    "translation": "Most students get on at the market.",
+    "verb": "instappen",
+    "explanation": "In present tense, separable verb 'instappen' splits: 'stappen' (conjugated verb) + 'in' (particle doesn't go at the end because of the preposition 'bij').",
+    "level": "Beginner"
+  },
+  {
+    "id": 15,
+    "incomplete_sentence": "Wil je niet __?",
+    "words_to_use": ["even", "binnenkomen"],
+    "missing_words": "even binnenkomen",
+    "complete_answer": "Wil je niet even binnenkomen?",
+    "translation": "Don't you want to come in for a moment?",
+    "verb": "binnenkomen",
+    "explanation": "With modal verb 'willen', separable verb 'binnenkomen' stays together at the end",
+    "level": "Beginner"
+  }
+]

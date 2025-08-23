@@ -168,6 +168,22 @@ function LandingPage() {
       available: true
     },
     {
+      id: 'separable-verbs',
+      icon: '🔀',
+      title: 'Dutch Separable Verbs',
+      description: 'Master Dutch separable verbs with interactive sentence completion exercises. Learn how separable verbs split and change position in different contexts.',
+      features: [
+        'Sentence completion practice',
+        'Multiple tenses and contexts',
+        'Real-world examples',
+        'Detailed explanations',
+        'Progressive difficulty',
+        'Verb separation rules'
+      ],
+      route: '/separable-verbs',
+      available: true
+    },
+    {
       id: 'phrases',
       icon: '💬',
       title: 'Common Dutch Phrases',
