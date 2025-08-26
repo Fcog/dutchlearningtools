@@ -184,6 +184,22 @@ function LandingPage() {
       available: true
     },
     {
+      id: 'pronominal-adverbs',
+      icon: '🔄',
+      title: 'Dutch Pronominal Adverbs',
+      description: 'Master Dutch pronominal adverbs with interactive exercises. Learn waar-, wat-, and er- constructions for things and concepts.',
+      features: [
+        'Waar + preposition practice',
+        'Er + preposition constructions',
+        'Question forms with wat',
+        'Contextual learning',
+        'Detailed explanations',
+        'Grammar pattern recognition'
+      ],
+      route: '/pronominal-adverbs',
+      available: true
+    },
+    {
       id: 'phrases',
       icon: '💬',
       title: 'Common Dutch Phrases',

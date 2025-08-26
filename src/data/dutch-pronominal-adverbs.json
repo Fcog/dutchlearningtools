@@ -1,0 +1,224 @@
+{
+  "dutch_pronominal_adverbs": [
+    {
+      "id": 1,
+      "sentence": "Dat is het boek over ___ ik je vertelde.",
+      "options": ["wat", "waar"],
+      "correct_answer": "waar",
+      "complete_sentence": "Dat is het boek waarover ik je vertelde.",
+      "translation": "That is the book that I told you about.",
+      "explanation": "Use 'waar' + preposition to form pronominal adverbs when referring to things.",
+      "type": "waar_construction",
+      "preposition": "over"
+    },
+    {
+      "id": 2,
+      "sentence": "Ik weet niet met ___ ik moet beginnen.",
+      "options": ["wat", "waar"],
+      "correct_answer": "wat",
+      "complete_sentence": "Ik weet niet waarmee ik moet beginnen.",
+      "translation": "I don't know what to start with.",
+      "explanation": "Use 'wat' + preposition when asking about things in questions.",
+      "type": "wat_construction",
+      "preposition": "met"
+    },
+    {
+      "id": 3,
+      "sentence": "Dit is het project aan ___ we werken.",
+      "options": ["dat", "waar"],
+      "correct_answer": "waar",
+      "complete_sentence": "Dit is het project waaraan we werken.",
+      "translation": "This is the project that we are working on.",
+      "explanation": "Use 'waar' + preposition instead of preposition + 'dat' for things.",
+      "type": "waar_construction",
+      "preposition": "aan"
+    },
+    {
+      "id": 4,
+      "sentence": "Heb je de pen gevonden ___ je wilde schrijven?",
+      "options": ["met die", "waarmee"],
+      "correct_answer": "waarmee",
+      "complete_sentence": "Heb je de pen gevonden waarmee je wilde schrijven?",
+      "translation": "Have you found the pen that you wanted to write with?",
+      "explanation": "Use 'waarmee' instead of 'met die' when referring to things.",
+      "type": "waar_construction",
+      "preposition": "met"
+    },
+    {
+      "id": 5,
+      "sentence": "Dat is het probleem ___ we moeten praten.",
+      "options": ["over dat", "waarover"],
+      "correct_answer": "waarover",
+      "complete_sentence": "Dat is het probleem waarover we moeten praten.",
+      "translation": "That is the problem that we need to talk about.",
+      "explanation": "Use 'waarover' instead of 'over dat' when referring to things.",
+      "type": "waar_construction",
+      "preposition": "over"
+    },
+    {
+      "id": 6,
+      "sentence": "Ik denk na ___ de oplossing.",
+      "options": ["over", "erover"],
+      "correct_answer": "erover",
+      "complete_sentence": "Ik denk erover na.",
+      "translation": "I am thinking about the solution.",
+      "explanation": "Use 'erover' when the preposition goes with a separable verb. The 'er' part stays with the object.",
+      "type": "er_construction_separable",
+      "preposition": "over"
+    },
+    {
+      "id": 7,
+      "sentence": "Kijk je uit ___ de auto?",
+      "options": ["voor", "ervoor"],
+      "correct_answer": "ervoor",
+      "complete_sentence": "Kijk je ervoor uit?",
+      "translation": "Are you watching out for the car?",
+      "explanation": "Use 'ervoor' with separable verbs. 'Er' + preposition refers to things mentioned before.",
+      "type": "er_construction_separable",
+      "preposition": "voor"
+    },
+    {
+      "id": 8,
+      "sentence": "Hij is bang ___ spinnen.",
+      "options": ["voor", "ervoor"],
+      "correct_answer": "voor",
+      "complete_sentence": "Hij is bang voor spinnen.",
+      "translation": "He is afraid of spiders.",
+      "explanation": "Use the regular preposition 'voor' when introducing new information, not referring back.",
+      "type": "regular_preposition",
+      "preposition": "voor"
+    },
+    {
+      "id": 9,
+      "sentence": "Zij houdt ___ klassieke muziek.",
+      "options": ["van", "ervan"],
+      "correct_answer": "van",
+      "complete_sentence": "Zij houdt van klassieke muziek.",
+      "translation": "She likes classical music.",
+      "explanation": "Use regular preposition 'van' when introducing new information.",
+      "type": "regular_preposition",
+      "preposition": "van"
+    },
+    {
+      "id": 10,
+      "sentence": "We hebben het ___ gehad. Nu houdt zij ___ niet meer.",
+      "options": ["ervan", "van"],
+      "correct_answer": "ervan",
+      "complete_sentence": "We hebben het ervan gehad. Nu houdt zij ervan niet meer.",
+      "translation": "We talked about it. Now she doesn't like it anymore.",
+      "explanation": "Use 'ervan' when referring back to something already mentioned.",
+      "type": "er_construction_reference",
+      "preposition": "van"
+    },
+    {
+      "id": 11,
+      "sentence": "Op ___ wacht je?",
+      "options": ["wat", "wie"],
+      "correct_answer": "wat",
+      "complete_sentence": "Op wat wacht je?",
+      "translation": "What are you waiting for?",
+      "explanation": "Use 'wat' in questions when asking about things. Alternative: 'Waarop wacht je?'",
+      "type": "wat_question",
+      "preposition": "op"
+    },
+    {
+      "id": 12,
+      "sentence": "___ denk je?",
+      "options": ["Aan wat", "Waaraan"],
+      "correct_answer": "Waaraan",
+      "complete_sentence": "Waaraan denk je?",
+      "translation": "What are you thinking about?",
+      "explanation": "In questions about things, prefer 'waar' + preposition over preposition + 'wat'.",
+      "type": "waar_question",
+      "preposition": "aan"
+    },
+    {
+      "id": 13,
+      "sentence": "Het boek ligt op de tafel. Ik leg mijn pen ___ neer.",
+      "options": ["erop", "op"],
+      "correct_answer": "erop",
+      "complete_sentence": "Het boek ligt op de tafel. Ik leg mijn pen erop neer.",
+      "translation": "The book is on the table. I put my pen on it.",
+      "explanation": "Use 'erop' when referring back to a location already mentioned.",
+      "type": "er_construction_location",
+      "preposition": "op"
+    },
+    {
+      "id": 14,
+      "sentence": "De vergadering is belangrijk. Bereid je ___ voor?",
+      "options": ["erop", "ervoor"],
+      "correct_answer": "erop",
+      "complete_sentence": "De vergadering is belangrijk. Bereid je erop voor?",
+      "translation": "The meeting is important. Are you preparing for it?",
+      "explanation": "Use 'erop' when 'voorbereiden op' refers to an event or situation.",
+      "type": "er_construction_separable",
+      "preposition": "op"
+    },
+    {
+      "id": 15,
+      "sentence": "Ik heb een nieuwe fiets. Ik ben ___ heel blij.",
+      "options": ["ermee", "met"],
+      "correct_answer": "ermee",
+      "complete_sentence": "Ik heb een nieuwe fiets. Ik ben ermee heel blij.",
+      "translation": "I have a new bike. I am very happy with it.",
+      "explanation": "Use 'ermee' when referring back to something already mentioned.",
+      "type": "er_construction_reference",
+      "preposition": "met"
+    },
+    {
+      "id": 16,
+      "sentence": "Hij kwam ___ de trap af gerend.",
+      "options": ["van", "ervan"],
+      "correct_answer": "van",
+      "complete_sentence": "Hij kwam van de trap af gerend.",
+      "translation": "He came running down from the stairs.",
+      "explanation": "Use regular preposition when indicating physical location or direction.",
+      "type": "regular_preposition",
+      "preposition": "van"
+    },
+    {
+      "id": 17,
+      "sentence": "Ken je die film? Ik heb ___ gehoord.",
+      "options": ["erover", "over"],
+      "correct_answer": "erover",
+      "complete_sentence": "Ken je die film? Ik heb erover gehoord.",
+      "translation": "Do you know that movie? I heard about it.",
+      "explanation": "Use 'erover' when referring back to something already mentioned.",
+      "type": "er_construction_reference",
+      "preposition": "over"
+    },
+    {
+      "id": 18,
+      "sentence": "In ___ ben je geïnteresseerd?",
+      "options": ["wat", "waar"],
+      "correct_answer": "wat",
+      "complete_sentence": "In wat ben je geïnteresseerd?",
+      "translation": "What are you interested in?",
+      "explanation": "In questions, you can use preposition + 'wat'. Alternative: 'Waarin ben je geïnteresseerd?'",
+      "type": "wat_question",
+      "preposition": "in"
+    },
+    {
+      "id": 19,
+      "sentence": "Hij heeft een mooi huis. Wij zijn ___ uitgenodigd.",
+      "options": ["erin", "in"],
+      "correct_answer": "erin",
+      "complete_sentence": "Hij heeft een mooi huis. Wij zijn erin uitgenodigd.",
+      "translation": "He has a beautiful house. We are invited into it.",
+      "explanation": "Use 'erin' when referring to a place already mentioned.",
+      "type": "er_construction_location",
+      "preposition": "in"
+    },
+    {
+      "id": 20,
+      "sentence": "Het was een moeilijke dag. Ik wil ___ niet meer aan denken.",
+      "options": ["eraan", "aan"],
+      "correct_answer": "eraan",
+      "complete_sentence": "Het was een moeilijke dag. Ik wil eraan niet meer aan denken.",
+      "translation": "It was a difficult day. I don't want to think about it anymore.",
+      "explanation": "Use 'eraan' when referring back to something already mentioned.",
+      "type": "er_construction_reference",
+      "preposition": "aan"
+    }
+  ]
+}
