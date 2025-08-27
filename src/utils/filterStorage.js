@@ -5,7 +5,7 @@
 // Storage keys for different exercise types
 const STORAGE_KEYS = {
   VERB_CONJUGATION: 'dutch-app-filters-verb-conjugation',
-  PHRASAL_VERBS: 'dutch-app-filters-phrasal-verbs',
+  VERBS_WITH_FIXED_PREPOSITION: 'dutch-app-filters-verbs-with-fixed-preposition',
   VERB_PREPOSITIONS: 'dutch-app-filters-verb-prepositions',
   CONJUNCTIONS: 'dutch-app-filters-conjunctions',
   PREPOSITIONS: 'dutch-app-filters-prepositions',
@@ -20,7 +20,7 @@ const DEFAULT_FILTERS = {
     selectedVerbTypes: ['regular', 'irregular'],
     selectedSeparable: ['separable', 'non-separable']
   },
-  PHRASAL_VERBS: {
+  VERBS_WITH_FIXED_PREPOSITION: {
     selectedLevels: ['A2', 'B1', 'B2']
   },
   VERB_PREPOSITIONS: {

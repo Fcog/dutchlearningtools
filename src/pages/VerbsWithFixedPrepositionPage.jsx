@@ -2,18 +2,18 @@ import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
 import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
-import PhrasalVerbExercise from '../components/organisms/PhrasalVerbExercise'
-import PhrasalVerbFilterSelector from '../components/organisms/PhrasalVerbFilterSelector'
-import PhrasalVerbFilterSidebar from '../components/organisms/PhrasalVerbFilterSidebar'
+import VerbsWithFixedPrepositionExercise from '../components/organisms/VerbsWithFixedPrepositionExercise'
+import VerbsWithFixedPrepositionFilterSelector from '../components/organisms/VerbsWithFixedPrepositionFilterSelector'
+import VerbsWithFixedPrepositionFilterSidebar from '../components/organisms/VerbsWithFixedPrepositionFilterSidebar'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Button, Icon, Footer } from '../components/atoms'
 import { saveFilterPreferences, loadFilterPreferences } from '../utils/filterStorage'
 import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
 
 // Initialize exercise history manager
-const exerciseHistory = createExerciseHistory('verb_prepositions', 3)
+const exerciseHistory = createExerciseHistory('verbs_with_fixed_preposition', 3)
 
-function VerbPrepositionsPage() {
+function VerbsWithFixedPrepositionPage() {
   const navigate = useNavigate()
   const [verbsData, setVerbsData] = useState(null)
   const [isDataLoading, setIsDataLoading] = useState(true)
@@ -22,7 +22,7 @@ function VerbPrepositionsPage() {
   const [filteredVerbs, setFilteredVerbs] = useState([])
   
   // Load filter preferences from localStorage on component mount
-  const savedFilters = loadFilterPreferences('VERB_PREPOSITIONS')
+  const savedFilters = loadFilterPreferences('VERBS_WITH_FIXED_PREPOSITION')
   const [selectedLevels, setSelectedLevels] = useState(savedFilters.selectedLevels)
   const [showFilters, setShowFilters] = useState(false)
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -43,13 +43,13 @@ function VerbPrepositionsPage() {
 
 
   // Load verb preposition data asynchronously
-  const loadVerbPrepositionData = async () => {
+  const loadVerbsWithFixedPrepositionData = async () => {
     try {
       setIsDataLoading(true)
-      const data = await import('../data/phrasal-verbs.json')
+      const data = await import('../data/verbs-with-fixed-preposition.json')
       setVerbsData(data.default)
     } catch (error) {
-      console.error('Error loading verb preposition data:', error)
+      console.error('Error loading verbs with fixed preposition data:', error)
     } finally {
       setIsDataLoading(false)
     }
@@ -57,7 +57,7 @@ function VerbPrepositionsPage() {
 
   // Load data on component mount
   useEffect(() => {
-    loadVerbPrepositionData()
+    loadVerbsWithFixedPrepositionData()
   }, [])
 
   // Check if user is on mobile device
@@ -87,7 +87,7 @@ function VerbPrepositionsPage() {
     const filterPreferences = {
       selectedLevels
     }
-    saveFilterPreferences('VERB_PREPOSITIONS', filterPreferences)
+    saveFilterPreferences('VERBS_WITH_FIXED_PREPOSITION', filterPreferences)
   }, [selectedLevels])
 
   // Update filtered verbs when filters change
@@ -107,12 +107,14 @@ function VerbPrepositionsPage() {
     }
   }, [filteredVerbs, isDataLoading])
 
-  // Function to get a random exercise from filtered verbs
-  const getRandomExercise = () => {
+  // Function to get a smart exercise selection from filtered verbs
+  const getSmartExercise = () => {
     if (!filteredVerbs || filteredVerbs.length === 0) return null
     
-    const randomIndex = Math.floor(Math.random() * filteredVerbs.length)
-    return filteredVerbs[randomIndex]
+    return exerciseHistory.selectSmartExercise(
+      filteredVerbs,
+      exerciseIdGenerators.questionBased
+    )
   }
 
   // Check user's answer
@@ -133,20 +135,23 @@ function VerbPrepositionsPage() {
 
   }
 
-  // Get next exercise
+  // Get next exercise with smart selection to avoid repetition
   const handleNextExercise = () => {
-    const newExercise = getRandomExercise()
+    const newExercise = getSmartExercise()
+    if (!newExercise) return
+    
     setCurrentExercise(newExercise)
     setUserAnswer('')
     setShowResult(false)
     setIsCorrect(false)
     
-    // Track "Next Exercise" clicks (but skip the initial load)
+    // Track "Next Exercise" clicks and add to history (but skip the initial load)
     if (currentExercise) {
+      const exerciseId = exerciseIdGenerators.questionBased(newExercise)
+      exerciseHistory.addToHistory(exerciseId)
+      
       const newClickCount = nextExerciseClickCount + 1
       setNextExerciseClickCount(newClickCount)
-      
-
     }
   }
 
@@ -190,15 +195,15 @@ function VerbPrepositionsPage() {
 
   // Social sharing data
   const shareData = {
-    title: "Dutch Phrasal Verbs - Interactive Dutch Grammar Practice",
-    description: "Master Dutch phrasal verbs! Practice with real examples and get instant feedback on your Dutch grammar skills."
+    title: "Dutch Verbs with Fixed Preposition - Interactive Dutch Grammar Practice",
+    description: "Master Dutch verbs with fixed prepositions! Practice with real examples and get instant feedback on your Dutch grammar skills."
   }
 
   if (isDataLoading) {
     return (
       <PageLayout>
         <h1>Loading...</h1>
-        <p>Loading your Dutch verb preposition exercise</p>
+        <p>Loading your Dutch verbs with fixed preposition exercise</p>
       </PageLayout>
     )
   }
@@ -207,11 +212,11 @@ function VerbPrepositionsPage() {
     return (
       <PageLayout 
         showBreadcrumb 
-        breadcrumbPage="Phrasal Verbs Exercise"
+        breadcrumbPage="Verbs with Fixed Preposition Exercise"
         onHomeClick={() => navigate('/')}
       >
         <header>
-          <h1>Dutch Phrasal Verbs</h1>
+          <h1>Dutch Verbs with Fixed Preposition</h1>
           <p className="page-header-description">
             No verbs available with your current filter selection. Please adjust your level filters.
           </p>
@@ -233,10 +238,10 @@ function VerbPrepositionsPage() {
               
               {showFilters && (
                 <div className="filter-selector-container">
-                  <PhrasalVerbFilterSelector
+                  <VerbsWithFixedPrepositionFilterSelector
                     selectedLevels={selectedLevels}
                     onLevelChange={handleLevelChange}
-                    className="filter-selector-phrasal-verbs"
+                    className="filter-selector-verbs-with-fixed-preposition"
                   />
                 </div>
               )}
@@ -244,7 +249,7 @@ function VerbPrepositionsPage() {
           )}
         </div>
 
-        <PhrasalVerbFilterSidebar
+        <VerbsWithFixedPrepositionFilterSidebar
           isOpen={isSidebarOpen}
           onToggle={toggleSidebar}
           selectedLevels={selectedLevels}
@@ -267,17 +272,17 @@ function VerbPrepositionsPage() {
   return (
     <PageLayout 
       showBreadcrumb 
-              breadcrumbPage="Phrasal Verbs Exercise"
+              breadcrumbPage="Verbs with Fixed Preposition Exercise"
       onHomeClick={() => navigate('/')}
       footer={<Footer />}
     >
       <header>
-        <h1>Phrasal Verbs Exercise</h1>
+        <h1>Verbs with Fixed Preposition Exercise</h1>
         <h2>Complete the combination</h2>
         <p className="page-header-description">
           {isMobile 
-            ? "Practice Dutch phrasal verbs! Complete each phrasal verb combination." 
-            : "Test your knowledge of Dutch phrasal verbs! Many Dutch verbs require specific prepositions to express complete meanings. Learn these essential combinations with real examples and instant feedback."
+            ? "Practice Dutch verbs with fixed prepositions! Complete each verb-preposition combination." 
+            : "Test your knowledge of Dutch verbs with fixed prepositions! Many Dutch verbs require specific prepositions to express complete meanings. Learn these essential combinations with real examples and instant feedback."
           }
         </p>
       </header>
@@ -289,7 +294,7 @@ function VerbPrepositionsPage() {
           Complete the verb combination:
         </h2>
         
-        <PhrasalVerbExercise
+        <VerbsWithFixedPrepositionExercise
           currentExercise={currentExercise}
           showResult={showResult}
           isCorrect={isCorrect}
@@ -302,16 +307,16 @@ function VerbPrepositionsPage() {
       </section>
       
       <CollapsibleInfoSection title="How This Exercise Helps You Learn">
-        <p>Dutch phrasal verbs (werkwoorden met vaste voorzetsels) are essential combinations where specific verbs require specific prepositions to convey their complete meaning:</p>
+        <p>Dutch verbs with fixed prepositions (werkwoorden met vaste voorzetsels) are essential combinations where specific verbs require specific prepositions to convey their complete meaning:</p>
         <ul className="info-list">
           <li><strong>Fixed combinations</strong> - verbs that always use the same preposition (denken aan, wachten op)</li>
           <li><strong>Meaning changes</strong> - the preposition affects the verb's meaning (kijken naar vs kijken op)</li>
-          <li><strong>Common patterns</strong> - learn the most frequently used phrasal verb pairs</li>
+          <li><strong>Common patterns</strong> - learn the most frequently used verb-preposition pairs</li>
           <li><strong>Level progression</strong> - from basic A2 combinations to advanced B2+ constructions</li>
         </ul>
         <p>This interactive exercise helps you learn through:</p>
         <ul className="info-list">
-          <li><strong>Contextual learning</strong> - See phrasal verb combinations in real sentences</li>
+          <li><strong>Contextual learning</strong> - See verb-preposition combinations in real sentences</li>
           <li><strong>Translation support</strong> - Understand complete meanings with English translations</li>
           <li><strong>Example sentences</strong> - Learn through authentic Dutch usage patterns</li>
           <li><strong>Active practice</strong> - Type the preposition yourself to reinforce memory</li>
@@ -319,7 +324,7 @@ function VerbPrepositionsPage() {
           <li><strong>Level awareness</strong> - Track your progress from A2 to B2+ level combinations</li>
           <li><strong>Score tracking</strong> - Monitor your improvement over time</li>
         </ul>
-        <p>Practice with over 250 carefully selected phrasal verb combinations covering all CEFR levels!</p>
+        <p>Practice with over 250 carefully selected verb-preposition combinations covering all CEFR levels!</p>
       </CollapsibleInfoSection>
       
       <SocialSharing
@@ -328,7 +333,7 @@ function VerbPrepositionsPage() {
       />
       
       {/* Mobile Filter Sidebar */}
-      <PhrasalVerbFilterSidebar
+      <VerbsWithFixedPrepositionFilterSidebar
         isOpen={isSidebarOpen}
         onToggle={toggleSidebar}
         selectedLevels={selectedLevels}
@@ -339,4 +344,4 @@ function VerbPrepositionsPage() {
   )
 }
 
-export default VerbPrepositionsPage
+export default VerbsWithFixedPrepositionPage

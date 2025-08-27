@@ -1,8 +1,8 @@
 import React from 'react'
 import { Icon } from '../atoms'
-import PhrasalVerbFilterSelector from './PhrasalVerbFilterSelector'
+import VerbsWithFixedPrepositionFilterSelector from './VerbsWithFixedPrepositionFilterSelector'
 
-function PhrasalVerbFilterSidebar({
+function VerbsWithFixedPrepositionFilterSidebar({
   isOpen,
   onToggle,
   selectedLevels,
@@ -41,7 +41,7 @@ function PhrasalVerbFilterSidebar({
         </div>
 
         <div className="filter-sidebar-content">
-          <PhrasalVerbFilterSelector
+          <VerbsWithFixedPrepositionFilterSelector
             selectedLevels={selectedLevels}
             onLevelChange={onLevelChange}
             className="filter-selector-sidebar"
@@ -63,4 +63,4 @@ function PhrasalVerbFilterSidebar({
   )
 }
 
-export default PhrasalVerbFilterSidebar
+export default VerbsWithFixedPrepositionFilterSidebar

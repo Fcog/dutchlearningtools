@@ -4,7 +4,7 @@ import ExerciseMetadata from '../molecules/ExerciseMetadata'
 import Button from '../atoms/Button'
 import Input from '../atoms/Input'
 
-function PhrasalVerbExercise({ 
+function VerbsWithFixedPrepositionExercise({ 
   currentExercise, 
   showResult, 
   isCorrect, 
@@ -39,7 +39,7 @@ function PhrasalVerbExercise({
         {/* Input for preposition */}
         <div className="exercise-input-container">
           <Input
-            id="phrasal-verb-input"
+            id="verbs-with-fixed-preposition-input"
             type="text"
             value={userAnswer}
             onChange={onAnswerChange}
@@ -132,4 +132,4 @@ function PhrasalVerbExercise({
   )
 }
 
-export default PhrasalVerbExercise
+export default VerbsWithFixedPrepositionExercise

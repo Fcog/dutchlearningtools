@@ -4,7 +4,7 @@ import LandingPage from './pages/LandingPage'
 import ArticlesPage from './pages/ArticlesPage'
 import VerbConjugationPage from './pages/VerbConjugationPage'
 import PrepositionsPage from './pages/PrepositionsPage'
-import PhrasalVerbsPage from './pages/PhrasalVerbsPage'
+import VerbsWithFixedPrepositionPage from './pages/VerbsWithFixedPrepositionPage'
 import ConjunctionsPage from './pages/ConjunctionsPage'
 import AdjectivesPage from './pages/AdjectivesPage'
 import ComparativePage from './pages/ComparativePage'
@@ -29,7 +29,7 @@ function AppRoutes() {
         <Route path="/de-het-articles" element={<ArticlesPage />} />
         <Route path="/verbs-conjugations" element={<VerbConjugationPage />} />
         <Route path="/prepositions" element={<PrepositionsPage />} />
-        <Route path="/phrasal-verbs" element={<PhrasalVerbsPage />} />
+        <Route path="/verbs-with-fixed-preposition" element={<VerbsWithFixedPrepositionPage />} />
         <Route path="/conjunctions" element={<ConjunctionsPage />} />
         <Route path="/adjectives" element={<AdjectivesPage />} />
         <Route path="/comparatives-superlatives" element={<ComparativePage />} />

@@ -8,7 +8,7 @@ const AVAILABLE_LEVELS = [
   { key: 'B2', name: 'B2', description: 'Upper Intermediate' }
 ]
 
-function PhrasalVerbFilterSelector({ 
+function VerbsWithFixedPrepositionFilterSelector({ 
   selectedLevels, 
   onLevelChange, 
   className = '' 
@@ -63,7 +63,7 @@ function PhrasalVerbFilterSelector({
           Exercise Filters
         </Text>
         <Text size="medium" color="muted" className="filter-selector-description">
-          Select difficulty levels for phrasal verb combinations
+          Select difficulty levels for verb-preposition combinations
         </Text>
       </div>
       
@@ -95,4 +95,4 @@ function PhrasalVerbFilterSelector({
   )
 }
 
-export default PhrasalVerbFilterSelector
+export default VerbsWithFixedPrepositionFilterSelector
