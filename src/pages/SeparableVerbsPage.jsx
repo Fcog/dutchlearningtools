@@ -148,6 +148,8 @@ function SeparableVerbsPage() {
   return (
     <PageLayout 
       showBreadcrumb 
+      breadcrumbPage="Verb Separable Verbs Exercise"
+      onHomeClick={() => navigate('/')}
       breadcrumbItems={[
         { label: 'Home', path: '/' },
         { label: 'Separable Verbs', path: '/separable-verbs' }
