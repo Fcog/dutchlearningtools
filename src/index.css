@@ -304,6 +304,10 @@ body {
 }
 
 .exercise-answer-comparison {
+  text-align: left;
+}
+
+.exercise-correct-translation {
   margin-bottom: 20px;
   text-align: left;
 }
