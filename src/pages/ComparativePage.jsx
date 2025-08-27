@@ -153,7 +153,8 @@ function ComparativePage() {
       footer={<Footer />}
     >
       <header>
-        <h1>Dutch Comparative & Superlative Practice</h1>
+        <h1>Comparative & Superlative Exercise</h1>
+        <h2>Fill in the correct form</h2>
         <p className="page-header-description">
           Master Dutch comparative and superlative forms! Learn to form comparatives with '-er' (bigger, smaller) 
           and superlatives with '-ste' (biggest, smallest). Fill in the correct form based on the context and get 

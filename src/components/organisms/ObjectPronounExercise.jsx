@@ -2,7 +2,6 @@ import React from 'react'
 import WordCard from '../molecules/WordCard'
 import Button from '../atoms/Button'
 import Input from '../atoms/Input'
-import Badge from '../atoms/Badge'
 
 function ObjectPronounExercise({ 
   currentExercise, 
@@ -29,10 +28,6 @@ function ObjectPronounExercise({
           <div className="pronoun-context">
             <strong>Context:</strong> {currentExercise.context.replace(/_/g, ' ')}
           </div>
-          <Badge 
-            text={currentExercise.pronoun_type.replace(/_/g, ' ')} 
-            className={`exercise-type-badge type-${currentExercise.pronoun_type}`}
-          />
         </div>
 
         {/* Input for object pronoun */}
@@ -86,10 +81,6 @@ function ObjectPronounExercise({
         <div className="pronoun-context">
           <strong>Context:</strong> {currentExercise.context.replace(/_/g, ' ')}
         </div>
-        <Badge 
-          text={currentExercise.pronoun_type.replace(/_/g, ' ')} 
-          className={`exercise-type-badge type-${currentExercise.pronoun_type}`}
-        />
       </div>
 
       {/* Show user's answer vs correct answer */}

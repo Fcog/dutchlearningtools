@@ -164,7 +164,8 @@ function PrepositionsPage() {
       footer={<Footer />}
     >
       <header>
-        <h1>Dutch Preposition Exercise: Complete the Sentence</h1>
+        <h1>Preposition Exercise</h1>
+        <h2>Complete the sentence</h2>
         <p className="page-header-description">
           {isMobile 
             ? "Practice Dutch prepositions! Complete each sentence with the correct preposition." 

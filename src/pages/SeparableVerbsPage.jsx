@@ -164,7 +164,8 @@ function SeparableVerbsPage() {
     >
       <div className="exercise-page">
         <div className="exercise-header">
-          <h1>Dutch Separable Verbs</h1>
+          <h1>Separable Verbs Exercise</h1>
+          <h2>Complete the sentence</h2>
           <p className="exercise-description">
             Fill in the missing words to complete the sentences. Learn how Dutch separable verbs split 
             and change position in different sentence structures and tenses.

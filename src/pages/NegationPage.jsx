@@ -135,7 +135,8 @@ function NegationPage() {
       footer={<Footer />}
     >
       <header>
-        <h1>Dutch Negation Exercise: Choose the Correct Response</h1>
+        <h1>Negation Exercise</h1>
+        <h2>Choose the correct response</h2>
         <p className="page-header-description">
           Practice Dutch negation patterns! Choose the correct negative response from two options and learn the rules of Dutch negation with 'niet', 'geen', and modal verbs.
         </p>

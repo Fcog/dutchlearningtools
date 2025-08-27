@@ -206,7 +206,8 @@ function ConjunctionsPage() {
       footer={<Footer />}
     >
       <header>
-        <h1>Dutch Conjunction Exercise: Complete the Sentence</h1>
+        <h1>Conjunction Exercise</h1>
+        <h2>Complete the sentence</h2>
         <p className="page-header-description">
           {isMobile 
             ? "Practice Dutch conjunctions! Complete each sentence with the correct conjunction." 

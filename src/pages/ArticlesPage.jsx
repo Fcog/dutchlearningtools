@@ -157,7 +157,8 @@ function ArticlesPage() {
       footer={<Footer />}
     >
       <header>
-        <h1>Dutch Article Exercise: Choose De or Het</h1>
+        <h1>Article Exercise</h1>
+        <h2>Choose De or Het</h2>
         <p className="page-header-description">
           {isMobile 
             ? "Practice Dutch articles! Choose the correct article for each noun." 

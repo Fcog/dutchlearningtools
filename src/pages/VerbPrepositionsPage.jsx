@@ -272,7 +272,8 @@ function VerbPrepositionsPage() {
       footer={<Footer />}
     >
       <header>
-        <h1>Dutch Phrasal Verbs: Complete the Combination</h1>
+        <h1>Phrasal Verbs Exercise</h1>
+        <h2>Complete the combination</h2>
         <p className="page-header-description">
           {isMobile 
             ? "Practice Dutch phrasal verbs! Complete each phrasal verb combination." 

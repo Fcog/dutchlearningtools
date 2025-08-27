@@ -987,7 +987,11 @@ body {
   
   h1 {
     font-size: 1.6em;
-    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    margin: 0 0 10px 0;
   }
   
   header p {

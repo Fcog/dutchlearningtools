@@ -160,7 +160,8 @@ function ReflexiveVerbsPage() {
       footer={<Footer />}
     >
       <header>
-        <h1>Dutch Reflexive Verb Exercise: Complete the Sentence</h1>
+        <h1>Reflexive Verb Exercise</h1>
+        <h2>Complete the sentence</h2>
         <p className="page-header-description">
           {isMobile 
             ? "Practice Dutch reflexive verbs! Add the correct reflexive pronoun in the right position." 

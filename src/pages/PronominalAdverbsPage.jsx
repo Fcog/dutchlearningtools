@@ -153,7 +153,8 @@ function PronominalAdverbsPage() {
       footer={<Footer />}
     >
       <header>
-        <h1>Dutch Pronominal Adverb Exercise: Complete the Sentence</h1>
+        <h1>Pronominal Adverb Exercise</h1>
+        <h2>Complete the sentence</h2>
         <p className="page-header-description">
           {isMobile 
             ? "Practice Dutch pronominal adverbs! Complete each sentence with the correct adverb construction." 

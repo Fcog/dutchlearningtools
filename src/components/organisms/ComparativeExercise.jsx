@@ -29,10 +29,6 @@ function ComparativeExercise({
           <div className="base-adjective">
             <strong>Base adjective:</strong> {currentExercise.base_adjective}
           </div>
-          <Badge 
-            text={currentExercise.type} 
-            className={`exercise-type-badge type-${currentExercise.type}`}
-          />
         </div>
 
         {/* Input for comparative/superlative form */}
@@ -86,10 +82,6 @@ function ComparativeExercise({
         <div className="base-adjective">
           <strong>Base adjective:</strong> {currentExercise.base_adjective}
         </div>
-        <Badge 
-          text={currentExercise.type} 
-          className={`exercise-type-badge type-${currentExercise.type}`}
-        />
       </div>
 
       {/* Show user's answer vs correct answer */}

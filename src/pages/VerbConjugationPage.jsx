@@ -318,7 +318,8 @@ function VerbConjugationPage() {
         footer={<Footer />}
       >
         <header>
-          <h1>Dutch Verb Conjugation: Multi-Tense Practice</h1>
+          <h1>Verb Conjugation Exercise</h1>
+          <h2>Multi-Tense Practice</h2>
           <p className="page-header-description">
             {isMobile 
               ? "Practice Dutch verb conjugations across different tenses! Use the filter menu to customize your practice." 

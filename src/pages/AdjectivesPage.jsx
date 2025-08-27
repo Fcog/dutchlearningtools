@@ -143,7 +143,7 @@ function AdjectivesPage() {
       footer={<Footer />}
     >
       <header>
-        <h1>Dutch Adjective Practice</h1>
+        <h1>Adjective Exercise</h1>
         <p className="page-header-description">
           Master Dutch adjective declension! Learn when to use the correct form of adjectives in different contexts. 
           Choose between the two options and get instant feedback with explanations.

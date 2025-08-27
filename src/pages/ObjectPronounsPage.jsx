@@ -160,7 +160,8 @@ function ObjectPronounsPage() {
       footer={<Footer />}
     >
       <header>
-        <h1>Dutch Object Pronoun Exercise: Complete the Sentence</h1>
+        <h1>Object Pronoun Exercise</h1>
+        <h2>Complete the sentence</h2>
         <p className="page-header-description">
           {isMobile 
             ? "Practice Dutch object pronouns! Complete each sentence with the correct pronoun." 
