@@ -848,6 +848,12 @@ body {
   background-color: #0056b3;
 }
 
+@media (max-width: 960px) {
+  .articles-container {
+    padding: 0 2rem;  
+  }
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   body {
