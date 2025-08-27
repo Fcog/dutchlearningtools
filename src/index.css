@@ -227,7 +227,30 @@ body {
 .exercise-translation {
   font-size: 1.125rem;
   color: #64748b;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.exercise-hint {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-left: 4px solid #0ea5e9;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: #0c4a6e;
+  line-height: 1.5;
+}
+
+.exercise-hint strong {
+  color: #0369a1;
+  font-weight: 600;
+}
+
+.exercise-hint em {
+  color: #0c4a6e;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .exercise-prompt {
@@ -951,6 +974,12 @@ body {
 
   .exercise-translation {
     font-size: 1.2em;
+  }
+  
+  .exercise-hint {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+    margin-bottom: 1.25rem;
   }
 }
 

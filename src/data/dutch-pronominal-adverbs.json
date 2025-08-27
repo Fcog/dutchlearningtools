@@ -9,7 +9,10 @@
       "translation": "That is the book that I told you about.",
       "explanation": "Use 'waarover' instead of 'over wat' when referring to things.",
       "type": "waarover_construction",
-      "preposition": "over"
+      "preposition": "over",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "vertellen over"
     },
     {
       "id": 2,
@@ -20,7 +23,10 @@
       "translation": "I don't know what to start with.",
       "explanation": "Use 'waarmee' instead of 'met wat' when referring to things.",
       "type": "waarmee_construction",
-      "preposition": "met"
+      "preposition": "met",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "beginnen met"
     },
     {
       "id": 3,
@@ -31,7 +37,10 @@
       "translation": "This is the project that we are working on.",
       "explanation": "Use 'waar' + preposition instead of preposition + 'dat' for things.",
       "type": "waar_construction",
-      "preposition": "aan"
+      "preposition": "aan",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "werken aan"
     },
     {
       "id": 4,
@@ -42,7 +51,10 @@
       "translation": "Have you found the pen that you wanted to write with?",
       "explanation": "Use 'waarmee' instead of 'met die' when referring to things.",
       "type": "waar_construction",
-      "preposition": "met"
+      "preposition": "met",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "schrijven met"
     },
     {
       "id": 5,
@@ -53,7 +65,10 @@
       "translation": "That is the problem that we need to talk about.",
       "explanation": "Use 'waarover' instead of 'over dat' when referring to things.",
       "type": "waar_construction",
-      "preposition": "over"
+      "preposition": "over",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "praten over"
     },
     {
       "id": 6,
@@ -64,7 +79,10 @@
       "translation": "There is a problem. I am thinking about it.",
       "explanation": "Use 'erover' when referring back to something already mentioned with separable verb 'nadenken'.",
       "type": "er_construction_separable",
-      "preposition": "over"
+      "preposition": "over",
+      "is_separable": true,
+      "separable_verb": "nadenken",
+      "verb_preposition": null
     },
     {
       "id": 7,
@@ -75,7 +93,10 @@
       "translation": "A dangerous situation is coming. Are you watching out for it?",
       "explanation": "Use 'ervoor' when referring back to something already mentioned with separable verb 'uitkijken'.",
       "type": "er_construction_separable",
-      "preposition": "voor"
+      "preposition": "voor",
+      "is_separable": true,
+      "separable_verb": "uitkijken",
+      "verb_preposition": null
     },
     {
       "id": 8,
@@ -86,7 +107,10 @@
       "translation": "We saw big spiders in the basement. He is very afraid of them.",
       "explanation": "Use 'ervoor' when referring back to something already mentioned.",
       "type": "er_construction_reference",
-      "preposition": "voor"
+      "preposition": "voor",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "bang zijn voor"
     },
     {
       "id": 9,
@@ -97,7 +121,10 @@
       "translation": "We listen to Bach and Mozart. She really likes it.",
       "explanation": "Use 'ervan' when referring back to something already mentioned.",
       "type": "er_construction_reference",
-      "preposition": "van"
+      "preposition": "van",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "houden van"
     },
     {
       "id": 10,
@@ -108,7 +135,10 @@
       "translation": "Classical music is beautiful. Now she doesn't like it anymore.",
       "explanation": "Use 'ervan' when referring back to something already mentioned. Note the word order: 'er' stays, 'van' goes to the end.",
       "type": "er_construction_reference",
-      "preposition": "van"
+      "preposition": "van",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "houden van"
     },
     {
       "id": 11,
@@ -119,7 +149,10 @@
       "translation": "What are you waiting for?",
       "explanation": "Use 'Waarop' in questions when asking about things. Alternative: 'Op wat wacht je?'",
       "type": "wat_question",
-      "preposition": "op"
+      "preposition": "op",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "wachten op"
     },
     {
       "id": 12,
@@ -130,7 +163,10 @@
       "translation": "What are you thinking about?",
       "explanation": "In questions about things, prefer 'waar' + preposition over preposition + 'wat'.",
       "type": "waar_question",
-      "preposition": "aan"
+      "preposition": "aan",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "denken aan"
     },
     {
       "id": 13,
@@ -141,7 +177,10 @@
       "translation": "The book is on the table. I put my pen on it.",
       "explanation": "Use 'erop' when referring back to a location already mentioned.",
       "type": "er_construction_location",
-      "preposition": "op"
+      "preposition": "op",
+      "is_separable": true,
+      "separable_verb": "neerleggen",
+      "verb_preposition": null
     },
     {
       "id": 14,
@@ -152,7 +191,10 @@
       "translation": "The meeting is important. Are you preparing for it?",
       "explanation": "Use 'erop' when 'voorbereiden op' refers to an event or situation.",
       "type": "er_construction_separable",
-      "preposition": "op"
+      "preposition": "op",
+      "is_separable": true,
+      "separable_verb": "voorbereiden",
+      "verb_preposition": null
     },
     {
       "id": 15,
@@ -163,7 +205,10 @@
       "translation": "I have a new bike. I am very happy with it.",
       "explanation": "Use 'ermee' when referring back to something already mentioned.",
       "type": "er_construction_reference",
-      "preposition": "met"
+      "preposition": "met",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "blij zijn met"
     },
     {
       "id": 16,
@@ -174,7 +219,10 @@
       "translation": "The stairs are steep. He came running down from it.",
       "explanation": "Use 'ervan' when referring back to a location already mentioned.",
       "type": "er_construction_location",
-      "preposition": "van"
+      "preposition": "van",
+      "is_separable": true,
+      "separable_verb": "afkomen",
+      "verb_preposition": null
     },
     {
       "id": 17,
@@ -185,7 +233,10 @@
       "translation": "Do you know that movie? I heard about it.",
       "explanation": "Use 'erover' when referring back to something already mentioned.",
       "type": "er_construction_reference",
-      "preposition": "over"
+      "preposition": "over",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "horen over"
     },
     {
       "id": 18,
@@ -196,7 +247,10 @@
       "translation": "What are you interested in?",
       "explanation": "Waarin ben je geïnteresseerd?. Alternative: 'In wat ben je geïnteresseerd?'",
       "type": "wat_question",
-      "preposition": "in"
+      "preposition": "in",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "geïnteresseerd zijn in"
     },
     {
       "id": 19,
@@ -207,7 +261,10 @@
       "translation": "He has a beautiful house. We are going inside it.",
       "explanation": "Use 'erin' when referring to a place already mentioned.",
       "type": "er_construction_location",
-      "preposition": "in"
+      "preposition": "in",
+      "is_separable": true,
+      "separable_verb": "binnengaan",
+      "verb_preposition": null
     },
     {
       "id": 20,
@@ -218,7 +275,10 @@
       "translation": "It was a difficult day. I don't want to think about it anymore.",
       "explanation": "Use 'eraan' when referring back to something already mentioned. Note: 'er' and 'aan' are separated in the sentence.",
       "type": "er_construction_reference",
-      "preposition": "aan"
+      "preposition": "aan",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "denken aan"
     },
     {
       "id": 21,
@@ -229,7 +289,10 @@
       "translation": "This is the tunnel through which we have to drive.",
       "explanation": "Use 'waardoor' instead of 'door wat' when referring to things in relative clauses.",
       "type": "waar_construction",
-      "preposition": "door"
+      "preposition": "door",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "rijden door"
     },
     {
       "id": 22,
@@ -240,7 +303,10 @@
       "translation": "There's a party tonight. Are you going to it?",
       "explanation": "Use 'ernaar' when referring back to a location or event already mentioned.",
       "type": "er_construction_location",
-      "preposition": "naar"
+      "preposition": "naar",
+      "is_separable": true,
+      "separable_verb": "naartoe gaan",
+      "verb_preposition": null
     },
     {
       "id": 23,
@@ -251,7 +317,10 @@
       "translation": "What did you make this from/out of?",
       "explanation": "Use 'waaruit' in questions when asking about materials or sources.",
       "type": "waar_question",
-      "preposition": "uit"
+      "preposition": "uit",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "maken uit"
     },
     {
       "id": 24,
@@ -262,7 +331,10 @@
       "translation": "The meeting was boring. I walked away from it.",
       "explanation": "Use 'ervan' when referring back to something already mentioned with direction away.",
       "type": "er_construction_reference",
-      "preposition": "van"
+      "preposition": "van",
+      "is_separable": true,
+      "separable_verb": "weglopen",
+      "verb_preposition": null
     },
     {
       "id": 25,
@@ -273,7 +345,10 @@
       "translation": "This is the meeting at which I was present.",
       "explanation": "Use 'waarbij' in relative clauses when referring to events or situations.",
       "type": "waar_construction",
-      "preposition": "bij"
+      "preposition": "bij",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "aanwezig zijn bij"
     },
     {
       "id": 26,
@@ -284,7 +359,10 @@
       "translation": "He has a plan. I am against it.",
       "explanation": "Use 'ertegen' when referring back to something already mentioned with opposition.",
       "type": "er_construction_reference",
-      "preposition": "tegen"
+      "preposition": "tegen",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "tegen zijn"
     },
     {
       "id": 27,
@@ -295,7 +373,10 @@
       "translation": "What are you afraid of?",
       "explanation": "Use 'waarvoor' in questions when asking about fears or concerns.",
       "type": "waar_question",
-      "preposition": "voor"
+      "preposition": "voor",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "bang zijn voor"
     },
     {
       "id": 28,
@@ -306,7 +387,10 @@
       "translation": "The box is on the table. Are you taking the keys out of it?",
       "explanation": "Use 'eruit' when referring back to a container already mentioned with separable verb 'uithalen'.",
       "type": "er_construction_separable",
-      "preposition": "uit"
+      "preposition": "uit",
+      "is_separable": true,
+      "separable_verb": "uithalen",
+      "verb_preposition": null
     },
     {
       "id": 29,
@@ -317,7 +401,10 @@
       "translation": "It's a process that we all have to go through.",
       "explanation": "Use 'waardoor' in relative clauses when referring to processes or experiences.",
       "type": "waar_construction",
-      "preposition": "door"
+      "preposition": "door",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "gaan door"
     },
     {
       "id": 30,
@@ -328,7 +415,10 @@
       "translation": "I have two options. I can't choose between them.",
       "explanation": "Use 'ertussen' when referring back to multiple items already mentioned.",
       "type": "er_construction_reference",
-      "preposition": "tussen"
+      "preposition": "tussen",
+      "is_separable": false,
+      "separable_verb": null,
+      "verb_preposition": "kiezen tussen"
     }
   ]
 }

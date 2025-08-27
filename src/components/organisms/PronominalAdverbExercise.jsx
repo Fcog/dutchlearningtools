@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import WordCard from '../molecules/WordCard'
+import { ExerciseHint } from '../molecules'
 import Button from '../atoms/Button'
 import Input from '../atoms/Input'
 
@@ -22,6 +23,8 @@ function PronominalAdverbExercise({
         <div className="exercise-translation">
           English: {currentExercise.translation}
         </div>
+
+        <ExerciseHint exercise={currentExercise} />
         
         {/* Input for pronominal adverb */}
         <div className="exercise-input-container">
