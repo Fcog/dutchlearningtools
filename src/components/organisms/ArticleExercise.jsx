@@ -42,15 +42,15 @@ function ArticleExercise({
           <Button
             onClick={() => onArticleChoice('de')}
             variant="primary"
-            size="xlarge"
+            size="large"
           >
             de
           </Button>
           
           <Button
             onClick={() => onArticleChoice('het')}
-            variant="secondary"
-            size="xlarge"
+            variant="primary"
+            size="large"
           >
             het
           </Button>
