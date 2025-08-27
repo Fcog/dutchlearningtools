@@ -122,7 +122,6 @@ function ConjunctionExercise({
           pointerEvents: 'none' 
         }}
         onKeyDown={onKeyPress}
-        autoFocus
         aria-hidden="true"
       />
 

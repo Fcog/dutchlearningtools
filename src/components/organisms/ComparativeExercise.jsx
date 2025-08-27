@@ -119,7 +119,6 @@ function ComparativeExercise({
           pointerEvents: 'none' 
         }}
         onKeyDown={onKeyPress}
-        autoFocus
         aria-hidden="true"
       />
 

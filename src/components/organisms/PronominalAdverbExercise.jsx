@@ -93,7 +93,6 @@ function PronominalAdverbExercise({
           pointerEvents: 'none' 
         }}
         onKeyDown={onKeyPress}
-        autoFocus
         aria-hidden="true"
       />
 
