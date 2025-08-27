@@ -77,16 +77,12 @@ function AdjectivesPage() {
     }
   }
 
-  // Handle option selection
+  // Handle option selection with immediate feedback
   const handleOptionSelect = (option) => {
     setSelectedOption(option)
-  }
-
-  // Check user's answer
-  const checkAnswer = () => {
-    if (!selectedOption) return
     
-    const isAnswerCorrect = selectedOption === currentExercise.correct_answer
+    // Immediately check the answer
+    const isAnswerCorrect = option === currentExercise.correct_answer
     
     setIsCorrect(isAnswerCorrect)
     setShowResult(true)
@@ -156,7 +152,6 @@ function AdjectivesPage() {
           isCorrect={isCorrect}
           onOptionSelect={handleOptionSelect}
           onKeyPress={handleKeyPress}
-          onCheckAnswer={checkAnswer}
           onNextExercise={generateNewExercise}
         />
       </section>

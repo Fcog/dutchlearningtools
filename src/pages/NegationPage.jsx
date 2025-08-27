@@ -81,16 +81,12 @@ function NegationPage() {
     }
   }
 
-  // Handle option selection
+  // Handle option selection with immediate feedback
   const handleOptionSelect = (option) => {
     setSelectedOption(option)
-  }
-
-  // Check user's answer
-  const handleCheckAnswer = () => {
-    if (!selectedOption) return
     
-    const correct = selectedOption === currentExercise.correct_answer
+    // Immediately check the answer
+    const correct = option === currentExercise.correct_answer
     setIsCorrect(correct)
     setShowResult(true)
     
@@ -104,9 +100,7 @@ function NegationPage() {
 
   // Handle Enter key press
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter' && !showResult && selectedOption) {
-      handleCheckAnswer()
-    } else if (e.key === 'Enter' && showResult) {
+    if (e.key === 'Enter' && showResult) {
       generateNewExercise()
     }
   }
@@ -154,7 +148,6 @@ function NegationPage() {
           selectedOption={selectedOption}
           onOptionSelect={handleOptionSelect}
           onKeyPress={handleKeyPress}
-          onCheckAnswer={handleCheckAnswer}
           onNextExercise={generateNewExercise}
         />
       </section>

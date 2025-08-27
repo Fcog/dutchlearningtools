@@ -8,7 +8,6 @@ function NegationExercise({
   isCorrect, 
   selectedOption,
   onOptionSelect,
-  onCheckAnswer,
   onNextExercise,
   onKeyPress
 }) {
@@ -27,31 +26,20 @@ function NegationExercise({
           <h3 className="exercise-options-title">Choose the correct negative response:</h3>
           <div className="exercise-options">
             <button
-              className={`exercise-option ${selectedOption === currentExercise.correct_answer ? 'selected' : ''}`}
+              className={`btn-primary exercise-option ${selectedOption === currentExercise.correct_answer ? 'selected' : ''}`}
               onClick={() => onOptionSelect(currentExercise.correct_answer)}
             >
               {currentExercise.correct_answer}
             </button>
             <button
-              className={`exercise-option ${selectedOption === currentExercise.incorrect_answer ? 'selected' : ''}`}
+              className={`btn-primary exercise-option ${selectedOption === currentExercise.incorrect_answer ? 'selected' : ''}`}
               onClick={() => onOptionSelect(currentExercise.incorrect_answer)}
             >
               {currentExercise.incorrect_answer}
             </button>
           </div>
         </div>
-        
-        {/* Check Answer Button */}
-        <div className="exercise-buttons-container">
-          <Button
-            onClick={onCheckAnswer}
-            variant="primary"
-            size="medium"
-            disabled={!selectedOption}
-          >
-            Check Answer
-          </Button>
-        </div>
+
       </WordCard>
     )
   }

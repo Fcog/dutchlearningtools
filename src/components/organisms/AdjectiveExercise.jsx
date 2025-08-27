@@ -8,7 +8,6 @@ function AdjectiveExercise({
   isCorrect, 
   selectedOption,
   onOptionSelect,
-  onCheckAnswer,
   onNextExercise,
   onKeyPress
 }) {
@@ -29,7 +28,7 @@ function AdjectiveExercise({
             {currentExercise.options.map((option, index) => (
               <button
                 key={index}
-                className={`exercise-option ${selectedOption === option ? 'selected' : ''}`}
+                className={`btn-primary exercise-option ${selectedOption === option ? 'selected' : ''}`}
                 onClick={() => onOptionSelect(option)}
                 disabled={!option}
               >
@@ -39,17 +38,7 @@ function AdjectiveExercise({
           </div>
         </div>
         
-        {/* Check Answer Button */}
-        <div className="exercise-buttons-container">
-          <Button
-            onClick={onCheckAnswer}
-            variant="primary"
-            size="medium"
-            disabled={!selectedOption}
-          >
-            Check Answer
-          </Button>
-        </div>
+
       </WordCard>
     )
   }
