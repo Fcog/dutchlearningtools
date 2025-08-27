@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
-import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import PhrasalVerbExercise from '../components/organisms/PhrasalVerbExercise'
 import PhrasalVerbFilterSelector from '../components/organisms/PhrasalVerbFilterSelector'
 import PhrasalVerbFilterSidebar from '../components/organisms/PhrasalVerbFilterSidebar'
@@ -297,31 +297,26 @@ function PhrasalVerbsPage() {
         />
       </section>
       
-      <section className="info-section">
-        <h2 className="info-section-title">
-          How This Exercise Helps You Learn
-        </h2>
-        <div className="info-section-content">
-          <p>Dutch phrasal verbs (werkwoorden met vaste voorzetsels) are essential combinations where specific verbs require specific prepositions to convey their complete meaning:</p>
-          <ul className="info-list">
-            <li><strong>Fixed combinations</strong> - verbs that always use the same preposition (denken aan, wachten op)</li>
-            <li><strong>Meaning changes</strong> - the preposition affects the verb's meaning (kijken naar vs kijken op)</li>
-            <li><strong>Common patterns</strong> - learn the most frequently used phrasal verb pairs</li>
-            <li><strong>Level progression</strong> - from basic A2 combinations to advanced B2+ constructions</li>
-          </ul>
-          <p>This interactive exercise helps you learn through:</p>
-          <ul className="info-list">
-            <li><strong>Contextual learning</strong> - See phrasal verb combinations in real sentences</li>
-            <li><strong>Translation support</strong> - Understand complete meanings with English translations</li>
-            <li><strong>Example sentences</strong> - Learn through authentic Dutch usage patterns</li>
-            <li><strong>Active practice</strong> - Type the preposition yourself to reinforce memory</li>
-            <li><strong>Instant feedback</strong> - Know immediately if you've chosen correctly</li>
-            <li><strong>Level awareness</strong> - Track your progress from A2 to B2+ level combinations</li>
-            <li><strong>Score tracking</strong> - Monitor your improvement over time</li>
-          </ul>
-          <p>Practice with over 250 carefully selected phrasal verb combinations covering all CEFR levels!</p>
-        </div>
-      </section>
+      <CollapsibleInfoSection title="How This Exercise Helps You Learn">
+        <p>Dutch phrasal verbs (werkwoorden met vaste voorzetsels) are essential combinations where specific verbs require specific prepositions to convey their complete meaning:</p>
+        <ul className="info-list">
+          <li><strong>Fixed combinations</strong> - verbs that always use the same preposition (denken aan, wachten op)</li>
+          <li><strong>Meaning changes</strong> - the preposition affects the verb's meaning (kijken naar vs kijken op)</li>
+          <li><strong>Common patterns</strong> - learn the most frequently used phrasal verb pairs</li>
+          <li><strong>Level progression</strong> - from basic A2 combinations to advanced B2+ constructions</li>
+        </ul>
+        <p>This interactive exercise helps you learn through:</p>
+        <ul className="info-list">
+          <li><strong>Contextual learning</strong> - See phrasal verb combinations in real sentences</li>
+          <li><strong>Translation support</strong> - Understand complete meanings with English translations</li>
+          <li><strong>Example sentences</strong> - Learn through authentic Dutch usage patterns</li>
+          <li><strong>Active practice</strong> - Type the preposition yourself to reinforce memory</li>
+          <li><strong>Instant feedback</strong> - Know immediately if you've chosen correctly</li>
+          <li><strong>Level awareness</strong> - Track your progress from A2 to B2+ level combinations</li>
+          <li><strong>Score tracking</strong> - Monitor your improvement over time</li>
+        </ul>
+        <p>Practice with over 250 carefully selected phrasal verb combinations covering all CEFR levels!</p>
+      </CollapsibleInfoSection>
       
       <SocialSharing
         title={shareData.title}

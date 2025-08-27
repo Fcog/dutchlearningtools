@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
-import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import PrepositionExercise from '../components/organisms/PrepositionExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
@@ -192,30 +192,25 @@ function PrepositionsPage() {
         />
       </section>
       
-      <section className="info-section">
-        <h2 className="info-section-title">
-          How This Exercise Helps You Learn
-        </h2>
-        <div className="info-section-content">
-          <p>Dutch prepositions (voorzetsels) are essential for expressing relationships between words and concepts. They indicate location, direction, time, and abstract relationships:</p>
-          <ul className="info-list">
-            <li><strong>Place prepositions</strong> - indicate location (in, op, onder, naast)</li>
-            <li><strong>Direction prepositions</strong> - indicate movement (naar, uit, door, langs)</li>
-            <li><strong>Time prepositions</strong> - indicate when something happens (tijdens, sinds, tot)</li>
-            <li><strong>Relation prepositions</strong> - indicate abstract relationships (van, met, volgens)</li>
-          </ul>
-          <p>This interactive exercise helps you learn through:</p>
-          <ul className="info-list">
-            <li><strong>Contextual learning</strong> - See prepositions used in real sentences</li>
-            <li><strong>Translation support</strong> - Understand meaning with English translations</li>
-            <li><strong>Active practice</strong> - Type the preposition yourself instead of just reading</li>
-            <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
-            <li><strong>Score tracking</strong> - Monitor your progress over time</li>
-            <li><strong>Category awareness</strong> - Learn different types of preposition usage</li>
-          </ul>
-          <p>Practice with over 100 carefully selected sentences covering the most important Dutch prepositions!</p>
-        </div>
-      </section>
+      <CollapsibleInfoSection title="How This Exercise Helps You Learn">
+        <p>Dutch prepositions (voorzetsels) are essential for expressing relationships between words and concepts. They indicate location, direction, time, and abstract relationships:</p>
+        <ul className="info-list">
+          <li><strong>Place prepositions</strong> - indicate location (in, op, onder, naast)</li>
+          <li><strong>Direction prepositions</strong> - indicate movement (naar, uit, door, langs)</li>
+          <li><strong>Time prepositions</strong> - indicate when something happens (tijdens, sinds, tot)</li>
+          <li><strong>Relation prepositions</strong> - indicate abstract relationships (van, met, volgens)</li>
+        </ul>
+        <p>This interactive exercise helps you learn through:</p>
+        <ul className="info-list">
+          <li><strong>Contextual learning</strong> - See prepositions used in real sentences</li>
+          <li><strong>Translation support</strong> - Understand meaning with English translations</li>
+          <li><strong>Active practice</strong> - Type the preposition yourself instead of just reading</li>
+          <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
+          <li><strong>Score tracking</strong> - Monitor your progress over time</li>
+          <li><strong>Category awareness</strong> - Learn different types of preposition usage</li>
+        </ul>
+        <p>Practice with over 100 carefully selected sentences covering the most important Dutch prepositions!</p>
+      </CollapsibleInfoSection>
       
       <SocialSharing
         title={shareData.title}

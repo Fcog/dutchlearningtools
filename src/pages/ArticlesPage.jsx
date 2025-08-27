@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
-import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import ArticleExercise from '../components/organisms/ArticleExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
@@ -176,26 +176,21 @@ function ArticlesPage() {
         />
       </section>
       
-      <section className="info-section">
-        <h2 className="info-section-title">
-          How This Exercise Helps You Learn
-        </h2>
-        <div className="info-section-content">
-          <p>Dutch articles (lidwoorden) are essential for proper Dutch grammar. Unlike English, Dutch has two definite articles:</p>
-          <ul className="info-list">
-            <li><strong>"de"</strong> - used with common gender nouns (about 75% of nouns)</li>
-            <li><strong>"het"</strong> - used with neuter gender nouns (about 25% of nouns)</li>
-          </ul>
-          <p>This interactive exercise helps you learn through:</p>
-          <ul className="info-list">
-            <li><strong>Active practice</strong> - Choose the article yourself instead of just reading</li>
-            <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
-            <li><strong>Score tracking</strong> - Monitor your progress over time</li>
-            <li><strong>Repetition</strong> - Practice with random words to reinforce learning</li>
-          </ul>
-          <p>Practice with 200 of the most frequently used Dutch words to build your confidence!</p>
-        </div>
-      </section>
+      <CollapsibleInfoSection title="How This Exercise Helps You Learn">
+        <p>Dutch articles (lidwoorden) are essential for proper Dutch grammar. Unlike English, Dutch has two definite articles:</p>
+        <ul className="info-list">
+          <li><strong>"de"</strong> - used with common gender nouns (about 75% of nouns)</li>
+          <li><strong>"het"</strong> - used with neuter gender nouns (about 25% of nouns)</li>
+        </ul>
+        <p>This interactive exercise helps you learn through:</p>
+        <ul className="info-list">
+          <li><strong>Active practice</strong> - Choose the article yourself instead of just reading</li>
+          <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
+          <li><strong>Score tracking</strong> - Monitor your progress over time</li>
+          <li><strong>Repetition</strong> - Practice with random words to reinforce learning</li>
+        </ul>
+        <p>Practice with 200 of the most frequently used Dutch words to build your confidence!</p>
+      </CollapsibleInfoSection>
       
       
       <SocialSharing

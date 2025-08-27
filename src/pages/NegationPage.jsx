@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
-import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import NegationExercise from '../components/organisms/NegationExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
@@ -159,31 +159,26 @@ function NegationPage() {
         />
       </section>
       
-      <section className="info-section">
-        <h2 className="info-section-title">
-          How This Exercise Helps You Learn Dutch Negation
-        </h2>
-        <div className="info-section-content">
-          <p>Dutch negation follows specific rules that differ from English. This exercise helps you master the key patterns:</p>
-          <ul className="info-list">
-            <li><strong>Niet vs Geen</strong> - 'Niet' negates verbs and adjectives, 'geen' negates nouns</li>
-            <li><strong>Word Order</strong> - 'Niet' usually comes after the direct object</li>
-            <li><strong>Modal Verbs</strong> - 'Hoeven niet' (don't have to) vs 'moet niet' (must not)</li>
-            <li><strong>Prepositional Phrases</strong> - 'Niet' comes before prepositional phrases</li>
-            <li><strong>Proper Nouns</strong> - Use 'niet' with proper nouns, not 'geen'</li>
-          </ul>
-          <p>This interactive exercise helps you learn through:</p>
-          <ul className="info-list">
-            <li><strong>Comparative Learning</strong> - See correct vs incorrect examples side by side</li>
-            <li><strong>Contextual Practice</strong> - Learn negation in realistic conversation contexts</li>
-            <li><strong>Detailed Explanations</strong> - Understand the grammar rules behind each answer</li>
-            <li><strong>Translation Support</strong> - See both Dutch and English meanings</li>
-            <li><strong>Instant Feedback</strong> - Know immediately if you're applying the rules correctly</li>
-            <li><strong>Score Tracking</strong> - Monitor your progress with Dutch negation patterns</li>
-          </ul>
-          <p>Master the subtle but important differences in Dutch negation through focused practice!</p>
-        </div>
-      </section>
+      <CollapsibleInfoSection title="How This Exercise Helps You Learn Dutch Negation">
+        <p>Dutch negation follows specific rules that differ from English. This exercise helps you master the key patterns:</p>
+        <ul className="info-list">
+          <li><strong>Niet vs Geen</strong> - 'Niet' negates verbs and adjectives, 'geen' negates nouns</li>
+          <li><strong>Word Order</strong> - 'Niet' usually comes after the direct object</li>
+          <li><strong>Modal Verbs</strong> - 'Hoeven niet' (don't have to) vs 'moet niet' (must not)</li>
+          <li><strong>Prepositional Phrases</strong> - 'Niet' comes before prepositional phrases</li>
+          <li><strong>Proper Nouns</strong> - Use 'niet' with proper nouns, not 'geen'</li>
+        </ul>
+        <p>This interactive exercise helps you learn through:</p>
+        <ul className="info-list">
+          <li><strong>Comparative Learning</strong> - See correct vs incorrect examples side by side</li>
+          <li><strong>Contextual Practice</strong> - Learn negation in realistic conversation contexts</li>
+          <li><strong>Detailed Explanations</strong> - Understand the grammar rules behind each answer</li>
+          <li><strong>Translation Support</strong> - See both Dutch and English meanings</li>
+          <li><strong>Instant Feedback</strong> - Know immediately if you're applying the rules correctly</li>
+          <li><strong>Score Tracking</strong> - Monitor your progress with Dutch negation patterns</li>
+        </ul>
+        <p>Master the subtle but important differences in Dutch negation through focused practice!</p>
+      </CollapsibleInfoSection>
       
       <SocialSharing
         title={shareData.title}

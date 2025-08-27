@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
-import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import ObjectPronounExercise from '../components/organisms/ObjectPronounExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
@@ -177,30 +177,25 @@ function ObjectPronounsPage() {
         />
       </section>
       
-      <section className="info-section">
-        <h2 className="info-section-title">
-          How This Exercise Helps You Learn
-        </h2>
-        <div className="info-section-content">
-          <p>Dutch object pronouns (lijdend voorwerp voornaamwoorden) replace nouns that receive the action of a verb. They are essential for natural Dutch conversation:</p>
-          <ul className="info-list">
-            <li><strong>Personal pronouns</strong> - mij (me), je/jou (you informal), hem (him), haar (her), het (it), ons (us), jullie (you plural), ze/hen (them)</li>
-            <li><strong>Formal pronouns</strong> - u (you formal, same for subject and object)</li>
-            <li><strong>Gender agreement</strong> - hem for masculine, haar for feminine, het for neuter</li>
-            <li><strong>Plural forms</strong> - ze for plural people and things</li>
-          </ul>
-          <p>This interactive exercise helps you learn through:</p>
-          <ul className="info-list">
-            <li><strong>Contextual learning</strong> - See pronouns used in real conversations</li>
-            <li><strong>Translation support</strong> - Understand meaning with English translations</li>
-            <li><strong>Active practice</strong> - Type the pronoun yourself instead of just reading</li>
-            <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
-            <li><strong>Score tracking</strong> - Monitor your progress over time</li>
-            <li><strong>Pattern recognition</strong> - Learn different pronoun types and contexts</li>
-          </ul>
-          <p>Practice with carefully selected sentences covering all Dutch object pronouns in natural contexts!</p>
-        </div>
-      </section>
+      <CollapsibleInfoSection title="How This Exercise Helps You Learn">
+        <p>Dutch object pronouns (lijdend voorwerp voornaamwoorden) replace nouns that receive the action of a verb. They are essential for natural Dutch conversation:</p>
+        <ul className="info-list">
+          <li><strong>Personal pronouns</strong> - mij (me), je/jou (you informal), hem (him), haar (her), het (it), ons (us), jullie (you plural), ze/hen (them)</li>
+          <li><strong>Formal pronouns</strong> - u (you formal, same for subject and object)</li>
+          <li><strong>Gender agreement</strong> - hem for masculine, haar for feminine, het for neuter</li>
+          <li><strong>Plural forms</strong> - ze for plural people and things</li>
+        </ul>
+        <p>This interactive exercise helps you learn through:</p>
+        <ul className="info-list">
+          <li><strong>Contextual learning</strong> - See pronouns used in real conversations</li>
+          <li><strong>Translation support</strong> - Understand meaning with English translations</li>
+          <li><strong>Active practice</strong> - Type the pronoun yourself instead of just reading</li>
+          <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
+          <li><strong>Score tracking</strong> - Monitor your progress over time</li>
+          <li><strong>Pattern recognition</strong> - Learn different pronoun types and contexts</li>
+        </ul>
+        <p>Practice with carefully selected sentences covering all Dutch object pronouns in natural contexts!</p>
+      </CollapsibleInfoSection>
       
       <SocialSharing
         title={shareData.title}

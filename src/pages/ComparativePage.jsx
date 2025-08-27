@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
-import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import ComparativeExercise from '../components/organisms/ComparativeExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
@@ -168,31 +168,26 @@ function ComparativePage() {
         />
       </section>
 
-      <section className="info-section">
-        <h2 className="info-section-title">
-          How This Exercise Helps You Learn
-        </h2>
-        <div className="info-section-content">
-          <p>Dutch comparative and superlative forms follow specific patterns:</p>
-          <ul className="info-list">
-            <li><strong>Comparative (-er)</strong> - Used when comparing two things: "groter" (bigger), "sneller" (faster)</li>
-            <li><strong>Superlative (-ste)</strong> - Used for the highest degree: "grootste" (biggest), "snelste" (fastest)</li>
-            <li><strong>Irregular forms</strong> - Some adjectives have irregular forms: "goed → beter → beste"</li>
-            <li><strong>Consonant doubling</strong> - Short adjectives often double the final consonant: "dik → dikker → dikste"</li>
-            <li><strong>Equal comparison</strong> - Use "even...als" with the base form: "even groot als" (as big as)</li>
-          </ul>
-          <p>This interactive exercise helps you learn through:</p>
-          <ul className="info-list">
-            <li><strong>Contextual practice</strong> - Learn which form to use in realistic sentences</li>
-            <li><strong>Pattern recognition</strong> - Identify whether you need comparative, superlative, or base form</li>
-            <li><strong>Instant feedback</strong> - Know immediately if you're correct</li>
-            <li><strong>Detailed explanations</strong> - Understand the rules behind each answer</li>
-            <li><strong>Score tracking</strong> - Monitor your progress over time</li>
-            <li><strong>Mixed practice</strong> - Regular and irregular forms combined for comprehensive learning</li>
-          </ul>
-          <p>Master one of the essential aspects of Dutch grammar with focused practice!</p>
-        </div>
-      </section>
+      <CollapsibleInfoSection title="How This Exercise Helps You Learn">
+        <p>Dutch comparative and superlative forms follow specific patterns:</p>
+        <ul className="info-list">
+          <li><strong>Comparative (-er)</strong> - Used when comparing two things: "groter" (bigger), "sneller" (faster)</li>
+          <li><strong>Superlative (-ste)</strong> - Used for the highest degree: "grootste" (biggest), "snelste" (fastest)</li>
+          <li><strong>Irregular forms</strong> - Some adjectives have irregular forms: "goed → beter → beste"</li>
+          <li><strong>Consonant doubling</strong> - Short adjectives often double the final consonant: "dik → dikker → dikste"</li>
+          <li><strong>Equal comparison</strong> - Use "even...als" with the base form: "even groot als" (as big as)</li>
+        </ul>
+        <p>This interactive exercise helps you learn through:</p>
+        <ul className="info-list">
+          <li><strong>Contextual practice</strong> - Learn which form to use in realistic sentences</li>
+          <li><strong>Pattern recognition</strong> - Identify whether you need comparative, superlative, or base form</li>
+          <li><strong>Instant feedback</strong> - Know immediately if you're correct</li>
+          <li><strong>Detailed explanations</strong> - Understand the rules behind each answer</li>
+          <li><strong>Score tracking</strong> - Monitor your progress over time</li>
+          <li><strong>Mixed practice</strong> - Regular and irregular forms combined for comprehensive learning</li>
+        </ul>
+        <p>Master one of the essential aspects of Dutch grammar with focused practice!</p>
+      </CollapsibleInfoSection>
       
       <SocialSharing
         title={shareData.title}

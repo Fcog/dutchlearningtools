@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
-import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import FilterSidebar from '../components/organisms/FilterSidebar'
 import VerbExercise from '../components/organisms/VerbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
@@ -325,27 +325,22 @@ function VerbConjugationPage() {
         />
       </section>
 
-      <section className="info-section">
-        <h2 className="info-section-title">
-          How This Exercise Helps You Learn
-        </h2>
-        <div className="info-section-content">
-          <p>Dutch verb conjugation is fundamental for expressing actions and communicating effectively. Present tense conjugations follow predictable patterns:</p>
-          <ul className="info-list">
-            <li><strong>"ik"</strong> - uses the verb stem (infinitive without -en)</li>
-            <li><strong>"jij/hij/zij"</strong> - adds -t to the stem</li>
-            <li><strong>"wij/jullie/zij"</strong> - uses the full infinitive form</li>
-          </ul>
-          <p>This interactive exercise helps you learn through:</p>
-          <ul className="info-list">
-            <li><strong>Active practice</strong> - Type conjugations yourself instead of just reading</li>
-            <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
-            <li><strong>Score tracking</strong> - Monitor your progress over time</li>
-            <li><strong>Pattern recognition</strong> - Practice with common verbs to reinforce rules</li>
-          </ul>
-          <p>Master the foundations of Dutch grammar with interactive conjugation practice!</p>
-        </div>
-      </section>
+      <CollapsibleInfoSection title="How This Exercise Helps You Learn">
+        <p>Dutch verb conjugation is fundamental for expressing actions and communicating effectively. Present tense conjugations follow predictable patterns:</p>
+        <ul className="info-list">
+          <li><strong>"ik"</strong> - uses the verb stem (infinitive without -en)</li>
+          <li><strong>"jij/hij/zij"</strong> - adds -t to the stem</li>
+          <li><strong>"wij/jullie/zij"</strong> - uses the full infinitive form</li>
+        </ul>
+        <p>This interactive exercise helps you learn through:</p>
+        <ul className="info-list">
+          <li><strong>Active practice</strong> - Type conjugations yourself instead of just reading</li>
+          <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
+          <li><strong>Score tracking</strong> - Monitor your progress over time</li>
+          <li><strong>Pattern recognition</strong> - Practice with common verbs to reinforce rules</li>
+        </ul>
+        <p>Master the foundations of Dutch grammar with interactive conjugation practice!</p>
+      </CollapsibleInfoSection>
       
       
         <SocialSharing

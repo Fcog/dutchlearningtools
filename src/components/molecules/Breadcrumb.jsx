@@ -12,8 +12,8 @@ function Breadcrumb({ onHomeClick, currentPage }) {
       >
         🏠 Dutch Learning Tools
       </Button>
-      <span> {'>'} </span>
-      <span>{currentPage}</span>
+      <span className="breadcrumb-separator"> {'>'} </span>
+      <span className="breadcrumb-page-title">{currentPage}</span>
     </nav>
   )
 }

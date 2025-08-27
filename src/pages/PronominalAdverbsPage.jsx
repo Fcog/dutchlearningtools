@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
-import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import PronominalAdverbExercise from '../components/organisms/PronominalAdverbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
@@ -177,31 +177,26 @@ function PronominalAdverbsPage() {
         />
       </section>
       
-      <section className="info-section">
-        <h2 className="info-section-title">
-          How This Exercise Helps You Learn
-        </h2>
-        <div className="info-section-content">
-          <p>Dutch pronominal adverbs (bijwoordelijke voornaamwoorden) are essential constructions that replace preposition + pronoun combinations when referring to things, not people:</p>
-          <ul className="info-list">
-            <li><strong>Waar + preposition</strong> - for relative clauses and questions (waarover, waaraan, waarmee)</li>
-            <li><strong>Er + preposition</strong> - when referring back to things (erover, eraan, ermee)</li>
-            <li><strong>Wat constructions</strong> - in questions about things (wat voor, aan wat)</li>
-            <li><strong>Separable verbs</strong> - special positioning rules with pronominal adverbs</li>
-          </ul>
-          <p>This interactive exercise helps you learn through:</p>
-          <ul className="info-list">
-            <li><strong>Contextual learning</strong> - See pronominal adverbs used in real sentences</li>
-            <li><strong>Pattern recognition</strong> - Learn when to use waar-, er-, or wat- constructions</li>
-            <li><strong>Translation support</strong> - Understand meaning with English translations</li>
-            <li><strong>Detailed explanations</strong> - Learn the grammar rules behind each construction</li>
-            <li><strong>Active practice</strong> - Type the correct form yourself instead of just reading</li>
-            <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
-            <li><strong>Score tracking</strong> - Monitor your progress over time</li>
-          </ul>
-          <p>Master these essential Dutch constructions with 20 carefully crafted exercises covering all major patterns!</p>
-        </div>
-      </section>
+      <CollapsibleInfoSection title="How This Exercise Helps You Learn">
+        <p>Dutch pronominal adverbs (bijwoordelijke voornaamwoorden) are essential constructions that replace preposition + pronoun combinations when referring to things, not people:</p>
+        <ul className="info-list">
+          <li><strong>Waar + preposition</strong> - for relative clauses and questions (waarover, waaraan, waarmee)</li>
+          <li><strong>Er + preposition</strong> - when referring back to things (erover, eraan, ermee)</li>
+          <li><strong>Wat constructions</strong> - in questions about things (wat voor, aan wat)</li>
+          <li><strong>Separable verbs</strong> - special positioning rules with pronominal adverbs</li>
+        </ul>
+        <p>This interactive exercise helps you learn through:</p>
+        <ul className="info-list">
+          <li><strong>Contextual learning</strong> - See pronominal adverbs used in real sentences</li>
+          <li><strong>Pattern recognition</strong> - Learn when to use waar-, er-, or wat- constructions</li>
+          <li><strong>Translation support</strong> - Understand meaning with English translations</li>
+          <li><strong>Detailed explanations</strong> - Learn the grammar rules behind each construction</li>
+          <li><strong>Active practice</strong> - Type the correct form yourself instead of just reading</li>
+          <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
+          <li><strong>Score tracking</strong> - Monitor your progress over time</li>
+        </ul>
+        <p>Master these essential Dutch constructions with 20 carefully crafted exercises covering all major patterns!</p>
+      </CollapsibleInfoSection>
       
       <SocialSharing
         title={shareData.title}

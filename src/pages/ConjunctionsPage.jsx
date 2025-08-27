@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
-import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import ConjunctionExercise from '../components/organisms/ConjunctionExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
@@ -224,29 +224,24 @@ function ConjunctionsPage() {
         />
       </section>
       
-      <section className="info-section">
-        <h2 className="info-section-title">
-          How This Exercise Helps You Learn
-        </h2>
-        <div className="info-section-content">
-          <p>Dutch conjunctions (voegwoorden) are essential words that connect clauses, sentences, and ideas. They help express relationships between different parts of speech:</p>
-          <ul className="info-list">
-            <li><strong>Coordinating conjunctions</strong> - connect equal elements (en, maar, of, want, dus)</li>
-            <li><strong>Subordinating conjunctions</strong> - connect dependent clauses (omdat, als, dat, hoewel)</li>
-            <li><strong>Correlative conjunctions</strong> - work in pairs (noch...noch, of...of)</li>
-          </ul>
-          <p>This interactive exercise helps you learn through:</p>
-          <ul className="info-list">
-            <li><strong>Contextual learning</strong> - See conjunctions used in real sentences</li>
-            <li><strong>Translation support</strong> - Understand meaning with English translations</li>
-            <li><strong>Active practice</strong> - Type the conjunction yourself instead of just reading</li>
-            <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
-            <li><strong>Score tracking</strong> - Monitor your progress over time</li>
-            <li><strong>Category awareness</strong> - Learn different types of conjunction usage</li>
-          </ul>
-          <p>Practice with carefully selected sentences covering the most important Dutch conjunctions across different categories!</p>
-        </div>
-      </section>
+      <CollapsibleInfoSection title="How This Exercise Helps You Learn">
+        <p>Dutch conjunctions (voegwoorden) are essential words that connect clauses, sentences, and ideas. They help express relationships between different parts of speech:</p>
+        <ul className="info-list">
+          <li><strong>Coordinating conjunctions</strong> - connect equal elements (en, maar, of, want, dus)</li>
+          <li><strong>Subordinating conjunctions</strong> - connect dependent clauses (omdat, als, dat, hoewel)</li>
+          <li><strong>Correlative conjunctions</strong> - work in pairs (noch...noch, of...of)</li>
+        </ul>
+        <p>This interactive exercise helps you learn through:</p>
+        <ul className="info-list">
+          <li><strong>Contextual learning</strong> - See conjunctions used in real sentences</li>
+          <li><strong>Translation support</strong> - Understand meaning with English translations</li>
+          <li><strong>Active practice</strong> - Type the conjunction yourself instead of just reading</li>
+          <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
+          <li><strong>Score tracking</strong> - Monitor your progress over time</li>
+          <li><strong>Category awareness</strong> - Learn different types of conjunction usage</li>
+        </ul>
+        <p>Practice with carefully selected sentences covering the most important Dutch conjunctions across different categories!</p>
+      </CollapsibleInfoSection>
       
       <SocialSharing
         title={shareData.title}

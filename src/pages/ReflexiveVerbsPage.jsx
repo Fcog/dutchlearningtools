@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PageLayout from '../components/templates/PageLayout'
-import ScoreDisplay from '../components/molecules/ScoreDisplay'
+import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import ReflexiveVerbExercise from '../components/organisms/ReflexiveVerbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
@@ -177,31 +177,26 @@ function ReflexiveVerbsPage() {
         />
       </section>
       
-      <section className="info-section">
-        <h2 className="info-section-title">
-          How This Exercise Helps You Learn
-        </h2>
-        <div className="info-section-content">
-          <p>Dutch reflexive verbs (wederkerige werkwoorden) use reflexive pronouns that refer back to the subject. They are essential for expressing actions that the subject performs on themselves:</p>
-          <ul className="info-list">
-            <li><strong>Reflexive pronouns</strong> - me (myself), je (yourself), zich (himself/herself/itself/themselves), ons (ourselves), jullie → je (yourselves)</li>
-            <li><strong>Position rules</strong> - Usually directly after the conjugated verb, or after modal verbs</li>
-            <li><strong>Common reflexive verbs</strong> - zich herinneren (to remember), zich voelen (to feel), zich vervelen (to be bored), zich voorbereiden (to prepare)</li>
-            <li><strong>Context matters</strong> - Some verbs can be used both reflexively and non-reflexively</li>
-          </ul>
-          <p>This interactive exercise helps you learn through:</p>
-          <ul className="info-list">
-            <li><strong>Position practice</strong> - Learn where to place reflexive pronouns in sentences</li>
-            <li><strong>Translation support</strong> - Understand meaning with English translations</li>
-            <li><strong>Contextual learning</strong> - See reflexive verbs used in real situations</li>
-            <li><strong>Active practice</strong> - Type the pronoun yourself instead of just reading</li>
-            <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
-            <li><strong>Score tracking</strong> - Monitor your progress over time</li>
-            <li><strong>Pattern recognition</strong> - Learn different reflexive verb patterns and contexts</li>
-          </ul>
-          <p>Practice with carefully selected sentences covering common Dutch reflexive verbs in natural contexts!</p>
-        </div>
-      </section>
+      <CollapsibleInfoSection title="How This Exercise Helps You Learn">
+        <p>Dutch reflexive verbs (wederkerige werkwoorden) use reflexive pronouns that refer back to the subject. They are essential for expressing actions that the subject performs on themselves:</p>
+        <ul className="info-list">
+          <li><strong>Reflexive pronouns</strong> - me (myself), je (yourself), zich (himself/herself/itself/themselves), ons (ourselves), jullie → je (yourselves)</li>
+          <li><strong>Position rules</strong> - Usually directly after the conjugated verb, or after modal verbs</li>
+          <li><strong>Common reflexive verbs</strong> - zich herinneren (to remember), zich voelen (to feel), zich vervelen (to be bored), zich voorbereiden (to prepare)</li>
+          <li><strong>Context matters</strong> - Some verbs can be used both reflexively and non-reflexively</li>
+        </ul>
+        <p>This interactive exercise helps you learn through:</p>
+        <ul className="info-list">
+          <li><strong>Position practice</strong> - Learn where to place reflexive pronouns in sentences</li>
+          <li><strong>Translation support</strong> - Understand meaning with English translations</li>
+          <li><strong>Contextual learning</strong> - See reflexive verbs used in real situations</li>
+          <li><strong>Active practice</strong> - Type the pronoun yourself instead of just reading</li>
+          <li><strong>Instant feedback</strong> - Know immediately if you're correct or not</li>
+          <li><strong>Score tracking</strong> - Monitor your progress over time</li>
+          <li><strong>Pattern recognition</strong> - Learn different reflexive verb patterns and contexts</li>
+        </ul>
+        <p>Practice with carefully selected sentences covering common Dutch reflexive verbs in natural contexts!</p>
+      </CollapsibleInfoSection>
       
       <SocialSharing
         title={shareData.title}
