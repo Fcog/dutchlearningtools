@@ -5,6 +5,10 @@ import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import ReflexiveVerbExercise from '../components/organisms/ReflexiveVerbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
+import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
+
+// Initialize exercise history manager
+const exerciseHistory = createExerciseHistory('reflexive_verbs', 3)
 
 function ReflexiveVerbsPage() {
   const navigate = useNavigate()
@@ -71,13 +75,15 @@ function ReflexiveVerbsPage() {
     }
   }, [reflexiveData, isDataLoading])
 
-  // Function to get a random exercise
-  const getRandomExercise = () => {
+  // Function to get a smart exercise selection
+  const getSmartExercise = () => {
     if (!reflexiveData?.dutch_reflexive_verbs) return null
     
     const exercises = reflexiveData.dutch_reflexive_verbs
-    const randomIndex = Math.floor(Math.random() * exercises.length)
-    return exercises[randomIndex]
+    return exerciseHistory.selectSmartExercise(
+      exercises,
+      exerciseIdGenerators.questionBased
+    )
   }
 
   // Check user's answer
@@ -96,16 +102,21 @@ function ReflexiveVerbsPage() {
     setScore(newScore)
   }
 
-  // Get next exercise
+  // Get next exercise with smart selection to avoid repetition
   const handleNextExercise = () => {
-    const newExercise = getRandomExercise()
+    const newExercise = getSmartExercise()
+    if (!newExercise) return
+    
     setCurrentExercise(newExercise)
     setUserAnswer('')
     setShowResult(false)
     setIsCorrect(false)
     
-    // Track "Next Exercise" clicks (but skip the initial load)
+    // Track "Next Exercise" clicks and add to history (but skip the initial load)
     if (currentExercise) {
+      const exerciseId = exerciseIdGenerators.questionBased(newExercise)
+      exerciseHistory.addToHistory(exerciseId)
+      
       const newClickCount = nextExerciseClickCount + 1
       setNextExerciseClickCount(newClickCount)
     }

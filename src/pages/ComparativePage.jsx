@@ -5,6 +5,10 @@ import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import ComparativeExercise from '../components/organisms/ComparativeExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
+import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
+
+// Initialize exercise history manager
+const exerciseHistory = createExerciseHistory('comparative', 3)
 
 function ComparativePage() {
   const navigate = useNavigate()
@@ -58,20 +62,28 @@ function ComparativePage() {
     }
   }, [dutchComparativesData, isDataLoading])
 
-  // Generate a new exercise
+  // Generate a new exercise with smart selection to avoid repetition
   const generateNewExercise = () => {
     if (!dutchComparativesData?.comparative_superlative_exercises) return
     
     const exercises = dutchComparativesData.comparative_superlative_exercises
-    const randomExercise = exercises[Math.floor(Math.random() * exercises.length)]
+    const selectedExercise = exerciseHistory.selectSmartExercise(
+      exercises,
+      exerciseIdGenerators.questionBased
+    )
     
-    setCurrentExercise(randomExercise)
+    if (!selectedExercise) return
+    
+    setCurrentExercise(selectedExercise)
     setUserAnswer('')
     setShowResult(false)
     setIsCorrect(false)
     
-    // Track "Next Exercise" clicks (but skip the initial load)
+    // Track "Next Exercise" clicks and add to history (but skip the initial load)
     if (currentExercise) {
+      const exerciseId = exerciseIdGenerators.questionBased(selectedExercise)
+      exerciseHistory.addToHistory(exerciseId)
+      
       const newClickCount = nextExerciseClickCount + 1
       setNextExerciseClickCount(newClickCount)
     }

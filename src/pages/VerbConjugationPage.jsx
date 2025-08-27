@@ -8,9 +8,13 @@ import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
 import { saveFilterPreferences, loadFilterPreferences } from '../utils/filterStorage'
 import { VERB_FIELDS, getVerbField, getVerbConjugation } from '../utils/verbFields'
+import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
 
 
 const PRONOUNS = ['ik', 'jij', 'hij/zij', 'wij', 'jullie', 'zij']
+
+// Initialize exercise history manager
+const exerciseHistory = createExerciseHistory('verb_conjugation', 3)
 
 function VerbConjugationPage() {
   const navigate = useNavigate()
@@ -138,27 +142,47 @@ function VerbConjugationPage() {
     }
   }, [selectedTenses])
 
-  // Generate a new exercise
+  // Generate a new exercise with smart selection to avoid repetition
   const generateNewExercise = () => {
-    if (filteredVerbs.length === 0) return
+    if (filteredVerbs.length === 0 || selectedTenses.length === 0) return
     
-    const randomVerb = filteredVerbs[Math.floor(Math.random() * filteredVerbs.length)]
-    const randomPronoun = PRONOUNS[Math.floor(Math.random() * PRONOUNS.length)]
-    const randomTense = selectedTenses[Math.floor(Math.random() * selectedTenses.length)]
+    // Create all possible exercise combinations
+    const allCombinations = []
+    filteredVerbs.forEach(verb => {
+      PRONOUNS.forEach(pronoun => {
+        selectedTenses.forEach(tense => {
+          allCombinations.push({ verb, pronoun, tense })
+        })
+      })
+    })
     
-    setCurrentVerb(randomVerb)
-    setCurrentPronoun(randomPronoun)
-    setCurrentTense(randomTense)
+    // Use smart selection to avoid recently used exercises
+    const selectedCombination = exerciseHistory.selectSmartExercise(
+      allCombinations,
+      (combination) => exerciseIdGenerators.verbConjugation(combination.verb, combination.pronoun, combination.tense)
+    )
+    
+    if (!selectedCombination) return
+    
+    // Set the selected exercise
+    setCurrentVerb(selectedCombination.verb)
+    setCurrentPronoun(selectedCombination.pronoun)
+    setCurrentTense(selectedCombination.tense)
     setUserAnswer('')
     setShowResult(false)
     setIsCorrect(false)
     
-    // Track "Next Exercise" clicks (but skip the initial load)
+    // Add to history (but skip the initial load)
     if (currentVerb) {
+      const exerciseId = exerciseIdGenerators.verbConjugation(
+        selectedCombination.verb, 
+        selectedCombination.pronoun, 
+        selectedCombination.tense
+      )
+      exerciseHistory.addToHistory(exerciseId)
+      
       const newClickCount = nextExerciseClickCount + 1
       setNextExerciseClickCount(newClickCount)
-      
-
     }
   }
 

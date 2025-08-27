@@ -8,7 +8,10 @@ import PhrasalVerbFilterSidebar from '../components/organisms/PhrasalVerbFilterS
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Button, Icon, Footer } from '../components/atoms'
 import { saveFilterPreferences, loadFilterPreferences } from '../utils/filterStorage'
+import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
 
+// Initialize exercise history manager
+const exerciseHistory = createExerciseHistory('verb_prepositions', 3)
 
 function VerbPrepositionsPage() {
   const navigate = useNavigate()

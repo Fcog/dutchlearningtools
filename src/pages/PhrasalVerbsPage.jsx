@@ -8,7 +8,10 @@ import PhrasalVerbFilterSidebar from '../components/organisms/PhrasalVerbFilterS
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Button, Icon, Footer } from '../components/atoms'
 import { saveFilterPreferences, loadFilterPreferences } from '../utils/filterStorage'
+import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
 
+// Initialize exercise history manager
+const exerciseHistory = createExerciseHistory('phrasal_verbs', 3)
 
 function PhrasalVerbsPage() {
   const navigate = useNavigate()
@@ -104,12 +107,14 @@ function PhrasalVerbsPage() {
     }
   }, [filteredVerbs, isDataLoading])
 
-  // Function to get a random exercise from filtered verbs
-  const getRandomExercise = () => {
+  // Function to get a smart exercise selection from filtered verbs
+  const getSmartExercise = () => {
     if (!filteredVerbs || filteredVerbs.length === 0) return null
     
-    const randomIndex = Math.floor(Math.random() * filteredVerbs.length)
-    return filteredVerbs[randomIndex]
+    return exerciseHistory.selectSmartExercise(
+      filteredVerbs,
+      exerciseIdGenerators.questionBased
+    )
   }
 
   // Check user's answer
@@ -130,20 +135,23 @@ function PhrasalVerbsPage() {
 
   }
 
-  // Get next exercise
+  // Get next exercise with smart selection to avoid repetition
   const handleNextExercise = () => {
-    const newExercise = getRandomExercise()
+    const newExercise = getSmartExercise()
+    if (!newExercise) return
+    
     setCurrentExercise(newExercise)
     setUserAnswer('')
     setShowResult(false)
     setIsCorrect(false)
     
-    // Track "Next Exercise" clicks (but skip the initial load)
+    // Track "Next Exercise" clicks and add to history (but skip the initial load)
     if (currentExercise) {
+      const exerciseId = exerciseIdGenerators.questionBased(newExercise)
+      exerciseHistory.addToHistory(exerciseId)
+      
       const newClickCount = nextExerciseClickCount + 1
       setNextExerciseClickCount(newClickCount)
-      
-
     }
   }
 

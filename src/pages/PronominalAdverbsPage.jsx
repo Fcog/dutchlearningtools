@@ -5,6 +5,10 @@ import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import PronominalAdverbExercise from '../components/organisms/PronominalAdverbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
+import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
+
+// Initialize exercise history manager
+const exerciseHistory = createExerciseHistory('pronominal_adverbs', 3)
 
 function PronominalAdverbsPage() {
   const navigate = useNavigate()

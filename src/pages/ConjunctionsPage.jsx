@@ -5,7 +5,10 @@ import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import ConjunctionExercise from '../components/organisms/ConjunctionExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
+import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
 
+// Initialize exercise history manager
+const exerciseHistory = createExerciseHistory('conjunctions', 3)
 
 function ConjunctionsPage() {
   const navigate = useNavigate()
@@ -82,23 +85,27 @@ function ConjunctionsPage() {
     return conjunctionsData.reduce((total, conjunction) => total + conjunction.examples.length, 0)
   }
 
-  // Function to get a random exercise
-  const getRandomExercise = () => {
+  // Function to get a smart exercise selection to avoid repetition
+  const getSmartExercise = () => {
     if (!conjunctionsData || conjunctionsData.length === 0) return null
     
-    // Get random conjunction
-    const randomConjunctionIndex = Math.floor(Math.random() * conjunctionsData.length)
-    const conjunction = conjunctionsData[randomConjunctionIndex]
+    // Create all possible exercise combinations (conjunction + sentence pairs)
+    const allExercises = []
+    conjunctionsData.forEach(conjunction => {
+      conjunction.examples.forEach((sentence, index) => {
+        allExercises.push({
+          conjunction: conjunction.conjunction,
+          category: conjunction.category,
+          sentence: sentence,
+          translation: conjunction.examples_translation[index]
+        })
+      })
+    })
     
-    // Get random example from that conjunction
-    const randomExampleIndex = Math.floor(Math.random() * conjunction.examples.length)
-    
-    return {
-      conjunction: conjunction.conjunction,
-      category: conjunction.category,
-      sentence: conjunction.examples[randomExampleIndex],
-      translation: conjunction.examples_translation[randomExampleIndex]
-    }
+    return exerciseHistory.selectSmartExercise(
+      allExercises,
+      exerciseIdGenerators.complex
+    )
   }
 
   // Check user's answer
@@ -136,20 +143,23 @@ function ConjunctionsPage() {
 
   }
 
-  // Get next exercise
+  // Get next exercise with smart selection to avoid repetition
   const handleNextExercise = () => {
-    const newExercise = getRandomExercise()
+    const newExercise = getSmartExercise()
+    if (!newExercise) return
+    
     setCurrentExercise(newExercise)
     setUserAnswer('')
     setShowResult(false)
     setIsCorrect(false)
     
-    // Track "Next Exercise" clicks (but skip the initial load)
+    // Track "Next Exercise" clicks and add to history (but skip the initial load)
     if (currentExercise) {
+      const exerciseId = exerciseIdGenerators.complex(newExercise)
+      exerciseHistory.addToHistory(exerciseId)
+      
       const newClickCount = nextExerciseClickCount + 1
       setNextExerciseClickCount(newClickCount)
-      
-
     }
   }
 

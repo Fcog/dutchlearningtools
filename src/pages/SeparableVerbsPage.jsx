@@ -5,6 +5,10 @@ import ScoreDisplay from '../components/molecules/ScoreDisplay'
 import SeparableVerbExercise from '../components/organisms/SeparableVerbExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
+import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
+
+// Initialize exercise history manager
+const exerciseHistory = createExerciseHistory('separable_verbs', 3)
 
 function SeparableVerbsPage() {
   const navigate = useNavigate()
@@ -71,24 +75,27 @@ function SeparableVerbsPage() {
     }
   }, [separableVerbData, isDataLoading])
 
-  // Function to get a random exercise
-  const getRandomExercise = () => {
-    if (!separableVerbData || separableVerbData.length === 0) return null
-    
-    const randomIndex = Math.floor(Math.random() * separableVerbData.length)
-    return separableVerbData[randomIndex]
-  }
-
-  // Generate new exercise
+  // Generate new exercise with smart selection to avoid repetition
   const generateNewExercise = () => {
-    const newExercise = getRandomExercise()
-    setCurrentExercise(newExercise)
+    if (!separableVerbData || separableVerbData.length === 0) return
+    
+    const selectedExercise = exerciseHistory.selectSmartExercise(
+      separableVerbData,
+      exerciseIdGenerators.questionBased
+    )
+    
+    if (!selectedExercise) return
+    
+    setCurrentExercise(selectedExercise)
     setUserAnswer('')
     setShowResult(false)
     setIsCorrect(false)
     
-    // Track "Next Exercise" clicks (but skip the initial load)
+    // Track "Next Exercise" clicks and add to history (but skip the initial load)
     if (currentExercise) {
+      const exerciseId = exerciseIdGenerators.questionBased(selectedExercise)
+      exerciseHistory.addToHistory(exerciseId)
+      
       const newClickCount = nextExerciseClickCount + 1
       setNextExerciseClickCount(newClickCount)
     }

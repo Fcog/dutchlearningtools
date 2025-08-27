@@ -5,6 +5,10 @@ import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import NegationExercise from '../components/organisms/NegationExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
+import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
+
+// Initialize exercise history manager
+const exerciseHistory = createExerciseHistory('negation', 3)
 
 function NegationPage() {
   const navigate = useNavigate()
@@ -58,24 +62,27 @@ function NegationPage() {
     }
   }, [negationData, isDataLoading])
 
-  // Function to get a random exercise
-  const getRandomExercise = () => {
-    if (!negationData || negationData.length === 0) return null
-    
-    const randomIndex = Math.floor(Math.random() * negationData.length)
-    return negationData[randomIndex]
-  }
-
-  // Generate new exercise
+  // Generate new exercise with smart selection to avoid repetition
   const generateNewExercise = () => {
-    const newExercise = getRandomExercise()
-    setCurrentExercise(newExercise)
+    if (!negationData || negationData.length === 0) return
+    
+    const selectedExercise = exerciseHistory.selectSmartExercise(
+      negationData,
+      exerciseIdGenerators.questionBased
+    )
+    
+    if (!selectedExercise) return
+    
+    setCurrentExercise(selectedExercise)
     setSelectedOption('')
     setShowResult(false)
     setIsCorrect(false)
     
-    // Track "Next Exercise" clicks (but skip the initial load)
+    // Track "Next Exercise" clicks and add to history (but skip the initial load)
     if (currentExercise) {
+      const exerciseId = exerciseIdGenerators.questionBased(selectedExercise)
+      exerciseHistory.addToHistory(exerciseId)
+      
       const newClickCount = nextExerciseClickCount + 1
       setNextExerciseClickCount(newClickCount)
     }

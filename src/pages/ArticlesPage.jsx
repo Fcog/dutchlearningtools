@@ -5,7 +5,10 @@ import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import ArticleExercise from '../components/organisms/ArticleExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
+import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
 
+// Initialize exercise history manager
+const exerciseHistory = createExerciseHistory('articles', 3)
 
 function ArticlesPage() {
   const navigate = useNavigate()
@@ -74,13 +77,15 @@ function ArticlesPage() {
     }
   }, [dutchNounsData, isDataLoading])
 
-  // Function to get a random word for exercise
-  const getRandomWord = () => {
+  // Function to get a smart word selection for exercise
+  const getSmartWord = () => {
     if (!dutchNounsData?.dutch_nouns) return null
     
     const words = dutchNounsData.dutch_nouns
-    const randomIndex = Math.floor(Math.random() * words.length)
-    return words[randomIndex]
+    return exerciseHistory.selectSmartExercise(
+      words,
+      exerciseIdGenerators.noun
+    )
   }
 
 
@@ -102,20 +107,23 @@ function ArticlesPage() {
 
   }
 
-  // Get next word
+  // Get next word with smart selection to avoid repetition
   const handleNextWord = () => {
-    const newWord = getRandomWord()
+    const newWord = getSmartWord()
+    if (!newWord) return
+    
     setCurrentWord(newWord)
     setSelectedArticle(null)
     setShowResult(false)
     setIsCorrect(false)
     
-    // Track "Next Word" clicks (but skip the initial load)
+    // Track "Next Word" clicks and add to history (but skip the initial load)
     if (currentWord) {
+      const wordId = exerciseIdGenerators.noun(newWord)
+      exerciseHistory.addToHistory(wordId)
+      
       const newClickCount = nextWordClickCount + 1
       setNextWordClickCount(newClickCount)
-      
-
     }
   }
 

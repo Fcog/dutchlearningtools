@@ -5,6 +5,10 @@ import { ScoreDisplay, CollapsibleInfoSection } from '../components/molecules'
 import AdjectiveExercise from '../components/organisms/AdjectiveExercise'
 import SocialSharing from '../components/organisms/SocialSharing'
 import { Footer } from '../components/atoms'
+import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
+
+// Initialize exercise history manager
+const exerciseHistory = createExerciseHistory('adjectives', 3)
 
 function AdjectivesPage() {
   const navigate = useNavigate()
@@ -58,20 +62,28 @@ function AdjectivesPage() {
     }
   }, [dutchAdjectivesData, isDataLoading])
 
-  // Generate a new exercise
+  // Generate a new exercise with smart selection to avoid repetition
   const generateNewExercise = () => {
     if (!dutchAdjectivesData?.dutch_adjectives) return
     
     const exercises = dutchAdjectivesData.dutch_adjectives
-    const randomExercise = exercises[Math.floor(Math.random() * exercises.length)]
+    const selectedExercise = exerciseHistory.selectSmartExercise(
+      exercises,
+      exerciseIdGenerators.questionBased
+    )
     
-    setCurrentExercise(randomExercise)
+    if (!selectedExercise) return
+    
+    setCurrentExercise(selectedExercise)
     setSelectedOption('')
     setShowResult(false)
     setIsCorrect(false)
     
-    // Track "Next Exercise" clicks (but skip the initial load)
+    // Track "Next Exercise" clicks and add to history (but skip the initial load)
     if (currentExercise) {
+      const exerciseId = exerciseIdGenerators.questionBased(selectedExercise)
+      exerciseHistory.addToHistory(exerciseId)
+      
       const newClickCount = nextExerciseClickCount + 1
       setNextExerciseClickCount(newClickCount)
     }
