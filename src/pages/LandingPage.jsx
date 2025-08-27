@@ -256,12 +256,14 @@ function LandingPage() {
   }
 
   return (
-    <div className="container">
+    <div>
       <Hero />
-      <ExerciseList tools={tools} onToolClick={handleToolClick} />
-      <footer className="footer">
-        <Footer />
-      </footer>
+      <div className="container">  
+        <ExerciseList tools={tools} onToolClick={handleToolClick} />
+        <footer className="footer">
+          <Footer />
+        </footer>
+      </div>
     </div>
   )
 }

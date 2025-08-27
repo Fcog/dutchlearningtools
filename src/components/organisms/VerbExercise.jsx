@@ -171,7 +171,7 @@ function VerbExercise({
 
       <Button
         onClick={onNextExercise}
-        variant="secondary"
+        variant="primary"
         size="large"
         className="full-width-button"
       >
