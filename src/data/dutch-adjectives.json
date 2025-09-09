@@ -273,12 +273,244 @@
       "explanation": "Hard is used because 'geluid' is a het-word (neuter) and it's indefinite (een)."
     },
     {
-      "sentence": "Het ___ verhaal eindigt goed.",
-      "translation": "The beautiful story ends well.",
-      "correct_answer": "mooie",
-      "options": ["mooi", "mooie"],
-      "category": "literature",
-      "explanation": "Mooie is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+      "sentence": "Hij rijdt een ___ auto.",
+      "translation": "He drives a fast car.",
+      "correct_answer": "snelle",
+      "options": ["snel", "snelle"],
+      "category": "speed",
+      "explanation": "Snelle is used because 'auto' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Zij maakt ___ soep.",
+      "translation": "She makes tasty soup.",
+      "correct_answer": "lekkere",
+      "options": ["lekker", "lekkere"],
+      "category": "food_drink",
+      "explanation": "Lekkere is used because 'soep' is a de-word and there's no article."
+    },
+    {
+      "sentence": "We wonen aan een ___ straat.",
+      "translation": "We live on a busy street.",
+      "correct_answer": "drukke",
+      "options": ["druk", "drukke"],
+      "category": "activity",
+      "explanation": "Drukke is used because 'straat' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Het is een ___ huis.",
+      "translation": "It is a quiet house.",
+      "correct_answer": "stil",
+      "options": ["stil", "stille"],
+      "category": "sound",
+      "explanation": "Stil is used because 'huis' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Hij draagt een ___ jas.",
+      "translation": "He wears a dark coat.",
+      "correct_answer": "donkere",
+      "options": ["donker", "donkere"],
+      "category": "color",
+      "explanation": "Donkere is used because 'jas' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Zij heeft ___ haar.",
+      "translation": "She has light hair.",
+      "correct_answer": "licht",
+      "options": ["licht", "lichte"],
+      "category": "color",
+      "explanation": "Licht is used because 'haar' is a het-word (neuter) and there's no article."
+    },
+    {
+      "sentence": "Dit is een ___ probleem.",
+      "translation": "This is a heavy problem.",
+      "correct_answer": "zwaar",
+      "options": ["zwaar", "zware"],
+      "category": "weight",
+      "explanation": "Zwaar is used because 'probleem' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Hij is een ___ man.",
+      "translation": "He is a rich man.",
+      "correct_answer": "rijke",
+      "options": ["rijk", "rijke"],
+      "category": "wealth",
+      "explanation": "Rijke is used because 'man' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Zij helpt het ___ gezin.",
+      "translation": "She helps the poor family.",
+      "correct_answer": "arme",
+      "options": ["arm", "arme"],
+      "category": "wealth",
+      "explanation": "Arme is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "Het ___ meisje leest veel.",
+      "translation": "The smart girl reads a lot.",
+      "correct_answer": "slimme",
+      "options": ["slim", "slimme"],
+      "category": "intelligence",
+      "explanation": "Slimme is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "Dat is een ___ idee.",
+      "translation": "That is a stupid idea.",
+      "correct_answer": "dom",
+      "options": ["dom", "domme"],
+      "category": "intelligence",
+      "explanation": "Dom is used because 'idee' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "We horen ___ muziek.",
+      "translation": "We hear cheerful music.",
+      "correct_answer": "vrolijke",
+      "options": ["vrolijk", "vrolijke"],
+      "category": "emotions",
+      "explanation": "Vrolijke is used because 'muziek' is a de-word and there's no article."
+    },
+    {
+      "sentence": "De ___ leraar spreekt luid.",
+      "translation": "The angry teacher speaks loudly.",
+      "correct_answer": "boze",
+      "options": ["boos", "boze"],
+      "category": "emotions",
+      "explanation": "Boze is used because it follows the definite article 'de' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "Het ___ kind huilt.",
+      "translation": "The scared child cries.",
+      "correct_answer": "bange",
+      "options": ["bang", "bange"],
+      "category": "emotions",
+      "explanation": "Bange is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "Dit is een ___ dag.",
+      "translation": "This is a happy day.",
+      "correct_answer": "gelukkige",
+      "options": ["gelukkig", "gelukkige"],
+      "category": "emotions",
+      "explanation": "Gelukkige is used because 'dag' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Hij drinkt uit een ___ glas.",
+      "translation": "He drinks from an empty glass.",
+      "correct_answer": "leeg",
+      "options": ["leeg", "lege"],
+      "category": "capacity",
+      "explanation": "Leeg is used because 'glas' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "De ___ bus vertrekt.",
+      "translation": "The full bus departs.",
+      "correct_answer": "volle",
+      "options": ["vol", "volle"],
+      "category": "capacity",
+      "explanation": "Volle is used because it follows the definite article 'de' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "De ___ winkel is druk.",
+      "translation": "The open store is busy.",
+      "correct_answer": "open",
+      "options": ["open", "open"],
+      "category": "state",
+      "explanation": "Open remains the same in both forms - it's one of the few adjectives that doesn't change."
+    },
+    {
+      "sentence": "Het ___ raam houdt warmte binnen.",
+      "translation": "The closed window keeps heat inside.",
+      "correct_answer": "dichte",
+      "options": ["dicht", "dichte"],
+      "category": "state",
+      "explanation": "Dichte is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "Zij hangt de ___ was op.",
+      "translation": "She hangs up the wet laundry.",
+      "correct_answer": "natte",
+      "options": ["nat", "natte"],
+      "category": "condition",
+      "explanation": "Natte is used because it follows the definite article 'de' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "We hebben een ___ zomer.",
+      "translation": "We have a dry summer.",
+      "correct_answer": "droge",
+      "options": ["droog", "droge"],
+      "category": "weather",
+      "explanation": "Droge is used because 'zomer' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Het kind eet ___ fruit.",
+      "translation": "The child eats sweet fruit.",
+      "correct_answer": "zoet",
+      "options": ["zoet", "zoete"],
+      "category": "taste",
+      "explanation": "Zoet is used because 'fruit' is a het-word (neuter) and there's no article."
+    },
+    {
+      "sentence": "Hij proeft de ___ melk.",
+      "translation": "He tastes the sour milk.",
+      "correct_answer": "zure",
+      "options": ["zuur", "zure"],
+      "category": "taste",
+      "explanation": "Zure is used because it follows the definite article 'de' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "Zij leest een ___ boek.",
+      "translation": "She reads a thick book.",
+      "correct_answer": "dik",
+      "options": ["dik", "dikke"],
+      "category": "size",
+      "explanation": "Dik is used because 'boek' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Hij schrijft op ___ papier.",
+      "translation": "He writes on thin paper.",
+      "correct_answer": "dun",
+      "options": ["dun", "dunne"],
+      "category": "size",
+      "explanation": "Dun is used because 'papier' is a het-word (neuter) and there's no article."
+    },
+    {
+      "sentence": "We lopen over een ___ brug.",
+      "translation": "We walk over a wide bridge.",
+      "correct_answer": "brede",
+      "options": ["breed", "brede"],
+      "category": "size",
+      "explanation": "Brede is used because 'brug' is a de-word and it's indefinite (een)."
+    },
+    {
+      "sentence": "Dit is een ___ pad.",
+      "translation": "This is a narrow path.",
+      "correct_answer": "smal",
+      "options": ["smal", "smalle"],
+      "category": "size",
+      "explanation": "Smal is used because 'pad' is a het-word (neuter) and it's indefinite (een)."
+    },
+    {
+      "sentence": "Zij zwemt in ___ water.",
+      "translation": "She swims in deep water.",
+      "correct_answer": "diep",
+      "options": ["diep", "diepe"],
+      "category": "depth",
+      "explanation": "Diep is used because 'water' is a het-word (neuter) and there's no article."
+    },
+    {
+      "sentence": "Het ___ gebouw is oud.",
+      "translation": "The low building is old.",
+      "correct_answer": "lage",
+      "options": ["laag", "lage"],
+      "category": "height",
+      "explanation": "Lage is used because it follows the definite article 'het' and adjectives after definite articles always get -e."
+    },
+    {
+      "sentence": "Hij wast zijn ___ handen.",
+      "translation": "He washes his dirty hands.",
+      "correct_answer": "vieze",
+      "options": ["vies", "vieze"],
+      "category": "cleanliness",
+      "explanation": "Vieze is used because 'handen' is plural and the adjective takes the -e form with plural nouns."
     }
   ]
 }
