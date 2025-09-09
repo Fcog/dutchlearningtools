@@ -258,7 +258,7 @@
     },
     {
       "base_adjective": "veel",
-      "sentence": "Ik heb even ___ als tijd als jij.",
+      "sentence": "Ik heb even ___ tijd als jij.",
       "translation": "I have as much time as you.",
       "correct_answer": "veel",
       "type": "positive",
