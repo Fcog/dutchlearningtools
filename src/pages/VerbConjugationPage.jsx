@@ -14,7 +14,7 @@ import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHi
 const PRONOUNS = ['ik', 'jij', 'hij/zij', 'wij', 'jullie', 'zij']
 
 // Initialize exercise history manager
-const exerciseHistory = createExerciseHistory('verb_conjugation', 3)
+const exerciseHistory = createExerciseHistory('verb_conjugation', 10)
 
 function VerbConjugationPage() {
   const navigate = useNavigate()

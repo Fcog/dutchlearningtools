@@ -8,7 +8,7 @@ import { Footer } from '../components/atoms'
 import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
 
 // Initialize exercise history manager
-const exerciseHistory = createExerciseHistory('object_pronouns', 3)
+const exerciseHistory = createExerciseHistory('object_pronouns', 10)
 
 function ObjectPronounsPage() {
   const navigate = useNavigate()

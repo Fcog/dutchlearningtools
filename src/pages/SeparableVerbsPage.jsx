@@ -8,7 +8,7 @@ import { Footer } from '../components/atoms'
 import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
 
 // Initialize exercise history manager
-const exerciseHistory = createExerciseHistory('separable_verbs', 3)
+const exerciseHistory = createExerciseHistory('separable_verbs', 10)
 
 function SeparableVerbsPage() {
   const navigate = useNavigate()

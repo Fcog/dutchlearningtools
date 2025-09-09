@@ -11,7 +11,7 @@ import { saveFilterPreferences, loadFilterPreferences } from '../utils/filterSto
 import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
 
 // Initialize exercise history manager
-const exerciseHistory = createExerciseHistory('verbs_with_fixed_preposition', 3)
+const exerciseHistory = createExerciseHistory('verbs_with_fixed_preposition', 10)
 
 function VerbsWithFixedPrepositionPage() {
   const navigate = useNavigate()

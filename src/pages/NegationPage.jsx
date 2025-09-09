@@ -8,7 +8,7 @@ import { Footer } from '../components/atoms'
 import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
 
 // Initialize exercise history manager
-const exerciseHistory = createExerciseHistory('negation', 3)
+const exerciseHistory = createExerciseHistory('negation', 10)
 
 function NegationPage() {
   const navigate = useNavigate()

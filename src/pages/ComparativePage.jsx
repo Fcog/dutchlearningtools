@@ -8,7 +8,7 @@ import { Footer } from '../components/atoms'
 import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
 
 // Initialize exercise history manager
-const exerciseHistory = createExerciseHistory('comparative', 3)
+const exerciseHistory = createExerciseHistory('comparative', 10)
 
 function ComparativePage() {
   const navigate = useNavigate()

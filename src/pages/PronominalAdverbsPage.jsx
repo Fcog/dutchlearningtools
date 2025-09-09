@@ -8,7 +8,7 @@ import { Footer } from '../components/atoms'
 import { createExerciseHistory, exerciseIdGenerators } from '../utils/exerciseHistory'
 
 // Initialize exercise history manager
-const exerciseHistory = createExerciseHistory('pronominal_adverbs', 3)
+const exerciseHistory = createExerciseHistory('pronominal_adverbs', 10)
 
 function PronominalAdverbsPage() {
   const navigate = useNavigate()
