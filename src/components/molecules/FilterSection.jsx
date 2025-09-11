@@ -3,16 +3,33 @@ import { Checkbox, Text } from '../atoms'
 
 function FilterSection({
   title,
+  description,
   items,
   selectedItems,
   onToggle,
+  options,
+  selectedValues,
+  onChange,
+  type,
   isExpanded = true,
   onToggleExpanded,
   showExamples = false,
   showMobileControls = false,
   className = ''
 }) {
-  const selectedText = getSelectedText(items, selectedItems)
+  // Support both old interface (items/selectedItems) and new interface (options/selectedValues)
+  const actualItems = items || (options ? options.map(opt => ({ key: opt.value, name: opt.label })) : [])
+  const actualSelectedItems = selectedItems || selectedValues || []
+  const actualOnToggle = onToggle || ((key) => {
+    if (onChange) {
+      const newSelected = actualSelectedItems.includes(key)
+        ? actualSelectedItems.filter(item => item !== key)
+        : [...actualSelectedItems, key]
+      onChange(newSelected)
+    }
+  })
+  
+  const selectedText = getSelectedText(actualItems, actualSelectedItems)
   
   function getSelectedText(items, selectedItems) {
     if (selectedItems.length === items.length) {
@@ -43,7 +60,7 @@ function FilterSection({
               {selectedText}
             </Text>
             <Text size="small" className="filter-section-count">
-              ({selectedItems.length}/{items.length})
+              ({actualSelectedItems.length}/{actualItems.length})
             </Text>
             <span className={`filter-section-arrow ${isExpanded ? 'filter-section-arrow-up' : ''}`}>
               ▼
@@ -53,25 +70,25 @@ function FilterSection({
         
         {!showMobileControls && (
           <Text size="small" className="filter-section-count">
-            ({selectedItems.length}/{items.length})
+            ({actualSelectedItems.length}/{actualItems.length})
           </Text>
         )}
       </div>
       
       {isExpanded && (
         <div className="filter-options">
-          {items.map(item => (
+          {actualItems.map(item => (
             <FilterOption
               key={item.key}
               item={item}
-              isSelected={selectedItems.includes(item.key)}
-              isDisabled={selectedItems.length === 1 && selectedItems.includes(item.key)}
-              onToggle={() => onToggle(item.key)}
+              isSelected={actualSelectedItems.includes(item.key)}
+              isDisabled={actualSelectedItems.length === 1 && actualSelectedItems.includes(item.key)}
+              onToggle={() => actualOnToggle(item.key)}
               showExample={showExamples}
             />
           ))}
           
-          {selectedItems.length === 1 && title.toLowerCase().includes('tense') && (
+          {actualSelectedItems.length === 1 && title.toLowerCase().includes('tense') && (
             <div className="filter-warning">
               💡 Select at least one tense
             </div>

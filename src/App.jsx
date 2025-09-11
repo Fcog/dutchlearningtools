@@ -13,6 +13,7 @@ import ReflexiveVerbsPage from './pages/ReflexiveVerbsPage'
 import NegationPage from './pages/NegationPage'
 import SeparableVerbsPage from './pages/SeparableVerbsPage'
 import PronominalAdverbsPage from './pages/PronominalAdverbsPage'
+import AdverbsPage from './pages/AdverbsPage'
 import NotFoundPage from './pages/NotFoundPage'
 import ScrollToTop from './components/ScrollToTop'
 import CookieConsent from './components/organisms/CookieConsent'
@@ -38,6 +39,7 @@ function AppRoutes() {
         <Route path="/negation" element={<NegationPage />} />
         <Route path="/separable-verbs" element={<SeparableVerbsPage />} />
         <Route path="/pronominal-adverbs" element={<PronominalAdverbsPage />} />
+        <Route path="/adverbs" element={<AdverbsPage />} />
         <Route path="/phrases" element={<div>Phrases tool coming soon!</div>} />
         <Route path="/grammar" element={<div>Grammar tool coming soon!</div>} />
         <Route path="/vocabulary" element={<div>Vocabulary tool coming soon!</div>} />

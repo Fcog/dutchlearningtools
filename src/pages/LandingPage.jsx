@@ -200,6 +200,22 @@ function LandingPage() {
       available: true
     },
     {
+      id: 'adverbs',
+      icon: '⚡',
+      title: 'Dutch Adverbs Practice',
+      description: 'Master Dutch adverbs by filling in missing words in real sentences. Learn time, degree, frequency, and place adverbs in context.',
+      features: [
+        'Fill-in-the-blank exercises',
+        'Common spoken Dutch adverbs',
+        'Contextual learning',
+        'Category-based filtering',
+        'Frequency-based practice',
+        'Progressive difficulty (A1-B2)'
+      ],
+      route: '/adverbs',
+      available: true
+    },
+    {
       id: 'phrases',
       icon: '💬',
       title: 'Common Dutch Phrases',

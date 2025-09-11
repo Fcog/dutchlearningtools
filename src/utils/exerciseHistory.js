@@ -150,6 +150,12 @@ export const exerciseIdGenerators = {
   // For exercises with question/answer pairs
   questionBased: (exercise) => exercise.question || exercise.sentence || exercise.dutch_sentence,
   
+  // For sentence translation exercises
+  sentenceTranslation: (id) => `sentence_${id}`,
+  
+  // For adverbs exercises
+  adverbs: (id) => `adverb_${id}`,
+  
   // For complex objects, create hash from key properties
   complex: (exercise) => {
     const key = JSON.stringify({
