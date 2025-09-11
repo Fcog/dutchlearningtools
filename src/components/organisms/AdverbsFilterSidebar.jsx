@@ -36,8 +36,7 @@ function AdverbsFilterSidebar({
     { value: 'softener', label: 'Softener' },
     { value: 'inference', label: 'Inference' },
     { value: 'precision', label: 'Precision' },
-    { value: 'repetition', label: 'Repetition' },
-    { value: 'feeling', label: 'Feeling/State' }
+    { value: 'repetition', label: 'Repetition' }
   ]
 
   const frequencyOptions = [
@@ -139,7 +138,7 @@ function AdverbsFilterSidebar({
               size="small"
               onClick={() => {
                 onDifficultyChange(['A1', 'A2', 'B1', 'B2'])
-                onCategoryChange(['time', 'degree', 'frequency', 'place', 'probability', 'discourse', 'emphasis', 'contrast', 'certainty', 'confirmation', 'softener', 'inference', 'precision', 'repetition', 'feeling'])
+                onCategoryChange(['time', 'degree', 'frequency', 'place', 'probability', 'discourse', 'emphasis', 'contrast', 'certainty', 'confirmation', 'softener', 'inference', 'precision', 'repetition'])
                 onFrequencyChange(['very_high', 'high', 'medium', 'low'])
               }}
               className="sidebar-quick-action"

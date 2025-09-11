@@ -34,17 +34,6 @@
       "category": "confirmation"
     },
     {
-      "id": 4,
-      "adverb": "misselijk",
-      "english_sentence": "She feels sick after the ride.",
-      "dutch_sentence": "Ze voelt zich __ na de rit.",
-      "correct_answer": "misselijk",
-      "english_meaning": "sick/nauseous",
-      "frequency": "medium",
-      "difficulty": "B1",
-      "category": "feeling"
-    },
-    {
       "id": 5,
       "adverb": "onmiddellijk",
       "english_sentence": "He responded immediately.",

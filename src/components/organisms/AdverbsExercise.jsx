@@ -10,7 +10,6 @@ const getCategoryName = (categoryKey) => {
     probability: 'Probability',
     discourse: 'Discourse Marker',
     confirmation: 'Confirmation',
-    feeling: 'Feeling/State',
     time: 'Time',
     degree: 'Degree/Intensity',
     inference: 'Inference',
