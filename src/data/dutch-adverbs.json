@@ -3,8 +3,14 @@
     {
       "id": 1,
       "adverb": "waarschijnlijk",
-      "english_sentence": "He probably comes tomorrow.",
-      "dutch_sentence": "Hij komt __ morgen.",
+      "english_sentences": [
+        "He probably comes tomorrow.",
+        "She will probably be late."
+      ],
+      "dutch_sentences": [
+        "Hij komt __ morgen.",
+        "Zij komt __ te laat."
+      ],
       "correct_answer": "waarschijnlijk",
       "english_meaning": "probably",
       "frequency": "very_high",
@@ -14,8 +20,14 @@
     {
       "id": 2,
       "adverb": "eigenlijk",
-      "english_sentence": "I actually don't want to come along.",
-      "dutch_sentence": "Ik wil __ niet mee.",
+      "english_sentences": [
+        "I actually don't want to come along.",
+        "Actually, that's not true."
+      ],
+      "dutch_sentences": [
+        "Ik wil __ niet mee.",
+        "__, dat is niet waar."
+      ],
       "correct_answer": "eigenlijk",
       "english_meaning": "actually",
       "frequency": "very_high",
@@ -25,8 +37,14 @@
     {
       "id": 3,
       "adverb": "natuurlijk",
-      "english_sentence": "Of course you can come.",
-      "dutch_sentence": "Je kunt __ komen.",
+      "english_sentences": [
+        "Of course you can come.",
+        "That's naturally the best choice."
+      ],
+      "dutch_sentences": [
+        "Je kunt __ komen.",
+        "Dat is __ de beste keuze."
+      ],
       "correct_answer": "natuurlijk",
       "english_meaning": "naturally/of course",
       "frequency": "high",
@@ -36,8 +54,14 @@
     {
       "id": 5,
       "adverb": "onmiddellijk",
-      "english_sentence": "He responded immediately.",
-      "dutch_sentence": "Hij reageerde __.",
+      "english_sentences": [
+        "He responded immediately.",
+        "The store closed immediately."
+      ],
+      "dutch_sentences": [
+        "Hij reageerde __.",
+        "De winkel sloot __ af."
+      ],
       "correct_answer": "onmiddellijk",
       "english_meaning": "immediately",
       "frequency": "medium",
@@ -47,8 +71,14 @@
     {
       "id": 6,
       "adverb": "uitzonderlijk",
-      "english_sentence": "The weather is exceptionally beautiful today.",
-      "dutch_sentence": "Het weer is __ mooi vandaag.",
+      "english_sentences": [
+        "The weather is exceptionally beautiful today.",
+        "She performed exceptionally well."
+      ],
+      "dutch_sentences": [
+        "Het weer is __ mooi vandaag.",
+        "Zij presteerde __ goed."
+      ],
       "correct_answer": "uitzonderlijk",
       "english_meaning": "exceptionally",
       "frequency": "low",
@@ -58,8 +88,14 @@
     {
       "id": 7,
       "adverb": "mogelijk",
-      "english_sentence": "It's possibly the best solution.",
-      "dutch_sentence": "Het is __ de beste oplossing.",
+      "english_sentences": [
+        "It's possibly the best solution.",
+        "That's possibly true."
+      ],
+      "dutch_sentences": [
+        "Het is __ de beste oplossing.",
+        "Dat is __ waar."
+      ],
       "correct_answer": "mogelijk",
       "english_meaning": "possibly",
       "frequency": "high",
@@ -69,8 +105,14 @@
     {
       "id": 8,
       "adverb": "redelijk",
-      "english_sentence": "The price is reasonably good.",
-      "dutch_sentence": "De prijs is __ goed.",
+      "english_sentences": [
+        "The price is reasonably good.",
+        "I'm reasonably satisfied."
+      ],
+      "dutch_sentences": [
+        "De prijs is __ goed.",
+        "Ik ben __ tevreden."
+      ],
       "correct_answer": "redelijk",
       "english_meaning": "reasonably",
       "frequency": "medium",
@@ -80,8 +122,14 @@
     {
       "id": 9,
       "adverb": "tijdelijk",
-      "english_sentence": "The store is temporarily closed.",
-      "dutch_sentence": "De winkel is __ gesloten.",
+      "english_sentences": [
+        "The store is temporarily closed.",
+        "We live here temporarily."
+      ],
+      "dutch_sentences": [
+        "De winkel is __ gesloten.",
+        "We wonen hier __."
+      ],
       "correct_answer": "tijdelijk",
       "english_meaning": "temporarily",
       "frequency": "medium",
@@ -91,8 +139,14 @@
     {
       "id": 10,
       "adverb": "behoorlijk",
-      "english_sentence": "It's quite busy here.",
-      "dutch_sentence": "Het is __ druk hier.",
+      "english_sentences": [
+        "It's quite busy here.",
+        "That was quite difficult."
+      ],
+      "dutch_sentences": [
+        "Het is __ druk hier.",
+        "Dat was __ moeilijk."
+      ],
       "correct_answer": "behoorlijk",
       "english_meaning": "quite/rather",
       "frequency": "high",
@@ -102,8 +156,14 @@
     {
       "id": 11,
       "adverb": "blijkbaar",
-      "english_sentence": "He apparently wasn't home.",
-      "dutch_sentence": "Hij was __ niet thuis.",
+      "english_sentences": [
+        "He apparently wasn't home.",
+        "Apparently, it's going to rain."
+      ],
+      "dutch_sentences": [
+        "Hij was __ niet thuis.",
+        "__, het gaat regenen."
+      ],
       "correct_answer": "blijkbaar",
       "english_meaning": "apparently",
       "frequency": "high",
@@ -113,8 +173,14 @@
     {
       "id": 12,
       "adverb": "eindelijk",
-      "english_sentence": "We are finally ready!",
-      "dutch_sentence": "We zijn __ klaar!",
+      "english_sentences": [
+        "We are finally ready!",
+        "The summer has finally arrived."
+      ],
+      "dutch_sentences": [
+        "We zijn __ klaar!",
+        "De zomer is __ gekomen."
+      ],
       "correct_answer": "eindelijk",
       "english_meaning": "finally",
       "frequency": "high",
@@ -124,8 +190,14 @@
     {
       "id": 13,
       "adverb": "nauwelijks",
-      "english_sentence": "I hardly slept.",
-      "dutch_sentence": "Ik heb __ geslapen.",
+      "english_sentences": [
+        "I hardly slept.",
+        "We can barely see anything."
+      ],
+      "dutch_sentences": [
+        "Ik heb __ geslapen.",
+        "We kunnen __ iets zien."
+      ],
       "correct_answer": "nauwelijks",
       "english_meaning": "hardly/barely",
       "frequency": "medium",
@@ -135,8 +207,14 @@
     {
       "id": 14,
       "adverb": "tegelijk",
-      "english_sentence": "They came in at the same time.",
-      "dutch_sentence": "Ze kwamen __ binnen.",
+      "english_sentences": [
+        "They came in at the same time.",
+        "We can't all speak at the same time."
+      ],
+      "dutch_sentences": [
+        "Ze kwamen __ binnen.",
+        "We kunnen niet allemaal __ praten."
+      ],
       "correct_answer": "tegelijk",
       "english_meaning": "at the same time",
       "frequency": "high",
@@ -146,8 +224,14 @@
     {
       "id": 15,
       "adverb": "vermoedelijk",
-      "english_sentence": "She presumably knows the answer.",
-      "dutch_sentence": "Zij weet __ het antwoord.",
+      "english_sentences": [
+        "She presumably knows the answer.",
+        "The meeting will presumably be postponed."
+      ],
+      "dutch_sentences": [
+        "Zij weet __ het antwoord.",
+        "De vergadering wordt __ uitgesteld."
+      ],
       "correct_answer": "vermoedelijk",
       "english_meaning": "presumably",
       "frequency": "medium",
@@ -157,8 +241,14 @@
     {
       "id": 16,
       "adverb": "voornamelijk",
-      "english_sentence": "The book is mainly about history.",
-      "dutch_sentence": "Het boek gaat __ over geschiedenis.",
+      "english_sentences": [
+        "The book is mainly about history.",
+        "We eat mainly vegetables."
+      ],
+      "dutch_sentences": [
+        "Het boek gaat __ over geschiedenis.",
+        "We eten __ groenten."
+      ],
       "correct_answer": "voornamelijk",
       "english_meaning": "mainly/primarily",
       "frequency": "medium",
@@ -168,8 +258,14 @@
     {
       "id": 17,
       "adverb": "helemaal",
-      "english_sentence": "That's completely correct.",
-      "dutch_sentence": "Dat klopt __.",
+      "english_sentences": [
+        "That's completely correct.",
+        "I completely forgot."
+      ],
+      "dutch_sentences": [
+        "Dat klopt __.",
+        "Ik ben het __ vergeten."
+      ],
       "correct_answer": "helemaal",
       "english_meaning": "completely/entirely",
       "frequency": "very_high",
@@ -179,8 +275,14 @@
     {
       "id": 18,
       "adverb": "momenteel",
-      "english_sentence": "I'm currently busy.",
-      "dutch_sentence": "Ik ben __ druk.",
+      "english_sentences": [
+        "I'm currently busy.",
+        "She is currently studying."
+      ],
+      "dutch_sentences": [
+        "Ik ben __ druk.",
+        "Zij studeert __."
+      ],
       "correct_answer": "momenteel",
       "english_meaning": "currently",
       "frequency": "medium",
@@ -190,8 +292,14 @@
     {
       "id": 19,
       "adverb": "toch",
-      "english_sentence": "It's difficult, but I'll do it anyway.",
-      "dutch_sentence": "Dat is moeilijk, maar ik doe het __.",
+      "english_sentences": [
+        "It's difficult, but I'll do it anyway.",
+        "You are coming anyway, right?"
+      ],
+      "dutch_sentences": [
+        "Dat is moeilijk, maar ik doe het __.",
+        "Je komt __ wel, hè?"
+      ],
       "correct_answer": "toch",
       "english_meaning": "anyway/still",
       "frequency": "very_high",
@@ -201,8 +309,14 @@
     {
       "id": 20,
       "adverb": "maar",
-      "english_sentence": "Just come in.",
-      "dutch_sentence": "Kom __ binnen.",
+      "english_sentences": [
+        "Just come in.",
+        "Just call me."
+      ],
+      "dutch_sentences": [
+        "Kom __ binnen.",
+        "Bel me __."
+      ],
       "correct_answer": "maar",
       "english_meaning": "just (softener)",
       "frequency": "very_high",
@@ -212,8 +326,14 @@
     {
       "id": 21,
       "adverb": "even",
-      "english_sentence": "Wait a moment.",
-      "dutch_sentence": "Wacht __.",
+      "english_sentences": [
+        "Wait a moment.",
+        "I'll just check that."
+      ],
+      "dutch_sentences": [
+        "Wacht __.",
+        "Ik ga dat __ checken."
+      ],
       "correct_answer": "even",
       "english_meaning": "just/for a moment",
       "frequency": "very_high",
@@ -223,8 +343,14 @@
     {
       "id": 22,
       "adverb": "nou",
-      "english_sentence": "That's typically Dutch.",
-      "dutch_sentence": "Dat is __ typisch Nederlands.",
+      "english_sentences": [
+        "That's typically Dutch.",
+        "Well, that's unfortunate."
+      ],
+      "dutch_sentences": [
+        "Dat is __ typisch Nederlands.",
+        "__, dat is jammer."
+      ],
       "correct_answer": "nou",
       "english_meaning": "well/now",
       "frequency": "very_high",
@@ -234,8 +360,14 @@
     {
       "id": 23,
       "adverb": "gewoon",
-      "english_sentence": "Just act normal.",
-      "dutch_sentence": "Doe __ normaal.",
+      "english_sentences": [
+        "Just act normal.",
+        "Just go home."
+      ],
+      "dutch_sentences": [
+        "Doe __ normaal.",
+        "Ga __ naar huis."
+      ],
       "correct_answer": "gewoon",
       "english_meaning": "just/simply",
       "frequency": "very_high",
@@ -245,8 +377,14 @@
     {
       "id": 24,
       "adverb": "al",
-      "english_sentence": "Are you already finished?",
-      "dutch_sentence": "Ben je __ klaar?",
+      "english_sentences": [
+        "Are you already finished?",
+        "She has already left."
+      ],
+      "dutch_sentences": [
+        "Ben je __ klaar?",
+        "Zij is __ weggegaan."
+      ],
       "correct_answer": "al",
       "english_meaning": "already",
       "frequency": "very_high",
@@ -256,8 +394,14 @@
     {
       "id": 25,
       "adverb": "weer",
-      "english_sentence": "It's raining again.",
-      "dutch_sentence": "Het regent __.",
+      "english_sentences": [
+        "It's raining again.",
+        "He's late again."
+      ],
+      "dutch_sentences": [
+        "Het regent __.",
+        "Hij is __ te laat."
+      ],
       "correct_answer": "weer",
       "english_meaning": "again",
       "frequency": "very_high",
@@ -267,8 +411,14 @@
     {
       "id": 26,
       "adverb": "nu",
-      "english_sentence": "Come home now.",
-      "dutch_sentence": "Kom __ naar huis.",
+      "english_sentences": [
+        "Come home now.",
+        "I'm working now."
+      ],
+      "dutch_sentences": [
+        "Kom __ naar huis.",
+        "Ik werk __."
+      ],
       "correct_answer": "nu",
       "english_meaning": "now",
       "frequency": "very_high",
@@ -278,8 +428,14 @@
     {
       "id": 27,
       "adverb": "straks",
-      "english_sentence": "See you later!",
-      "dutch_sentence": "Tot __!",
+      "english_sentences": [
+        "See you later!",
+        "I'll call you later."
+      ],
+      "dutch_sentences": [
+        "Tot __!",
+        "Ik bel je __."
+      ],
       "correct_answer": "straks",
       "english_meaning": "later/in a while",
       "frequency": "very_high",
@@ -289,8 +445,14 @@
     {
       "id": 28,
       "adverb": "zo",
-      "english_sentence": "I'll come in a moment.",
-      "dutch_sentence": "Ik kom __.",
+      "english_sentences": [
+        "I'll come in a moment.",
+        "That's so beautiful."
+      ],
+      "dutch_sentences": [
+        "Ik kom __.",
+        "Dat is __ mooi."
+      ],
       "correct_answer": "zo",
       "english_meaning": "in a moment/so",
       "frequency": "very_high",
@@ -300,8 +462,14 @@
     {
       "id": 29,
       "adverb": "dan",
-      "english_sentence": "And what do you do then?",
-      "dutch_sentence": "En wat doe je __?",
+      "english_sentences": [
+        "And what do you do then?",
+        "If it rains, then we stay home."
+      ],
+      "dutch_sentences": [
+        "En wat doe je __?",
+        "Als het regent, __ blijven we thuis."
+      ],
       "correct_answer": "dan",
       "english_meaning": "then",
       "frequency": "very_high",
@@ -311,8 +479,14 @@
     {
       "id": 30,
       "adverb": "toen",
-      "english_sentence": "I laughed hard then.",
-      "dutch_sentence": "Ik lachte __ hard.",
+      "english_sentences": [
+        "I laughed hard then.",
+        "When I was young, I lived there."
+      ],
+      "dutch_sentences": [
+        "Ik lachte __ hard.",
+        "__ ik jong was, woonde ik daar."
+      ],
       "correct_answer": "toen",
       "english_meaning": "then (past)",
       "frequency": "high",
@@ -322,8 +496,14 @@
     {
       "id": 31,
       "adverb": "altijd",
-      "english_sentence": "He is always late.",
-      "dutch_sentence": "Hij is __ te laat.",
+      "english_sentences": [
+        "He is always late.",
+        "I always drink coffee in the morning."
+      ],
+      "dutch_sentences": [
+        "Hij is __ te laat.",
+        "Ik drink 's ochtends __ koffie."
+      ],
       "correct_answer": "altijd",
       "english_meaning": "always",
       "frequency": "very_high",
@@ -333,8 +513,14 @@
     {
       "id": 32,
       "adverb": "nooit",
-      "english_sentence": "I never eat fish.",
-      "dutch_sentence": "Ik eet __ vis.",
+      "english_sentences": [
+        "I never eat fish.",
+        "She never comes on time."
+      ],
+      "dutch_sentences": [
+        "Ik eet __ vis.",
+        "Zij komt __ op tijd."
+      ],
       "correct_answer": "nooit",
       "english_meaning": "never",
       "frequency": "very_high",
@@ -344,8 +530,14 @@
     {
       "id": 33,
       "adverb": "soms",
-      "english_sentence": "We sometimes go to the park.",
-      "dutch_sentence": "We gaan __ naar het park.",
+      "english_sentences": [
+        "We sometimes go to the park.",
+        "Sometimes I work late."
+      ],
+      "dutch_sentences": [
+        "We gaan __ naar het park.",
+        "__ werk ik tot laat."
+      ],
       "correct_answer": "soms",
       "english_meaning": "sometimes",
       "frequency": "very_high",
@@ -355,8 +547,14 @@
     {
       "id": 34,
       "adverb": "heel",
-      "english_sentence": "That's very beautiful.",
-      "dutch_sentence": "Dat is __ mooi.",
+      "english_sentences": [
+        "That's very beautiful.",
+        "It's very cold today."
+      ],
+      "dutch_sentences": [
+        "Dat is __ mooi.",
+        "Het is __ koud vandaag."
+      ],
       "correct_answer": "heel",
       "english_meaning": "very",
       "frequency": "very_high",
@@ -366,8 +564,14 @@
     {
       "id": 35,
       "adverb": "erg",
-      "english_sentence": "I'm very tired.",
-      "dutch_sentence": "Ik ben __ moe.",
+      "english_sentences": [
+        "I'm very tired.",
+        "That's very expensive."
+      ],
+      "dutch_sentences": [
+        "Ik ben __ moe.",
+        "Dat is __ duur."
+      ],
       "correct_answer": "erg",
       "english_meaning": "very",
       "frequency": "very_high",
@@ -377,8 +581,14 @@
     {
       "id": 36,
       "adverb": "best",
-      "english_sentence": "That's quite funny.",
-      "dutch_sentence": "Dat is __ grappig.",
+      "english_sentences": [
+        "That's quite funny.",
+        "It's quite difficult."
+      ],
+      "dutch_sentences": [
+        "Dat is __ grappig.",
+        "Het is __ moeilijk."
+      ],
       "correct_answer": "best",
       "english_meaning": "quite",
       "frequency": "high",
@@ -388,8 +598,14 @@
     {
       "id": 37,
       "adverb": "bijna",
-      "english_sentence": "I'm almost finished.",
-      "dutch_sentence": "Ik ben __ klaar.",
+      "english_sentences": [
+        "I'm almost finished.",
+        "She almost missed the train."
+      ],
+      "dutch_sentences": [
+        "Ik ben __ klaar.",
+        "Ze miste __ de trein."
+      ],
       "correct_answer": "bijna",
       "english_meaning": "almost",
       "frequency": "very_high",
@@ -399,8 +615,14 @@
     {
       "id": 38,
       "adverb": "misschien",
-      "english_sentence": "Are you coming? Maybe.",
-      "dutch_sentence": "Ga je mee? __.",
+      "english_sentences": [
+        "Are you coming? Maybe.",
+        "Maybe it will rain tomorrow."
+      ],
+      "dutch_sentences": [
+        "Ga je mee? __.",
+        "__ regent het morgen."
+      ],
       "correct_answer": "misschien",
       "english_meaning": "maybe",
       "frequency": "very_high",
@@ -410,8 +632,14 @@
     {
       "id": 39,
       "adverb": "zeker",
-      "english_sentence": "I know it for sure.",
-      "dutch_sentence": "Ik weet het __.",
+      "english_sentences": [
+        "I know it for sure.",
+        "She will certainly help you."
+      ],
+      "dutch_sentences": [
+        "Ik weet het __.",
+        "Zij zal je __ helpen."
+      ],
       "correct_answer": "zeker",
       "english_meaning": "certainly/for sure",
       "frequency": "high",
@@ -421,8 +649,14 @@
     {
       "id": 40,
       "adverb": "precies",
-      "english_sentence": "That's exactly what I mean.",
-      "dutch_sentence": "Dat is __ wat ik bedoel.",
+      "english_sentences": [
+        "That's exactly what I mean.",
+        "She arrived exactly on time."
+      ],
+      "dutch_sentences": [
+        "Dat is __ wat ik bedoel.",
+        "Zij kwam __ op tijd aan."
+      ],
       "correct_answer": "precies",
       "english_meaning": "exactly",
       "frequency": "high",
@@ -432,8 +666,14 @@
     {
       "id": 41,
       "adverb": "hier",
-      "english_sentence": "Come here.",
-      "dutch_sentence": "Kom __.",
+      "english_sentences": [
+        "Come here.",
+        "I live here."
+      ],
+      "dutch_sentences": [
+        "Kom __.",
+        "Ik woon __."
+      ],
       "correct_answer": "hier",
       "english_meaning": "here",
       "frequency": "very_high",
@@ -443,8 +683,14 @@
     {
       "id": 42,
       "adverb": "daar",
-      "english_sentence": "She sits there.",
-      "dutch_sentence": "Ze zit __.",
+      "english_sentences": [
+        "She sits there.",
+        "Put the book there."
+      ],
+      "dutch_sentences": [
+        "Ze zit __.",
+        "Leg het boek __."
+      ],
       "correct_answer": "daar",
       "english_meaning": "there",
       "frequency": "very_high",
@@ -454,8 +700,14 @@
     {
       "id": 43,
       "adverb": "nergens",
-      "english_sentence": "I can't find my book anywhere.",
-      "dutch_sentence": "Ik vind mijn boek __.",
+      "english_sentences": [
+        "I can't find my book anywhere.",
+        "There's nowhere to park."
+      ],
+      "dutch_sentences": [
+        "Ik vind mijn boek __.",
+        "Er is __ een parkeerplaats."
+      ],
       "correct_answer": "nergens",
       "english_meaning": "nowhere/anywhere (negative)",
       "frequency": "high",
@@ -465,13 +717,53 @@
     {
       "id": 44,
       "adverb": "overal",
-      "english_sentence": "Children play everywhere.",
-      "dutch_sentence": "Kinderen spelen __.",
+      "english_sentences": [
+        "Children play everywhere.",
+        "There's music everywhere."
+      ],
+      "dutch_sentences": [
+        "Kinderen spelen __.",
+        "Er is __ muziek."
+      ],
       "correct_answer": "overal",
       "english_meaning": "everywhere",
       "frequency": "high",
       "difficulty": "A2",
       "category": "place"
+    },
+    {
+      "id": 45,
+      "adverb": "trouwens",
+      "english_sentences": [
+        "By the way, do you know what time it is?",
+        "By the way, I forgot to mention that."
+      ],
+      "dutch_sentences": [
+        "__, weet jij hoe laat het is?",
+        "__, ik vergat dat te vermelden."
+      ],
+      "correct_answer": "trouwens",
+      "english_meaning": "by the way/incidentally",
+      "frequency": "high",
+      "difficulty": "B1",
+      "category": "discourse"
+    },
+    {
+      "id": 46,
+      "adverb": "letterlijk",
+      "english_sentences": [
+        "He literally ran the entire way.",
+        "I literally couldn't believe my eyes."
+      ],
+      "dutch_sentences": [
+        "Hij is __ de hele weg gerend.",
+        "Ik kon __ mijn ogen niet geloven."
+      ],
+      "correct_answer": "letterlijk",
+      "english_meaning": "literally",
+      "frequency": "medium",
+      "difficulty": "B2",
+      "category": "emphasis"
     }
   ]
 }
