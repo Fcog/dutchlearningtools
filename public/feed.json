@@ -1,0 +1,132 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Dutch Learning Tools",
+  "home_page_url": "https://dutchlearning.tools",
+  "feed_url": "https://dutchlearning.tools/feed.json",
+  "description": "Interactive Dutch learning tools for mastering articles, grammar, vocabulary, and language skills. Practice de & het articles, verb conjugations, prepositions, and more with engaging exercises.",
+  "language": "en-US",
+  "authors": [
+    {
+      "name": "Dutch Learning Tools"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://dutchlearning.tools/de-het-articles",
+      "url": "https://dutchlearning.tools/de-het-articles",
+      "title": "Dutch Articles & Nouns (De & Het)",
+      "content_text": "Learn Dutch articles (de & het) with 200 most common Dutch nouns. Daily word practice with pronunciation, translations, and categories. Features include daily Dutch word rotation, random word practice, English translations, word categories, and mobile-optimized design.",
+      "summary": "Learn Dutch articles (de & het) with 200 most common Dutch nouns. Daily word practice with pronunciation, translations, and categories.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Vocabulary", "Articles", "Nouns"]
+    },
+    {
+      "id": "https://dutchlearning.tools/verbs-conjugations",
+      "url": "https://dutchlearning.tools/verbs-conjugations",
+      "title": "Dutch Verb Conjugation",
+      "content_text": "Master Dutch verb conjugations with interactive exercises. Practice present tense with common Dutch verbs. Features include verb conjugation practice, present tense focus, interactive exercises, progress tracking, and conjugation patterns.",
+      "summary": "Master Dutch verb conjugations with interactive exercises. Practice present tense with common Dutch verbs.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Verbs", "Conjugation"]
+    },
+    {
+      "id": "https://dutchlearning.tools/prepositions",
+      "url": "https://dutchlearning.tools/prepositions",
+      "title": "Dutch Prepositions",
+      "content_text": "Master Dutch prepositions with interactive exercises. Learn the correct usage of prepositions in different contexts and situations. Features include common prepositions practice, contextual usage examples, real-world scenarios, and Dutch-English comparisons.",
+      "summary": "Master Dutch prepositions with interactive exercises. Learn the correct usage of prepositions in different contexts and situations.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Prepositions"]
+    },
+    {
+      "id": "https://dutchlearning.tools/verbs-with-fixed-preposition",
+      "url": "https://dutchlearning.tools/verbs-with-fixed-preposition",
+      "title": "Dutch Verbs with Fixed Preposition",
+      "content_text": "Master Dutch verbs with fixed prepositions. Learn essential verb-preposition combinations with interactive exercises. Features include fixed verb-preposition pairs, level-based progression (A2-B2), real example sentences, and contextual learning.",
+      "summary": "Master Dutch verbs with fixed prepositions. Learn essential verb-preposition combinations with interactive exercises.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Verbs", "Prepositions"]
+    },
+    {
+      "id": "https://dutchlearning.tools/conjunctions",
+      "url": "https://dutchlearning.tools/conjunctions",
+      "title": "Dutch Conjunctions",
+      "content_text": "Master Dutch conjunctions with interactive exercises. Learn to connect clauses and express relationships between ideas. Features include coordinating conjunctions, subordinating conjunctions, sentence completion practice, and contextual learning.",
+      "summary": "Master Dutch conjunctions with interactive exercises. Learn to connect clauses and express relationships between ideas.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Conjunctions", "Sentence Structure"]
+    },
+    {
+      "id": "https://dutchlearning.tools/adjectives",
+      "url": "https://dutchlearning.tools/adjectives",
+      "title": "Dutch Adjectives",
+      "content_text": "Master Dutch adjective declension with interactive exercises. Learn when to use the correct form of adjectives in different contexts. Features include adjective declension practice, multiple choice exercises, instant feedback, detailed explanations, and de/het word recognition.",
+      "summary": "Master Dutch adjective declension with interactive exercises. Learn when to use the correct form of adjectives in different contexts.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Adjectives"]
+    },
+    {
+      "id": "https://dutchlearning.tools/comparatives-superlatives",
+      "url": "https://dutchlearning.tools/comparatives-superlatives",
+      "title": "Dutch Comparatives & Superlatives",
+      "content_text": "Master Dutch comparative and superlative forms. Learn to form comparatives (-er) and superlatives (-ste) with interactive exercises. Features include comparative forms practice, superlative forms practice, irregular comparisons, and pattern recognition.",
+      "summary": "Master Dutch comparative and superlative forms. Learn to form comparatives (-er) and superlatives (-ste) with interactive exercises.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Adjectives", "Comparatives", "Superlatives"]
+    },
+    {
+      "id": "https://dutchlearning.tools/object-pronouns",
+      "url": "https://dutchlearning.tools/object-pronouns",
+      "title": "Dutch Object Pronouns",
+      "content_text": "Master Dutch object pronouns with interactive exercises. Learn to use the correct pronouns (mij, je, hem, haar, het, ons, jullie, ze) in context. Features include object pronoun practice, personal and formal pronouns, gender agreement practice, and real conversation examples.",
+      "summary": "Master Dutch object pronouns with interactive exercises. Learn to use the correct pronouns (mij, je, hem, haar, het, ons, jullie, ze) in context.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Pronouns"]
+    },
+    {
+      "id": "https://dutchlearning.tools/reflexive-verbs",
+      "url": "https://dutchlearning.tools/reflexive-verbs",
+      "title": "Dutch Reflexive Verbs",
+      "content_text": "Master Dutch reflexive verbs with interactive exercises. Learn to place reflexive pronouns (me, je, zich, ons) in the correct position within sentences. Features include reflexive pronoun practice, position placement rules, common reflexive verbs, and real sentence examples.",
+      "summary": "Master Dutch reflexive verbs with interactive exercises. Learn to place reflexive pronouns (me, je, zich, ons) in the correct position within sentences.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Verbs", "Pronouns", "Reflexive"]
+    },
+    {
+      "id": "https://dutchlearning.tools/negation",
+      "url": "https://dutchlearning.tools/negation",
+      "title": "Dutch Negation",
+      "content_text": "Master Dutch negation patterns with interactive exercises. Learn when to use \"niet\", \"geen\", and modal verbs for correct negative sentences. Features include Niet vs Geen practice, modal verb negation, word order rules, and detailed explanations.",
+      "summary": "Master Dutch negation patterns with interactive exercises. Learn when to use \"niet\", \"geen\", and modal verbs for correct negative sentences.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Negation", "Sentence Structure"]
+    },
+    {
+      "id": "https://dutchlearning.tools/separable-verbs",
+      "url": "https://dutchlearning.tools/separable-verbs",
+      "title": "Dutch Separable Verbs",
+      "content_text": "Master Dutch separable verbs with interactive sentence completion exercises. Learn how separable verbs split and change position in different contexts. Features include sentence completion practice, multiple tenses and contexts, real-world examples, and verb separation rules.",
+      "summary": "Master Dutch separable verbs with interactive sentence completion exercises. Learn how separable verbs split and change position in different contexts.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Verbs", "Separable Verbs"]
+    },
+    {
+      "id": "https://dutchlearning.tools/pronominal-adverbs",
+      "url": "https://dutchlearning.tools/pronominal-adverbs",
+      "title": "Dutch Pronominal Adverbs",
+      "content_text": "Master Dutch pronominal adverbs with interactive exercises. Learn waar-, wat-, and er- constructions for things and concepts. Features include Waar + preposition practice, Er + preposition constructions, question forms with wat, and grammar pattern recognition.",
+      "summary": "Master Dutch pronominal adverbs with interactive exercises. Learn waar-, wat-, and er- constructions for things and concepts.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Adverbs", "Pronominal"]
+    },
+    {
+      "id": "https://dutchlearning.tools/adverbs",
+      "url": "https://dutchlearning.tools/adverbs",
+      "title": "Dutch Adverbs Practice",
+      "content_text": "Master Dutch adverbs by filling in missing words in real sentences. Learn time, degree, frequency, and place adverbs in context. Features include fill-in-the-blank exercises, common spoken Dutch adverbs, contextual learning, category-based filtering, and progressive difficulty (A1-B2).",
+      "summary": "Master Dutch adverbs by filling in missing words in real sentences. Learn time, degree, frequency, and place adverbs in context.",
+      "date_published": "2025-09-12T12:00:00Z",
+      "tags": ["Grammar", "Adverbs", "Vocabulary"]
+    }
+  ]
+}
