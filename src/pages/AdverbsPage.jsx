@@ -137,12 +137,22 @@ function AdverbsPage() {
     if (filteredAdverbs.length === 0) return
     
     // Use smart selection to avoid recently used exercises
-    const selectedExercise = exerciseHistory.selectSmartExercise(
+    const selectedAdverb = exerciseHistory.selectSmartExercise(
       filteredAdverbs,
       (exercise) => exerciseIdGenerators.adverbs(exercise.id)
     )
     
-    if (!selectedExercise) return
+    if (!selectedAdverb) return
+    
+    // Select a random sentence pair from the arrays
+    const sentenceIndex = Math.floor(Math.random() * selectedAdverb.english_sentences.length)
+    
+    // Create exercise object with singular sentence properties
+    const selectedExercise = {
+      ...selectedAdverb,
+      english_sentence: selectedAdverb.english_sentences[sentenceIndex],
+      dutch_sentence: selectedAdverb.dutch_sentences[sentenceIndex]
+    }
     
     // Set the selected exercise
     setCurrentExercise(selectedExercise)
@@ -152,7 +162,7 @@ function AdverbsPage() {
     
     // Add to history (but skip the initial load)
     if (currentExercise) {
-      const exerciseId = exerciseIdGenerators.adverbs(selectedExercise.id)
+      const exerciseId = exerciseIdGenerators.adverbs(selectedAdverb.id)
       exerciseHistory.addToHistory(exerciseId)
       
       const newClickCount = nextExerciseClickCount + 1
