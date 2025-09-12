@@ -17,6 +17,7 @@ import AdverbsPage from './pages/AdverbsPage'
 import NotFoundPage from './pages/NotFoundPage'
 import ScrollToTop from './components/ScrollToTop'
 import CookieConsent from './components/organisms/CookieConsent'
+import InstallPrompt from './components/organisms/InstallPrompt'
 import usePageTracking from './hooks/usePageTracking'
 import { initGAWithConsent } from './utils/analytics'
 
@@ -67,6 +68,7 @@ function App() {
       <ScrollToTop />
       <AppRoutes />
       <CookieConsent />
+      <InstallPrompt />
     </BrowserRouter>
   )
 }
