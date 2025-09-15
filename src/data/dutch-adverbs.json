@@ -764,6 +764,23 @@
       "frequency": "medium",
       "difficulty": "B2",
       "category": "emphasis"
+    },
+    {
+      "id": 47,
+      "adverb": "namelijk",
+        "english_sentences": [
+          "I won't come along tomorrow. I have to work, you see.",
+          "There's a problem: we have no money."
+        ],
+        "dutch_sentences": [
+          "Ik ga morgen niet mee. Ik moet __ werken.",
+          "Er is een probleem, __ we hebben geen geld."
+        ],
+      "correct_answer": "namelijk",
+      "english_meaning": "namely/that is to say",
+      "frequency": "high",
+      "difficulty": "B1",
+      "category": "discourse"
     }
   ]
 }
