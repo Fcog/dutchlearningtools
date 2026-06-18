@@ -80,6 +80,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  position: relative;
 }
 
 .app { min-height: 100vh; }
@@ -143,6 +144,108 @@ body {
 .level-btn-code { font-size: 0.85rem; font-weight: 700; }
 .level-btn-desc { font-size: 0.68rem; opacity: 0.8; }
 
+/* ── Exercise instruction ────────────────────── */
+.exercise-instruction {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+
+.instruction-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.exercise-instruction kbd {
+  font-family: inherit;
+  font-size: 0.75rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  padding: 0.05rem 0.35rem;
+  color: var(--text-muted);
+}
+
+/* ── Help toggle ─────────────────────────────── */
+.help-toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1.5px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  z-index: 1;
+}
+
+.help-toggle:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.help-toggle.active {
+  border-color: var(--primary);
+  background: #eff6ff;
+  color: var(--primary);
+}
+
+/* ── Help bubbles ────────────────────────────── */
+.help-bubble {
+  position: relative;
+  background: #1e293b;
+  color: #f1f5f9;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 0.83rem;
+  line-height: 1.6;
+  margin-top: -0.5rem;
+  animation: bubble-in 0.18s ease;
+}
+
+.help-bubble strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+.help-bubble-arrow {
+  position: absolute;
+  top: -7px;
+  left: 1.5rem;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #1e293b;
+}
+
+@keyframes bubble-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 /* ── Sentence card ───────────────────────────── */
 .sentence-card {
   background: var(--surface);
@@ -150,6 +253,40 @@ body {
   border-radius: var(--radius);
   padding: 1.5rem;
   box-shadow: var(--shadow);
+}
+
+.sentence-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.speak-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  flex-shrink: 0;
+}
+
+.speak-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.speak-btn.speaking {
+  border-color: var(--primary);
+  background: #eff6ff;
+  color: var(--primary);
 }
 
 .tense-badge {
@@ -162,7 +299,6 @@ body {
   letter-spacing: 0.06em;
   padding: 0.2rem 0.6rem;
   border-radius: 6px;
-  margin-bottom: 0.75rem;
 }
 
 .dutch-sentence {
