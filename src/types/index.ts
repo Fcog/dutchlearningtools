@@ -1,5 +1,5 @@
 export type Level = 'A1' | 'A2' | 'B1';
-export type Tense = 'present' | 'past';
+export type Tense = 'present' | 'past' | 'perfect';
 export type Phase = 'active' | 'result';
 
 export interface PresentConjugation {
@@ -30,6 +30,7 @@ export interface Verb {
   infinitive: string;
   english: string;
   level: Level;
+  auxiliary: 'hebben' | 'zijn';
   conjugation: Conjugation;
   exercises: Exercise[];
 }

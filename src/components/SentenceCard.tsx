@@ -3,6 +3,7 @@ import type { Exercise, Tense } from '../types';
 const TENSE_LABEL: Record<Tense, string> = {
   present: 'Present tense',
   past: 'Simple past',
+  perfect: 'Present perfect',
 };
 
 interface Props {

@@ -1,5 +1,5 @@
-import { useState, useCallback, useMemo } from 'react';
-import type { Verb, Exercise, Phase, Level } from '../types';
+import { useState, useCallback, useMemo, useEffect } from 'react';
+import type { Verb, Exercise, Phase, Level, Tense } from '../types';
 import { verbs } from '../data/verbs';
 
 interface ExerciseState {
@@ -25,12 +25,17 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function buildExercise(selectedLevels: Level[]): ExerciseState | null {
-  const pool = verbs.filter((v) => selectedLevels.includes(v.level));
+function buildExercise(selectedLevels: Level[], selectedTenses: Tense[]): ExerciseState | null {
+  const pool = verbs.filter(
+    (v) =>
+      selectedLevels.includes(v.level) &&
+      v.exercises.some((e) => selectedTenses.includes(e.tense))
+  );
   if (pool.length < 3) return null;
 
   const verb = pickRandom(pool);
-  const exercise = pickRandom(verb.exercises);
+  const validExercises = verb.exercises.filter((e) => selectedTenses.includes(e.tense));
+  const exercise = pickRandom(validExercises);
   const d1 = pickRandom(pool, [verb]);
   const d2 = pickRandom(pool, [verb, d1]);
 
@@ -44,11 +49,19 @@ function buildExercise(selectedLevels: Level[]): ExerciseState | null {
   };
 }
 
-export function useExercise(selectedLevels: Level[]) {
+export function useExercise(selectedLevels: Level[], selectedTenses: Tense[]) {
   const [state, setState] = useState<ExerciseState | null>(() =>
-    buildExercise(selectedLevels)
+    buildExercise(selectedLevels, selectedTenses)
   );
   const [score, setScore] = useState({ correct: 0, total: 0 });
+
+  const levelsKey = [...selectedLevels].sort().join(',');
+  const tensesKey = [...selectedTenses].sort().join(',');
+
+  useEffect(() => {
+    setState(buildExercise(selectedLevels, selectedTenses));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [levelsKey, tensesKey]);
 
   const orderedChoices = useMemo(
     () => (state ? shuffle([state.verb, ...state.distractors]) : []),
@@ -77,8 +90,9 @@ export function useExercise(selectedLevels: Level[]) {
   }, []);
 
   const next = useCallback(() => {
-    setState(buildExercise(selectedLevels));
-  }, [selectedLevels]);
+    setState(buildExercise(selectedLevels, selectedTenses));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [levelsKey, tensesKey]);
 
   return { state, orderedChoices, score, setInput, submit, next };
 }

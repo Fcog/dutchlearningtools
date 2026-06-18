@@ -1,12 +1,14 @@
 import { useRef, useEffect } from 'react';
+import type { Tense } from '../types';
 
 interface Props {
+  tense: Tense;
   value: string;
   onChange: (v: string) => void;
   onSubmit: () => void;
 }
 
-export function ConjugationInput({ value, onChange, onSubmit }: Props) {
+export function ConjugationInput({ tense, value, onChange, onSubmit }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -17,6 +19,9 @@ export function ConjugationInput({ value, onChange, onSubmit }: Props) {
     if (e.key === 'Enter' && value.trim()) onSubmit();
   };
 
+  const placeholder =
+    tense === 'perfect' ? 'Type the past participle…' : 'Type the conjugated form…';
+
   return (
     <div className="input-row">
       <input
@@ -26,7 +31,7 @@ export function ConjugationInput({ value, onChange, onSubmit }: Props) {
         value={value}
         onChange={(e) => onChange(e.target.value)}
         onKeyDown={handleKey}
-        placeholder="Type the conjugated form…"
+        placeholder={placeholder}
         autoComplete="off"
         autoCorrect="off"
         autoCapitalize="off"

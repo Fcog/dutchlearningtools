@@ -90,7 +90,14 @@ body {
   gap: 1.25rem;
 }
 
-/* ── Level selector ──────────────────────────── */
+/* ── Filters ─────────────────────────────────── */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* ── Level / tense selectors ─────────────────── */
 .level-selector {
   display: flex;
   align-items: center;
