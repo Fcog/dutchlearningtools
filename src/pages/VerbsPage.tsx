@@ -9,6 +9,7 @@ import { VerbChoices } from "../components/VerbChoices";
 import { ConjugationInput } from "../components/ConjugationInput";
 import { ResultFeedback } from "../components/ResultFeedback";
 import { HelpBubble } from "../components/HelpBubble";
+import { TheoryPanel } from "../components/TheoryPanel";
 
 export default function VerbsPage() {
   const [selectedLevels, setSelectedLevels] = useState<Level[]>(["A1", "A2"]);
@@ -51,6 +52,54 @@ export default function VerbsPage() {
             onChange={setSelectedTenses}
           />
         </div>
+
+        <TheoryPanel>
+          <div className="theory-section">
+            <p className="theory-intro">
+              Dutch verbs have two types: <strong>weak</strong> (regular) and{' '}
+              <strong>strong</strong> (irregular vowel change). Both follow the
+              same present-tense rules.
+            </p>
+            <div className="theory-table">
+              <div className="theory-row">
+                <span className="theory-verb">Present</span>
+                <span className="theory-desc">
+                  Stem = infinitive − <em>en</em>. &nbsp;
+                  <em>ik</em>: stem &nbsp;·&nbsp; <em>jij/hij</em>: stem + t &nbsp;·&nbsp;
+                  <em>wij/jullie/zij</em>: infinitive
+                  <br />
+                  <em className="theory-eg">werken → ik werk · hij werkt · wij werken</em>
+                </span>
+              </div>
+              <div className="theory-row">
+                <span className="theory-verb">Past (weak)</span>
+                <span className="theory-desc">
+                  <strong>'t kofschip</strong>: if stem ends in t k f s ch p → stem + <em>te/ten</em>,
+                  otherwise + <em>de/den</em>
+                  <br />
+                  <em className="theory-eg">werken → werkte/werkten &nbsp;·&nbsp; leven → leefde/leefden</em>
+                </span>
+              </div>
+              <div className="theory-row">
+                <span className="theory-verb">Past (strong)</span>
+                <span className="theory-desc">
+                  Vowel changes — must be memorised
+                  <br />
+                  <em className="theory-eg">rijden → reed/reden &nbsp;·&nbsp; schrijven → schreef/schreven</em>
+                </span>
+              </div>
+              <div className="theory-row">
+                <span className="theory-verb">Perfect</span>
+                <span className="theory-desc">
+                  <em>hebben</em> or <em>zijn</em> + past participle. Use <em>zijn</em> for
+                  movement/change of state verbs
+                  <br />
+                  <em className="theory-eg">Ik heb gewerkt &nbsp;·&nbsp; Ik ben gegaan</em>
+                </span>
+              </div>
+            </div>
+          </div>
+        </TheoryPanel>
 
         <button
           className={`help-toggle${showHelp ? " active" : ""}`}

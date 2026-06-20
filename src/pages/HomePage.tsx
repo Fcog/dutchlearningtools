@@ -12,12 +12,23 @@ export default function HomePage() {
         </div>
 
         <div className="module-grid">
-          <Link to="/verbs" className="module-card">
+          <Link to="/verbs-conjugation" className="module-card">
             <div className="module-icon">📝</div>
             <div className="module-body">
               <h3 className="module-name">Verb Conjugation</h3>
               <p className="module-desc">
-                Practice present, simple past, and present perfect tense across 112 Dutch verbs.
+                Practice present, simple past, and present perfect tense across 269 Dutch verbs.
+              </p>
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
+
+          <Link to="/positional-verbs" className="module-card">
+            <div className="module-icon">📍</div>
+            <div className="module-body">
+              <h3 className="module-name">Position Verbs</h3>
+              <p className="module-desc">
+                Learn when to use staan, liggen, zitten and zijn to describe where things are.
               </p>
             </div>
             <span className="module-arrow">→</span>
