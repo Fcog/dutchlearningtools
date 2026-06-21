@@ -750,6 +750,59 @@ body {
     font-size: 0.8rem;
 }
 
+/* ── Separable verb header ───────────────────── */
+.sep-verb-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.85rem 1rem;
+    box-shadow: var(--shadow);
+}
+
+.sep-verb-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.sep-verb-infinitive {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.sep-verb-english {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.sep-verb-progress {
+    display: flex;
+    gap: 0.4rem;
+    flex-shrink: 0;
+}
+
+.sep-progress-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    transition: background 0.2s;
+}
+
+.sep-progress-dot.done {
+    background: var(--success);
+}
+
+.sep-progress-dot.current {
+    background: var(--primary);
+}
+
 /* ── Positional verbs grid ───────────────────── */
 .pos-verb-grid {
     display: grid;

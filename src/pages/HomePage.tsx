@@ -23,6 +23,17 @@ export default function HomePage() {
             <span className="module-arrow">→</span>
           </Link>
 
+          <Link to="/separable-verbs" className="module-card">
+            <div className="module-icon">✂️</div>
+            <div className="module-body">
+              <h3 className="module-name">Separable Verbs</h3>
+              <p className="module-desc">
+                Master when to split or combine the prefix across main clauses, perfect, subordinate and modal constructions.
+              </p>
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
+
           <Link to="/positional-verbs" className="module-card">
             <div className="module-icon">📍</div>
             <div className="module-body">

@@ -8,9 +8,10 @@ interface Score {
 interface Props {
   backTo?: string;
   score?: Score;
+  title?: string;
 }
 
-export function Header({ backTo, score }: Props) {
+export function Header({ backTo, score, title }: Props) {
   return (
     <header className="header">
       <div className="header-inner">
@@ -21,7 +22,7 @@ export function Header({ backTo, score }: Props) {
             </Link>
           ) : null}
           <span className="logo-flag">🇳🇱</span>
-          <h1>Learn Dutch</h1>
+          <h1>{title ?? 'Learn Dutch'}</h1>
         </div>
         {score && score.total > 0 && (
           <div className="score">

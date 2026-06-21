@@ -10,6 +10,7 @@ const TENSE_LABEL: Record<Tense, string> = {
 interface Props {
   exercise: Exercise;
   phase: Phase;
+  label?: string;
 }
 
 function speak(text: string, onEnd: () => void) {
@@ -22,7 +23,7 @@ function speak(text: string, onEnd: () => void) {
   window.speechSynthesis.speak(utterance);
 }
 
-export function SentenceCard({ exercise, phase }: Props) {
+export function SentenceCard({ exercise, phase, label }: Props) {
   const [speaking, setSpeaking] = useState(false);
   const parts = exercise.dutch.split('___');
 
@@ -42,7 +43,7 @@ export function SentenceCard({ exercise, phase }: Props) {
   return (
     <div className="sentence-card">
       <div className="sentence-card-top">
-        <div className="tense-badge">{TENSE_LABEL[exercise.tense]}</div>
+        <div className="tense-badge">{label ?? TENSE_LABEL[exercise.tense]}</div>
         <button
           className={`speak-btn${speaking ? ' speaking' : ''}`}
           onClick={handleSpeak}

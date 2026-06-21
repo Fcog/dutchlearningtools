@@ -47,7 +47,7 @@ export default function PositionalVerbsPage() {
 
   return (
     <div className="app">
-      <Header backTo="/" score={score} />
+      <Header backTo="/" score={score} title="Position Verbs" />
       <main className="main">
         <TheoryPanel>
           <div className="theory-section">

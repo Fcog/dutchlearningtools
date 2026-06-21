@@ -27,7 +27,7 @@ export default function VerbsPage() {
   if (!state) {
     return (
       <div className="app">
-        <Header backTo="/" score={score} />
+        <Header backTo="/" score={score} title="Verb Conjugation" />
         <div className="empty-state">
           <p>
             No exercises match the selected filters. Try enabling more levels or
@@ -40,7 +40,7 @@ export default function VerbsPage() {
 
   return (
     <div className="app">
-      <Header backTo="/" score={score} />
+      <Header backTo="/" score={score} title="Verb Conjugation" />
       <main className="main">
         <div className="filters">
           <LevelSelector
