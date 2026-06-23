@@ -845,6 +845,41 @@ body {
     opacity: 0.35;
 }
 
+/* ── Filter sidebar ──────────────────────────── */
+.filters-toggle {
+    display: none;
+}
+
+.filter-sidebar-head {
+    display: none;
+}
+
+.filter-sidebar-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s;
+}
+
+.filter-sidebar-close:hover {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.filter-sidebar-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
 /* ── Responsive ──────────────────────────────── */
 @media (max-width: 480px) {
     .main {
@@ -885,5 +920,71 @@ body {
 
     .verb-english {
         font-size: 0.68rem;
+    }
+
+    .theory-panel {
+        order: 1;
+    }
+
+    .filters-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        align-self: flex-start;
+        padding: 0.4rem 0.9rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        border: 1.5px solid var(--border);
+        border-radius: 8px;
+        background: var(--surface);
+        color: var(--text-muted);
+        cursor: pointer;
+        transition: border-color 0.15s, color 0.15s;
+    }
+
+    .filters-toggle:hover {
+        border-color: var(--primary);
+        color: var(--primary);
+    }
+
+    .filter-sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 280px;
+        background: var(--surface);
+        border-left: 1px solid var(--border);
+        box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12);
+        z-index: 200;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: transform 0.25s ease;
+    }
+
+    .filter-sidebar.open {
+        transform: translateX(0);
+    }
+
+    .filter-sidebar-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.85rem 1rem;
+        border-bottom: 1px solid var(--border);
+        flex-shrink: 0;
+    }
+
+    .filter-sidebar .filters {
+        padding: 1rem;
+    }
+
+    .filter-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.35);
+        z-index: 199;
     }
 }

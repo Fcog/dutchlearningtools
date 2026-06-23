@@ -18,30 +18,26 @@ export default function VerbsPage() {
     "past",
   ]);
   const [showHelp, setShowHelp] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const { state, orderedChoices, score, setInput, submit, next } = useExercise(
     selectedLevels,
     selectedTenses,
   );
 
-  if (!state) {
-    return (
-      <div className="app">
-        <Header backTo="/" score={score} title="Verb Conjugation" />
-        <div className="empty-state">
-          <p>
-            No exercises match the selected filters. Try enabling more levels or
-            tenses.
-          </p>
+  const filterSidebar = (
+    <>
+      <div className={`filter-sidebar${sidebarOpen ? " open" : ""}`}>
+        <div className="filter-sidebar-head">
+          <span className="filter-sidebar-title">Filters</span>
+          <button
+            className="filter-sidebar-close"
+            onClick={() => setSidebarOpen(false)}
+            aria-label="Close filters"
+          >
+            ✕
+          </button>
         </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="app">
-      <Header backTo="/" score={score} title="Verb Conjugation" />
-      <main className="main">
         <div className="filters">
           <LevelSelector
             selected={selectedLevels}
@@ -52,6 +48,50 @@ export default function VerbsPage() {
             onChange={setSelectedTenses}
           />
         </div>
+      </div>
+      {sidebarOpen && (
+        <div
+          className="filter-backdrop"
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
+    </>
+  );
+
+  if (!state) {
+    return (
+      <div className="app">
+        <Header backTo="/" score={score} title="Verb Conjugation" />
+        <main className="main">
+          <button
+            className="filters-toggle"
+            onClick={() => setSidebarOpen(true)}
+          >
+            Filters
+          </button>
+          {filterSidebar}
+          <div className="empty-state">
+            <p>
+              No exercises match the selected filters. Try enabling more levels
+              or tenses.
+            </p>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  return (
+    <div className="app">
+      <Header backTo="/" score={score} title="Verb Conjugation" />
+      <main className="main">
+        <button
+          className="filters-toggle"
+          onClick={() => setSidebarOpen(true)}
+        >
+          Filters
+        </button>
+        {filterSidebar}
 
         <TheoryPanel>
           <div className="theory-section">
