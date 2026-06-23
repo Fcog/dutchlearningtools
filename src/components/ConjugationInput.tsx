@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react';
 import type { Tense } from '../types';
+import { useUI } from '../i18n/ui';
 
 interface Props {
   tense: Tense;
@@ -10,6 +11,7 @@ interface Props {
 
 export function ConjugationInput({ tense, value, onChange, onSubmit }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
+  const ui = useUI();
 
   useEffect(() => {
     inputRef.current?.focus();
@@ -19,8 +21,7 @@ export function ConjugationInput({ tense, value, onChange, onSubmit }: Props) {
     if (e.key === 'Enter' && value.trim()) onSubmit();
   };
 
-  const placeholder =
-    tense === 'perfect' ? 'Type the past participle…' : 'Type the conjugated form…';
+  const placeholder = tense === 'perfect' ? ui.typePastParticiple : ui.typeConjugation;
 
   return (
     <div className="input-row">
@@ -42,7 +43,7 @@ export function ConjugationInput({ tense, value, onChange, onSubmit }: Props) {
         onClick={onSubmit}
         disabled={!value.trim()}
       >
-        Check
+        {ui.check}
       </button>
     </div>
   );

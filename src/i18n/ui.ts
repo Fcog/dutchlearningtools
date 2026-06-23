@@ -1,0 +1,126 @@
+import type { SupportedLang } from '../types';
+import { useLanguage } from '../context/LanguageContext';
+
+const en = {
+  // Buttons
+  check: 'Check',
+  next: 'Next exercise →',
+  nextContext: 'Next context →',
+  nextVerb: 'Next verb →',
+  // Header / nav
+  filters: 'Filters',
+  closeFilters: 'Close filters',
+  howToPlay: 'How to play',
+  theory: '📖 Theory',
+  learnDutch: 'Learn Dutch',
+  back: 'Back',
+  // Verb choices
+  verbs: 'Verbs',
+  help: 'Help',
+  hideHints: 'Hide hints',
+  // TTS
+  readAloud: 'Read aloud',
+  stop: 'Stop',
+  // Tense labels (sentence card badge)
+  presentTense: 'Present tense',
+  simplePast: 'Simple past',
+  presentPerfect: 'Present perfect',
+  // Filter labels
+  levelLabel: 'Level:',
+  beginner: 'Beginner',
+  elementary: 'Elementary',
+  intermediate: 'Intermediate',
+  tenseLabel: 'Tense:',
+  present: 'Present',
+  // Input placeholders
+  typePastParticiple: 'Type the past participle…',
+  typeConjugation: 'Type the conjugated form…',
+  // Empty state
+  noExercises: 'No exercises match the selected filters. Try enabling more levels or tenses.',
+  // Home page
+  practiceQuestion: 'What do you want to practise?',
+  chooseTopic: 'Choose a topic to start an exercise.',
+  verbConjugationName: 'Verb Conjugation',
+  verbConjugationDesc: 'Practice present, simple past, and present perfect tense across 269 Dutch verbs.',
+  separableVerbsName: 'Separable Verbs',
+  separableVerbsDesc: 'Master when to split or combine the prefix across main clauses, perfect, subordinate and modal constructions.',
+  positionVerbsName: 'Position Verbs',
+  positionVerbsDesc: 'Learn when to use staan, liggen, zitten and zijn to describe where things are.',
+  // Page titles
+  verbConjugationTitle: 'Verb Conjugation',
+  separableVerbsTitle: 'Separable Verbs',
+  positionVerbsTitle: 'Position Verbs',
+  // Separable verb context labels
+  mainClause: 'Main clause',
+  subordinateClause: 'Subordinate clause',
+  modalVerb: 'Modal verb',
+  // Separable verb feedback snippets
+  splitPrefix: 'splits, prefix goes to the end',
+  gePrefixStem: 'gets ge- between prefix and stem',
+  togetherEnd: 'stays together at the end of the clause',
+  fullInfinitive: 'stays as a full infinitive after the modal',
+  // Help bubbles (verb conjugation page)
+  helpSentence: 'This sentence has a missing verb shown as ___. Read it carefully — the translation below gives you the context you need.',
+  helpVerbs: 'Three verbs are shown as reference. Pick the one that fits the sentence. Tap Help on any card to reveal its translation.',
+  helpInput: 'Type the chosen verb in its correct conjugated form — matching the subject and tense shown above. Then press Enter or tap Check.',
+} as const;
+
+type UIStrings = { readonly [K in keyof typeof en]: string };
+
+const es: UIStrings = {
+  check: 'Comprobar',
+  next: 'Siguiente ejercicio →',
+  nextContext: 'Siguiente contexto →',
+  nextVerb: 'Siguiente verbo →',
+  filters: 'Filtros',
+  closeFilters: 'Cerrar filtros',
+  howToPlay: 'Cómo jugar',
+  theory: '📖 Teoría',
+  learnDutch: 'Aprende neerlandés',
+  back: 'Volver',
+  verbs: 'Verbos',
+  help: 'Ayuda',
+  hideHints: 'Ocultar pistas',
+  readAloud: 'Leer en voz alta',
+  stop: 'Detener',
+  presentTense: 'Tiempo presente',
+  simplePast: 'Pasado simple',
+  presentPerfect: 'Pretérito perfecto',
+  levelLabel: 'Nivel:',
+  beginner: 'Principiante',
+  elementary: 'Elemental',
+  intermediate: 'Intermedio',
+  tenseLabel: 'Tiempo:',
+  present: 'Presente',
+  typePastParticiple: 'Escribe el participio pasado…',
+  typeConjugation: 'Escribe la forma conjugada…',
+  noExercises: 'Ningún ejercicio coincide con los filtros. Intenta activar más niveles o tiempos.',
+  practiceQuestion: '¿Qué quieres practicar?',
+  chooseTopic: 'Elige un tema para empezar un ejercicio.',
+  verbConjugationName: 'Conjugación de verbos',
+  verbConjugationDesc: 'Practica el tiempo presente, pasado simple y pretérito perfecto con 269 verbos neerlandeses.',
+  separableVerbsName: 'Verbos separables',
+  separableVerbsDesc: 'Domina cuándo separar o unir el prefijo en oraciones principales, perfectas, subordinadas y con modal.',
+  positionVerbsName: 'Verbos de posición',
+  positionVerbsDesc: 'Aprende cuándo usar staan, liggen, zitten y zijn para describir dónde están las cosas.',
+  verbConjugationTitle: 'Conjugación de verbos',
+  separableVerbsTitle: 'Verbos separables',
+  positionVerbsTitle: 'Verbos de posición',
+  mainClause: 'Oración principal',
+  subordinateClause: 'Oración subordinada',
+  modalVerb: 'Verbo modal',
+  splitPrefix: 'se separa, el prefijo va al final',
+  gePrefixStem: 'inserta ge- entre el prefijo y el radical',
+  togetherEnd: 'permanece junto al final de la oración',
+  fullInfinitive: 'permanece como infinitivo completo después del modal',
+  helpSentence: 'Esta frase tiene un verbo que falta, indicado como ___. Léela con atención — la traducción de abajo te da el contexto.',
+  helpVerbs: 'Se muestran tres verbos como referencia. Elige el que encaje en la frase. Pulsa Ayuda en cualquier tarjeta para ver su traducción.',
+  helpInput: 'Escribe el verbo elegido en su forma conjugada correcta, según el sujeto y el tiempo indicados. Pulsa Intro o Comprobar.',
+};
+
+const TRANSLATIONS: Record<SupportedLang, UIStrings> = { en, es };
+
+export function useUI(): UIStrings {
+  const { lang } = useLanguage();
+  return TRANSLATIONS[lang];
+}

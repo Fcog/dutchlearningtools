@@ -1,4 +1,6 @@
 import type { Exercise } from '../types';
+import { useLanguage } from '../context/LanguageContext';
+import { useUI } from '../i18n/ui';
 
 interface Props {
   isCorrect: boolean;
@@ -8,20 +10,32 @@ interface Props {
 }
 
 export function ResultFeedback({ isCorrect, exercise, userInput, onNext }: Props) {
+  const { lang } = useLanguage();
+  const ui = useUI();
+
   return (
     <div className={`result-feedback ${isCorrect ? 'success' : 'error'}`}>
       {isCorrect ? (
         <p className="result-message">
-          Correct! <strong>{exercise.answer}</strong> is right.
+          {lang === 'es' ? (
+            <>¡Correcto! <strong>{exercise.answer}</strong> es la forma correcta.</>
+          ) : (
+            <>Correct! <strong>{exercise.answer}</strong> is right.</>
+          )}
         </p>
       ) : (
         <p className="result-message">
-          <strong>{userInput}</strong> is wrong. The correct form is{' '}
-          <strong>{exercise.answer}</strong>.
+          {lang === 'es' ? (
+            <><strong>{userInput}</strong> es incorrecto. La forma correcta es{' '}
+            <strong>{exercise.answer}</strong>.</>
+          ) : (
+            <><strong>{userInput}</strong> is wrong. The correct form is{' '}
+            <strong>{exercise.answer}</strong>.</>
+          )}
         </p>
       )}
       <button className="next-btn" onClick={onNext}>
-        Next exercise →
+        {ui.next}
       </button>
     </div>
   );

@@ -3,8 +3,11 @@ import { Header } from "../components/Header";
 import { SentenceCard } from "../components/SentenceCard";
 import { ConjugationInput } from "../components/ConjugationInput";
 import { TheoryPanel } from "../components/TheoryPanel";
-import { separableVerbSets, CONTEXT_LABEL } from "../data/separableVerbs";
-import type { Phase } from "../types";
+import { separableVerbSets } from "../data/separableVerbs";
+import type { SeparableContext } from "../data/separableVerbs";
+import type { Phase, SupportedLang } from "../types";
+import { useLanguage } from "../context/LanguageContext";
+import { useUI } from "../i18n/ui";
 
 function shuffled<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -15,6 +18,24 @@ function shuffled<T>(arr: T[]): T[] {
   return a;
 }
 
+function getContextLabel(ctx: SeparableContext, ui: ReturnType<typeof useUI>): string {
+  switch (ctx) {
+    case 'main': return ui.mainClause;
+    case 'perfect': return ui.presentPerfect;
+    case 'subordinate': return ui.subordinateClause;
+    case 'modal': return ui.modalVerb;
+  }
+}
+
+function getContextFeedback(ctx: SeparableContext, ui: ReturnType<typeof useUI>): string {
+  switch (ctx) {
+    case 'main': return ui.splitPrefix;
+    case 'perfect': return ui.gePrefixStem;
+    case 'subordinate': return ui.togetherEnd;
+    case 'modal': return ui.fullInfinitive;
+  }
+}
+
 export default function SeparableVerbsPage() {
   const [order] = useState(() => shuffled(separableVerbSets.map((_, i) => i)));
   const [verbIdx, setVerbIdx] = useState(0);
@@ -23,6 +44,8 @@ export default function SeparableVerbsPage() {
   const [userInput, setUserInput] = useState("");
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [score, setScore] = useState({ correct: 0, total: 0 });
+  const { lang } = useLanguage();
+  const ui = useUI();
 
   const verbSet = separableVerbSets[order[verbIdx % order.length]];
   const exercise = verbSet.exercises[ctxIdx];
@@ -54,67 +77,114 @@ export default function SeparableVerbsPage() {
   const exerciseForCard = {
     dutch: exercise.dutch,
     english: exercise.english,
+    translations: exercise.translations,
     answer: exercise.answer,
     tense: "present" as const,
   };
 
+  const verbEnglish = (verbSet.translations as Partial<Record<SupportedLang, string>>)?.[lang] ?? verbSet.english;
+  const contextLabel = getContextLabel(exercise.context, ui);
+  const contextFeedback = getContextFeedback(exercise.context, ui);
+
+  const theoryContent = lang === 'es' ? (
+    <div className="theory-section">
+      <p className="theory-intro">
+        Los verbos separables (p. ej. <strong>opbellen</strong>,{" "}
+        <strong>meenemen</strong>) separan su prefijo en algunos tipos de oración,
+        pero lo mantienen unido en otros.
+      </p>
+      <div className="theory-table">
+        <div className="theory-row">
+          <span className="theory-verb">Oración principal</span>
+          <span className="theory-desc">
+            Verbo conjugado en posición 2, prefijo al <em>final</em>
+            <br />
+            <em className="theory-eg">Hij belt zijn moeder op.</em>
+          </span>
+        </div>
+        <div className="theory-row">
+          <span className="theory-verb">Perfecto</span>
+          <span className="theory-desc">
+            <em>ge-</em> se inserta <em>entre</em> el prefijo y el radical:
+            prefijo + ge + radical
+            <br />
+            <em className="theory-eg">Hij heeft zijn moeder opgebeld.</em>
+          </span>
+        </div>
+        <div className="theory-row">
+          <span className="theory-verb">Subordinada</span>
+          <span className="theory-desc">
+            El prefijo y el verbo permanecen <em>juntos</em> al final de la oración
+            <br />
+            <em className="theory-eg">Ze weet dat hij zijn moeder opbelt.</em>
+          </span>
+        </div>
+        <div className="theory-row">
+          <span className="theory-verb">Verbo modal</span>
+          <span className="theory-desc">
+            Infinitivo completo (prefijo + verbo) después del modal
+            <br />
+            <em className="theory-eg">Hij moet zijn moeder opbellen.</em>
+          </span>
+        </div>
+      </div>
+    </div>
+  ) : (
+    <div className="theory-section">
+      <p className="theory-intro">
+        Separable verbs (e.g. <strong>opbellen</strong>,{" "}
+        <strong>meenemen</strong>) split their prefix off in some sentence
+        types but keep it attached in others.
+      </p>
+      <div className="theory-table">
+        <div className="theory-row">
+          <span className="theory-verb">Main clause</span>
+          <span className="theory-desc">
+            Conjugated verb in position 2, prefix at the <em>end</em>
+            <br />
+            <em className="theory-eg">Hij belt zijn moeder op.</em>
+          </span>
+        </div>
+        <div className="theory-row">
+          <span className="theory-verb">Perfect</span>
+          <span className="theory-desc">
+            <em>ge-</em> is inserted <em>between</em> prefix and stem:
+            prefix + ge + stem
+            <br />
+            <em className="theory-eg">Hij heeft zijn moeder opgebeld.</em>
+          </span>
+        </div>
+        <div className="theory-row">
+          <span className="theory-verb">Subordinate</span>
+          <span className="theory-desc">
+            Prefix and verb stay <em>together</em> at the end of the clause
+            <br />
+            <em className="theory-eg">Ze weet dat hij zijn moeder opbelt.</em>
+          </span>
+        </div>
+        <div className="theory-row">
+          <span className="theory-verb">Modal verb</span>
+          <span className="theory-desc">
+            Full infinitive (prefix + verb) after the modal
+            <br />
+            <em className="theory-eg">Hij moet zijn moeder opbellen.</em>
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div className="app">
-      <Header backTo="/" score={score} title="Separable Verbs" />
+      <Header backTo="/" score={score} title={ui.separableVerbsTitle} />
       <main className="main">
-        <TheoryPanel>
-          <div className="theory-section">
-            <p className="theory-intro">
-              Separable verbs (e.g. <strong>opbellen</strong>,{" "}
-              <strong>meenemen</strong>) split their prefix off in some sentence
-              types but keep it attached in others.
-            </p>
-            <div className="theory-table">
-              <div className="theory-row">
-                <span className="theory-verb">Main clause</span>
-                <span className="theory-desc">
-                  Conjugated verb in position 2, prefix at the <em>end</em>
-                  <br />
-                  <em className="theory-eg">Hij belt zijn moeder op.</em>
-                </span>
-              </div>
-              <div className="theory-row">
-                <span className="theory-verb">Perfect</span>
-                <span className="theory-desc">
-                  <em>ge-</em> is inserted <em>between</em> prefix and stem:
-                  prefix + ge + stem
-                  <br />
-                  <em className="theory-eg">Hij heeft zijn moeder opgebeld.</em>
-                </span>
-              </div>
-              <div className="theory-row">
-                <span className="theory-verb">Subordinate</span>
-                <span className="theory-desc">
-                  Prefix and verb stay <em>together</em> at the end of the
-                  clause
-                  <br />
-                  <em className="theory-eg">
-                    Ze weet dat hij zijn moeder opbelt.
-                  </em>
-                </span>
-              </div>
-              <div className="theory-row">
-                <span className="theory-verb">Modal verb</span>
-                <span className="theory-desc">
-                  Full infinitive (prefix + verb) after the modal
-                  <br />
-                  <em className="theory-eg">Hij moet zijn moeder opbellen.</em>
-                </span>
-              </div>
-            </div>
-          </div>
-        </TheoryPanel>
+        <TheoryPanel>{theoryContent}</TheoryPanel>
 
         <div className="exercise">
           <div className="sep-verb-header">
             <div className="sep-verb-title">
               <span className="sep-verb-infinitive">{verbSet.infinitive}</span>
-              <span className="sep-verb-english">{verbSet.english}</span>
+              <span className="sep-verb-english">{verbEnglish}</span>
             </div>
             <div className="sep-verb-progress">
               {verbSet.exercises.map((_, i) => (
@@ -129,7 +199,7 @@ export default function SeparableVerbsPage() {
           <SentenceCard
             exercise={exerciseForCard}
             phase={phase}
-            label={CONTEXT_LABEL[exercise.context]}
+            label={contextLabel}
           />
 
           {phase === "active" && (
@@ -147,27 +217,33 @@ export default function SeparableVerbsPage() {
             >
               <p className="result-message">
                 {isCorrect ? (
-                  <>
-                    Correct! <strong>{exercise.answer}</strong> —{" "}
-                    {CONTEXT_LABEL[exercise.context].toLowerCase()}: the verb{" "}
-                    {exercise.context === "main"
-                      ? "splits, prefix goes to the end"
-                      : exercise.context === "perfect"
-                        ? "gets ge- between prefix and stem"
-                        : exercise.context === "subordinate"
-                          ? "stays together at the end of the clause"
-                          : "stays as a full infinitive after the modal"}
-                    .
-                  </>
+                  lang === 'es' ? (
+                    <>
+                      ¡Correcto! <strong>{exercise.answer}</strong> —{" "}
+                      {contextLabel.toLowerCase()}: el verbo {contextFeedback}.
+                    </>
+                  ) : (
+                    <>
+                      Correct! <strong>{exercise.answer}</strong> —{" "}
+                      {contextLabel.toLowerCase()}: the verb {contextFeedback}.
+                    </>
+                  )
                 ) : (
-                  <>
-                    <strong>{userInput}</strong> is wrong. The answer is{" "}
-                    <strong>{exercise.answer}</strong>.
-                  </>
+                  lang === 'es' ? (
+                    <>
+                      <strong>{userInput}</strong> es incorrecto. La respuesta es{" "}
+                      <strong>{exercise.answer}</strong>.
+                    </>
+                  ) : (
+                    <>
+                      <strong>{userInput}</strong> is wrong. The answer is{" "}
+                      <strong>{exercise.answer}</strong>.
+                    </>
+                  )
                 )}
               </p>
               <button className="next-btn" onClick={next}>
-                {ctxIdx < 3 ? "Next context →" : "Next verb →"}
+                {ctxIdx < 3 ? ui.nextContext : ui.nextVerb}
               </button>
             </div>
           )}

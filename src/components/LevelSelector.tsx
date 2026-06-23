@@ -1,10 +1,5 @@
 import type { Level } from '../types';
-
-const LEVELS: { value: Level; label: string; description: string }[] = [
-  { value: 'A1', label: 'A1', description: 'Beginner' },
-  { value: 'A2', label: 'A2', description: 'Elementary' },
-  { value: 'B1', label: 'B1', description: 'Intermediate' },
-];
+import { useUI } from '../i18n/ui';
 
 interface Props {
   selected: Level[];
@@ -12,6 +7,14 @@ interface Props {
 }
 
 export function LevelSelector({ selected, onChange }: Props) {
+  const ui = useUI();
+
+  const LEVELS: { value: Level; label: string; description: string }[] = [
+    { value: 'A1', label: 'A1', description: ui.beginner },
+    { value: 'A2', label: 'A2', description: ui.elementary },
+    { value: 'B1', label: 'B1', description: ui.intermediate },
+  ];
+
   const toggle = (level: Level) => {
     if (selected.includes(level)) {
       if (selected.length === 1) return;
@@ -23,7 +26,7 @@ export function LevelSelector({ selected, onChange }: Props) {
 
   return (
     <div className="level-selector">
-      <span className="level-label">Level:</span>
+      <span className="level-label">{ui.levelLabel}</span>
       <div className="level-buttons">
         {LEVELS.map(({ value, label, description }) => (
           <button

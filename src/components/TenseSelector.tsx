@@ -1,10 +1,5 @@
 import type { Tense } from '../types';
-
-const TENSES: { value: Tense; label: string }[] = [
-  { value: 'present', label: 'Present' },
-  { value: 'past', label: 'Simple past' },
-  { value: 'perfect', label: 'Present perfect' },
-];
+import { useUI } from '../i18n/ui';
 
 interface Props {
   selected: Tense[];
@@ -12,6 +7,14 @@ interface Props {
 }
 
 export function TenseSelector({ selected, onChange }: Props) {
+  const ui = useUI();
+
+  const TENSES: { value: Tense; label: string }[] = [
+    { value: 'present', label: ui.present },
+    { value: 'past', label: ui.simplePast },
+    { value: 'perfect', label: ui.presentPerfect },
+  ];
+
   const toggle = (tense: Tense) => {
     if (selected.includes(tense)) {
       if (selected.length === 1) return;
@@ -23,7 +26,7 @@ export function TenseSelector({ selected, onChange }: Props) {
 
   return (
     <div className="level-selector">
-      <span className="level-label">Tense:</span>
+      <span className="level-label">{ui.tenseLabel}</span>
       <div className="level-buttons">
         {TENSES.map(({ value, label }) => (
           <button

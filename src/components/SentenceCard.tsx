@@ -1,11 +1,8 @@
 import { useState, useCallback } from 'react';
 import type { Exercise, Phase, Tense } from '../types';
-
-const TENSE_LABEL: Record<Tense, string> = {
-  present: 'Present tense',
-  past: 'Simple past',
-  perfect: 'Present perfect',
-};
+import { useLanguage } from '../context/LanguageContext';
+import { useUI } from '../i18n/ui';
+import { getExerciseTranslation } from '../data/verbTranslations';
 
 interface Props {
   exercise: Exercise;
@@ -25,7 +22,15 @@ function speak(text: string, onEnd: () => void) {
 
 export function SentenceCard({ exercise, phase, label }: Props) {
   const [speaking, setSpeaking] = useState(false);
+  const { lang } = useLanguage();
+  const ui = useUI();
   const parts = exercise.dutch.split('___');
+
+  const TENSE_LABEL: Record<Tense, string> = {
+    present: ui.presentTense,
+    past: ui.simplePast,
+    perfect: ui.presentPerfect,
+  };
 
   const handleSpeak = useCallback(() => {
     if (speaking) {
@@ -40,6 +45,11 @@ export function SentenceCard({ exercise, phase, label }: Props) {
     speak(text, () => setSpeaking(false));
   }, [speaking, phase, exercise, parts]);
 
+  const translation =
+    exercise.translations?.[lang] ??
+    getExerciseTranslation(exercise.english, lang) ??
+    exercise.english;
+
   return (
     <div className="sentence-card">
       <div className="sentence-card-top">
@@ -47,8 +57,8 @@ export function SentenceCard({ exercise, phase, label }: Props) {
         <button
           className={`speak-btn${speaking ? ' speaking' : ''}`}
           onClick={handleSpeak}
-          aria-label={speaking ? 'Stop' : 'Read aloud'}
-          title={speaking ? 'Stop' : 'Read aloud'}
+          aria-label={speaking ? ui.stop : ui.readAloud}
+          title={speaking ? ui.stop : ui.readAloud}
         >
           {speaking ? '■' : '🔊'}
         </button>
@@ -58,7 +68,7 @@ export function SentenceCard({ exercise, phase, label }: Props) {
         <span className="blank">___</span>
         {parts[1]}
       </p>
-      <p className="english-sentence">{exercise.english}</p>
+      <p className="english-sentence">{translation}</p>
     </div>
   );
 }
