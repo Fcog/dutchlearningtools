@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
  * Generates Spanish translations for all exercise sentences in verbs.ts.
+ * Incremental: reads existing verbTranslations.ts and skips already-translated entries.
  * Writes output to src/data/verbTranslations.ts.
  *
  * Usage:
@@ -10,10 +11,11 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { createRequire } from 'module';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const VERBS_PATH = join(__dirname, '../src/data/verbs.ts');
-const OUTPUT_PATH = join(__dirname, '../src/data/verbTranslations.ts');
+const VERBS_PATH   = join(__dirname, '../src/data/verbs.ts');
+const OUTPUT_PATH  = join(__dirname, '../src/data/verbTranslations.ts');
 
 const API_KEY = process.env.ANTHROPIC_API_KEY;
 if (!API_KEY) {
@@ -26,169 +28,178 @@ if (!API_KEY) {
 // ── Extract English strings from verbs.ts ─────────────────────────────────
 
 const content = readFileSync(VERBS_PATH, 'utf8');
-const matches = [...content.matchAll(/english: '((?:[^'\\]|\\.)*)'/g)];
-const all = matches.map(m => m[1].replace(/\\'/g, "'"));
 
-const verbEnglish   = all.filter(s => s.startsWith('to '));
-const exerciseSents = all.filter(s => !s.startsWith('to '));
+// Extract (id, english) pairs for verbs — e.g. { id: 'stoeien', english: 'to roughhouse / to frolic' }
+const verbPairs = [...content.matchAll(/id:\s*'(\w+)'[^{}]*?english:\s*'(to [^']+)'/gs)]
+  .map(m => ({ id: m[1], english: m[2].replace(/\\'/g, "'") }));
 
-console.log(`Found ${verbEnglish.length} verb strings and ${exerciseSents.length} exercise sentences.`);
+// All english: '...' values that are NOT verb-level strings
+const allMatches = [...content.matchAll(/english: '((?:[^'\\]|\\.)*)'/g)];
+const allEnglish = allMatches.map(m => m[1].replace(/\\'/g, "'"));
+const verbEnglishSet = new Set(verbPairs.map(v => v.english));
+const exerciseSents = allEnglish.filter(s => !verbEnglishSet.has(s));
+
+console.log(`Found ${verbPairs.length} verb entries and ${exerciseSents.length} exercise sentences.`);
+
+// ── Load existing translations (skip good ones) ───────────────────────────
+
+let existingExerciseMap = {};
+let existingVerbMap = {};
+
+try {
+  const existing = readFileSync(OUTPUT_PATH, 'utf8');
+
+  // Extract exerciseTranslationsEs entries
+  const exMatch = existing.match(/export const exerciseTranslationsEs[^=]*=\s*\{([^}]*(?:\{[^}]*\}[^}]*)*)\}/s);
+  if (exMatch) {
+    const pairs = [...exMatch[1].matchAll(/"((?:[^"\\]|\\.)*)"\s*:\s*"((?:[^"\\]|\\.)*)"/g)];
+    for (const [, k, v] of pairs) {
+      const key = k.replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+      const val = v.replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+      if (key !== val) existingExerciseMap[key] = val; // skip English-valued entries
+    }
+  }
+
+  // Extract verbTranslationsEs entries
+  const vbMatch = existing.match(/const verbTranslationsEs[^=]*=\s*\{([^}]*)\}/s);
+  if (vbMatch) {
+    const pairs = [...vbMatch[1].matchAll(/(\w+)\s*:\s*"((?:[^"\\]|\\.)*)"/g)];
+    for (const [, k, v] of pairs) {
+      existingVerbMap[k] = v;
+    }
+  }
+
+  console.log(`Loaded ${Object.keys(existingExerciseMap).length} existing exercise translations.`);
+  console.log(`Loaded ${Object.keys(existingVerbMap).length} existing verb translations.`);
+} catch {
+  console.log('No existing translation file found, starting fresh.');
+}
+
+// ── Determine what still needs translation ────────────────────────────────
+
+const exercisesToTranslate = exerciseSents.filter(s => !existingExerciseMap[s]);
+const verbsToTranslate     = verbPairs.filter(v => !existingVerbMap[v.id]);
+
+console.log(`Need to translate: ${exercisesToTranslate.length} exercise sentences, ${verbsToTranslate.length} verb strings.`);
+
+if (exercisesToTranslate.length === 0 && verbsToTranslate.length === 0) {
+  console.log('Nothing to do — all translations already exist.');
+  process.exit(0);
+}
 
 // ── Translate via Anthropic API ───────────────────────────────────────────
 
-async function translateBatch(sentences) {
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': API_KEY,
-      'anthropic-version': '2023-06-01',
-    },
-    body: JSON.stringify({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 4096,
-      messages: [{
-        role: 'user',
-        content:
-          'Translate each sentence to Spanish. Return ONLY a JSON array of strings, ' +
-          'same length and same order as the input. No explanations, no markdown.\n\n' +
-          'Input: ' + JSON.stringify(sentences),
-      }],
-    }),
-  });
+async function translateBatch(sentences, retries = 2) {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const res = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': API_KEY,
+          'anthropic-version': '2023-06-01',
+        },
+        body: JSON.stringify({
+          model: 'claude-haiku-4-5-20251001',
+          max_tokens: 4096,
+          messages: [{
+            role: 'user',
+            content:
+              'Translate each sentence to Spanish. Return ONLY a JSON array of strings, ' +
+              'same length and same order as the input. No explanations, no markdown.\n\n' +
+              'Input: ' + JSON.stringify(sentences),
+          }],
+        }),
+      });
 
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`API error ${res.status}: ${err}`);
+      if (!res.ok) {
+        const err = await res.text();
+        throw new Error(`API error ${res.status}: ${err}`);
+      }
+
+      const data = await res.json();
+      const text = data.content[0].text.trim();
+      const start = text.indexOf('[');
+      const end   = text.lastIndexOf(']') + 1;
+      const parsed = JSON.parse(text.slice(start, end));
+
+      if (parsed.length !== sentences.length) {
+        throw new Error(`Batch length mismatch: sent ${sentences.length}, got ${parsed.length}`);
+      }
+      return parsed;
+    } catch (e) {
+      if (attempt < retries) {
+        console.error(`  Attempt ${attempt + 1} failed: ${e.message}. Retrying…`);
+        await new Promise(r => setTimeout(r, 1000 * (attempt + 1)));
+      } else {
+        throw e;
+      }
+    }
   }
-
-  const data = await res.json();
-  const text = data.content[0].text.trim();
-  const start = text.indexOf('[');
-  const end   = text.lastIndexOf(']') + 1;
-  const parsed = JSON.parse(text.slice(start, end));
-
-  if (parsed.length !== sentences.length) {
-    throw new Error(`Batch length mismatch: sent ${sentences.length}, got ${parsed.length}`);
-  }
-  return parsed;
 }
 
 // ── Main loop ─────────────────────────────────────────────────────────────
 
 const BATCH = 50;
-const exerciseMap = {};
-const verbMap     = {};
+const newExerciseMap = { ...existingExerciseMap };
+const newVerbMap     = { ...existingVerbMap };
+let failed = 0;
 
 // Translate exercise sentences
-for (let i = 0; i < exerciseSents.length; i += BATCH) {
-  const batch = exerciseSents.slice(i, i + BATCH);
-  const end   = Math.min(i + BATCH, exerciseSents.length);
-  process.stdout.write(`Exercise sentences ${i + 1}–${end} / ${exerciseSents.length} … `);
+for (let i = 0; i < exercisesToTranslate.length; i += BATCH) {
+  const batch = exercisesToTranslate.slice(i, i + BATCH);
+  const end   = Math.min(i + BATCH, exercisesToTranslate.length);
+  process.stdout.write(`Exercise sentences ${i + 1}–${end} / ${exercisesToTranslate.length} … `);
 
-  let translated;
   try {
-    translated = await translateBatch(batch);
+    const translated = await translateBatch(batch);
+    batch.forEach((en, j) => { newExerciseMap[en] = translated[j]; });
     console.log('✓');
   } catch (e) {
-    console.error(`\nFailed: ${e.message}. Skipping batch.`);
-    batch.forEach(s => { exerciseMap[s] = s; }); // keep English as fallback
-    continue;
+    console.error(`\nFailed after retries: ${e.message}. Skipping batch (will retry next run).`);
+    failed += batch.length;
   }
 
-  batch.forEach((en, j) => { exerciseMap[en] = translated[j]; });
-
-  if (i + BATCH < exerciseSents.length) {
+  if (i + BATCH < exercisesToTranslate.length) {
     await new Promise(r => setTimeout(r, 400));
   }
 }
 
-// Translate verb-level strings ("to X")
-for (let i = 0; i < verbEnglish.length; i += BATCH) {
-  const batch = verbEnglish.slice(i, i + BATCH);
-  const end   = Math.min(i + BATCH, verbEnglish.length);
-  process.stdout.write(`Verb strings ${i + 1}–${end} / ${verbEnglish.length} … `);
+// Translate verb-level strings (keyed by verb ID)
+for (let i = 0; i < verbsToTranslate.length; i += BATCH) {
+  const batch = verbsToTranslate.slice(i, i + BATCH);
+  const end   = Math.min(i + BATCH, verbsToTranslate.length);
+  process.stdout.write(`Verb strings ${i + 1}–${end} / ${verbsToTranslate.length} … `);
 
-  let translated;
   try {
-    translated = await translateBatch(batch);
+    const translated = await translateBatch(batch.map(v => v.english));
+    batch.forEach((v, j) => { newVerbMap[v.id] = translated[j]; });
     console.log('✓');
   } catch (e) {
-    console.error(`\nFailed: ${e.message}. Skipping batch.`);
-    batch.forEach(s => { verbMap[s] = s; });
-    continue;
+    console.error(`\nFailed after retries: ${e.message}. Skipping batch (will retry next run).`);
+    failed += batch.length;
   }
 
-  batch.forEach((en, j) => { verbMap[en] = translated[j]; });
-
-  if (i + BATCH < verbEnglish.length) {
+  if (i + BATCH < verbsToTranslate.length) {
     await new Promise(r => setTimeout(r, 400));
   }
 }
 
 // ── Write output ──────────────────────────────────────────────────────────
 
-function escapeKey(s) {
-  return s.replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$\{/g, '\\${');
-}
-
-const verbIds = [
-  'stoeien','stuiteren','neuzen','gluren','fluisteren','gooien','springen','bakken',
-  'wuiven','klimmen','eten','drinken','lopen','schrijven','lezen','vinden','geven',
-  'nemen','vangen','vliegen','winnen','snijden','wassen','sluiten','zitten','kopen',
-  'vragen','wonen','betalen','duwen','trekken','wachten','dansen','fietsen','duiken',
-  'dromen','schilderen','bouwen','reizen','openen','beheren','behoren','wagen','storen',
-  'bekennen','beven','weren','prijzen','beseffen','verwachten','ontdekken','verdwijnen',
-  'bereiken','weigeren','overtuigen','verbergen','vergeten','kiezen','beginnen','vertrekken',
-  'verliezen','geloven','proberen','ontmoeten','beloven','bedanken','feliciteren','veranderen',
-  'verhuizen','bezoeken','ontvangen','sturen','bestellen','reserveren','repareren','beslissen',
-  'regelen','controleren','verzamelen','organiseren','missen','tellen','meten','beschouwen',
-  'bezitten','zweren','drijven','overwegen','erkennen','benadrukken','streven','bedriegen',
-  'veronderstellen','beïnvloeden','weerstaan','overwinnen','beweren','bevestigen','weerleggen',
-  'beoordelen','evalueren','analyseren','onderzoeken','concluderen','argumenteren','onderhandelen',
-  'handhaven','verduidelijken','confronteren','motiveren','inspireren','tolereren','compenseren',
-  'vertegenwoordigen','overleggen','ontwikkelen','implementeren','benaderen','specificeren',
-  'pakken','houden','vallen','schudden','tillen','delen','knikken','ademen','blazen','doden',
-  'steken','smaken','raken','redden','slaan','lijken','dreigen','tikken','schreeuwen','plakken',
-  'schrikken','fronsen','slikken','piekeren','aarzelen','schuiven','slagen','pesten','schoppen',
-  'zuchten','mompelen','rekenen','gokken','troosten','zeuren','rillen','aaien','bezorgen',
-  'verraden','bewegen','verplaatsen','wijzen','begroeten','vechten','bepalen','besteden',
-  'botsen','wisselen','veroorzaken','kruipen','veroveren','stellen','optellen','glimmen',
-  'donderen','overschrijden','opstellen','uitvoeren','bezielen','afwijken','verstoppen',
-  'verminderen','vergissen','ingrijpen','slopen','bevatten','verleggen','uitleggen','opsporen',
-  'verstikken','beschuldigen','eisen','afgeven','oversteken','doorgaan','aanmelden','overtreden',
-  'pikken','verslaan','uitmaken','versieren','verstoren','verzachten','jagen','opwerpen',
-  'verkleden','afnemen','toenemen','verdenken','verslapen','verlangen','vastleggen','afspreken',
-  'zwerven','maaien','snoeien','steunen','blijken','vervangen','schakelen','nadoen','pronken',
-  'omgaan','overwinteren','verzinnen','nakijken','slippen','zaaien','verzetten','ontmoedigen',
-  'juichen','draven','voorspellen','pruilen','sloven','aandringen','wenken','mopperen','kreunen',
-  'buigen','uitputten','happen','schenken','popelen','gieten','braken','snuiven','overgaan',
-  'afronden','neurien','aannemen','werpen','wrijven','verkreukelen','speuren','snauwen',
-  'bemoeien','toekijken','volhouden','grinniken','schieten','wapperen','gebaren','opheffen',
-  'zwijgen','schrapen','vreten','rukken','verwijzen','betrekken',
-];
-
-// Build verbTranslationsEs from the verb ID list + translated "to X" strings
-// Note: we keep the existing hand-crafted verbTranslationsEs below as a fallback
-const verbByEnglish = Object.fromEntries(verbEnglish.map((en, i) => [en, verbMap[en] ?? en]));
-
 let lines = [];
 lines.push(`import type { SupportedLang } from '../types';`);
 lines.push('');
 lines.push('// Verb-level Spanish translations (keyed by verb.id)');
 lines.push('const verbTranslationsEs: Record<string, string> = {');
-for (const id of verbIds) {
-  const en = `to ${id}`;
-  const es = verbByEnglish[en];
-  if (es && !es.startsWith('to ')) {
-    lines.push(`  ${id}: ${JSON.stringify(es)},`);
-  }
+for (const [id, es] of Object.entries(newVerbMap)) {
+  lines.push(`  ${id}: ${JSON.stringify(es)},`);
 }
 lines.push('};');
 lines.push('');
 lines.push('// Exercise sentence Spanish translations (keyed by English sentence)');
 lines.push('export const exerciseTranslationsEs: Record<string, string> = {');
-for (const [en, es] of Object.entries(exerciseMap)) {
+for (const [en, es] of Object.entries(newExerciseMap)) {
   lines.push(`  ${JSON.stringify(en)}: ${JSON.stringify(es)},`);
 }
 lines.push('};');
@@ -206,5 +217,8 @@ lines.push('');
 
 writeFileSync(OUTPUT_PATH, lines.join('\n'));
 console.log(`\nDone. Written to ${OUTPUT_PATH}`);
-console.log(`  ${Object.keys(exerciseMap).length} exercise translations`);
-console.log(`  ${Object.keys(verbByEnglish).length} verb translations`);
+console.log(`  ${Object.keys(newExerciseMap).length} exercise translations`);
+console.log(`  ${Object.keys(newVerbMap).length} verb translations`);
+if (failed > 0) {
+  console.log(`  ${failed} sentences skipped due to API errors — re-run to retry them`);
+}

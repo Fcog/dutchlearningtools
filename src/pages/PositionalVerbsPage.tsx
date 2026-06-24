@@ -2,26 +2,31 @@ import { useState, useCallback } from 'react';
 import { Header } from '../components/Header';
 import { SentenceCard } from '../components/SentenceCard';
 import { TheoryPanel } from '../components/TheoryPanel';
-import { positionalExercises, type PositionalVerb } from '../data/positionalVerbs';
+import { LoadingScreen } from '../components/LoadingScreen';
+import { useAppData } from '../context/DataContext';
+import type { PositionalVerb } from '../data/positionalVerbs';
 import type { Phase } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 
 const VERBS: PositionalVerb[] = ['zijn', 'zitten', 'liggen', 'staan'];
 
-function randomIndex(exclude: number) {
+function randomIndex(exclude: number, total: number) {
   let i: number;
-  do { i = Math.floor(Math.random() * positionalExercises.length); } while (i === exclude);
+  do { i = Math.floor(Math.random() * total); } while (i === exclude);
   return i;
 }
 
 export default function PositionalVerbsPage() {
-  const [index, setIndex] = useState(() => Math.floor(Math.random() * positionalExercises.length));
+  const { positionalExercises, loading, error } = useAppData();
+  const [index, setIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>('active');
   const [selected, setSelected] = useState<PositionalVerb | null>(null);
   const [score, setScore] = useState({ correct: 0, total: 0 });
   const { lang } = useLanguage();
   const ui = useUI();
+
+  if (loading || error) return <LoadingScreen error={error} />;
 
   const current = positionalExercises[index];
   const isCorrect = selected !== null && selected === current.verb;
@@ -37,10 +42,10 @@ export default function PositionalVerbsPage() {
   }, [phase, current.verb]);
 
   const next = useCallback(() => {
-    setIndex((i) => randomIndex(i));
+    setIndex((i) => randomIndex(i, positionalExercises.length));
     setPhase('active');
     setSelected(null);
-  }, []);
+  }, [positionalExercises.length]);
 
   const exerciseForCard = {
     dutch: current.dutch,

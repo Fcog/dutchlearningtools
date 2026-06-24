@@ -3,7 +3,8 @@ import { Header } from "../components/Header";
 import { SentenceCard } from "../components/SentenceCard";
 import { ConjugationInput } from "../components/ConjugationInput";
 import { TheoryPanel } from "../components/TheoryPanel";
-import { separableVerbSets } from "../data/separableVerbs";
+import { LoadingScreen } from "../components/LoadingScreen";
+import { useAppData } from "../context/DataContext";
 import type { SeparableContext } from "../data/separableVerbs";
 import type { Phase, SupportedLang } from "../types";
 import { useLanguage } from "../context/LanguageContext";
@@ -37,6 +38,7 @@ function getContextFeedback(ctx: SeparableContext, ui: ReturnType<typeof useUI>)
 }
 
 export default function SeparableVerbsPage() {
+  const { separableVerbSets, loading, error } = useAppData();
   const [order] = useState(() => shuffled(separableVerbSets.map((_, i) => i)));
   const [verbIdx, setVerbIdx] = useState(0);
   const [ctxIdx, setCtxIdx] = useState(0);
@@ -46,6 +48,8 @@ export default function SeparableVerbsPage() {
   const [score, setScore] = useState({ correct: 0, total: 0 });
   const { lang } = useLanguage();
   const ui = useUI();
+
+  if (loading || error) return <LoadingScreen error={error} />;
 
   const verbSet = separableVerbSets[order[verbIdx % order.length]];
   const exercise = verbSet.exercises[ctxIdx];

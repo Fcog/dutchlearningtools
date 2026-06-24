@@ -1,8 +1,10 @@
 import { useState } from "react";
 import type { Level, Tense } from "../types";
 import { useExercise } from "../hooks/useExercise";
+import { useAppData } from "../context/DataContext";
 import { useLanguage } from "../context/LanguageContext";
 import { useUI } from "../i18n/ui";
+import { LoadingScreen } from "../components/LoadingScreen";
 import { Header } from "../components/Header";
 import { LevelSelector } from "../components/LevelSelector";
 import { TenseSelector } from "../components/TenseSelector";
@@ -21,13 +23,17 @@ export default function VerbsPage() {
   ]);
   const [showHelp, setShowHelp] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const { verbs, loading, error } = useAppData();
   const { lang } = useLanguage();
   const ui = useUI();
 
   const { state, orderedChoices, score, setInput, submit, next } = useExercise(
+    verbs,
     selectedLevels,
     selectedTenses,
   );
+
+  if (loading || error) return <LoadingScreen error={error} />;
 
   const filterSidebar = (
     <>

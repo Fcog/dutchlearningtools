@@ -1,6 +1,5 @@
 import { useState, useCallback, useMemo, useEffect } from 'react';
 import type { Verb, Exercise, Phase, Level, Tense } from '../types';
-import { verbs } from '../data/verbs';
 
 interface ExerciseState {
   verb: Verb;
@@ -25,11 +24,15 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function buildExercise(selectedLevels: Level[], selectedTenses: Tense[]): ExerciseState | null {
+function buildExercise(
+  verbs: Verb[],
+  selectedLevels: Level[],
+  selectedTenses: Tense[],
+): ExerciseState | null {
   const pool = verbs.filter(
     (v) =>
       selectedLevels.includes(v.level) &&
-      v.exercises.some((e) => selectedTenses.includes(e.tense))
+      v.exercises.some((e) => selectedTenses.includes(e.tense)),
   );
   if (pool.length < 3) return null;
 
@@ -49,24 +52,29 @@ function buildExercise(selectedLevels: Level[], selectedTenses: Tense[]): Exerci
   };
 }
 
-export function useExercise(selectedLevels: Level[], selectedTenses: Tense[]) {
-  const [state, setState] = useState<ExerciseState | null>(() =>
-    buildExercise(selectedLevels, selectedTenses)
-  );
+export function useExercise(
+  verbs: Verb[],
+  selectedLevels: Level[],
+  selectedTenses: Tense[],
+) {
+  const [state, setState] = useState<ExerciseState | null>(null);
   const [score, setScore] = useState({ correct: 0, total: 0 });
 
   const levelsKey = [...selectedLevels].sort().join(',');
   const tensesKey = [...selectedTenses].sort().join(',');
 
+  // Build first exercise once verbs are available, and whenever filters change
   useEffect(() => {
-    setState(buildExercise(selectedLevels, selectedTenses));
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [levelsKey, tensesKey]);
+    if (verbs.length > 0) {
+      setState(buildExercise(verbs, selectedLevels, selectedTenses));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [verbs.length, levelsKey, tensesKey]);
 
   const orderedChoices = useMemo(
     () => (state ? shuffle([state.verb, ...state.distractors]) : []),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [state?.verb.id, state?.distractors[0]?.id, state?.distractors[1]?.id]
+    [state?.verb.id, state?.distractors[0]?.id, state?.distractors[1]?.id],
   );
 
   const setInput = useCallback((value: string) => {
@@ -90,9 +98,9 @@ export function useExercise(selectedLevels: Level[], selectedTenses: Tense[]) {
   }, []);
 
   const next = useCallback(() => {
-    setState(buildExercise(selectedLevels, selectedTenses));
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [levelsKey, tensesKey]);
+    setState(buildExercise(verbs, selectedLevels, selectedTenses));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [verbs, levelsKey, tensesKey]);
 
   return { state, orderedChoices, score, setInput, submit, next };
 }
