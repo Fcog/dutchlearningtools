@@ -9,6 +9,7 @@ import type { SeparableContext } from "../data/separableVerbs";
 import type { Phase, SupportedLang } from "../types";
 import { useLanguage } from "../context/LanguageContext";
 import { useUI } from "../i18n/ui";
+import { useProgress } from "../hooks/useProgress";
 
 function shuffled<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -48,6 +49,7 @@ export default function SeparableVerbsPage() {
   const [score, setScore] = useState({ correct: 0, total: 0 });
   const { lang } = useLanguage();
   const ui = useUI();
+  const { recordAnswer } = useProgress();
 
   if (loading || error) return <LoadingScreen error={error} />;
 
@@ -64,7 +66,8 @@ export default function SeparableVerbsPage() {
       correct: s.correct + (correct ? 1 : 0),
       total: s.total + 1,
     }));
-  }, [userInput, exercise.answer]);
+    recordAnswer(exercise.id, 'separable', correct);
+  }, [userInput, exercise.answer, exercise.id, recordAnswer]);
 
   const next = useCallback(() => {
     if (ctxIdx < 3) {

@@ -10,6 +10,7 @@ export const CONTEXT_LABEL: Record<SeparableContext, string> = {
 };
 
 export interface SeparableExercise {
+  id?: string;
   dutch: string;
   english: string;
   translations?: Partial<Record<SupportedLang, string>>;

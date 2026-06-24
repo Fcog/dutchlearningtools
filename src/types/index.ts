@@ -20,6 +20,7 @@ export interface Conjugation {
 }
 
 export interface Exercise {
+  id?: string;
   dutch: string;
   english: string;
   translations?: Partial<Record<SupportedLang, string>>;

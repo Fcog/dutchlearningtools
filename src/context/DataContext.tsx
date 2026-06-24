@@ -9,6 +9,7 @@ import type { PositionalExercise, PositionalVerb } from '../data/positionalVerbs
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function toExercise(row: any): Exercise {
   return {
+    id:           row.id,
     dutch:        row.dutch,
     english:      row.english,
     answer:       row.answer,
@@ -38,6 +39,7 @@ const CTX_ORDER: Record<SeparableContext, number> = {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function toSeparableExercise(row: any): SeparableExercise {
   return {
+    id:           row.id,
     dutch:        row.dutch,
     english:      row.english,
     answer:       row.answer,
@@ -62,6 +64,7 @@ function toSeparableVerbSet(row: any): SeparableVerbSet {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function toPositionalExercise(row: any): PositionalExercise {
   return {
+    id:             row.id,
     dutch:          row.dutch,
     english:        row.english,
     verb:           row.verb as PositionalVerb,

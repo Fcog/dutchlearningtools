@@ -8,6 +8,7 @@ import type { PositionalVerb } from '../data/positionalVerbs';
 import type { Phase } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
+import { useProgress } from '../hooks/useProgress';
 
 const VERBS: PositionalVerb[] = ['zijn', 'zitten', 'liggen', 'staan'];
 
@@ -25,6 +26,7 @@ export default function PositionalVerbsPage() {
   const [score, setScore] = useState({ correct: 0, total: 0 });
   const { lang } = useLanguage();
   const ui = useUI();
+  const { recordAnswer } = useProgress();
 
   if (loading || error) return <LoadingScreen error={error} />;
 
@@ -33,13 +35,15 @@ export default function PositionalVerbsPage() {
 
   const select = useCallback((verb: PositionalVerb) => {
     if (phase !== 'active') return;
+    const correct = verb === current.verb;
     setSelected(verb);
     setPhase('result');
     setScore((s) => ({
-      correct: s.correct + (verb === current.verb ? 1 : 0),
+      correct: s.correct + (correct ? 1 : 0),
       total: s.total + 1,
     }));
-  }, [phase, current.verb]);
+    recordAnswer(current.id, 'positional', correct);
+  }, [phase, current.verb, current.id, recordAnswer]);
 
   const next = useCallback(() => {
     setIndex((i) => randomIndex(i, positionalExercises.length));
