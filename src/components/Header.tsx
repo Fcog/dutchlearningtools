@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 import { useLanguage } from '../context/LanguageContext';
 import { useAuth } from '../context/AuthContext';
 import { useUI } from '../i18n/ui';
@@ -36,7 +37,7 @@ export function Header({ backTo, score, title }: Props) {
                 ←
               </Link>
             ) : null}
-            <span className="logo-flag">🇳🇱</span>
+            <img src={logo} alt="Dutch Learning Tools" className="logo-img" />
             <h1>{title ?? ui.learnDutch}</h1>
           </div>
           <div className="header-right">

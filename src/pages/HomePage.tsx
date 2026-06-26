@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
 import { useUI } from '../i18n/ui';
 import { useProgress, type ExerciseType, type ModuleStats } from '../hooks/useProgress';
 import { useAuth } from '../context/AuthContext';
@@ -67,6 +68,7 @@ export default function HomePage() {
           </Link>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

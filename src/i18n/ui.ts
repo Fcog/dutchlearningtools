@@ -12,7 +12,7 @@ const en = {
   closeFilters: 'Close filters',
   howToPlay: 'How to play',
   theory: '📖 Theory',
-  learnDutch: 'Learn Dutch',
+  learnDutch: 'Dutch Learning Tools',
   back: 'Back',
   // Verb choices
   verbs: 'Verbs',
@@ -76,7 +76,7 @@ const es: UIStrings = {
   closeFilters: 'Cerrar filtros',
   howToPlay: 'Cómo jugar',
   theory: '📖 Teoría',
-  learnDutch: 'Aprende neerlandés',
+  learnDutch: 'Dutch Learning Tools',
   back: 'Volver',
   verbs: 'Verbos',
   help: 'Ayuda',
