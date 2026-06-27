@@ -2,7 +2,7 @@ import { useAuth } from '../context/AuthContext';
 import { supabase } from '../lib/supabase';
 import type { Database } from '../types/database';
 
-export type ExerciseType = 'verb' | 'separable' | 'positional';
+export type ExerciseType = 'verb' | 'separable' | 'positional' | 'article' | 'plural';
 
 export interface ModuleStats {
   total: number;

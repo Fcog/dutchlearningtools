@@ -2,7 +2,6 @@ import { useState } from 'react';
 import type { Verb, Phase } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
-import { getVerbTranslation } from '../data/verbTranslations';
 
 interface Props {
   choices: Verb[];
@@ -38,7 +37,7 @@ export function VerbChoices({ choices, correctVerb, phase }: Props) {
             cls += isCorrectVerb ? ' correct' : ' dim';
           }
 
-          const verbTranslation = getVerbTranslation(verb.id, lang) ?? verb.translations?.[lang] ?? verb.english;
+          const verbTranslation = verb.translations?.[lang] ?? verb.english;
 
           return (
             <div key={verb.id} className={cls}>

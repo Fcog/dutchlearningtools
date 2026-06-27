@@ -59,13 +59,43 @@ CREATE TABLE IF NOT EXISTS positional_exercises (
   created_at     TIMESTAMPTZ DEFAULT NOW()
 );
 
+-- ── Article nouns ──────────────────────────────────────────────────────────
+
+CREATE TABLE IF NOT EXISTS article_nouns (
+  id             TEXT        PRIMARY KEY,
+  noun           TEXT        NOT NULL,
+  article        TEXT        NOT NULL CHECK (article IN ('de','het')),
+  english        TEXT        NOT NULL,
+  translation_es TEXT,
+  level          TEXT        NOT NULL CHECK (level IN ('A1','A2','B1')),
+  tip            TEXT,
+  tip_es         TEXT,
+  created_at     TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- ── Plural nouns ──────────────────────────────────────────────────────────
+
+CREATE TABLE IF NOT EXISTS plural_nouns (
+  id             TEXT        PRIMARY KEY,
+  singular       TEXT        NOT NULL,
+  article        TEXT        NOT NULL CHECK (article IN ('de','het')),
+  plural         TEXT        NOT NULL,
+  plural_type    TEXT        NOT NULL CHECK (plural_type IN ('en','s','eren','irregular')),
+  english        TEXT        NOT NULL,
+  translation_es TEXT,
+  tip            TEXT,
+  tip_es         TEXT,
+  level          TEXT        NOT NULL CHECK (level IN ('A1','A2','B1')),
+  created_at     TIMESTAMPTZ DEFAULT NOW()
+);
+
 -- ── User progress ──────────────────────────────────────────────────────────
 
 CREATE TABLE IF NOT EXISTS user_progress (
   id            UUID    DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id       UUID    NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
   exercise_id   UUID    NOT NULL,
-  exercise_type TEXT    NOT NULL CHECK (exercise_type IN ('verb','separable','positional')),
+  exercise_type TEXT    NOT NULL CHECK (exercise_type IN ('verb','separable','positional','article','plural')),
   correct_count INT     NOT NULL DEFAULT 0,
   total_count   INT     NOT NULL DEFAULT 0,
   last_seen     TIMESTAMPTZ DEFAULT NOW(),
@@ -90,6 +120,8 @@ ALTER TABLE exercises            ENABLE ROW LEVEL SECURITY;
 ALTER TABLE separable_verb_sets  ENABLE ROW LEVEL SECURITY;
 ALTER TABLE separable_exercises  ENABLE ROW LEVEL SECURITY;
 ALTER TABLE positional_exercises ENABLE ROW LEVEL SECURITY;
+ALTER TABLE article_nouns        ENABLE ROW LEVEL SECURITY;
+ALTER TABLE plural_nouns         ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_progress        ENABLE ROW LEVEL SECURITY;
 
 -- Exercise data: readable by everyone (anon + authenticated)
@@ -98,6 +130,8 @@ CREATE POLICY "public read" ON exercises            FOR SELECT USING (true);
 CREATE POLICY "public read" ON separable_verb_sets  FOR SELECT USING (true);
 CREATE POLICY "public read" ON separable_exercises  FOR SELECT USING (true);
 CREATE POLICY "public read" ON positional_exercises FOR SELECT USING (true);
+CREATE POLICY "public read" ON article_nouns        FOR SELECT USING (true);
+CREATE POLICY "public read" ON plural_nouns         FOR SELECT USING (true);
 
 -- Progress: each user sees and writes only their own rows
 CREATE POLICY "own rows"   ON user_progress FOR SELECT USING (auth.uid() = user_id);

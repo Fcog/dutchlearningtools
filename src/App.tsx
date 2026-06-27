@@ -7,6 +7,8 @@ import SeparableVerbsPage from './pages/SeparableVerbsPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfUsePage from './pages/TermsOfUsePage';
 import ResetPasswordPage from './pages/ResetPasswordPage';
+import ArticlesPage from './pages/ArticlesPage';
+import PluralsPage from './pages/PluralsPage';
 
 declare global {
   function gtag(...args: unknown[]): void;
@@ -33,6 +35,8 @@ export default function App() {
       <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
       <Route path="/terms-of-use" element={<TermsOfUsePage />} />
       <Route path="/reset-password" element={<ResetPasswordPage />} />
+      <Route path="/articles" element={<ArticlesPage />} />
+      <Route path="/plurals" element={<PluralsPage />} />
     </Routes>
   );
 }

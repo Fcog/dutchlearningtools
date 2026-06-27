@@ -66,6 +66,26 @@ export default function HomePage() {
             </div>
             <span className="module-arrow">→</span>
           </Link>
+
+          <Link to="/articles" className="module-card">
+            <div className="module-icon">🏷️</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.articlesName}</h3>
+              <p className="module-desc">{ui.articlesDesc}</p>
+              <StatsLine type="article" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
+
+          <Link to="/plurals" className="module-card">
+            <div className="module-icon">📚</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.pluralsName}</h3>
+              <p className="module-desc">{ui.pluralsDesc}</p>
+              <StatsLine type="plural" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
         </div>
       </main>
       <Footer />

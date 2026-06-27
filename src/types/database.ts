@@ -72,12 +72,44 @@ export interface Database {
         Insert: Omit<Database['public']['Tables']['positional_exercises']['Row'], 'id' | 'created_at'>;
         Update: Partial<Database['public']['Tables']['positional_exercises']['Insert']>;
       };
+      article_nouns: {
+        Row: {
+          id: string;
+          noun: string;
+          article: 'de' | 'het';
+          english: string;
+          translation_es: string | null;
+          level: 'A1' | 'A2' | 'B1';
+          tip: string | null;
+          tip_es: string | null;
+          created_at: string;
+        };
+        Insert: Omit<Database['public']['Tables']['article_nouns']['Row'], 'created_at'>;
+        Update: Partial<Database['public']['Tables']['article_nouns']['Insert']>;
+      };
+      plural_nouns: {
+        Row: {
+          id: string;
+          singular: string;
+          article: 'de' | 'het';
+          plural: string;
+          plural_type: 'en' | 's' | 'eren' | 'irregular';
+          english: string;
+          translation_es: string | null;
+          tip: string | null;
+          tip_es: string | null;
+          level: 'A1' | 'A2' | 'B1';
+          created_at: string;
+        };
+        Insert: Omit<Database['public']['Tables']['plural_nouns']['Row'], 'created_at'>;
+        Update: Partial<Database['public']['Tables']['plural_nouns']['Insert']>;
+      };
       user_progress: {
         Row: {
           id: string;
           user_id: string;
           exercise_id: string;
-          exercise_type: 'verb' | 'separable' | 'positional';
+          exercise_type: 'verb' | 'separable' | 'positional' | 'article' | 'plural';
           correct_count: number;
           total_count: number;
           last_seen: string;

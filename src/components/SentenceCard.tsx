@@ -2,7 +2,6 @@ import { useState, useCallback } from 'react';
 import type { Exercise, Phase, Tense } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
-import { getExerciseTranslation } from '../data/verbTranslations';
 
 interface Props {
   exercise: Exercise;
@@ -45,10 +44,7 @@ export function SentenceCard({ exercise, phase, label }: Props) {
     speak(text, () => setSpeaking(false));
   }, [speaking, phase, exercise, parts]);
 
-  const translation =
-    exercise.translations?.[lang] ??
-    getExerciseTranslation(exercise.english, lang) ??
-    exercise.english;
+  const translation = exercise.translations?.[lang] ?? exercise.english;
 
   return (
     <div className="sentence-card">

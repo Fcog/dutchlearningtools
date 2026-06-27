@@ -3,6 +3,8 @@ import { supabase } from '../lib/supabase';
 import type { Verb, Exercise, Conjugation, Level, Tense, SupportedLang } from '../types';
 import type { SeparableVerbSet, SeparableExercise, SeparableContext } from '../data/separableVerbs';
 import type { PositionalExercise, PositionalVerb } from '../data/positionalVerbs';
+import type { ArticleNoun, Article } from '../data/articleNouns';
+import type { PluralNoun, PluralRule } from '../data/pluralNouns';
 
 // ── Transformers ───────────────────────────────────────────────────────────
 
@@ -62,6 +64,20 @@ function toSeparableVerbSet(row: any): SeparableVerbSet {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
+function toArticleNoun(row: any): ArticleNoun {
+  return {
+    id:           row.id,
+    noun:         row.noun,
+    article:      row.article as Article,
+    english:      row.english,
+    translations: row.translation_es ? { es: row.translation_es } : undefined,
+    level:        row.level as 'A1' | 'A2' | 'B1',
+    tip:          row.tip ?? undefined,
+    tipEs:        row.tip_es ?? undefined,
+  };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function toPositionalExercise(row: any): PositionalExercise {
   return {
     id:             row.id,
@@ -76,18 +92,36 @@ function toPositionalExercise(row: any): PositionalExercise {
   };
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function toPluralNoun(row: any): PluralNoun {
+  return {
+    id:           row.id,
+    singular:     row.singular,
+    article:      row.article as 'de' | 'het',
+    plural:       row.plural,
+    plural_type:  row.plural_type as PluralRule,
+    english:      row.english,
+    translations: row.translation_es ? { es: row.translation_es } : undefined,
+    tip:          row.tip ?? undefined,
+    tipEs:        row.tip_es ?? undefined,
+    level:        row.level as Level,
+  };
+}
+
 // ── Context ────────────────────────────────────────────────────────────────
 
 interface DataContextValue {
   verbs:               Verb[];
   separableVerbSets:   SeparableVerbSet[];
   positionalExercises: PositionalExercise[];
+  articleNouns:        ArticleNoun[];
+  pluralNouns:         PluralNoun[];
   loading:             boolean;
   error:               string | null;
 }
 
 const DataContext = createContext<DataContextValue>({
-  verbs: [], separableVerbSets: [], positionalExercises: [],
+  verbs: [], separableVerbSets: [], positionalExercises: [], articleNouns: [], pluralNouns: [],
   loading: true, error: null,
 });
 
@@ -95,25 +129,33 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [verbs, setVerbs] = useState<Verb[]>([]);
   const [separableVerbSets, setSeparable] = useState<SeparableVerbSet[]>([]);
   const [positionalExercises, setPositional] = useState<PositionalExercise[]>([]);
+  const [articleNouns, setArticleNouns] = useState<ArticleNoun[]>([]);
+  const [pluralNouns, setPluralNouns] = useState<PluralNoun[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     async function fetchAll() {
       try {
-        const [verbsRes, sepRes, posRes] = await Promise.all([
+        const [verbsRes, sepRes, posRes, artRes, pluralRes] = await Promise.all([
           supabase.from('verbs').select('*, exercises(*)').order('id'),
           supabase.from('separable_verb_sets').select('*, separable_exercises(*)').order('infinitive'),
           supabase.from('positional_exercises').select('*').order('created_at'),
+          supabase.from('article_nouns').select('*').order('level').order('id'),
+          supabase.from('plural_nouns').select('*').order('level').order('id'),
         ]);
 
-        if (verbsRes.error) throw verbsRes.error;
-        if (sepRes.error)   throw sepRes.error;
-        if (posRes.error)   throw posRes.error;
+        if (verbsRes.error)   throw verbsRes.error;
+        if (sepRes.error)     throw sepRes.error;
+        if (posRes.error)     throw posRes.error;
+        if (artRes.error)     throw artRes.error;
+        if (pluralRes.error)  throw pluralRes.error;
 
         setVerbs((verbsRes.data ?? []).map(toVerb));
         setSeparable((sepRes.data ?? []).map(toSeparableVerbSet));
         setPositional((posRes.data ?? []).map(toPositionalExercise));
+        setArticleNouns((artRes.data ?? []).map(toArticleNoun));
+        setPluralNouns((pluralRes.data ?? []).map(toPluralNoun));
       } catch (e) {
         setError(e instanceof Error ? e.message : 'Failed to load exercises.');
       } finally {
@@ -125,7 +167,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <DataContext.Provider value={{ verbs, separableVerbSets, positionalExercises, loading, error }}>
+    <DataContext.Provider value={{ verbs, separableVerbSets, positionalExercises, articleNouns, pluralNouns, loading, error }}>
       {children}
     </DataContext.Provider>
   );
