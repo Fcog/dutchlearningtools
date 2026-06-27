@@ -7,6 +7,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
+import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
 import type { Phase } from '../types';
 
 function randomIndex(exclude: number, total: number) {
@@ -31,7 +32,7 @@ function normalize(s: string) {
 
 export default function PluralsPage() {
   const { pluralNouns, loading, error } = useAppData();
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useRandomStartIndex(pluralNouns.length);
   const [phase, setPhase] = useState<Phase>('active');
   const [input, setInput] = useState('');
   const [isCorrect, setIsCorrect] = useState(false);

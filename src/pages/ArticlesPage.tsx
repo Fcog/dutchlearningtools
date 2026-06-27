@@ -7,6 +7,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
+import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
 import type { Article } from '../data/articleNouns';
 import type { Phase } from '../types';
 
@@ -30,7 +31,7 @@ const ARTICLES: Article[] = ['de', 'het'];
 
 export default function ArticlesPage() {
   const { articleNouns, loading, error } = useAppData();
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useRandomStartIndex(articleNouns.length);
   const [phase, setPhase] = useState<Phase>('active');
   const [selected, setSelected] = useState<Article | null>(null);
   const [score, setScore] = useState({ correct: 0, total: 0 });

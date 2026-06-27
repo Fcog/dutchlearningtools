@@ -7,6 +7,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
+import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
 
 interface Token { word: string; id: number }
 
@@ -37,7 +38,7 @@ function speakText(text: string, onEnd: () => void) {
 
 export default function WordOrderPage() {
   const { wordOrderSentences, loading, error } = useAppData();
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useRandomStartIndex(wordOrderSentences.length);
   const [bank, setBank] = useState<number[]>([]);   // positions in tokens[]
   const [placed, setPlaced] = useState<number[]>([]); // positions in tokens[], in placement order
   const [checked, setChecked] = useState(false);
