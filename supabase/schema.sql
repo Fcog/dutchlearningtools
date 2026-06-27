@@ -89,13 +89,27 @@ CREATE TABLE IF NOT EXISTS plural_nouns (
   created_at     TIMESTAMPTZ DEFAULT NOW()
 );
 
+-- ── Word order sentences ───────────────────────────────────────────────────
+
+CREATE TABLE IF NOT EXISTS word_order_sentences (
+  id             TEXT        PRIMARY KEY,
+  words          JSONB       NOT NULL,
+  english        TEXT        NOT NULL,
+  translation_es TEXT,
+  rule           TEXT        NOT NULL CHECK (rule IN ('v2','v2-fronting','subordinate','modal','perfect')),
+  explanation    TEXT        NOT NULL,
+  explanation_es TEXT,
+  level          TEXT        NOT NULL CHECK (level IN ('A1','A2','B1')),
+  created_at     TIMESTAMPTZ DEFAULT NOW()
+);
+
 -- ── User progress ──────────────────────────────────────────────────────────
 
 CREATE TABLE IF NOT EXISTS user_progress (
   id            UUID    DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id       UUID    NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
-  exercise_id   UUID    NOT NULL,
-  exercise_type TEXT    NOT NULL CHECK (exercise_type IN ('verb','separable','positional','article','plural')),
+  exercise_id   TEXT    NOT NULL,
+  exercise_type TEXT    NOT NULL CHECK (exercise_type IN ('verb','separable','positional','article','plural','word-order')),
   correct_count INT     NOT NULL DEFAULT 0,
   total_count   INT     NOT NULL DEFAULT 0,
   last_seen     TIMESTAMPTZ DEFAULT NOW(),
@@ -121,7 +135,8 @@ ALTER TABLE separable_verb_sets  ENABLE ROW LEVEL SECURITY;
 ALTER TABLE separable_exercises  ENABLE ROW LEVEL SECURITY;
 ALTER TABLE positional_exercises ENABLE ROW LEVEL SECURITY;
 ALTER TABLE article_nouns        ENABLE ROW LEVEL SECURITY;
-ALTER TABLE plural_nouns         ENABLE ROW LEVEL SECURITY;
+ALTER TABLE plural_nouns              ENABLE ROW LEVEL SECURITY;
+ALTER TABLE word_order_sentences      ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_progress        ENABLE ROW LEVEL SECURITY;
 
 -- Exercise data: readable by everyone (anon + authenticated)
@@ -131,7 +146,8 @@ CREATE POLICY "public read" ON separable_verb_sets  FOR SELECT USING (true);
 CREATE POLICY "public read" ON separable_exercises  FOR SELECT USING (true);
 CREATE POLICY "public read" ON positional_exercises FOR SELECT USING (true);
 CREATE POLICY "public read" ON article_nouns        FOR SELECT USING (true);
-CREATE POLICY "public read" ON plural_nouns         FOR SELECT USING (true);
+CREATE POLICY "public read" ON plural_nouns             FOR SELECT USING (true);
+CREATE POLICY "public read" ON word_order_sentences     FOR SELECT USING (true);
 
 -- Progress: each user sees and writes only their own rows
 CREATE POLICY "own rows"   ON user_progress FOR SELECT USING (auth.uid() = user_id);

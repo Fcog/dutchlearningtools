@@ -104,12 +104,27 @@ export interface Database {
         Insert: Omit<Database['public']['Tables']['plural_nouns']['Row'], 'created_at'>;
         Update: Partial<Database['public']['Tables']['plural_nouns']['Insert']>;
       };
+      word_order_sentences: {
+        Row: {
+          id: string;
+          words: string[];
+          english: string;
+          translation_es: string | null;
+          rule: 'v2' | 'v2-fronting' | 'subordinate' | 'modal' | 'perfect';
+          explanation: string;
+          explanation_es: string | null;
+          level: 'A1' | 'A2' | 'B1';
+          created_at: string;
+        };
+        Insert: Omit<Database['public']['Tables']['word_order_sentences']['Row'], 'created_at'>;
+        Update: Partial<Database['public']['Tables']['word_order_sentences']['Insert']>;
+      };
       user_progress: {
         Row: {
           id: string;
           user_id: string;
           exercise_id: string;
-          exercise_type: 'verb' | 'separable' | 'positional' | 'article' | 'plural';
+          exercise_type: 'verb' | 'separable' | 'positional' | 'article' | 'plural' | 'word-order';
           correct_count: number;
           total_count: number;
           last_seen: string;

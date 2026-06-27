@@ -77,6 +77,16 @@ export default function HomePage() {
             <span className="module-arrow">→</span>
           </Link>
 
+          <Link to="/word-order" className="module-card">
+            <div className="module-icon">🔀</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.wordOrderName}</h3>
+              <p className="module-desc">{ui.wordOrderDesc}</p>
+              <StatsLine type="word-order" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
+
           <Link to="/plurals" className="module-card">
             <div className="module-icon">📚</div>
             <div className="module-body">

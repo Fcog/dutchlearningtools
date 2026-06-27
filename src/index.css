@@ -1390,6 +1390,129 @@ body {
     opacity: 0.85;
 }
 
+/* ── Word order exercise ─────────────────────────────────────────────── */
+.wo-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.word-order-prompt {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.word-order-english {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    font-style: italic;
+}
+
+.wo-rule-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.55rem;
+    border-radius: 5px;
+    background: #eff6ff;
+    color: var(--primary);
+}
+
+.wo-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.word-section-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--text-light);
+}
+
+.word-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    min-height: 2.5rem;
+    align-items: flex-start;
+}
+
+.word-chip {
+    padding: 0.35rem 0.85rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    font-family: inherit;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s, color 0.15s;
+    white-space: nowrap;
+    line-height: 1.4;
+}
+
+.word-chip:hover:not(:disabled) {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: #eff6ff;
+}
+
+.word-chip.placed {
+    border-color: var(--primary);
+    background: #eff6ff;
+    color: var(--primary);
+}
+
+.word-chip.correct {
+    border-color: var(--success);
+    background: var(--success-bg);
+    color: var(--success);
+}
+
+.word-chip.wrong {
+    border-color: var(--error);
+    background: var(--error-bg);
+    color: var(--error);
+}
+
+.word-chip:disabled {
+    cursor: default;
+}
+
+.sentence-area-box {
+    min-height: 3rem;
+    background: var(--bg);
+    border: 1.5px dashed var(--border);
+    border-radius: var(--radius);
+    padding: 0.6rem 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.sentence-placeholder {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.wo-result-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* ── Plural forms exercise ───────────────────────────────────────────── */
 .plural-article {
     color: var(--text-muted);

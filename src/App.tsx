@@ -9,6 +9,7 @@ import TermsOfUsePage from './pages/TermsOfUsePage';
 import ResetPasswordPage from './pages/ResetPasswordPage';
 import ArticlesPage from './pages/ArticlesPage';
 import PluralsPage from './pages/PluralsPage';
+import WordOrderPage from './pages/WordOrderPage';
 
 declare global {
   function gtag(...args: unknown[]): void;
@@ -37,6 +38,7 @@ export default function App() {
       <Route path="/reset-password" element={<ResetPasswordPage />} />
       <Route path="/articles" element={<ArticlesPage />} />
       <Route path="/plurals" element={<PluralsPage />} />
+      <Route path="/word-order" element={<WordOrderPage />} />
     </Routes>
   );
 }
