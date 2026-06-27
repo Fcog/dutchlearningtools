@@ -10,6 +10,7 @@ import type { Phase, SupportedLang } from "../types";
 import { useLanguage } from "../context/LanguageContext";
 import { useUI } from "../i18n/ui";
 import { useProgress } from "../hooks/useProgress";
+import { useAdvanceOnEnter } from "../hooks/useAdvanceOnEnter";
 
 function shuffled<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -80,6 +81,8 @@ export default function SeparableVerbsPage() {
     setUserInput("");
     setIsCorrect(null);
   }, [ctxIdx]);
+
+  useAdvanceOnEnter(phase === "result", next);
 
   const exerciseForCard = {
     dutch: exercise.dutch,
@@ -250,7 +253,7 @@ export default function SeparableVerbsPage() {
                 )}
               </p>
               <button className="next-btn" onClick={next}>
-                {ctxIdx < 3 ? ui.nextContext : ui.nextVerb}
+                {ui.next}
               </button>
             </div>
           )}

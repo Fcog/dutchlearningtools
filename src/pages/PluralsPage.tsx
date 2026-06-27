@@ -6,6 +6,7 @@ import { useAppData } from '../context/DataContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
+import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 import type { Phase } from '../types';
 
 function randomIndex(exclude: number, total: number) {
@@ -64,6 +65,8 @@ export default function PluralsPage() {
     setSpeaking(false);
     setShowHint(false);
   }, [pluralNouns.length]);
+
+  useAdvanceOnEnter(phase === 'result', next);
 
   const handleSpeak = useCallback(() => {
     if (speaking) {

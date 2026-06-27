@@ -6,6 +6,7 @@ import { useAppData } from '../context/DataContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
+import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 
 interface Token { word: string; id: number }
 
@@ -115,6 +116,8 @@ export default function WordOrderPage() {
     setSpeaking(false);
     setIndex(i => randomIndex(i, wordOrderSentences.length));
   }, [wordOrderSentences.length]);
+
+  useAdvanceOnEnter(checked, next);
 
   const handleSpeak = useCallback(() => {
     if (speaking) {

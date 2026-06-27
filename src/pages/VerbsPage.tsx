@@ -5,6 +5,7 @@ import { useAppData } from "../context/DataContext";
 import { useLanguage } from "../context/LanguageContext";
 import { useUI } from "../i18n/ui";
 import { useProgress } from "../hooks/useProgress";
+import { useAdvanceOnEnter } from "../hooks/useAdvanceOnEnter";
 import { LoadingScreen } from "../components/LoadingScreen";
 import { Header } from "../components/Header";
 import { LevelSelector } from "../components/LevelSelector";
@@ -34,6 +35,8 @@ export default function VerbsPage() {
     selectedLevels,
     selectedTenses,
   );
+
+  useAdvanceOnEnter(state?.phase === "result", next);
 
   if (loading || error) return <LoadingScreen error={error} />;
 

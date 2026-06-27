@@ -4,9 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 const en = {
   // Buttons
   check: 'Check',
-  next: 'Next exercise →',
-  nextContext: 'Next context →',
-  nextVerb: 'Next verb →',
+  next: 'Next',
   // Header / nav
   filters: 'Filters',
   closeFilters: 'Close filters',
@@ -90,9 +88,7 @@ type UIStrings = { readonly [K in keyof typeof en]: string };
 
 const es: UIStrings = {
   check: 'Comprobar',
-  next: 'Siguiente ejercicio →',
-  nextContext: 'Siguiente contexto →',
-  nextVerb: 'Siguiente verbo →',
+  next: 'Siguiente',
   filters: 'Filtros',
   closeFilters: 'Cerrar filtros',
   howToPlay: 'Cómo jugar',

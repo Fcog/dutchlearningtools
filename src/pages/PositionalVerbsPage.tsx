@@ -9,6 +9,7 @@ import type { Phase } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
+import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 
 const VERBS: PositionalVerb[] = ['zijn', 'zitten', 'liggen', 'staan'];
 
@@ -50,6 +51,8 @@ export default function PositionalVerbsPage() {
     setPhase('active');
     setSelected(null);
   }, [positionalExercises.length]);
+
+  useAdvanceOnEnter(phase === 'result', next);
 
   const exerciseForCard = {
     dutch: current.dutch,

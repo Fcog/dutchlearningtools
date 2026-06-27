@@ -6,6 +6,7 @@ import { useAppData } from '../context/DataContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
+import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 import type { Article } from '../data/articleNouns';
 import type { Phase } from '../types';
 
@@ -59,6 +60,8 @@ export default function ArticlesPage() {
     setSelected(null);
     setSpeaking(false);
   }, [articleNouns.length]);
+
+  useAdvanceOnEnter(phase === 'result', next);
 
   const handleSpeak = useCallback(() => {
     if (speaking) {
