@@ -72,6 +72,38 @@ export interface Database {
         Insert: Omit<Database['public']['Tables']['positional_exercises']['Row'], 'id' | 'created_at'>;
         Update: Partial<Database['public']['Tables']['positional_exercises']['Insert']>;
       };
+      directional_exercises: {
+        Row: {
+          id: string;
+          dutch: string;
+          english: string;
+          answer: string;
+          options: Json;
+          explanation: string;
+          explanation_es: string | null;
+          level: 'A1' | 'A2' | 'B1';
+          translation_es: string | null;
+          created_at: string;
+        };
+        Insert: Omit<Database['public']['Tables']['directional_exercises']['Row'], 'created_at'>;
+        Update: Partial<Database['public']['Tables']['directional_exercises']['Insert']>;
+      };
+      from_to_exercises: {
+        Row: {
+          id: string;
+          dutch: string;
+          english: string;
+          answer: string;
+          options: Json;
+          explanation: string;
+          explanation_es: string | null;
+          level: 'A1' | 'A2' | 'B1';
+          translation_es: string | null;
+          created_at: string;
+        };
+        Insert: Omit<Database['public']['Tables']['from_to_exercises']['Row'], 'created_at'>;
+        Update: Partial<Database['public']['Tables']['from_to_exercises']['Insert']>;
+      };
       article_nouns: {
         Row: {
           id: string;

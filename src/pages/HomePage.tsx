@@ -67,6 +67,26 @@ export default function HomePage() {
             <span className="module-arrow">→</span>
           </Link>
 
+          <Link to="/directional-adverbs" className="module-card">
+            <div className="module-icon">🧭</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.directionalAdverbsName}</h3>
+              <p className="module-desc">{ui.directionalAdverbsDesc}</p>
+              <StatsLine type="directional" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
+
+          <Link to="/from-to" className="module-card">
+            <div className="module-icon">↔️</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.fromToName}</h3>
+              <p className="module-desc">{ui.fromToDesc}</p>
+              <StatsLine type="from-to" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
+
           <Link to="/articles" className="module-card">
             <div className="module-icon">🏷️</div>
             <div className="module-body">

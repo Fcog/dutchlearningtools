@@ -3,6 +3,8 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import VerbsPage from './pages/VerbsPage';
 import PositionalVerbsPage from './pages/PositionalVerbsPage';
+import DirectionalAdverbsPage from './pages/DirectionalAdverbsPage';
+import FromToPage from './pages/FromToPage';
 import SeparableVerbsPage from './pages/SeparableVerbsPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfUsePage from './pages/TermsOfUsePage';
@@ -32,6 +34,8 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/verbs-conjugation" element={<VerbsPage />} />
       <Route path="/positional-verbs" element={<PositionalVerbsPage />} />
+      <Route path="/directional-adverbs" element={<DirectionalAdverbsPage />} />
+      <Route path="/from-to" element={<FromToPage />} />
       <Route path="/separable-verbs" element={<SeparableVerbsPage />} />
       <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
       <Route path="/terms-of-use" element={<TermsOfUsePage />} />

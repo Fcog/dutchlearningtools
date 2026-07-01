@@ -3,6 +3,8 @@ import { supabase } from '../lib/supabase';
 import type { Verb, Exercise, Conjugation, Level, Tense, SupportedLang } from '../types';
 import type { SeparableVerbSet, SeparableExercise, SeparableContext } from '../data/separableVerbs';
 import type { PositionalExercise, PositionalVerb } from '../data/positionalVerbs';
+import type { DirectionalExercise } from '../data/directionalAdverbs';
+import type { FromToExercise } from '../data/fromToAdverbs';
 import type { ArticleNoun, Article } from '../data/articleNouns';
 import type { PluralNoun, PluralRule } from '../data/pluralNouns';
 import type { WordOrderSentence, WordOrderRule } from '../data/wordOrderSentences';
@@ -94,6 +96,36 @@ function toPositionalExercise(row: any): PositionalExercise {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
+function toDirectionalExercise(row: any): DirectionalExercise {
+  return {
+    id:             row.id,
+    dutch:          row.dutch,
+    english:        row.english,
+    answer:         row.answer,
+    options:        (row.options ?? []) as string[],
+    explanation:    row.explanation,
+    explanationEs:  row.explanation_es ?? undefined,
+    level:          row.level as Level,
+    translations:   row.translation_es ? { es: row.translation_es } : undefined,
+  };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function toFromToExercise(row: any): FromToExercise {
+  return {
+    id:             row.id,
+    dutch:          row.dutch,
+    english:        row.english,
+    answer:         row.answer,
+    options:        (row.options ?? []) as string[],
+    explanation:    row.explanation,
+    explanationEs:  row.explanation_es ?? undefined,
+    level:          row.level as Level,
+    translations:   row.translation_es ? { es: row.translation_es } : undefined,
+  };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function toPluralNoun(row: any): PluralNoun {
   return {
     id:           row.id,
@@ -129,6 +161,8 @@ interface DataContextValue {
   verbs:                Verb[];
   separableVerbSets:    SeparableVerbSet[];
   positionalExercises:  PositionalExercise[];
+  directionalExercises: DirectionalExercise[];
+  fromToExercises:      FromToExercise[];
   articleNouns:         ArticleNoun[];
   pluralNouns:          PluralNoun[];
   wordOrderSentences:   WordOrderSentence[];
@@ -137,7 +171,7 @@ interface DataContextValue {
 }
 
 const DataContext = createContext<DataContextValue>({
-  verbs: [], separableVerbSets: [], positionalExercises: [], articleNouns: [], pluralNouns: [], wordOrderSentences: [],
+  verbs: [], separableVerbSets: [], positionalExercises: [], directionalExercises: [], fromToExercises: [], articleNouns: [], pluralNouns: [], wordOrderSentences: [],
   loading: true, error: null,
 });
 
@@ -145,6 +179,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [verbs, setVerbs] = useState<Verb[]>([]);
   const [separableVerbSets, setSeparable] = useState<SeparableVerbSet[]>([]);
   const [positionalExercises, setPositional] = useState<PositionalExercise[]>([]);
+  const [directionalExercises, setDirectional] = useState<DirectionalExercise[]>([]);
+  const [fromToExercises, setFromTo] = useState<FromToExercise[]>([]);
   const [articleNouns, setArticleNouns] = useState<ArticleNoun[]>([]);
   const [pluralNouns, setPluralNouns] = useState<PluralNoun[]>([]);
   const [wordOrderSentences, setWordOrderSentences] = useState<WordOrderSentence[]>([]);
@@ -154,10 +190,12 @@ export function DataProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     async function fetchAll() {
       try {
-        const [verbsRes, sepRes, posRes, artRes, pluralRes, woRes] = await Promise.all([
+        const [verbsRes, sepRes, posRes, dirRes, ftRes, artRes, pluralRes, woRes] = await Promise.all([
           supabase.from('verbs').select('*, exercises(*)').order('id'),
           supabase.from('separable_verb_sets').select('*, separable_exercises(*)').order('infinitive'),
           supabase.from('positional_exercises').select('*').order('created_at'),
+          supabase.from('directional_exercises').select('*').order('level').order('id'),
+          supabase.from('from_to_exercises').select('*').order('level').order('id'),
           supabase.from('article_nouns').select('*').order('level').order('id'),
           supabase.from('plural_nouns').select('*').order('level').order('id'),
           supabase.from('word_order_sentences').select('*').order('level').order('id'),
@@ -169,10 +207,16 @@ export function DataProvider({ children }: { children: ReactNode }) {
         if (artRes.error)    throw artRes.error;
         if (pluralRes.error) throw pluralRes.error;
         if (woRes.error)     throw woRes.error;
+        // Tolerated: these tables may not exist yet before their migration is
+        // applied — keep the rest of the app working in that case.
+        if (dirRes.error) console.warn('directional_exercises unavailable:', dirRes.error.message);
+        if (ftRes.error)  console.warn('from_to_exercises unavailable:', ftRes.error.message);
 
         setVerbs((verbsRes.data ?? []).map(toVerb));
         setSeparable((sepRes.data ?? []).map(toSeparableVerbSet));
         setPositional((posRes.data ?? []).map(toPositionalExercise));
+        setDirectional((dirRes.data ?? []).map(toDirectionalExercise));
+        setFromTo((ftRes.data ?? []).map(toFromToExercise));
         setArticleNouns((artRes.data ?? []).map(toArticleNoun));
         setPluralNouns((pluralRes.data ?? []).map(toPluralNoun));
         setWordOrderSentences((woRes.data ?? []).map(toWordOrderSentence));
@@ -187,7 +231,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <DataContext.Provider value={{ verbs, separableVerbSets, positionalExercises, articleNouns, pluralNouns, wordOrderSentences, loading, error }}>
+    <DataContext.Provider value={{ verbs, separableVerbSets, positionalExercises, directionalExercises, fromToExercises, articleNouns, pluralNouns, wordOrderSentences, loading, error }}>
       {children}
     </DataContext.Provider>
   );

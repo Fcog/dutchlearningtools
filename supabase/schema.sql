@@ -59,6 +59,36 @@ CREATE TABLE IF NOT EXISTS positional_exercises (
   created_at     TIMESTAMPTZ DEFAULT NOW()
 );
 
+-- ── Directional / positional adverbs ───────────────────────────────────────
+
+CREATE TABLE IF NOT EXISTS directional_exercises (
+  id             TEXT        PRIMARY KEY,
+  dutch          TEXT        NOT NULL,
+  english        TEXT        NOT NULL,
+  answer         TEXT        NOT NULL,
+  options        JSONB       NOT NULL,
+  explanation    TEXT        NOT NULL,
+  explanation_es TEXT,
+  level          TEXT        NOT NULL CHECK (level IN ('A1','A2','B1')),
+  translation_es TEXT,
+  created_at     TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- ── Direction: from / to (vandaan / heen / toe) ─────────────────────────────
+
+CREATE TABLE IF NOT EXISTS from_to_exercises (
+  id             TEXT        PRIMARY KEY,
+  dutch          TEXT        NOT NULL,
+  english        TEXT        NOT NULL,
+  answer         TEXT        NOT NULL,
+  options        JSONB       NOT NULL,
+  explanation    TEXT        NOT NULL,
+  explanation_es TEXT,
+  level          TEXT        NOT NULL CHECK (level IN ('A1','A2','B1')),
+  translation_es TEXT,
+  created_at     TIMESTAMPTZ DEFAULT NOW()
+);
+
 -- ── Article nouns ──────────────────────────────────────────────────────────
 
 CREATE TABLE IF NOT EXISTS article_nouns (
@@ -109,7 +139,7 @@ CREATE TABLE IF NOT EXISTS user_progress (
   id            UUID    DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id       UUID    NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
   exercise_id   TEXT    NOT NULL,
-  exercise_type TEXT    NOT NULL CHECK (exercise_type IN ('verb','separable','positional','article','plural','word-order')),
+  exercise_type TEXT    NOT NULL CHECK (exercise_type IN ('verb','separable','positional','directional','from-to','article','plural','word-order')),
   correct_count INT     NOT NULL DEFAULT 0,
   total_count   INT     NOT NULL DEFAULT 0,
   last_seen     TIMESTAMPTZ DEFAULT NOW(),
@@ -134,6 +164,8 @@ ALTER TABLE exercises            ENABLE ROW LEVEL SECURITY;
 ALTER TABLE separable_verb_sets  ENABLE ROW LEVEL SECURITY;
 ALTER TABLE separable_exercises  ENABLE ROW LEVEL SECURITY;
 ALTER TABLE positional_exercises ENABLE ROW LEVEL SECURITY;
+ALTER TABLE directional_exercises ENABLE ROW LEVEL SECURITY;
+ALTER TABLE from_to_exercises     ENABLE ROW LEVEL SECURITY;
 ALTER TABLE article_nouns        ENABLE ROW LEVEL SECURITY;
 ALTER TABLE plural_nouns              ENABLE ROW LEVEL SECURITY;
 ALTER TABLE word_order_sentences      ENABLE ROW LEVEL SECURITY;
@@ -145,6 +177,8 @@ CREATE POLICY "public read" ON exercises            FOR SELECT USING (true);
 CREATE POLICY "public read" ON separable_verb_sets  FOR SELECT USING (true);
 CREATE POLICY "public read" ON separable_exercises  FOR SELECT USING (true);
 CREATE POLICY "public read" ON positional_exercises FOR SELECT USING (true);
+CREATE POLICY "public read" ON directional_exercises FOR SELECT USING (true);
+CREATE POLICY "public read" ON from_to_exercises     FOR SELECT USING (true);
 CREATE POLICY "public read" ON article_nouns        FOR SELECT USING (true);
 CREATE POLICY "public read" ON plural_nouns             FOR SELECT USING (true);
 CREATE POLICY "public read" ON word_order_sentences     FOR SELECT USING (true);
