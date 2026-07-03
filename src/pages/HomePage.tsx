@@ -116,6 +116,16 @@ export default function HomePage() {
             </div>
             <span className="module-arrow">→</span>
           </Link>
+
+          <Link to="/voorstellen" className="module-card">
+            <div className="module-icon">🙋</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.voorstellenName}</h3>
+              <p className="module-desc">{ui.voorstellenDesc}</p>
+              <StatsLine type="voorstellen" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
         </div>
       </main>
       <Footer />

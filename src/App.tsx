@@ -12,6 +12,7 @@ import ResetPasswordPage from './pages/ResetPasswordPage';
 import ArticlesPage from './pages/ArticlesPage';
 import PluralsPage from './pages/PluralsPage';
 import WordOrderPage from './pages/WordOrderPage';
+import VoorstellenPage from './pages/VoorstellenPage';
 
 declare global {
   function gtag(...args: unknown[]): void;
@@ -43,6 +44,7 @@ export default function App() {
       <Route path="/articles" element={<ArticlesPage />} />
       <Route path="/plurals" element={<PluralsPage />} />
       <Route path="/word-order" element={<WordOrderPage />} />
+      <Route path="/voorstellen" element={<VoorstellenPage />} />
     </Routes>
   );
 }

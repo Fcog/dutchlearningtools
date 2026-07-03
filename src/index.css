@@ -1513,6 +1513,30 @@ body {
     justify-content: space-between;
 }
 
+/* ── voorstellen gap-fill: sentence reads inline, blanks sit in the text ─── */
+.vst-sentence {
+    font-size: 1.05rem;
+    line-height: 2;
+    row-gap: 0.35rem;
+}
+
+.vst-segment {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.vst-text {
+    color: var(--text);
+}
+
+.vst-blank {
+    color: var(--text-light);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
 /* ── Plural forms exercise ───────────────────────────────────────────── */
 .plural-article {
     color: var(--text-muted);

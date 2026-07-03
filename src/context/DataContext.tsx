@@ -8,6 +8,7 @@ import type { FromToExercise } from '../data/fromToAdverbs';
 import type { ArticleNoun, Article } from '../data/articleNouns';
 import type { PluralNoun, PluralRule } from '../data/pluralNouns';
 import type { WordOrderSentence, WordOrderRule } from '../data/wordOrderSentences';
+import type { VoorstellenExercise, VoorstellenMeaning } from '../data/voorstellenExercises';
 
 // ── Transformers ───────────────────────────────────────────────────────────
 
@@ -155,6 +156,23 @@ function toWordOrderSentence(row: any): WordOrderSentence {
   };
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function toVoorstellenExercise(row: any): VoorstellenExercise {
+  return {
+    id:             row.id,
+    english:        row.english,
+    dutch:          row.dutch,
+    gapped:         row.gapped,
+    answers:        (row.answers ?? []) as string[],
+    bank:           (row.bank ?? []) as string[],
+    meaning:        row.meaning as VoorstellenMeaning,
+    explanation:    row.explanation,
+    explanationEs:  row.explanation_es ?? undefined,
+    level:          row.level as Level,
+    translations:   row.translation_es ? { es: row.translation_es } : undefined,
+  };
+}
+
 // ── Context ────────────────────────────────────────────────────────────────
 
 interface DataContextValue {
@@ -166,12 +184,13 @@ interface DataContextValue {
   articleNouns:         ArticleNoun[];
   pluralNouns:          PluralNoun[];
   wordOrderSentences:   WordOrderSentence[];
+  voorstellenExercises: VoorstellenExercise[];
   loading:              boolean;
   error:                string | null;
 }
 
 const DataContext = createContext<DataContextValue>({
-  verbs: [], separableVerbSets: [], positionalExercises: [], directionalExercises: [], fromToExercises: [], articleNouns: [], pluralNouns: [], wordOrderSentences: [],
+  verbs: [], separableVerbSets: [], positionalExercises: [], directionalExercises: [], fromToExercises: [], articleNouns: [], pluralNouns: [], wordOrderSentences: [], voorstellenExercises: [],
   loading: true, error: null,
 });
 
@@ -184,13 +203,14 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [articleNouns, setArticleNouns] = useState<ArticleNoun[]>([]);
   const [pluralNouns, setPluralNouns] = useState<PluralNoun[]>([]);
   const [wordOrderSentences, setWordOrderSentences] = useState<WordOrderSentence[]>([]);
+  const [voorstellenExercises, setVoorstellen] = useState<VoorstellenExercise[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     async function fetchAll() {
       try {
-        const [verbsRes, sepRes, posRes, dirRes, ftRes, artRes, pluralRes, woRes] = await Promise.all([
+        const [verbsRes, sepRes, posRes, dirRes, ftRes, artRes, pluralRes, woRes, vstRes] = await Promise.all([
           supabase.from('verbs').select('*, exercises(*)').order('id'),
           supabase.from('separable_verb_sets').select('*, separable_exercises(*)').order('infinitive'),
           supabase.from('positional_exercises').select('*').order('created_at'),
@@ -199,6 +219,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
           supabase.from('article_nouns').select('*').order('level').order('id'),
           supabase.from('plural_nouns').select('*').order('level').order('id'),
           supabase.from('word_order_sentences').select('*').order('level').order('id'),
+          supabase.from('voorstellen_exercises').select('*').order('level').order('id'),
         ]);
 
         if (verbsRes.error)  throw verbsRes.error;
@@ -211,6 +232,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
         // applied — keep the rest of the app working in that case.
         if (dirRes.error) console.warn('directional_exercises unavailable:', dirRes.error.message);
         if (ftRes.error)  console.warn('from_to_exercises unavailable:', ftRes.error.message);
+        if (vstRes.error) console.warn('voorstellen_exercises unavailable:', vstRes.error.message);
 
         setVerbs((verbsRes.data ?? []).map(toVerb));
         setSeparable((sepRes.data ?? []).map(toSeparableVerbSet));
@@ -220,6 +242,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
         setArticleNouns((artRes.data ?? []).map(toArticleNoun));
         setPluralNouns((pluralRes.data ?? []).map(toPluralNoun));
         setWordOrderSentences((woRes.data ?? []).map(toWordOrderSentence));
+        setVoorstellen((vstRes.data ?? []).map(toVoorstellenExercise));
       } catch (e) {
         setError(e instanceof Error ? e.message : 'Failed to load exercises.');
       } finally {
@@ -231,7 +254,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <DataContext.Provider value={{ verbs, separableVerbSets, positionalExercises, directionalExercises, fromToExercises, articleNouns, pluralNouns, wordOrderSentences, loading, error }}>
+    <DataContext.Provider value={{ verbs, separableVerbSets, positionalExercises, directionalExercises, fromToExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, loading, error }}>
       {children}
     </DataContext.Provider>
   );

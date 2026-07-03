@@ -69,6 +69,14 @@ const en = {
   wordOrderSentenceLabel: 'Your sentence',
   wordOrderPlaceholder: 'Click words above to build the sentence',
   wordOrderClear: 'Clear',
+  // Home page — voorstellen module
+  voorstellenName: 'The verb voorstellen',
+  voorstellenDesc: 'Fill the gaps to master every use of voorstellen: introduce, introduce yourself, imagine, suggest, represent.',
+  voorstellenTitle: 'The verb voorstellen',
+  // voorstellen exercise
+  voorstellenPrompt: 'Tap the words to complete the Dutch sentence:',
+  voorstellenWordsLabel: 'Words',
+  voorstellenSentenceLabel: 'Sentence',
   // Page titles
   verbConjugationTitle: 'Verb Conjugation',
   separableVerbsTitle: 'Separable Verbs',
@@ -147,6 +155,12 @@ const es: UIStrings = {
   wordOrderSentenceLabel: 'Tu oración',
   wordOrderPlaceholder: 'Haz clic en las palabras para construir la oración',
   wordOrderClear: 'Borrar',
+  voorstellenName: 'El verbo voorstellen',
+  voorstellenDesc: 'Rellena los huecos y domina todos los usos de voorstellen: presentar, presentarse, imaginar, proponer, representar.',
+  voorstellenTitle: 'El verbo voorstellen',
+  voorstellenPrompt: 'Toca las palabras para completar la frase en neerlandés:',
+  voorstellenWordsLabel: 'Palabras',
+  voorstellenSentenceLabel: 'Frase',
   verbConjugationTitle: 'Conjugación de verbos',
   separableVerbsTitle: 'Verbos separables',
   positionVerbsTitle: 'Verbos de posición',

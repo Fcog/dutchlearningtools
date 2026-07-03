@@ -11,7 +11,8 @@
     "gen-translations": "node scripts/generate-verb-translations.mjs",
     "add-verb": "npx tsx --env-file=.env scripts/add-verb.ts",
     "migrate-directional": "npx tsx --env-file=.env scripts/migrate-directional.ts",
-    "migrate-from-to": "npx tsx --env-file=.env scripts/migrate-from-to.ts"
+    "migrate-from-to": "npx tsx --env-file=.env scripts/migrate-from-to.ts",
+    "migrate-voorstellen": "npx tsx --env-file=.env scripts/migrate-voorstellen.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",
