@@ -126,6 +126,36 @@ export default function HomePage() {
             </div>
             <span className="module-arrow">→</span>
           </Link>
+
+          <Link to="/negation" className="module-card">
+            <div className="module-icon">🚫</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.negationName}</h3>
+              <p className="module-desc">{ui.negationDesc}</p>
+              <StatsLine type="negation" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
+
+          <Link to="/prepositions" className="module-card">
+            <div className="module-icon">🔗</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.prepositionsName}</h3>
+              <p className="module-desc">{ui.prepositionsDesc}</p>
+              <StatsLine type="preposition" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
+
+          <Link to="/time-prepositions" className="module-card">
+            <div className="module-icon">🕐</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.timePrepName}</h3>
+              <p className="module-desc">{ui.timePrepDesc}</p>
+              <StatsLine type="time-prep" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
         </div>
       </main>
       <Footer />

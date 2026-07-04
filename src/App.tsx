@@ -13,6 +13,9 @@ import ArticlesPage from './pages/ArticlesPage';
 import PluralsPage from './pages/PluralsPage';
 import WordOrderPage from './pages/WordOrderPage';
 import VoorstellenPage from './pages/VoorstellenPage';
+import NegationPage from './pages/NegationPage';
+import PrepositionsPage from './pages/PrepositionsPage';
+import TimePrepositionsPage from './pages/TimePrepositionsPage';
 
 declare global {
   function gtag(...args: unknown[]): void;
@@ -45,6 +48,9 @@ export default function App() {
       <Route path="/plurals" element={<PluralsPage />} />
       <Route path="/word-order" element={<WordOrderPage />} />
       <Route path="/voorstellen" element={<VoorstellenPage />} />
+      <Route path="/negation" element={<NegationPage />} />
+      <Route path="/prepositions" element={<PrepositionsPage />} />
+      <Route path="/time-prepositions" element={<TimePrepositionsPage />} />
     </Routes>
   );
 }

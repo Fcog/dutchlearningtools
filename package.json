@@ -12,7 +12,10 @@
     "add-verb": "npx tsx --env-file=.env scripts/add-verb.ts",
     "migrate-directional": "npx tsx --env-file=.env scripts/migrate-directional.ts",
     "migrate-from-to": "npx tsx --env-file=.env scripts/migrate-from-to.ts",
-    "migrate-voorstellen": "npx tsx --env-file=.env scripts/migrate-voorstellen.ts"
+    "migrate-voorstellen": "npx tsx --env-file=.env scripts/migrate-voorstellen.ts",
+    "migrate-negation": "npx tsx --env-file=.env scripts/migrate-negation.ts",
+    "migrate-prepositions": "npx tsx --env-file=.env scripts/migrate-prepositions.ts",
+    "migrate-time-prepositions": "npx tsx --env-file=.env scripts/migrate-time-prepositions.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",
