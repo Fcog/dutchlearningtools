@@ -37,6 +37,15 @@ export default function HomePage() {
         </div>
 
         <div className="module-grid">
+          <Link to="/mix" className="module-card module-card-featured">
+            <div className="module-icon">🎲</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.mixName}</h3>
+              <p className="module-desc">{ui.mixDesc}</p>
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
+
           <Link to="/verbs-conjugation" className="module-card">
             <div className="module-icon">📝</div>
             <div className="module-body">

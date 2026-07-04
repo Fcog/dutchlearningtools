@@ -64,9 +64,9 @@ export function Header({ backTo, score, title }: Props) {
             </div>
             {user ? (
               <div className="user-menu">
-                <div className="user-avatar" title={user.email}>
+                <Link to="/account" className="user-avatar" title={ui.accountTitle}>
                   {userInitials(user.email ?? '?')}
-                </div>
+                </Link>
                 <button className="signout-btn" onClick={signOut}>
                   Sign out
                 </button>
