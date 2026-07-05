@@ -1722,6 +1722,46 @@ body {
     transform: translateX(20px);
 }
 
+.danger-zone {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.danger-zone .account-row-desc {
+    margin: 0.25rem 0 0.9rem;
+}
+
+.danger-btn {
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.55rem 1.1rem;
+    border-radius: 8px;
+    border: 1.5px solid var(--error);
+    background: var(--surface);
+    color: var(--error);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.danger-btn:hover:not(:disabled) {
+    background: var(--error);
+    color: #fff;
+}
+
+.danger-btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.danger-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
 /* ── Plural forms exercise ───────────────────────────────────────────── */
 .plural-article {
     color: var(--text-muted);

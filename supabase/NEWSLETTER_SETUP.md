@@ -38,7 +38,7 @@ In the SQL editor (enable the `pg_cron` and `pg_net` extensions first, under Dat
 ```sql
 select cron.schedule(
   'daily-newsletter',
-  '0 11 * * *',                              -- 11:00 UTC every day
+  '0 11 * * *',                              -- 07:00 UTC every day
   $$
   select net.http_post(
     url     := 'https://<PROJECT_REF>.supabase.co/functions/v1/daily-newsletter',
