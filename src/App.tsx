@@ -17,6 +17,7 @@ import NegationPage from './pages/NegationPage';
 import PrepositionsPage from './pages/PrepositionsPage';
 import TimePrepositionsPage from './pages/TimePrepositionsPage';
 import MixPage from './pages/MixPage';
+import ExpressionsPage from './pages/ExpressionsPage';
 import AccountPage from './pages/AccountPage';
 import SingleExercisePage from './pages/SingleExercisePage';
 import UnsubscribePage from './pages/UnsubscribePage';
@@ -55,6 +56,7 @@ export default function App() {
       <Route path="/negation" element={<NegationPage />} />
       <Route path="/prepositions" element={<PrepositionsPage />} />
       <Route path="/time-prepositions" element={<TimePrepositionsPage />} />
+      <Route path="/expressions" element={<ExpressionsPage />} />
       <Route path="/mix" element={<MixPage />} />
       <Route path="/account" element={<AccountPage />} />
       <Route path="/exercise/:type/:id" element={<SingleExercisePage />} />

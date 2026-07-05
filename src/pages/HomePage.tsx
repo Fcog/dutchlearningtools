@@ -165,6 +165,16 @@ export default function HomePage() {
             </div>
             <span className="module-arrow">→</span>
           </Link>
+
+          <Link to="/expressions" className="module-card">
+            <div className="module-icon">💬</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.expressionsName}</h3>
+              <p className="module-desc">{ui.expressionsDesc}</p>
+              <StatsLine type="expression" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
         </div>
       </main>
       <Footer />

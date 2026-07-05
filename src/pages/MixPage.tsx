@@ -15,6 +15,7 @@ export const TOPIC_LABEL: Record<string, { en: string; es: string }> = {
   'from-to':     { en: 'From & to',          es: 'Origen y destino' },
   preposition:   { en: 'Fixed prepositions', es: 'Preposiciones fijas' },
   'time-prep':   { en: 'Time prepositions',  es: 'Preposiciones de tiempo' },
+  expression:    { en: 'Idiomatic expressions', es: 'Expresiones idiomáticas' },
   article:       { en: 'De / het articles',  es: 'Artículos de / het' },
   plural:        { en: 'Plural forms',       es: 'Formas del plural' },
   'word-order':  { en: 'Word order',         es: 'Orden de palabras' },
@@ -29,9 +30,9 @@ function pickFrom<T>(list: T[]): T {
 export default function MixPage() {
   const {
     verbs, separableVerbSets, positionalExercises, directionalExercises,
-    fromToExercises, prepositionExercises, timeExercises, articleNouns,
-    pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises,
-    loading, error,
+    fromToExercises, prepositionExercises, timeExercises, expressionExercises,
+    articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises,
+    negationExercises, loading, error,
   } = useAppData();
   const { lang } = useLanguage();
   const ui = useUI();
@@ -40,12 +41,12 @@ export default function MixPage() {
   const pool = useMemo(
     () => buildMixPool({
       verbs, separableVerbSets, positionalExercises, directionalExercises,
-      fromToExercises, prepositionExercises, timeExercises, articleNouns,
-      pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises,
+      fromToExercises, prepositionExercises, timeExercises, expressionExercises,
+      articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises,
     }),
     [verbs, separableVerbSets, positionalExercises, directionalExercises,
-     fromToExercises, prepositionExercises, timeExercises, articleNouns,
-     pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises],
+     fromToExercises, prepositionExercises, timeExercises, expressionExercises,
+     articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises],
   );
 
   // Group by topic so a random topic is drawn first — otherwise the 260+ verb

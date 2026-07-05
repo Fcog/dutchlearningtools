@@ -93,6 +93,11 @@ const en = {
   timePrepName: 'Time Prepositions',
   timePrepDesc: 'Master om, op and in for clock times, days and months — plus na, tijdens, sinds, tot and over.',
   timePrepTitle: 'Time Prepositions',
+  // Home page — idiomatic expressions
+  expressionsName: 'Idiomatic Expressions',
+  expressionsDesc: 'Complete common Dutch idioms: in de gaten houden, de spijker op z’n kop slaan, and more.',
+  expressionsTitle: 'Idiomatic Expressions',
+  expressionsPrompt: 'Complete the expression',
   // Home page — mixed practice
   mixName: 'Mixed Practice',
   mixDesc: 'A random exercise from every topic, one after another. The ultimate all-round workout.',
@@ -218,6 +223,10 @@ const es: UIStrings = {
   timePrepName: 'Preposiciones de tiempo',
   timePrepDesc: 'Domina om, op e in para horas, días y meses — además de na, tijdens, sinds, tot y over.',
   timePrepTitle: 'Preposiciones de tiempo',
+  expressionsName: 'Expresiones idiomáticas',
+  expressionsDesc: 'Completa expresiones neerlandesas: in de gaten houden, de spijker op z’n kop slaan y más.',
+  expressionsTitle: 'Expresiones idiomáticas',
+  expressionsPrompt: 'Completa la expresión',
   mixName: 'Práctica mixta',
   mixDesc: 'Un ejercicio al azar de cada tema, uno tras otro. El entrenamiento completo definitivo.',
   mixTitle: 'Práctica mixta',

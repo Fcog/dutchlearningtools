@@ -12,6 +12,7 @@ import type { DirectionalExercise } from '../../data/directionalAdverbs';
 import type { FromToExercise } from '../../data/fromToAdverbs';
 import type { PrepositionExercise } from '../../data/prepositionExercises';
 import type { TimeExercise } from '../../data/timeExercises';
+import type { ExpressionExercise } from '../../data/expressionExercises';
 import type { ArticleNoun, Article } from '../../data/articleNouns';
 import type { PluralNoun } from '../../data/pluralNouns';
 import type { WordOrderSentence } from '../../data/wordOrderSentences';
@@ -66,6 +67,7 @@ interface PoolData {
   fromToExercises: FromToExercise[];
   prepositionExercises: PrepositionExercise[];
   timeExercises: TimeExercise[];
+  expressionExercises: ExpressionExercise[];
   articleNouns: ArticleNoun[];
   pluralNouns: PluralNoun[];
   wordOrderSentences: WordOrderSentence[];
@@ -106,6 +108,7 @@ export function buildMixPool(d: PoolData): MixEntry[] {
     [d.fromToExercises, 'from-to', 'from-to', 'ft'],
     [d.prepositionExercises, 'preposition', 'preposition', 'prep'],
     [d.timeExercises, 'time-prep', 'time-prep', 'time'],
+    [d.expressionExercises, 'expression', 'expression', 'expr'],
   ];
   choiceSrc.forEach(([list, progressType, topic, prefix]) =>
     list.forEach((ex, i) =>
