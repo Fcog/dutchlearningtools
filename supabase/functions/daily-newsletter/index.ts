@@ -139,10 +139,28 @@ async function sendEmail(to: string, subject: string, html: string) {
   if (!res.ok) throw new Error(`Resend ${res.status}: ${await res.text()}`);
 }
 
-Deno.serve(async () => {
+Deno.serve(async (req) => {
   try {
     const daily = await exerciseOfTheDay();
     if (!daily) return Response.json({ ok: false, error: 'no-exercises' }, { status: 500 });
+
+    // Idempotency guard: atomically claim today's send. The UPDATE only affects
+    // the row while sent_at IS NULL, so exactly one invocation per day "wins" and
+    // proceeds; any later invocation gets zero rows back and skips sending.
+    // Pass ?force=1 to bypass (for testing).
+    const force = new URL(req.url).searchParams.get('force') === '1';
+    if (!force) {
+      const day = new Date().toISOString().slice(0, 10);
+      const { data: claim } = await admin
+        .from('daily_exercise')
+        .update({ sent_at: new Date().toISOString() })
+        .eq('day', day)
+        .is('sent_at', null)
+        .select('day');
+      if (!claim || claim.length === 0) {
+        return Response.json({ ok: true, skipped: 'already-sent-today', exercise: { type: daily.type, id: daily.id } });
+      }
+    }
 
     const { data: subs } = await admin
       .from('newsletter_subscriptions')
