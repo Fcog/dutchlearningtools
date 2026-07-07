@@ -8,6 +8,7 @@ import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
+import { SpeakButton } from '../components/SpeakButton';
 
 interface Token { word: string; id: number }
 
@@ -26,16 +27,6 @@ function randomIndex(exclude: number, total: number) {
   return i;
 }
 
-function speakText(text: string, onEnd: () => void) {
-  window.speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'nl-NL';
-  u.rate = 0.9;
-  u.onend = onEnd;
-  u.onerror = onEnd;
-  window.speechSynthesis.speak(u);
-}
-
 export default function WordOrderPage() {
   const { wordOrderSentences, loading, error } = useAppData();
   const [index, setIndex] = useRandomStartIndex(wordOrderSentences.length);
@@ -44,7 +35,6 @@ export default function WordOrderPage() {
   const [checked, setChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
-  const [speaking, setSpeaking] = useState(false);
   const { lang } = useLanguage();
   const ui = useUI();
   const { recordAnswer } = useProgress();
@@ -71,12 +61,7 @@ export default function WordOrderPage() {
     setPlaced([]);
     setChecked(false);
     setIsCorrect(false);
-    setSpeaking(false);
   }, [tokens]);
-
-  useEffect(() => {
-    return () => { window.speechSynthesis.cancel(); };
-  }, [index]);
 
   const placeToken = useCallback((pos: number) => {
     if (checked) return;
@@ -107,28 +92,16 @@ export default function WordOrderPage() {
   }, [checked, placed, tokens, current, recordAnswer]);
 
   const next = useCallback(() => {
-    window.speechSynthesis.cancel();
     // Clear immediately so the intermediate render (before useEffect fires) is safe.
     // tokens recomputes synchronously when index changes; placed must be empty by then.
     setPlaced([]);
     setBank([]);
     setChecked(false);
     setIsCorrect(false);
-    setSpeaking(false);
     setIndex(i => randomIndex(i, wordOrderSentences.length));
   }, [wordOrderSentences.length]);
 
   useAdvanceOnEnter(checked, next);
-
-  const handleSpeak = useCallback(() => {
-    if (speaking) {
-      window.speechSynthesis.cancel();
-      setSpeaking(false);
-      return;
-    }
-    setSpeaking(true);
-    speakText(current.words.join(' '), () => setSpeaking(false));
-  }, [speaking, current.words]);
 
   const displayTranslation = lang === 'es'
     ? (current.translations?.es ?? current.english)
@@ -346,14 +319,7 @@ export default function WordOrderPage() {
                 <span className="result-tip">{explanation}</span>
               </p>
               <div className="wo-result-footer">
-                <button
-                  className={`speak-btn${speaking ? ' speaking' : ''}`}
-                  onClick={handleSpeak}
-                  aria-label={speaking ? ui.stop : ui.readAloud}
-                  title={speaking ? ui.stop : ui.readAloud}
-                >
-                  {speaking ? '■' : '🔊'}
-                </button>
+                <SpeakButton key={index} text={() => current.words.join(' ')} />
                 <button className="next-btn" onClick={next}>{ui.next}</button>
               </div>
             </div>

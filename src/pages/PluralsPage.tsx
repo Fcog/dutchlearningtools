@@ -8,22 +8,13 @@ import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
+import { SpeakButton } from '../components/SpeakButton';
 import type { Phase } from '../types';
 
 function randomIndex(exclude: number, total: number) {
   let i: number;
   do { i = Math.floor(Math.random() * total); } while (i === exclude && total > 1);
   return i;
-}
-
-function speakText(text: string, onEnd: () => void) {
-  window.speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'nl-NL';
-  u.rate = 0.9;
-  u.onend = onEnd;
-  u.onerror = onEnd;
-  window.speechSynthesis.speak(u);
 }
 
 function normalize(s: string) {
@@ -37,7 +28,6 @@ export default function PluralsPage() {
   const [input, setInput] = useState('');
   const [isCorrect, setIsCorrect] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
-  const [speaking, setSpeaking] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const { lang } = useLanguage();
   const ui = useUI();
@@ -58,31 +48,14 @@ export default function PluralsPage() {
   }, [phase, input, current.plural, current.id, recordAnswer]);
 
   const next = useCallback(() => {
-    window.speechSynthesis.cancel();
     setIndex(i => randomIndex(i, pluralNouns.length));
     setPhase('active');
     setInput('');
     setIsCorrect(false);
-    setSpeaking(false);
     setShowHint(false);
   }, [pluralNouns.length]);
 
   useAdvanceOnEnter(phase === 'result', next);
-
-  const handleSpeak = useCallback(() => {
-    if (speaking) {
-      window.speechSynthesis.cancel();
-      setSpeaking(false);
-      return;
-    }
-    const text = phase === 'result' ? current.plural : `${current.article} ${current.singular}`;
-    setSpeaking(true);
-    speakText(text, () => setSpeaking(false));
-  }, [speaking, phase, current]);
-
-  useEffect(() => {
-    return () => { window.speechSynthesis.cancel(); };
-  }, [index]);
 
   useEffect(() => {
     if (phase === 'active') inputRef.current?.focus();
@@ -193,14 +166,7 @@ export default function PluralsPage() {
               <span className={`level-badge level-badge-${current.level.toLowerCase()}`}>
                 {current.level}
               </span>
-              <button
-                className={`speak-btn${speaking ? ' speaking' : ''}`}
-                onClick={handleSpeak}
-                aria-label={speaking ? ui.stop : ui.readAloud}
-                title={speaking ? ui.stop : ui.readAloud}
-              >
-                {speaking ? '■' : '🔊'}
-              </button>
+              <SpeakButton key={index} text={() => (phase === 'result' ? current.plural : `${current.article} ${current.singular}`)} />
             </div>
             <div className="article-prompt">
               {lang === 'es' ? '¿Cuál es el plural?' : 'What is the plural?'}

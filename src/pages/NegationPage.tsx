@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { Header } from '../components/Header';
 import { TheoryPanel } from '../components/TheoryPanel';
 import { LoadingScreen } from '../components/LoadingScreen';
+import { SpeakButton } from '../components/SpeakButton';
 import { useAppData } from '../context/DataContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
@@ -28,16 +29,6 @@ function buildNegated(ex: NegationExercise): string {
   return w.join(' ');
 }
 
-function speakText(text: string, onEnd: () => void) {
-  window.speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'nl-NL';
-  u.rate = 0.9;
-  u.onend = onEnd;
-  u.onerror = onEnd;
-  window.speechSynthesis.speak(u);
-}
-
 export default function NegationPage() {
   const { negationExercises, loading, error } = useAppData();
   const [index, setIndex] = useRandomStartIndex(negationExercises.length);
@@ -46,7 +37,6 @@ export default function NegationPage() {
   const [checked, setChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
-  const [speaking, setSpeaking] = useState(false);
   const { lang } = useLanguage();
   const ui = useUI();
   const { recordAnswer } = useProgress();
@@ -58,12 +48,7 @@ export default function NegationPage() {
     setPlaced(null);
     setChecked(false);
     setIsCorrect(false);
-    setSpeaking(false);
   }, [current?.id]);
-
-  useEffect(() => {
-    return () => { window.speechSynthesis.cancel(); };
-  }, [index]);
 
   const placeAt = useCallback((kind: 'gap' | 'replace', i: number) => {
     if (checked) return;
@@ -101,27 +86,14 @@ export default function NegationPage() {
   }, [checked, current, placed, recordAnswer]);
 
   const next = useCallback(() => {
-    window.speechSynthesis.cancel();
     setArmed(null);
     setPlaced(null);
     setChecked(false);
     setIsCorrect(false);
-    setSpeaking(false);
     setIndex(i => randomIndex(i, negationExercises.length));
   }, [negationExercises.length, setIndex]);
 
   useAdvanceOnEnter(checked, next);
-
-  const handleSpeak = useCallback(() => {
-    if (!current) return;
-    if (speaking) {
-      window.speechSynthesis.cancel();
-      setSpeaking(false);
-      return;
-    }
-    setSpeaking(true);
-    speakText(buildNegated(current), () => setSpeaking(false));
-  }, [speaking, current]);
 
   if (loading || error) return <LoadingScreen error={error} />;
   if (!current) return <LoadingScreen error="No negation exercises found." />;
@@ -349,14 +321,7 @@ export default function NegationPage() {
                 <span className="result-tip">{explanation}</span>
               </p>
               <div className="wo-result-footer">
-                <button
-                  className={`speak-btn${speaking ? ' speaking' : ''}`}
-                  onClick={handleSpeak}
-                  aria-label={speaking ? ui.stop : ui.readAloud}
-                  title={speaking ? ui.stop : ui.readAloud}
-                >
-                  {speaking ? '■' : '🔊'}
-                </button>
+                <SpeakButton key={index} text={() => negated} />
                 <button className="next-btn" onClick={next}>{ui.next}</button>
               </div>
             </div>

@@ -8,6 +8,7 @@ import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
+import { SpeakButton } from '../components/SpeakButton';
 import type { VoorstellenMeaning } from '../data/voorstellenExercises';
 
 interface Token { word: string; id: number }
@@ -27,16 +28,6 @@ function randomIndex(exclude: number, total: number) {
   return i;
 }
 
-function speakText(text: string, onEnd: () => void) {
-  window.speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'nl-NL';
-  u.rate = 0.9;
-  u.onend = onEnd;
-  u.onerror = onEnd;
-  window.speechSynthesis.speak(u);
-}
-
 export default function VoorstellenPage() {
   const { voorstellenExercises, loading, error } = useAppData();
   const [index, setIndex] = useRandomStartIndex(voorstellenExercises.length);
@@ -44,7 +35,6 @@ export default function VoorstellenPage() {
   const [checked, setChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
-  const [speaking, setSpeaking] = useState(false);
   const { lang } = useLanguage();
   const ui = useUI();
   const { recordAnswer } = useProgress();
@@ -69,12 +59,7 @@ export default function VoorstellenPage() {
     setSlots(Array(numBlanks).fill(null));
     setChecked(false);
     setIsCorrect(false);
-    setSpeaking(false);
   }, [current?.id, numBlanks]);
-
-  useEffect(() => {
-    return () => { window.speechSynthesis.cancel(); };
-  }, [index]);
 
   const placeToken = useCallback((pos: number) => {
     if (checked) return;
@@ -113,26 +98,13 @@ export default function VoorstellenPage() {
   }, [checked, current, slots, tokens, recordAnswer]);
 
   const next = useCallback(() => {
-    window.speechSynthesis.cancel();
     setSlots([]);
     setChecked(false);
     setIsCorrect(false);
-    setSpeaking(false);
     setIndex(i => randomIndex(i, voorstellenExercises.length));
   }, [voorstellenExercises.length, setIndex]);
 
   useAdvanceOnEnter(checked, next);
-
-  const handleSpeak = useCallback(() => {
-    if (!current) return;
-    if (speaking) {
-      window.speechSynthesis.cancel();
-      setSpeaking(false);
-      return;
-    }
-    setSpeaking(true);
-    speakText(current.dutch, () => setSpeaking(false));
-  }, [speaking, current]);
 
   if (loading || error) return <LoadingScreen error={error} />;
   if (!current) return <LoadingScreen error="No voorstellen exercises found." />;
@@ -369,14 +341,7 @@ export default function VoorstellenPage() {
                 <span className="result-tip">{explanation}</span>
               </p>
               <div className="wo-result-footer">
-                <button
-                  className={`speak-btn${speaking ? ' speaking' : ''}`}
-                  onClick={handleSpeak}
-                  aria-label={speaking ? ui.stop : ui.readAloud}
-                  title={speaking ? ui.stop : ui.readAloud}
-                >
-                  {speaking ? '■' : '🔊'}
-                </button>
+                <SpeakButton key={index} text={() => current.dutch} />
                 <button className="next-btn" onClick={next}>{ui.next}</button>
               </div>
             </div>

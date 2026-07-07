@@ -1,7 +1,8 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 import { Header } from '../components/Header';
 import { TheoryPanel } from '../components/TheoryPanel';
 import { LoadingScreen } from '../components/LoadingScreen';
+import { SpeakButton } from '../components/SpeakButton';
 import { useAppData } from '../context/DataContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
@@ -17,16 +18,6 @@ function randomIndex(exclude: number, total: number) {
   return i;
 }
 
-function speak(text: string, onEnd: () => void) {
-  window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = 'nl-NL';
-  utterance.rate = 0.9;
-  utterance.onend = onEnd;
-  utterance.onerror = onEnd;
-  window.speechSynthesis.speak(utterance);
-}
-
 const ARTICLES: Article[] = ['de', 'het'];
 
 export default function ArticlesPage() {
@@ -35,7 +26,6 @@ export default function ArticlesPage() {
   const [phase, setPhase] = useState<Phase>('active');
   const [selected, setSelected] = useState<Article | null>(null);
   const [score, setScore] = useState({ correct: 0, total: 0 });
-  const [speaking, setSpeaking] = useState(false);
   const { lang } = useLanguage();
   const ui = useUI();
   const { recordAnswer } = useProgress();
@@ -55,32 +45,12 @@ export default function ArticlesPage() {
   }, [phase, current.article, current.id, recordAnswer]);
 
   const next = useCallback(() => {
-    window.speechSynthesis.cancel();
     setIndex(i => randomIndex(i, articleNouns.length));
     setPhase('active');
     setSelected(null);
-    setSpeaking(false);
   }, [articleNouns.length]);
 
   useAdvanceOnEnter(phase === 'result', next);
-
-  const handleSpeak = useCallback(() => {
-    if (speaking) {
-      window.speechSynthesis.cancel();
-      setSpeaking(false);
-      return;
-    }
-    const text = phase === 'result'
-      ? `${current.article} ${current.noun}`
-      : current.noun;
-    setSpeaking(true);
-    speak(text, () => setSpeaking(false));
-  }, [speaking, phase, current.article, current.noun]);
-
-  // Stop speech when index changes
-  useEffect(() => {
-    return () => { window.speechSynthesis.cancel(); };
-  }, [index]);
 
   const displayTranslation = lang === 'es'
     ? (current.translations?.es ?? current.english)
@@ -156,14 +126,7 @@ export default function ArticlesPage() {
               <span className={`level-badge level-badge-${current.level.toLowerCase()}`}>
                 {current.level}
               </span>
-              <button
-                className={`speak-btn${speaking ? ' speaking' : ''}`}
-                onClick={handleSpeak}
-                aria-label={speaking ? ui.stop : ui.readAloud}
-                title={speaking ? ui.stop : ui.readAloud}
-              >
-                {speaking ? '■' : '🔊'}
-              </button>
+              <SpeakButton key={index} text={() => (phase === 'result' ? `${current.article} ${current.noun}` : current.noun)} />
             </div>
             <div className="article-prompt">
               {lang === 'es' ? '¿Cuál es el artículo?' : 'Which article?'}
