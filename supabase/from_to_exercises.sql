@@ -31,4 +31,4 @@ ALTER TABLE user_progress
 
 ALTER TABLE user_progress
   ADD CONSTRAINT user_progress_exercise_type_check
-  CHECK (exercise_type IN ('verb', 'separable', 'positional', 'directional', 'from-to', 'article', 'plural', 'word-order'));
+  CHECK (exercise_type IN ('verb', 'separable', 'positional', 'directional', 'from-to', 'article', 'plural', 'word-order', 'voorstellen', 'negation', 'preposition', 'time-prep', 'expression', 'adjective'));
