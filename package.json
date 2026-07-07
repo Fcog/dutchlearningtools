@@ -16,7 +16,8 @@
     "migrate-negation": "npx tsx --env-file=.env scripts/migrate-negation.ts",
     "migrate-prepositions": "npx tsx --env-file=.env scripts/migrate-prepositions.ts",
     "migrate-time-prepositions": "npx tsx --env-file=.env scripts/migrate-time-prepositions.ts",
-    "migrate-expressions": "npx tsx --env-file=.env scripts/migrate-expressions.ts"
+    "migrate-expressions": "npx tsx --env-file=.env scripts/migrate-expressions.ts",
+    "migrate-adjectives": "npx tsx --env-file=.env scripts/migrate-adjectives.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",

@@ -18,6 +18,8 @@ import PrepositionsPage from './pages/PrepositionsPage';
 import TimePrepositionsPage from './pages/TimePrepositionsPage';
 import MixPage from './pages/MixPage';
 import ExpressionsPage from './pages/ExpressionsPage';
+import AdjectivesHubPage from './pages/AdjectivesHubPage';
+import AdjectivesExercisePage from './pages/AdjectivesExercisePage';
 import AccountPage from './pages/AccountPage';
 import SingleExercisePage from './pages/SingleExercisePage';
 import UnsubscribePage from './pages/UnsubscribePage';
@@ -57,6 +59,8 @@ export default function App() {
       <Route path="/prepositions" element={<PrepositionsPage />} />
       <Route path="/time-prepositions" element={<TimePrepositionsPage />} />
       <Route path="/expressions" element={<ExpressionsPage />} />
+      <Route path="/adjectives" element={<AdjectivesHubPage />} />
+      <Route path="/adjectives/:kind" element={<AdjectivesExercisePage />} />
       <Route path="/mix" element={<MixPage />} />
       <Route path="/account" element={<AccountPage />} />
       <Route path="/exercise/:type/:id" element={<SingleExercisePage />} />

@@ -151,12 +151,18 @@ Deno.serve(async (req) => {
     const force = new URL(req.url).searchParams.get('force') === '1';
     if (!force) {
       const day = new Date().toISOString().slice(0, 10);
-      const { data: claim } = await admin
+      const { data: claim, error: claimErr } = await admin
         .from('daily_exercise')
         .update({ sent_at: new Date().toISOString() })
         .eq('day', day)
         .is('sent_at', null)
         .select('day');
+      // A DB error (e.g. the sent_at column/migration is missing) must NOT be
+      // mistaken for "already sent" — surface it instead of silently skipping.
+      if (claimErr) {
+        console.error('send-claim failed', claimErr);
+        return Response.json({ ok: false, error: `claim: ${claimErr.message}` }, { status: 500 });
+      }
       if (!claim || claim.length === 0) {
         return Response.json({ ok: true, skipped: 'already-sent-today', exercise: { type: daily.type, id: daily.id } });
       }

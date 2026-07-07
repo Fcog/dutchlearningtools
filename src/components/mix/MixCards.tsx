@@ -1,6 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
 import { SentenceCard } from '../SentenceCard';
 import { ConjugationInput } from '../ConjugationInput';
+import { SpeakButton } from '../SpeakButton';
 import { useLanguage } from '../../context/LanguageContext';
 import { useUI } from '../../i18n/ui';
 import { useAdvanceOnEnter } from '../../hooks/useAdvanceOnEnter';
@@ -301,6 +302,7 @@ export function ArticleCard({ data, onResult, onNext }: CardProps<ArticleNoun>) 
       <div className="article-card">
         <div className="article-card-top">
           <span className={`level-badge level-badge-${data.level.toLowerCase()}`}>{data.level}</span>
+          <SpeakButton text={() => (done ? `${data.article} ${data.noun}` : data.noun)} />
         </div>
         <div className="article-prompt">{lang === 'es' ? '¿Cuál es el artículo?' : 'Which article?'}</div>
         <div className="article-noun">
@@ -359,6 +361,7 @@ export function PluralCard({ data, onResult, onNext }: CardProps<PluralNoun>) {
       <div className="article-card">
         <div className="article-card-top">
           <span className={`level-badge level-badge-${data.level.toLowerCase()}`}>{data.level}</span>
+          <SpeakButton text={() => (done ? data.plural : `${data.article} ${data.singular}`)} />
         </div>
         <div className="article-prompt">{lang === 'es' ? '¿Cuál es el plural?' : 'What is the plural?'}</div>
         <div className="article-noun">
@@ -426,6 +429,7 @@ export function WordOrderCard({ data, onResult, onNext }: CardProps<WordOrderSen
       <div className="wo-card">
         <div className="article-card-top">
           <span className={`level-badge level-badge-${data.level.toLowerCase()}`}>{data.level}</span>
+          <SpeakButton text={() => data.words.join(' ')} />
         </div>
         <p className="word-order-prompt">{ui.wordOrderPrompt}</p>
         <p className="word-order-english">{lang === 'es' ? (data.translations?.es ?? data.english) : data.english}</p>
@@ -499,6 +503,7 @@ export function VoorstellenCard({ data, onResult, onNext }: CardProps<Voorstelle
       <div className="wo-card">
         <div className="article-card-top">
           <span className={`level-badge level-badge-${data.level.toLowerCase()}`}>{data.level}</span>
+          <SpeakButton text={() => data.dutch} />
         </div>
         <p className="word-order-prompt">{ui.voorstellenPrompt}</p>
         <p className="word-order-english">{displayTranslation}</p>
@@ -595,6 +600,7 @@ export function NegationCard({ data, onResult, onNext }: CardProps<NegationExerc
         <div className="article-card-top">
           <span className={`level-badge level-badge-${data.level.toLowerCase()}`}>{data.level}</span>
           {done && <span className="wo-rule-badge">{data.negator}</span>}
+          <SpeakButton text={() => (done ? negated : data.words.join(' '))} />
         </div>
         <p className="word-order-prompt">{ui.negationPrompt}</p>
         <p className="word-order-english">{lang === 'es' ? (data.translations?.es ?? data.english) : data.english}</p>

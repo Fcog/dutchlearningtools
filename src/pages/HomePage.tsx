@@ -175,6 +175,16 @@ export default function HomePage() {
             </div>
             <span className="module-arrow">→</span>
           </Link>
+
+          <Link to="/adjectives" className="module-card">
+            <div className="module-icon">📐</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.adjectivesName}</h3>
+              <p className="module-desc">{ui.adjectivesDesc}</p>
+              <StatsLine type="adjective" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
         </div>
       </main>
       <Footer />
