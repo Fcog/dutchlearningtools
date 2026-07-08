@@ -1775,6 +1775,87 @@ body {
     font-weight: 700;
 }
 
+/* ── homepage newsletter CTA ─────────────────────────────────────────────── */
+.nl-cta {
+    position: relative;
+    max-width: 720px;
+    margin: 0 auto 1.25rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1.25rem;
+    padding: 1rem 2.25rem 1rem 1.25rem;
+    border: 1.5px solid var(--primary);
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, #eff6ff, var(--surface));
+}
+
+.nl-cta-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.6rem;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+.nl-cta-close:hover { color: var(--text); }
+
+.nl-cta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+.nl-cta-title { font-weight: 700; }
+.nl-cta-sub { font-size: 0.88rem; color: var(--text-light); }
+
+.nl-cta-form {
+    display: flex;
+    gap: 0.5rem;
+    flex: 1 1 260px;
+    justify-content: flex-end;
+}
+
+.nl-cta-hp {
+    display: none;
+}
+
+.nl-cta-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 240px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text);
+}
+.nl-cta-input:focus { outline: none; border-color: var(--primary); }
+
+.nl-cta-btn {
+    flex: none;
+    padding: 0.5rem 1.1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: inherit;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+.nl-cta-btn:disabled { opacity: 0.6; cursor: default; }
+
+.nl-cta-success { margin: 0; font-weight: 600; color: var(--success); }
+.nl-cta-error { flex-basis: 100%; margin: 0; font-size: 0.85rem; color: var(--error); text-align: right; }
+
 /* ── Plural forms exercise ───────────────────────────────────────────── */
 .plural-article {
     color: var(--text-muted);

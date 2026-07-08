@@ -9,7 +9,7 @@ mimics the exercise and links back to the site to answer it.
 - **Edge function**: `functions/daily-newsletter` picks the global exercise of the day and sends it via Resend.
 
 ## 1. Database
-Run `newsletter.sql` in the Supabase SQL editor.
+Run `newsletter.sql` in the Supabase SQL editor. For the homepage sign-up CTA also run `newsletter_signups.sql` (public sign-ups table + confirm/unsubscribe RPCs).
 
 ## 2. Email provider (Resend)
 1. Create a Resend account and **verify your sending domain** (add the SPF/DKIM DNS records Resend gives you). Deliverability depends on this.
@@ -20,11 +20,17 @@ Run `newsletter.sql` in the Supabase SQL editor.
 ## 3. Deploy the function + secrets
 ```bash
 supabase functions deploy daily-newsletter --no-verify-jwt
+supabase functions deploy newsletter-subscribe --no-verify-jwt   # homepage CTA sign-ups
 supabase secrets set \
   RESEND_API_KEY=re_xxx \
   FROM_EMAIL="Dutch Tools <daily@yourdomain.com>" \
   SITE_URL="https://yourdomain.com"
 ```
+
+The homepage CTA calls `newsletter-subscribe`, which uses double opt-in: it stores the
+email unconfirmed, emails a confirmation link (`/confirm-newsletter?token=…`), and the
+daily send only goes to **confirmed** sign-ups. Anti-abuse: honeypot field, server-side
+email validation, per-IP rate limiting (5/hour), and a unique-email constraint.
 `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are injected automatically.
 
 Test it once (it will pick today's exercise and email current opt-ins):

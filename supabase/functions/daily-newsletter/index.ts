@@ -178,13 +178,23 @@ Deno.serve(async (req) => {
       }
     }
 
-    const { data: subs } = await admin
+    // Recipients: logged-in opt-ins + confirmed public sign-ups from the CTA.
+    const { data: optIns } = await admin
       .from('newsletter_subscriptions')
       .select('email, lang, unsubscribe_token')
       .eq('opted_in', true);
+    const { data: signups } = await admin
+      .from('newsletter_signups')
+      .select('email, lang, unsubscribe_token')
+      .eq('confirmed', true)
+      .eq('unsubscribed', false);
+
+    // De-dupe by email (a user could be in both lists).
+    const recipients = new Map<string, { email: string; lang: string; unsubscribe_token: string }>();
+    for (const r of [...(optIns ?? []), ...(signups ?? [])]) recipients.set(r.email.toLowerCase(), r);
 
     let sent = 0, failed = 0;
-    for (const s of subs ?? []) {
+    for (const s of recipients.values()) {
       try {
         const { subject, html } = renderEmail(daily.type, daily.row, (s.lang === 'es' ? 'es' : 'en'), s.unsubscribe_token);
         await sendEmail(s.email, subject, html);
@@ -195,7 +205,7 @@ Deno.serve(async (req) => {
       }
     }
 
-    return Response.json({ ok: true, exercise: { type: daily.type, id: daily.id }, subscribers: subs?.length ?? 0, sent, failed });
+    return Response.json({ ok: true, exercise: { type: daily.type, id: daily.id }, subscribers: recipients.size, sent, failed });
   } catch (e) {
     console.error(e);
     return Response.json({ ok: false, error: String(e) }, { status: 500 });

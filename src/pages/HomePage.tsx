@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { NewsletterCta } from '../components/NewsletterCta';
 import { useUI } from '../i18n/ui';
 import { useProgress, type ExerciseType, type ModuleStats } from '../hooks/useProgress';
 import { useAuth } from '../context/AuthContext';
@@ -31,6 +32,7 @@ export default function HomePage() {
     <div className="app">
       <Header />
       <main className="main home-main">
+        <NewsletterCta />
         <div className="home-hero">
           <h2 className="home-title">{ui.practiceQuestion}</h2>
           <p className="home-subtitle">{ui.chooseTopic}</p>
