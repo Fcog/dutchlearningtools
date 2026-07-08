@@ -1856,6 +1856,27 @@ body {
 .nl-cta-success { margin: 0; font-weight: 600; color: var(--success); }
 .nl-cta-error { flex-basis: 100%; margin: 0; font-size: 0.85rem; color: var(--error); text-align: right; }
 
+/* ── 404 ─────────────────────────────────────────────────────────────────── */
+.notfound {
+    max-width: 480px;
+    margin: 3rem auto;
+    text-align: center;
+}
+.notfound-code {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--primary);
+}
+.notfound-title {
+    font-size: 1.4rem;
+    margin: 0.5rem 0 0.25rem;
+}
+.notfound-text {
+    color: var(--text-light);
+    margin: 0 0 1.5rem;
+}
+
 /* ── Plural forms exercise ───────────────────────────────────────────── */
 .plural-article {
     color: var(--text-muted);

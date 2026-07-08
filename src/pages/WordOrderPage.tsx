@@ -33,11 +33,10 @@ export default function WordOrderPage() {
   const ui = useUI();
   const { recordAnswer } = useProgress();
 
-  if (loading || error) return <LoadingScreen error={error} />;
-
   const current = wordOrderSentences[index];
 
   const tokens = useMemo<Token[]>(() => {
+    if (!current) return [];
     const base = current.words.map((word, i) => ({ word, id: i }));
     let shuffled = shuffle(base);
     while (
@@ -48,7 +47,7 @@ export default function WordOrderPage() {
     }
     return shuffled;
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [current.id]);
+  }, [current?.id]);
 
   useEffect(() => {
     setBank(tokens.map((_, i) => i));
@@ -76,7 +75,7 @@ export default function WordOrderPage() {
   }, [checked, tokens]);
 
   const check = useCallback(() => {
-    if (checked || placed.length !== tokens.length) return;
+    if (checked || !current || placed.length !== tokens.length) return;
     const userSentence = placed.map(pos => tokens[pos].word).join(' ');
     const correct = userSentence === current.words.join(' ');
     setIsCorrect(correct);
@@ -96,6 +95,9 @@ export default function WordOrderPage() {
   }, [advance]);
 
   useAdvanceOnEnter(checked, next);
+
+  if (loading || error) return <LoadingScreen error={error} />;
+  if (!current) return <LoadingScreen error="No word order sentences found." />;
 
   const displayTranslation = lang === 'es'
     ? (current.translations?.es ?? current.english)

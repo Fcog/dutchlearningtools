@@ -25,6 +25,7 @@ import AccountPage from './pages/AccountPage';
 import SingleExercisePage from './pages/SingleExercisePage';
 import UnsubscribePage from './pages/UnsubscribePage';
 import ConfirmNewsletterPage from './pages/ConfirmNewsletterPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 declare global {
   function gtag(...args: unknown[]): void;
@@ -70,6 +71,7 @@ export default function App() {
       <Route path="/exercise/:type/:id" element={<SingleExercisePage />} />
       <Route path="/unsubscribe" element={<UnsubscribePage />} />
       <Route path="/confirm-newsletter" element={<ConfirmNewsletterPage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
     </>
   );

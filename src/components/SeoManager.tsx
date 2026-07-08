@@ -47,7 +47,8 @@ function resolve(pathname: string): Meta {
   if (ROUTES[pathname]) return ROUTES[pathname];
   if (pathname.startsWith('/adjectives/')) return ROUTES['/adjectives'];
   if (pathname.startsWith('/exercise/')) return { title: 'Exercise', noindex: true };
-  return { title: BRAND };
+  return { title: 'Page not found', noindex: true }; // catch-all / 404
+
 }
 
 export function SeoManager() {

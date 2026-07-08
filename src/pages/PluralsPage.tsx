@@ -28,19 +28,17 @@ export default function PluralsPage() {
   const { recordAnswer } = useProgress();
   const inputRef = useRef<HTMLInputElement>(null);
 
-  if (loading || error) return <LoadingScreen error={error} />;
-
   const current = pluralNouns[index];
 
   const check = useCallback(() => {
-    if (phase !== 'active' || !input.trim()) return;
+    if (phase !== 'active' || !current || !input.trim()) return;
     // Plurals always take the article "de" — require it in the answer.
     const correct = normalize(input) === normalize(`de ${current.plural}`);
     setIsCorrect(correct);
     setPhase('result');
     setScore(s => ({ correct: s.correct + (correct ? 1 : 0), total: s.total + 1 }));
     recordAnswer(current.id, 'plural', correct);
-  }, [phase, input, current.plural, current.id, recordAnswer]);
+  }, [phase, input, current, recordAnswer]);
 
   const next = useCallback(() => {
     advance();
@@ -55,6 +53,9 @@ export default function PluralsPage() {
   useEffect(() => {
     if (phase === 'active') inputRef.current?.focus();
   }, [phase, index]);
+
+  if (loading || error) return <LoadingScreen error={error} />;
+  if (!current) return <LoadingScreen error="No plural nouns found." />;
 
   const displayTranslation = lang === 'es'
     ? (current.translations?.es ?? current.english)

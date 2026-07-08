@@ -24,19 +24,17 @@ export default function ArticlesPage() {
   const ui = useUI();
   const { recordAnswer } = useProgress();
 
-  if (loading || error) return <LoadingScreen error={error} />;
-
   const current = articleNouns[index];
-  const isCorrect = selected !== null && selected === current.article;
+  const isCorrect = selected !== null && !!current && selected === current.article;
 
   const pick = useCallback((article: Article) => {
-    if (phase !== 'active') return;
+    if (phase !== 'active' || !current) return;
     const correct = article === current.article;
     setSelected(article);
     setPhase('result');
     setScore(s => ({ correct: s.correct + (correct ? 1 : 0), total: s.total + 1 }));
     recordAnswer(current.id, 'article', correct);
-  }, [phase, current.article, current.id, recordAnswer]);
+  }, [phase, current, recordAnswer]);
 
   const next = useCallback(() => {
     advance();
@@ -45,6 +43,10 @@ export default function ArticlesPage() {
   }, [advance]);
 
   useAdvanceOnEnter(phase === 'result', next);
+
+  // Early returns after all hooks (keeps hook order stable on direct load).
+  if (loading || error) return <LoadingScreen error={error} />;
+  if (!current) return <LoadingScreen error="No article nouns found." />;
 
   const displayTranslation = lang === 'es'
     ? (current.translations?.es ?? current.english)

@@ -57,14 +57,13 @@ export default function SeparableVerbsPage() {
   const ui = useUI();
   const { recordAnswer } = useProgress();
 
-  if (loading || error) return <LoadingScreen error={error} />;
-
+  // Derived (nullable) — all hooks below run unconditionally so early returns
+  // never change the hook count between renders (React error #310).
   const verbSet = order.length ? separableVerbSets[order[verbIdx % order.length]] : undefined;
-  if (!verbSet) return <LoadingScreen error="No separable verbs found." />;
-  const exercise = verbSet.exercises[ctxIdx];
+  const exercise = verbSet?.exercises[ctxIdx];
 
   const submit = useCallback(() => {
-    if (!userInput.trim()) return;
+    if (!exercise || !userInput.trim()) return;
     const correct =
       userInput.trim().toLowerCase() === exercise.answer.toLowerCase();
     setIsCorrect(correct);
@@ -74,7 +73,7 @@ export default function SeparableVerbsPage() {
       total: s.total + 1,
     }));
     recordAnswer(exercise.id, 'separable', correct);
-  }, [userInput, exercise.answer, exercise.id, recordAnswer]);
+  }, [userInput, exercise, recordAnswer]);
 
   const next = useCallback(() => {
     if (ctxIdx < 3) {
@@ -89,6 +88,9 @@ export default function SeparableVerbsPage() {
   }, [ctxIdx]);
 
   useAdvanceOnEnter(phase === "result", next);
+
+  if (loading || error) return <LoadingScreen error={error} />;
+  if (!verbSet || !exercise) return <LoadingScreen error="No separable verbs found." />;
 
   const exerciseForCard = {
     dutch: exercise.dutch,

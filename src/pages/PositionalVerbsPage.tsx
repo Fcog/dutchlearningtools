@@ -24,13 +24,11 @@ export default function PositionalVerbsPage() {
   const ui = useUI();
   const { recordAnswer } = useProgress();
 
-  if (loading || error) return <LoadingScreen error={error} />;
-
   const current = positionalExercises[index];
-  const isCorrect = selected !== null && selected === current.verb;
+  const isCorrect = selected !== null && !!current && selected === current.verb;
 
   const select = useCallback((verb: PositionalVerb) => {
-    if (phase !== 'active') return;
+    if (phase !== 'active' || !current) return;
     const correct = verb === current.verb;
     setSelected(verb);
     setPhase('result');
@@ -39,7 +37,7 @@ export default function PositionalVerbsPage() {
       total: s.total + 1,
     }));
     recordAnswer(current.id, 'positional', correct);
-  }, [phase, current.verb, current.id, recordAnswer]);
+  }, [phase, current, recordAnswer]);
 
   const next = useCallback(() => {
     advance();
@@ -48,6 +46,10 @@ export default function PositionalVerbsPage() {
   }, [advance]);
 
   useAdvanceOnEnter(phase === 'result', next);
+
+  // Early returns after all hooks (keeps hook order stable on direct load).
+  if (loading || error) return <LoadingScreen error={error} />;
+  if (!current) return <LoadingScreen error="No positional exercises found." />;
 
   const exerciseForCard = {
     dutch: current.dutch,
