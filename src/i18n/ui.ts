@@ -56,7 +56,7 @@ const en = {
   pluralsName: 'Plural Forms',
   pluralsDesc: 'Type the correct plural of 70+ Dutch nouns — covering -en, -s, -eren, and irregular forms.',
   pluralsTitle: 'Plural Forms',
-  typePlural: 'Type the plural form…',
+  typePlural: 'Type the plural with its article, e.g. de …',
   showHint: 'Hint',
   hideHint: 'Hide hint',
   // Home page — word order module
@@ -212,7 +212,7 @@ const es: UIStrings = {
   pluralsName: 'Formas del plural',
   pluralsDesc: 'Escribe el plural correcto de más de 70 sustantivos neerlandeses — -en, -s, -eren e irregulares.',
   pluralsTitle: 'Formas del plural',
-  typePlural: 'Escribe la forma en plural…',
+  typePlural: 'Escribe el plural con su artículo, p. ej. de …',
   showHint: 'Pista',
   hideHint: 'Ocultar pista',
   wordOrderName: 'Orden de palabras',

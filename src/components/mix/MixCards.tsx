@@ -344,7 +344,9 @@ export function PluralCard({ data, onResult, onNext }: CardProps<PluralNoun>) {
   const ui = useUI();
   const [input, setInput] = useState('');
   const [done, setDone] = useState(false);
-  const isCorrect = input.trim().toLowerCase() === data.plural.trim().toLowerCase();
+  // Plurals always take the article "de" — require it in the answer.
+  const norm = (s: string) => s.trim().toLowerCase().replace(/\s+/g, ' ');
+  const isCorrect = norm(input) === norm(`de ${data.plural}`);
   useAdvanceOnEnter(done, onNext);
 
   const translation = lang === 'es' ? (data.translations?.es ?? data.english) : data.english;
@@ -353,7 +355,7 @@ export function PluralCard({ data, onResult, onNext }: CardProps<PluralNoun>) {
   const submit = () => {
     if (done || !input.trim()) return;
     setDone(true);
-    onResult(input.trim().toLowerCase() === data.plural.trim().toLowerCase());
+    onResult(norm(input) === norm(`de ${data.plural}`));
   };
 
   return (

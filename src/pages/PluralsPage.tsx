@@ -18,7 +18,7 @@ function randomIndex(exclude: number, total: number) {
 }
 
 function normalize(s: string) {
-  return s.trim().toLowerCase();
+  return s.trim().toLowerCase().replace(/\s+/g, ' ');
 }
 
 export default function PluralsPage() {
@@ -40,7 +40,8 @@ export default function PluralsPage() {
 
   const check = useCallback(() => {
     if (phase !== 'active' || !input.trim()) return;
-    const correct = normalize(input) === normalize(current.plural);
+    // Plurals always take the article "de" — require it in the answer.
+    const correct = normalize(input) === normalize(`de ${current.plural}`);
     setIsCorrect(correct);
     setPhase('result');
     setScore(s => ({ correct: s.correct + (correct ? 1 : 0), total: s.total + 1 }));
@@ -169,7 +170,7 @@ export default function PluralsPage() {
               <SpeakButton key={index} text={() => (phase === 'result' ? current.plural : `${current.article} ${current.singular}`)} />
             </div>
             <div className="article-prompt">
-              {lang === 'es' ? '¿Cuál es el plural?' : 'What is the plural?'}
+              {lang === 'es' ? '¿Cuál es el plural? (con artículo)' : 'What is the plural? (with article)'}
             </div>
             <div className="article-noun">
               <span className="plural-article">{current.article}</span>{' '}
