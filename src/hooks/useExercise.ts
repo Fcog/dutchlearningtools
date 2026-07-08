@@ -1,5 +1,7 @@
-import { useState, useCallback, useMemo, useEffect } from 'react';
+import { useState, useCallback, useMemo, useEffect, useRef } from 'react';
 import type { Verb, Exercise, Phase, Level, Tense } from '../types';
+
+interface Pair { verb: Verb; exercise: Exercise }
 
 interface ExerciseState {
   verb: Verb;
@@ -24,27 +26,29 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function buildExercise(
-  verbs: Verb[],
-  selectedLevels: Level[],
-  selectedTenses: Tense[],
-): ExerciseState | null {
-  const pool = verbs.filter(
-    (v) =>
-      selectedLevels.includes(v.level) &&
-      v.exercises.some((e) => selectedTenses.includes(e.tense)),
+// Verbs that qualify for the current filters (used as the distractor pool).
+function verbPool(verbs: Verb[], levels: Level[], tenses: Tense[]): Verb[] {
+  return verbs.filter(
+    (v) => levels.includes(v.level) && v.exercises.some((e) => tenses.includes(e.tense)),
   );
-  if (pool.length < 3) return null;
+}
 
-  const verb = pickRandom(pool);
-  const validExercises = verb.exercises.filter((e) => selectedTenses.includes(e.tense));
-  const exercise = pickRandom(validExercises);
-  const d1 = pickRandom(pool, [verb]);
-  const d2 = pickRandom(pool, [verb, d1]);
+// Every (verb, exercise) pair that qualifies — one deck entry each.
+function validPairs(verbs: Verb[], levels: Level[], tenses: Tense[]): Pair[] {
+  const out: Pair[] = [];
+  for (const v of verbs) {
+    if (!levels.includes(v.level)) continue;
+    for (const e of v.exercises) if (tenses.includes(e.tense)) out.push({ verb: v, exercise: e });
+  }
+  return out;
+}
 
+function stateFromPair(pair: Pair, pool: Verb[]): ExerciseState {
+  const d1 = pickRandom(pool, [pair.verb]);
+  const d2 = pickRandom(pool, [pair.verb, d1]);
   return {
-    verb,
-    exercise,
+    verb: pair.verb,
+    exercise: pair.exercise,
     distractors: [d1, d2],
     phase: 'active',
     userInput: '',
@@ -63,10 +67,24 @@ export function useExercise(
   const levelsKey = [...selectedLevels].sort().join(',');
   const tensesKey = [...selectedTenses].sort().join(',');
 
-  // Build first exercise once verbs are available, and whenever filters change
+  // A shuffled deck of (verb, exercise) pairs so nothing repeats until the whole
+  // filtered set has been shown. Rebuilt whenever the filters change.
+  const deck = useRef<Pair[]>([]);
+
+  const drawNext = useCallback((): ExerciseState | null => {
+    const pool = verbPool(verbs, selectedLevels, selectedTenses);
+    if (pool.length < 3) { deck.current = []; return null; }
+    if (deck.current.length === 0) deck.current = shuffle(validPairs(verbs, selectedLevels, selectedTenses));
+    const pair = deck.current.shift()!;
+    return stateFromPair(pair, pool);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [verbs, levelsKey, tensesKey]);
+
+  // Build first exercise once verbs are available, and whenever filters change.
   useEffect(() => {
     if (verbs.length > 0) {
-      setState(buildExercise(verbs, selectedLevels, selectedTenses));
+      deck.current = [];
+      setState(drawNext());
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [verbs.length, levelsKey, tensesKey]);
@@ -98,9 +116,8 @@ export function useExercise(
   }, []);
 
   const next = useCallback(() => {
-    setState(buildExercise(verbs, selectedLevels, selectedTenses));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [verbs, levelsKey, tensesKey]);
+    setState(drawNext());
+  }, [drawNext]);
 
   return { state, orderedChoices, score, setInput, submit, next };
 }

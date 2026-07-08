@@ -7,15 +7,9 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
-import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
+import { useExerciseDeck } from '../hooks/useExerciseDeck';
 import { SpeakButton } from '../components/SpeakButton';
 import type { Phase } from '../types';
-
-function randomIndex(exclude: number, total: number) {
-  let i: number;
-  do { i = Math.floor(Math.random() * total); } while (i === exclude && total > 1);
-  return i;
-}
 
 function normalize(s: string) {
   return s.trim().toLowerCase().replace(/\s+/g, ' ');
@@ -23,7 +17,7 @@ function normalize(s: string) {
 
 export default function PluralsPage() {
   const { pluralNouns, loading, error } = useAppData();
-  const [index, setIndex] = useRandomStartIndex(pluralNouns.length);
+  const [index, advance] = useExerciseDeck(pluralNouns.length);
   const [phase, setPhase] = useState<Phase>('active');
   const [input, setInput] = useState('');
   const [isCorrect, setIsCorrect] = useState(false);
@@ -49,12 +43,12 @@ export default function PluralsPage() {
   }, [phase, input, current.plural, current.id, recordAnswer]);
 
   const next = useCallback(() => {
-    setIndex(i => randomIndex(i, pluralNouns.length));
+    advance();
     setPhase('active');
     setInput('');
     setIsCorrect(false);
     setShowHint(false);
-  }, [pluralNouns.length]);
+  }, [advance]);
 
   useAdvanceOnEnter(phase === 'result', next);
 

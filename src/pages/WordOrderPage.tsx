@@ -7,7 +7,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
-import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
+import { useExerciseDeck } from '../hooks/useExerciseDeck';
 import { SpeakButton } from '../components/SpeakButton';
 
 interface Token { word: string; id: number }
@@ -21,15 +21,9 @@ function shuffle(arr: Token[]): Token[] {
   return a;
 }
 
-function randomIndex(exclude: number, total: number) {
-  let i: number;
-  do { i = Math.floor(Math.random() * total); } while (i === exclude && total > 1);
-  return i;
-}
-
 export default function WordOrderPage() {
   const { wordOrderSentences, loading, error } = useAppData();
-  const [index, setIndex] = useRandomStartIndex(wordOrderSentences.length);
+  const [index, advance] = useExerciseDeck(wordOrderSentences.length);
   const [bank, setBank] = useState<number[]>([]);   // positions in tokens[]
   const [placed, setPlaced] = useState<number[]>([]); // positions in tokens[], in placement order
   const [checked, setChecked] = useState(false);
@@ -98,8 +92,8 @@ export default function WordOrderPage() {
     setBank([]);
     setChecked(false);
     setIsCorrect(false);
-    setIndex(i => randomIndex(i, wordOrderSentences.length));
-  }, [wordOrderSentences.length]);
+    advance();
+  }, [advance]);
 
   useAdvanceOnEnter(checked, next);
 

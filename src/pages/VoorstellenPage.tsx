@@ -7,7 +7,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
-import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
+import { useExerciseDeck } from '../hooks/useExerciseDeck';
 import { SpeakButton } from '../components/SpeakButton';
 import type { VoorstellenMeaning } from '../data/voorstellenExercises';
 
@@ -22,15 +22,9 @@ function shuffle(arr: Token[]): Token[] {
   return a;
 }
 
-function randomIndex(exclude: number, total: number) {
-  let i: number;
-  do { i = Math.floor(Math.random() * total); } while (i === exclude && total > 1);
-  return i;
-}
-
 export default function VoorstellenPage() {
   const { voorstellenExercises, loading, error } = useAppData();
-  const [index, setIndex] = useRandomStartIndex(voorstellenExercises.length);
+  const [index, advance] = useExerciseDeck(voorstellenExercises.length);
   const [slots, setSlots] = useState<(number | null)[]>([]);
   const [checked, setChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
@@ -101,8 +95,8 @@ export default function VoorstellenPage() {
     setSlots([]);
     setChecked(false);
     setIsCorrect(false);
-    setIndex(i => randomIndex(i, voorstellenExercises.length));
-  }, [voorstellenExercises.length, setIndex]);
+    advance();
+  }, [advance]);
 
   useAdvanceOnEnter(checked, next);
 

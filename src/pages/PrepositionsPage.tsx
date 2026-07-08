@@ -9,14 +9,8 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
-import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
+import { useExerciseDeck } from '../hooks/useExerciseDeck';
 import type { PrepositionCategory } from '../data/prepositionExercises';
-
-function randomIndex(exclude: number, total: number) {
-  let i: number;
-  do { i = Math.floor(Math.random() * total); } while (i === exclude && total > 1);
-  return i;
-}
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -29,7 +23,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 export default function PrepositionsPage() {
   const { prepositionExercises, loading, error } = useAppData();
-  const [index, setIndex] = useRandomStartIndex(prepositionExercises.length);
+  const [index, advance] = useExerciseDeck(prepositionExercises.length);
   const [phase, setPhase] = useState<Phase>('active');
   const [selected, setSelected] = useState<string | null>(null);
   const [score, setScore] = useState({ correct: 0, total: 0 });
@@ -59,10 +53,10 @@ export default function PrepositionsPage() {
   }, [phase, current, recordAnswer]);
 
   const next = useCallback(() => {
-    setIndex((i) => randomIndex(i, prepositionExercises.length));
+    advance();
     setPhase('active');
     setSelected(null);
-  }, [prepositionExercises.length, setIndex]);
+  }, [advance]);
 
   useAdvanceOnEnter(phase === 'result', next);
 

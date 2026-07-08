@@ -8,21 +8,15 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
-import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
+import { useExerciseDeck } from '../hooks/useExerciseDeck';
 import type { Article } from '../data/articleNouns';
 import type { Phase } from '../types';
-
-function randomIndex(exclude: number, total: number) {
-  let i: number;
-  do { i = Math.floor(Math.random() * total); } while (i === exclude);
-  return i;
-}
 
 const ARTICLES: Article[] = ['de', 'het'];
 
 export default function ArticlesPage() {
   const { articleNouns, loading, error } = useAppData();
-  const [index, setIndex] = useRandomStartIndex(articleNouns.length);
+  const [index, advance] = useExerciseDeck(articleNouns.length);
   const [phase, setPhase] = useState<Phase>('active');
   const [selected, setSelected] = useState<Article | null>(null);
   const [score, setScore] = useState({ correct: 0, total: 0 });
@@ -45,10 +39,10 @@ export default function ArticlesPage() {
   }, [phase, current.article, current.id, recordAnswer]);
 
   const next = useCallback(() => {
-    setIndex(i => randomIndex(i, articleNouns.length));
+    advance();
     setPhase('active');
     setSelected(null);
-  }, [articleNouns.length]);
+  }, [advance]);
 
   useAdvanceOnEnter(phase === 'result', next);
 

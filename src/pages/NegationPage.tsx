@@ -8,16 +8,10 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
-import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
+import { useExerciseDeck } from '../hooks/useExerciseDeck';
 import type { NegationExercise } from '../data/negationExercises';
 
 type Placement = { word: 'niet' | 'geen'; kind: 'gap' | 'replace'; index: number };
-
-function randomIndex(exclude: number, total: number) {
-  let i: number;
-  do { i = Math.floor(Math.random() * total); } while (i === exclude && total > 1);
-  return i;
-}
 
 /** The correct negated sentence, for the reveal and text-to-speech. */
 function buildNegated(ex: NegationExercise): string {
@@ -31,7 +25,7 @@ function buildNegated(ex: NegationExercise): string {
 
 export default function NegationPage() {
   const { negationExercises, loading, error } = useAppData();
-  const [index, setIndex] = useRandomStartIndex(negationExercises.length);
+  const [index, advance] = useExerciseDeck(negationExercises.length);
   const [armed, setArmed] = useState<'niet' | 'geen' | null>(null);
   const [placed, setPlaced] = useState<Placement | null>(null);
   const [checked, setChecked] = useState(false);
@@ -90,8 +84,8 @@ export default function NegationPage() {
     setPlaced(null);
     setChecked(false);
     setIsCorrect(false);
-    setIndex(i => randomIndex(i, negationExercises.length));
-  }, [negationExercises.length, setIndex]);
+    advance();
+  }, [advance]);
 
   useAdvanceOnEnter(checked, next);
 

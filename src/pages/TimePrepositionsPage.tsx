@@ -9,14 +9,8 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
-import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
+import { useExerciseDeck } from '../hooks/useExerciseDeck';
 import type { TimeCategory } from '../data/timeExercises';
-
-function randomIndex(exclude: number, total: number) {
-  let i: number;
-  do { i = Math.floor(Math.random() * total); } while (i === exclude && total > 1);
-  return i;
-}
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -29,7 +23,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 export default function TimePrepositionsPage() {
   const { timeExercises, loading, error } = useAppData();
-  const [index, setIndex] = useRandomStartIndex(timeExercises.length);
+  const [index, advance] = useExerciseDeck(timeExercises.length);
   const [phase, setPhase] = useState<Phase>('active');
   const [selected, setSelected] = useState<string | null>(null);
   const [score, setScore] = useState({ correct: 0, total: 0 });
@@ -59,10 +53,10 @@ export default function TimePrepositionsPage() {
   }, [phase, current, recordAnswer]);
 
   const next = useCallback(() => {
-    setIndex((i) => randomIndex(i, timeExercises.length));
+    advance();
     setPhase('active');
     setSelected(null);
-  }, [timeExercises.length, setIndex]);
+  }, [advance]);
 
   useAdvanceOnEnter(phase === 'result', next);
 

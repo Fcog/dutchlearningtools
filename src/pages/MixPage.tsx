@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useEffect } from 'react';
+import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import { Header } from '../components/Header';
 import { LoadingScreen } from '../components/LoadingScreen';
 import { useAppData } from '../context/DataContext';
@@ -25,6 +25,15 @@ export const TOPIC_LABEL: Record<string, { en: string; es: string }> = {
 
 function pickFrom<T>(list: T[]): T {
   return list[Math.floor(Math.random() * list.length)];
+}
+
+function shuffledRange(n: number): number[] {
+  const d = Array.from({ length: n }, (_, i) => i);
+  for (let i = d.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [d[i], d[j]] = [d[j], d[i]];
+  }
+  return d;
 }
 
 export default function MixPage() {
@@ -58,12 +67,30 @@ export default function MixPage() {
   }, [pool]);
   const topics = useMemo(() => Object.keys(grouped), [grouped]);
 
-  const pickEntry = useCallback((prevKey: string | null): MixEntry | null => {
+  // One shuffled deck per topic so items don't repeat within a topic until it's
+  // exhausted. Reset whenever the pool (grouped) changes.
+  const decks = useRef<Record<string, { order: number[]; pos: number }>>({});
+  useEffect(() => { decks.current = {}; }, [grouped]);
+
+  const pickEntry = useCallback((): MixEntry | null => {
     if (!topics.length) return null;
-    const list = grouped[pickFrom(topics)];
-    let e = pickFrom(list);
-    if (list.length > 1 && e.key === prevKey) e = pickFrom(list);
-    return e;
+    const topic = pickFrom(topics);
+    const items = grouped[topic];
+    let deck = decks.current[topic];
+    if (!deck || deck.order.length !== items.length) {
+      deck = { order: shuffledRange(items.length), pos: 0 };
+      decks.current[topic] = deck;
+      return items[deck.order[0]];
+    }
+    deck.pos += 1;
+    if (deck.pos >= deck.order.length) {
+      const last = deck.order[deck.order.length - 1];
+      const reshuffled = shuffledRange(items.length);
+      if (items.length > 1 && reshuffled[0] === last) [reshuffled[0], reshuffled[1]] = [reshuffled[1], reshuffled[0]];
+      deck.order = reshuffled;
+      deck.pos = 0;
+    }
+    return items[deck.order[deck.pos]];
   }, [topics, grouped]);
 
   const [current, setCurrent] = useState<MixEntry | null>(null);
@@ -71,11 +98,11 @@ export default function MixPage() {
   const [score, setScore] = useState({ correct: 0, total: 0 });
 
   useEffect(() => {
-    if (!current && pool.length) setCurrent(pickEntry(null));
+    if (!current && pool.length) setCurrent(pickEntry());
   }, [pool, current, pickEntry]);
 
   const next = useCallback(() => {
-    setCurrent((prev) => pickEntry(prev?.key ?? null));
+    setCurrent(pickEntry());
     setRound((r) => r + 1);
   }, [pickEntry]);
 

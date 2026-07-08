@@ -10,18 +10,13 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
+import { useExerciseDeck } from '../hooks/useExerciseDeck';
 
 const VERBS: PositionalVerb[] = ['zijn', 'zitten', 'liggen', 'staan'];
 
-function randomIndex(exclude: number, total: number) {
-  let i: number;
-  do { i = Math.floor(Math.random() * total); } while (i === exclude);
-  return i;
-}
-
 export default function PositionalVerbsPage() {
   const { positionalExercises, loading, error } = useAppData();
-  const [index, setIndex] = useState(0);
+  const [index, advance] = useExerciseDeck(positionalExercises.length);
   const [phase, setPhase] = useState<Phase>('active');
   const [selected, setSelected] = useState<PositionalVerb | null>(null);
   const [score, setScore] = useState({ correct: 0, total: 0 });
@@ -47,10 +42,10 @@ export default function PositionalVerbsPage() {
   }, [phase, current.verb, current.id, recordAnswer]);
 
   const next = useCallback(() => {
-    setIndex((i) => randomIndex(i, positionalExercises.length));
+    advance();
     setPhase('active');
     setSelected(null);
-  }, [positionalExercises.length]);
+  }, [advance]);
 
   useAdvanceOnEnter(phase === 'result', next);
 

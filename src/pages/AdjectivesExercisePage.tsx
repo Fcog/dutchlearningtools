@@ -9,14 +9,8 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
-import { useRandomStartIndex } from '../hooks/useRandomStartIndex';
+import { useExerciseDeck } from '../hooks/useExerciseDeck';
 import type { AdjectiveKind } from '../data/adjectiveExercises';
-
-function randomIndex(exclude: number, total: number) {
-  let i: number;
-  do { i = Math.floor(Math.random() * total); } while (i === exclude && total > 1);
-  return i;
-}
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -39,7 +33,7 @@ export default function AdjectivesExercisePage() {
     [adjectiveExercises, kind],
   );
 
-  const [index, setIndex] = useRandomStartIndex(list.length);
+  const [index, advance] = useExerciseDeck(list.length);
   const [phase, setPhase] = useState<'active' | 'result'>('active');
   const [selected, setSelected] = useState<string | null>(null);
   const [score, setScore] = useState({ correct: 0, total: 0 });
@@ -70,10 +64,10 @@ export default function AdjectivesExercisePage() {
   }, [phase, current, correct, recordAnswer]);
 
   const next = useCallback(() => {
-    setIndex((i) => randomIndex(i, list.length));
+    advance();
     setPhase('active');
     setSelected(null);
-  }, [list.length, setIndex]);
+  }, [advance]);
 
   useAdvanceOnEnter(phase === 'result', next);
 
