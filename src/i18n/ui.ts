@@ -116,6 +116,11 @@ const en = {
   adjOppositeDesc: 'Pick the opposite adjective: groot ↔ klein.',
   adjOppositeInstr: 'Choose the opposite:',
   adjTheoryIntro: 'Attributive adjectives take -e except before a singular, indefinite het-word (een groot huis). Predicative adjectives (after zijn) never inflect.',
+  // Home page — diminutives
+  diminutivesName: 'Diminutives',
+  diminutivesDesc: 'Pick the correct diminutive: -je, -tje, -etje, -pje, -kje and irregular forms (huisje, stoeltje, balletje, boompje, koninkje).',
+  diminutivesTitle: 'Diminutives',
+  diminutivesBadge: 'Diminutive',
   // Home page — mixed practice
   mixName: 'Mixed Practice',
   mixDesc: 'A random exercise from every topic, one after another. The ultimate all-round workout.',
@@ -278,6 +283,10 @@ const es: UIStrings = {
   adjOppositeDesc: 'Elige el adjetivo opuesto: groot ↔ klein.',
   adjOppositeInstr: 'Elige el opuesto:',
   adjTheoryIntro: 'El adjetivo atributivo lleva -e salvo ante una palabra het- singular e indefinida (een groot huis). El predicativo (tras zijn) nunca se flexiona.',
+  diminutivesName: 'Diminutivos',
+  diminutivesDesc: 'Elige el diminutivo correcto: -je, -tje, -etje, -pje, -kje e irregulares (huisje, stoeltje, balletje, boompje, koninkje).',
+  diminutivesTitle: 'Diminutivos',
+  diminutivesBadge: 'Diminutivo',
   mixName: 'Práctica mixta',
   mixDesc: 'Un ejercicio al azar de cada tema, uno tras otro. El entrenamiento completo definitivo.',
   mixTitle: 'Práctica mixta',

@@ -28,6 +28,7 @@ const ROUTES: Record<string, Meta> = {
   '/adjectives/vocab': { title: 'Dutch Adjectives Vocabulary', description: 'Learn what common Dutch adjectives mean.' },
   '/adjectives/degree': { title: 'Dutch Comparative & Superlative Adjectives', description: 'Form Dutch comparatives and superlatives: groter/grootst, beter/best, including irregulars.' },
   '/adjectives/opposite': { title: 'Dutch Adjective Opposites', description: 'Practise Dutch antonyms: groot ↔ klein, snel ↔ langzaam.' },
+  '/diminutives': { title: 'Dutch Diminutives Practice (verkleinwoorden)', description: 'Practise Dutch diminutives — pick the right suffix: -je, -tje, -etje, -pje, -kje and irregular forms.' },
   '/mix': { title: 'Mixed Dutch Grammar Practice', description: 'A random exercise from every topic, one after another — the all-round Dutch workout.' },
   '/privacy-policy': { title: 'Privacy Policy' },
   '/terms-of-use': { title: 'Terms of Use' },

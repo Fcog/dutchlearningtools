@@ -25,19 +25,19 @@ export default function SingleExercisePage() {
   const {
     verbs, separableVerbSets, positionalExercises, directionalExercises,
     fromToExercises, prepositionExercises, timeExercises, expressionExercises,
-    articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises,
-    negationExercises, loading, error,
+    diminutiveExercises, articleNouns, pluralNouns, wordOrderSentences,
+    voorstellenExercises, negationExercises, loading, error,
   } = useAppData();
 
   const pool = useMemo(
     () => buildMixPool({
       verbs, separableVerbSets, positionalExercises, directionalExercises,
       fromToExercises, prepositionExercises, timeExercises, expressionExercises,
-      articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises,
+      diminutiveExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises,
     }),
     [verbs, separableVerbSets, positionalExercises, directionalExercises,
      fromToExercises, prepositionExercises, timeExercises, expressionExercises,
-     articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises],
+     diminutiveExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises],
   );
 
   const entry = useMemo(

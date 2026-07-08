@@ -16,6 +16,7 @@ export const TOPIC_LABEL: Record<string, { en: string; es: string }> = {
   preposition:   { en: 'Fixed prepositions', es: 'Preposiciones fijas' },
   'time-prep':   { en: 'Time prepositions',  es: 'Preposiciones de tiempo' },
   expression:    { en: 'Idiomatic expressions', es: 'Expresiones idiomáticas' },
+  diminutive:    { en: 'Diminutives',         es: 'Diminutivos' },
   article:       { en: 'De / het articles',  es: 'Artículos de / het' },
   plural:        { en: 'Plural forms',       es: 'Formas del plural' },
   'word-order':  { en: 'Word order',         es: 'Orden de palabras' },
@@ -40,8 +41,8 @@ export default function MixPage() {
   const {
     verbs, separableVerbSets, positionalExercises, directionalExercises,
     fromToExercises, prepositionExercises, timeExercises, expressionExercises,
-    articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises,
-    negationExercises, loading, error,
+    diminutiveExercises, articleNouns, pluralNouns, wordOrderSentences,
+    voorstellenExercises, negationExercises, loading, error,
   } = useAppData();
   const { lang } = useLanguage();
   const ui = useUI();
@@ -51,11 +52,11 @@ export default function MixPage() {
     () => buildMixPool({
       verbs, separableVerbSets, positionalExercises, directionalExercises,
       fromToExercises, prepositionExercises, timeExercises, expressionExercises,
-      articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises,
+      diminutiveExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises,
     }),
     [verbs, separableVerbSets, positionalExercises, directionalExercises,
      fromToExercises, prepositionExercises, timeExercises, expressionExercises,
-     articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises],
+     diminutiveExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises],
   );
 
   // Group by topic so a random topic is drawn first — otherwise the 260+ verb

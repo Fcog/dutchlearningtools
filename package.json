@@ -18,6 +18,7 @@
     "migrate-time-prepositions": "npx tsx --env-file=.env scripts/migrate-time-prepositions.ts",
     "migrate-expressions": "npx tsx --env-file=.env scripts/migrate-expressions.ts",
     "migrate-adjectives": "npx tsx --env-file=.env scripts/migrate-adjectives.ts",
+    "migrate-diminutives": "npx tsx --env-file=.env scripts/migrate-diminutives.ts",
     "prerender": "react-snap"
   },
   "reactSnap": {
@@ -42,6 +43,7 @@
       "/adjectives/vocab",
       "/adjectives/degree",
       "/adjectives/opposite",
+      "/diminutives",
       "/mix",
       "/privacy-policy",
       "/terms-of-use"

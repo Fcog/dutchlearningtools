@@ -187,6 +187,16 @@ export default function HomePage() {
             </div>
             <span className="module-arrow">→</span>
           </Link>
+
+          <Link to="/diminutives" className="module-card">
+            <div className="module-icon">🐭</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.diminutivesName}</h3>
+              <p className="module-desc">{ui.diminutivesDesc}</p>
+              <StatsLine type="diminutive" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
         </div>
       </main>
       <Footer />

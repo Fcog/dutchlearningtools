@@ -14,6 +14,7 @@ import type { PrepositionExercise, PrepositionCategory } from '../data/prepositi
 import type { TimeExercise, TimeCategory } from '../data/timeExercises';
 import type { ExpressionExercise } from '../data/expressionExercises';
 import type { AdjectiveExercise, AdjectiveKind } from '../data/adjectiveExercises';
+import type { DiminutiveExercise, DiminutiveRule } from '../data/diminutiveExercises';
 
 // ── Transformers ───────────────────────────────────────────────────────────
 
@@ -259,6 +260,22 @@ function toAdjectiveExercise(row: any): AdjectiveExercise {
   };
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function toDiminutiveExercise(row: any): DiminutiveExercise {
+  return {
+    id:            row.id,
+    dutch:         row.dutch,
+    english:       row.english,
+    answer:        row.answer,
+    options:       (row.options ?? []) as string[],
+    category:      row.category as DiminutiveRule,
+    explanation:   row.explanation,
+    explanationEs: row.explanation_es ?? undefined,
+    level:         row.level as Level,
+    translations:  row.translation_es ? { es: row.translation_es } : undefined,
+  };
+}
+
 // ── Context ────────────────────────────────────────────────────────────────
 
 interface DataContextValue {
@@ -276,12 +293,13 @@ interface DataContextValue {
   timeExercises:        TimeExercise[];
   expressionExercises:  ExpressionExercise[];
   adjectiveExercises:   AdjectiveExercise[];
+  diminutiveExercises:  DiminutiveExercise[];
   loading:              boolean;
   error:                string | null;
 }
 
 const DataContext = createContext<DataContextValue>({
-  verbs: [], separableVerbSets: [], positionalExercises: [], directionalExercises: [], fromToExercises: [], articleNouns: [], pluralNouns: [], wordOrderSentences: [], voorstellenExercises: [], negationExercises: [], prepositionExercises: [], timeExercises: [], expressionExercises: [], adjectiveExercises: [],
+  verbs: [], separableVerbSets: [], positionalExercises: [], directionalExercises: [], fromToExercises: [], articleNouns: [], pluralNouns: [], wordOrderSentences: [], voorstellenExercises: [], negationExercises: [], prepositionExercises: [], timeExercises: [], expressionExercises: [], adjectiveExercises: [], diminutiveExercises: [],
   loading: true, error: null,
 });
 
@@ -300,13 +318,14 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [timeExercises, setTime] = useState<TimeExercise[]>([]);
   const [expressionExercises, setExpressions] = useState<ExpressionExercise[]>([]);
   const [adjectiveExercises, setAdjectives] = useState<AdjectiveExercise[]>([]);
+  const [diminutiveExercises, setDiminutives] = useState<DiminutiveExercise[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     async function fetchAll() {
       try {
-        const [verbsRes, sepRes, posRes, dirRes, ftRes, artRes, pluralRes, woRes, vstRes, negRes, prepRes, timeRes, exprRes, adjRes] = await Promise.all([
+        const [verbsRes, sepRes, posRes, dirRes, ftRes, artRes, pluralRes, woRes, vstRes, negRes, prepRes, timeRes, exprRes, adjRes, dimRes] = await Promise.all([
           supabase.from('verbs').select('*, exercises(*)').order('id'),
           supabase.from('separable_verb_sets').select('*, separable_exercises(*)').order('infinitive'),
           supabase.from('positional_exercises').select('*').order('created_at'),
@@ -321,6 +340,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
           supabase.from('time_prep_exercises').select('*').order('level').order('id'),
           supabase.from('expression_exercises').select('*').order('level').order('id'),
           supabase.from('adjective_exercises').select('*').order('kind').order('level').order('id'),
+          supabase.from('diminutive_exercises').select('*').order('level').order('id'),
         ]);
 
         if (verbsRes.error)  throw verbsRes.error;
@@ -339,6 +359,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
         if (timeRes.error) console.warn('time_prep_exercises unavailable:', timeRes.error.message);
         if (exprRes.error) console.warn('expression_exercises unavailable:', exprRes.error.message);
         if (adjRes.error) console.warn('adjective_exercises unavailable:', adjRes.error.message);
+        if (dimRes.error) console.warn('diminutive_exercises unavailable:', dimRes.error.message);
 
         setVerbs((verbsRes.data ?? []).map(toVerb));
         setSeparable((sepRes.data ?? []).map(toSeparableVerbSet));
@@ -354,6 +375,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
         setTime((timeRes.data ?? []).map(toTimeExercise));
         setExpressions((exprRes.data ?? []).map(toExpressionExercise));
         setAdjectives((adjRes.data ?? []).map(toAdjectiveExercise));
+        setDiminutives((dimRes.data ?? []).map(toDiminutiveExercise));
       } catch (e) {
         setError(e instanceof Error ? e.message : 'Failed to load exercises.');
       } finally {
@@ -365,7 +387,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <DataContext.Provider value={{ verbs, separableVerbSets, positionalExercises, directionalExercises, fromToExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises, prepositionExercises, timeExercises, expressionExercises, adjectiveExercises, loading, error }}>
+    <DataContext.Provider value={{ verbs, separableVerbSets, positionalExercises, directionalExercises, fromToExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises, prepositionExercises, timeExercises, expressionExercises, adjectiveExercises, diminutiveExercises, loading, error }}>
       {children}
     </DataContext.Provider>
   );
