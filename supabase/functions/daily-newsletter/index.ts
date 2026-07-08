@@ -71,21 +71,29 @@ async function exerciseOfTheDay() {
   return null;
 }
 
+// The Dutch prompt to show — selected by exercise type so we never reveal the
+// answer. Crucially, voorstellen uses `gapped` (blanked), NOT `dutch` (which is
+// the fully completed sentence); adjectives use `prompt`; negation shows the
+// affirmative sentence the learner must negate.
 function promptDutch(type: string, row: any): string {
-  if (type === 'word-order') return '';
-  if (row.dutch) return row.dutch;
-  if (row.gapped) return row.gapped;
-  if (row.noun) return `___ ${row.noun}`;
-  if (row.singular) return `${row.article} ${row.singular}`;
-  return '';
+  switch (type) {
+    case 'voorstellen': return row.gapped ?? '';
+    case 'adjective':   return row.prompt ?? '';
+    case 'negation':    return Array.isArray(row.words) ? row.words.join(' ') : '';
+    case 'word-order':  return ''; // scrambled — shown as chips instead
+    case 'article':     return `___ ${row.noun ?? ''}`;
+    case 'plural':      return `${row.article ?? ''} ${row.singular ?? ''}`.trim();
+    default:            return row.dutch ?? ''; // verb, separable, directional, from-to, preposition, time-prep, expression, positional
+  }
 }
 
 function optionChips(type: string, row: any): string[] {
   if (type === 'article') return ['de', 'het'];
   if (type === 'positional') return ['zijn', 'zitten', 'liggen', 'staan'];
+  if (type === 'negation') return ['niet', 'geen'];
   if (type === 'word-order' && Array.isArray(row.words)) return shuffle(row.words);
   if (Array.isArray(row.options)) return row.options;
-  if (Array.isArray(row.bank)) return row.bank;
+  if (Array.isArray(row.bank)) return shuffle(row.bank);
   return [];
 }
 
@@ -107,8 +115,10 @@ function renderEmail(type: string, row: any, lang: 'en' | 'es', unsubToken: stri
     ? `<div style="margin:16px 0;">${chips.map((c) => `<span style="display:inline-block;border:1.5px solid #e5e7eb;border-radius:999px;padding:6px 14px;margin:0 6px 8px 0;font-size:15px;color:#111827;">${c}</span>`).join('')}</div>`
     : '';
 
+  // Replace every blank (voorstellen sentences can have more than one).
+  const blank = '<span style="color:#9ca3af;font-weight:700;">_____</span>';
   const dutchHtml = dutch
-    ? `<p style="font-size:20px;line-height:1.5;color:#111827;margin:8px 0 4px;">${dutch.replace('___', '<span style="color:#9ca3af;font-weight:700;">_____</span>')}</p>`
+    ? `<p style="font-size:20px;line-height:1.5;color:#111827;margin:8px 0 4px;">${dutch.split('___').join(blank)}</p>`
     : '';
 
   const html = `
