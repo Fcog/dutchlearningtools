@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { SeoManager } from './components/SeoManager';
 import HomePage from './pages/HomePage';
 import VerbsPage from './pages/VerbsPage';
 import PositionalVerbsPage from './pages/PositionalVerbsPage';
@@ -42,6 +43,8 @@ function usePageTracking() {
 export default function App() {
   usePageTracking();
   return (
+    <>
+    <SeoManager />
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/verbs-conjugation" element={<VerbsPage />} />
@@ -68,5 +71,6 @@ export default function App() {
       <Route path="/unsubscribe" element={<UnsubscribePage />} />
       <Route path="/confirm-newsletter" element={<ConfirmNewsletterPage />} />
     </Routes>
+    </>
   );
 }

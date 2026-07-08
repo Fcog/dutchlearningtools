@@ -17,7 +17,39 @@
     "migrate-prepositions": "npx tsx --env-file=.env scripts/migrate-prepositions.ts",
     "migrate-time-prepositions": "npx tsx --env-file=.env scripts/migrate-time-prepositions.ts",
     "migrate-expressions": "npx tsx --env-file=.env scripts/migrate-expressions.ts",
-    "migrate-adjectives": "npx tsx --env-file=.env scripts/migrate-adjectives.ts"
+    "migrate-adjectives": "npx tsx --env-file=.env scripts/migrate-adjectives.ts",
+    "prerender": "react-snap"
+  },
+  "reactSnap": {
+    "source": "dist",
+    "include": [
+      "/",
+      "/verbs-conjugation",
+      "/separable-verbs",
+      "/positional-verbs",
+      "/directional-adverbs",
+      "/from-to",
+      "/articles",
+      "/plurals",
+      "/word-order",
+      "/voorstellen",
+      "/negation",
+      "/prepositions",
+      "/time-prepositions",
+      "/expressions",
+      "/adjectives",
+      "/adjectives/inflection",
+      "/adjectives/vocab",
+      "/adjectives/degree",
+      "/adjectives/opposite",
+      "/mix",
+      "/privacy-policy",
+      "/terms-of-use"
+    ],
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",
@@ -29,6 +61,7 @@
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^4.2.0",
+    "react-snap": "^1.23.0",
     "tsx": "^4.22.4",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",

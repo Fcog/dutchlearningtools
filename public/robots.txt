@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Private / transactional pages — no SEO value
+Disallow: /account
+Disallow: /reset-password
+Disallow: /unsubscribe
+Disallow: /confirm-newsletter
+
+Sitemap: https://dutchlearningtools.nl/sitemap.xml

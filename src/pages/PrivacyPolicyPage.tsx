@@ -85,10 +85,10 @@ export default function PrivacyPolicyPage() {
             If you have any questions about this Privacy Policy, please contact
             us at{" "}
             <a
-              href="mailto:info@dutchlearningtools.com"
+              href="mailto:info@dutchlearningtools.nl"
               className="policy-link"
             >
-              info@dutchlearningtools.com
+              info@dutchlearningtools.nl
             </a>
             .
           </p>

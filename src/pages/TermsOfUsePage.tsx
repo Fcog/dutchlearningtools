@@ -107,10 +107,10 @@ export default function TermsOfUsePage() {
           <p>
             For questions about these Terms, please contact us at{" "}
             <a
-              href="mailto:info@dutchlearningtools.com"
+              href="mailto:info@dutchlearningtools.nl"
               className="policy-link"
             >
-              info@dutchlearningtools.com
+              info@dutchlearningtools.nl
             </a>
             .
           </p>
