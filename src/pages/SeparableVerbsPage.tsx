@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { Header } from "../components/Header";
 import { SentenceCard } from "../components/SentenceCard";
 import { ConjugationInput } from "../components/ConjugationInput";
@@ -41,7 +41,12 @@ function getContextFeedback(ctx: SeparableContext, ui: ReturnType<typeof useUI>)
 
 export default function SeparableVerbsPage() {
   const { separableVerbSets, loading, error } = useAppData();
-  const [order] = useState(() => shuffled(separableVerbSets.map((_, i) => i)));
+  // Recompute when the data arrives — otherwise landing directly on this page
+  // (deep link / prerender) caches an empty order and crashes below.
+  const order = useMemo(
+    () => shuffled(separableVerbSets.map((_, i) => i)),
+    [separableVerbSets.length],
+  );
   const [verbIdx, setVerbIdx] = useState(0);
   const [ctxIdx, setCtxIdx] = useState(0);
   const [phase, setPhase] = useState<Phase>("active");
@@ -54,7 +59,8 @@ export default function SeparableVerbsPage() {
 
   if (loading || error) return <LoadingScreen error={error} />;
 
-  const verbSet = separableVerbSets[order[verbIdx % order.length]];
+  const verbSet = order.length ? separableVerbSets[order[verbIdx % order.length]] : undefined;
+  if (!verbSet) return <LoadingScreen error="No separable verbs found." />;
   const exercise = verbSet.exercises[ctxIdx];
 
   const submit = useCallback(() => {
