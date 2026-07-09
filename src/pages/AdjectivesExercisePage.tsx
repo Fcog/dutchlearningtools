@@ -10,6 +10,7 @@ import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 import { useExerciseDeck } from '../hooks/useExerciseDeck';
+import { ShareScore } from '../components/ShareScore';
 import type { AdjectiveKind } from '../data/adjectiveExercises';
 
 function shuffle<T>(arr: T[]): T[] {
@@ -179,6 +180,7 @@ export default function AdjectivesExercisePage() {
                     : <><strong>{selected}</strong> is wrong. The answer is <strong>{correct}</strong>. {explanation}</>
                 )}
               </p>
+              <ShareScore score={score} title={TITLE[kind!]} />
               <button className="next-btn" onClick={next}>{ui.next}</button>
             </div>
           )}

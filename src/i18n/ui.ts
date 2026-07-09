@@ -5,6 +5,11 @@ const en = {
   // Buttons
   check: 'Check',
   next: 'Next',
+  // Share
+  shareBtn: 'Share your score',
+  shareCopy: 'Copy link',
+  shareCopied: 'Copied!',
+  scoreLabel: 'Score',
   // Header / nav
   filters: 'Filters',
   closeFilters: 'Close filters',
@@ -192,6 +197,10 @@ type UIStrings = { readonly [K in keyof typeof en]: string };
 const es: UIStrings = {
   check: 'Comprobar',
   next: 'Siguiente',
+  shareBtn: 'Comparte tu puntuación',
+  shareCopy: 'Copiar enlace',
+  shareCopied: '¡Copiado!',
+  scoreLabel: 'Puntuación',
   filters: 'Filtros',
   closeFilters: 'Cerrar filtros',
   howToPlay: 'Cómo jugar',

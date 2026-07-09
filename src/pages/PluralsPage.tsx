@@ -9,6 +9,7 @@ import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 import { useExerciseDeck } from '../hooks/useExerciseDeck';
 import { SpeakButton } from '../components/SpeakButton';
+import { ShareScore } from '../components/ShareScore';
 import type { Phase } from '../types';
 
 function normalize(s: string) {
@@ -238,6 +239,7 @@ export default function PluralsPage() {
                 )}
                 {tip && <><br /><span className="result-tip">{tip}</span></>}
               </p>
+              <ShareScore score={score} title={ui.pluralsTitle} />
               <button className="next-btn" onClick={next}>{ui.next}</button>
             </div>
           )}

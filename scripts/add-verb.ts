@@ -58,6 +58,50 @@ interface GeneratedVerb {
   exercises: GeneratedExercise[];
 }
 
+// ── Verify the input is a real Dutch verb ─────────────────────────────────────
+
+interface VerbCheck {
+  isVerb: boolean;
+  correctedSpelling: string | null;
+  note: string;
+}
+
+/**
+ * Ask the model whether the input is a genuine, correctly-spelled Dutch
+ * infinitive before we generate/insert anything. Guards against typos and
+ * non-verbs (nouns, adjectives, conjugated forms, non-Dutch words).
+ */
+async function verifyVerb(infinitive: string): Promise<VerbCheck> {
+  const prompt = `Is "${infinitive}" a valid, correctly-spelled Dutch infinitive verb?
+
+Return ONLY a JSON object (no markdown, no explanation) with this exact shape:
+{"isVerb": <true|false>, "correctedSpelling": <string or null>, "note": "<max 12 words>"}
+
+Rules:
+- "isVerb" is true ONLY if "${infinitive}" itself is a real, correctly-spelled Dutch verb in its infinitive form.
+- Do NOT count nouns, adjectives, conjugated forms, or non-Dutch words as verbs.
+- "correctedSpelling": if it is not valid but is clearly a misspelling of a real Dutch infinitive verb, give the correct infinitive; otherwise null.`;
+
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': ANTHROPIC_KEY as string,
+      'anthropic-version': '2023-06-01',
+    },
+    body: JSON.stringify({
+      model: MODEL,
+      max_tokens: 256,
+      messages: [{ role: 'user', content: prompt }],
+    }),
+  });
+  if (!res.ok) throw new Error(`API error ${res.status}: ${await res.text()}`);
+  const data = await res.json();
+  const text = (data.content[0].text as string).trim();
+  const parsed = JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1)) as VerbCheck;
+  return parsed;
+}
+
 // ── Generate the verb data via Claude ─────────────────────────────────────────
 
 async function generateVerb(infinitive: string, retries = 2): Promise<GeneratedVerb> {
@@ -196,6 +240,25 @@ async function main() {
     console.error(`  ANTHROPIC_API_KEY=sk-ant-... npx tsx --env-file=.env scripts/add-verb.ts ${infinitive}`);
     process.exit(1);
   }
+  // 2b. Verify it's a real Dutch verb before generating anything.
+  console.log(`Verifying "${infinitive}" is a Dutch verb…`);
+  try {
+    const check = await verifyVerb(infinitive);
+    if (!check.isVerb) {
+      const suggestion = check.correctedSpelling?.trim().toLowerCase();
+      if (suggestion && suggestion !== infinitive) {
+        console.error(`✗ "${infinitive}" doesn't look like a Dutch verb. Did you mean "${suggestion}"?`);
+        console.error(`  Re-run: npx tsx --env-file=.env scripts/add-verb.ts ${suggestion}`);
+      } else {
+        console.error(`✗ "${infinitive}" doesn't appear to be a Dutch verb${check.note ? ` (${check.note})` : ''}. Aborting.`);
+      }
+      process.exit(1);
+    }
+  } catch (e) {
+    // Don't block on a transient verification failure — warn and continue.
+    console.warn(`  Could not verify (${e instanceof Error ? e.message : String(e)}); proceeding anyway.`);
+  }
+
   console.log(`"${infinitive}" not found. Generating verb data with ${MODEL}…`);
   const gen = await generateVerb(infinitive);
   console.log(`  → ${gen.english} (${gen.translation_es}) · ${gen.level} · aux ${gen.auxiliary} · ${gen.exercises.length} exercises`);

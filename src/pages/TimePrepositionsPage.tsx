@@ -10,6 +10,7 @@ import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 import { useExerciseDeck } from '../hooks/useExerciseDeck';
+import { ShareScore } from '../components/ShareScore';
 import type { TimeCategory } from '../data/timeExercises';
 
 function shuffle<T>(arr: T[]): T[] {
@@ -212,6 +213,7 @@ export default function TimePrepositionsPage() {
                   )
                 )}
               </p>
+              <ShareScore score={score} title={ui.timePrepTitle} />
               <button className="next-btn" onClick={next}>
                 {ui.next}
               </button>

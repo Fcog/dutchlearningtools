@@ -6,6 +6,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { buildMixPool, MixCardRenderer, type MixEntry } from '../components/mix/MixCards';
+import { ShareScore } from '../components/ShareScore';
 
 export const TOPIC_LABEL: Record<string, { en: string; es: string }> = {
   verb:          { en: 'Verb conjugation',   es: 'Conjugación de verbos' },
@@ -97,12 +98,14 @@ export default function MixPage() {
   const [current, setCurrent] = useState<MixEntry | null>(null);
   const [round, setRound] = useState(0);
   const [score, setScore] = useState({ correct: 0, total: 0 });
+  const [answered, setAnswered] = useState(false);
 
   useEffect(() => {
     if (!current && pool.length) setCurrent(pickEntry());
   }, [pool, current, pickEntry]);
 
   const next = useCallback(() => {
+    setAnswered(false);
     setCurrent(pickEntry());
     setRound((r) => r + 1);
   }, [pickEntry]);
@@ -113,17 +116,19 @@ export default function MixPage() {
   const handleResult = (correct: boolean) => {
     setScore((s) => ({ correct: s.correct + (correct ? 1 : 0), total: s.total + 1 }));
     recordAnswer(current.exerciseId, current.progressType, correct);
+    setAnswered(true);
   };
 
   const topicLabel = TOPIC_LABEL[current.topic]?.[lang] ?? current.topic;
 
   return (
     <div className="app">
-      <Header backTo="/" score={score} title={ui.mixTitle} />
+      <Header backTo="/" title={ui.mixTitle} />
       <main className="main">
         <div className="exercise">
           <div className="mix-topic-badge">{topicLabel}</div>
           <MixCardRenderer key={`${current.key}-${round}`} entry={current} onResult={handleResult} onNext={next} />
+          {answered && <ShareScore score={score} title={ui.mixTitle} />}
         </div>
       </main>
     </div>

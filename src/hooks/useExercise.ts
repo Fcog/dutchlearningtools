@@ -103,17 +103,17 @@ export function useExercise(
   }, []);
 
   const submit = useCallback(() => {
-    setState((prev) => {
-      if (!prev || prev.phase !== 'active') return prev;
-      const isCorrect =
-        prev.userInput.trim().toLowerCase() === prev.exercise.answer.toLowerCase();
-      setScore((s) => ({
-        correct: s.correct + (isCorrect ? 1 : 0),
-        total: s.total + 1,
-      }));
-      return { ...prev, phase: 'result', isCorrect };
-    });
-  }, []);
+    // Score must be updated OUTSIDE the setState updater — a side effect inside
+    // an updater is double-invoked by StrictMode and would count twice (+2).
+    if (!state || state.phase !== 'active') return;
+    const isCorrect =
+      state.userInput.trim().toLowerCase() === state.exercise.answer.toLowerCase();
+    setScore((s) => ({
+      correct: s.correct + (isCorrect ? 1 : 0),
+      total: s.total + 1,
+    }));
+    setState({ ...state, phase: 'result', isCorrect });
+  }, [state]);
 
   const next = useCallback(() => {
     setState(drawNext());

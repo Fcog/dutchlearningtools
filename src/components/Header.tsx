@@ -21,7 +21,7 @@ function userInitials(email: string): string {
   return email.slice(0, 2).toUpperCase();
 }
 
-export function Header({ backTo, score, title }: Props) {
+export function Header({ backTo, title }: Props) {
   const { lang, setLang } = useLanguage();
   const { user, signOut } = useAuth();
   const ui = useUI();
@@ -41,13 +41,6 @@ export function Header({ backTo, score, title }: Props) {
             <h1>{title ?? ui.learnDutch}</h1>
           </div>
           <div className="header-right">
-            {score && score.total > 0 && (
-              <div className="score">
-                <span className="score-correct">{score.correct}</span>
-                <span className="score-sep">/</span>
-                <span className="score-total">{score.total}</span>
-              </div>
-            )}
             <div className="lang-switcher">
               <button
                 className={`lang-btn${lang === 'en' ? ' active' : ''}`}

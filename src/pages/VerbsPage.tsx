@@ -248,6 +248,8 @@ export default function VerbsPage() {
               exercise={state.exercise}
               userInput={state.userInput}
               onNext={next}
+              score={score}
+              title={ui.verbConjugationTitle}
             />
           )}
         </div>

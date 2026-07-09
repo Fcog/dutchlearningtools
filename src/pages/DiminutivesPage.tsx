@@ -10,6 +10,7 @@ import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 import { useExerciseDeck } from '../hooks/useExerciseDeck';
+import { ShareScore } from '../components/ShareScore';
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -148,6 +149,7 @@ export default function DiminutivesPage() {
                     : <><strong>{selected}</strong> is wrong. The answer is <strong>{current.answer}</strong>. {explanation}</>
                 )}
               </p>
+              <ShareScore score={score} title={ui.diminutivesTitle} />
               <button className="next-btn" onClick={next}>{ui.next}</button>
             </div>
           )}

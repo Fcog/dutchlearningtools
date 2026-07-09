@@ -9,6 +9,7 @@ import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 import { useExerciseDeck } from '../hooks/useExerciseDeck';
 import { SpeakButton } from '../components/SpeakButton';
+import { ShareScore } from '../components/ShareScore';
 
 interface Token { word: string; id: number }
 
@@ -314,6 +315,7 @@ export default function WordOrderPage() {
                 <br />
                 <span className="result-tip">{explanation}</span>
               </p>
+              <ShareScore score={score} title={ui.wordOrderTitle} />
               <div className="wo-result-footer">
                 <SpeakButton key={index} text={() => current.words.join(' ')} />
                 <button className="next-btn" onClick={next}>{ui.next}</button>

@@ -1,15 +1,18 @@
 import type { Exercise } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
+import { ShareScore } from './ShareScore';
 
 interface Props {
   isCorrect: boolean;
   exercise: Exercise;
   userInput: string;
   onNext: () => void;
+  score?: { correct: number; total: number };
+  title?: string;
 }
 
-export function ResultFeedback({ isCorrect, exercise, userInput, onNext }: Props) {
+export function ResultFeedback({ isCorrect, exercise, userInput, onNext, score, title }: Props) {
   const { lang } = useLanguage();
   const ui = useUI();
 
@@ -34,6 +37,7 @@ export function ResultFeedback({ isCorrect, exercise, userInput, onNext }: Props
           )}
         </p>
       )}
+      {score && <ShareScore score={score} title={title} />}
       <button className="next-btn" onClick={onNext}>
         {ui.next}
       </button>

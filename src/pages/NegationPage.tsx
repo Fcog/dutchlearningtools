@@ -3,6 +3,7 @@ import { Header } from '../components/Header';
 import { TheoryPanel } from '../components/TheoryPanel';
 import { LoadingScreen } from '../components/LoadingScreen';
 import { SpeakButton } from '../components/SpeakButton';
+import { ShareScore } from '../components/ShareScore';
 import { useAppData } from '../context/DataContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
@@ -314,6 +315,7 @@ export default function NegationPage() {
                 <br />
                 <span className="result-tip">{explanation}</span>
               </p>
+              <ShareScore score={score} title={ui.negationTitle} />
               <div className="wo-result-footer">
                 <SpeakButton key={index} text={() => negated} />
                 <button className="next-btn" onClick={next}>{ui.next}</button>

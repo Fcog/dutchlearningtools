@@ -10,6 +10,7 @@ import { useUI } from '../i18n/ui';
 import { useProgress } from '../hooks/useProgress';
 import { useAdvanceOnEnter } from '../hooks/useAdvanceOnEnter';
 import { useExerciseDeck } from '../hooks/useExerciseDeck';
+import { ShareScore } from '../components/ShareScore';
 import type { PrepositionCategory } from '../data/prepositionExercises';
 
 function shuffle<T>(arr: T[]): T[] {
@@ -209,6 +210,7 @@ export default function PrepositionsPage() {
                   )
                 )}
               </p>
+              <ShareScore score={score} title={ui.prepositionsTitle} />
               <button className="next-btn" onClick={next}>
                 {ui.next}
               </button>

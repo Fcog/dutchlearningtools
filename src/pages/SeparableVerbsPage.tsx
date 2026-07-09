@@ -11,6 +11,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { useUI } from "../i18n/ui";
 import { useProgress } from "../hooks/useProgress";
 import { useAdvanceOnEnter } from "../hooks/useAdvanceOnEnter";
+import { ShareScore } from "../components/ShareScore";
 
 function shuffled<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -260,6 +261,7 @@ export default function SeparableVerbsPage() {
                   )
                 )}
               </p>
+              <ShareScore score={score} title={ui.separableVerbsTitle} />
               <button className="next-btn" onClick={next}>
                 {ui.next}
               </button>
