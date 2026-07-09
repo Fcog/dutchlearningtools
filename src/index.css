@@ -1941,6 +1941,54 @@ body {
 }
 .share-item:hover { background: var(--bg); color: var(--primary); }
 
+/* ── guides (SEO articles) ───────────────────────────────────────────────── */
+.guide {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 1.6;
+}
+.guide-title {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.75rem;
+}
+.guide-intro {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin: 0 0 1.5rem;
+}
+.guide-section {
+    margin: 1.75rem 0;
+}
+.guide-section h2 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+}
+.guide-examples {
+    margin: 0.6rem 0 0;
+    padding-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: var(--text);
+}
+.guide-examples li { font-style: italic; }
+.guide-faq { margin: 0.9rem 0; }
+.guide-faq h3 { font-size: 1rem; margin: 0 0 0.2rem; }
+.guide-faq p { margin: 0; color: var(--text-light); }
+.guide-cta {
+    display: inline-block;
+    margin: 0.5rem 0 1rem;
+    padding: 0.7rem 1.4rem;
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.guide-cta:hover { opacity: 0.9; }
+
 /* ── 404 ─────────────────────────────────────────────────────────────────── */
 .notfound {
     max-width: 480px;

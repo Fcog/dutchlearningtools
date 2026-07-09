@@ -5,6 +5,9 @@ const en = {
   // Buttons
   check: 'Check',
   next: 'Next',
+  // Guides
+  guidesTitle: 'Dutch Grammar Guides',
+  guidesSubtitle: 'Short guides to the trickiest bits of Dutch — each with practice.',
   // Share
   shareBtn: 'Share your score',
   shareCopy: 'Copy link',
@@ -197,6 +200,8 @@ type UIStrings = { readonly [K in keyof typeof en]: string };
 const es: UIStrings = {
   check: 'Comprobar',
   next: 'Siguiente',
+  guidesTitle: 'Guías de gramática neerlandesa',
+  guidesSubtitle: 'Guías breves de lo más difícil del neerlandés — cada una con práctica.',
   shareBtn: 'Comparte tu puntuación',
   shareCopy: 'Copiar enlace',
   shareCopied: '¡Copiado!',

@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { GUIDES } from '../data/guides';
 
 const SITE = 'https://dutchlearningtools.nl';
 const BRAND = 'Dutch Learning Tools';
@@ -30,6 +31,7 @@ const ROUTES: Record<string, Meta> = {
   '/adjectives/opposite': { title: 'Dutch Adjective Opposites', description: 'Practise Dutch antonyms: groot ↔ klein, snel ↔ langzaam.' },
   '/diminutives': { title: 'Dutch Diminutives Practice (verkleinwoorden)', description: 'Practise Dutch diminutives — pick the right suffix: -je, -tje, -etje, -pje, -kje and irregular forms.' },
   '/mix': { title: 'Mixed Dutch Grammar Practice', description: 'A random exercise from every topic, one after another — the all-round Dutch workout.' },
+  '/guides': { title: 'Dutch Grammar Guides', description: 'Free guides to Dutch grammar — de vs het, niet vs geen, diminutives, word order and more — each with interactive practice.' },
   '/privacy-policy': { title: 'Privacy Policy' },
   '/terms-of-use': { title: 'Terms of Use' },
   '/account': { title: 'Account', noindex: true },
@@ -46,6 +48,10 @@ function upsertMeta(attr: 'name' | 'property', key: string, content: string) {
 
 function resolve(pathname: string): Meta {
   if (ROUTES[pathname]) return ROUTES[pathname];
+  if (pathname.startsWith('/guide/')) {
+    const g = GUIDES.find((x) => `/guide/${x.slug}` === pathname);
+    if (g) return { title: g.title, description: g.description };
+  }
   if (pathname.startsWith('/adjectives/')) return ROUTES['/adjectives'];
   if (pathname.startsWith('/exercise/')) return { title: 'Exercise', noindex: true };
   return { title: '404 — Page not found', noindex: true }; // catch-all / 404
