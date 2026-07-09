@@ -202,28 +202,25 @@ export default function PluralsPage() {
             </div>
           )}
 
-          <div className="input-row">
-            <input
-              ref={inputRef}
-              className="conj-field"
-              type="text"
-              placeholder={ui.typePlural}
-              value={input}
-              onChange={e => setInput(e.target.value)}
-              onKeyDown={e => { if (e.key === 'Enter') check(); }}
-              disabled={phase === 'result'}
-              autoComplete="off"
-              autoCorrect="off"
-              spellCheck={false}
-            />
-            <button
-              className="submit-btn"
-              onClick={phase === 'result' ? next : check}
-              disabled={phase === 'active' && !input.trim()}
-            >
-              {phase === 'result' ? ui.next : ui.check}
-            </button>
-          </div>
+          {phase === 'active' && (
+            <div className="input-row">
+              <input
+                ref={inputRef}
+                className="conj-field"
+                type="text"
+                placeholder={ui.typePlural}
+                value={input}
+                onChange={e => setInput(e.target.value)}
+                onKeyDown={e => { if (e.key === 'Enter') check(); }}
+                autoComplete="off"
+                autoCorrect="off"
+                spellCheck={false}
+              />
+              <button className="submit-btn" onClick={check} disabled={!input.trim()}>
+                {ui.check}
+              </button>
+            </div>
+          )}
 
           {phase === 'result' && (
             <div className={`result-feedback ${isCorrect ? 'success' : 'error'}`}>

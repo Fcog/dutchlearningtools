@@ -376,17 +376,17 @@ export function PluralCard({ data, onResult, onNext }: CardProps<PluralNoun>) {
         <div className="article-english">{translation}</div>
         {done && <div className="plural-result-noun">de {data.plural}</div>}
       </div>
-      <div className="input-row">
-        <input
-          className="conj-field" type="text" placeholder={ui.typePlural} value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => { if (e.key === 'Enter') submit(); }}
-          disabled={done} autoComplete="off" autoCorrect="off" spellCheck={false} autoFocus
-        />
-        <button className="submit-btn" onClick={done ? onNext : submit} disabled={!done && !input.trim()}>
-          {done ? ui.next : ui.check}
-        </button>
-      </div>
+      {!done && (
+        <div className="input-row">
+          <input
+            className="conj-field" type="text" placeholder={ui.typePlural} value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => { if (e.key === 'Enter') submit(); }}
+            autoComplete="off" autoCorrect="off" spellCheck={false} autoFocus
+          />
+          <button className="submit-btn" onClick={submit} disabled={!input.trim()}>{ui.check}</button>
+        </div>
+      )}
       {done && (
         <div className={`result-feedback ${isCorrect ? 'success' : 'error'}`}>
           <p className="result-message">
