@@ -1,5 +1,7 @@
+import { useRef } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { supabase } from '../lib/supabase';
+import { track } from '../lib/analytics';
 import type { Database } from '../types/database';
 
 export type ExerciseType = 'verb' | 'separable' | 'positional' | 'directional' | 'from-to' | 'article' | 'plural' | 'word-order' | 'voorstellen' | 'negation' | 'preposition' | 'time-prep' | 'expression' | 'adjective' | 'diminutive';
@@ -13,8 +15,15 @@ type ProgressRow = Database['public']['Tables']['user_progress']['Row'];
 
 export function useProgress() {
   const { user } = useAuth();
+  // Answers given this session (per hook instance = per exercise page/mix).
+  const answered = useRef(0);
 
   const recordAnswer = async (exerciseId: string | undefined, type: ExerciseType, correct: boolean) => {
+    // Funnel analytics (all users, logged in or not): started + depth milestones.
+    answered.current += 1;
+    if (answered.current === 1) track('exercise_start', { topic: type });
+    if (answered.current % 10 === 0) track('exercise_milestone', { topic: type, answered: answered.current });
+
     if (!user || !exerciseId) return;
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

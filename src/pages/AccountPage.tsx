@@ -7,6 +7,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { useNewsletter } from '../hooks/useNewsletter';
 import { supabase } from '../lib/supabase';
+import { track } from '../lib/analytics';
 import type { SupportedLang } from '../types';
 
 export default function AccountPage() {
@@ -45,7 +46,12 @@ export default function AccountPage() {
     if (!error) { setSaved(true); window.setTimeout(() => setSaved(false), 2500); }
   };
 
-  const toggle = () => { const v = !optedIn; setOptedIn(v); save(v, prefLang); };
+  const toggle = () => {
+    const v = !optedIn;
+    setOptedIn(v);
+    save(v, prefLang);
+    track(v ? 'newsletter_signup' : 'newsletter_unsubscribe', { source: 'account', lang: prefLang });
+  };
   const changeLang = (l: SupportedLang) => { setPrefLang(l); if (optedIn) save(optedIn, l); };
 
   const deleteAccount = async () => {

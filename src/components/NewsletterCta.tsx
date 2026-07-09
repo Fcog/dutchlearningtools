@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react';
 import { supabase } from '../lib/supabase';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
+import { track } from '../lib/analytics';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const SESSION_KEY = 'nl_cta_dismissed';
@@ -48,6 +49,7 @@ export function NewsletterCta() {
     }
     setStatus('success');
     setMsg(ui.ctaSuccess);
+    track('newsletter_signup', { source: 'homepage_cta', lang });
     try { sessionStorage.setItem(SESSION_KEY, '1'); } catch { /* ignore */ }
   };
 

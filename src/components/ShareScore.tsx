@@ -2,15 +2,11 @@ import { useState, type ReactNode } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
+import { track } from '../lib/analytics';
 
 interface Score { correct: number; total: number }
 
 const SITE = 'https://dutchlearningtools.nl';
-
-function track(method: string, page: string) {
-  const g = (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag;
-  g?.('event', 'share', { method, page });
-}
 
 /**
  * Result-feedback footer: the running score on the left, and (right-aligned)
@@ -41,7 +37,7 @@ export function ShareScore({ score, title, onNext, extra }: {
     if (nav.share) {
       try {
         await nav.share({ title: 'Dutch Learning Tools', text: message, url });
-        track('native', pathname);
+        track('share', { method: 'native', page: pathname });
       } catch { /* user cancelled */ }
       return;
     }
@@ -53,7 +49,7 @@ export function ShareScore({ score, title, onNext, extra }: {
       await navigator.clipboard.writeText(full);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-      track('copy', pathname);
+      track('share', { method: 'copy', page: pathname });
     } catch { /* ignore */ }
   };
 
@@ -87,7 +83,7 @@ export function ShareScore({ score, title, onNext, extra }: {
                       href={i.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={() => { track(i.method, pathname); setOpen(false); }}
+                      onClick={() => { track('share', { method: i.method, page: pathname }); setOpen(false); }}
                     >
                       {i.label}
                     </a>

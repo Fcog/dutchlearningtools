@@ -3,6 +3,7 @@ import { useSearchParams, Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { supabase } from '../lib/supabase';
+import { track } from '../lib/analytics';
 import { useUI } from '../i18n/ui';
 
 type State = 'working' | 'done' | 'notfound' | 'error';
@@ -22,7 +23,8 @@ export default function ConfirmNewsletterPage() {
       .then(({ data, error }: { data: boolean | null; error: unknown }) => {
         if (!active) return;
         if (error) setState('error');
-        else setState(data ? 'done' : 'notfound');
+        else if (data) { setState('done'); track('newsletter_confirm'); }
+        else setState('notfound');
       });
     return () => { active = false; };
   }, [token]);
