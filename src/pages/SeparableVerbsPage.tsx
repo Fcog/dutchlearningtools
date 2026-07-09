@@ -261,10 +261,7 @@ export default function SeparableVerbsPage() {
                   )
                 )}
               </p>
-              <ShareScore score={score} title={ui.separableVerbsTitle} />
-              <button className="next-btn" onClick={next}>
-                {ui.next}
-              </button>
+              <ShareScore score={score} title={ui.separableVerbsTitle} onNext={next} />
             </div>
           )}
         </div>

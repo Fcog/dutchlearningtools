@@ -173,8 +173,7 @@ export default function ArticlesPage() {
                 )}
                 {tip && <><br /><span className="result-tip">{tip}</span></>}
               </p>
-              <ShareScore score={score} title={ui.articlesTitle} />
-              <button className="next-btn" onClick={next}>{ui.next}</button>
+              <ShareScore score={score} title={ui.articlesTitle} onNext={next} />
             </div>
           )}
         </div>

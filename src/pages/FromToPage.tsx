@@ -212,10 +212,7 @@ export default function FromToPage() {
                   )
                 )}
               </p>
-              <ShareScore score={score} title={ui.fromToTitle} />
-              <button className="next-btn" onClick={next}>
-                {ui.next}
-              </button>
+              <ShareScore score={score} title={ui.fromToTitle} onNext={next} />
             </div>
           )}
         </div>

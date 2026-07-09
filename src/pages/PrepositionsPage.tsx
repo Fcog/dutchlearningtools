@@ -210,10 +210,7 @@ export default function PrepositionsPage() {
                   )
                 )}
               </p>
-              <ShareScore score={score} title={ui.prepositionsTitle} />
-              <button className="next-btn" onClick={next}>
-                {ui.next}
-              </button>
+              <ShareScore score={score} title={ui.prepositionsTitle} onNext={next} />
             </div>
           )}
         </div>

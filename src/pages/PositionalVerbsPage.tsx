@@ -209,10 +209,7 @@ export default function PositionalVerbsPage() {
                   )
                 )}
               </p>
-              <ShareScore score={score} title={ui.positionVerbsTitle} />
-              <button className="next-btn" onClick={next}>
-                {ui.next}
-              </button>
+              <ShareScore score={score} title={ui.positionVerbsTitle} onNext={next} />
             </div>
           )}
         </div>

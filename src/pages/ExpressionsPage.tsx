@@ -173,10 +173,7 @@ export default function ExpressionsPage() {
                   )
                 )}
               </p>
-              <ShareScore score={score} title={ui.expressionsTitle} />
-              <button className="next-btn" onClick={next}>
-                {ui.next}
-              </button>
+              <ShareScore score={score} title={ui.expressionsTitle} onNext={next} />
             </div>
           )}
         </div>

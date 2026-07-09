@@ -213,10 +213,7 @@ export default function TimePrepositionsPage() {
                   )
                 )}
               </p>
-              <ShareScore score={score} title={ui.timePrepTitle} />
-              <button className="next-btn" onClick={next}>
-                {ui.next}
-              </button>
+              <ShareScore score={score} title={ui.timePrepTitle} onNext={next} />
             </div>
           )}
         </div>

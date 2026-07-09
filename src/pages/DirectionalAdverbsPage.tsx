@@ -232,10 +232,7 @@ export default function DirectionalAdverbsPage() {
                   )
                 )}
               </p>
-              <ShareScore score={score} title={ui.directionalAdverbsTitle} />
-              <button className="next-btn" onClick={next}>
-                {ui.next}
-              </button>
+              <ShareScore score={score} title={ui.directionalAdverbsTitle} onNext={next} />
             </div>
           )}
         </div>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
@@ -13,11 +13,16 @@ function track(method: string, page: string) {
 }
 
 /**
- * Shown inside an exercise's result feedback: the running score plus an
- * actionable "Share your score" button (native share on mobile, copy-link +
- * social intents elsewhere), deep-linking to the current exercise.
+ * Result-feedback footer: the running score on the left, and (right-aligned)
+ * any extra control, a lean Share button, and the Next button on one row.
+ * The share button only appears at every-10-correct milestones.
  */
-export function ShareScore({ score, title }: { score: Score; title?: string }) {
+export function ShareScore({ score, title, onNext, extra }: {
+  score: Score;
+  title?: string;
+  onNext?: () => void;
+  extra?: ReactNode;
+}) {
   const { pathname } = useLocation();
   const { lang } = useLanguage();
   const ui = useUI();
@@ -63,33 +68,37 @@ export function ShareScore({ score, title }: { score: Score; title?: string }) {
   const showShare = score.correct > 0 && score.correct % 10 === 0;
 
   return (
-    <div className="score-share">
+    <div className="result-footer">
       <span className="score-summary">{ui.scoreLabel}: <strong>{score.correct} / {score.total}</strong></span>
-      {showShare && (
-        <div className="share-wrap">
-          <button className="share-btn" onClick={onShare}>📣 {ui.shareBtn}</button>
-          {open && (
-            <>
-              <button className="share-backdrop" aria-label="Close" onClick={() => setOpen(false)} />
-              <div className="share-menu" role="menu">
-                <button className="share-item" onClick={copy}>{copied ? ui.shareCopied : ui.shareCopy}</button>
-                {intents.map((i) => (
-                  <a
-                    key={i.method}
-                    className="share-item"
-                    href={i.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => { track(i.method, pathname); setOpen(false); }}
-                  >
-                    {i.label}
-                  </a>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
-      )}
+      <div className="result-footer-actions">
+        {extra}
+        {showShare && (
+          <div className="share-wrap">
+            <button className="share-btn" onClick={onShare}>📣 {ui.shareBtn}</button>
+            {open && (
+              <>
+                <button className="share-backdrop" aria-label="Close" onClick={() => setOpen(false)} />
+                <div className="share-menu" role="menu">
+                  <button className="share-item" onClick={copy}>{copied ? ui.shareCopied : ui.shareCopy}</button>
+                  {intents.map((i) => (
+                    <a
+                      key={i.method}
+                      className="share-item"
+                      href={i.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => { track(i.method, pathname); setOpen(false); }}
+                    >
+                      {i.label}
+                    </a>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        )}
+        {onNext && <button className="next-btn" onClick={onNext}>{ui.next}</button>}
+      </div>
     </div>
   );
 }

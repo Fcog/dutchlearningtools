@@ -239,8 +239,7 @@ export default function PluralsPage() {
                 )}
                 {tip && <><br /><span className="result-tip">{tip}</span></>}
               </p>
-              <ShareScore score={score} title={ui.pluralsTitle} />
-              <button className="next-btn" onClick={next}>{ui.next}</button>
+              <ShareScore score={score} title={ui.pluralsTitle} onNext={next} />
             </div>
           )}
         </div>

@@ -37,10 +37,13 @@ export function ResultFeedback({ isCorrect, exercise, userInput, onNext, score, 
           )}
         </p>
       )}
-      {score && <ShareScore score={score} title={title} />}
-      <button className="next-btn" onClick={onNext}>
-        {ui.next}
-      </button>
+      {score ? (
+        <ShareScore score={score} title={title} onNext={onNext} />
+      ) : (
+        <button className="next-btn" onClick={onNext}>
+          {ui.next}
+        </button>
+      )}
     </div>
   );
 }

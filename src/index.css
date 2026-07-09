@@ -1856,15 +1856,13 @@ body {
 .nl-cta-success { margin: 0; font-weight: 600; color: var(--success); }
 .nl-cta-error { flex-basis: 100%; margin: 0; font-size: 0.85rem; color: var(--error); text-align: right; }
 
-/* ── share score ─────────────────────────────────────────────────────────── */
-.score-share {
+/* ── result footer: score + share + next on one row ──────────────────────── */
+.result-footer {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.7rem;
-    margin-top: 0.9rem;
-    padding-top: 0.75rem;
-    border-top: 1px solid var(--border);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
 }
 
 .score-summary {
@@ -1873,24 +1871,33 @@ body {
 }
 .score-summary strong { color: var(--text); }
 
+.result-footer-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-left: auto;
+}
+
 .share-wrap { position: relative; display: inline-flex; }
 
+/* Lean, low-emphasis so the primary Next button stays dominant. */
 .share-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    padding: 0.5rem 0.95rem;
+    gap: 0.3rem;
+    padding: 0.4rem 0.7rem;
     border-radius: 8px;
-    border: 1.5px solid var(--primary);
-    background: var(--surface);
+    border: 1.5px solid var(--border);
+    background: transparent;
     color: var(--primary);
     font-family: inherit;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+    transition: border-color 0.15s, background 0.15s;
 }
-.share-btn:hover { background: var(--primary); color: #fff; }
+.share-btn:hover { border-color: var(--primary); background: #eff6ff; }
 
 .share-backdrop {
     position: fixed;

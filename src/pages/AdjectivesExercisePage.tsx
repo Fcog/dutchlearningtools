@@ -180,8 +180,7 @@ export default function AdjectivesExercisePage() {
                     : <><strong>{selected}</strong> is wrong. The answer is <strong>{correct}</strong>. {explanation}</>
                 )}
               </p>
-              <ShareScore score={score} title={TITLE[kind!]} />
-              <button className="next-btn" onClick={next}>{ui.next}</button>
+              <ShareScore score={score} title={TITLE[kind!]} onNext={next} />
             </div>
           )}
 

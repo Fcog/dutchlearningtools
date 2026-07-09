@@ -315,11 +315,7 @@ export default function NegationPage() {
                 <br />
                 <span className="result-tip">{explanation}</span>
               </p>
-              <ShareScore score={score} title={ui.negationTitle} />
-              <div className="wo-result-footer">
-                <SpeakButton key={index} text={() => negated} />
-                <button className="next-btn" onClick={next}>{ui.next}</button>
-              </div>
+              <ShareScore score={score} title={ui.negationTitle} onNext={next} extra={<SpeakButton key={index} text={() => negated} />} />
             </div>
           )}
         </div>

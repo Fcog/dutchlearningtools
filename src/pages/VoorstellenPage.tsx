@@ -335,11 +335,7 @@ export default function VoorstellenPage() {
                 <br />
                 <span className="result-tip">{explanation}</span>
               </p>
-              <ShareScore score={score} title={ui.voorstellenTitle} />
-              <div className="wo-result-footer">
-                <SpeakButton key={index} text={() => current.dutch} />
-                <button className="next-btn" onClick={next}>{ui.next}</button>
-              </div>
+              <ShareScore score={score} title={ui.voorstellenTitle} onNext={next} extra={<SpeakButton key={index} text={() => current.dutch} />} />
             </div>
           )}
         </div>

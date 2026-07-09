@@ -315,11 +315,7 @@ export default function WordOrderPage() {
                 <br />
                 <span className="result-tip">{explanation}</span>
               </p>
-              <ShareScore score={score} title={ui.wordOrderTitle} />
-              <div className="wo-result-footer">
-                <SpeakButton key={index} text={() => current.words.join(' ')} />
-                <button className="next-btn" onClick={next}>{ui.next}</button>
-              </div>
+              <ShareScore score={score} title={ui.wordOrderTitle} onNext={next} extra={<SpeakButton key={index} text={() => current.words.join(' ')} />} />
             </div>
           )}
         </div>

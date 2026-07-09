@@ -149,8 +149,7 @@ export default function DiminutivesPage() {
                     : <><strong>{selected}</strong> is wrong. The answer is <strong>{current.answer}</strong>. {explanation}</>
                 )}
               </p>
-              <ShareScore score={score} title={ui.diminutivesTitle} />
-              <button className="next-btn" onClick={next}>{ui.next}</button>
+              <ShareScore score={score} title={ui.diminutivesTitle} onNext={next} />
             </div>
           )}
         </div>
