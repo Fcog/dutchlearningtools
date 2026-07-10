@@ -1856,6 +1856,26 @@ body {
 .nl-cta-success { margin: 0; font-weight: 600; color: var(--success); }
 .nl-cta-error { flex-basis: 100%; margin: 0; font-size: 0.85rem; color: var(--error); text-align: right; }
 
+/* Narrow phones: stack the text and form so the fixed-width button can't
+   share a row with the text and overflow the CTA border. */
+@media (max-width: 400px) {
+    .nl-cta-text,
+    .nl-cta-form {
+        flex-basis: 100%;
+    }
+    /* Stack the input above a full-width button so nothing overflows. */
+    .nl-cta-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .nl-cta-input {
+        max-width: none;
+    }
+    .nl-cta-btn {
+        width: 100%;
+    }
+}
+
 /* ── result footer: score + share + next on one row ──────────────────────── */
 .result-footer {
     display: flex;

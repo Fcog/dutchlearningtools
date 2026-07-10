@@ -1,7 +1,9 @@
-import { useState, type FormEvent } from 'react';
+import { useState, useEffect, type FormEvent } from 'react';
 import { supabase } from '../lib/supabase';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
+import { useAuth } from '../context/AuthContext';
+import { useNewsletter } from '../hooks/useNewsletter';
 import { track } from '../lib/analytics';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -18,15 +20,28 @@ type Status = 'idle' | 'submitting' | 'success' | 'error';
 export function NewsletterCta() {
   const { lang } = useLanguage();
   const ui = useUI();
+  const { user } = useAuth();
+  const { getSubscription } = useNewsletter();
   const [hidden, setHidden] = useState(() => {
     try { return sessionStorage.getItem(SESSION_KEY) === '1'; } catch { return false; }
   });
+  // Hide the CTA for signed-in users who have already opted in to the newsletter.
+  const [alreadySubscribed, setAlreadySubscribed] = useState(false);
   const [email, setEmail] = useState('');
   const [website, setWebsite] = useState(''); // honeypot — real users leave it empty
   const [status, setStatus] = useState<Status>('idle');
   const [msg, setMsg] = useState('');
 
-  if (hidden) return null;
+  useEffect(() => {
+    let cancelled = false;
+    if (!user) { setAlreadySubscribed(false); return; }
+    getSubscription().then((sub) => {
+      if (!cancelled) setAlreadySubscribed(!!sub?.opted_in);
+    });
+    return () => { cancelled = true; };
+  }, [user]);
+
+  if (hidden || alreadySubscribed) return null;
 
   const dismiss = () => {
     try { sessionStorage.setItem(SESSION_KEY, '1'); } catch { /* ignore */ }

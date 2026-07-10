@@ -58,6 +58,47 @@ interface GeneratedVerb {
   exercises: GeneratedExercise[];
 }
 
+// ── Claude call with rate-limit handling ─────────────────────────────────────
+
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/**
+ * One Claude request that automatically retries on 429 (rate limit) and 5xx,
+ * honoring the Retry-After header. The free/low tiers allow only a few requests
+ * per minute, so a batch of verbs will hit this — we wait it out instead of
+ * failing. Returns the model's text response.
+ */
+async function callClaude(prompt: string, maxTokens: number, retries = 6): Promise<string> {
+  for (let attempt = 0; ; attempt++) {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': ANTHROPIC_KEY as string,
+        'anthropic-version': '2023-06-01',
+      },
+      body: JSON.stringify({ model: MODEL, max_tokens: maxTokens, messages: [{ role: 'user', content: prompt }] }),
+    });
+
+    if (res.ok) {
+      const data = await res.json();
+      return (data.content[0].text as string).trim();
+    }
+
+    const body = await res.text();
+    if ((res.status === 429 || res.status >= 500) && attempt < retries) {
+      const retryAfter = Number(res.headers.get('retry-after'));
+      const waitMs = Number.isFinite(retryAfter) && retryAfter > 0
+        ? retryAfter * 1000 + 500
+        : Math.min(60000, 1000 * 2 ** attempt); // exponential backoff, capped at 60s
+      console.warn(`  rate limited (${res.status}); waiting ${Math.round(waitMs / 1000)}s…`);
+      await sleep(waitMs);
+      continue;
+    }
+    throw new Error(`API error ${res.status}: ${body}`);
+  }
+}
+
 // ── Verify the input is a real Dutch verb ─────────────────────────────────────
 
 interface VerbCheck {
@@ -82,24 +123,8 @@ Rules:
 - Do NOT count nouns, adjectives, conjugated forms, or non-Dutch words as verbs.
 - "correctedSpelling": if it is not valid but is clearly a misspelling of a real Dutch infinitive verb, give the correct infinitive; otherwise null.`;
 
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': ANTHROPIC_KEY as string,
-      'anthropic-version': '2023-06-01',
-    },
-    body: JSON.stringify({
-      model: MODEL,
-      max_tokens: 256,
-      messages: [{ role: 'user', content: prompt }],
-    }),
-  });
-  if (!res.ok) throw new Error(`API error ${res.status}: ${await res.text()}`);
-  const data = await res.json();
-  const text = (data.content[0].text as string).trim();
-  const parsed = JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1)) as VerbCheck;
-  return parsed;
+  const text = await callClaude(prompt, 256);
+  return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1)) as VerbCheck;
 }
 
 // ── Generate the verb data via Claude ─────────────────────────────────────────
@@ -149,26 +174,7 @@ Rules:
 
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-api-key': ANTHROPIC_KEY as string,
-          'anthropic-version': '2023-06-01',
-        },
-        body: JSON.stringify({
-          model: MODEL,
-          max_tokens: 2048,
-          messages: [{ role: 'user', content: prompt }],
-        }),
-      });
-
-      if (!res.ok) {
-        throw new Error(`API error ${res.status}: ${await res.text()}`);
-      }
-
-      const data = await res.json();
-      const text = (data.content[0].text as string).trim();
+      const text = await callClaude(prompt, 2048);
       const start = text.indexOf('{');
       const end   = text.lastIndexOf('}') + 1;
       const parsed = JSON.parse(text.slice(start, end)) as GeneratedVerb;
@@ -207,63 +213,57 @@ function validate(v: GeneratedVerb, infinitive: string): void {
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 
-async function main() {
-  const raw = process.argv[2];
-  if (!raw) {
-    console.error('Usage: npx tsx --env-file=.env scripts/add-verb.ts <dutch-verb>');
-    process.exit(1);
-  }
+type AddResult = 'added' | 'exists' | 'not-verb' | 'error';
 
-  const infinitive = raw.trim().toLowerCase();
+// Add a single verb. Never calls process.exit — returns a status so a batch can
+// keep going, and logs one concise line per verb.
+async function addOne(infinitive: string): Promise<AddResult> {
   const id = infinitive; // verb ids are the lowercase infinitive (see schema convention)
 
-  // 1. Does it already exist?
+  // 1. Already in the DB?
   const { data: existing, error: lookupErr } = await supabase
-    .from('verbs')
-    .select('id, infinitive, english')
-    .eq('id', id)
-    .maybeSingle();
-
+    .from('verbs').select('id, english').eq('id', id).maybeSingle();
   if (lookupErr) {
-    console.error('Lookup error:', lookupErr.message);
-    process.exit(1);
+    console.error(`  ✗ ${infinitive}: lookup error: ${lookupErr.message}`);
+    return 'error';
   }
   if (existing) {
-    console.log(`✓ "${infinitive}" already exists in the verbs table (${existing.english}). Nothing to do.`);
-    process.exit(0);
+    console.log(`  • ${infinitive}: already exists (${existing.english}) — skipped.`);
+    return 'exists';
   }
 
-  // 2. Generate the data (this is the only step that needs the API key).
   if (!ANTHROPIC_KEY) {
-    console.error(`"${infinitive}" not found, so it needs to be generated — but ANTHROPIC_API_KEY is not set.`);
-    console.error('Get a key at https://console.anthropic.com and re-run:');
-    console.error(`  ANTHROPIC_API_KEY=sk-ant-... npx tsx --env-file=.env scripts/add-verb.ts ${infinitive}`);
-    process.exit(1);
+    console.error(`  ✗ ${infinitive}: not in the DB and ANTHROPIC_API_KEY is not set — cannot generate.`);
+    return 'error';
   }
-  // 2b. Verify it's a real Dutch verb before generating anything.
-  console.log(`Verifying "${infinitive}" is a Dutch verb…`);
+
+  // 2. Verify it's a real Dutch verb before generating anything.
   try {
     const check = await verifyVerb(infinitive);
     if (!check.isVerb) {
       const suggestion = check.correctedSpelling?.trim().toLowerCase();
       if (suggestion && suggestion !== infinitive) {
-        console.error(`✗ "${infinitive}" doesn't look like a Dutch verb. Did you mean "${suggestion}"?`);
-        console.error(`  Re-run: npx tsx --env-file=.env scripts/add-verb.ts ${suggestion}`);
+        console.error(`  ✗ ${infinitive}: not a Dutch verb — did you mean "${suggestion}"?`);
       } else {
-        console.error(`✗ "${infinitive}" doesn't appear to be a Dutch verb${check.note ? ` (${check.note})` : ''}. Aborting.`);
+        console.error(`  ✗ ${infinitive}: not a Dutch verb${check.note ? ` (${check.note})` : ''}.`);
       }
-      process.exit(1);
+      return 'not-verb';
     }
   } catch (e) {
     // Don't block on a transient verification failure — warn and continue.
-    console.warn(`  Could not verify (${e instanceof Error ? e.message : String(e)}); proceeding anyway.`);
+    console.warn(`  ${infinitive}: could not verify (${e instanceof Error ? e.message : String(e)}); proceeding.`);
   }
 
-  console.log(`"${infinitive}" not found. Generating verb data with ${MODEL}…`);
-  const gen = await generateVerb(infinitive);
-  console.log(`  → ${gen.english} (${gen.translation_es}) · ${gen.level} · aux ${gen.auxiliary} · ${gen.exercises.length} exercises`);
+  // 3. Generate the data.
+  let gen: GeneratedVerb;
+  try {
+    gen = await generateVerb(infinitive);
+  } catch (e) {
+    console.error(`  ✗ ${infinitive}: generation failed: ${e instanceof Error ? e.message : String(e)}`);
+    return 'error';
+  }
 
-  // 3. Insert the verb (parent row first — exercises reference it via FK).
+  // 4. Insert the verb (parent row first — exercises reference it via FK).
   const { error: verbErr } = await supabase.from('verbs').insert({
     id,
     infinitive: gen.infinitive.toLowerCase(),
@@ -274,11 +274,11 @@ async function main() {
     conjugation: gen.conjugation,
   });
   if (verbErr) {
-    console.error('Failed to insert verb:', verbErr.message);
-    process.exit(1);
+    console.error(`  ✗ ${infinitive}: insert failed: ${verbErr.message}`);
+    return 'error';
   }
 
-  // 4. Insert the exercises.
+  // 5. Insert the exercises.
   const exerciseRows = gen.exercises.map(ex => ({
     verb_id: id,
     dutch: ex.dutch,
@@ -287,16 +287,41 @@ async function main() {
     tense: ex.tense,
     translation_es: ex.translation_es,
   }));
-
   const { error: exErr } = await supabase
     .from('exercises')
     .upsert(exerciseRows, { onConflict: 'verb_id,dutch' });
   if (exErr) {
-    console.error('Verb was added, but inserting exercises failed:', exErr.message);
+    console.error(`  ✗ ${infinitive}: verb added but exercises failed: ${exErr.message}`);
+    return 'error';
+  }
+
+  console.log(`  ✓ ${infinitive} → ${gen.english} (${gen.translation_es}) · ${gen.level} · aux ${gen.auxiliary} · ${exerciseRows.length} exercises`);
+  return 'added';
+}
+
+async function main() {
+  // Accept one or many verbs, separated by commas and/or spaces.
+  const raw = process.argv.slice(2).join(' ').trim();
+  const verbs = [...new Set(raw.split(/[\s,]+/).map(v => v.trim().toLowerCase()).filter(Boolean))];
+  if (verbs.length === 0) {
+    console.error('Usage: npx tsx --env-file=.env scripts/add-verb.ts <verb>[, <verb> …]');
+    console.error('Example: npm run add-verb -- werken, lopen, fietsen');
     process.exit(1);
   }
 
-  console.log(`Done. Added "${infinitive}" with ${exerciseRows.length} exercises.`);
+  if (!ANTHROPIC_KEY) {
+    console.warn('Note: ANTHROPIC_API_KEY is not set — verbs not already in the DB cannot be generated.\n');
+  }
+
+  console.log(`Processing ${verbs.length} verb(s) with ${MODEL}: ${verbs.join(', ')}\n`);
+
+  const counts: Record<AddResult, number> = { added: 0, exists: 0, 'not-verb': 0, error: 0 };
+  for (const v of verbs) {
+    counts[await addOne(v)] += 1;
+  }
+
+  console.log(`\nDone. added ${counts.added}, existing ${counts.exists}, not-a-verb ${counts['not-verb']}, errors ${counts.error}.`);
+  process.exit(counts.error > 0 ? 1 : 0);
 }
 
 main();
