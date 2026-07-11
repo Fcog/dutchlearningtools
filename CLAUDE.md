@@ -61,6 +61,18 @@ When asked to create a new exercise module, do **all** of the following, then ru
 - `public/sitemap.xml` — add the URL.
 - `package.json` → `reactSnap.include` — add the route so it's **prerendered**.
 
+### 7b. Knowledge guide (ALWAYS create one)
+Every new exercise MUST ship with a matching SEO knowledge guide — never add an
+exercise without its guide.
+- `src/data/guides.ts` — append a `Guide` to `GUIDES`: `slug` (`dutch-<topic>`),
+  keyword-rich `title` + `description`, an `intro`, several `sections`
+  (`heading` + `paragraphs` + optional `examples`), a few `faq` entries, and a
+  `cta` pointing at the exercise route (`{ label: 'Practice … →', to: '/<route>' }`).
+  Content is English (largest search market). `GuidesIndexPage` and
+  `SeoManager` pick it up automatically from the array — no edits needed there.
+- `public/sitemap.xml` — add `/guide/<slug>` at `<priority>0.9</priority>`.
+- `package.json` → `reactSnap.include` — add `/guide/<slug>` so it's prerendered.
+
 ### 8. Privacy Policy + Terms of Use
 - `src/pages/TermsOfUsePage.tsx` — keep §2 "Description of Service" accurate
   (mention the new topic area) and bump "Last updated".

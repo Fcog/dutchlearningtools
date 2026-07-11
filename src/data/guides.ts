@@ -267,6 +267,101 @@ export const GUIDES: Guide[] = [
     ],
     cta: { label: 'Practice time prepositions →', to: '/time-prepositions' },
   },
+  {
+    slug: 'dutch-er-prepositions',
+    title: 'Dutch Pronominal Adverbs: erin, eraan, erop (er + Preposition)',
+    description:
+      'How er + preposition works in Dutch: erin, eruit and erop for places, and eraan, erop, ervoor for verbs with a fixed preposition — why you say eraan and not aan het, with free practice.',
+    intro:
+      'When a pronoun like het, dat or dit follows a preposition and refers to a thing (not a person), Dutch does not say “aan het” or “op dat”. Instead it fuses er with the preposition into one word: a pronominal adverb (voornaamwoordelijk bijwoord) such as eraan, erop or erin. There are two everyday uses.',
+    sections: [
+      {
+        heading: 'Use 1 — place and direction',
+        paragraphs: [
+          'The er-word replaces a known location, answering “into/out of/onto what?”. Here er points at a place already in the conversation.',
+        ],
+        examples: ['Ik draai de lamp erin. (into it)', 'Haal de sleutel eruit. (out of it)', 'Leg het boek erop. (on it)', 'Veeg het stof eraf. (off it)'],
+      },
+      {
+        heading: 'Use 2 — object of a fixed preposition',
+        paragraphs: [
+          'Many Dutch verbs take a fixed preposition (denken aan, wachten op, kiezen voor). When the object is a thing, the preposition merges with er. So “I think about it” is Ik denk eraan, never Ik denk aan het.',
+        ],
+        examples: ['denken aan → eraan: Ik denk eraan.', 'wachten op → erop: We wachten erop.', 'praten over → erover: We praten erover.', 'kiezen voor → ervoor: Ik kies ervoor.'],
+      },
+      {
+        heading: 'er can split from its preposition',
+        paragraphs: [
+          'When another word (an adverb, an object, niet) comes between them, er moves forward and the preposition stays behind. The two halves “hug” the middle of the sentence.',
+        ],
+        examples: ['Ik denk er niet aan.', 'Ik denk er vaak aan.', 'Hij rekent er helemaal op.'],
+      },
+      {
+        heading: 'Things vs. people',
+        paragraphs: [
+          'er-words are only for things and ideas. For people, keep the preposition and use a normal pronoun: aan hem, op haar, met wie.',
+        ],
+        examples: ['Ik denk aan hem. (a person)', 'Ik denk eraan. (a thing)', 'Waar wacht je op? → Ik wacht erop.', 'Op wie wacht je? → Ik wacht op hem.'],
+      },
+    ],
+    faq: [
+      { q: 'Why eraan and not “aan het”?', a: 'A preposition + the pronoun het/dat/dit for a thing always fuses into er + preposition: eraan, erop, ervoor. “aan het” is not used to mean “about it”.' },
+      { q: 'When does er separate from the preposition?', a: 'Whenever a word comes between them — an adverb, an object or niet: “Ik denk er niet aan.” With nothing in between, they join: “Ik denk eraan.”' },
+      { q: 'Can I use er-words for people?', a: 'No. Use the preposition with a pronoun for people (aan hem, op haar). er-words are for things and ideas only.' },
+    ],
+    cta: { label: 'Practice er + preposition →', to: '/er-prepositions' },
+  },
+  {
+    slug: 'dutch-modal-verbs',
+    title: 'Dutch Modal Verbs: moeten, mogen, willen, zullen, kunnen, hoeven',
+    description:
+      'Master the six Dutch modal verbs: what moeten, mogen, willen, zullen, kunnen and hoeven mean, their irregular present forms, the simple past, and why the main verb goes to the end — with free practice.',
+    intro:
+      'Modal verbs colour another verb: they say whether an action is obligatory, allowed, wanted, possible, future or unnecessary. Dutch has six. The modal is conjugated in the normal verb slot, and the main verb stays as an infinitive at the end of the clause.',
+    sections: [
+      {
+        heading: 'What each modal means',
+        paragraphs: [
+          'moeten = obligation (must/have to); mogen = permission (may/be allowed); willen = wish (want); kunnen = ability or possibility (can); zullen = future or a suggestion (shall/will); hoeven = lack of necessity.',
+        ],
+        examples: ['Ik moet werken.', 'Je mag naar huis.', 'Ik wil koffie.', 'Zij kan zwemmen.', 'Ik zal bellen.', 'Je hoeft niet te komen.'],
+      },
+      {
+        heading: 'Word order: infinitive at the end',
+        paragraphs: [
+          'The modal takes second position in a main clause; the verb it governs becomes a bare infinitive at the very end.',
+        ],
+        examples: ['Ik moet vandaag hard werken.', 'Kun je mij morgen helpen?', 'We willen dit weekend naar Utrecht gaan.'],
+      },
+      {
+        heading: 'Irregular present forms',
+        paragraphs: [
+          'The singular forms are irregular and worth memorising; jij can take a short form. Plural forms equal the infinitive.',
+        ],
+        examples: ['moeten: ik/jij/hij moet · wij moeten', 'mogen: ik/jij/hij mag · wij mogen', 'willen: ik wil, jij wil(t), hij wil · wij willen', 'kunnen: ik kan, jij kan/kunt, hij kan · wij kunnen', 'zullen: ik zal, jij zal/zult, hij zal · wij zullen'],
+      },
+      {
+        heading: 'hoeven — the negative of moeten',
+        paragraphs: [
+          'hoeven means “not have to”. It almost always appears with niet, geen, pas, maar or nooit, and adds te before the infinitive — unlike the other modals.',
+        ],
+        examples: ['Je hoeft niet te betalen.', 'Ik hoef vandaag niet te werken.', 'Je hoeft maar één ticket te kopen.'],
+      },
+      {
+        heading: 'The simple past',
+        paragraphs: [
+          'The past-tense forms are also irregular: moest, mocht, wilde (or wou), kon, zou, hoefde. Plurals add -en (moesten, konden, zouden…).',
+        ],
+        examples: ['Ik moest naar de dokter.', 'Als kind mocht ik niet laat opblijven.', 'Hij zei dat hij later zou komen.', 'Ze konden niet komen door de storm.'],
+      },
+    ],
+    faq: [
+      { q: 'What is the difference between kunnen and mogen?', a: 'kunnen is ability or possibility (“I can swim”); mogen is permission (“I’m allowed to”). English “can” covers both, so Dutch splits them.' },
+      { q: 'When do I use hoeven instead of moeten?', a: 'Use hoeven for “don’t have to”. It comes with niet/geen and adds te: “Je hoeft niet te komen.” Its positive counterpart is moeten.' },
+      { q: 'Does the second verb change after a modal?', a: 'No — it stays an infinitive and moves to the end of the clause: “Ik wil een boek lezen.” Only the modal is conjugated.' },
+    ],
+    cta: { label: 'Practice modal verbs →', to: '/modal-verbs' },
+  },
 ];
 
 export const guideBySlug = (slug: string | undefined): Guide | undefined =>
