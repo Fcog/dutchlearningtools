@@ -17,6 +17,7 @@ import VoorstellenPage from './pages/VoorstellenPage';
 import NegationPage from './pages/NegationPage';
 import PrepositionsPage from './pages/PrepositionsPage';
 import ErPrepositionsPage from './pages/ErPrepositionsPage';
+import ModalVerbsPage from './pages/ModalVerbsPage';
 import TimePrepositionsPage from './pages/TimePrepositionsPage';
 import MixPage from './pages/MixPage';
 import ExpressionsPage from './pages/ExpressionsPage';
@@ -67,6 +68,7 @@ export default function App() {
       <Route path="/negation" element={<NegationPage />} />
       <Route path="/prepositions" element={<PrepositionsPage />} />
       <Route path="/er-prepositions" element={<ErPrepositionsPage />} />
+      <Route path="/modal-verbs" element={<ModalVerbsPage />} />
       <Route path="/time-prepositions" element={<TimePrepositionsPage />} />
       <Route path="/expressions" element={<ExpressionsPage />} />
       <Route path="/adjectives" element={<AdjectivesHubPage />} />

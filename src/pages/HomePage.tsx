@@ -168,6 +168,16 @@ export default function HomePage() {
             <span className="module-arrow">→</span>
           </Link>
 
+          <Link to="/modal-verbs" className="module-card">
+            <div className="module-icon">⚙️</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.modalName}</h3>
+              <p className="module-desc">{ui.modalDesc}</p>
+              <StatsLine type="modal" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
+
           <Link to="/time-prepositions" className="module-card">
             <div className="module-icon">🕐</div>
             <div className="module-body">

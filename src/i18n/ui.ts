@@ -101,6 +101,10 @@ const en = {
   erPrepName: 'Er + Preposition',
   erPrepDesc: 'Master pronominal adverbs: erin, eruit, erop for places and eraan, erop, ervoor for verbs with a fixed preposition.',
   erPrepTitle: 'Er + Preposition',
+  // Home page — modal verbs module
+  modalName: 'Modal Verbs',
+  modalDesc: 'Master moeten, mogen, willen, zullen, hoeven and kunnen — pick the right modal for the meaning, in present and past.',
+  modalTitle: 'Modal Verbs',
   // Home page — time prepositions module
   timePrepName: 'Time Prepositions',
   timePrepDesc: 'Master om, op and in for clock times, days and months — plus na, tijdens, sinds, tot and over.',
@@ -280,6 +284,9 @@ const es: UIStrings = {
   erPrepName: 'Er + preposición',
   erPrepDesc: 'Domina los adverbios pronominales: erin, eruit, erop para lugares y eraan, erop, ervoor con verbos de preposición fija.',
   erPrepTitle: 'Er + preposición',
+  modalName: 'Verbos modales',
+  modalDesc: 'Domina moeten, mogen, willen, zullen, hoeven y kunnen — elige el modal correcto según el significado, en presente y pasado.',
+  modalTitle: 'Verbos modales',
   timePrepName: 'Preposiciones de tiempo',
   timePrepDesc: 'Domina om, op e in para horas, días y meses — además de na, tijdens, sinds, tot y over.',
   timePrepTitle: 'Preposiciones de tiempo',

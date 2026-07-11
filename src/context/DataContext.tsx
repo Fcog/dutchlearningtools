@@ -16,6 +16,7 @@ import type { ExpressionExercise } from '../data/expressionExercises';
 import type { AdjectiveExercise, AdjectiveKind } from '../data/adjectiveExercises';
 import type { DiminutiveExercise, DiminutiveRule } from '../data/diminutiveExercises';
 import type { ErPrepositionExercise, ErUsage } from '../data/erPrepositionExercises';
+import type { ModalExercise, ModalTense } from '../data/modalExercises';
 
 // ── Transformers ───────────────────────────────────────────────────────────
 
@@ -229,6 +230,22 @@ function toErPrepositionExercise(row: any): ErPrepositionExercise {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
+function toModalExercise(row: any): ModalExercise {
+  return {
+    id:             row.id,
+    dutch:          row.dutch,
+    english:        row.english,
+    answer:         row.answer,
+    options:        (row.options ?? []) as string[],
+    tense:          row.tense as ModalTense,
+    explanation:    row.explanation,
+    explanationEs:  row.explanation_es ?? undefined,
+    level:          row.level as Level,
+    translations:   row.translation_es ? { es: row.translation_es } : undefined,
+  };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function toTimeExercise(row: any): TimeExercise {
   return {
     id:             row.id,
@@ -312,12 +329,13 @@ interface DataContextValue {
   adjectiveExercises:   AdjectiveExercise[];
   diminutiveExercises:  DiminutiveExercise[];
   erPrepositionExercises: ErPrepositionExercise[];
+  modalExercises:       ModalExercise[];
   loading:              boolean;
   error:                string | null;
 }
 
 const DataContext = createContext<DataContextValue>({
-  verbs: [], separableVerbSets: [], positionalExercises: [], directionalExercises: [], fromToExercises: [], articleNouns: [], pluralNouns: [], wordOrderSentences: [], voorstellenExercises: [], negationExercises: [], prepositionExercises: [], timeExercises: [], expressionExercises: [], adjectiveExercises: [], diminutiveExercises: [], erPrepositionExercises: [],
+  verbs: [], separableVerbSets: [], positionalExercises: [], directionalExercises: [], fromToExercises: [], articleNouns: [], pluralNouns: [], wordOrderSentences: [], voorstellenExercises: [], negationExercises: [], prepositionExercises: [], timeExercises: [], expressionExercises: [], adjectiveExercises: [], diminutiveExercises: [], erPrepositionExercises: [], modalExercises: [],
   loading: true, error: null,
 });
 
@@ -338,13 +356,14 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [adjectiveExercises, setAdjectives] = useState<AdjectiveExercise[]>([]);
   const [diminutiveExercises, setDiminutives] = useState<DiminutiveExercise[]>([]);
   const [erPrepositionExercises, setErPrepositions] = useState<ErPrepositionExercise[]>([]);
+  const [modalExercises, setModal] = useState<ModalExercise[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     async function fetchAll() {
       try {
-        const [verbsRes, sepRes, posRes, dirRes, ftRes, artRes, pluralRes, woRes, vstRes, negRes, prepRes, timeRes, exprRes, adjRes, dimRes, erPrepRes] = await Promise.all([
+        const [verbsRes, sepRes, posRes, dirRes, ftRes, artRes, pluralRes, woRes, vstRes, negRes, prepRes, timeRes, exprRes, adjRes, dimRes, erPrepRes, modalRes] = await Promise.all([
           supabase.from('verbs').select('*, exercises(*)').order('id'),
           supabase.from('separable_verb_sets').select('*, separable_exercises(*)').order('infinitive'),
           supabase.from('positional_exercises').select('*').order('created_at'),
@@ -361,6 +380,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
           supabase.from('adjective_exercises').select('*').order('kind').order('level').order('id'),
           supabase.from('diminutive_exercises').select('*').order('level').order('id'),
           supabase.from('er_preposition_exercises').select('*').order('level').order('id'),
+          supabase.from('modal_exercises').select('*').order('level').order('id'),
         ]);
 
         if (verbsRes.error)  throw verbsRes.error;
@@ -381,6 +401,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
         if (adjRes.error) console.warn('adjective_exercises unavailable:', adjRes.error.message);
         if (dimRes.error) console.warn('diminutive_exercises unavailable:', dimRes.error.message);
         if (erPrepRes.error) console.warn('er_preposition_exercises unavailable:', erPrepRes.error.message);
+        if (modalRes.error) console.warn('modal_exercises unavailable:', modalRes.error.message);
 
         setVerbs((verbsRes.data ?? []).map(toVerb));
         setSeparable((sepRes.data ?? []).map(toSeparableVerbSet));
@@ -398,6 +419,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
         setAdjectives((adjRes.data ?? []).map(toAdjectiveExercise));
         setDiminutives((dimRes.data ?? []).map(toDiminutiveExercise));
         setErPrepositions((erPrepRes.data ?? []).map(toErPrepositionExercise));
+        setModal((modalRes.data ?? []).map(toModalExercise));
       } catch (e) {
         setError(e instanceof Error ? e.message : 'Failed to load exercises.');
       } finally {
@@ -409,7 +431,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <DataContext.Provider value={{ verbs, separableVerbSets, positionalExercises, directionalExercises, fromToExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises, prepositionExercises, timeExercises, expressionExercises, adjectiveExercises, diminutiveExercises, erPrepositionExercises, loading, error }}>
+    <DataContext.Provider value={{ verbs, separableVerbSets, positionalExercises, directionalExercises, fromToExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises, prepositionExercises, timeExercises, expressionExercises, adjectiveExercises, diminutiveExercises, erPrepositionExercises, modalExercises, loading, error }}>
       {children}
     </DataContext.Provider>
   );

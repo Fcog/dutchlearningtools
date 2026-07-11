@@ -22,9 +22,10 @@ export default function TermsOfUsePage() {
           <p>
             Dutch Learning Tools is a free educational platform designed to help
             users practice Dutch grammar through interactive exercises — including
-            verb conjugation, separable and positional verbs, articles, plurals,
-            word order, prepositions, pronominal adverbs (er + preposition),
-            adjectives, diminutives, negation and idiomatic expressions.
+            verb conjugation, modal verbs, separable and positional verbs,
+            articles, plurals, word order, prepositions, pronominal adverbs
+            (er + preposition), adjectives, diminutives, negation and idiomatic
+            expressions.
           </p>
         </section>
 

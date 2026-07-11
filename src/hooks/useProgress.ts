@@ -4,7 +4,7 @@ import { supabase } from '../lib/supabase';
 import { track } from '../lib/analytics';
 import type { Database } from '../types/database';
 
-export type ExerciseType = 'verb' | 'separable' | 'positional' | 'directional' | 'from-to' | 'article' | 'plural' | 'word-order' | 'voorstellen' | 'negation' | 'preposition' | 'time-prep' | 'expression' | 'adjective' | 'diminutive' | 'er-preposition';
+export type ExerciseType = 'verb' | 'separable' | 'positional' | 'directional' | 'from-to' | 'article' | 'plural' | 'word-order' | 'voorstellen' | 'negation' | 'preposition' | 'time-prep' | 'expression' | 'adjective' | 'diminutive' | 'er-preposition' | 'modal';
 
 export interface ModuleStats {
   total: number;

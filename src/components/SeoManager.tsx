@@ -23,6 +23,7 @@ const ROUTES: Record<string, Meta> = {
   '/negation': { title: 'Dutch Negation: niet vs geen', description: 'Learn Dutch negation: choose niet or geen and place it correctly in the sentence.' },
   '/prepositions': { title: 'Dutch Fixed Prepositions', description: 'Learn which preposition each Dutch verb, adjective and noun takes: wachten op, bang voor, bestaan uit.' },
   '/er-prepositions': { title: 'Dutch Er + Preposition Practice (erin, eraan, erop)', description: 'Master Dutch pronominal adverbs: erin, eruit and erop for places, and eraan, erop, ervoor for verbs with a fixed preposition.' },
+  '/modal-verbs': { title: 'Dutch Modal Verbs Practice (moeten, mogen, willen, kunnen)', description: 'Master the Dutch modal auxiliary verbs moeten, mogen, willen, zullen, hoeven and kunnen — choose the right modal in the present and simple past.' },
   '/time-prepositions': { title: 'Dutch Time Prepositions', description: 'Master om, op and in for clock times, days and months — plus na, tijdens, sinds, tot and over.' },
   '/expressions': { title: 'Dutch Idiomatic Expressions', description: 'Complete common Dutch idioms: in de gaten houden, de spijker op z’n kop slaan and more.' },
   '/adjectives': { title: 'Dutch Adjectives Practice', description: 'A whole section on Dutch adjectives: the -e ending rule, vocabulary, comparatives & superlatives, and opposites.' },

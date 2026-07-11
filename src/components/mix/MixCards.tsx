@@ -14,6 +14,7 @@ import type { DirectionalExercise } from '../../data/directionalAdverbs';
 import type { FromToExercise } from '../../data/fromToAdverbs';
 import type { PrepositionExercise } from '../../data/prepositionExercises';
 import type { ErPrepositionExercise } from '../../data/erPrepositionExercises';
+import type { ModalExercise } from '../../data/modalExercises';
 import type { TimeExercise } from '../../data/timeExercises';
 import type { ExpressionExercise } from '../../data/expressionExercises';
 import type { DiminutiveExercise } from '../../data/diminutiveExercises';
@@ -71,6 +72,7 @@ interface PoolData {
   fromToExercises: FromToExercise[];
   prepositionExercises: PrepositionExercise[];
   erPrepositionExercises: ErPrepositionExercise[];
+  modalExercises: ModalExercise[];
   timeExercises: TimeExercise[];
   expressionExercises: ExpressionExercise[];
   diminutiveExercises: DiminutiveExercise[];
@@ -114,6 +116,7 @@ export function buildMixPool(d: PoolData): MixEntry[] {
     [d.fromToExercises, 'from-to', 'from-to', 'ft'],
     [d.prepositionExercises, 'preposition', 'preposition', 'prep'],
     [d.erPrepositionExercises, 'er-preposition', 'er-preposition', 'erp'],
+    [d.modalExercises, 'modal', 'modal', 'mod'],
     [d.timeExercises, 'time-prep', 'time-prep', 'time'],
     [d.expressionExercises, 'expression', 'expression', 'expr'],
     [d.diminutiveExercises, 'diminutive', 'diminutive', 'dim'],
