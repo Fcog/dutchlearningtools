@@ -6,6 +6,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { useUI } from "../i18n/ui";
 import { useProgress } from "../hooks/useProgress";
 import { useAdvanceOnEnter } from "../hooks/useAdvanceOnEnter";
+import { isConjugationCorrect } from "../lib/answerCheck";
 import { LoadingScreen } from "../components/LoadingScreen";
 import { Header } from "../components/Header";
 import { LevelSelector } from "../components/LevelSelector";
@@ -232,7 +233,7 @@ export default function VerbsPage() {
               value={state.userInput}
               onChange={setInput}
               onSubmit={() => {
-                const correct = state.userInput.trim().toLowerCase() === state.exercise.answer.toLowerCase();
+                const correct = isConjugationCorrect(state.exercise.dutch, state.exercise.answer, state.userInput);
                 submit();
                 recordAnswer(state.exercise.id, 'verb', correct);
               }}

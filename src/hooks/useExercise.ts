@@ -1,5 +1,6 @@
 import { useState, useCallback, useMemo, useEffect, useRef } from 'react';
 import type { Verb, Exercise, Phase, Level, Tense } from '../types';
+import { isConjugationCorrect } from '../lib/answerCheck';
 
 interface Pair { verb: Verb; exercise: Exercise }
 
@@ -106,8 +107,9 @@ export function useExercise(
     // Score must be updated OUTSIDE the setState updater — a side effect inside
     // an updater is double-invoked by StrictMode and would count twice (+2).
     if (!state || state.phase !== 'active') return;
-    const isCorrect =
-      state.userInput.trim().toLowerCase() === state.exercise.answer.toLowerCase();
+    const isCorrect = isConjugationCorrect(
+      state.exercise.dutch, state.exercise.answer, state.userInput,
+    );
     setScore((s) => ({
       correct: s.correct + (isCorrect ? 1 : 0),
       total: s.total + 1,

@@ -5,6 +5,7 @@ import { SpeakButton } from '../SpeakButton';
 import { useLanguage } from '../../context/LanguageContext';
 import { useUI } from '../../i18n/ui';
 import { useAdvanceOnEnter } from '../../hooks/useAdvanceOnEnter';
+import { canonicalAnswer, isConjugationCorrect } from '../../lib/answerCheck';
 import type { ExerciseType } from '../../hooks/useProgress';
 import type { Verb } from '../../types';
 import type { SeparableVerbSet, SeparableContext } from '../../data/separableVerbs';
@@ -215,13 +216,14 @@ export function VerbCard({ data, onResult, onNext }: CardProps<VerbData>) {
   const ui = useUI();
   const [input, setInput] = useState('');
   const [done, setDone] = useState(false);
-  const isCorrect = input.trim().toLowerCase() === data.exercise.answer.toLowerCase();
+  const isCorrect = isConjugationCorrect(data.exercise.dutch, data.exercise.answer, input);
+  const answer = canonicalAnswer(data.exercise.dutch, data.exercise.answer);
   useAdvanceOnEnter(done, onNext);
 
   const submit = () => {
     if (done || !input.trim()) return;
     setDone(true);
-    onResult(input.trim().toLowerCase() === data.exercise.answer.toLowerCase());
+    onResult(isConjugationCorrect(data.exercise.dutch, data.exercise.answer, input));
   };
 
   return (
@@ -233,8 +235,8 @@ export function VerbCard({ data, onResult, onNext }: CardProps<VerbData>) {
         <div className={`result-feedback ${isCorrect ? 'success' : 'error'}`}>
           <p className="result-message">
             {isCorrect
-              ? <>{lang === 'es' ? '¡Correcto!' : 'Correct!'} <strong>{data.exercise.answer}</strong></>
-              : <><strong>{input}</strong> {lang === 'es' ? 'es incorrecto. La respuesta es' : 'is wrong. The answer is'} <strong>{data.exercise.answer}</strong>.</>}
+              ? <>{lang === 'es' ? '¡Correcto!' : 'Correct!'} <strong>{answer}</strong></>
+              : <><strong>{input}</strong> {lang === 'es' ? 'es incorrecto. La respuesta es' : 'is wrong. The answer is'} <strong>{answer}</strong>.</>}
           </p>
           <button className="next-btn" onClick={onNext}>{ui.next}</button>
         </div>

@@ -2,6 +2,7 @@ import type { Exercise } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { useUI } from '../i18n/ui';
 import { ShareScore } from './ShareScore';
+import { canonicalAnswer } from '../lib/answerCheck';
 
 interface Props {
   isCorrect: boolean;
@@ -15,25 +16,26 @@ interface Props {
 export function ResultFeedback({ isCorrect, exercise, userInput, onNext, score, title }: Props) {
   const { lang } = useLanguage();
   const ui = useUI();
+  const answer = canonicalAnswer(exercise.dutch, exercise.answer);
 
   return (
     <div className={`result-feedback ${isCorrect ? 'success' : 'error'}`}>
       {isCorrect ? (
         <p className="result-message">
           {lang === 'es' ? (
-            <>¡Correcto! <strong>{exercise.answer}</strong> es la forma correcta.</>
+            <>¡Correcto! <strong>{answer}</strong> es la forma correcta.</>
           ) : (
-            <>Correct! <strong>{exercise.answer}</strong> is right.</>
+            <>Correct! <strong>{answer}</strong> is right.</>
           )}
         </p>
       ) : (
         <p className="result-message">
           {lang === 'es' ? (
             <><strong>{userInput}</strong> es incorrecto. La forma correcta es{' '}
-            <strong>{exercise.answer}</strong>.</>
+            <strong>{answer}</strong>.</>
           ) : (
             <><strong>{userInput}</strong> is wrong. The correct form is{' '}
-            <strong>{exercise.answer}</strong>.</>
+            <strong>{answer}</strong>.</>
           )}
         </p>
       )}
