@@ -97,6 +97,10 @@ const en = {
   prepositionsName: 'Fixed Prepositions',
   prepositionsDesc: 'Learn which preposition each verb, adjective and noun takes: wachten op, bang voor, bestaan uit.',
   prepositionsTitle: 'Fixed Prepositions',
+  // Home page — er + preposition module
+  erPrepName: 'Er + Preposition',
+  erPrepDesc: 'Master pronominal adverbs: erin, eruit, erop for places and eraan, erop, ervoor for verbs with a fixed preposition.',
+  erPrepTitle: 'Er + Preposition',
   // Home page — time prepositions module
   timePrepName: 'Time Prepositions',
   timePrepDesc: 'Master om, op and in for clock times, days and months — plus na, tijdens, sinds, tot and over.',
@@ -273,6 +277,9 @@ const es: UIStrings = {
   prepositionsName: 'Preposiciones fijas',
   prepositionsDesc: 'Aprende qué preposición rige cada verbo, adjetivo y sustantivo: wachten op, bang voor, bestaan uit.',
   prepositionsTitle: 'Preposiciones fijas',
+  erPrepName: 'Er + preposición',
+  erPrepDesc: 'Domina los adverbios pronominales: erin, eruit, erop para lugares y eraan, erop, ervoor con verbos de preposición fija.',
+  erPrepTitle: 'Er + preposición',
   timePrepName: 'Preposiciones de tiempo',
   timePrepDesc: 'Domina om, op e in para horas, días y meses — además de na, tijdens, sinds, tot y over.',
   timePrepTitle: 'Preposiciones de tiempo',

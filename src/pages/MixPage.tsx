@@ -15,6 +15,7 @@ export const TOPIC_LABEL: Record<string, { en: string; es: string }> = {
   directional:   { en: 'Directional adverbs', es: 'Adverbios direccionales' },
   'from-to':     { en: 'From & to',          es: 'Origen y destino' },
   preposition:   { en: 'Fixed prepositions', es: 'Preposiciones fijas' },
+  'er-preposition': { en: 'Er + preposition', es: 'Er + preposición' },
   'time-prep':   { en: 'Time prepositions',  es: 'Preposiciones de tiempo' },
   expression:    { en: 'Idiomatic expressions', es: 'Expresiones idiomáticas' },
   diminutive:    { en: 'Diminutives',         es: 'Diminutivos' },
@@ -41,7 +42,7 @@ function shuffledRange(n: number): number[] {
 export default function MixPage() {
   const {
     verbs, separableVerbSets, positionalExercises, directionalExercises,
-    fromToExercises, prepositionExercises, timeExercises, expressionExercises,
+    fromToExercises, prepositionExercises, erPrepositionExercises, timeExercises, expressionExercises,
     diminutiveExercises, articleNouns, pluralNouns, wordOrderSentences,
     voorstellenExercises, negationExercises, loading, error,
   } = useAppData();
@@ -52,11 +53,11 @@ export default function MixPage() {
   const pool = useMemo(
     () => buildMixPool({
       verbs, separableVerbSets, positionalExercises, directionalExercises,
-      fromToExercises, prepositionExercises, timeExercises, expressionExercises,
+      fromToExercises, prepositionExercises, erPrepositionExercises, timeExercises, expressionExercises,
       diminutiveExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises,
     }),
     [verbs, separableVerbSets, positionalExercises, directionalExercises,
-     fromToExercises, prepositionExercises, timeExercises, expressionExercises,
+     fromToExercises, prepositionExercises, erPrepositionExercises, timeExercises, expressionExercises,
      diminutiveExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises],
   );
 

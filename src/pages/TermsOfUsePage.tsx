@@ -6,7 +6,7 @@ export default function TermsOfUsePage() {
       <Header backTo="/" />
       <main className="main policy-main">
         <h2 className="policy-title">Terms of Use</h2>
-        <p className="policy-date">Last updated: July 9, 2026</p>
+        <p className="policy-date">Last updated: July 11, 2026</p>
 
         <section className="policy-section">
           <h3>1. Acceptance of Terms</h3>
@@ -23,8 +23,8 @@ export default function TermsOfUsePage() {
             Dutch Learning Tools is a free educational platform designed to help
             users practice Dutch grammar through interactive exercises — including
             verb conjugation, separable and positional verbs, articles, plurals,
-            word order, prepositions, adjectives, diminutives, negation and
-            idiomatic expressions.
+            word order, prepositions, pronominal adverbs (er + preposition),
+            adjectives, diminutives, negation and idiomatic expressions.
           </p>
         </section>
 

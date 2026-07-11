@@ -24,7 +24,7 @@ export default function SingleExercisePage() {
 
   const {
     verbs, separableVerbSets, positionalExercises, directionalExercises,
-    fromToExercises, prepositionExercises, timeExercises, expressionExercises,
+    fromToExercises, prepositionExercises, erPrepositionExercises, timeExercises, expressionExercises,
     diminutiveExercises, articleNouns, pluralNouns, wordOrderSentences,
     voorstellenExercises, negationExercises, loading, error,
   } = useAppData();
@@ -32,11 +32,11 @@ export default function SingleExercisePage() {
   const pool = useMemo(
     () => buildMixPool({
       verbs, separableVerbSets, positionalExercises, directionalExercises,
-      fromToExercises, prepositionExercises, timeExercises, expressionExercises,
+      fromToExercises, prepositionExercises, erPrepositionExercises, timeExercises, expressionExercises,
       diminutiveExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises,
     }),
     [verbs, separableVerbSets, positionalExercises, directionalExercises,
-     fromToExercises, prepositionExercises, timeExercises, expressionExercises,
+     fromToExercises, prepositionExercises, erPrepositionExercises, timeExercises, expressionExercises,
      diminutiveExercises, articleNouns, pluralNouns, wordOrderSentences, voorstellenExercises, negationExercises],
   );
 

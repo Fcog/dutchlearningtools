@@ -158,6 +158,16 @@ export default function HomePage() {
             <span className="module-arrow">→</span>
           </Link>
 
+          <Link to="/er-prepositions" className="module-card">
+            <div className="module-icon">🔁</div>
+            <div className="module-body">
+              <h3 className="module-name">{ui.erPrepName}</h3>
+              <p className="module-desc">{ui.erPrepDesc}</p>
+              <StatsLine type="er-preposition" />
+            </div>
+            <span className="module-arrow">→</span>
+          </Link>
+
           <Link to="/time-prepositions" className="module-card">
             <div className="module-icon">🕐</div>
             <div className="module-body">

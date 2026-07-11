@@ -24,6 +24,7 @@ const TABLES: Record<string, string> = {
   directional: 'directional_exercises',
   'from-to': 'from_to_exercises',
   preposition: 'preposition_exercises',
+  'er-preposition': 'er_preposition_exercises',
   'time-prep': 'time_prep_exercises',
   article: 'article_nouns',
   plural: 'plural_nouns',
