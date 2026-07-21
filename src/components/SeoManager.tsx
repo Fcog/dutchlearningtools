@@ -48,6 +48,15 @@ function upsertMeta(attr: 'name' | 'property', key: string, content: string) {
   el.setAttribute('content', content);
 }
 
+// Strip a trailing slash so "/plurals/" resolves the same as "/plurals".
+// react-router matches both to the same route, but our exact ROUTES lookup
+// would otherwise miss the slashed form and fall through to the 404 catch-all,
+// which is how a reloaded/idle tab landing on the canonical trailing-slash URL
+// silently gets the 404 title on an otherwise valid page.
+function normalize(pathname: string): string {
+  return pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname;
+}
+
 function resolve(pathname: string): Meta {
   if (ROUTES[pathname]) return ROUTES[pathname];
   if (pathname.startsWith('/guide/')) {
@@ -64,9 +73,10 @@ export function SeoManager() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    const meta = resolve(pathname);
+    const path = normalize(pathname);
+    const meta = resolve(path);
     const title = meta.title === BRAND ? BRAND : `${meta.title} · ${BRAND}`;
-    const url = SITE + pathname;
+    const url = SITE + path;
 
     document.title = title;
     if (meta.description) upsertMeta('name', 'description', meta.description);

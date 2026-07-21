@@ -104,8 +104,18 @@ const T = {
   es: { of_the_day: 'Tu ejercicio de neerlandés del día', prompt: '¿Qué va en el hueco?', cta: 'Responder en el sitio', footer: 'Recibes esto porque te suscribiste al ejercicio diario por correo.', unsub: 'Darse de baja' },
 };
 
+// Per-type instruction. Most exercises fill a blank, but a few don't (word-order
+// = arrange the chips; negation = make it negative; plural = give the plural),
+// so the generic "what goes in the blank?" would be wrong for them.
+const PROMPT: Record<string, { en: string; es: string }> = {
+  'word-order': { en: 'Put the words in the correct order', es: 'Ordena las palabras' },
+  negation:     { en: 'Make this sentence negative',       es: 'Haz esta frase negativa' },
+  plural:       { en: 'What is the plural?',                es: '¿Cuál es el plural?' },
+};
+
 function renderEmail(type: string, row: any, lang: 'en' | 'es', unsubToken: string): { subject: string; html: string } {
   const t = T[lang];
+  const promptText = PROMPT[type]?.[lang] ?? t.prompt;
   const english = (lang === 'es' ? row.translation_es : null) ?? row.english ?? '';
   const dutch = promptDutch(type, row);
   const chips = optionChips(type, row);
@@ -128,7 +138,7 @@ function renderEmail(type: string, row: any, lang: 'en' | 'es', unsubToken: stri
     <p style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#6b7280;margin:0 0 4px;">${t.of_the_day}</p>
     <div style="border:1.5px solid #e5e7eb;border-radius:14px;padding:20px;">
       ${level}
-      <p style="font-size:14px;color:#6b7280;margin:12px 0 2px;">${t.prompt}</p>
+      <p style="font-size:14px;color:#6b7280;margin:12px 0 2px;">${promptText}</p>
       ${dutchHtml}
       <p style="font-size:15px;color:#6b7280;font-style:italic;margin:6px 0 0;">${english}</p>
       ${chipsHtml}
